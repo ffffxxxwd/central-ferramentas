@@ -3523,5 +3523,60 @@ window.CLIENTES = [
       "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
       "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
       "GSign Documento ID: L68IMNZGXM-BS16B4N-0TL0RWQJUAPO4F-IC1DM. Contrato nº 311001."
+  },
+
+  /* ---------- 67 — WAM — 310820 PRAIAS DO LAGO ECO RESORT, Bloco L / 303 / Cota 12 ---------- */
+  {
+    id: "310820-pollyana-ferreira-pdl-l-303-cota-12",
+    nome: "POLLYANA FERREIRA DE OLIVEIRA",
+    cpf: "015.986.171-33",
+    rg: "17296331 - SSP/MT",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "L",
+    apartamento: "303",
+    andar: "3",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 6160.00,
+    valorTotal: 52606.75,
+    corretagem: 6160.00,
+    sinal: 200.00,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 4, valor: 50.00, forma: "Boleto", vencimento: "2026-09-10" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 525.53, forma: "Boleto", vencimento: "2027-01-10" },
+      { tipo: "Intermediação", qtd: 1, valor: 684.44, forma: "Cartão de Crédito - Cielo", vencimento: "2026-08-15" },
+      { tipo: "Intermediação", qtd: 8, valor: 684.44, forma: "Crédito Recorrente", vencimento: "2026-08-15" }
+    ],
+    formaPagamentoEntrada: "1x R$ 684,44 cartão crédito Cielo + 8x R$ 684,44 crédito recorrente (intermediação) + 4x R$ 50,00 boleto (cota entrada)",
+    dataAssinatura: "2026-08-15",
+    telefone: "(66) 99229-4561",
+    email: "POLLYALESSANDRO22@GMAIL.COM",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/310820-pollyana-ferreira-pdl-l-303-cota-12--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 6.160,00 — 1x R$ 684,44 cartão crédito Cielo + 8x R$ 684,44 crédito recorrente = intermediação valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — instrumento principal cartão de crédito (Cielo).\n" +
+      "Preço da cota (sem intermediação): R$ 46.446,75. Intermediação: R$ 6.160,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Cota entrada: 4x R$ 50,00 boleto (1ª 10/09/2026) — NÃO PAGO. Cota saldo: 88x R$ 525,53 boleto (1ª 10/01/2027) — NÃO PAGO.\n" +
+      "Contrato assinado em Caldas Novas/GO em 15/08/2026 — FORA DO PRAZO de arrependimento (venceu 22/08/2026).\n" +
+      "CONHECEU o empreendimento (marcou Sim no quadro-resumo).\n" +
+      "Inclui Passaporte Náutico Praia Clube nº 07-L303/12, Apt L303/Cota 12 (W.Palmerston & Tavares, CNPJ 05.513.549/0001-01).\n" +
+      "Profissão: Servidor Público(a). Nascimento: 30/06/1985. Sexo: Feminino.\n" +
+      "Endereço: Rua dos Lírios, 899, Anchieta, Barra do Garças/MT, CEP 78601618.\n" +
+      "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
+      "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
+      "GSign Documento ID: CWU0R1HBQS-9FLIIEY-CMC0HODAL3PNWX-M6303. Contrato/Assinatura nº 310820."
   }
 ];
