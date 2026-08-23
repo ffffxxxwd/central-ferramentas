@@ -70,5 +70,14 @@ window.FERRAMENTAS = [
     categoria: "Atendimento",
     url: "ferramentas/leads-whatsapp/index.html",
     pronta: true
+  },
+  {
+    id: "gastos",
+    nome: "Gastos e Receitas",
+    descricao: "Controle básico de gastos e receitas com saldo, filtros e exportação CSV. Salva no navegador.",
+    icone: "💰",
+    categoria: "Financeiro",
+    url: "ferramentas/gastos/index.html",
+    pronta: true
   }
 ];

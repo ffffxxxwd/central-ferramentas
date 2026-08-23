@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastos e Receitas</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f5f7fc;color:#17203a;padding:24px;max-width:720px;margin:0 auto}
+h1{font-size:1.4rem;margin-bottom:20px;font-weight:600}
+
+.resumo{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.card{flex:1;min-width:140px;background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card-label{font-size:.75rem;color:#6b7690;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.card-valor{font-size:1.3rem;font-weight:700}
+.card-valor.positivo{color:#17b26a}
+.card-valor.negativo{color:#e03131}
+.card-valor.saldo{color:#3160f5}
+
+.form-row{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.form-row input,.form-row select{flex:1;min-width:120px;padding:10px 12px;border:1px solid #e3e8f2;border-radius:8px;font-size:.9rem;background:#fff;color:#17203a}
+.form-row input:focus,.form-row select:focus{outline:none;border-color:#3160f5}
+.btn{padding:10px 20px;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.btn-add{background:#3160f5;color:#fff}.btn-add:hover{background:#244ed6}
+.btn-del{background:none;border:none;color:#e03131;cursor:pointer;font-size:.85rem;padding:4px 8px;border-radius:6px}
+.btn-del:hover{background:#ffeaea}
+
+.filtros{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.filtros select,.filtros input{padding:8px 10px;border:1px solid #e3e8f2;border-radius:8px;font-size:.85rem;background:#fff;color:#17203a}
+.btn-limpar{font-size:.8rem;color:#6b7690;background:none;border:1px solid #e3e8f2;border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn-limpar:hover{border-color:#3160f5;color:#3160f5}
+
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+th{text-align:left;padding:12px 14px;font-size:.75rem;color:#6b7690;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid #e3e8f2}
+td{padding:10px 14px;font-size:.9rem;border-bottom:1px solid #f0f2f7}
+tr:last-child td{border-bottom:none}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.75rem;font-weight:600}
+.tag-receita{background:#e6f9ef;color:#17b26a}
+.tag-gasto{background:#ffeaea;color:#e03131}
+.vazio{text-align:center;padding:40px;color:#6b7690}
+
+.btn-export{font-size:.8rem;color:#6b7690;background:none;border:1px solid #e3e8f2;border-radius:8px;padding:6px 12px;cursor:pointer;margin-left:auto}
+.btn-export:hover{border-color:#3160f5;color:#3160f5}
+</style>
+</head>
+<body>
+
+<h1>Gastos e Receitas</h1>
+
+<div class="resumo">
+  <div class="card"><div class="card-label">Receitas</div><div class="card-valor positivo" id="totalReceitas">R$ 0,00</div></div>
+  <div class="card"><div class="card-label">Gastos</div><div class="card-valor negativo" id="totalGastos">R$ 0,00</div></div>
+  <div class="card"><div class="card-label">Saldo</div><div class="card-valor saldo" id="saldo">R$ 0,00</div></div>
+</div>
+
+<div class="form-row">
+  <input type="text" id="descricao" placeholder="Descrição">
+  <input type="number" id="valor" placeholder="Valor" step="0.01" min="0">
+  <select id="tipo"><option value="gasto">Gasto</option><option value="receita">Receita</option></select>
+  <select id="categoria">
+    <option value="">Categoria</option>
+    <option>Alimentação</option><option>Transporte</option><option>Moradia</option>
+    <option>Saúde</option><option>Lazer</option><option>Trabalho</option>
+    <option>Educação</option><option>Outros</option>
+  </select>
+  <input type="date" id="data">
+  <button class="btn btn-add" onclick="adicionar()">Adicionar</button>
+</div>
+
+<div class="filtros">
+  <select id="filtroTipo" onchange="renderizar()">
+    <option value="">Todos</option><option value="receita">Receitas</option><option value="gasto">Gastos</option>
+  </select>
+  <select id="filtroCategoria" onchange="renderizar()">
+    <option value="">Todas categorias</option>
+  </select>
+  <input type="month" id="filtroMes" onchange="renderizar()">
+  <button class="btn-limpar" onclick="limparFiltros()">Limpar filtros</button>
+  <button class="btn-export" onclick="exportarCSV()">Exportar CSV</button>
+</div>
+
+<table>
+  <thead><tr><th>Data</th><th>Descrição</th><th>Categoria</th><th>Tipo</th><th>Valor</th><th></th></tr></thead>
+  <tbody id="tabela"></tbody>
+</table>
+
+<script>
+const CHAVE = 'gastos_receitas_v1';
+
+// Lançamentos fixos (adicionados via código)
+const FIXOS = [
+  { id: 1, desc: 'Primeira entrada (bruto)', valor: 4800, tipo: 'receita', cat: 'Trabalho', data: '2026-08-23' },
+  { id: 2, desc: 'Custo primeira entrada', valor: 1000, tipo: 'gasto', cat: 'Trabalho', data: '2026-08-23' },
+  { id: 3, desc: 'Segunda entrada (bruto)', valor: 1990, tipo: 'receita', cat: 'Trabalho', data: '2026-08-23' },
+  { id: 4, desc: 'Custo segunda entrada', valor: 540, tipo: 'gasto', cat: 'Trabalho', data: '2026-08-23' },
+  { id: 5, desc: 'Terceira entrada (bruto)', valor: 3929, tipo: 'receita', cat: 'Trabalho', data: '2026-08-23' },
+  { id: 6, desc: 'Custo terceira entrada', valor: 859, tipo: 'gasto', cat: 'Trabalho', data: '2026-08-23' },
+];
+
+function carregarLocal() {
+  try { return JSON.parse(localStorage.getItem(CHAVE)) || []; }
+  catch { return []; }
+}
+
+function carregar() {
+  const locais = carregarLocal();
+  const idsLocais = new Set(locais.map(e => e.id));
+  const removidos = new Set(JSON.parse(localStorage.getItem(CHAVE + '_rem')) || []);
+  const fixosFiltrados = FIXOS.filter(e => !idsLocais.has(e.id) && !removidos.has(e.id));
+  return [...fixosFiltrados, ...locais];
+}
+
+function salvar(lista) { localStorage.setItem(CHAVE, JSON.stringify(lista)); }
+
+function fmt(v) { return 'R$ ' + v.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+
+function fmtData(d) {
+  if (!d) return '-';
+  const [a, m, dia] = d.split('-');
+  return dia + '/' + m + '/' + a;
+}
+
+function adicionar() {
+  const desc = document.getElementById('descricao').value.trim();
+  const valor = parseFloat(document.getElementById('valor').value);
+  const tipo = document.getElementById('tipo').value;
+  const cat = document.getElementById('categoria').value || 'Outros';
+  const data = document.getElementById('data').value || new Date().toISOString().slice(0, 10);
+
+  if (!desc || isNaN(valor) || valor <= 0) { alert('Preencha descrição e valor.'); return; }
+
+  const lista = carregar();
+  lista.push({ id: Date.now(), desc, valor, tipo, cat, data });
+  salvar(lista);
+
+  document.getElementById('descricao').value = '';
+  document.getElementById('valor').value = '';
+  document.getElementById('categoria').value = '';
+  renderizar();
+}
+
+function remover(id) {
+  // se for fixo, marca como removido
+  if (FIXOS.some(e => e.id === id)) {
+    const rem = JSON.parse(localStorage.getItem(CHAVE + '_rem')) || [];
+    rem.push(id);
+    localStorage.setItem(CHAVE + '_rem', JSON.stringify(rem));
+  }
+  const lista = carregarLocal().filter(e => e.id !== id);
+  salvar(lista);
+  renderizar();
+}
+
+function filtrar() {
+  let lista = carregar();
+  const tipo = document.getElementById('filtroTipo').value;
+  const cat = document.getElementById('filtroCategoria').value;
+  const mes = document.getElementById('filtroMes').value;
+
+  if (tipo) lista = lista.filter(e => e.tipo === tipo);
+  if (cat) lista = lista.filter(e => e.cat === cat);
+  if (mes) lista = lista.filter(e => e.data && e.data.startsWith(mes));
+
+  return lista;
+}
+
+function renderizar() {
+  const todos = carregar();
+  const lista = filtrar();
+
+  // totais sempre do total, não do filtro
+  const receitas = todos.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
+  const gastos = todos.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
+
+  document.getElementById('totalReceitas').textContent = fmt(receitas);
+  document.getElementById('totalGastos').textContent = fmt(gastos);
+  const saldoEl = document.getElementById('saldo');
+  const saldo = receitas - gastos;
+  saldoEl.textContent = fmt(Math.abs(saldo));
+  if (saldo < 0) { saldoEl.textContent = '- ' + saldoEl.textContent; saldoEl.className = 'card-valor negativo'; }
+  else { saldoEl.className = 'card-valor saldo'; }
+
+  // categorias no filtro
+  const cats = [...new Set(todos.map(e => e.cat).filter(Boolean))].sort();
+  const selCat = document.getElementById('filtroCategoria');
+  const catAtual = selCat.value;
+  selCat.innerHTML = '<option value="">Todas categorias</option>' + cats.map(c => `<option${c === catAtual ? ' selected' : ''}>${c}</option>`).join('');
+
+  // tabela
+  const tbody = document.getElementById('tabela');
+  if (!lista.length) { tbody.innerHTML = '<tr><td colspan="6" class="vazio">Nenhum lançamento.</td></tr>'; return; }
+
+  lista.sort((a, b) => (b.data || '').localeCompare(a.data || '') || b.id - a.id);
+
+  tbody.innerHTML = lista.map(e => `<tr>
+    <td>${fmtData(e.data)}</td>
+    <td>${e.desc}</td>
+    <td>${e.cat || '-'}</td>
+    <td><span class="tag tag-${e.tipo}">${e.tipo === 'receita' ? 'Receita' : 'Gasto'}</span></td>
+    <td style="font-weight:600;color:${e.tipo === 'receita' ? '#17b26a' : '#e03131'}">${e.tipo === 'gasto' ? '- ' : ''}${fmt(e.valor)}</td>
+    <td><button class="btn-del" onclick="remover(${e.id})">remover</button></td>
+  </tr>`).join('');
+}
+
+function limparFiltros() {
+  document.getElementById('filtroTipo').value = '';
+  document.getElementById('filtroCategoria').value = '';
+  document.getElementById('filtroMes').value = '';
+  renderizar();
+}
+
+function exportarCSV() {
+  const lista = filtrar();
+  if (!lista.length) { alert('Nada para exportar.'); return; }
+  const linhas = ['Data;Descrição;Categoria;Tipo;Valor'];
+  lista.forEach(e => linhas.push(`${e.data};${e.desc};${e.cat};${e.tipo};${e.valor.toFixed(2).replace('.', ',')}`));
+  const blob = new Blob([linhas.join('\n')], { type: 'text/csv;charset=utf-8;' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'gastos_receitas.csv';
+  a.click();
+}
+
+// data padrão = hoje
+document.getElementById('data').value = new Date().toISOString().slice(0, 10);
+renderizar();
+</script>
+</body>
+</html>

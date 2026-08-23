@@ -3415,5 +3415,113 @@ window.CLIENTES = [
       "ATENÇÃO: Nome no quadro-resumo = 'AMELIA', assinatura GSign = 'AMAELIA' — verificar grafia correta.\n" +
       "Matrícula nº 77.345, Cartório de Registro de Imóveis Leandro Félix, Caldas Novas/GO.\n" +
       "GSign Documento ID: CA85WFGK4N-KC0149M-CVMB1EFDQIN1WE-DEE3R."
+  },
+
+  /* ---------- 65 — WAM — 311018 PRAIAS DO LAGO ECO RESORT, Bloco J / 301 / Cota 10 (Vania 1/2) ---------- */
+  {
+    id: "311018-vania-silva-pdl-j-301-cota-10",
+    nome: "VANIA SILVA CORDEIRO DOS SANTOS",
+    cpf: "325.127.348-54",
+    rg: "43251077 - SSP/SP",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "EDIVALDO DA SILVA LIRA", cpf: "413.694.128-51", rg: "53151652 - SSP/SP", email: "Edivaldosilvasp@hotmail.com" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "J",
+    apartamento: "301",
+    andar: "3",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 4400.00,
+    valorTotal: 50846.75,
+    corretagem: 4400.00,
+    sinal: 200.00,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 4, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 525.53, forma: "Boleto", vencimento: "2027-01-15" },
+      { tipo: "Intermediação", qtd: 1, valor: 1500.00, forma: "Depósito Bancário/Transferência Eletrônica", vencimento: "2026-08-16" },
+      { tipo: "Intermediação", qtd: 1, valor: 2900.00, forma: "Cartão de Débito", vencimento: "2026-08-16" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.500,00 depósito + 1x R$ 2.900,00 cartão débito (intermediação) + 4x R$ 50,00 boleto (cota entrada)",
+    dataAssinatura: "2026-08-16",
+    telefone: "(11) 96246-1162",
+    email: "vaniacordeiro22@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/311018-vania-silva-pdl-j-301-cota-10--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 2 — mesma adquirente (Vania Silva Cordeiro dos Santos) com 2 contratos Praias do Lago.\n" +
+      "VALOR PAGO = R$ 4.400,00 — 1x R$ 1.500,00 depósito/transferência + 1x R$ 2.900,00 cartão de débito (intermediação).\n" +
+      "DEVOLUÇÃO: Reembolso — instrumentos principais depósito + cartão débito.\n" +
+      "Preço da cota (sem intermediação): R$ 46.446,75. Intermediação: R$ 4.400,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Cota entrada: 4x R$ 50,00 boleto (1ª 15/09/2026) — NÃO PAGO. Cota saldo: 88x R$ 525,53 boleto (1ª 15/01/2027) — NÃO PAGO.\n" +
+      "Contrato assinado em Caldas Novas/GO em 16/08/2026 — DENTRO DO PRAZO DE 7 DIAS (vence 23/08/2026, último dia HOJE).\n" +
+      "Cônjuge: Edivaldo da Silva Lira, CPF 413.694.128-51, empresário, nasc 11/10/1991.\n" +
+      "Profissão: Analista. Nascimento: 12/05/1983. Não conheceu o empreendimento.\n" +
+      "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
+      "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
+      "GSign Documento ID: ZM7KB5UKXC-R588YW9-14FBX45ZTBP958-YD3LN. Contrato nº 311018."
+  },
+
+  /* ---------- 66 — WAM — 311001 PRAIAS DO LAGO ECO RESORT, Bloco J / 303 / Cota 07 (Vania 2/2) ---------- */
+  {
+    id: "311001-vania-silva-pdl-j-303-cota-07",
+    nome: "VANIA SILVA CORDEIRO DOS SANTOS",
+    cpf: "325.127.348-54",
+    rg: "43251077 - SSP/SP",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "EDIVALDO DA SILVA LIRA", cpf: "413.694.128-51", rg: "53151652 - SSP/SP", email: "Edivaldosilvasp@hotmail.com" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "J",
+    apartamento: "303",
+    andar: "3",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 4400.00,
+    valorTotal: 50846.75,
+    corretagem: 4400.00,
+    sinal: 200.00,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 4, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 525.53, forma: "Boleto", vencimento: "2027-01-15" },
+      { tipo: "Intermediação", qtd: 1, valor: 1500.00, forma: "Depósito Bancário/Transferência Eletrônica", vencimento: "2026-08-16" },
+      { tipo: "Intermediação", qtd: 1, valor: 2900.00, forma: "Cartão de Débito", vencimento: "2026-08-16" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.500,00 depósito + 1x R$ 2.900,00 cartão débito (intermediação) + 4x R$ 50,00 boleto (cota entrada)",
+    dataAssinatura: "2026-08-16",
+    telefone: "(11) 96246-1162",
+    email: "vaniacordeiro22@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/311001-vania-silva-pdl-j-303-cota-07--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 2 — mesma adquirente (Vania Silva Cordeiro dos Santos) com 2 contratos Praias do Lago.\n" +
+      "VALOR PAGO = R$ 4.400,00 — 1x R$ 1.500,00 depósito/transferência + 1x R$ 2.900,00 cartão de débito (intermediação).\n" +
+      "DEVOLUÇÃO: Reembolso — instrumentos principais depósito + cartão débito.\n" +
+      "Preço da cota (sem intermediação): R$ 46.446,75. Intermediação: R$ 4.400,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Cota entrada: 4x R$ 50,00 boleto (1ª 15/09/2026) — NÃO PAGO. Cota saldo: 88x R$ 525,53 boleto (1ª 15/01/2027) — NÃO PAGO.\n" +
+      "Contrato assinado em Caldas Novas/GO em 16/08/2026 — DENTRO DO PRAZO DE 7 DIAS (vence 23/08/2026, último dia HOJE).\n" +
+      "Cônjuge: Edivaldo da Silva Lira, CPF 413.694.128-51, empresário, nasc 11/10/1991.\n" +
+      "Profissão: Analista. Nascimento: 12/05/1983. Não conheceu o empreendimento.\n" +
+      "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
+      "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
+      "GSign Documento ID: L68IMNZGXM-BS16B4N-0TL0RWQJUAPO4F-IC1DM. Contrato nº 311001."
   }
 ];
