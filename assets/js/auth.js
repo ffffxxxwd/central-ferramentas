@@ -8,7 +8,7 @@
 (function () {
   "use strict";
 
-  var HASH = "d9f10aa346edcced1c37f82e25dc484d28f37d8f94463d81b6d204ba620f234a";
+  var HASH = "ce4eab09d4055a881382ddda1b3d9fad36e09ffd5161f3b3cf24d71ac8bc1c16";
   var KEY  = "cf_auth";
 
   if (sessionStorage.getItem(KEY) === "1") return;     // já autenticado nesta aba
