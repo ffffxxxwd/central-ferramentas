@@ -1,0 +1,311 @@
+/* ============================================================
+   Termo de Distrato — editor
+   ============================================================ */
+* { box-sizing: border-box; }
+
+:root {
+  --brand: #15324e;       /* azul GAV */
+  --brand-600: #0f2740;
+  --accent: #2f6bff;
+  --bg: #eef1f7;
+  --surface: #ffffff;
+  --border: #dde3ee;
+  --text: #17203a;
+  --muted: #6b7690;
+  --radius: 12px;
+}
+
+html, body { margin: 0; height: 100%; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Barra superior ---------- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+.toolbar__title { display: flex; align-items: center; gap: 12px; }
+.toolbar__icon {
+  width: 42px; height: 42px; border-radius: 11px;
+  background: var(--brand); color: #fff;
+  display: grid; place-items: center; font-size: 20px;
+}
+.toolbar__title strong { display: block; font-size: 16px; }
+.toolbar__title small { color: var(--muted); font-size: 12.5px; }
+.toolbar__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+.btn:hover { background: var(--bg); }
+.btn-primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+.btn-primary:hover { background: var(--brand-600); }
+.btn.ativo { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn-ler { background: #128c3e; border-color: #128c3e; color: #fff; }
+.btn-ler:hover { background: #0e7333; }
+.btn-ler:disabled { opacity: .7; cursor: default; }
+
+/* Barra de edição */
+.edit-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background: #eef3ff;
+  border-bottom: 1px solid #d6e0f7;
+  font-size: 13px;
+  color: #2c3a5a;
+}
+.edit-bar__group { display: flex; align-items: center; gap: 6px; }
+.edit-bar__group > span { font-weight: 600; }
+.edit-bar__group button,
+.edit-bar__linha-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--text);
+}
+.edit-bar__group button { width: 30px; height: 30px; font-size: 16px; line-height: 1; }
+.edit-bar__group .fmt-b { font-weight: 800; }
+.edit-bar__group .fmt-i { font-style: italic; font-family: Georgia, serif; }
+.edit-bar__group .fmt-u { text-decoration: underline; }
+.edit-bar__group select {
+  height: 30px; border: 1px solid var(--border); border-radius: 7px;
+  font-family: inherit; font-size: 13px; padding: 0 6px; background: #fff; cursor: pointer;
+}
+.edit-bar__linha-btn { padding: 7px 12px; font-size: 12.5px; font-weight: 600; }
+.edit-bar__group button:hover,
+.edit-bar__linha-btn:hover { background: var(--bg); border-color: var(--accent); }
+
+/* Linha selecionada no modo edição */
+.linha-ativa { outline: 2px dashed var(--accent); outline-offset: 4px; border-radius: 3px; }
+
+/* ---------- Layout ---------- */
+.layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  min-height: 0;
+}
+
+/* ---------- Formulário ---------- */
+.form-col {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 18px 18px 40px;
+}
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0 0 16px;
+  padding: 14px 16px 6px;
+}
+legend {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; color: var(--brand);
+  padding: 0 8px;
+}
+.field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+.field > span { font-size: 12.5px; font-weight: 600; color: #3a4666; }
+.field > span small { font-weight: 400; color: var(--muted); }
+.field input, .field select {
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text);
+  background: #fff;
+  width: 100%;
+}
+.field input:focus, .field select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(47,107,255,.12);
+}
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* Sliders (ajustes do logo) */
+.field-range { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.field-range > span { font-size: 12.5px; font-weight: 600; color: #3a4666; display: flex; justify-content: space-between; }
+.field-range > span b { color: var(--accent); font-weight: 700; }
+.field-range input[type="range"] { width: 100%; accent-color: var(--brand); }
+
+/* Bloco cônjuge */
+.conjuge-toggle {
+  background: #f4f7ff;
+  border: 1px solid #d6e0f7;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+}
+.check { display: flex; align-items: flex-start; gap: 9px; cursor: pointer; font-size: 13px; color: #2c3a5a; line-height: 1.4; }
+.check input { margin-top: 2px; width: 16px; height: 16px; accent-color: var(--brand); flex-shrink: 0; }
+.conjuge-campos {
+  border-left: 3px solid var(--accent);
+  padding-left: 12px;
+  margin: 0 0 14px;
+}
+
+/* ---------- Coluna de preview ---------- */
+.preview-col {
+  overflow: auto;
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---------- A FOLHA (documento A4) ---------- */
+.folha {
+  background: #fff;
+  width: 210mm;
+  flex-shrink: 0;          /* mantém 210mm (não encolhe no flex) -> PDF sai em proporção A4 */
+  min-height: 297mm;      /* nunca menor que 1 página, mas cresce livre ao editar */
+  padding: 20mm 22mm;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(16,24,43,.18);
+  color: #000;
+  font-family: "Calibri", "Carlito", "Segoe UI", system-ui, Arial, sans-serif;
+  font-size: 11.5pt;
+  line-height: 1.5;
+}
+.doc-inner { transform-origin: top left; }
+
+/* Marca visual do fim da página 1 (aparece só se o conteúdo passar do limite) */
+.marca-pagina {
+  position: absolute;
+  left: 0; right: 0; top: 297mm;
+  border-top: 2px dashed #e24b4a;
+  pointer-events: none;
+}
+.marca-pagina span {
+  position: absolute; right: 6px; top: -10px;
+  font-size: 10px; color: #e24b4a; background: #fff; padding: 0 5px;
+}
+.folha[contenteditable="true"] .doc-p,
+.folha[contenteditable="true"] .doc-title,
+.folha[contenteditable="true"] .doc-rodape { cursor: text; }
+.folha[contenteditable="true"] { outline: none; }
+
+.doc-logo { text-align: right; }
+.doc-logo img { height: 62px; width: auto; }
+.doc-rule { border: none; border-top: 2px solid #111; margin: 6px 0 18px; }
+
+.doc-title {
+  text-align: center;
+  font-size: 12.5pt;
+  font-weight: 700;
+  margin: 0 0 18px;
+  line-height: 1.35;
+}
+
+.doc-p { margin: 0 0 13px; text-align: justify; }
+.doc-p--bold { font-weight: 700; }
+.up { text-transform: uppercase; }
+
+/* Chave PIX em destaque */
+.doc-pix { font-size: 12.5pt; margin-top: 10px; }
+.doc-pix strong { font-weight: 700; }
+.pix-valor {
+  font-weight: 700;
+  display: inline-block;
+  min-width: 160px;
+  border-bottom: 1.5px solid #555;
+  padding: 0 6px 1px;
+}
+
+/* Bloco das 3 opções (Estorno / Reembolso / Cheque) */
+.doc-opcoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px 16px;
+  margin: 4px 0 16px;
+}
+.doc-opcao {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.doc-opcao span:first-child { white-space: nowrap; }
+.doc-opcao.ativa { font-weight: 700; }
+.mark { font-weight: 700; }
+/* modo normal: opções clicáveis para marcar a forma de reembolso */
+body:not(.modo-edicao) .doc-opcao:hover { background: #eef3ff; box-shadow: 0 0 0 5px #eef3ff; }
+/* modo edição: tudo vira texto/arrastável */
+body.modo-edicao .doc-opcao { cursor: text; }
+body.modo-edicao #docLogo { cursor: move; }
+body.modo-edicao #docLogo:hover { outline: 2px dashed var(--accent); outline-offset: 4px; }
+
+/* Assinaturas (uma ou duas) */
+.doc-assinaturas {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+}
+.doc-assinatura { text-align: center; width: 100%; }
+.doc-assinatura__linha { width: 62%; margin: 0 auto 6px; border-top: 1px solid #000; }
+.doc-assinatura__nome { font-weight: 700; font-size: 11pt; }
+
+.doc-rodape { margin-top: 40px; text-align: center; font-size: 8.5pt; color: #222; }
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 980px) {
+  .layout { grid-template-columns: 1fr; }
+  .form-col { border-right: none; border-bottom: 1px solid var(--border); max-height: 46vh; }
+}
+
+/* ---------- IMPRESSÃO / PDF ---------- */
+@media print {
+  @page { size: A4; margin: 0; }
+  html, body { background: #fff !important; }
+  .no-print { display: none !important; }
+  .layout { display: block; }
+  .preview-col { display: block; padding: 0; overflow: visible; }
+  .folha {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    overflow: hidden;
+    box-shadow: none !important;
+    outline: none !important;
+    margin: 0 auto;
+    padding: 20mm 22mm;
+  }
+  .doc-opcao { cursor: default; background: none !important; box-shadow: none !important; }
+  .linha-ativa { outline: none !important; }
+  .marca-pagina { display: none !important; }
+}

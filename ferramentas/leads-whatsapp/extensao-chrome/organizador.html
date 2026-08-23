@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leads do WhatsApp</title>
+  <link rel="stylesheet" href="organizador.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="app-title">
+        <h1>Leads do WhatsApp</h1>
+        <p class="sub">Salvos aqui, do seu jeito.</p>
+      </div>
+      <div class="app-actions">
+        <button class="btn btn-primary" data-acao="novo">Novo</button>
+        <button class="btn" id="menuBtn" data-acao="menu">Mais &#9662;</button>
+        <div class="menu-pop" id="menuPop">
+          <button data-acao="tema">Alternar tema claro/escuro</button>
+          <div class="sep"></div>
+          <button data-acao="export-json">Exportar backup (.json)</button>
+          <button data-acao="import-json">Importar backup (.json)</button>
+          <button data-acao="export-csv">Exportar contatos (.csv)</button>
+          <div class="sep"></div>
+          <button data-acao="exemplos">Carregar exemplos</button>
+          <button class="danger" data-acao="limpar">Apagar tudo</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="quickbar">
+      <input id="quick" type="text" placeholder="Colar rápido: número (ou Nome 11 99999-8888) e Enter" />
+      <button class="btn btn-primary" data-acao="quick-add">Add</button>
+    </div>
+
+    <div class="toolbar">
+      <div class="tabs" id="tabs"></div>
+      <div class="search"><input id="busca" type="search" placeholder="Buscar..." /></div>
+    </div>
+
+    <div class="filtros" id="filtros"></div>
+
+    <main id="view"></main>
+  </div>
+
+  <div class="drawer-overlay" id="drawerOverlay" data-acao="fechar-drawer"></div>
+  <aside class="drawer" id="drawer"></aside>
+
+  <input type="file" id="fileInput" accept="application/json,.json" style="display:none" />
+  <div class="toast" id="toast"></div>
+
+  <script src="organizador.js"></script>
+</body>
+</html>

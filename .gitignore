@@ -1,0 +1,11 @@
+# Claude / ferramentas de dev
+.claude/
+CLAUDE.md
+CONTEXTO-CLAUDE.md
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

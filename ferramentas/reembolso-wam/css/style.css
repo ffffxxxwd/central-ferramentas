@@ -1,0 +1,369 @@
+:root {
+  --verde: #006800;
+  --verde-escuro: #024702;
+  --verde-claro: #e6f2e6;
+  --texto: #23282b;
+  --texto-suave: #6b7279;
+  --borda: #e6e9ec;
+  --fundo: #ffffff;
+  --fundo-suave: #f6f8f9;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 15px; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a { color: var(--verde); text-decoration: none; }
+a:hover { color: var(--verde-escuro); text-decoration: underline; }
+
+/* ===== Navbar ===== */
+.site-nav {
+  background: #fff;
+  border-bottom: 1px solid var(--borda);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.site-nav .navbar-brand img { display: block; }
+
+.site-nav .nav-link {
+  color: #3a4045;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+}
+
+.site-nav .nav-link:hover { color: var(--verde); text-decoration: none; }
+
+.site-nav .nav-link.active {
+  color: var(--verde);
+  background: var(--verde-claro);
+}
+
+.btn-nav { font-weight: 600; }
+
+.btn-success {
+  background-color: var(--verde);
+  border-color: var(--verde);
+  font-weight: 600;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: var(--verde-escuro);
+  border-color: var(--verde-escuro);
+}
+.btn-outline-success {
+  color: var(--verde);
+  border-color: var(--verde);
+  font-weight: 600;
+}
+.btn-outline-success:hover {
+  background-color: var(--verde);
+  border-color: var(--verde);
+}
+
+/* ===== Cabeçalho da página ===== */
+.page-hero {
+  background: var(--fundo-suave);
+  border-bottom: 1px solid var(--borda);
+  padding: 2.5rem 0 2.75rem;
+  text-align: center;
+}
+
+.page-hero__eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+}
+
+.page-hero__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1f22;
+  margin: 0 0 0.4rem;
+}
+
+.page-hero__text {
+  color: var(--texto-suave);
+  font-size: 1.02rem;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+/* ===== Painel de conteúdo ===== */
+.main-wrap {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.panel {
+  max-width: 840px;
+  margin: -3.75rem auto 0;
+  background: #fff;
+  border: 1px solid var(--borda);
+  border-radius: 1rem;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.07);
+  padding: 2rem 2rem 2.25rem;
+}
+
+.panel__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1f22;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.form-label { font-weight: 600; color: #3a4045; }
+.opcional { color: var(--texto-suave); font-weight: 400; font-size: 0.85em; }
+
+.form-control, .form-select {
+  border-color: #d7dde1;
+  padding: 0.55rem 0.75rem;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 0.2rem rgba(0, 104, 0, 0.12);
+}
+
+.input-group-text {
+  font-weight: 600;
+  background-color: #f1f5f1;
+  color: var(--verde-escuro);
+  border-color: #d7dde1;
+}
+
+label.error {
+  color: #dc3545;
+  font-size: 0.85em;
+  margin-top: 0.25rem;
+  display: block;
+}
+.form-control.is-invalid, .form-select.is-invalid { border-color: #dc3545; }
+
+/* ===== Barra de controle (status) — fora da captura ===== */
+.control-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  background: var(--fundo-suave);
+  border: 1px solid var(--borda);
+  border-radius: 0.7rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.control-bar__status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.control-bar__label {
+  font-weight: 600;
+  color: #3a4045;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.control-bar__status .form-select { width: auto; min-width: 200px; }
+
+.control-bar__hint {
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ===== Comprovante (área capturada) ===== */
+.reembolso-sucesso { max-width: 620px; margin: 0 auto; }
+
+.comprovante {
+  border: 1px solid var(--borda);
+  border-radius: 0.9rem;
+  padding: 1.9rem 1.75rem 1.6rem;
+  background: #fff;
+}
+
+.comprovante__topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.comprovante__logo { height: 34px; width: auto; }
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: var(--verde-claro);
+  color: var(--verde);
+}
+
+.status-badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.comprovante__check {
+  width: 62px;
+  height: 62px;
+  margin: 0.25rem auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: var(--verde);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(0, 104, 0, 0.12);
+}
+
+.comprovante__titulo {
+  text-align: center;
+  color: #1a1f22;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 0.15rem;
+}
+
+.comprovante__sub {
+  text-align: center;
+  color: var(--texto-suave);
+  font-size: 0.86rem;
+  margin: 0 0 1.2rem;
+}
+
+.comprovante__valor {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--verde);
+  letter-spacing: 0.5px;
+  margin-bottom: 1.4rem;
+}
+
+.comprovante__linhas { margin: 0; border-top: 1px dashed #d8dee2; }
+
+.comprovante__linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.62rem 0.15rem;
+  border-bottom: 1px dashed #d8dee2;
+}
+
+.comprovante__linha dt { color: var(--texto-suave); font-weight: 500; font-size: 0.9rem; margin: 0; }
+.comprovante__linha dd {
+  color: #23282b;
+  font-weight: 600;
+  font-size: 0.94rem;
+  margin: 0;
+  text-align: right;
+  word-break: break-word;
+}
+
+.comprovante__destaque { color: var(--verde) !important; letter-spacing: 0.5px; }
+
+.comprovante__aviso {
+  margin: 1.2rem 0 0;
+  padding: 0.85rem 1rem;
+  background: var(--fundo-suave);
+  border-radius: 0.6rem;
+  color: #4a5258;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.comprovante__cnpj {
+  margin: 1rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--borda);
+  text-align: center;
+  font-size: 0.74rem;
+  letter-spacing: 0.3px;
+  color: #9aa1a7;
+}
+
+/* ===== Ações do comprovante ===== */
+.comprovante__acoes {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+.comprovante__acoes .btn {
+  flex: 1 1 150px;
+  padding: 0.6rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.comprovante__acoes .btn-light {
+  border: 1px solid var(--borda);
+  font-weight: 600;
+}
+
+/* ===== Rodapé ===== */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid var(--borda);
+  padding: 1.75rem 0;
+  text-align: center;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+.site-footer p { margin: 0.15rem 0; }
+.site-footer__note { font-size: 0.78rem; color: #9aa1a7; margin-top: 0.4rem; }
+
+/* ===== Responsivo ===== */
+@media (max-width: 767px) {
+  .panel { margin-top: -2.5rem; padding: 1.5rem 1.15rem 1.75rem; border-radius: 0.85rem; }
+  .page-hero { padding: 2rem 0 3rem; }
+  .page-hero__title { font-size: 1.6rem; }
+  .comprovante { padding: 1.5rem 1.15rem 1.4rem; }
+  .comprovante__acoes { flex-direction: column; }
+  .comprovante__acoes .btn { flex: 1 1 auto; }
+  .control-bar { flex-direction: column; align-items: stretch; }
+  .control-bar__status { width: 100%; }
+  .control-bar__status .form-select { flex: 1; min-width: 0; }
+}
+
+@media (max-width: 400px) {
+  .comprovante__topo { flex-direction: column; gap: 0.75rem; align-items: flex-start; }
+  .comprovante__valor { font-size: 1.95rem; }
+  .comprovante__linha { flex-direction: column; gap: 0.1rem; }
+  .comprovante__linha dd { text-align: left; }
+}
+
+/* ===== Impressão: só o comprovante ===== */
+@media print {
+  .site-nav, .page-hero, .site-footer, #formReembolso, .no-capture { display: none !important; }
+  body { background: #fff; }
+  .main-wrap { padding: 0; }
+  .panel { margin: 0; border: none; box-shadow: none; padding: 0; max-width: 100%; }
+  .comprovante { border: none; }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Central de Reembolsos | WAM</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="apple-touch-icon" href="images/icon.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon.webp">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/sweetalert2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Navbar (topo) ===== -->
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://wamcancelamentos.com.br/">
+        <img src="images/logo.png" alt="WAM" height="42">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Reembolso 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="reembolso2.html">Reembolso 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Cabeçalho da página ===== -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="page-hero__eyebrow">Área administrativa</span>
+      <h1 class="page-hero__title">Central de Reembolsos</h1>
+      <p class="page-hero__text">Preencha os dados do cliente e o valor para emitir o comprovante de reembolso.</p>
+    </div>
+  </header>
+
+  <!-- ===== Conteúdo ===== -->
+  <main class="container main-wrap">
+    <div class="panel">
+
+      <form id="formReembolso" method="POST" autocomplete="off" novalidate="">
+        <h2 class="panel__title">Dados do reembolso</h2>
+
+        <div class="row">
+          <div class="col-md-7 mb-3">
+            <label for="cliente" class="form-label">Nome do cliente</label>
+            <input type="text" class="form-control" name="cliente" id="cliente" placeholder="Nome completo do cliente" required="">
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="cpf" class="form-label">CPF <span class="opcional">(opcional)</span></label>
+            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="000.000.000-00" inputmode="numeric">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7 mb-3">
+            <label for="empreendimento" class="form-label">Empreendimento <span class="opcional">(opcional)</span></label>
+            <select class="form-select" name="empreendimento" id="empreendimento">
+              <option value="">Selecione um empreendimento</option>
+            </select>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="cota" class="form-label">Cota(s) <span class="opcional">(opcional)</span></label>
+            <input type="text" class="form-control" name="cota" id="cota" placeholder="Informe a(s) cota(s)">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="valor" class="form-label">Valor do reembolso</label>
+            <div class="input-group">
+              <span class="input-group-text">R$</span>
+              <input type="text" class="form-control" name="valor" id="valor" placeholder="0,00" inputmode="numeric" required="">
+            </div>
+          </div>
+          <div class="col-md-7 mb-3">
+            <label for="forma" class="form-label">Forma de reembolso</label>
+            <select class="form-select" name="forma" id="forma" required="">
+              <option value="">Selecione a forma</option>
+              <option value="PIX">PIX</option>
+              <option value="Transferência bancária">Transferência bancária</option>
+              <option value="Estorno no cartão">Estorno no cartão</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Campos condicionais: PIX -->
+        <div class="row forma-campos" id="camposPix" hidden>
+          <div class="col-md-12 mb-3">
+            <label for="chavePix" class="form-label">Chave PIX</label>
+            <input type="text" class="form-control" name="chavePix" id="chavePix" placeholder="CPF, e-mail, telefone ou chave aleatória">
+          </div>
+        </div>
+
+        <!-- Campos condicionais: Transferência bancária -->
+        <div class="row forma-campos" id="camposBanco" hidden>
+          <div class="col-md-6 mb-3">
+            <label for="banco" class="form-label">Banco</label>
+            <input type="text" class="form-control" name="banco" id="banco" placeholder="Ex.: 341 - Itaú">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="agencia" class="form-label">Agência</label>
+            <input type="text" class="form-control" name="agencia" id="agencia" placeholder="0000">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="conta" class="form-label">Conta</label>
+            <input type="text" class="form-control" name="conta" id="conta" placeholder="00000-0">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="protocolo" class="form-label">Protocolo de referência <span class="opcional">(opcional)</span></label>
+            <input type="text" class="form-control" name="protocolo" id="protocolo" placeholder="Ex.: WAM-20260728-1234">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100 py-2 mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="me-2" viewBox="0 0 16 16" aria-hidden="true">
+            <polyline points="3 8 6 11 13 4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          </svg>
+          Efetivar Reembolso
+        </button>
+      </form>
+
+      <!-- ===== Tela de sucesso / comprovante ===== -->
+      <section id="reembolsoSucesso" class="reembolso-sucesso" hidden aria-live="polite">
+
+        <!-- Barra de controle — FORA da área capturada -->
+        <div class="control-bar no-capture">
+          <div class="control-bar__status">
+            <label for="status" class="control-bar__label">Status do reembolso</label>
+            <select id="status" class="form-select">
+              <optgroup label="Aprovado">
+                <option value="Efetivado">Efetivado</option>
+                <option value="Aprovado">Aprovado</option>
+                <option value="Concluído">Concluído</option>
+                <option value="Estornado">Estornado</option>
+              </optgroup>
+              <optgroup label="Em andamento">
+                <option value="Em processamento">Em processamento</option>
+                <option value="Em análise">Em análise</option>
+                <option value="Pendente">Pendente</option>
+              </optgroup>
+              <optgroup label="Não aprovado">
+                <option value="Negado">Negado</option>
+                <option value="Cancelado">Cancelado</option>
+              </optgroup>
+            </select>
+          </div>
+          <span class="control-bar__hint">O status aparece no comprovante, mas este seletor não entra na captura.</span>
+        </div>
+
+        <!-- ÁREA DE REEMBOLSO (esta é a área capturada/impressa) -->
+        <div class="comprovante" id="comprovante">
+          <div class="comprovante__topo">
+            <img class="comprovante__logo" src="data:image/png;base64,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" alt="WAM">
+            <span class="status-badge" id="statusBadge">
+              <span class="status-badge__dot"></span>
+              <span id="statusTexto">Efetivado</span>
+            </span>
+          </div>
+
+          <div class="comprovante__check" id="cpCheck" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <polyline points="4 12 10 18 20 6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            </svg>
+          </div>
+
+          <h2 class="comprovante__titulo" id="cpTitulo">Comprovante de reembolso</h2>
+          <p class="comprovante__sub">Documento gerado eletronicamente.</p>
+
+          <div class="comprovante__valor" id="cpValor">R$ 0,00</div>
+
+          <dl class="comprovante__linhas">
+            <div class="comprovante__linha"><dt>Cliente</dt><dd id="cpCliente">—</dd></div>
+            <div class="comprovante__linha" id="linhaCpf"><dt>CPF</dt><dd id="cpCpf">—</dd></div>
+            <div class="comprovante__linha" id="linhaEmpreendimento"><dt>Empreendimento</dt><dd id="cpEmpreendimento">—</dd></div>
+            <div class="comprovante__linha" id="linhaCota"><dt>Cota(s)</dt><dd id="cpCota">—</dd></div>
+            <div class="comprovante__linha"><dt>Forma de reembolso</dt><dd id="cpForma">—</dd></div>
+            <div class="comprovante__linha" id="linhaDestino"><dt>Destino</dt><dd id="cpDestino">—</dd></div>
+            <div class="comprovante__linha" id="linhaProtocoloRef"><dt>Protocolo de referência</dt><dd id="cpProtocoloRef">—</dd></div>
+            <div class="comprovante__linha"><dt>Protocolo do reembolso</dt><dd id="cpProtocolo" class="comprovante__destaque">—</dd></div>
+            <div class="comprovante__linha"><dt>Data e hora</dt><dd id="cpData">—</dd></div>
+          </dl>
+
+          <p class="comprovante__aviso" id="cpAviso">
+            O valor foi creditado <strong>instantaneamente</strong> na forma selecionada.
+            Guarde este comprovante e o número de protocolo para acompanhamento.
+          </p>
+
+          <p class="comprovante__cnpj">WAM · CNPJ 03.774.432/0002-29</p>
+        </div>
+
+        <!-- Ações — FORA da área capturada -->
+        <div class="comprovante__acoes no-capture">
+          <button type="button" id="btnCapturar" class="btn btn-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="me-2" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            Capturar e copiar
+          </button>
+          <button type="button" id="btnImprimir" class="btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="me-2" viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9" stroke-linecap="round" stroke-linejoin="round"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+            </svg>
+            Imprimir
+          </button>
+          <button type="button" id="btnNovo" class="btn btn-light">Novo reembolso</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__brand"><strong>ALLHANDS LTDA</strong> · CNPJ 49.536.206/0001-20</p>
+      <p class="site-footer__brand"><strong>WAM</strong> · CNPJ 03.774.432/0002-29</p>
+      <p><a href="mailto:contato@wamcancelamentos.com.br">contato@wamcancelamentos.com.br</a> · (62) 3142-5009</p>
+      <p class="site-footer__note">Uso interno — ferramenta de emissão de comprovante de reembolso.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body></html>

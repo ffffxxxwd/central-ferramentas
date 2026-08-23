@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Leads do WhatsApp — Organizador",
+  "version": "1.1.0",
+  "description": "Organiza seus contatos do WhatsApp num painel colado no WhatsApp Web: salva números, etiquetas e observações do seu jeito.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://web.whatsapp.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Leads do WhatsApp"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["wa-capture.js", "panel.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["organizador.html", "organizador.css", "organizador.js"],
+      "matches": ["https://web.whatsapp.com/*"]
+    }
+  ]
+}

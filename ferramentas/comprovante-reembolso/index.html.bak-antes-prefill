@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Central de Reembolsos | GAV</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="apple-touch-icon" href="images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/sweetalert2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Navbar (topo) ===== -->
+  <nav class="navbar navbar-expand-lg site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://gavcancelamentos.com.br/">
+        <img src="images/logo.svg" alt="GAV" height="38">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Reembolso 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="reembolso2.html">Reembolso 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Cabeçalho da página ===== -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="page-hero__eyebrow">Área administrativa</span>
+      <h1 class="page-hero__title">Central de Reembolsos</h1>
+      <p class="page-hero__text">Preencha os dados do cliente e o valor para emitir o comprovante de reembolso.</p>
+    </div>
+  </header>
+
+  <!-- ===== Conteúdo ===== -->
+  <main class="container main-wrap">
+    <div class="panel">
+
+      <form id="formReembolso" method="POST" autocomplete="off" novalidate="">
+        <h2 class="panel__title">Dados do reembolso</h2>
+
+        <div class="row">
+          <div class="col-md-7 mb-3">
+            <label for="cliente" class="form-label">Nome do cliente</label>
+            <input type="text" class="form-control" name="cliente" id="cliente" placeholder="Nome completo do cliente" required="">
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="cpf" class="form-label">CPF <span class="opcional">(opcional)</span></label>
+            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="000.000.000-00" inputmode="numeric">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7 mb-3">
+            <label for="empreendimento" class="form-label">Empreendimento <span class="opcional">(opcional)</span></label>
+            <select class="form-select" name="empreendimento" id="empreendimento">
+              <option value="">Selecione um empreendimento</option>
+            </select>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="cota" class="form-label">Cota(s) <span class="opcional">(opcional)</span></label>
+            <input type="text" class="form-control" name="cota" id="cota" placeholder="Informe a(s) cota(s)">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="valor" class="form-label">Valor do reembolso</label>
+            <div class="input-group">
+              <span class="input-group-text">R$</span>
+              <input type="text" class="form-control" name="valor" id="valor" placeholder="0,00" inputmode="numeric" required="">
+            </div>
+          </div>
+          <div class="col-md-7 mb-3">
+            <label for="forma" class="form-label">Forma de reembolso</label>
+            <select class="form-select" name="forma" id="forma" required="">
+              <option value="">Selecione a forma</option>
+              <option value="PIX">PIX</option>
+              <option value="Transferência bancária">Transferência bancária</option>
+              <option value="Estorno no cartão">Estorno no cartão</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Campos condicionais: PIX -->
+        <div class="row forma-campos" id="camposPix" hidden>
+          <div class="col-md-12 mb-3">
+            <label for="chavePix" class="form-label">Chave PIX</label>
+            <input type="text" class="form-control" name="chavePix" id="chavePix" placeholder="CPF, e-mail, telefone ou chave aleatória">
+          </div>
+        </div>
+
+        <!-- Campos condicionais: Transferência bancária -->
+        <div class="row forma-campos" id="camposBanco" hidden>
+          <div class="col-md-6 mb-3">
+            <label for="banco" class="form-label">Banco</label>
+            <input type="text" class="form-control" name="banco" id="banco" placeholder="Ex.: 341 - Itaú">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="agencia" class="form-label">Agência</label>
+            <input type="text" class="form-control" name="agencia" id="agencia" placeholder="0000">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="conta" class="form-label">Conta</label>
+            <input type="text" class="form-control" name="conta" id="conta" placeholder="00000-0">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="protocolo" class="form-label">Protocolo de referência <span class="opcional">(opcional)</span></label>
+            <input type="text" class="form-control" name="protocolo" id="protocolo" placeholder="Ex.: GAV-20260728-1234">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100 py-2 mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="me-2" viewBox="0 0 16 16" aria-hidden="true">
+            <polyline points="3 8 6 11 13 4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          </svg>
+          Efetivar Reembolso
+        </button>
+      </form>
+
+      <!-- ===== Tela de sucesso / comprovante ===== -->
+      <section id="reembolsoSucesso" class="reembolso-sucesso" hidden aria-live="polite">
+
+        <!-- Barra de controle — FORA da área capturada -->
+        <div class="control-bar no-capture">
+          <div class="control-bar__status">
+            <label for="status" class="control-bar__label">Status do reembolso</label>
+            <select id="status" class="form-select">
+              <optgroup label="Aprovado">
+                <option value="Efetivado">Efetivado</option>
+                <option value="Aprovado">Aprovado</option>
+                <option value="Concluído">Concluído</option>
+                <option value="Estornado">Estornado</option>
+              </optgroup>
+              <optgroup label="Em andamento">
+                <option value="Em processamento">Em processamento</option>
+                <option value="Em análise">Em análise</option>
+                <option value="Pendente">Pendente</option>
+              </optgroup>
+              <optgroup label="Não aprovado">
+                <option value="Negado">Negado</option>
+                <option value="Cancelado">Cancelado</option>
+              </optgroup>
+            </select>
+          </div>
+          <span class="control-bar__hint">O status aparece no comprovante, mas este seletor não entra na captura.</span>
+        </div>
+
+        <!-- ÁREA DE REEMBOLSO (esta é a área capturada/impressa) -->
+        <div class="comprovante" id="comprovante">
+          <div class="comprovante__topo">
+            <img class="comprovante__logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4MCIgaGVpZ2h0PSI0NDciIHZpZXdCb3g9IjAgMCAxMDgwIDQ0NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzI2MDA3XzE5MTE2KSI+CjxtYXNrIGlkPSJtYXNrMF8yNjAwN18xOTExNiIgc3R5bGU9Im1hc2stdHlwZTpsdW1pbmFuY2UiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjAiIHk9IjAiIHdpZHRoPSI4MTMiIGhlaWdodD0iNDQ3Ij4KPHBhdGggZD0iTTAuMTQ1ODEzIDAuODU0MTI2SDgxMi44NDRWNDQ2LjY4N0gwLjE0NTgxM1YwLjg1NDEyNloiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8yNjAwN18xOTExNikiPgo8cGF0aCBkPSJNNTM3LjkzMiAyNjguNjQxTDU3OS4zMTMgMTAwLjk3NEw2NjYuMzMzIDMxMC44ODVDNjE4LjQ5NSAzMDguOTQ4IDU3Ny44MzkgMjkwLjM0NCA1MzcuOTMyIDI2OC42NDFaTTYzNC44MjMgOC4yMzk1NEg1OTQuODA3TDUwMS45MDYgMjQ4LjU2MkM0NTMuNDc0IDIyMS41NDcgNDAzLjI5MiAxOTYuMDA1IDMzOS45NTggMTk2LjAwNUMyOTIuNTU3IDE5Ni4wMDUgMjM3Ljc3MSAyMTAuMTYxIDE3MS4yODYgMjQ4LjMyOFYyNTMuODdDMjA2LjM3NSAyNDIuNzkyIDIzNy4xNTYgMjM4LjQ3OSAyNjUuNDc0IDIzOC40NzlDMjc4LjUxNiAyMzguNDc5IDI5MC45ODQgMjM5LjQ1OCAzMDMuMDI2IDI0MS4xNTZWNDA3LjU4OUMxNTcuNzg2IDQzNy4zNjUgNzcuMTA0MiAzMTEuMjQgNzcuMTA0MiAxNzUuMDczQzc3LjEwNDIgOTYuODkwNiAxMDkuMTE1IDI2LjcwODMgMTg0LjgzMyAyNi43MDgzQzIyMy42MTUgMjYuNzA4MyAyNzkuNjMgNTUuMDI2IDI5Ni4yNSAxMjcuNjY3TDM4Mi40MzIgMTEwLjQzMkMzNjcuNjYxIDUxLjMzMzMgMzE4LjQxMSAwLjg1NDEyNiAyMTYuMjI5IDAuODU0MTI2QzEwMS4xMTUgMC44NTQxMjYgMC4xNTYyNSA5Ni44OTA2IDAuMTU2MjUgMjIzLjA4OUMwLjE1NjI1IDM1MS43NTUgMTAyLjk1OCA0NDYuNTU3IDIxNS42MDkgNDQ2LjU1N0MyODUuMTcyIDQ0Ni41NTcgMzI3LjY0NiA0MjkuOTM3IDM4NS41MSAzOTEuNzY2VjI2NC42MTVDNDE3LjY2MSAyNzcuNzI5IDQ0Ny45OSAyOTMuNTQyIDQ3OS40ODQgMzA2LjU2Mkw0MjcuOTg0IDQzOS43ODZINDk1LjY5OEw1MjQuNjcyIDMyMi4zNzVDNTQ2LjEwNCAzMjguMzA3IDU2OC41ODMgMzMyLjA1MiA1OTIuOTY0IDMzMi4wNTJDNjE2Ljg3NSAzMzIuMDUyIDY0Mi40MDEgMzI4LjQyMiA2NzAuMTg4IDMyMC4xODdMNzE5Ljc3MSA0MzkuNzg2SDgxMi43MjRMNjM0LjgyMyA4LjIzOTU0WiIgZmlsbD0iIzBCMzA2QiIvPgo8L2c+CjxtYXNrIGlkPSJtYXNrMV8yNjAwN18xOTExNiIgc3R5bGU9Im1hc2stdHlwZTpsdW1pbmFuY2UiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjcxNSIgeT0iOCIgd2lkdGg9IjM2NSIgaGVpZ2h0PSI0MzIiPgo8cGF0aCBkPSJNNzE1Ljk0MyA4LjIzOTYySDEwODBWNDM5Ljk5SDcxNS45NDNWOC4yMzk2MloiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMV8yNjAwN18xOTExNikiPgo8bWFzayBpZD0ibWFzazJfMjYwMDdfMTkxMTYiIHN0eWxlPSJtYXNrLXR5cGU6bHVtaW5hbmNlIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSI3MTUiIHk9IjgiIHdpZHRoPSIzNjUiIGhlaWdodD0iNDMyIj4KPHBhdGggZD0iTTEwMTkuNDggOC4yMzk2Mkw5NDIuODM5IDMzNS44MThMODEwLjc2IDguMjM5NjJINzE1Ljk0M0w4OTMuMjYgNDM5LjgzM0g5MjYuNTFMMTA3OS44MiA4LjIzOTYySDEwMTkuNDhaIiBmaWxsPSJ3aGl0ZSIvPgo8L21hc2s+CjxnIG1hc2s9InVybCgjbWFzazJfMjYwMDdfMTkxMTYpIj4KPG1hc2sgaWQ9Im1hc2szXzI2MDA3XzE5MTE2IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iNzE0IiB5PSI3IiB3aWR0aD0iMzY2IiBoZWlnaHQ9IjQzNSI+CjxwYXRoIGQ9Ik0xMDgwIDcuNjY2NzVINzE0LjY2N1Y0NDFIMTA4MFY3LjY2Njc1WiIgZmlsbD0id2hpdGUiLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2szXzI2MDA3XzE5MTE2KSI+CjxtYXNrIGlkPSJtYXNrNF8yNjAwN18xOTExNiIgc3R5bGU9Im1hc2stdHlwZTpsdW1pbmFuY2UiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjcxNSIgeT0iOCIgd2lkdGg9IjM2NSIgaGVpZ2h0PSI0MzIiPgo8cGF0aCBkPSJNNzE1Ljk0MyA4LjIzOTYySDEwNzkuOTZWNDM5Ljk1M0g3MTUuOTQzVjguMjM5NjJaIiBmaWxsPSJ3aGl0ZSIvPgo8L21hc2s+CjxnIG1hc2s9InVybCgjbWFzazRfMjYwMDdfMTkxMTYpIj4KPG1hc2sgaWQ9Im1hc2s1XzI2MDA3XzE5MTE2IiBzdHlsZT0ibWFzay10eXBlOmx1bWluYW5jZSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iNzE1IiB5PSI4IiB3aWR0aD0iMzY1IiBoZWlnaHQ9IjQzMiI+CjxwYXRoIGQ9Ik0xMDE5LjQ4IDguMjM5NjJMOTQyLjgzOSAzMzUuODE4TDgxMC43NiA4LjIzOTYySDcxNS45NDNMODkzLjI2IDQzOS44MzNIOTI2LjUxTDEwNzkuODIgOC4yMzk2MkgxMDE5LjQ4WiIgZmlsbD0id2hpdGUiLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2s1XzI2MDA3XzE5MTE2KSI+CjxwYXRoIGQ9Ik03MTUuOTQzIDguMjM5NjJIMTA3OS44MlY0MzkuNzVINzE1Ljk0M1Y4LjIzOTYyWiIgZmlsbD0iIzBCMzA2QiIvPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8yNjAwN18xOTExNiI+CjxyZWN0IHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjQ0NyIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="GAV">
+            <span class="status-badge" id="statusBadge">
+              <span class="status-badge__dot"></span>
+              <span id="statusTexto">Efetivado</span>
+            </span>
+          </div>
+
+          <div class="comprovante__check" id="cpCheck" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <polyline points="4 12 10 18 20 6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            </svg>
+          </div>
+
+          <h2 class="comprovante__titulo" id="cpTitulo">Comprovante de reembolso</h2>
+          <p class="comprovante__sub">Documento gerado eletronicamente.</p>
+
+          <div class="comprovante__valor" id="cpValor">R$ 0,00</div>
+
+          <dl class="comprovante__linhas">
+            <div class="comprovante__linha"><dt>Cliente</dt><dd id="cpCliente">—</dd></div>
+            <div class="comprovante__linha" id="linhaCpf"><dt>CPF</dt><dd id="cpCpf">—</dd></div>
+            <div class="comprovante__linha" id="linhaEmpreendimento"><dt>Empreendimento</dt><dd id="cpEmpreendimento">—</dd></div>
+            <div class="comprovante__linha" id="linhaCota"><dt>Cota(s)</dt><dd id="cpCota">—</dd></div>
+            <div class="comprovante__linha"><dt>Forma de reembolso</dt><dd id="cpForma">—</dd></div>
+            <div class="comprovante__linha" id="linhaDestino"><dt>Destino</dt><dd id="cpDestino">—</dd></div>
+            <div class="comprovante__linha" id="linhaProtocoloRef"><dt>Protocolo de referência</dt><dd id="cpProtocoloRef">—</dd></div>
+            <div class="comprovante__linha"><dt>Protocolo do reembolso</dt><dd id="cpProtocolo" class="comprovante__destaque">—</dd></div>
+            <div class="comprovante__linha"><dt>Data e hora</dt><dd id="cpData">—</dd></div>
+          </dl>
+
+          <p class="comprovante__aviso" id="cpAviso">
+            O valor foi creditado na forma selecionada, conforme confirmação do adquirente.
+            Guarde este comprovante e o número de protocolo para acompanhamento.
+          </p>
+
+          <p class="comprovante__cnpj">GAV Resorts · CNPJ 40.831.644/0001-46</p>
+        </div>
+
+        <!-- Ações — FORA da área capturada -->
+        <div class="comprovante__acoes no-capture">
+          <button type="button" id="btnCapturar" class="btn btn-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="me-2" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            Capturar e copiar
+          </button>
+          <button type="button" id="btnImprimir" class="btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="me-2" viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9" stroke-linecap="round" stroke-linejoin="round"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+            </svg>
+            Imprimir
+          </button>
+          <button type="button" id="btnNovo" class="btn btn-light">Novo reembolso</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__brand"><strong>GAV Resorts Gestão de Negócios e Participação LTDA</strong> · CNPJ 40.831.644/0001-46</p>
+      <p><a href="mailto:contato@gavcancelamentos.com.br">contato@gavcancelamentos.com.br</a> · (62) 3181-0756</p>
+      <p class="site-footer__note">Uso interno — ferramenta de emissão de comprovante de reembolso.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body></html>

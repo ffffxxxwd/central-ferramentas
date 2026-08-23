@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contratos | Fichas dos clientes</title>
+  <link rel="stylesheet" href="style.css?v=15" />
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header class="toolbar">
+    <div class="toolbar__title">
+      <span class="toolbar__icon">📋</span>
+      <div>
+        <strong>Contratos</strong>
+        <small>Ficha de cada cliente — dados do contrato e valor pago</small>
+      </div>
+    </div>
+    <div class="toolbar__actions">
+      <button type="button" class="btn" id="btnNovo">+ Novo cliente</button>
+      <button type="button" class="btn" id="btnEmail">Gerar mensagem</button>
+      <button type="button" class="btn" id="btnExportar" title="Gera o código do clientes.js com as edições feitas aqui">Exportar clientes.js</button>
+    </div>
+  </header>
+
+  <!-- Resumo -->
+  <section class="resumo" id="resumo"></section>
+
+  <!-- Filtros -->
+  <section class="filtros">
+    <input type="search" id="busca" class="busca" placeholder="Buscar por nome, CPF ou empreendimento..." />
+    <div class="chips" id="chipsStatus">
+      <button type="button" class="chip ativo" data-status="ativos">Em aberto</button>
+      <button type="button" class="chip" data-status="arquivados">Arquivados</button>
+      <button type="button" class="chip" data-status="todos">Todos</button>
+      <button type="button" class="chip" data-status="reembolsos">Reembolsos</button>
+    </div>
+    <div class="chips" id="chipsEmpresa">
+      <button type="button" class="chip ativo" data-empresa="">Todas</button>
+      <button type="button" class="chip" data-empresa="GAV">GAV</button>
+      <button type="button" class="chip" data-empresa="WAM">WAM</button>
+    </div>
+    <span class="contagem" id="contagem"></span>
+    <button type="button" class="btn" id="btnReabrirTodos" hidden>Reabrir todos</button>
+  </section>
+
+  <!-- Grid de clientes -->
+  <main class="grid" id="grid"></main>
+
+  <!-- Painel de detalhe -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__fundo" data-fechar></div>
+    <div class="modal__caixa" role="dialog" aria-modal="true">
+      <header class="modal__topo">
+        <div>
+          <span class="tag" id="mdEmpresa">—</span>
+          <h2 id="mdNome">—</h2>
+        </div>
+        <button type="button" class="fechar" data-fechar aria-label="Fechar">×</button>
+      </header>
+      <div class="modal__corpo" id="mdCorpo"></div>
+      <footer class="modal__rodape" id="mdRodape"></footer>
+    </div>
+  </div>
+
+  <script src="clientes.js?v=81"></script>
+  <script src="app.js?v=39"></script>
+</body>
+</html>

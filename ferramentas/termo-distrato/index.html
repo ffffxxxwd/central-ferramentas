@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termo de Distrato | GAV</title>
+  <link rel="stylesheet" href="style.css?v=15" />
+</head>
+<body>
+
+  <!-- Barra superior da ferramenta -->
+  <header class="toolbar no-print">
+    <div class="toolbar__title">
+      <span class="toolbar__icon">📄</span>
+      <div>
+        <strong>Termo de Distrato</strong>
+        <small>Preencha os dados e gere o PDF do documento</small>
+      </div>
+    </div>
+    <div class="toolbar__actions">
+      <button type="button" class="btn btn-ler" id="btnLerContrato">📄 Ler contrato (PDF)</button>
+      <button type="button" class="btn" id="btnEdit">✏️ Editar documento</button>
+      <button type="button" class="btn" id="btnBase" title="Desfaz suas mudanças no texto e volta o documento pro modelo base (mantém os dados do formulário)">↺ Documento base</button>
+      <button type="button" class="btn" id="btnLimpar">Limpar</button>
+      <button type="button" class="btn btn-primary" id="btnPdf">🖨️ Gerar PDF</button>
+      <input type="file" id="fileContrato" accept="application/pdf,.pdf" hidden />
+    </div>
+  </header>
+
+  <!-- Barra de edição (aparece no modo "Editar documento") -->
+  <div class="edit-bar no-print" id="editBar" hidden>
+    <span class="edit-bar__hint">✍️ Clique e edite qualquer texto · arraste o logo · selecione um trecho para formatar:</span>
+    <div class="edit-bar__group">
+      <button type="button" data-fmt="bold" title="Negrito" class="fmt-b">N</button>
+      <button type="button" data-fmt="italic" title="Itálico" class="fmt-i">I</button>
+      <button type="button" data-fmt="underline" title="Sublinhado" class="fmt-u">S</button>
+    </div>
+    <div class="edit-bar__group">
+      <span>Fonte</span>
+      <select id="selFonte">
+        <option value="">tam.</option>
+        <option>8</option><option>9</option><option>10</option><option>11</option>
+        <option>12</option><option>13</option><option>14</option><option>16</option>
+        <option>18</option><option>20</option><option>24</option><option>28</option>
+      </select>
+    </div>
+    <div class="edit-bar__group">
+      <span>Espaço acima</span>
+      <button type="button" data-esp="marginTop" data-delta="-8">−</button>
+      <button type="button" data-esp="marginTop" data-delta="8">＋</button>
+    </div>
+    <div class="edit-bar__group">
+      <span>Espaço abaixo</span>
+      <button type="button" data-esp="marginBottom" data-delta="-8">−</button>
+      <button type="button" data-esp="marginBottom" data-delta="8">＋</button>
+    </div>
+    <button type="button" class="edit-bar__linha-btn" id="btnAddLinha">＋ Linha em branco</button>
+    <button type="button" class="edit-bar__linha-btn" id="btnTrocarLogo">🖼️ Trocar logo</button>
+    <input type="file" id="fileLogo" accept="image/*" hidden />
+  </div>
+
+  <div class="layout">
+
+    <!-- ================= FORMULÁRIO ================= -->
+    <aside class="form-col no-print">
+      <form id="form" autocomplete="off">
+
+        <fieldset>
+          <legend>Dados do cliente</legend>
+
+          <label class="field field--full">
+            <span>Nome do cliente</span>
+            <input type="text" id="f_nome" placeholder="Nome completo do cliente" />
+          </label>
+
+          <div class="row">
+            <label class="field">
+              <span>Nacionalidade</span>
+              <input type="text" id="f_nac" value="brasileiro(a)" />
+            </label>
+            <label class="field">
+              <span>Estado civil</span>
+              <select id="f_ec">
+                <option>Solteiro(a)</option>
+                <option>Casado(a)</option>
+                <option>Divorciado(a)</option>
+                <option>Viúvo(a)</option>
+                <option>União estável</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Bloco cônjuge: aparece só em Casado(a) / União estável -->
+          <div class="conjuge-toggle" id="blocoConjToggle" hidden>
+            <label class="check">
+              <input type="checkbox" id="f_temConj" />
+              <span>Incluir cônjuge/companheiro(a) que também assinou o contrato</span>
+            </label>
+          </div>
+
+          <div class="conjuge-campos" id="camposConj" hidden>
+            <label class="field field--full">
+              <span>Nome do cônjuge/companheiro(a)</span>
+              <input type="text" id="f_conj_nome" placeholder="Nome completo" />
+            </label>
+            <div class="row">
+              <label class="field">
+                <span>Nacionalidade</span>
+                <input type="text" id="f_conj_nac" value="brasileiro(a)" />
+              </label>
+              <label class="field">
+                <span>CI/RG</span>
+                <input type="text" id="f_conj_rg" placeholder="0000000 SDS PE" />
+              </label>
+            </div>
+            <label class="field field--full">
+              <span>CPF do cônjuge</span>
+              <input type="text" id="f_conj_cpf" inputmode="numeric" placeholder="000.000.000-00" />
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="field">
+              <span>CI/RG <small>(nº e órgão emissor)</small></span>
+              <input type="text" id="f_rg" placeholder="7625314 SDS PE" />
+            </label>
+            <label class="field">
+              <span>CPF</span>
+              <input type="text" id="f_cpf" inputmode="numeric" placeholder="000.000.000-00" />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Imóvel / Empreendimento</legend>
+          <div class="row">
+            <label class="field">
+              <span>Fração</span>
+              <input type="text" id="f_fracao" value="1/52" />
+            </label>
+            <label class="field">
+              <span>Unidade</span>
+              <input type="text" id="f_unidade" value="Apartamento 622" />
+            </label>
+          </div>
+          <div class="row">
+            <label class="field">
+              <span>Cota</span>
+              <input type="text" id="f_cota" value="Cota 21" />
+            </label>
+            <label class="field">
+              <span>Localização</span>
+              <input type="text" id="f_local" value="ALAGOAS" />
+            </label>
+          </div>
+          <label class="field field--full">
+            <span>Edifício / Empreendimento</span>
+            <input type="text" id="f_edificio" value="AREYA BARRA RESORT" />
+          </label>
+          <label class="field field--full">
+            <span>Empresa proprietária</span>
+            <input type="text" id="f_empresa" value="GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA" />
+          </label>
+          <label class="field field--full">
+            <span>CNPJ da empresa</span>
+            <input type="text" id="f_cnpj" inputmode="numeric" value="45.298.124/0001-33" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Reembolso</legend>
+          <div class="row">
+            <label class="field">
+              <span>Forma de devolução</span>
+              <select id="f_forma">
+                <option value="Reembolso">Reembolso</option>
+                <option value="Estorno Cartão">Estorno Cartão</option>
+                <option value="Cheque">Cheque</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Valor (R$)</span>
+              <input type="text" id="f_valor" inputmode="numeric" placeholder="0,00" value="1.000,00" />
+            </label>
+          </div>
+          <label class="field field--full">
+            <span>Valor por extenso <small>(automático — pode ajustar)</small></span>
+            <input type="text" id="f_extenso" placeholder="mil reais" />
+          </label>
+          <label class="field field--full">
+            <span>Chave PIX para reembolso <small>(opcional)</small></span>
+            <input type="text" id="f_pix" placeholder="CPF, e-mail, telefone ou chave aleatória" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Data</legend>
+          <label class="field">
+            <span>Data do distrato</span>
+            <input type="date" id="f_data" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ajustes do logo (cabeçalho)</legend>
+          <label class="field">
+            <span>Posição</span>
+            <select id="f_logo_align">
+              <option value="right">Direita</option>
+              <option value="center">Centro</option>
+              <option value="left">Esquerda</option>
+            </select>
+          </label>
+          <label class="field-range">
+            <span>Tamanho <b id="out_size">62px</b></span>
+            <input type="range" id="f_logo_size" min="28" max="150" value="62" />
+          </label>
+          <label class="field-range">
+            <span>Espaço acima <b id="out_top">0px</b></span>
+            <input type="range" id="f_logo_top" min="0" max="80" value="0" />
+          </label>
+          <label class="field-range">
+            <span>Espaço abaixo <b id="out_bottom">6px</b></span>
+            <input type="range" id="f_logo_bottom" min="0" max="80" value="6" />
+          </label>
+        </fieldset>
+
+      </form>
+    </aside>
+
+    <!-- ================= PRÉ-VISUALIZAÇÃO (o que vira PDF) ================= -->
+    <main class="preview-col">
+      <div class="folha" id="folha">
+        <div class="doc-inner" id="docInner">
+
+        <div class="doc-logo" id="docLogo" contenteditable="false">
+          <img src="images/logo-gav.png" alt="GAV Hotéis e Resorts" id="docLogoImg" />
+        </div>
+        <hr class="doc-rule" />
+
+        <h1 class="doc-title">
+          TERMO DE DISTRATO AO CONTRATO PARTICULAR DE PROMESSA DE VENDA E COMPRA DE UNIDADE IMOBILIÁRIA.
+        </h1>
+
+        <p class="doc-p">
+          Por este instrumento eu <b id="pv_nome" class="up">NOME DO CLIENTE</b>,
+          <span id="pv_nac">brasileiro(a)</span>, <span id="pv_ec">Solteiro(a)</span>,
+          titular da CI/RG <b id="pv_rg">—</b> e do CPF: <b id="pv_cpf">—</b><span id="pv_conjuge"></span>
+          <span id="pv_verbo">manifesto</span> de livre e espontânea vontade, propor o distrato/desistência do negócio
+          veiculado pela PROPOSTA DE PROMESSA DE VENDA E COMPRA DE UNIDADE IMOBILIÁRIA,
+          relativa à aquisição de uma fração de <b id="pv_fracao">1/52</b> do
+          <b id="pv_unidade">Apartamento 622</b>, nominado <b id="pv_cota">Cota 21</b>,
+          do Edifício <b id="pv_edificio">AREYA BARRA RESORT</b>, localizado em
+          <b id="pv_local">ALAGOAS</b>, de propriedade da empresa
+          <b id="pv_empresa">GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA</b>,
+          inscrita no CNPJ sob o nº <b id="pv_cnpj">45.298.124/0001-33</b>.
+        </p>
+
+        <div class="doc-opcoes">
+          <div class="doc-opcao" id="op_estorno">
+            <span>( <b class="mark" id="ck_estorno">&nbsp;</b> ) Estorno Cartão</span>
+            <span>R$ <span id="val_estorno">XXXX,00</span></span>
+          </div>
+          <div class="doc-opcao" id="op_reemb">
+            <span>( <b class="mark" id="ck_reemb">X</b> ) Reembolso</span>
+            <span>R$ <span id="val_reemb">1.000,00</span></span>
+          </div>
+          <div class="doc-opcao" id="op_cheque">
+            <span>( <b class="mark" id="ck_cheque">&nbsp;</b> ) Cheque</span>
+            <span>R$ <span id="val_cheque">XXXX,00</span></span>
+          </div>
+        </div>
+
+        <p class="doc-p doc-p--bold">
+          GAV Resorts Gestão de Negócios e Participação LTDA compromete-se ainda a efetuar
+          <span id="pv_meio">a devolução por transferência bancária</span> no valor de R$ <span id="pv_valor">1.000,00</span>
+          (<span id="pv_extenso">mil reais</span>) referente ao sinal de proposta.
+        </p>
+
+        <p class="doc-p doc-p--bold">
+          Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras
+          referente as parcelas firmadas em contrato.
+        </p>
+
+        <p class="doc-p">
+          Sendo essa a expressão final de minha vontade assino o presente distrato em 02 (duas)
+          vias de igual teor, em conjunto, e com a concordância da empresa, razão pela qual as
+          partes conferem entre si ampla, plena e irrevogável quitação, declarando-se livres e
+          desimpedidas de qualquer obrigação em razão do aqui acordado.
+        </p>
+
+        <p class="doc-p" id="pv_data">03/08/2026.</p>
+
+        <p class="doc-p doc-pix" id="linhaPix">
+          <strong>Chave PIX para reembolso:</strong> <span id="pv_pix" class="pix-valor"></span>
+        </p>
+
+        <div class="doc-assinaturas" id="docAssinaturas">
+          <div class="doc-assinatura">
+            <div class="doc-assinatura__linha"></div>
+            <div class="doc-assinatura__nome up" id="pv_nome_ass">NOME DO CLIENTE</div>
+          </div>
+          <div class="doc-assinatura" id="assConjuge" hidden>
+            <div class="doc-assinatura__linha"></div>
+            <div class="doc-assinatura__nome up" id="pv_nome_conj_ass">CÔNJUGE</div>
+          </div>
+        </div>
+
+        <p class="doc-rodape">
+          Este Quadro-Resumo obedece ao artigo 35-A da Lei Federal nº 4.591/1964 e integra o
+          presente Contrato para todos os fins e efeitos.
+        </p>
+
+        </div>
+        <div class="marca-pagina" contenteditable="false"><span>limite da página 1</span></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../assets/lib/jspdf.umd.min.js"></script>
+  <script src="../../assets/lib/html2canvas.min.js"></script>
+  <script src="../../assets/lib/pdf.min.js"></script>
+  <script src="../../assets/js/ler-contrato.js?v=3"></script>
+  <script src="logo-data.js"></script>
+  <script src="app.js?v=19"></script>
+</body>
+</html>

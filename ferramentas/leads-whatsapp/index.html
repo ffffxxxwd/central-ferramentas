@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leads do WhatsApp</title>
+  <meta name="leads-organizador" content="1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="app-title">
+        <h1>Leads do WhatsApp</h1>
+        <p class="sub">Seus contatos, o que ficou combinado e quando falar de novo — com link direto pra conversa.</p>
+      </div>
+      <div class="app-actions">
+        <button class="btn btn-primary" data-acao="novo">Novo contato</button>
+        <button class="btn" id="menuBtn" data-acao="menu">Backup &#9662;</button>
+        <div class="menu-pop" id="menuPop">
+          <button data-acao="export-json">Exportar backup (.json)</button>
+          <button data-acao="import-json">Importar backup (.json)</button>
+          <button data-acao="export-csv">Exportar contatos (.csv)</button>
+          <div class="sep"></div>
+          <button data-acao="exemplos">Carregar exemplos</button>
+          <button class="danger" data-acao="limpar">Apagar tudo</button>
+          <div class="sep"></div>
+          <div class="hint">Tudo fica salvo só neste navegador. Exporte um backup de vez em quando.</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="quickbar">
+      <input id="quick" type="text" placeholder="Adicionar rápido: cole o número do WhatsApp (ou &quot;Nome 11 99999-8888&quot;) e tecle Enter" />
+      <button class="btn btn-primary" data-acao="quick-add">Adicionar</button>
+    </div>
+
+    <div class="toolbar">
+      <div class="tabs" id="tabs"></div>
+      <div class="search">
+        <input id="busca" type="search" placeholder="Buscar por nome, número, e-mail, empresa..." />
+      </div>
+    </div>
+
+    <div class="filtros" id="filtros"></div>
+
+    <main id="view"></main>
+  </div>
+
+  <div class="drawer-overlay" id="drawerOverlay" data-acao="fechar-drawer"></div>
+  <aside class="drawer" id="drawer"></aside>
+
+  <input type="file" id="fileInput" accept="application/json,.json" style="display:none" />
+  <div class="toast" id="toast"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
