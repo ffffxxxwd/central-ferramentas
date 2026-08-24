@@ -3578,5 +3578,116 @@ window.CLIENTES = [
       "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
       "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
       "GSign Documento ID: CWU0R1HBQS-9FLIIEY-CMC0HODAL3PNWX-M6303. Contrato/Assinatura nº 310820."
+  },
+
+  /* ---------- 68 — GAV — GGR GRAN GARDEN RESORT, Torre B4 / 003 / Cota 17 ---------- */
+  {
+    id: "ggr-luciano-ramires-b4-003-cota-17",
+    nome: "LUCIANO RAMIRES BUGALHO",
+    cpf: "986.569.530-87",
+    rg: "1075464816 SJS II RS",
+    nacionalidade: "brasileiro",
+    estadoCivil: "União estável",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "B4",
+    apartamento: "003",
+    andar: "T",
+    cota: "17",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+
+    valorPago: 1000.00,
+    valorTotal: 76732.22,
+    corretagem: 4490.00,
+    sinal: 3836.61,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-08-23" },
+      { tipo: "Corretagem", qtd: 4, valor: 872.50, forma: "Boleto", vencimento: "2026-09-05" },
+      { tipo: "Sinal", qtd: 5, valor: 767.32, forma: "Boleto", vencimento: "2027-01-05" },
+      { tipo: "Saldo", qtd: 91, valor: 751.71, forma: "Boleto", vencimento: "2027-06-05" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem) + 4x R$ 872,50 boleto (corretagem)",
+    dataAssinatura: "2026-08-23",
+    telefone: "(51) 991107345",
+    email: "lucianoramiresbugalho@yahoo.com.br",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/ggr-luciano-ramires-b4-003-cota-17--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 — 1x R$ 1.000,00 PIX (corretagem). Comprovante PIX Laranjinha Itaú confirmado: R$ 1.000,00 em 23/08/2026 16:14, ID RESV0820580093814895WCKP4Y1M0526998.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
+      "Corretagem total: R$ 4.490,00 (beneficiários: Carina Alff, Alen Polis Pinto, Gilliana Rodrigues Vieira da Silva, João Lucas de Moura Souza). PIX R$ 1.000,00 pago + 4x R$ 872,50 boleto (1ª 05/09/2026, NÃO PAGOS).\n" +
+      "Sinal de negócio: R$ 3.836,61 em 5x R$ 767,32 boleto (1ª 05/01/2027) — NÃO PAGO.\n" +
+      "Saldo: R$ 68.405,61 em 91x R$ 751,71 boleto (1ª 05/06/2027) — NÃO PAGO.\n" +
+      "Contrato assinado em Gramado/RS em 23/08/2026 — DENTRO DO PRAZO de arrependimento (vence 30/08/2026).\n" +
+      "NÃO conheceu o empreendimento (marcou Não no quadro-resumo).\n" +
+      "Empreendimento novo na base: Gran Garden Resort, Gramado/RS. 2 quartos, área privativa 86,2m², total 125,5m². 1 semana/ano.\n" +
+      "Estado civil: União estável — cônjuge NÃO informado nos documentos.\n" +
+      "Profissão: Serralheiro. Nascimento: 08/07/1980.\n" +
+      "Endereço: Rua Bem Te Vi, 159, Tres Marias, Esteio/RS, CEP 93295607.\n" +
+      "Inclui Select Club (intercâmbio férias) e Guia Multiproprietário GAV (recebido digitalmente 23/08/2026).\n" +
+      "ZapSign 95a5396b-4f3a-47e5-9633-08ab89a591cd. Luciano assinou 23/08/2026 17:03:41.\n" +
+      "ATENÇÃO: PDF (57p) contém páginas avulsas do contrato Everton Cosme Pereira (311477, Praias do Lago) misturadas — erro de montagem pela GAV."
+  },
+
+  /* ---------- 69 — GAV — 353063 BEACH GAV RESORTS, Bloco 2 / 1212 / Cota 02 ---------- */
+  {
+    id: "353063-eduardo-nunes-bgr-b2-1212-cota-02",
+    nome: "EDUARDO NUNES PEREIRA",
+    cpf: "050.409.723-77",
+    rg: "0376699120098 SSP MA",
+    nacionalidade: "brasileiro",
+    estadoCivil: "União estável",
+    conjuge: { nome: "SAMELINE GUEDES SILVA", cpf: "057.535.613-81", rg: "0386980820103 SSP MA", email: "" },
+
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "Bloco 2",
+    apartamento: "1212",
+    andar: "12",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "PARÁ",
+
+    empresa: "GAV",
+    razaoSocial: "BEACH GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+    cnpj: "33.531.685/0001-51",
+
+    valorPago: 3990.00,
+    valorTotal: 46336.40,
+    corretagem: 3990.00,
+    sinal: 2316.84,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 666.66, forma: "Cartão VISA CreditoParcelado", vencimento: "2026-09-02" },
+      { tipo: "Corretagem", qtd: 1, valor: 1993.32, forma: "Cartão MASTER CreditoParcelado", vencimento: "2026-09-02" },
+      { tipo: "Corretagem", qtd: 1, valor: 333.34, forma: "Cartão VISA CreditoParcelado", vencimento: "2026-11-01" },
+      { tipo: "Corretagem", qtd: 1, valor: 996.68, forma: "Cartão MASTER CreditoParcelado", vencimento: "2026-11-01" },
+      { tipo: "Sinal", qtd: 4, valor: 579.21, forma: "Boleto", vencimento: "2026-12-10" },
+      { tipo: "Saldo", qtd: 68, valor: 588.67, forma: "Boleto", vencimento: "2027-04-10" }
+    ],
+    formaPagamentoEntrada: "Cartão VISA + MASTER CreditoParcelado (corretagem R$ 3.990,00)",
+    dataAssinatura: "",
+    telefone: "(99) 991663547",
+    email: "eduardonunnes26@gmail.com",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.990,00 — corretagem inteira via cartão de crédito (VISA + MASTER, CreditoParcelado). Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — instrumento principal cartão de crédito.\n" +
+      "Corretagem: R$ 3.990,00 em 4 lançamentos parcelados: VISA R$ 666,66 (1ª 02/09/2026) + MASTER R$ 1.993,32 (1ª 02/09/2026) + VISA R$ 333,34 (1ª 01/11/2026) + MASTER R$ 996,68 (1ª 01/11/2026).\n" +
+      "Sinal de negócio: R$ 2.316,84 em 4x R$ 579,21 boleto (1ª 10/12/2026) — NÃO PAGO.\n" +
+      "Saldo: R$ 40.029,56 em 68x R$ 588,67 boleto (1ª 10/04/2027) — NÃO PAGO.\n" +
+      "ATENÇÃO: DATA DE ASSINATURA NÃO IDENTIFICADA — só recebi foto da proposta (1 página), sem log de assinatura digital nem data no rodapé. Preciso do PDF completo ou da data.\n" +
+      "Cônjuge: Sameline Guedes Silva, CPF 057.535.613-81, nasc. 02/06/1993, empresária, tel (98) 992101458.\n" +
+      "Profissão: Empresário. Nascimento: 26/08/1992.\n" +
+      "Endereço: Rua Tertuliano Sampaio, Qd 65, 07, Nova Acailândia, Acailândia/MA, CEP 65930000.\n" +
+      "Empreendimento: Beach GAV Resorts, Salinópolis/PA. 1 quarto, área privativa 30m², total 61,27m².\n" +
+      "PENDÊNCIA: falta PDF do contrato completo (só tenho foto da proposta) e data de assinatura. Contrato/Proposta nº 353063."
   }
 ];
