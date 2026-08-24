@@ -3804,5 +3804,62 @@ window.CLIENTES = [
       "Profissão: Empresário. Nascimento: 01/09/1985. Natural de Viseu/PA.\n" +
       "Endereço: Passagem Jari, SN, Areia Branca, Capanema/PA, CEP 68702271.\n" +
       "1 quarto, área privativa 30m², total 61,27m². Proposta nº 355737."
+  },
+
+  /* ---------- 72 — WAM — 296221 PRAIAS DO LAGO ECO RESORT, Bloco O / 507 / Cota 09 ---------- */
+  {
+    id: "296221-ivie-candida-pdl-o-507-cota-09",
+    nome: "IVIE CANDIDA FREITAS",
+    cpf: "019.975.116-14",
+    rg: "MG16248082 SSP/MG",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    conjuge: { nome: "PETRICK RIBEIRO PEGORITTI", cpf: "129.649.406-30", rg: "MG16537085 SSP/MG", email: "petrickpegoritti@gmail.com" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "O",
+    apartamento: "507",
+    andar: "5",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 6150.00,
+    valorTotal: 43875.93,
+    corretagem: 6150.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 1, valor: 50.00, forma: "Boleto", vencimento: "2026-06-15" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 498.02, forma: "Boleto", vencimento: "2026-07-15" },
+      { tipo: "Intermediação", qtd: 1, valor: 2000.00, forma: "Depósito Bancário/Transferência Eletrônica", vencimento: "2026-05-29" },
+      { tipo: "Intermediação", qtd: 1, valor: 4150.00, forma: "Depósito Bancário/Transferência Eletrônica", vencimento: "2026-05-29" }
+    ],
+    formaPagamentoEntrada: "1x R$ 2.000,00 depósito + 1x R$ 4.150,00 depósito (intermediação)",
+    dataAssinatura: "2026-05-29",
+    telefone: "(31) 98802-8624",
+    email: "iviecandida@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/296221-ivie-candida-pdl-o-507-cota-09--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 6.150,00 — intermediação total: 1x R$ 2.000,00 depósito + 1x R$ 4.150,00 depósito/transferência eletrônica. Depósito = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal depósito/transferência.\n" +
+      "Preço da cota (sem intermediação): R$ 43.875,93. Intermediação: R$ 6.150,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Cota entrada: 1x R$ 50,00 boleto (15/06/2026) — possivelmente pago (venceu há 2+ meses), não confirmado.\n" +
+      "Cota saldo: 88x R$ 498,02 boleto (1ª 15/07/2026) — até 2 parcelas podem ter vencido, pagamento não confirmado.\n" +
+      "Contrato assinado em Caldas Novas/GO em 29/05/2026 — FORA DO PRAZO de arrependimento (venceu 05/06/2026).\n" +
+      "NÃO conheceu o empreendimento (marcou Não no quadro-resumo).\n" +
+      "Regime de bens: Comunhão Parcial. Cônjuge: Petrick Ribeiro Pegoritti, CPF 129.649.406-30, consultor, nasc 27/03/1995, tel (31) 99949-6209.\n" +
+      "Profissão: Médica. Nascimento: 18/11/1997. Sexo: Feminino.\n" +
+      "Endereço: Rua Paraná, 265, Espírito Santo, Betim/MG, CEP 32671674.\n" +
+      "Inclui Passaporte Náutico Praia Clube nº 11-O507/09.\n" +
+      "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
+      "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
+      "GSign Documento ID: AED6RSUZUL-03CXJH5-JX5S9HOKOKRFNT-XP8P0. Contrato nº 296221."
   }
 ];
