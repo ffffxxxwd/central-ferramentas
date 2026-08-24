@@ -3689,5 +3689,120 @@ window.CLIENTES = [
       "Endereço: Rua Tertuliano Sampaio, Qd 65, 07, Nova Acailândia, Acailândia/MA, CEP 65930000.\n" +
       "Empreendimento: Beach GAV Resorts, Salinópolis/PA. 1 quarto, área privativa 30m², total 61,27m².\n" +
       "PENDÊNCIA: falta PDF do contrato completo (só tenho foto da proposta) e data de assinatura. Contrato/Proposta nº 353063."
+  },
+
+  /* ---------- 70 — GAV — 355736 BEACH GAV RESORTS, Bloco 2 / 0712 / Cota 10 ----------
+     Miqueias comprou 2 cotas no mesmo dia — contrato 1 de 2. */
+  {
+    id: "355736-miqueias-costa-bgr-b2-0712-cota-10",
+    nome: "MIQUEIAS COSTA SOARES",
+    cpf: "003.630.152-30",
+    rg: "08406 CTPS PA",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "Bloco 2",
+    apartamento: "0712",
+    andar: "7",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "PARÁ",
+
+    empresa: "GAV",
+    razaoSocial: "BEACH GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+    cnpj: "33.531.685/0001-51",
+
+    valorPago: 1000.00,
+    valorTotal: 44554.77,
+    corretagem: 3990.00,
+    sinal: 2227.73,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-08-20" },
+      { tipo: "Corretagem", qtd: 5, valor: 598.00, forma: "Boleto", vencimento: "2026-09-20" },
+      { tipo: "Sinal", qtd: 4, valor: 556.93, forma: "Boleto", vencimento: "2027-02-10" },
+      { tipo: "Saldo", qtd: 68, valor: 563.78, forma: "Boleto", vencimento: "2027-06-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem) + 5x R$ 598,00 boleto (corretagem)",
+    dataAssinatura: "2026-08-20",
+    telefone: "(11) 992554125",
+    email: "miqueiassoares458@gmail.com",
+    arquivos: [
+      { titulo: "Contrato + CNH + PIX", arquivo: "contratos-pdf/355736-miqueias-costa-bgr-b2-0712-cota-10--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 2 — mesmo adquirente (Miqueias Costa Soares) com 2 contratos Beach GAV Resorts.\n" +
+      "VALOR PAGO = R$ 1.000,00 — 1x R$ 1.000,00 PIX (corretagem). PIX = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
+      "Corretagem total: R$ 3.990,00. PIX R$ 1.000,00 pago + 5x R$ 598,00 boleto (1ª 20/09/2026, NÃO PAGOS).\n" +
+      "Sinal de negócio: R$ 2.227,73 em 4x R$ 556,93 boleto (1ª 10/02/2027) — NÃO PAGO.\n" +
+      "Saldo: R$ 38.337,04 em 68x R$ 563,78 boleto (1ª 10/06/2027) — NÃO PAGO.\n" +
+      "Data estimada: 20/08/2026 (data do PIX) — DENTRO DO PRAZO de arrependimento (vence 27/08/2026).\n" +
+      "ATENÇÃO PIX: comprovante mostra R$ 3.000,00 de LEVI GUIMARAES TAVARES (CPF ***.986.192-**, PagBank) para Beach GAV Resorts (CNPJ 33.531.685/0001-51). Mesmo ID transação nas 2 propostas (R$ 1.000 cada = R$ 2.000). Sobram R$ 1.000 — possível 3ª proposta não enviada.\n" +
+      "Estado civil: Casado(a) — cônjuge NÃO informado na proposta.\n" +
+      "CNH: 2968892310, cat AB, emissão 16/12/2024, validade 03/12/2034, natural de Viseu/PA.\n" +
+      "Filiação: Raimundo Cavalcante Soares / Maria Madalena Costa Soares.\n" +
+      "Profissão: Empresário. Nascimento: 01/09/1985.\n" +
+      "Endereço: Passagem Jari, SN, Areia Branca, Capanema/PA, CEP 68702271.\n" +
+      "1 quarto, área privativa 30m², total 61,27m². Proposta nº 355736.\n" +
+      "PDF = CamScanner (4p): proposta 1 + proposta 2 + CNH + comprovante PIX."
+  },
+
+  /* ---------- 71 — GAV — 355737 BEACH GAV RESORTS, Bloco 2 / 0915 / Cota 08 ----------
+     Miqueias comprou 2 cotas no mesmo dia — contrato 2 de 2. */
+  {
+    id: "355737-miqueias-costa-bgr-b2-0915-cota-08",
+    nome: "MIQUEIAS COSTA SOARES",
+    cpf: "003.630.152-30",
+    rg: "08406 CTPS PA",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "Bloco 2",
+    apartamento: "0915",
+    andar: "9",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "PARÁ",
+
+    empresa: "GAV",
+    razaoSocial: "BEACH GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+    cnpj: "33.531.685/0001-51",
+
+    valorPago: 1000.00,
+    valorTotal: 44554.77,
+    corretagem: 3990.00,
+    sinal: 2227.73,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-08-20" },
+      { tipo: "Corretagem", qtd: 5, valor: 598.00, forma: "Boleto", vencimento: "2026-09-20" },
+      { tipo: "Sinal", qtd: 4, valor: 556.93, forma: "Boleto", vencimento: "2027-02-10" },
+      { tipo: "Saldo", qtd: 68, valor: 563.78, forma: "Boleto", vencimento: "2027-06-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem) + 5x R$ 598,00 boleto (corretagem)",
+    dataAssinatura: "2026-08-20",
+    telefone: "(11) 992554125",
+    email: "miqueiassoares458@gmail.com",
+    arquivos: [
+      { titulo: "Contrato + CNH + PIX", arquivo: "contratos-pdf/355736-miqueias-costa-bgr-b2-0712-cota-10--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 2 — mesmo adquirente (Miqueias Costa Soares) com 2 contratos Beach GAV Resorts.\n" +
+      "VALOR PAGO = R$ 1.000,00 — 1x R$ 1.000,00 PIX (corretagem). PIX = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
+      "Corretagem total: R$ 3.990,00. PIX R$ 1.000,00 pago + 5x R$ 598,00 boleto (1ª 20/09/2026, NÃO PAGOS).\n" +
+      "Sinal de negócio: R$ 2.227,73 em 4x R$ 556,93 boleto (1ª 10/02/2027) — NÃO PAGO.\n" +
+      "Saldo: R$ 38.337,04 em 68x R$ 563,78 boleto (1ª 10/06/2027) — NÃO PAGO.\n" +
+      "Data estimada: 20/08/2026 (data do PIX) — DENTRO DO PRAZO de arrependimento (vence 27/08/2026).\n" +
+      "Mesmo PIX de R$ 3.000 (Levi Guimarães Tavares) cobre os 2 contratos (R$ 1.000 cada). PDF compartilhado com ficha 70.\n" +
+      "Estado civil: Casado(a) — cônjuge NÃO informado na proposta.\n" +
+      "Profissão: Empresário. Nascimento: 01/09/1985. Natural de Viseu/PA.\n" +
+      "Endereço: Passagem Jari, SN, Areia Branca, Capanema/PA, CEP 68702271.\n" +
+      "1 quarto, área privativa 30m², total 61,27m². Proposta nº 355737."
   }
 ];
