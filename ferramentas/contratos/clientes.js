@@ -3861,5 +3861,64 @@ window.CLIENTES = [
       "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
       "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
       "GSign Documento ID: AED6RSUZUL-03CXJH5-JX5S9HOKOKRFNT-XP8P0. Contrato nº 296221."
+  },
+
+  /* ---------- 73 — WAM — PRAIAS DO LAGO ECO RESORT, Bloco H / 207 / Cota 02 ---------- */
+  {
+    id: "pdl-francisco-cleiton-h-207-cota-02",
+    nome: "FRANCISCO CLEITON DA SILVA SOUZA",
+    cpf: "056.275.951-40",
+    rg: "3169050 SESP/DF",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    conjuge: { nome: "BRUNA GONÇALVES DA SILVA SOUZA", cpf: "061.480.193-10", rg: "3605167 PC/DF", email: "brunabdb8@outlook.com" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "H",
+    apartamento: "207",
+    andar: "2",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 616.00,
+    valorTotal: 46446.75,
+    corretagem: 6160.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 5, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 524.96, forma: "Boleto", vencimento: "2027-02-20" },
+      { tipo: "Intermediação", qtd: 1, valor: 616.00, forma: "Cartão de Débito", vencimento: "2026-08-23" },
+      { tipo: "Intermediação", qtd: 8, valor: 693.00, forma: "Boleto", vencimento: "2026-08-23" }
+    ],
+    formaPagamentoEntrada: "1x R$ 616,00 cartão de débito (intermediação)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-23",
+    telefone: "(61) 98353-9849",
+    email: "cleitinho1511@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/pdl-francisco-cleiton-h-207-cota-02--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 616,00 — 1x R$ 616,00 cartão de débito (intermediação WAM Comercialização). Débito = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal cartão de débito.\n" +
+      "Preço da cota (sem intermediação): R$ 46.446,75. Intermediação: R$ 6.160,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Cota entrada: 5x R$ 50,00 boleto (1ª 15/09/2026) — NÃO VENCIDAS, nenhuma paga.\n" +
+      "Cota saldo: 88x R$ 524,96 boleto (1ª 20/02/2027) — NÃO PAGO.\n" +
+      "Intermediação saldo: 8x R$ 693,00 boleto — COBRANÇA W PALMERSTON — contrato recente, provavelmente nenhum pago.\n" +
+      "Contrato assinado em Caldas Novas/GO em 23/08/2026 — DENTRO DO PRAZO de arrependimento (vence 30/08/2026).\n" +
+      "NÃO conheceu o empreendimento (marcou Não no quadro-resumo).\n" +
+      "Regime de bens: Comunhão Parcial. Cônjuge: Bruna Gonçalves da Silva Souza, CPF 061.480.193-10, RG 3605167 PC/DF, técnica de enfermagem, nasc 04/04/1996, tel (61) 98302-5701.\n" +
+      "Profissão: Representante comercial. Nascimento: 15/11/1994.\n" +
+      "Endereço: Quadra 19, Rua 4, Lote 27, 27, São Sebastião, Brasília/DF, CEP 71693500.\n" +
+      "Inclui Passaporte Náutico Praia Clube nº 04-H207/02.\n" +
+      "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
+      "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
+      "D4Sign Documento ID: 9H38Q2LCE8-WVY48WK-B01ZFY2HU89U1W-XA4YU."
   }
 ];
