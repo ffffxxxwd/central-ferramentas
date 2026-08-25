@@ -3920,5 +3920,118 @@ window.CLIENTES = [
       "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
       "Matrícula nº 29.684, Cartório de Registro de Imóveis de Caldas Novas/GO.\n" +
       "D4Sign Documento ID: 9H38Q2LCE8-WVY48WK-B01ZFY2HU89U1W-XA4YU."
+  },
+
+  /* ---------- 74 — GAV — 340024 GRAN HAUS RESORT, Bloco 1 / 0208 / Cota 21 ---------- */
+  {
+    id: "340024-angelo-ghr-b1-0208-cota-21",
+    nome: "ANGELO SALLASAR",
+    cpf: "396.887.838-89",
+    rg: "471314468 SSP/SP",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    conjuge: { nome: "ADILA MAGDA COSTA SALLASAR", cpf: "085.151.136-86", rg: "667214690 SSP/SP", email: "adila-costa@live.com" },
+
+    empreendimento: "GRAN HAUS RESORT",
+    bloco: "1",
+    apartamento: "0208",
+    andar: "1",
+    cota: "21",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+    cnpj: "62.986.874/0001-17",
+
+    valorPago: 1000.00,
+    valorTotal: 34554.27,
+    corretagem: 4490.00,
+    sinal: 1727.72,
+    parcelas: [
+      { tipo: "Sinal", qtd: 5, valor: 345.54, forma: "Boleto", vencimento: "2026-10-15" },
+      { tipo: "Saldo", qtd: 55, valor: 515.21, forma: "Boleto", vencimento: "2027-03-15" },
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-05-24" },
+      { tipo: "Corretagem", qtd: 4, valor: 872.50, forma: "Boleto", vencimento: "2026-06-24" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-05-24",
+    telefone: "(19) 981690478",
+    email: "angelo_sallasar@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/340024-angelo-ghr-b1-0208-cota-21--contrato.pdf" }
+    ],
+    pix: "RESV1772240106 1084501CIWF384 0424036",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (conservador) — 1x R$ 1.000,00 PIX corretagem. PIX = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
+      "Preço da fração: R$ 34.554,27. Corretagem: R$ 4.490,00.\n" +
+      "Sinal: R$ 1.727,72 em 5x R$ 345,54 boleto (1ª 15/10/2026) — NÃO VENCIDAS.\n" +
+      "Saldo: R$ 28.336,55 em 55x R$ 515,21 boleto (1ª 15/03/2027) — NÃO PAGO.\n" +
+      "Corretagem boleto: 4x R$ 872,50 (1ª 24/06/2026) — até 3 parcelas vencidas (24/06, 24/07, 24/08), pagamento NÃO CONFIRMADO.\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 2 contratos (340024 e 340025) — conferir se foi 1 PIX de R$ 2.000 rateado ou 2 PIX separados.\n" +
+      "Contrato assinado em Gramado/RS em 24/05/2026 — FORA DO PRAZO de arrependimento (venceu 31/05/2026).\n" +
+      "Cônjuge: Adila Magda Costa Sallasar, CPF 085.151.136-86, RG 667214690 SSP/SP, servidora pública, nasc 10/07/1989, tel (19) 983581158.\n" +
+      "Profissão: Consultor. Nascimento: 26/01/1991.\n" +
+      "Endereço: Rua Celia Aparecida de Souza Bouffier, 8, Bosque de Barão Geraldo, Campinas/SP, CEP 13082753.\n" +
+      "Empreendimento em construção — conclusão prevista março/2030.\n" +
+      "1 quarto, área privativa 34,97m², área comum 27.408m², área total 62.378m².\n" +
+      "Matrícula nº 62.273, Livro nº 2, Cartório de Registro de Imóveis de Gramado/RS.\n" +
+      "D4Sign Documento ID: bc150ef6-006c-4a92-85b0-337bb86bfa12. Proposta nº 340024."
+  },
+
+  /* ---------- 75 — GAV — 340025 GRAN HAUS RESORT, Bloco 2 / 0208 / Cota 08 ---------- */
+  {
+    id: "340025-angelo-ghr-b2-0208-cota-08",
+    nome: "ANGELO SALLASAR",
+    cpf: "396.887.838-89",
+    rg: "471314468 SSP/SP",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    conjuge: { nome: "ADILA MAGDA COSTA SALLASAR", cpf: "085.151.136-86", rg: "667214690 SSP/SP", email: "adila-costa@live.com" },
+
+    empreendimento: "GRAN HAUS RESORT",
+    bloco: "2",
+    apartamento: "0208",
+    andar: "1",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+    cnpj: "62.986.874/0001-17",
+
+    valorPago: 1000.00,
+    valorTotal: 34554.27,
+    corretagem: 4490.00,
+    sinal: 1727.72,
+    parcelas: [
+      { tipo: "Sinal", qtd: 5, valor: 345.54, forma: "Boleto", vencimento: "2026-10-15" },
+      { tipo: "Saldo", qtd: 55, valor: 515.21, forma: "Boleto", vencimento: "2027-03-15" },
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-05-24" },
+      { tipo: "Corretagem", qtd: 4, valor: 872.50, forma: "Boleto", vencimento: "2026-06-24" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-05-24",
+    telefone: "(19) 981690478",
+    email: "angelo_sallasar@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/340025-angelo-ghr-b2-0208-cota-08--contrato.pdf" }
+    ],
+    pix: "RESV1772240106 1084501CIWF384 0424036",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (conservador) — 1x R$ 1.000,00 PIX corretagem. PIX = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
+      "Preço da fração: R$ 34.554,27. Corretagem: R$ 4.490,00.\n" +
+      "Sinal: R$ 1.727,72 em 5x R$ 345,54 boleto (1ª 15/10/2026) — NÃO VENCIDAS.\n" +
+      "Saldo: R$ 28.336,55 em 55x R$ 515,21 boleto (1ª 15/03/2027) — NÃO PAGO.\n" +
+      "Corretagem boleto: 4x R$ 872,50 (1ª 24/06/2026) — até 3 parcelas vencidas (24/06, 24/07, 24/08), pagamento NÃO CONFIRMADO.\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 2 contratos (340024 e 340025) — conferir se foi 1 PIX de R$ 2.000 rateado ou 2 PIX separados.\n" +
+      "Contrato assinado em Gramado/RS em 24/05/2026 — FORA DO PRAZO de arrependimento (venceu 31/05/2026).\n" +
+      "Mesmos dados pessoais da ficha 74. PDF compartilhado entre fichas 74-75.\n" +
+      "D4Sign Documento ID: d3a28114-4b45-4d20-b066-e5f52ae4c760. Proposta nº 340025."
   }
 ];
