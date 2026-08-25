@@ -4033,5 +4033,64 @@ window.CLIENTES = [
       "Contrato assinado em Gramado/RS em 24/05/2026 — FORA DO PRAZO de arrependimento (venceu 31/05/2026).\n" +
       "Mesmos dados pessoais da ficha 74. PDF compartilhado entre fichas 74-75.\n" +
       "D4Sign Documento ID: d3a28114-4b45-4d20-b066-e5f52ae4c760. Proposta nº 340025."
+  },
+
+  /* ---------- 76 — GAV — 294256 GRAN GARDEN RESORT, Bloco C1 / 03B / Cota 26 ---------- */
+  {
+    id: "294256-deise-ggr-c1-03b-cota-26",
+    nome: "DEISE DAIANE LUDKE FURLAN",
+    cpf: "835.445.260-34",
+    rg: "6092230694 SJS II/RS",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    conjuge: { nome: "VANDERLEI DA CONCEICAO FURLAN", cpf: "015.848.100-33", rg: "7101015985 SJS II/RS", email: "vandyfurlan@gmail.com" },
+
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "C1",
+    apartamento: "03B",
+    andar: "T",
+    cota: "26",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "50.094.155/0001-02",
+
+    valorPago: 1000.00,
+    valorTotal: 50433.05,
+    corretagem: 4490.00,
+    sinal: 2521.65,
+    parcelas: [
+      { tipo: "Sinal", qtd: 4, valor: 630.41, forma: "Boleto", vencimento: "2026-04-15" },
+      { tipo: "Saldo", qtd: 80, valor: 542.77, forma: "Boleto", vencimento: "2026-08-15" },
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2025-10-19" },
+      { tipo: "Corretagem", qtd: 5, valor: 698.00, forma: "Boleto", vencimento: "2025-11-19" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-10-19",
+    telefone: "(51) 999048785",
+    email: "deisefurlan2010@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/294256-deise-ggr-c1-03b-cota-26--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (conservador, só PIX confirmado) — 1x R$ 1.000,00 PIX corretagem (19/10/2025). PIX = o que passou.\n" +
+      "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
+      "Preço da fração: R$ 50.433,05. Corretagem: R$ 4.490,00.\n" +
+      "Sinal: R$ 2.521,65 em 4x R$ 630,41 boleto (1ª 15/04/2026) — TODAS VENCIDAS, pagamento NÃO CONFIRMADO.\n" +
+      "Saldo: R$ 43.421,40 em 80x R$ 542,77 boleto (1ª 15/08/2026) — 1 parcela vencida (15/08), pagamento NÃO CONFIRMADO.\n" +
+      "Corretagem boleto: 5x R$ 698,00 (1ª 19/11/2025) — TODAS VENCIDAS (10 meses), pagamento NÃO CONFIRMADO.\n" +
+      "ATENÇÃO: contrato de 10 meses — boletos de corretagem e sinal provavelmente pagos, mas sem comprovante.\n" +
+      "Contrato assinado presencialmente em Gramado/RS em 19/10/2025 — FORA DO PRAZO de arrependimento (venceu 26/10/2025).\n" +
+      "Cônjuge: Vanderlei da Conceição Furlan, CPF 015.848.100-33, RG 7101015985 SJS II/RS, téc. elétrico, nasc 11/02/1989, tel (51) 997087825.\n" +
+      "Profissão: Aux. Administrativo. Nascimento: 13/01/1988.\n" +
+      "Endereço: Linha Cafe, Três Coroas/RS, CEP 95660000.\n" +
+      "Inclui Select Club (GAV). 1 quarto, área privativa 43,1m², área total 63,11m².\n" +
+      "Matrícula nº 59.387, Livro nº 02, Serviço de Registro de Imóveis de Gramado/RS.\n" +
+      "Nº PIX corretagem: RESV0113470093 B148954J458EXKK9 335F5C.\n" +
+      "D4Sign Documento ID: ff63d3f0-0451-4cab-ab74-c2d985f5d181. Proposta nº 294256."
   }
 ];
