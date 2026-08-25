@@ -3896,7 +3896,7 @@ window.CLIENTES = [
       { tipo: "Intermediação", qtd: 8, valor: 693.00, forma: "Boleto", vencimento: "2026-08-23" }
     ],
     formaPagamentoEntrada: "1x R$ 616,00 cartão de débito (intermediação)",
-    formaReembolso: "Reembolso",
+    formaReembolso: "Estorno Cartão",
     dataAssinatura: "2026-08-23",
     telefone: "(61) 98353-9849",
     email: "cleitinho1511@gmail.com",
@@ -3905,8 +3905,8 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 616,00 — 1x R$ 616,00 cartão de débito (intermediação WAM Comercialização). Débito = o que passou.\n" +
-      "DEVOLUÇÃO: Reembolso — instrumento principal cartão de débito.\n" +
+      "VALOR PAGO = R$ 616,00 — 1x R$ 616,00 cartão de débito (intermediação WAM Comercialização). Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — instrumento principal cartão de débito.\n" +
       "Preço da cota (sem intermediação): R$ 46.446,75. Intermediação: R$ 6.160,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
       "Cota entrada: 5x R$ 50,00 boleto (1ª 15/09/2026) — NÃO VENCIDAS, nenhuma paga.\n" +
       "Cota saldo: 88x R$ 524,96 boleto (1ª 20/02/2027) — NÃO PAGO.\n" +
