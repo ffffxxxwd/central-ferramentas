@@ -4116,7 +4116,7 @@ window.CLIENTES = [
     razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
     cnpj: "39.673.888/0001-69",
 
-    valorPago: 2000.00,
+    valorPago: 26678.31,
     valorTotal: 55136.92,
     corretagem: 3990.00,
     sinal: 2756.84,
@@ -4127,7 +4127,7 @@ window.CLIENTES = [
       { tipo: "Corretagem", qtd: 2, valor: 663.33, forma: "Boleto", vencimento: "2024-01-13" },
       { tipo: "Corretagem", qtd: 1, valor: 663.34, forma: "Boleto", vencimento: "2024-03-13" }
     ],
-    formaPagamentoEntrada: "1x R$ 2.000,00 PIX (corretagem)",
+    formaPagamentoEntrada: "PIX R$ 2.000 + boletos corretagem/sinal/saldo + condomínio",
     formaReembolso: "Reembolso",
     dataAssinatura: "2023-12-13",
     telefone: "(19) 991929371",
@@ -4137,13 +4137,10 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 2.000,00 (conservador, só PIX confirmado) — 1x R$ 2.000,00 PIX corretagem (13/12/2023). PIX = o que passou.\n" +
+      "VALOR PAGO = R$ 26.678,31 — informado pelo cliente: R$ 25.275,26 (contrato) + R$ 1.403,05 (condomínio).\n" +
       "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
       "Preço da fração: R$ 55.136,92. Corretagem: R$ 3.990,00.\n" +
-      "Sinal: R$ 2.756,84 em 4x R$ 689,21 boleto (1ª 05/04/2024) — TODAS VENCIDAS, pagamento NÃO CONFIRMADO.\n" +
-      "Saldo: R$ 48.390,08 em 74x R$ 653,92 boleto (1ª 05/08/2024) — múltiplas parcelas vencidas (~24), pagamento NÃO CONFIRMADO.\n" +
-      "Corretagem boleto: 2x R$ 663,33 (1ª 13/01/2024) + 1x R$ 663,34 (13/03/2024) — TODAS VENCIDAS (2+ anos), pagamento NÃO CONFIRMADO.\n" +
-      "ATENÇÃO: contrato de quase 3 anos (dez/2023) — boletos provavelmente pagos em grande parte, mas sem comprovante.\n" +
+      "Contrato de quase 3 anos (dez/2023) — valor pago informado diretamente, não calculado por parcelas.\n" +
       "Contrato assinado em Ipojuca/PE em 13/12/2023 — FORA DO PRAZO de arrependimento (venceu 20/12/2023).\n" +
       "Cônjuge (união estável): Bruno Henrique de Mattos, CPF 394.196.968-47, RG 47160334 SSP/SP, gerente comercial, nasc 16/01/1991, tel (19) 989196729.\n" +
       "Profissão: Coordenador de Planejamento. Nascimento: 10/03/1989.\n" +
