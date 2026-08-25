@@ -3962,7 +3962,7 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/340024-angelo-ghr-b1-0208-cota-21--contrato.pdf" }
     ],
-    pix: "RESV1772240106 1084501CIWF384 0424036",
+    pix: "",
     observacoes:
       "VALOR PAGO = R$ 1.000,00 (conservador) — 1x R$ 1.000,00 PIX corretagem. PIX = o que passou.\n" +
       "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
@@ -4021,7 +4021,7 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/340025-angelo-ghr-b2-0208-cota-08--contrato.pdf" }
     ],
-    pix: "RESV1772240106 1084501CIWF384 0424036",
+    pix: "",
     observacoes:
       "VALOR PAGO = R$ 1.000,00 (conservador) — 1x R$ 1.000,00 PIX corretagem. PIX = o que passou.\n" +
       "DEVOLUÇÃO: Reembolso — instrumento principal PIX.\n" +
