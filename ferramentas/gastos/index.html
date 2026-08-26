@@ -77,6 +77,7 @@ tr:last-child td{border-bottom:none}
   <div class="card"><div class="card-label">Receitas</div><div class="card-valor positivo" id="totalReceitas">R$ 0,00</div></div>
   <div class="card"><div class="card-label">Gastos</div><div class="card-valor negativo" id="totalGastos">R$ 0,00</div></div>
   <div class="card"><div class="card-label">Lucro</div><div class="card-valor saldo" id="saldo">R$ 0,00</div></div>
+  <div class="card"><div class="card-label">Cada (÷2)</div><div class="card-valor saldo" id="saldoMetade">R$ 0,00</div></div>
 </div>
 
 <!-- Tabs de período -->
@@ -99,6 +100,7 @@ tr:last-child td{border-bottom:none}
   <div class="periodo-card"><div class="pc-label">Receitas</div><div class="pc-valor positivo" id="pReceitas">-</div></div>
   <div class="periodo-card"><div class="pc-label">Gastos</div><div class="pc-valor negativo" id="pGastos">-</div></div>
   <div class="periodo-card"><div class="pc-label">Lucro</div><div class="pc-valor saldo" id="pLucro">-</div></div>
+  <div class="periodo-card"><div class="pc-label">Cada (÷2)</div><div class="pc-valor saldo" id="pMetade">-</div></div>
   <div class="periodo-card"><div class="pc-label">Entradas</div><div class="pc-valor" id="pQtd" style="color:#17203a">-</div></div>
 </div>
 
@@ -308,6 +310,12 @@ function renderizar() {
   if (saldoVal < 0) { saldoEl.textContent = '- ' + saldoEl.textContent; saldoEl.className = 'card-valor negativo'; }
   else { saldoEl.className = 'card-valor saldo'; }
 
+  const metadeEl = document.getElementById('saldoMetade');
+  const metade = saldoVal / 2;
+  metadeEl.textContent = fmt(Math.abs(metade));
+  if (metade < 0) { metadeEl.textContent = '- ' + metadeEl.textContent; metadeEl.className = 'card-valor negativo'; }
+  else { metadeEl.className = 'card-valor saldo'; }
+
   // nav e resumo do período
   const navEl = document.getElementById('periodoNav');
   const resumoEl = document.getElementById('periodoResumo');
@@ -327,6 +335,11 @@ function renderizar() {
     pLucroEl.textContent = fmt(Math.abs(pLuc));
     if (pLuc < 0) { pLucroEl.textContent = '- ' + pLucroEl.textContent; pLucroEl.className = 'pc-valor negativo'; }
     else { pLucroEl.className = 'pc-valor saldo'; }
+    const pMet = pLuc / 2;
+    const pMetEl = document.getElementById('pMetade');
+    pMetEl.textContent = fmt(Math.abs(pMet));
+    if (pMet < 0) { pMetEl.textContent = '- ' + pMetEl.textContent; pMetEl.className = 'pc-valor negativo'; }
+    else { pMetEl.className = 'pc-valor saldo'; }
     document.getElementById('pQtd').textContent = lista.length;
   } else {
     navEl.style.display = 'none';
