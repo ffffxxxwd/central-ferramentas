@@ -388,11 +388,14 @@ function renderizar() {
       </tr>`;
     });
 
+    const metadeDia = lucroDia / 2;
     html += `<tr class="dia-subtotal">
-      <td colspan="3">Subtotal do dia</td>
-      <td></td>
-      <td style="color:${lucroDia >= 0 ? '#3160f5' : '#e03131'};font-weight:700">${lucroDia < 0 ? '- ' : ''}${fmt(Math.abs(lucroDia))}</td>
-      <td></td>
+      <td colspan="6" style="padding:8px 14px">
+        <span>Bruto: <b style="color:#17b26a">${fmt(recDia)}</b></span>
+        <span style="margin-left:16px">Custo: <b style="color:#e03131">${fmt(gasDia)}</b></span>
+        <span style="margin-left:16px">Lucro: <b style="color:${lucroDia >= 0 ? '#3160f5' : '#e03131'}">${lucroDia < 0 ? '- ' : ''}${fmt(Math.abs(lucroDia))}</b></span>
+        <span style="margin-left:16px">Cada: <b style="color:${metadeDia >= 0 ? '#3160f5' : '#e03131'}">${metadeDia < 0 ? '- ' : ''}${fmt(Math.abs(metadeDia))}</b></span>
+      </td>
     </tr>`;
   });
 
