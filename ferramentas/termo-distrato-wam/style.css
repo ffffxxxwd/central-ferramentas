@@ -288,6 +288,24 @@ body.modo-edicao #docLogo:hover { outline: 2px dashed var(--accent); outline-off
   .form-col { border-right: none; border-bottom: 1px solid var(--border); max-height: 46vh; }
 }
 
+/* ---------- Botão adicionar imóvel ---------- */
+.btn-add-imovel {
+  display: block;
+  width: 100%;
+  margin: 6px 0 10px;
+  padding: 7px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  border: 1px dashed var(--border);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .15s ease;
+  font-family: inherit;
+}
+.btn-add-imovel:hover { border-color: var(--accent); color: var(--accent); background: rgba(47,107,255,.04); }
+
 /* ---------- IMPRESSÃO / PDF ---------- */
 @media print {
   @page { size: A4; margin: 0; }

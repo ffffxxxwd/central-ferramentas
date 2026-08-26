@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Termo de Distrato | WAM</title>
-  <link rel="stylesheet" href="style.css?v=15" />
+  <link rel="stylesheet" href="style.css?v=16" />
 </head>
 <body>
 
@@ -153,6 +153,8 @@
               <input type="text" id="f_local" value="ALAGOAS" />
             </label>
           </div>
+          <div id="extraImoveis"></div>
+          <button type="button" class="btn btn-add-imovel" id="btnAddImovel">＋ Adicionar imóvel</button>
           <label class="field field--full">
             <span>Edifício / Empreendimento</span>
             <input type="text" id="f_edificio" value="AREYA BARRA RESORT" />
@@ -249,7 +251,7 @@
           <span id="pv_verbo">manifesto</span> de livre e espontânea vontade, propor o distrato/desistência do negócio
           veiculado pela PROPOSTA DE PROMESSA DE VENDA E COMPRA DE UNIDADE IMOBILIÁRIA,
           relativa à aquisição de uma fração de <b id="pv_fracao">1/52</b> do
-          <b id="pv_unidade">Apartamento 622</b>, nominado <b id="pv_cota">Cota 21</b>,
+          <span id="pv_imoveis"><b>Apartamento 622</b>, nominado <b>Cota 21</b>,</span>
           do Edifício <b id="pv_edificio">AREYA BARRA RESORT</b>, localizado em
           <b id="pv_local">ALAGOAS</b>, de propriedade da empresa
           <b id="pv_empresa">GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA</b>,
@@ -322,6 +324,6 @@
   <script src="../../assets/lib/pdf.min.js"></script>
   <script src="../../assets/js/ler-contrato.js?v=3"></script>
   <script src="logo-data.js"></script>
-  <script src="app.js?v=19"></script>
+  <script src="app.js?v=20"></script>
 </body>
 </html>

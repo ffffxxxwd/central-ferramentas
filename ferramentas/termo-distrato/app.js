@@ -164,6 +164,61 @@
     $("camposConj").hidden = !(permite && $("f_temConj").checked);
   }
 
+  /* ---------- Múltiplos imóveis ---------- */
+  var imoveisExtra = []; // [{unidade: "", cota: ""}]
+
+  function renderExtraImoveis() {
+    var container = $("extraImoveis");
+    if (!container) return;
+    container.innerHTML = "";
+    for (var i = 0; i < imoveisExtra.length; i++) {
+      (function (idx) {
+        var item = imoveisExtra[idx];
+        var row = document.createElement("div");
+        row.className = "row";
+        row.style.cssText = "align-items:flex-end;gap:6px;margin-top:4px";
+        var lU = document.createElement("label"); lU.className = "field";
+        lU.innerHTML = "<span>Unidade " + (idx + 2) + "</span>";
+        var inpU = document.createElement("input"); inpU.type = "text";
+        inpU.value = item.unidade; inpU.placeholder = "Apartamento...";
+        inpU.addEventListener("input", function () { item.unidade = this.value; atualizarImoveis(); salvar(); });
+        lU.appendChild(inpU);
+        var lC = document.createElement("label"); lC.className = "field";
+        lC.innerHTML = "<span>Cota " + (idx + 2) + "</span>";
+        var inpC = document.createElement("input"); inpC.type = "text";
+        inpC.value = item.cota; inpC.placeholder = "Cota...";
+        inpC.addEventListener("input", function () { item.cota = this.value; atualizarImoveis(); salvar(); });
+        lC.appendChild(inpC);
+        var btnX = document.createElement("button"); btnX.type = "button";
+        btnX.textContent = "×"; btnX.title = "Remover imóvel " + (idx + 2);
+        btnX.style.cssText = "background:#c0392b;color:#fff;border:none;border-radius:6px;width:34px;height:34px;font-size:18px;cursor:pointer;flex-shrink:0;margin-bottom:4px";
+        btnX.addEventListener("click", function () { imoveisExtra.splice(idx, 1); renderExtraImoveis(); atualizarImoveis(); salvar(); });
+        row.appendChild(lU); row.appendChild(lC); row.appendChild(btnX);
+        container.appendChild(row);
+      })(i);
+    }
+  }
+
+  function atualizarImoveis() {
+    var el = $("pv_imoveis");
+    if (!el) return;
+    var u1 = texto($("f_unidade").value, "—");
+    var c1 = texto($("f_cota").value, "—");
+    if (imoveisExtra.length === 0) {
+      el.innerHTML = "<b>" + esc(u1) + "</b>, nominado <b>" + esc(c1) + "</b>,";
+    } else {
+      var todos = [{ unidade: u1, cota: c1 }].concat(imoveisExtra);
+      var partes = [];
+      for (var i = 0; i < todos.length; i++) {
+        partes.push("<b>" + esc(texto(todos[i].unidade, "—")) + "</b> (<b>" + esc(texto(todos[i].cota, "—")) + "</b>)");
+      }
+      var txt;
+      if (partes.length === 2) { txt = partes[0] + " e " + partes[1]; }
+      else { txt = partes.slice(0, -1).join(", ") + " e " + partes[partes.length - 1]; }
+      el.innerHTML = txt + ",";
+    }
+  }
+
   /* ---------- Atualização do preview ---------- */
   function atualizar() {
     var nome = texto($("f_nome").value, "NOME DO CLIENTE");
@@ -174,8 +229,7 @@
     setTxt("pv_rg", texto($("f_rg").value, "—"));
     setTxt("pv_cpf", texto($("f_cpf").value, "—"));
     setTxt("pv_fracao", texto($("f_fracao").value, "—"));
-    setTxt("pv_unidade", texto($("f_unidade").value, "—"));
-    setTxt("pv_cota", texto($("f_cota").value, "—"));
+    atualizarImoveis();
     setTxt("pv_edificio", texto($("f_edificio").value, "—"));
     setTxt("pv_local", texto($("f_local").value, "—"));
     setTxt("pv_empresa", texto($("f_empresa").value, "—"));
@@ -299,8 +353,7 @@
       case "f_rg": setTxt("pv_rg", texto($("f_rg").value, "—")); break;
       case "f_cpf": setTxt("pv_cpf", texto($("f_cpf").value, "—")); break;
       case "f_fracao": setTxt("pv_fracao", texto($("f_fracao").value, "—")); break;
-      case "f_unidade": setTxt("pv_unidade", texto($("f_unidade").value, "—")); break;
-      case "f_cota": setTxt("pv_cota", texto($("f_cota").value, "—")); break;
+      case "f_unidade": case "f_cota": atualizarImoveis(); break;
       case "f_edificio": setTxt("pv_edificio", texto($("f_edificio").value, "—")); break;
       case "f_local": setTxt("pv_local", texto($("f_local").value, "—")); break;
       case "f_empresa": setTxt("pv_empresa", texto($("f_empresa").value, "—")); break;
@@ -395,6 +448,19 @@
     // Estado civil e checkbox de cônjuge: mexem na visibilidade
     $("f_ec").addEventListener("change", function () { atualizarVisibilidadeConjuge(); sincronizarCampo("f_ec"); salvar(); });
     $("f_temConj").addEventListener("change", function () { atualizarVisibilidadeConjuge(); atualizarConjuge(); salvar(); });
+
+    // Botão adicionar imóvel
+    if ($("btnAddImovel")) {
+      $("btnAddImovel").addEventListener("click", function () {
+        imoveisExtra.push({ unidade: "", cota: "" });
+        renderExtraImoveis();
+        atualizarImoveis();
+        salvar();
+        var container = $("extraImoveis");
+        var inputs = container.querySelectorAll("input");
+        if (inputs.length > 0) inputs[inputs.length - 2].focus();
+      });
+    }
 
     // Ajustes do logo
     ["f_logo_align", "f_logo_size", "f_logo_top", "f_logo_bottom"].forEach(function (id) {
@@ -623,7 +689,7 @@
   }
 
   /* ---------- Persistência (cache local no navegador) ---------- */
-  var CHAVE = "termo-distrato-v4";
+  var CHAVE = "termo-distrato-v5";
   var CAMPOS = ["f_nome", "f_nac", "f_ec", "f_rg", "f_cpf", "f_fracao", "f_unidade", "f_cota",
     "f_local", "f_edificio", "f_empresa", "f_cnpj", "f_forma", "f_valor", "f_extenso", "f_pix",
     "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf",
@@ -631,7 +697,7 @@
 
   function salvar() {
     try {
-      var dados = { campos: {}, temConj: $("f_temConj").checked, docHTML: $("docInner").innerHTML };
+      var dados = { campos: {}, temConj: $("f_temConj").checked, docHTML: $("docInner").innerHTML, imoveisExtra: imoveisExtra };
       CAMPOS.forEach(function (id) { dados.campos[id] = $(id).value; });
       localStorage.setItem(CHAVE, JSON.stringify(dados));
     } catch (e) {}
@@ -649,6 +715,7 @@
       if (el && dados.campos[id] != null) el.value = dados.campos[id];
     });
     $("f_temConj").checked = !!dados.temConj;
+    if (dados.imoveisExtra && Array.isArray(dados.imoveisExtra)) imoveisExtra = dados.imoveisExtra;
     return true;
   }
 
@@ -663,6 +730,7 @@
     if (_src.indexOf("data:") !== 0) $("docLogoImg").src = window.LOGO_PADRAO;
   }
   ligar();
+  renderExtraImoveis();
   atualizarVisibilidadeConjuge();
   aplicarLogo();
   if (!restaurou) atualizar();   // se restaurou do cache, mantém o documento salvo (edições livres)
