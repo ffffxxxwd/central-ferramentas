@@ -3308,7 +3308,7 @@ window.CLIENTES = [
       "GSign Documento ID: J3YF9LELID-KH4QTP1-8595LNCJFB8UEU-ENQDV. Contrato nº 311477."
   },
 
-  /* ---------- 63 — WAM — KAWANA RESIDENCE, Bloco 02 / 101 / Cota O/I (Amelia Sonia 1/2) ---------- */
+  /* ---------- 63 — WAM — KAWANA RESIDENCE, Bloco 02 / 101 / Cota O/I (Amelia Sonia 1/3) ---------- */
   {
     id: "kawana-amelia-sonia-bloco02-101-cota-oi",
     nome: "AMELIA SONIA MADUREIRA",
@@ -3348,7 +3348,7 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "CONTRATO 1 DE 2 — mesma adquirente (Amelia Sonia Madureira) com 2 contratos Kawana Residence.\n" +
+      "CONTRATO 1 DE 3 — mesma adquirente (Amelia Sonia Madureira) com 3 contratos Kawana Residence.\n" +
       "VALOR PAGO = R$ 3.350,00 — 1x R$ 3.350,00 Elo Crédito (intermediação, valor cheio).\n" +
       "DEVOLUÇÃO: Estorno Cartão — instrumento principal cartão Elo Crédito.\n" +
       "Preço da cota (sem intermediação): R$ 44.824,92. Intermediação: R$ 3.350,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
@@ -3362,7 +3362,7 @@ window.CLIENTES = [
       "GSign Documento ID: MOOYNMWVFO-KUXI5XH-R5QQKP9ZWPQMJP-9FTBZ."
   },
 
-  /* ---------- 64 — WAM — KAWANA RESIDENCE, Bloco 02 / 202 / Cota O/L (Amelia Sonia 2/2) ---------- */
+  /* ---------- 64 — WAM — KAWANA RESIDENCE, Bloco 02 / 202 / Cota O/L (Amelia Sonia 2/3) ---------- */
   {
     id: "kawana-amelia-sonia-bloco02-202-cota-ol",
     nome: "AMELIA SONIA MADUREIRA",
@@ -3403,7 +3403,7 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "CONTRATO 2 DE 2 — mesma adquirente (Amelia Sonia Madureira) com 2 contratos Kawana Residence.\n" +
+      "CONTRATO 2 DE 3 — mesma adquirente (Amelia Sonia Madureira) com 3 contratos Kawana Residence.\n" +
       "VALOR PAGO = R$ 3.350,00 — 10x R$ 315,00 Master Crédito (R$ 3.150,00) + 10x R$ 20,00 Elo Crédito (R$ 200,00) = intermediação valor cheio.\n" +
       "DEVOLUÇÃO: Estorno Cartão — instrumento principal cartão Master Crédito.\n" +
       "Preço da cota (sem intermediação): R$ 44.824,92. Intermediação: R$ 3.350,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
@@ -4262,5 +4262,57 @@ window.CLIENTES = [
       "Endereço: Rua Assis Brasil, 81, Vila Vista Alegre, Cachoeirinha/RS, CEP 94945-570.\n" +
       "2 quartos, área privativa 86,2m², área total 126,33m².\n" +
       "ZapSign nº 39675a5d-c5d9-4f09-a9b4-fec06b1c2347. Proposta nº 356518."
+  },
+
+  /* ---------- 80 — WAM — KAWANA RESIDENCE, Bloco 01 / 311 / Cota P/H (Amelia Sonia 3/3) ---------- */
+  {
+    id: "kawana-amelia-sonia-bloco01-311-cota-ph",
+    nome: "AMELIA SONIA MADUREIRA",
+    cpf: "421.923.156-00",
+    rg: "MG6393230 - SSP/MG",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Solteiro",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "KAWANA RESIDENCE",
+    bloco: "Bloco 01",
+    apartamento: "311",
+    andar: "3",
+    cota: "P/H",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "S.P.E. MIRANTE INVESTIMENTO IMOBILIÁRIOS S/A",
+    cnpj: "18.622.215/0001-00",
+
+    valorPago: 3350.00,
+    valorTotal: 48174.92,
+    corretagem: 3350.00,
+    sinal: 150.00,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 3, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 84, valor: 531.84, forma: "Boleto", vencimento: "2026-12-15" },
+      { tipo: "Intermediação", qtd: 1, valor: 3350.00, forma: "Cartão Crédito (estimado)", vencimento: "2026-08-17" }
+    ],
+    formaPagamentoEntrada: "Cartão crédito R$ 3.350,00 (intermediação — estimado, sem contrato)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-17",
+    telefone: "(31) 99918-0983",
+    email: "Carolinemadureiramoreira@gmail.com",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "CONTRATO 3 DE 3 — mesma adquirente (Amelia Sonia Madureira) com 3 contratos Kawana Residence.\n" +
+      "FICHA INCOMPLETA — criada a partir de print do Termo de Distrato (GSign), sem contrato/proposta disponível. Cliente não conseguiu puxar o PDF deste contrato.\n" +
+      "DADOS DO DISTRATO: Apartamento 01.311 P/H, Edifício KAWANA, Caldas Novas, WAM Caldas Novas Ltda. Fração indicada no distrato: 1/26 (2 semanas/ano).\n" +
+      "VALOR PAGO = R$ 3.350,00 (ESTIMADO) — baseado no padrão das fichas 63-64 (intermediação R$ 3.350 cada). Distrato indica Estorno Cartão total R$ 10.000,00 para os 3 contratos (R$ 3.350 + R$ 3.350 + R$ 3.300 = R$ 10.000).\n" +
+      "DEVOLUÇÃO: Estorno Cartão — marcado com (X) no distrato.\n" +
+      "Valores de cota, sinal e saldo ESTIMADOS — copiados das fichas 63-64 (mesmo empreendimento, mesma data).\n" +
+      "Contrato assinado em Caldas Novas/GO em 17/08/2026 (estimado, mesma data das fichas 63-64) — DENTRO DO PRAZO DE 7 DIAS (vence 24/08/2026).\n" +
+      "Profissão: Gerente. Nascimento: 05/12/1958. Telefone 2: (31) 99700-0512.\n" +
+      "ATENÇÃO: Nome no quadro-resumo = 'AMELIA', assinatura GSign = 'AMAELIA' — verificar grafia correta.\n" +
+      "Dados bancários no distrato: Banco do Brasil (campo editável, ainda não confirmado).\n" +
+      "PENDENTE: obter contrato/proposta original para confirmar valores exatos e forma de pagamento."
   }
 ];
