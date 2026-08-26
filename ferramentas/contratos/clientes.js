@@ -4150,5 +4150,117 @@ window.CLIENTES = [
       "Matrícula N° R.9-2.929, Livro nº 02-E, Cartório de Registro Geral de Imóveis de Ipojuca/PE.\n" +
       "Nº PIX corretagem: E6070119020231 2131402DY5P8GC NXTW.\n" +
       "D4Sign Documento ID: 1bd08e1a-7b9a-49f2-8bd8-bdcddc99690d. Proposta nº 151009."
+  },
+
+  /* ---------- 78 — GAV — 356521 GRAN GARDEN RESORT, Bloco A1 / 103 / Cota 46 ---------- */
+  {
+    id: "356521-cleyce-ggr-a1-103-cota-46",
+    nome: "CLEYCE CARVALHO ALVES",
+    cpf: "029.699.330-12",
+    rg: "02969933012 IGP/RS",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "EDSON MAURICIO ALVES CARVALHO", cpf: "019.558.210-11", rg: "01955821011 IGP/RS", email: "edsonrs.59@gmail.com" },
+
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "A1",
+    apartamento: "103",
+    andar: "1",
+    cota: "46",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "50.094.155/0001-02",
+
+    valorPago: 1000.00,
+    valorTotal: 75784.88,
+    corretagem: 4490.00,
+    sinal: 3789.26,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "Cartão de Débito VISA Electron", vencimento: "2026-08-25" },
+      { tipo: "Corretagem", qtd: 5, valor: 698.00, forma: "Boleto", vencimento: "2026-10-10" },
+      { tipo: "Sinal", qtd: 5, valor: 757.85, forma: "Boleto", vencimento: "2027-03-10" },
+      { tipo: "Saldo", qtd: 91, valor: 741.82, forma: "Boleto", vencimento: "2027-08-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 cartão de débito VISA Electron (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-24",
+    telefone: "(51) 99228-0926",
+    email: "barthcleyce@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356521-cleyce-ggr-a1-103-cota-46--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 2 — casal Cleyce + Edson, mesmo endereço, mesma data, mesma maquininha.\n" +
+      "VALOR PAGO = R$ 1.000,00 — sua parte do cartão de débito VISA Electron (comprovante único R$ 2.000,00, CV 177756890, maquininha Laranjinha Itaú, 24/08/2026 12h29). R$ 1.000 alocado a este contrato, R$ 1.000 ao contrato do Edson (ficha 79).\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão de débito = cartão → Estorno.\n" +
+      "Corretagem: R$ 4.490,00 (R$ 1.000 cartão + 5x R$ 698,00 boleto, 1ª 10/10/2026 — NÃO PAGOS).\n" +
+      "Sinal: R$ 3.789,26 em 5x R$ 757,85 boleto (1ª 10/03/2027) — NÃO PAGO.\n" +
+      "Saldo: R$ 67.505,62 em 91x R$ 741,82 boleto (1ª 10/08/2027) — NÃO PAGO.\n" +
+      "Contrato assinado em Gramado/RS em 24/08/2026 — DENTRO DO PRAZO DE 7 DIAS (vence 31/08/2026).\n" +
+      "Cônjuge: Edson Mauricio Alves Carvalho (ficha 79), mesmo endereço, ambos Casado(a).\n" +
+      "Profissão: Assistente Administrativo. Nascimento: 24/07/1992.\n" +
+      "Endereço: Rua Assis Brasil, 81, Vila Vista Alegre, Cachoeirinha/RS, CEP 94945-570.\n" +
+      "2 quartos, área privativa 86,2m², área total 126,33m².\n" +
+      "ZapSign nº d7f14495-c6b1-493c-ab9b-4c7d75f1af0e. Proposta nº 356521."
+  },
+
+  /* ---------- 79 — GAV — 356518 GRAN GARDEN RESORT, Bloco A3 / 203 / Cota 09 ---------- */
+  {
+    id: "356518-edson-ggr-a3-203-cota-09",
+    nome: "EDSON MAURICIO ALVES CARVALHO",
+    cpf: "019.558.210-11",
+    rg: "01955821011 IGP/RS",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "CLEYCE CARVALHO ALVES", cpf: "029.699.330-12", rg: "02969933012 IGP/RS", email: "barthcleyce@gmail.com" },
+
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "A3",
+    apartamento: "203",
+    andar: "2",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "50.094.155/0001-02",
+
+    valorPago: 1000.00,
+    valorTotal: 79573.34,
+    corretagem: 4490.00,
+    sinal: 3978.67,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "Cartão de Débito VISA Electron", vencimento: "2026-08-25" },
+      { tipo: "Corretagem", qtd: 5, valor: 698.00, forma: "Boleto", vencimento: "2026-10-10" },
+      { tipo: "Sinal", qtd: 5, valor: 795.73, forma: "Boleto", vencimento: "2027-03-10" },
+      { tipo: "Saldo", qtd: 91, valor: 781.37, forma: "Boleto", vencimento: "2027-08-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 cartão de débito VISA Electron (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-24",
+    telefone: "(51) 98922-3844",
+    email: "edsonrs.59@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356518-edson-ggr-a3-203-cota-09--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 2 — casal Cleyce + Edson, mesmo endereço, mesma data, mesma maquininha.\n" +
+      "VALOR PAGO = R$ 1.000,00 — sua parte do cartão de débito VISA Electron (comprovante único R$ 2.000,00, CV 177756890, maquininha Laranjinha Itaú, 24/08/2026 12h29). R$ 1.000 alocado a este contrato, R$ 1.000 ao contrato da Cleyce (ficha 78).\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão de débito = cartão → Estorno.\n" +
+      "Corretagem: R$ 4.490,00 (R$ 1.000 cartão + 5x R$ 698,00 boleto, 1ª 10/10/2026 — NÃO PAGOS).\n" +
+      "Sinal: R$ 3.978,67 em 5x R$ 795,73 boleto (1ª 10/03/2027) — NÃO PAGO.\n" +
+      "Saldo: R$ 71.104,67 em 91x R$ 781,37 boleto (1ª 10/08/2027) — NÃO PAGO.\n" +
+      "Contrato assinado em Gramado/RS em 24/08/2026 — DENTRO DO PRAZO DE 7 DIAS (vence 31/08/2026).\n" +
+      "Cônjuge: Cleyce Carvalho Alves (ficha 78), mesmo endereço, ambos Casado(a).\n" +
+      "Profissão: Autônomo(a). Nascimento: 11/02/1991.\n" +
+      "Endereço: Rua Assis Brasil, 81, Vila Vista Alegre, Cachoeirinha/RS, CEP 94945-570.\n" +
+      "2 quartos, área privativa 86,2m², área total 126,33m².\n" +
+      "ZapSign nº 39675a5d-c5d9-4f09-a9b4-fec06b1c2347. Proposta nº 356518."
   }
 ];
