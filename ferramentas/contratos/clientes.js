@@ -3216,7 +3216,7 @@ window.CLIENTES = [
     razaoSocial: "W-30 EMPREENDIMENTOS IMOBILIÁRIOS LTDA",
     cnpj: "30.157.207/0001-35",
 
-    valorPago: 5353.79,
+    valorPago: 3203.59,
     valorTotal: 40289.35,
     corretagem: 4372.00,
     sinal: 150.00,
@@ -3235,10 +3235,8 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 5.353,79 — composição:\n" +
-      "  • Boleto cota: 3x R$ 50,00 (abr-jun/2026) = R$ 150,00 + 2x R$ 415,90 (jul-ago/2026) = R$ 831,80 → subtotal boleto R$ 981,80\n" +
-      "  • Depósito intermediação: 1x R$ 400,00\n" +
-      "  • Crédito recorrente intermediação (valor cheio): 11x R$ 361,09 = R$ 3.971,99\n" +
+      "VALOR PAGO = R$ 3.203,59 (informado pelo cliente).\n" +
+      "Valor anterior calculado era R$ 5.353,79 — corrigido em 26/08/2026.\n" +
       "DEVOLUÇÃO: Reembolso — instrumento principal boleto (cota).\n" +
       "Preço da cota (sem intermediação): R$ 35.917,35. Intermediação: R$ 4.372,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
       "86x R$ 415,90 boleto mensal (1ª em 20/07/2026) — saldo restante da cota.\n" +
@@ -4314,5 +4312,232 @@ window.CLIENTES = [
       "ATENÇÃO: Nome no quadro-resumo = 'AMELIA', assinatura GSign = 'AMAELIA' — verificar grafia correta.\n" +
       "Dados bancários no distrato: Banco do Brasil (campo editável, ainda não confirmado).\n" +
       "PENDENTE: obter contrato/proposta original para confirmar valores exatos e forma de pagamento."
+  },
+
+  /* ---------- 81 — GAV — 343753 PORTO 2 LIFE RESORT, Bloco 01 / 0208 / Cota 23 ---------- */
+  {
+    id: "343753-jaison-p2l-bl01-0208-cota-23",
+    nome: "JAISON LUIS GOMES PINHEIRO",
+    cpf: "826.463.500-82",
+    rg: "4084912197 SJS/RS",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PORTO 2 LIFE RESORT",
+    bloco: "Bloco 01",
+    apartamento: "0208",
+    andar: "1",
+    cota: "23",
+    fracao: "1/52",
+    localizacao: "PERNAMBUCO",
+
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+
+    valorPago: 0,
+    valorTotal: 78015.58,
+    corretagem: 3990.00,
+    sinal: 3900.78,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-06-19" },
+      { tipo: "Corretagem", qtd: 4, valor: 747.50, forma: "Boleto", vencimento: "2026-07-19" },
+      { tipo: "Sinal", qtd: 4, valor: 975.20, forma: "Parcelas", vencimento: "2026-11-10" },
+      { tipo: "Saldo", qtd: 80, valor: 876.56, forma: "Parcelas", vencimento: "2027-03-10" }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (corretagem) + Boleto 4x R$ 747,50 (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-06-19",
+    telefone: "(51) 98950-9373",
+    email: "jaisonlgpinheiro@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/343753-jaison-p2l-bl01-0208-cota-23--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 3 — mesmo adquirente (Jaison Luis Gomes Pinheiro), 3 contratos Porto 2 Life Resort.\n" +
+      "VALOR PAGO = R$ 0 (PENDENTE — aguardando informação do usuário).\n" +
+      "FORA DO PRAZO — contrato 19/06/2026, prazo 26/06/2026, hoje 26/08/2026 (2+ meses).\n" +
+      "DEVOLUÇÃO: Reembolso — PIX é o instrumento principal.\n" +
+      "Corretagem: R$ 3.990,00 (PIX R$ 1.000 + Boleto 4x R$ 747,50 = R$ 2.990).\n" +
+      "PIX R$ 3.000 total rateado em 3 contratos (R$ 1.000 cada). ID transação: RESN7829500095158073RP55X6HI78641DB. Recibo maquininha Laranjinha Itaú, 19/06/2026 23h25.\n" +
+      "Boleto corretagem 4x R$ 747,50 (1ª 19/07/2026) — quitação a verificar.\n" +
+      "Sinal: R$ 3.900,78 em 4x R$ 975,20 (1ª 10/11/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 70.124,80 em 80x R$ 876,56 (1ª 10/03/2027) — NÃO VENCIDO.\n" +
+      "Cônjuge: Não informado (estado civil Casado, mas cônjuge não consta no contrato).\n" +
+      "Profissão: Assistente Comercial. Nascimento: 24/10/1985.\n" +
+      "Endereço: Rua Flor de Gazanias, 79, Bairro São Luiz, Gravataí/RS, CEP 94065464.\n" +
+      "D4Sign 0db9ecb1-e5de-4185-a140-78f5790e9543. Assinatura presencial 20/06/2026 00:02:59. Proposta nº 343753."
+  },
+
+  /* ---------- 82 — GAV — 343752 PORTO 2 LIFE RESORT, Bloco 06 / 0328 / Cota 09 ---------- */
+  {
+    id: "343752-jaison-p2l-bl06-0328-cota-09",
+    nome: "JAISON LUIS GOMES PINHEIRO",
+    cpf: "826.463.500-82",
+    rg: "4084912197 SJS/RS",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PORTO 2 LIFE RESORT",
+    bloco: "Bloco 06",
+    apartamento: "0328",
+    andar: "2",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "PERNAMBUCO",
+
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+
+    valorPago: 0,
+    valorTotal: 78015.58,
+    corretagem: 3990.00,
+    sinal: 3900.78,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-06-19" },
+      { tipo: "Corretagem", qtd: 4, valor: 747.50, forma: "Boleto", vencimento: "2026-07-19" },
+      { tipo: "Sinal", qtd: 4, valor: 975.20, forma: "Parcelas", vencimento: "2026-11-10" },
+      { tipo: "Saldo", qtd: 80, valor: 876.56, forma: "Parcelas", vencimento: "2027-03-10" }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (corretagem) + Boleto 4x R$ 747,50 (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-06-19",
+    telefone: "(51) 98950-9373",
+    email: "jaisonlgpinheiro@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/343752-jaison-p2l-bl06-0328-cota-09--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 3 — mesmo adquirente (Jaison Luis Gomes Pinheiro), 3 contratos Porto 2 Life Resort.\n" +
+      "VALOR PAGO = R$ 0 (PENDENTE — aguardando informação do usuário).\n" +
+      "FORA DO PRAZO — contrato 19/06/2026, prazo 26/06/2026, hoje 26/08/2026 (2+ meses).\n" +
+      "DEVOLUÇÃO: Reembolso — PIX é o instrumento principal.\n" +
+      "Corretagem: R$ 3.990,00 (PIX R$ 1.000 + Boleto 4x R$ 747,50 = R$ 2.990).\n" +
+      "PIX R$ 3.000 total rateado em 3 contratos (R$ 1.000 cada). ID transação: RESN7829500095158073RP55X6HI78641DB.\n" +
+      "Boleto corretagem 4x R$ 747,50 (1ª 19/07/2026) — quitação a verificar.\n" +
+      "Sinal: R$ 3.900,78 em 4x R$ 975,20 (1ª 10/11/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 70.124,80 em 80x R$ 876,56 (1ª 10/03/2027) — NÃO VENCIDO.\n" +
+      "Cônjuge: Não informado (estado civil Casado, mas cônjuge não consta no contrato).\n" +
+      "Profissão: Assistente Comercial. Nascimento: 24/10/1985.\n" +
+      "Endereço: Rua Flor de Gazanias, 79, Bairro São Luiz, Gravataí/RS, CEP 94065464.\n" +
+      "D4Sign 25b94431-464a-4fb9-b28e-31b8232529ef. Assinatura presencial 20/06/2026 00:01:58. Proposta nº 343752."
+  },
+
+  /* ---------- 83 — GAV — 343754 PORTO 2 LIFE RESORT, Bloco 01 / 0226 / Cota 19 ---------- */
+  {
+    id: "343754-jaison-p2l-bl01-0226-cota-19",
+    nome: "JAISON LUIS GOMES PINHEIRO",
+    cpf: "826.463.500-82",
+    rg: "4084912197 SJS/RS",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PORTO 2 LIFE RESORT",
+    bloco: "Bloco 01",
+    apartamento: "0226",
+    andar: "1",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "PERNAMBUCO",
+
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+
+    valorPago: 0,
+    valorTotal: 78015.58,
+    corretagem: 3990.00,
+    sinal: 3900.78,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-06-19" },
+      { tipo: "Corretagem", qtd: 4, valor: 747.50, forma: "Boleto", vencimento: "2026-07-19" },
+      { tipo: "Sinal", qtd: 4, valor: 975.20, forma: "Parcelas", vencimento: "2026-11-10" },
+      { tipo: "Saldo", qtd: 80, valor: 876.56, forma: "Parcelas", vencimento: "2027-03-10" }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (corretagem) + Boleto 4x R$ 747,50 (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-06-19",
+    telefone: "(51) 98950-9373",
+    email: "jaisonlgpinheiro@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/343754-jaison-p2l-bl01-0226-cota-19--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 3 DE 3 — mesmo adquirente (Jaison Luis Gomes Pinheiro), 3 contratos Porto 2 Life Resort.\n" +
+      "VALOR PAGO = R$ 0 (PENDENTE — aguardando informação do usuário).\n" +
+      "FORA DO PRAZO — contrato 19/06/2026, prazo 26/06/2026, hoje 26/08/2026 (2+ meses).\n" +
+      "DEVOLUÇÃO: Reembolso — PIX é o instrumento principal.\n" +
+      "Corretagem: R$ 3.990,00 (PIX R$ 1.000 + Boleto 4x R$ 747,50 = R$ 2.990).\n" +
+      "PIX R$ 3.000 total rateado em 3 contratos (R$ 1.000 cada). ID transação: RESN7829500095158073RP55X6HI78641DB.\n" +
+      "Boleto corretagem 4x R$ 747,50 (1ª 19/07/2026) — quitação a verificar.\n" +
+      "Sinal: R$ 3.900,78 em 4x R$ 975,20 (1ª 10/11/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 70.124,80 em 80x R$ 876,56 (1ª 10/03/2027) — NÃO VENCIDO.\n" +
+      "Cônjuge: Não informado (estado civil Casado, mas cônjuge não consta no contrato).\n" +
+      "Profissão: Assistente Comercial. Nascimento: 24/10/1985.\n" +
+      "Endereço: Rua Flor de Gazanias, 79, Bairro São Luiz, Gravataí/RS, CEP 94065464.\n" +
+      "D4Sign b76ce9da-80ba-4d43-bc04-e5d3494759a9. Assinatura presencial 20/06/2026 00:04:42. Proposta nº 343754."
+  },
+
+  /* ---------- 84 — WAM — 312559 PRAIAS DO LAGO ECO RESORT, Bloco M / 003 / Cota 06 ---------- */
+  {
+    id: "312559-lucio-praias-lago-m-003-cota-06",
+    nome: "LUCIO DE BARROS GONCALVES",
+    cpf: "091.332.316-05",
+    rg: "15855928 SSP/MG",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Solteiro",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "M",
+    apartamento: "003",
+    andar: "",
+    cota: "06",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 5280.00,
+    valorTotal: 51726.75,
+    corretagem: 5280.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Cota (entrada)", qtd: 5, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 524.96, forma: "Boleto", vencimento: "2027-02-20" },
+      { tipo: "Intermediação", qtd: 1, valor: 1500.00, forma: "Espécie/Dinheiro", vencimento: "2026-08-25" },
+      { tipo: "Intermediação", qtd: 11, valor: 343.63, forma: "Cartão de Crédito Cielo", vencimento: "2026-08-25" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.500,00 espécie/dinheiro + 11x R$ 343,63 cartão crédito Cielo (intermediação)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-25",
+    telefone: "(31) 99582-5437",
+    email: "luciobarros70@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/312559-lucio-praias-lago-m-003-cota-06--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 5.280,00 — intermediação: R$ 1.500 espécie/dinheiro + 11x R$ 343,63 cartão crédito Cielo (R$ 3.779,93). Total contratual R$ 5.280,00.\n" +
+      "DEVOLUÇÃO: Reembolso — espécie/dinheiro é o instrumento principal (listado primeiro). Cartão crédito R$ 3.779,93 pode ser estornado separadamente.\n" +
+      "DENTRO DO PRAZO — contrato 25/08/2026, prazo 01/09/2026, hoje 26/08/2026.\n" +
+      "Preço da Cota (sem intermediação): R$ 46.446,75.\n" +
+      "Cota entrada: 5x R$ 50,00 boleto (1ª 15/09/2026) — NÃO VENCIDO.\n" +
+      "Cota saldo: 88x R$ 524,96 boleto (1ª 20/02/2027) — NÃO VENCIDO.\n" +
+      "Intermediadora: WAM COMERCIALIZAÇÃO S.A., CNPJ 17.919.649/0001-03.\n" +
+      "Contrato indica 3 semanas de uso por ano (campo fracao mantido como 1/52 por padrão).\n" +
+      "Inclui Passaporte Náutico Praia Clube (nº 09-M003/06), vinculado à cota.\n" +
+      "Profissão: Empresário. Nascimento: 20/04/1990.\n" +
+      "Endereço: Rua São Martinho, 49 - Jardim das Alterosas 1ª Seção, Betim/MG, CEP 32670738.\n" +
+      "GSign ID: 7EHYD8DX06-C18ZUY5-BD38NZKETS1VPH-7Y7FZ. Contrato nº 312559."
   }
 ];

@@ -408,6 +408,9 @@
               '<button type="button" class="btn" data-acao="reembolso-grupo" data-ids="' + esc(ids) + '">' +
                 "Reembolso único dos " + g.itens.length +
               "</button>" +
+              '<button type="button" class="btn" data-acao="distrato-grupo" data-ids="' + esc(ids) + '">' +
+                "Distrato dos " + g.itens.length +
+              "</button>" +
             "</div>" +
           "</header>" +
           '<div class="grupo__itens">' +
@@ -1195,7 +1198,7 @@
 '<div class="doc-logo" id="docLogo" contenteditable="false"><img src="' + logo + '" alt="" id="docLogoImg" /></div>' +
 '<hr class="doc-rule" />' +
 '<h1 class="doc-title">TERMO DE DISTRATO AO CONTRATO PARTICULAR DE PROMESSA DE VENDA E COMPRA DE UNIDADE IMOBILIÁRIA.</h1>' +
-'<p class="doc-p">Por este instrumento eu <b id="pv_nome" class="up">NOME DO CLIENTE</b>, <span id="pv_nac">brasileiro(a)</span>, <span id="pv_ec">Solteiro(a)</span>, titular da CI/RG <b id="pv_rg">—</b> e do CPF: <b id="pv_cpf">—</b><span id="pv_conjuge"></span> <span id="pv_verbo">manifesto</span> de livre e espontânea vontade, propor o distrato/desistência do negócio veiculado pela PROPOSTA DE PROMESSA DE VENDA E COMPRA DE UNIDADE IMOBILIÁRIA, relativa à aquisição de uma fração de <b id="pv_fracao">1/52</b> do <b id="pv_unidade">Apartamento 622</b>, nominado <b id="pv_cota">Cota 21</b>, do Edifício <b id="pv_edificio">AREYA BARRA RESORT</b>, localizado em <b id="pv_local">ALAGOAS</b>, de propriedade da empresa <b id="pv_empresa">—</b>, inscrita no CNPJ sob o nº <b id="pv_cnpj">—</b>.</p>' +
+'<p class="doc-p">Por este instrumento eu <b id="pv_nome" class="up">NOME DO CLIENTE</b>, <span id="pv_nac">brasileiro(a)</span>, <span id="pv_ec">Solteiro(a)</span>, titular da CI/RG <b id="pv_rg">—</b> e do CPF: <b id="pv_cpf">—</b><span id="pv_conjuge"></span> <span id="pv_verbo">manifesto</span> de livre e espontânea vontade, propor o distrato/desistência do negócio veiculado pela PROPOSTA DE PROMESSA DE VENDA E COMPRA DE UNIDADE IMOBILIÁRIA, relativa à aquisição de uma fração de <b id="pv_fracao">1/52</b> do <span id="pv_imoveis"><b>Apartamento 622</b>, nominado <b>Cota 21</b>,</span> do Edifício <b id="pv_edificio">AREYA BARRA RESORT</b>, localizado em <b id="pv_local">ALAGOAS</b>, de propriedade da empresa <b id="pv_empresa">—</b>, inscrita no CNPJ sob o nº <b id="pv_cnpj">—</b>.</p>' +
 '<div class="doc-opcoes">' +
 '<div class="doc-opcao" id="op_estorno"><span>( <b class="mark" id="ck_estorno">&nbsp;</b> ) Estorno Cartão</span><span>R$ <span id="val_estorno">XXXX,00</span></span></div>' +
 '<div class="doc-opcao" id="op_reemb"><span>( <b class="mark" id="ck_reemb">X</b> ) Reembolso</span><span>R$ <span id="val_reemb">1.000,00</span></span></div>' +
@@ -1297,7 +1300,7 @@
     var c = acharCliente(id);
     if (!c) return;
 
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v4" : "termo-distrato-v4";
+    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v5" : "termo-distrato-v5";
     var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
 
     var valorNum = num(c.valorPago);
@@ -1340,10 +1343,13 @@
       f_logo_bottom: antesCampos.f_logo_bottom || "6"
     };
 
-    var docHTML = preencherDoc(anterior.docHTML || docBase(c.empresa), campos, temConj, clausulasDoDistrato(c), meioDoEstorno(c));
+    // usa docHTML salvo só se tiver o template novo (pv_imoveis), senão força docBase
+    var htmlBase = anterior.docHTML && anterior.docHTML.indexOf("pv_imoveis") !== -1
+      ? anterior.docHTML : docBase(c.empresa);
+    var docHTML = preencherDoc(htmlBase, campos, temConj, clausulasDoDistrato(c), meioDoEstorno(c));
 
     try {
-      localStorage.setItem(chave, JSON.stringify({ campos: campos, temConj: temConj, docHTML: docHTML }));
+      localStorage.setItem(chave, JSON.stringify({ campos: campos, temConj: temConj, docHTML: docHTML, imoveisExtra: [] }));
     } catch (e) {
       alert("Não consegui gravar os dados no navegador. Abra o distrato e preencha à mão.");
       return;
@@ -1365,6 +1371,93 @@
     location.href = "../" + pasta + "/index.html";
   }
 
+  // Distrato para grupo de contratos (múltiplos imóveis)
+  function gerarDistratoGrupo(ids) {
+    var clientes = ids.map(function (id) { return acharCliente(id); }).filter(Boolean);
+    if (!clientes.length) return;
+
+    // usa o primeiro contrato como base para dados pessoais
+    var c = clientes[0];
+    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v5" : "termo-distrato-v5";
+    var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
+
+    // soma valorPago de todos
+    var valorTotal = clientes.reduce(function (s, cl) { return s + (num(cl.valorPago) || 0); }, 0);
+    var valorStr = valorTotal === 0 ? "" : moeda(valorTotal);
+    var extenso = valorTotal === 0 ? "" : valorPorExtenso(valorTotal);
+    var forma = formaReembolso(c);
+    var temConj = !!c.conjuge.nome;
+    var ec = estadoCivilSelect(c.estadoCivil);
+    if (temConj && ec !== "Casado(a)" && ec !== "União estável") ec = "Casado(a)";
+
+    // imóvel principal = primeiro contrato, extras = restantes
+    var imoveisExtra = [];
+    for (var i = 1; i < clientes.length; i++) {
+      imoveisExtra.push({
+        unidade: unidadeDistrato(clientes[i]),
+        cota: cotaDistrato(clientes[i])
+      });
+    }
+
+    var anterior = {};
+    try { anterior = JSON.parse(localStorage.getItem(chave) || "{}") || {}; } catch (e) {}
+    var antesCampos = anterior.campos || {};
+
+    var campos = {
+      f_nome: c.nome,
+      f_nac: c.nacionalidade || "brasileiro(a)",
+      f_ec: ec,
+      f_rg: c.rg,
+      f_cpf: c.cpf,
+      f_fracao: c.fracao || "1/52",
+      f_unidade: unidadeDistrato(c),
+      f_cota: cotaDistrato(c),
+      f_local: c.localizacao,
+      f_edificio: c.empreendimento,
+      f_empresa: c.razaoSocial,
+      f_cnpj: c.cnpj,
+      f_forma: forma,
+      f_valor: valorStr,
+      f_extenso: extenso,
+      f_pix: c.pix,
+      f_conj_nome: c.conjuge.nome,
+      f_conj_nac: "brasileiro(a)",
+      f_conj_rg: c.conjuge.rg,
+      f_conj_cpf: c.conjuge.cpf,
+      f_logo_align: antesCampos.f_logo_align || "right",
+      f_logo_size: antesCampos.f_logo_size || "62",
+      f_logo_top: antesCampos.f_logo_top || "0",
+      f_logo_bottom: antesCampos.f_logo_bottom || "6",
+      _imoveisExtra: imoveisExtra
+    };
+
+    var clausulas = clausulasDoDistrato(c);
+    var meio = meioDoEstorno(c);
+    // sempre usa template novo (docBase) pra garantir que pv_imoveis existe
+    var docHTML = preencherDoc(docBase(c.empresa), campos, temConj, clausulas, meio);
+
+    try {
+      localStorage.setItem(chave, JSON.stringify({
+        campos: campos,
+        temConj: temConj,
+        docHTML: docHTML,
+        imoveisExtra: imoveisExtra
+      }));
+    } catch (e) {
+      alert("Não consegui gravar os dados no navegador. Abra o distrato e preencha à mão.");
+      return;
+    }
+
+    // navega para a ferramenta de distrato
+    try {
+      if (window.top !== window.self) {
+        window.top.location.href = "../../index.html#tool/" + pasta;
+        return;
+      }
+    } catch (e) {}
+    location.href = "../" + pasta + "/index.html";
+  }
+
   // Repete no HTML do documento o que a ferramenta de distrato faz ao preencher.
   function preencherDoc(html, f, temConj, clausula, meio) {
     var doc = new DOMParser().parseFromString('<div id="__wrap">' + html + "</div>", "text/html");
@@ -1382,8 +1475,31 @@
     set("pv_rg", ou(f.f_rg, "—"));
     set("pv_cpf", ou(f.f_cpf, "—"));
     set("pv_fracao", ou(f.f_fracao, "—"));
-    set("pv_unidade", ou(f.f_unidade, "—"));
-    set("pv_cota", ou(f.f_cota, "—"));
+
+    // pv_imoveis: span que contém unidade(s) + cota(s)
+    var spanIm = box.querySelector("#pv_imoveis");
+    if (spanIm) {
+      var u1 = ou(f.f_unidade, "—"), c1 = ou(f.f_cota, "—");
+      var extras = f._imoveisExtra || [];
+      if (extras.length === 0) {
+        spanIm.innerHTML = "<b>" + esc(u1) + "</b>, nominado <b>" + esc(c1) + "</b>,";
+      } else {
+        var todos = [{ unidade: u1, cota: c1 }].concat(extras);
+        var partes = [];
+        for (var pi = 0; pi < todos.length; pi++) {
+          partes.push("<b>" + esc(todos[pi].unidade || "—") + "</b> (<b>" + esc(todos[pi].cota || "—") + "</b>)");
+        }
+        var joined;
+        if (partes.length === 2) joined = partes[0] + " e " + partes[1];
+        else joined = partes.slice(0, -1).join(", ") + " e " + partes[partes.length - 1];
+        spanIm.innerHTML = joined + ",";
+      }
+    } else {
+      // fallback: template antigo com pv_unidade / pv_cota separados
+      set("pv_unidade", ou(f.f_unidade, "—"));
+      set("pv_cota", ou(f.f_cota, "—"));
+    }
+
     set("pv_edificio", ou(f.f_edificio, "—"));
     set("pv_local", ou(f.f_local, "—"));
     set("pv_empresa", ou(f.f_empresa, "—"));
@@ -1501,6 +1617,9 @@
 
     var rb = e.target.closest("[data-acao='reembolso-grupo']");
     if (rb) { formReembolso(rb.getAttribute("data-ids").split("|")); return; }
+
+    var dg = e.target.closest("[data-acao='distrato-grupo']");
+    if (dg) { gerarDistratoGrupo(dg.getAttribute("data-ids").split("|")); return; }
 
     // botões de ação da própria caixa (não abrem a ficha)
     var acaoBt = e.target.closest(".ficha__botoes [data-acao]");
