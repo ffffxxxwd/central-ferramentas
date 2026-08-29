@@ -4709,5 +4709,119 @@ window.CLIENTES = [
       "Profissão: Empresário. Nascimento: 24/10/1994.\n" +
       "Endereço: Rua Santana, 713, Mercadinho Santo Antonio, Alto da Boa Vista, Araripina/PE, CEP 56287020.\n" +
       "ZapSign 812e5702-4028-483f-a89a-05c5edbdb23d. Proposta nº 356097."
+  },
+
+  /* ---------- 88 — GAV — 356601 AREYA BARRA RESORT, Bloco 01 / 213 / Cota 14 ---------- */
+  {
+    id: "356601-wellington-areya-bl01-213-cota-14",
+    nome: "WELLINGTON DEBLA DOS SANTOS",
+    cpf: "072.269.669-80",
+    rg: "93815980 SESP/PR",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "MIRIAM NOEMI DEBLA DOS SANTOS", cpf: "039.473.339-86", rg: "90900749 SESP/PR", email: "miriam.220817@gmail.com" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "213",
+    andar: "2",
+    cota: "14",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 3990.00,
+    valorTotal: 50405.59,
+    corretagem: 3990.00,
+    sinal: 2520.27,
+    parcelas: [
+      { tipo: "Corretagem (PIX)", qtd: 1, valor: 2000.00, forma: "PIX", vencimento: "2026-08-25" },
+      { tipo: "Corretagem (Cartão)", qtd: 3, valor: 663.33, forma: "Cartão MASTER Crédito Parcelado", vencimento: "2026-08-25" },
+      { tipo: "Sinal", qtd: 4, valor: 630.07, forma: "Parcelas", vencimento: "2026-12-10" },
+      { tipo: "Saldo", qtd: 74, valor: 593.18, forma: "Parcelas", vencimento: "2027-04-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 2.000,00 PIX + 3x R$ 663,33 cartão MASTER crédito parcelado (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-25",
+    telefone: "(44) 99998-8089",
+    email: "wellington.debla@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356601-wellington-areya-bl01-213-cota-14--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.990,00 — corretagem: R$ 2.000 PIX + R$ 1.990 cartão MASTER crédito parcelado 3x R$ 663,33 (final 6230, CV 178135370).\n" +
+      "PIX = instrumento principal (R$ 2.000 > R$ 1.990 cartão) → Reembolso. Cartão R$ 1.990 pode ser estornado separadamente.\n" +
+      "DENTRO DO PRAZO — contrato 25/08/2026, prazo 01/09/2026, hoje 29/08/2026.\n" +
+      "PIX: R$ 2.000,00 em 25/08/2026, ID RESV1046620094845425LHGRV9S3EE45D27, CV 22470586, CPF 072.269.669-80.\n" +
+      "Cartão: R$ 1.990,00 MASTERCARD final 6230, crédito parcelado estabelecimento, CV 178135370, 25/08/2026 12h33.\n" +
+      "Sinal: R$ 2.520,27 em 4x R$ 630,07 (1ª 10/12/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 43.895,32 em 74x R$ 593,18 (1ª 10/04/2027) — NÃO VENCIDO.\n" +
+      "1 quarto, área privativa 34,01m², área total 73,72m². Período 2 semanas/ano.\n" +
+      "Cônjuge: Miriam Noemi Debla dos Santos, CPF 039.473.339-86, RG 90900749 SESP/PR, professora, nasc. 20/08/1982, tel. (44) 99916-1802.\n" +
+      "Profissão: Autônomo. Nascimento: 24/11/1988.\n" +
+      "Endereço: Rua Jose Cividanes, SN, Casa, Jardim Yamanaka, Marialva/PR, CEP 86990-000.\n" +
+      "Consultora: Cassia Sanches Pamplona.\n" +
+      "ZapSign 985358c1-3046-4b9d-b4e3-96b788504c89. Proposta nº 356601."
+  },
+
+  /* ---------- 89 — GAV — 357136 PORTO 2 LIFE RESORT, Bloco 05 / 0321 / Cota 19 ---------- */
+  {
+    id: "357136-leandro-p2l-bl05-321-cota-19",
+    nome: "LEANDRO LINHARES DE LIMA",
+    cpf: "386.020.608-74",
+    rg: "38602060874 SSP/SP",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PORTO 2 LIFE RESORT",
+    bloco: "Bloco 05",
+    apartamento: "0321",
+    andar: "2",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "PERNAMBUCO",
+
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+
+    valorPago: 3990.00,
+    valorTotal: 85246.73,
+    corretagem: 3990.00,
+    sinal: 4262.33,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 3990.00, forma: "Cartão VISA Crédito à Vista", vencimento: "2026-09-27" },
+      { tipo: "Sinal", qtd: 4, valor: 1065.58, forma: "Parcelas", vencimento: "2026-09-09" },
+      { tipo: "Saldo", qtd: 80, valor: 962.43, forma: "Parcelas", vencimento: "2027-01-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 3.990,00 cartão VISA crédito à vista (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-28",
+    telefone: "(11) 94962-1897",
+    email: "le3linhares@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/357136-leandro-p2l-bl05-321-cota-19--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.990,00 — cartão VISA crédito à vista (corretagem). Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito → Estorno.\n" +
+      "DENTRO DO PRAZO — contrato 28/08/2026, prazo 04/09/2026, hoje 29/08/2026.\n" +
+      "Corretagem: R$ 3.990,00 (1x VISA crédito à vista, final 6134, CV 190054654, Nº Doc 190054654, 28/08/2026 16h47).\n" +
+      "Sinal: R$ 4.262,33 em 4x R$ 1.065,58 (1ª 09/09/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 76.994,40 em 80x R$ 962,43 (1ª 10/01/2027) — NÃO VENCIDO.\n" +
+      "ATENÇÃO: RG informado igual ao CPF (38602060874) — possível erro de preenchimento ou uso do CPF como documento de identidade.\n" +
+      "Cônjuge: Casado(a) mas dados do cônjuge NÃO informados no contrato.\n" +
+      "1 quarto, área privativa 32,54m², área total 69,89m². Período 2 semanas/ano.\n" +
+      "Profissão: Agente de Segurança. Nascimento: 06/08/1989.\n" +
+      "Endereço: Rua Elvis Presley, 15, Centreville, Santo André/SP, CEP 09120-100.\n" +
+      "Consultor: Raynner R S de Araujo Consul.\n" +
+      "Beneficiários corretagem: Mathews Gomes Parreira, Raynner R S de Araujo Consul, Cesar Oliveira da S, Patricia Cardoso de Araujo.\n" +
+      "ZapSign 941a9b0c-8079-4ff1-a354-16b8cf16e300. Proposta nº 357136."
   }
 ];
