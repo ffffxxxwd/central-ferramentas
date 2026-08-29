@@ -4539,5 +4539,175 @@ window.CLIENTES = [
       "Profissão: Empresário. Nascimento: 20/04/1990.\n" +
       "Endereço: Rua São Martinho, 49 - Jardim das Alterosas 1ª Seção, Betim/MG, CEP 32670738.\n" +
       "GSign ID: 7EHYD8DX06-C18ZUY5-BD38NZKETS1VPH-7Y7FZ. Contrato nº 312559."
+  },
+
+  /* ---------- 85 — GAV — 356096 AREYA BARRA RESORT, Bloco 01 / 247 / Cota 09 ---------- */
+  {
+    id: "356096-antonio-areya-bl01-247-cota-09",
+    nome: "ANTONIO VICENTE FERREIRA JUNIOR",
+    cpf: "088.429.364-56",
+    rg: "8233254 SDS/PE",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "247",
+    andar: "2",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1995.00,
+    valorTotal: 56682.42,
+    corretagem: 1995.00,
+    sinal: 2834.14,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1995.00, forma: "Cartão MASTER Crédito à Vista", vencimento: "2026-09-21" },
+      { tipo: "Sinal", qtd: 4, valor: 708.54, forma: "Parcelas", vencimento: "2026-10-10" },
+      { tipo: "Saldo", qtd: 74, valor: 700.72, forma: "Parcelas", vencimento: "2027-02-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.995,00 cartão MASTER crédito à vista (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-22",
+    telefone: "(87) 98876-2863",
+    email: "junior-arara@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356096-antonio-areya-bl01-247-cota-09--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 3 — mesmo adquirente (Antonio Vicente Ferreira Junior), 3 contratos Areya Barra Resort.\n" +
+      "VALOR PAGO = R$ 1.995,00 — cartão MASTER crédito à vista (corretagem). Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito → Estorno.\n" +
+      "DENTRO DO PRAZO — contrato 22/08/2026, prazo 29/08/2026. ÚLTIMO DIA HOJE (29/08).\n" +
+      "Corretagem: R$ 1.995,00 (1x cartão MASTER, Nº Doc 22963094, venc 21/09/2026).\n" +
+      "ATENÇÃO: Nº Documento 22963094 é o MESMO nos 3 contratos — verificar se foi 1 transação ou 3 separadas.\n" +
+      "Sinal: R$ 2.834,14 em 4x R$ 708,54 (1ª 10/10/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 51.853,28 em 74x R$ 700,72 (1ª 10/02/2027) — NÃO VENCIDO.\n" +
+      "2 quartos, área privativa 81,8m², área total 177,3m².\n" +
+      "Cônjuge: Não informado (estado civil Casado, mas cônjuge não consta no contrato).\n" +
+      "Profissão: Empresário. Nascimento: 24/10/1994.\n" +
+      "Endereço: Rua Santana, 713, Mercadinho Santo Antonio, Alto da Boa Vista, Araripina/PE, CEP 56287020.\n" +
+      "ZapSign d7201d91-ca73-41aa-9802-0a310d4cf655. Proposta nº 356096."
+  },
+
+  /* ---------- 86 — GAV — 356095 AREYA BARRA RESORT, Bloco 01 / 247 / Cota 31 ---------- */
+  {
+    id: "356095-antonio-areya-bl01-247-cota-31",
+    nome: "ANTONIO VICENTE FERREIRA JUNIOR",
+    cpf: "088.429.364-56",
+    rg: "8233254 SDS/PE",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "247",
+    andar: "2",
+    cota: "31",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1995.00,
+    valorTotal: 56682.42,
+    corretagem: 1995.00,
+    sinal: 2834.14,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 1995.00, forma: "Cartão MASTER Crédito à Vista", vencimento: "2026-09-21" },
+      { tipo: "Sinal", qtd: 4, valor: 708.54, forma: "Parcelas", vencimento: "2026-10-10" },
+      { tipo: "Saldo", qtd: 74, valor: 700.72, forma: "Parcelas", vencimento: "2027-02-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.995,00 cartão MASTER crédito à vista (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-22",
+    telefone: "(87) 98876-2863",
+    email: "junior-arara@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356095-antonio-areya-bl01-247-cota-31--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 3 — mesmo adquirente (Antonio Vicente Ferreira Junior), 3 contratos Areya Barra Resort.\n" +
+      "VALOR PAGO = R$ 1.995,00 — cartão MASTER crédito à vista (corretagem). Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito → Estorno.\n" +
+      "DENTRO DO PRAZO — contrato 22/08/2026, prazo 29/08/2026. ÚLTIMO DIA HOJE (29/08).\n" +
+      "Corretagem: R$ 1.995,00 (1x cartão MASTER, Nº Doc 22963094, venc 21/09/2026).\n" +
+      "ATENÇÃO: Nº Documento 22963094 é o MESMO nos 3 contratos — verificar se foi 1 transação ou 3 separadas.\n" +
+      "Sinal: R$ 2.834,14 em 4x R$ 708,54 (1ª 10/10/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 51.853,28 em 74x R$ 700,72 (1ª 10/02/2027) — NÃO VENCIDO.\n" +
+      "Mesmo apartamento 247 da ficha 85, cota diferente (31 vs 09).\n" +
+      "2 quartos, área privativa 81,8m², área total 177,3m².\n" +
+      "Cônjuge: Não informado (estado civil Casado, mas cônjuge não consta no contrato).\n" +
+      "Profissão: Empresário. Nascimento: 24/10/1994.\n" +
+      "Endereço: Rua Santana, 713, Mercadinho Santo Antonio, Alto da Boa Vista, Araripina/PE, CEP 56287020.\n" +
+      "ZapSign e91e8839-6964-4eb4-88ef-aa726068f836. Proposta nº 356095."
+  },
+
+  /* ---------- 87 — GAV — 356097 AREYA BARRA RESORT, Bloco 01 / 312 / Cota 13 ---------- */
+  {
+    id: "356097-antonio-areya-bl01-312-cota-13",
+    nome: "ANTONIO VICENTE FERREIRA JUNIOR",
+    cpf: "088.429.364-56",
+    rg: "8233254 SDS/PE",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "312",
+    andar: "3",
+    cota: "13",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 3990.00,
+    valorTotal: 48752.68,
+    corretagem: 3990.00,
+    sinal: 2437.64,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 3990.00, forma: "Cartão MASTER Crédito à Vista", vencimento: "2026-09-21" },
+      { tipo: "Sinal", qtd: 4, valor: 609.41, forma: "Parcelas", vencimento: "2026-10-10" },
+      { tipo: "Saldo", qtd: 74, valor: 571.96, forma: "Parcelas", vencimento: "2027-02-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 3.990,00 cartão MASTER crédito à vista (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-22",
+    telefone: "(87) 98876-2863",
+    email: "junior-arara@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356097-antonio-areya-bl01-312-cota-13--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 3 DE 3 — mesmo adquirente (Antonio Vicente Ferreira Junior), 3 contratos Areya Barra Resort.\n" +
+      "VALOR PAGO = R$ 3.990,00 — cartão MASTER crédito à vista (corretagem). Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito → Estorno.\n" +
+      "DENTRO DO PRAZO — contrato 22/08/2026, prazo 29/08/2026. ÚLTIMO DIA HOJE (29/08).\n" +
+      "Corretagem: R$ 3.990,00 (1x cartão MASTER, Nº Doc 22963094, venc 21/09/2026).\n" +
+      "ATENÇÃO: Nº Documento 22963094 é o MESMO nos 3 contratos — verificar se foi 1 transação ou 3 separadas.\n" +
+      "Sinal: R$ 2.437,64 em 4x R$ 609,41 (1ª 10/10/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 42.325,04 em 74x R$ 571,96 (1ª 10/02/2027) — NÃO VENCIDO.\n" +
+      "Apartamento diferente (312, 1 quarto) dos contratos 85-86 (247, 2 quartos). Período 2 semanas/ano.\n" +
+      "1 quarto, área privativa 34,01m², área total 73,72m².\n" +
+      "Cônjuge: Não informado (estado civil Casado, mas cônjuge não consta no contrato).\n" +
+      "Profissão: Empresário. Nascimento: 24/10/1994.\n" +
+      "Endereço: Rua Santana, 713, Mercadinho Santo Antonio, Alto da Boa Vista, Araripina/PE, CEP 56287020.\n" +
+      "ZapSign 812e5702-4028-483f-a89a-05c5edbdb23d. Proposta nº 356097."
   }
 ];
