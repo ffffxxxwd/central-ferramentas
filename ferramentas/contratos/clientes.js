@@ -4823,5 +4823,66 @@ window.CLIENTES = [
       "Consultor: Raynner R S de Araujo Consul.\n" +
       "Beneficiários corretagem: Mathews Gomes Parreira, Raynner R S de Araujo Consul, Cesar Oliveira da S, Patricia Cardoso de Araujo.\n" +
       "ZapSign 941a9b0c-8079-4ff1-a354-16b8cf16e300. Proposta nº 357136."
+  },
+
+  /* ---------- 90 — WAM — 313476 BÚZIOS FRACTIONAL RESORT, Bloco 03 / 3108 / Cota 09 ---------- */
+  {
+    id: "313476-daniel-buzios-bl03-3108-cota-09",
+    nome: "DANIEL PRAVATO",
+    cpf: "133.438.927-69",
+    rg: "21301927",
+    nacionalidade: "brasileiro",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "BÚZIOS FRACTIONAL RESORT",
+    bloco: "Bloco 03",
+    apartamento: "3108",
+    andar: "",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "RIO DE JANEIRO",
+
+    empresa: "WAM",
+    razaoSocial: "W50 EMPREENDIMENTOS IMOBILIARIOS LTDA",
+    cnpj: "33.770.634/0001-82",
+
+    valorPago: 3920.00,
+    valorTotal: 36533.79,
+    corretagem: 3920.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Intermediação (depósito)", qtd: 1, valor: 280.00, forma: "Depósito Bancário/Transferência", vencimento: "2026-08-29" },
+      { tipo: "Intermediação (recorrente)", qtd: 9, valor: 404.44, forma: "Crédito Recorrente", vencimento: "2026-08-29" },
+      { tipo: "Cota (entrada)", qtd: 5, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 96, valor: 377.96, forma: "Boleto", vencimento: "2027-02-20" }
+    ],
+    formaPagamentoEntrada: "1x R$ 280,00 depósito/transferência + 9x R$ 404,44 crédito recorrente (intermediação)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-29",
+    telefone: "(22) 99962-9854",
+    email: "thalitamaia09@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/313476-daniel-buzios-bl03-3108-cota-09--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.920,00 — intermediação: R$ 280 depósito/transferência + 9x R$ 404,44 crédito recorrente (R$ 3.639,96). Recorrente = valor cheio.\n" +
+      "DEVOLUÇÃO: Reembolso — depósito/transferência é o instrumento listado primeiro. Crédito recorrente R$ 3.639,96 pode ser estornado separadamente.\n" +
+      "DENTRO DO PRAZO — contrato 29/08/2026, prazo 05/09/2026, hoje 30/08/2026.\n" +
+      "Preço da Cota (sem intermediação): R$ 36.533,79.\n" +
+      "Cota entrada: 5x R$ 50,00 boleto (1ª 15/09/2026) — NÃO VENCIDO.\n" +
+      "Cota saldo: 96x R$ 377,96 boleto (1ª 20/02/2027) — NÃO VENCIDO.\n" +
+      "ATENÇÃO: Estado civil CASADO mas cônjuge NÃO informado. Arquivo diz 'SOLTEIRO' no título — contradição.\n" +
+      "ATENÇÃO: Email (thalitamaia09@hotmail.com) parece ser de terceiro/cônjuge (Thalita?), não do adquirente Daniel.\n" +
+      "ATENÇÃO: RG incompleto — '21301927' sem órgão expedidor.\n" +
+      "Empreendimento em RETROFIT (reforma) — contrato contém cláusula de anuência com retrofit.\n" +
+      "Nome comercial: Búzios Beach Resort. Nome legal: Búzios Fractional Resort.\n" +
+      "Vendedora: W50 Empreendimentos Imobiliários Ltda. Intermediadora: WAM Comercialização S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "Semanas de uso: 1 por ano. Habite-se nº 002/2010 (13/03/2010).\n" +
+      "Telefone secundário: (22) 99900-7309.\n" +
+      "Profissão: Almoxarife. Nascimento: 01/10/1986.\n" +
+      "Testemunhas: Jean Philippe Leon Koch, Yasmin Lorrane Silva Gomes (CPF 058.624.011-05).\n" +
+      "GSign ID: I8YII1ABQW-J0NTORF-X403AZPT610W0M-3OZI2. Contrato nº 313476."
   }
 ];
