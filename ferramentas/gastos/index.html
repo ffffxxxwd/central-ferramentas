@@ -83,6 +83,9 @@ tr:last-child td{border-bottom:none}
 <!-- Tabs de período -->
 <div class="periodo-tabs">
   <button class="periodo-tab ativo" onclick="setPeriodo('tudo')">Tudo</button>
+  <button class="periodo-tab" onclick="setPeriodo('7d')">7 dias</button>
+  <button class="periodo-tab" onclick="setPeriodo('15d')">15 dias</button>
+  <button class="periodo-tab" onclick="setPeriodo('30d')">30 dias</button>
   <button class="periodo-tab" onclick="setPeriodo('dia')">Diário</button>
   <button class="periodo-tab" onclick="setPeriodo('semana')">Semanal</button>
   <button class="periodo-tab" onclick="setPeriodo('mes')">Mensal</button>
@@ -213,7 +216,15 @@ function getRangePeriodo() {
   const hoje = new Date();
   let inicio, fim, label;
 
-  if (periodoAtual === 'dia') {
+  if (periodoAtual === '7d' || periodoAtual === '15d' || periodoAtual === '30d') {
+    const dias = parseInt(periodoAtual);
+    const fim_d = new Date(hoje);
+    const ini_d = new Date(hoje);
+    ini_d.setDate(ini_d.getDate() - dias + 1);
+    inicio = ini_d.toISOString().slice(0, 10);
+    fim = fim_d.toISOString().slice(0, 10);
+    label = 'Últimos ' + dias + ' dias';
+  } else if (periodoAtual === 'dia') {
     const d = new Date(hoje);
     d.setDate(d.getDate() + offsetPeriodo);
     const ds = d.toISOString().slice(0, 10);
@@ -325,9 +336,10 @@ function renderizar() {
   const navEl = document.getElementById('periodoNav');
   const resumoEl = document.getElementById('periodoResumo');
 
+  const isRapido = ['7d','15d','30d'].includes(periodoAtual);
   if (periodoAtual !== 'tudo') {
     const { label } = getRangePeriodo();
-    navEl.style.display = 'flex';
+    navEl.style.display = isRapido ? 'none' : 'flex';
     resumoEl.style.display = 'flex';
     document.getElementById('periodoLabel').textContent = label;
 
