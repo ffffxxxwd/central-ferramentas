@@ -114,9 +114,7 @@ tr:last-child td{border-bottom:none}
   <select id="tipo"><option value="gasto">Gasto</option><option value="receita">Receita</option></select>
   <select id="categoria">
     <option value="">Categoria</option>
-    <option>Alimentação</option><option>Transporte</option><option>Moradia</option>
-    <option>Saúde</option><option>Lazer</option><option>Trabalho</option>
-    <option>Educação</option><option>Outros</option>
+    <option>Trabalho</option><option>Campanha</option><option>Outros</option>
   </select>
   <input type="date" id="data">
   <button class="btn btn-add" onclick="adicionar()">Adicionar</button>
@@ -131,7 +129,8 @@ tr:last-child td{border-bottom:none}
     <option value="">Todas categorias</option>
   </select>
   <button class="btn-limpar" onclick="limparFiltros()">Limpar filtros</button>
-  <button class="btn-export" onclick="exportarCSV()">Exportar CSV</button>
+  <button class="btn-export" onclick="exportarImagem()">Compartilhar</button>
+  <button class="btn-export" onclick="exportarCSV()">CSV</button>
 </div>
 
 <table>
@@ -434,6 +433,98 @@ function exportarCSV() {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = 'gastos_receitas.csv';
+  a.click();
+}
+
+function exportarImagem() {
+  const lista = filtrar();
+  const todos = carregar();
+  const c = document.createElement('canvas');
+  const w = 600;
+  const ctx = c.getContext('2d');
+
+  // dados gerais
+  const recTotal = todos.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
+  const gasTotal = todos.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
+  const lucTotal = recTotal - gasTotal;
+
+  // dados do período
+  const recP = lista.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
+  const gasP = lista.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
+  const lucP = recP - gasP;
+
+  // agrupar por dia
+  const grupos = {};
+  lista.forEach(e => { const d = e.data || 'sem-data'; if (!grupos[d]) grupos[d] = []; grupos[d].push(e); });
+  const dias = Object.keys(grupos).sort((a, b) => b.localeCompare(a));
+
+  // calcular altura
+  let h = 180; // header + totais
+  if (periodoAtual !== 'tudo') h += 60; // resumo período
+  dias.forEach(d => { h += 30 + grupos[d].length * 24 + 28; }); // dia header + itens + subtotal
+  h += 20; // padding bottom
+
+  c.width = w; c.height = h;
+  ctx.fillStyle = '#f5f7fc'; ctx.fillRect(0, 0, w, h);
+
+  // título
+  ctx.fillStyle = '#17203a'; ctx.font = 'bold 18px system-ui'; ctx.fillText('Gastos e Receitas', 24, 36);
+
+  // totais gerais
+  let y = 60;
+  ctx.font = '11px system-ui'; ctx.fillStyle = '#6b7690';
+  ctx.fillText('RECEITAS', 24, y); ctx.fillText('GASTOS', 168, y); ctx.fillText('LUCRO', 312, y); ctx.fillText('CADA (÷2)', 456, y);
+  y += 20;
+  ctx.font = 'bold 16px system-ui';
+  ctx.fillStyle = '#17b26a'; ctx.fillText(fmt(recTotal), 24, y);
+  ctx.fillStyle = '#e03131'; ctx.fillText(fmt(gasTotal), 168, y);
+  ctx.fillStyle = '#3160f5'; ctx.fillText(fmt(lucTotal), 312, y);
+  ctx.fillStyle = '#3160f5'; ctx.fillText(fmt(lucTotal / 2), 456, y);
+
+  y += 30;
+
+  // resumo período (se não for "tudo")
+  if (periodoAtual !== 'tudo') {
+    const label = periodoAtual.endsWith('d') ? 'Últimos ' + parseInt(periodoAtual) + ' dias' : getRangePeriodo().label;
+    ctx.fillStyle = '#3160f5'; ctx.font = 'bold 13px system-ui'; ctx.fillText(label, 24, y); y += 20;
+    ctx.font = '12px system-ui';
+    ctx.fillStyle = '#17b26a'; ctx.fillText('Rec: ' + fmt(recP), 24, y);
+    ctx.fillStyle = '#e03131'; ctx.fillText('Gas: ' + fmt(gasP), 180, y);
+    ctx.fillStyle = '#3160f5'; ctx.fillText('Luc: ' + fmt(lucP), 336, y);
+    ctx.fillText('Cada: ' + fmt(lucP / 2), 470, y);
+    y += 30;
+  }
+
+  // linha separadora
+  ctx.strokeStyle = '#e3e8f2'; ctx.beginPath(); ctx.moveTo(24, y); ctx.lineTo(w - 24, y); ctx.stroke(); y += 16;
+
+  // dias
+  dias.forEach(dia => {
+    const itens = grupos[dia];
+    const recD = itens.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
+    const gasD = itens.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
+    const lucD = recD - gasD;
+
+    ctx.fillStyle = '#3160f5'; ctx.font = 'bold 12px system-ui';
+    ctx.fillText(dia === 'sem-data' ? 'Sem data' : fmtDiaCompleto(dia), 24, y); y += 20;
+
+    itens.forEach(e => {
+      ctx.font = '11px system-ui'; ctx.fillStyle = '#17203a';
+      ctx.fillText(e.desc, 36, y);
+      ctx.fillStyle = e.tipo === 'receita' ? '#17b26a' : '#e03131';
+      ctx.fillText((e.tipo === 'gasto' ? '- ' : '') + fmt(e.valor), 420, y);
+      y += 24;
+    });
+
+    ctx.font = '11px system-ui'; ctx.fillStyle = '#6b7690';
+    ctx.fillText('Bruto: ' + fmt(recD) + '  Custo: ' + fmt(gasD) + '  Lucro: ' + fmt(lucD) + '  Cada: ' + fmt(lucD / 2), 36, y);
+    y += 28;
+  });
+
+  // baixar
+  const a = document.createElement('a');
+  a.href = c.toDataURL('image/png');
+  a.download = 'resumo_gastos.png';
   a.click();
 }
 
