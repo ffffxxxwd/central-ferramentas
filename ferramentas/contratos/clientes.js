@@ -4884,5 +4884,66 @@ window.CLIENTES = [
       "Profissão: Almoxarife. Nascimento: 01/10/1986.\n" +
       "Testemunhas: Jean Philippe Leon Koch, Yasmin Lorrane Silva Gomes (CPF 058.624.011-05).\n" +
       "GSign ID: I8YII1ABQW-J0NTORF-X403AZPT610W0M-3OZI2. Contrato nº 313476."
+  },
+
+  /* ---------- 91 — WAM — ONDAS PRAIA RESORT, Bloco B / B228 / Cota 10 ---------- */
+  {
+    id: "ondas-juslaine-bl-b-b228-cota-10",
+    nome: "JUSLAINE APARECIDA GONCALVES",
+    cpf: "048.078.706-96",
+    rg: "10968190 SSP/MG",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "TIAGO HONORATO DA SILVA SANTOS", cpf: "073.404.306-60", rg: "14473580 SSP/MG", email: "TIAGONACAPA@GMAIL.COM" },
+
+    empreendimento: "ONDAS PRAIA RESORT",
+    bloco: "Bloco B",
+    apartamento: "B228",
+    andar: "",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "BAHIA",
+
+    empresa: "WAM",
+    razaoSocial: "SPE PORTO SEGURO 02 EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+    cnpj: "22.059.167/0001-60",
+
+    valorPago: 1000.00,
+    valorTotal: 62663.17,
+    corretagem: 7650.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Intermediação (depósito)", qtd: 1, valor: 1000.00, forma: "Depósito Bancário/Transferência", vencimento: "2026-08-23" },
+      { tipo: "Intermediação (boleto)", qtd: 9, valor: 738.88, forma: "Boleto - Cobrança W Palmerston", vencimento: "" },
+      { tipo: "Cota (entrada)", qtd: 5, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Cota (saldo)", qtd: 96, valor: 650.14, forma: "Boleto", vencimento: "2027-02-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 depósito/transferência + 9x R$ 738,88 boleto W Palmerston (intermediação)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-23",
+    telefone: "(37) 99127-5997",
+    email: "JUSLANEAG23@gmail.com",
+    arquivos: [
+      { titulo: "Contrato (fotos)", arquivo: "contratos-pdf/ondas-juslaine-bl-b-b228-cota-10--contrato.zip" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 — depósito/transferência (intermediação). Boletos: só o quitado — sem confirmação de quais foram pagos.\n" +
+      "DEVOLUÇÃO: Reembolso — depósito/transferência → Reembolso.\n" +
+      "DENTRO DO PRAZO — contrato 23/08/2026, prazo 30/08/2026. ÚLTIMO DIA HOJE (30/08)!\n" +
+      "Intermediação total: R$ 7.650,00 (1x R$ 1.000 depósito + 9x R$ 738,88 boleto W Palmerston).\n" +
+      "Intermediadora: WAM Comercialização S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "Preço da Cota (sem intermediação): R$ 62.663,17.\n" +
+      "Cota entrada: 5x R$ 50,00 boleto (1ª 15/09/2026) — NÃO VENCIDO.\n" +
+      "Cota saldo: 96x R$ 650,14 boleto (1ª 10/02/2027) — NÃO VENCIDO.\n" +
+      "CONTRATO ENVIADO EM FOTOS (23 imagens JPG em ZIP), não em PDF.\n" +
+      "Cônjuge anuente: Tiago Honorato da Silva Santos, CPF 073.404.306-60, RG 14473580 SSP/MG, mecânico, nasc. 15/10/1984, tel. (37) 99126-0298.\n" +
+      "Regime de bens: Comunhão Parcial.\n" +
+      "ATENÇÃO: Email do contrato é JUSLANEAG23 (sem I) — possível grafia intencional ou erro.\n" +
+      "Profissão: Professora. Nascimento: 13/02/1980.\n" +
+      "Habite-se: 00046/2021 a 00611/2021 (02/03/2021).\n" +
+      "Testemunhas: Abqueila Amorim, Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
+      "GSign Juslaine: P2BZHIHY5BZ6. GSign Tiago: W7Q2XG8YRX3P.\n" +
+      "GSign Documento ID: FE7FFUP4GD-STEJLJI-3ZME5G81O2NAYL-6GO3N."
   }
 ];
