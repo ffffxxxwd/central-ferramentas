@@ -5118,5 +5118,65 @@ window.CLIENTES = [
       "Profissão: Empresário. Nascimento: 25/02/1997.\n" +
       "Endereço: Avenida Martinho Furtado de Lacerda, 410, Nossa Senhora de Fátima, Conceição/PB, CEP 58970000.\n" +
       "GSign ID: TU5ELW8S7L-NWMB68B-ZOU58MREOYLM88-KJTU3."
+  },
+
+  /* ---------- 95 — WAM — 249361 PRAIAS DO LAGO ECO RESORT, Bloco N / 302 / Cota 16 ---------- */
+  {
+    id: "249361-fernanda-pdl-n-302-cota-16",
+    nome: "FERNANDA PATRICIA ZUNIGA GOMES",
+    cpf: "375.068.948-23",
+    rg: "274683325 SSP/SP",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PRAIAS DO LAGO ECO RESORT",
+    bloco: "N",
+    apartamento: "302",
+    andar: "",
+    cota: "16",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+
+    valorPago: 0,
+    valorTotal: 43875.93,
+    corretagem: 4029.73,
+    sinal: 100.00,
+    parcelas: [
+      { tipo: "Intermediação (depósito)", qtd: 1, valor: 1000.00, forma: "Depósito Bancário/Transferência Eletrônica", vencimento: "2025-04-20" },
+      { tipo: "Intermediação (boleto)", qtd: 11, valor: 275.43, forma: "Boleto - Cobrança W Palmerston", vencimento: "" },
+      { tipo: "Cota (entrada)", qtd: 2, valor: 50.00, forma: "Boleto", vencimento: "2025-05-15" },
+      { tipo: "Cota (saldo)", qtd: 88, valor: 497.45, forma: "Boleto", vencimento: "2025-07-20" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 depósito/transferência + 11x R$ 275,43 boleto W Palmerston (intermediação)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-04-20",
+    telefone: "(11) 96667-7754",
+    email: "fernandapzuniga@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/249361-fernanda-pdl-n-302-cota-16--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 0 — CONTRATO ANTIGO (abril/2025), valorPago PENDENTE — informar valor real pago pela cliente.\n" +
+      "DEVOLUÇÃO: Reembolso — depósito/transferência é o instrumento listado primeiro → Reembolso.\n" +
+      "FORA DO PRAZO — contrato 20/04/2025, prazo 27/04/2025, hoje 31/08/2026 (mais de 1 ano fora).\n" +
+      "Intermediação: R$ 4.029,73 (1x R$ 1.000 depósito + 11x R$ 275,43 boleto W Palmerston = R$ 3.029,73).\n" +
+      "Intermediadora: WAM Comercialização S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "Preço da Cota (sem intermediação): R$ 43.875,93.\n" +
+      "Cota entrada: 2x R$ 50,00 boleto (1ª 15/05/2025).\n" +
+      "Cota saldo: 88x R$ 497,45 boleto (1ª 20/07/2025).\n" +
+      "Semanas de uso: 3 por ano (acima do padrão de 1 semana).\n" +
+      "Inclui Passaporte Náutico Praia Clube (nº 07-N302/16), vinculado à cota.\n" +
+      "Habite-se nº 2020001124, expedido 20/11/2020.\n" +
+      "Vendedora assinante: Sara Thalia Melo Barrozo.\n" +
+      "Testemunhas: Luiz Felipe Vieira Silva, David Alisson Gadelha dos Santos (CPF 700.943.871-41).\n" +
+      "Profissão: Outra. Nascimento: 25/08/1989.\n" +
+      "Endereço: Rua Ator Paulo Gustavo, 270, Cidade São Mateus, São Paulo/SP, CEP 03965005.\n" +
+      "GSign Fernanda: G4RMR8NQCP6D. GSign Documento ID: ZW6JMJIW17-OJQUWY3-GXYU6SL0W41RID-UC0C2."
   }
 ];
