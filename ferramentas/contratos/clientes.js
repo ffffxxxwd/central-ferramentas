@@ -5517,7 +5517,7 @@ window.CLIENTES = [
     razaoSocial: "REFÚGIO DAS LONTRAS POUSADA EMPREENDIMENTOS IMOBILIARIOS LTDA",
     cnpj: "41.402.028/0001-32",
 
-    valorPago: 3900.00,
+    valorPago: 7800.00,
     valorTotal: 38555.91,
     corretagem: 3900.00,
     sinal: 0,
@@ -5536,7 +5536,7 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 3.900,00 — corretagem: 6x R$ 650,00 cartão de crédito Cielo. Cartão = valor cheio.\n" +
+      "VALOR PAGO = R$ 7.800,00 — R$ 7.800 no cartão de crédito (6x R$ 1.300 conforme e-mail da cliente). Cartão = valor cheio.\n" +
       "DEVOLUÇÃO: Estorno Cartão — cartão crédito (instrumento principal).\n" +
       "DENTRO DO PRAZO — contrato 24/08/2026, prazo 31/08/2026 (ÚLTIMO DIA HOJE).\n" +
       "Preço cota (sem intermediação): R$ 34.655,91. Corretagem: R$ 3.900,00. Total: R$ 38.555,91.\n" +
