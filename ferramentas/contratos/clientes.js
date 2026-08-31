@@ -5142,7 +5142,7 @@ window.CLIENTES = [
     razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
     cnpj: "19.829.219/0001-26",
 
-    valorPago: 0,
+    valorPago: 11591.98,
     valorTotal: 43875.93,
     corretagem: 4029.73,
     sinal: 100.00,
@@ -5162,7 +5162,7 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 0 — CONTRATO ANTIGO (abril/2025), valorPago PENDENTE — informar valor real pago pela cliente.\n" +
+      "VALOR PAGO = R$ 11.591,98 — informado pelo escritório. Contrato antigo (abril/2025).\n" +
       "DEVOLUÇÃO: Reembolso — depósito/transferência é o instrumento listado primeiro → Reembolso.\n" +
       "FORA DO PRAZO — contrato 20/04/2025, prazo 27/04/2025, hoje 31/08/2026 (mais de 1 ano fora).\n" +
       "Intermediação: R$ 4.029,73 (1x R$ 1.000 depósito + 11x R$ 275,43 boleto W Palmerston = R$ 3.029,73).\n" +
