@@ -5142,7 +5142,7 @@ window.CLIENTES = [
     razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
     cnpj: "19.829.219/0001-26",
 
-    valorPago: 11591.98,
+    valorPago: 15621.71,
     valorTotal: 43875.93,
     corretagem: 4029.73,
     sinal: 100.00,
@@ -5162,7 +5162,7 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 11.591,98 — informado pelo escritório. Contrato antigo (abril/2025).\n" +
+      "VALOR PAGO = R$ 15.621,71 — informado pelo escritório (corrigido). Contrato antigo (abril/2025).\n" +
       "DEVOLUÇÃO: Reembolso — depósito/transferência é o instrumento listado primeiro → Reembolso.\n" +
       "FORA DO PRAZO — contrato 20/04/2025, prazo 27/04/2025, hoje 31/08/2026 (mais de 1 ano fora).\n" +
       "Intermediação: R$ 4.029,73 (1x R$ 1.000 depósito + 11x R$ 275,43 boleto W Palmerston = R$ 3.029,73).\n" +
@@ -5235,5 +5235,54 @@ window.CLIENTES = [
       "Endereço: Estrada Duarte Nunes, 24, Senador Vasconcelos, Rio de Janeiro/RJ, CEP 23085000.\n" +
       "ATENÇÃO: PDF/arquivo do contrato NÃO fornecido — contrato enviado apenas como screenshot.\n" +
       "ZapSign (parcial): 90308fde-b2c8-...-464c698128a5 (ID sobreposto por texto na imagem). Proposta nº 356428."
+  },
+
+  /* ---------- 97 — GAV — GRAN GARDEN RESORT (dados parciais — só notificação) ---------- */
+  {
+    id: "ggr-paulo-scherer",
+    nome: "PAULO ROBERTO SCHERER",
+    cpf: "506.759.310-53",
+    rg: "70.576.999-81",
+    nacionalidade: "brasileiro",
+    estadoCivil: "",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "",
+    apartamento: "",
+    andar: "",
+    cota: "",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "50.094.155/0001-02",
+
+    valorPago: 2245.00,
+    valorTotal: 0,
+    corretagem: 0,
+    sinal: 0,
+    parcelas: [
+      { tipo: "PIX", qtd: 1, valor: 2245.00, forma: "PIX", vencimento: "2026-07-31" }
+    ],
+    formaPagamentoEntrada: "1x R$ 2.245,00 PIX",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-31",
+    telefone: "(51) 98057-5924",
+    email: "",
+    arquivos: [
+      { titulo: "Notificação de arrependimento", arquivo: "contratos-pdf/ggr-paulo-scherer--notificacao.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "FICHA INCOMPLETA — cadastrada a partir da carta de arrependimento, NÃO do contrato. Faltam: bloco, apartamento, cota, valor total, corretagem, email, estado civil, profissão.\n" +
+      "VALOR PAGO = R$ 2.245,00 — PIX em 31/07/2026 (o que passou).\n" +
+      "DEVOLUÇÃO: Reembolso — PIX → Reembolso.\n" +
+      "DENTRO DO PRAZO — contrato 31/07/2026, prazo 07/08/2026. Arrependimento exercido em 03/08/2026 (carta gov.br assinada digitalmente 03/08/2026 13:43:09).\n" +
+      "Carta solicita estorno integral de R$ 2.245,00 para chave PIX (51) 98057-5924 ou CPF 506.759.310-53.\n" +
+      "Motivos: apelo emocional, sem tempo para leitura do contrato, dificuldades financeiras, omissão de informações.\n" +
+      "Endereço: Rua Arroio do Meio, 175, Olarias, Lajeado/RS.\n" +
+      "Referência arquivo: (281_29) no nome do documento original."
   }
 ];
