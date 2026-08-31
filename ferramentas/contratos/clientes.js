@@ -5083,7 +5083,7 @@ window.CLIENTES = [
     razaoSocial: "CONSÓRCIO DOM PEDRO LAGUNA",
     cnpj: "43.740.923/0001-92",
 
-    valorPago: 2600.00,
+    valorPago: 5200.00,
     valorTotal: 25206.94,
     corretagem: 2600.00,
     sinal: 0,
@@ -5102,7 +5102,7 @@ window.CLIENTES = [
     pix: "",
     observacoes:
       "CONTRATO DE CESSÃO DE DIREITO DE USO (TIME-SHARE) — diferente de multipropriedade fracionada. Prazo determinado de 10 anos, 1 semana/ano.\n" +
-      "VALOR PAGO = R$ 2.600,00 — corretagem: 3x R$ 866,66 cartão de crédito Cielo. Cartão = valor cheio.\n" +
+      "VALOR PAGO = R$ 5.200,00 — informado pelo usuário (contrato mostra apenas corretagem R$ 2.600; valor real pago é R$ 5.200).\n" +
       "DEVOLUÇÃO: Estorno Cartão — cartão crédito → Estorno.\n" +
       "DENTRO DO PRAZO — contrato 29/08/2026, prazo 05/09/2026, hoje 31/08/2026.\n" +
       "Preço total CDU (sem intermediação): R$ 22.606,94.\n" +
