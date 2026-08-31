@@ -5493,5 +5493,60 @@ window.CLIENTES = [
       "DEVOLUÇÃO: Reembolso — PIX (instrumento principal).\n" +
       "DENTRO DO PRAZO — contrato 26/08/2026, prazo 02/09/2026, hoje 31/08/2026.\n" +
       "Proposta nº 356719. ZapSign: e51706bd-2166-47b7-9496-e4fb86f0eba1."
+  },
+
+  /* ---------- 102 — WAM — REFÚGIO DAS LONTRAS POUSADA, B / 110 / Cota 05 ---------- */
+  {
+    id: "rdl-maria-auxiliadora-b-110-cota-05",
+    nome: "MARIA AUXILIADORA MENDES DA SILVA",
+    cpf: "193.219.701-00",
+    rg: "958391 SSP/GO",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "REFÚGIO DAS LONTRAS POUSADA",
+    bloco: "B",
+    apartamento: "110",
+    andar: "",
+    cota: "05",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "WAM",
+    razaoSocial: "REFÚGIO DAS LONTRAS POUSADA EMPREENDIMENTOS IMOBILIARIOS LTDA",
+    cnpj: "41.402.028/0001-32",
+
+    valorPago: 3900.00,
+    valorTotal: 38555.91,
+    corretagem: 3900.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 6, valor: 650.00, forma: "Cartão de Crédito Cielo", vencimento: "2026-08-24" },
+      { tipo: "Parcelas fixas", qtd: 5, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Saldo", qtd: 84, valor: 409.59, forma: "Boleto", vencimento: "2027-02-20" }
+    ],
+    formaPagamentoEntrada: "6x R$ 650,00 cartão de crédito Cielo (corretagem) + 5x R$ 50,00 boleto + 84x R$ 409,59 boleto",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-24",
+    telefone: "(19) 99666-8400",
+    email: "mariaedubrasil@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/rdl-maria-auxiliadora-b-110-cota-05--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.900,00 — corretagem: 6x R$ 650,00 cartão de crédito Cielo. Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 24/08/2026, prazo 31/08/2026 (ÚLTIMO DIA HOJE).\n" +
+      "Preço cota (sem intermediação): R$ 34.655,91. Corretagem: R$ 3.900,00. Total: R$ 38.555,91.\n" +
+      "Parcelas cota: 5x R$ 50 boleto (1ª 15/09/2026 — NÃO VENCIDO) + 84x R$ 409,59 boleto (1ª 20/02/2027 — NÃO VENCIDO).\n" +
+      "Intermediadora: WAM COMERCIALIZAÇÃO SA (CNPJ 17.919.649/0001-03).\n" +
+      "Habite-se previsto: 31/08/2028. Regime: Patrimônio de Afetação. Matrícula: 14.659.\n" +
+      "GSign Document ID: P66UP323WB-CECGMFS-RO1H23X3WH3W0L-EQBT7. GSignId adquirente: T1V11GK1E8L.\n" +
+      "Testemunhas: Nelson Augusto da Costa; Yasmin Lorrane Silva Gomes (CPF 058.624.011-05).\n" +
+      "ATENÇÃO: e-mail da cliente menciona R$ 7.800 (6x R$ 1.300) no cartão — dobro da corretagem deste contrato (R$ 3.900). Pode haver 2º contrato não recebido.\n" +
+      "Não conheceu pessoalmente a unidade/empreendimento (marcou 'Não').\n" +
+      "Nasc: 23/06/1959. Profissão: Aposentado."
   }
 ];
