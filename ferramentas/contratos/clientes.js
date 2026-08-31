@@ -5337,5 +5337,161 @@ window.CLIENTES = [
       "Área privativa: 44,5300 m². Área comum: 10,8454 m². Total: 55,3754 m². Fração ideal: 0,1973%.\n" +
       "WAM Fidelidade inclusa (adesão 6 anos, sem custo adicional).\n" +
       "Endereço: Rua Cruzeiro do Sul, 405, Novo Tempo, Timoteo/MG, CEP 35183116."
+  },
+
+  /* ---------- 99 — GAV — 356721 AREYA BARRA RESORT, Bloco 01 / 219 / Cota 25 ---------- */
+  {
+    id: "356721-david-areya-bl01-219-cota-25",
+    nome: "DAVID CONCEICAO DOS SANTOS",
+    cpf: "036.402.111-03",
+    rg: "2644826 SSP/DF",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "219",
+    andar: "2",
+    cota: "25",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1330.00,
+    valorTotal: 52471.36,
+    corretagem: 3990.00,
+    sinal: 2623.56,
+    parcelas: [
+      { tipo: "Corretagem (PIX)", qtd: 1, valor: 1330.00, forma: "PIX", vencimento: "2026-08-26" },
+      { tipo: "Corretagem (boleto)", qtd: 2, valor: 1330.00, forma: "Boleto", vencimento: "2026-09-26" },
+      { tipo: "Sinal de Negócio", qtd: 4, valor: 655.89, forma: "Parcelas", vencimento: "2026-11-05" },
+      { tipo: "Saldo", qtd: 74, valor: 619.70, forma: "Parcelas", vencimento: "2027-03-05" }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.330,00 (corretagem) + 2x R$ 1.330,00 boleto (corretagem) + 4x R$ 655,89 sinal + 74x R$ 619,70 saldo",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-26",
+    telefone: "(61) 99258-3054",
+    email: "davidmaklin89@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356721-david-areya-bl01-219-cota-25--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 3 — mesma pessoa, 3 cotas no Areya Barra Resort (fichas 99, 100, 101).\n" +
+      "VALOR PAGO = R$ 1.330,00 — PIX R$ 3.990,00 total rateado nos 3 contratos (R$ 1.330 cada). PIX = o que passou.\n" +
+      "Nº Documento PIX: RESV1046670094845425FGRZT52ZCA404CF — MESMO nos 3 contratos (1 PIX de R$ 3.990 rateado).\n" +
+      "PIX pagador CNPJ: 34.123.097/0001-41 (pessoa jurídica, não o CPF do David).\n" +
+      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal, listado primeiro).\n" +
+      "DENTRO DO PRAZO — contrato 26/08/2026, prazo 02/09/2026, hoje 31/08/2026.\n" +
+      "Corretagem restante: 2x R$ 1.330 boleto (1º 26/09/2026 — NÃO VENCIDO).\n" +
+      "Sinal: 4x R$ 655,89 (1ª 05/11/2026 — NÃO VENCIDO).\n" +
+      "Saldo: R$ 45.857,80 em 74x R$ 619,70 (1ª 05/03/2027 — NÃO VENCIDO).\n" +
+      "Proposta nº 356721. ZapSign: 647644e4-d8e3-4409-adbe-e880ca988d8c. David assinou 26/08/2026 12:16:55.\n" +
+      "Autenticação Flow: Aceito via plataforma Flow, 26/08/2026 12:04:32.\n" +
+      "Endereço: Residencial Itaipu Quadra 80, SN, Setor Habitacional Jardim Botanico, Brasilia/DF, CEP 71680528."
+  },
+
+  /* ---------- 100 — GAV — 356720 AREYA BARRA RESORT, Bloco 01 / 222 / Cota 02 ---------- */
+  {
+    id: "356720-david-areya-bl01-222-cota-02",
+    nome: "DAVID CONCEICAO DOS SANTOS",
+    cpf: "036.402.111-03",
+    rg: "2644826 SSP/DF",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "222",
+    andar: "2",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1330.00,
+    valorTotal: 52471.36,
+    corretagem: 3990.00,
+    sinal: 2623.56,
+    parcelas: [
+      { tipo: "Corretagem (PIX)", qtd: 1, valor: 1330.00, forma: "PIX", vencimento: "2026-08-26" },
+      { tipo: "Corretagem (boleto)", qtd: 2, valor: 1330.00, forma: "Boleto", vencimento: "2026-09-26" },
+      { tipo: "Sinal de Negócio", qtd: 4, valor: 655.89, forma: "Parcelas", vencimento: "2026-11-05" },
+      { tipo: "Saldo", qtd: 74, valor: 619.70, forma: "Parcelas", vencimento: "2027-03-05" }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.330,00 (corretagem) + 2x R$ 1.330,00 boleto (corretagem) + 4x R$ 655,89 sinal + 74x R$ 619,70 saldo",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-26",
+    telefone: "(61) 99258-3054",
+    email: "davidmaklin89@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356720-david-areya-bl01-222-cota-02--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 3 — mesma pessoa, 3 cotas no Areya Barra Resort (fichas 99, 100, 101).\n" +
+      "VALOR PAGO = R$ 1.330,00 — PIX R$ 3.990,00 total rateado nos 3 contratos (R$ 1.330 cada). PIX = o que passou.\n" +
+      "Nº Documento PIX: RESV1046670094845425FGRZT52ZCA404CF — MESMO nos 3 contratos.\n" +
+      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 26/08/2026, prazo 02/09/2026, hoje 31/08/2026.\n" +
+      "Proposta nº 356720. ZapSign: f9b570a0-9bc7-475a-b3df-00a132c3f9a2."
+  },
+
+  /* ---------- 101 — GAV — 356719 AREYA BARRA RESORT, Bloco 01 / 220 / Cota 15 ---------- */
+  {
+    id: "356719-david-areya-bl01-220-cota-15",
+    nome: "DAVID CONCEICAO DOS SANTOS",
+    cpf: "036.402.111-03",
+    rg: "2644826 SSP/DF",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "220",
+    andar: "2",
+    cota: "15",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1330.00,
+    valorTotal: 52471.36,
+    corretagem: 3990.00,
+    sinal: 2623.56,
+    parcelas: [
+      { tipo: "Corretagem (PIX)", qtd: 1, valor: 1330.00, forma: "PIX", vencimento: "2026-08-26" },
+      { tipo: "Corretagem (boleto)", qtd: 2, valor: 1330.00, forma: "Boleto", vencimento: "2026-09-26" },
+      { tipo: "Sinal de Negócio", qtd: 4, valor: 655.89, forma: "Parcelas", vencimento: "2026-11-05" },
+      { tipo: "Saldo", qtd: 74, valor: 619.70, forma: "Parcelas", vencimento: "2027-03-05" }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.330,00 (corretagem) + 2x R$ 1.330,00 boleto (corretagem) + 4x R$ 655,89 sinal + 74x R$ 619,70 saldo",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-26",
+    telefone: "(61) 99258-3054",
+    email: "davidmaklin89@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/356719-david-areya-bl01-220-cota-15--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 3 DE 3 — mesma pessoa, 3 cotas no Areya Barra Resort (fichas 99, 100, 101).\n" +
+      "VALOR PAGO = R$ 1.330,00 — PIX R$ 3.990,00 total rateado nos 3 contratos (R$ 1.330 cada). PIX = o que passou.\n" +
+      "Nº Documento PIX: RESV1046670094845425FGRZT52ZCA404CF — MESMO nos 3 contratos.\n" +
+      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 26/08/2026, prazo 02/09/2026, hoje 31/08/2026.\n" +
+      "Proposta nº 356719. ZapSign: e51706bd-2166-47b7-9496-e4fb86f0eba1."
   }
 ];
