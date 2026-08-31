@@ -5059,5 +5059,64 @@ window.CLIENTES = [
       "Empreendimento em Gramado/RS: Estrada da Olaria, Bairro Mato Queimado, CEP 95.670-000.\n" +
       "ATENÇÃO: PDF/arquivo do contrato NÃO fornecido — contrato enviado apenas como imagem no chat.\n" +
       "ZapSign (parcial): 17811037-c331-...-2598ed955520 (ID sobreposto por texto na imagem). Proposta nº 356396."
+  },
+
+  /* ---------- 94 — WAM — 313385 HOTEL DOM PEDRO LAGUNA, Bloco 01 / 107 / Cota 10 ---------- */
+  {
+    id: "313385-maria-luana-dpl-bl01-107-cota-10",
+    nome: "MARIA LUANA MOURA DE MAGALHÃES DOS SANTOS",
+    cpf: "115.650.694-80",
+    rg: "4340075 SSP/PB",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "HOTEL DOM PEDRO LAGUNA",
+    bloco: "Bloco 01",
+    apartamento: "107",
+    andar: "",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "CEARÁ",
+
+    empresa: "WAM",
+    razaoSocial: "CONSÓRCIO DOM PEDRO LAGUNA",
+    cnpj: "43.740.923/0001-92",
+
+    valorPago: 2600.00,
+    valorTotal: 25206.94,
+    corretagem: 2600.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 3, valor: 866.66, forma: "Cartão de Crédito Cielo", vencimento: "2026-08-29" },
+      { tipo: "Saldo (CDU)", qtd: 98, valor: 227.62, forma: "Parcelas", vencimento: "2027-03-20" }
+    ],
+    formaPagamentoEntrada: "3x R$ 866,66 cartão de crédito Cielo (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-29",
+    telefone: "(87) 99600-0182",
+    email: "MARIALUANA20166@OUTLOOK.COM",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/313385-maria-luana-dpl-bl01-107-cota-10--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO DE CESSÃO DE DIREITO DE USO (TIME-SHARE) — diferente de multipropriedade fracionada. Prazo determinado de 10 anos, 1 semana/ano.\n" +
+      "VALOR PAGO = R$ 2.600,00 — corretagem: 3x R$ 866,66 cartão de crédito Cielo. Cartão = valor cheio.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito → Estorno.\n" +
+      "DENTRO DO PRAZO — contrato 29/08/2026, prazo 05/09/2026, hoje 31/08/2026.\n" +
+      "Preço total CDU (sem intermediação): R$ 22.606,94.\n" +
+      "Saldo: R$ 22.606,94 em 98x R$ 227,62 (1ª 20/03/2027) — NÃO VENCIDO.\n" +
+      "Entrada: Inexistente.\n" +
+      "Beneficiária corretagem: W7 Brasil Negócios Inteligentes Ltda.\n" +
+      "Tipo: DELUXE - 1Q (1 quarto, 1 banheiro, 1 varanda).\n" +
+      "CDU original: Bloco 01107/Cota 10 (interpretado como Bloco 01, Apt 107, Cota 10).\n" +
+      "Contrato nº 01-01.107/10. Número 313385.\n" +
+      "Cedente líder: Dom Pedro Laguna Resort Empreendimentos Imobiliários Ltda, CNPJ 41.928.634/0001-96.\n" +
+      "Hotel: Av. Marginal Aquiraz Riviera, Lote A-06, Condomínio Aquiraz Riviera, Praia da Marambaia, Tapera, Aquiraz/CE, CEP 61.758-000.\n" +
+      "Taxa anual de serviços e manutenção: R$ 1.300,00 por UH.\n" +
+      "Profissão: Empresário. Nascimento: 25/02/1997.\n" +
+      "Endereço: Avenida Martinho Furtado de Lacerda, 410, Nossa Senhora de Fátima, Conceição/PB, CEP 58970000.\n" +
+      "GSign ID: TU5ELW8S7L-NWMB68B-ZOU58MREOYLM88-KJTU3."
   }
 ];
