@@ -4945,5 +4945,119 @@ window.CLIENTES = [
       "Testemunhas: Abqueila Amorim, Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
       "GSign Juslaine: P2BZHIHY5BZ6. GSign Tiago: W7Q2XG8YRX3P.\n" +
       "GSign Documento ID: FE7FFUP4GD-STEJLJI-3ZME5G81O2NAYL-6GO3N."
+  },
+
+  /* ---------- 92 — GAV — 357323 AREYA BARRA RESORT, Bloco 01 / 548 / Cota 47 ---------- */
+  {
+    id: "357323-carla-areya-bl01-548-cota-47",
+    nome: "CARLA RODRIGUES LIMA",
+    cpf: "091.745.714-51",
+    rg: "36066567 SSP/AL",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "AGEU HAMED CAMPOS DE MELO", cpf: "121.481.914-11", rg: "38276089 SEDS/AL", email: "ageuhamed03@gmail.com" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "548",
+    andar: "5",
+    cota: "47",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1000.00,
+    valorTotal: 29870.98,
+    corretagem: 3990.00,
+    sinal: 1493.54,
+    parcelas: [
+      { tipo: "Corretagem (PIX)", qtd: 1, valor: 500.00, forma: "PIX", vencimento: "2026-08-29" },
+      { tipo: "Corretagem (Cartão)", qtd: 1, valor: 500.00, forma: "Cartão MASTER Crédito à Vista", vencimento: "2026-09-29" },
+      { tipo: "Corretagem (Boleto)", qtd: 5, valor: 598.00, forma: "Boleto", vencimento: "2026-10-10" },
+      { tipo: "Sinal", qtd: 4, valor: 373.38, forma: "Parcelas", vencimento: "2027-03-10" },
+      { tipo: "Saldo", qtd: 74, valor: 329.56, forma: "Parcelas", vencimento: "2027-07-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 500,00 PIX + 1x R$ 500,00 cartão MASTER crédito à vista + 5x R$ 598,00 boleto (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-29",
+    telefone: "(82) 99361-0437",
+    email: "carlarodrigueslima1@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/357323-carla-areya-bl01-548-cota-47--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 — corretagem: R$ 500 PIX + R$ 500 cartão MASTER ****4060 crédito à vista. Boleto 5x R$ 598 (1ª 10/10/2026) — NÃO VENCIDO.\n" +
+      "DEVOLUÇÃO: Reembolso — PIX é o instrumento listado primeiro (R$ 500 PIX = R$ 500 cartão). Cartão R$ 500 pode ser estornado separadamente.\n" +
+      "DENTRO DO PRAZO — contrato 29/08/2026, prazo 05/09/2026, hoje 31/08/2026.\n" +
+      "PIX: R$ 500,00 em 29/08/2026 17:28, ID RESV098332009484542S8UK6BAVI7B0E11F, CV 193807006, Aute 956385.\n" +
+      "Cartão: R$ 500,00 MASTERCARD ****4060 crédito à vista, CV 193770212, Aute 956384/AUTO 937091, 29/08/2026 17:28.\n" +
+      "Terminal: SV098332, Estab 94845425, GAV BARRA DE SA, GOIANIA/GO.\n" +
+      "Sinal: R$ 1.493,54 em 4x R$ 373,38 (1ª 10/03/2027) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 24.387,44 em 74x R$ 329,56 (1ª 10/07/2027) — NÃO VENCIDO.\n" +
+      "1 quarto, área privativa 35,37m², área total 76,66m².\n" +
+      "Cônjuge anuente: Ageu Hamed Campos de Melo, CPF 121.481.914-11, RG 38276089 SEDS/AL, cirurgião dentista, nasc. 12/03/1999, tel. (82) 98733-2730.\n" +
+      "Profissão: Cirurgião dentista. Nascimento: 15/03/1995.\n" +
+      "Endereço: Avenida Maceio, 397, Bloco 5 apto 403, Tabuleiro do Martins, Maceio/AL, CEP 57061110.\n" +
+      "Consultor: Leonardo Vidal Agostini.\n" +
+      "ZapSign 7a365e9e-d544-4d10-aa3e-8462c2cecc4a. Status: Em-Curso (3/5 assinaturas). Pendentes: Robert Tomazi de Oliveira, Jerlandia Kelly de Oliveira Amarante.\n" +
+      "Recibo Guia Flow TOKEN: 2RY6MTEUZ4VDA870373D. Proposta nº 357323."
+  },
+
+  /* ---------- 93 — GAV — 356396 GRAN GARDEN RESORT, Bloco A2 / 005 / Cota 17 ---------- */
+  {
+    id: "356396-vanessa-ggr-a2-005-cota-17",
+    nome: "VANESSA MIRANDA DE ALMEIDA",
+    cpf: "091.386.937-63",
+    rg: "123424319 DETRAN/RJ",
+    nacionalidade: "brasileira",
+    estadoCivil: "União estável",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "Bloco A2",
+    apartamento: "005",
+    andar: "T",
+    cota: "17",
+    fracao: "1/52",
+    localizacao: "RIO GRANDE DO SUL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "50.094.155/0001-02",
+
+    valorPago: 4490.00,
+    valorTotal: 76732.22,
+    corretagem: 4490.00,
+    sinal: 3836.61,
+    parcelas: [
+      { tipo: "Corretagem (PIX)", qtd: 1, valor: 4490.00, forma: "PIX", vencimento: "2026-08-23" },
+      { tipo: "Sinal", qtd: 5, valor: 767.32, forma: "Parcelas", vencimento: "2026-09-10" },
+      { tipo: "Saldo", qtd: 91, valor: 751.71, forma: "Parcelas", vencimento: "2027-02-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 4.490,00 PIX (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-23",
+    telefone: "(21) 97319-3993",
+    email: "vanessamirandagata@hotmail.com",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 4.490,00 — PIX corretagem (o que passou). PIX = valor integral.\n" +
+      "DEVOLUÇÃO: Reembolso — PIX → Reembolso.\n" +
+      "FORA DO PRAZO — contrato 23/08/2026, prazo 30/08/2026, hoje 31/08/2026 (1 dia fora).\n" +
+      "PIX: R$ 4.490,00 em 23/08/2026, Nº Doc RESV0820700093/81489586KLI2HH/AB5BF45.\n" +
+      "Sinal: R$ 3.836,61 em 5x R$ 767,32 (1ª 10/09/2026) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 68.405,61 em 91x R$ 751,71 (1ª 10/02/2027) — NÃO VENCIDO.\n" +
+      "2 quartos, área privativa 86,2m², área total 126,33m².\n" +
+      "Cônjuge: NÃO INFORMADO (estado civil União estável).\n" +
+      "Profissão: Eletricista. Nascimento: 02/03/1981.\n" +
+      "Endereço: Rua Duarte Pereira, 165, Wona, Belford Roxo/RJ, CEP 26175090.\n" +
+      "Empreendimento em Gramado/RS: Estrada da Olaria, Bairro Mato Queimado, CEP 95.670-000.\n" +
+      "ATENÇÃO: PDF/arquivo do contrato NÃO fornecido — contrato enviado apenas como imagem no chat.\n" +
+      "ZapSign (parcial): 17811037-c331-...-2598ed955520 (ID sobreposto por texto na imagem). Proposta nº 356396."
   }
 ];
