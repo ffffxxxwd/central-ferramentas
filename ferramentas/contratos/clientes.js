@@ -5178,5 +5178,62 @@ window.CLIENTES = [
       "Profissão: Outra. Nascimento: 25/08/1989.\n" +
       "Endereço: Rua Ator Paulo Gustavo, 270, Cidade São Mateus, São Paulo/SP, CEP 03965005.\n" +
       "GSign Fernanda: G4RMR8NQCP6D. GSign Documento ID: ZW6JMJIW17-OJQUWY3-GXYU6SL0W41RID-UC0C2."
+  },
+
+  /* ---------- 96 — GAV — 356428 AREYA BARRA RESORT, Bloco 01 / 132 / Cota 08 ---------- */
+  {
+    id: "356428-jeniffer-areya-bl01-132-cota-08",
+    nome: "JENIFFER CAROLINE LUZIA ALMEIDA",
+    cpf: "144.915.297-01",
+    rg: "25.579.924-9 DETRAN/RJ",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "Bloco 01",
+    apartamento: "132",
+    andar: "1",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "ALAGOAS",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1000.00,
+    valorTotal: 52057.76,
+    corretagem: 3990.00,
+    sinal: 2602.90,
+    parcelas: [
+      { tipo: "Corretagem (Cartão Débito)", qtd: 1, valor: 100.00, forma: "Cartão MASTER Débito", vencimento: "2026-08-25" },
+      { tipo: "Corretagem (Cartão Débito)", qtd: 1, valor: 900.00, forma: "Cartão MASTER Débito", vencimento: "2026-08-25" },
+      { tipo: "Corretagem (Boleto)", qtd: 5, valor: 598.00, forma: "Boleto", vencimento: "2026-09-10" },
+      { tipo: "Sinal", qtd: 4, valor: 650.72, forma: "Parcelas", vencimento: "2027-02-10" },
+      { tipo: "Saldo", qtd: 74, valor: 614.39, forma: "Parcelas", vencimento: "2027-06-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 100,00 + 1x R$ 900,00 cartão MASTER débito + 5x R$ 598,00 boleto (corretagem)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-24",
+    telefone: "(21) 98812-4940",
+    email: "jhennyk10@gmail.com",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 — corretagem: R$ 100 + R$ 900 cartão MASTER débito. Cartão débito = cartão → valor cheio.\n" +
+      "Boleto 5x R$ 598 (1ª 10/09/2026) — NÃO VENCIDO.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão débito = cartão → Estorno.\n" +
+      "DENTRO DO PRAZO — contrato 24/08/2026, prazo 31/08/2026. ÚLTIMO DIA HOJE!\n" +
+      "Cartão 1: R$ 100,00 MASTER débito, Nº Doc 175763374, 25/08/2026.\n" +
+      "Cartão 2: R$ 900,00 MASTER débito, Nº Doc 19695688, 25/08/2026.\n" +
+      "Sinal: R$ 2.602,90 em 4x R$ 650,72 (1ª 10/02/2027) — NÃO VENCIDO.\n" +
+      "Saldo: R$ 45.464,86 em 74x R$ 614,39 (1ª 10/06/2027) — NÃO VENCIDO.\n" +
+      "1 quarto, área privativa 34,01m², área total 73,72m².\n" +
+      "Cônjuge: NÃO INFORMADO (estado civil Casado, mas dados do cônjuge ausentes no contrato).\n" +
+      "Profissão: Do lar. Nascimento: 05/07/1993.\n" +
+      "Endereço: Estrada Duarte Nunes, 24, Senador Vasconcelos, Rio de Janeiro/RJ, CEP 23085000.\n" +
+      "ATENÇÃO: PDF/arquivo do contrato NÃO fornecido — contrato enviado apenas como screenshot.\n" +
+      "ZapSign (parcial): 90308fde-b2c8-...-464c698128a5 (ID sobreposto por texto na imagem). Proposta nº 356428."
   }
 ];
