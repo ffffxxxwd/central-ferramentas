@@ -5599,5 +5599,117 @@ window.CLIENTES = [
       "Proposta nº 357404. ZapSign: 29ef9371-fb2b-4951-8708-93468c1e0a1c.\n" +
       "Nº Documento PIX: RESV1937540094845425BR6G9I881063C15.\n" +
       "Nasc: 29/12/1993. Profissão: Engenheiro(a). End: Rua Edmon de Sousa Melo, 33, C43 Ap14, Joao Paulo II Barreiro, Belo Horizonte/MG, CEP 30660585."
+  },
+
+  /* ---------- 104 — GAV — PORTO ALTO RESORT, Bl 01 / 0106 / Cota 04 ---------- */
+  {
+    id: "357650-nelson-par-bl01-0106-cota-04",
+    nome: "NELSON OLIVEIRA MIRANDA",
+    cpf: "034.513.881-38",
+    rg: "37976 PM/GO",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "BARBARA ALESSANDRA DOS SANTOS NASCIMENTO", cpf: "023.767.131-02", rg: "36743 PM/GO", email: "babi.alessandra28@gmail.com" },
+
+    empreendimento: "PORTO ALTO RESORT",
+    bloco: "01",
+    apartamento: "0106",
+    andar: "1",
+    cota: "04",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "34.832.326/0001-05",
+
+    valorPago: 2500.00,
+    valorTotal: 72824.86,
+    corretagem: 3990.00,
+    sinal: 3641.26,
+    parcelas: [
+      { tipo: "Corretagem PIX", qtd: 1, valor: 2500.00, forma: "PIX", vencimento: "2026-08-31" },
+      { tipo: "Corretagem Boleto", qtd: 2, valor: 496.66, forma: "Boleto", vencimento: "2026-09-30" },
+      { tipo: "Corretagem Boleto", qtd: 1, valor: 496.68, forma: "Boleto", vencimento: "2026-11-30" },
+      { tipo: "Sinal", qtd: 4, valor: 910.31, forma: "Conforme contrato", vencimento: "2026-12-10" },
+      { tipo: "Saldo", qtd: 80, valor: 814.92, forma: "Conforme contrato", vencimento: "2027-04-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 2.500,00 PIX (corretagem) + 2x R$ 496,66 boleto + 1x R$ 496,68 boleto (corretagem) + 4x R$ 910,31 sinal + 80x R$ 814,92 saldo",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-31",
+    telefone: "(61) 983523197",
+    email: "nelsonraiado77@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/357650-nelson-par-bl01-0106-cota-04--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 2 — mesma pessoa + cônjuge Barbara, 2 cotas em resorts diferentes (fichas 104, 105).\n" +
+      "VALOR PAGO = R$ 2.500,00 — PIX R$ 5.000,00 total rateado nos 2 contratos (R$ 2.500 cada). PIX = o que passou.\n" +
+      "Nº Documento PIX: RESV19375400948454255370G6PYJ37A25EA — MESMO nos 2 contratos.\n" +
+      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 31/08/2026, prazo 07/09/2026, hoje 31/08/2026.\n" +
+      "ATENÇÃO: ZapSign status 'Em-Curso' — assinatura de Nelson PENDENTE. Cônjuge Barbara assinou 31/08/2026 18:55:03.\n" +
+      "Boletos corretagem: 2x R$ 496,66 (1ª 30/09/2026) + 1x R$ 496,68 (30/11/2026) — NÃO VENCIDOS.\n" +
+      "Sinal: 4x R$ 910,31 (1ª 10/12/2026). Saldo: 80x R$ 814,92 (1ª 10/04/2027) — NÃO VENCIDOS.\n" +
+      "Proposta nº 357650. ZapSign: 089eecb9-67ec-4449-8c17-0cccffaf8172.\n" +
+      "Cônjuge: Barbara Alessandra dos Santos Nascimento, CPF 023.767.131-02, RG 36743 PM/GO, nasc 28/02/1987, Policial militar(a), tel (61) 992473540.\n" +
+      "Nasc: 22/08/1989. Profissão: Policial militar(a). End: Quadra SQ 15 Quadra 8, 16, Centro, Cidade Ocidental/GO, CEP 72880568."
+  },
+
+  /* ---------- 105 — GAV — AREYA BARRA RESORT, Bl 01 / 630 / Cota 23 ---------- */
+  {
+    id: "357651-nelson-areya-bl01-630-cota-23",
+    nome: "NELSON OLIVEIRA MIRANDA",
+    cpf: "034.513.881-38",
+    rg: "37976 PM/GO",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "BARBARA ALESSANDRA DOS SANTOS NASCIMENTO", cpf: "023.767.131-02", rg: "36743 PM/GO", email: "babi.alessandra28@gmail.com" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "01",
+    apartamento: "630",
+    andar: "6",
+    cota: "23",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 2500.00,
+    valorTotal: 56189.30,
+    corretagem: 3990.00,
+    sinal: 2809.48,
+    parcelas: [
+      { tipo: "Corretagem PIX", qtd: 1, valor: 2500.00, forma: "PIX", vencimento: "2026-08-31" },
+      { tipo: "Corretagem Boleto", qtd: 2, valor: 496.66, forma: "Boleto", vencimento: "2026-09-30" },
+      { tipo: "Corretagem Boleto", qtd: 1, valor: 496.68, forma: "Boleto", vencimento: "2026-11-30" },
+      { tipo: "Sinal", qtd: 4, valor: 702.37, forma: "Conforme contrato", vencimento: "2026-12-10" },
+      { tipo: "Saldo", qtd: 74, valor: 667.43, forma: "Conforme contrato", vencimento: "2027-04-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 2.500,00 PIX (corretagem) + 2x R$ 496,66 boleto + 1x R$ 496,68 boleto (corretagem) + 4x R$ 702,37 sinal + 74x R$ 667,43 saldo",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-31",
+    telefone: "(61) 983523197",
+    email: "nelsonraiado77@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/357651-nelson-areya-bl01-630-cota-23--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 2 — mesma pessoa + cônjuge Barbara, 2 cotas em resorts diferentes (fichas 104, 105).\n" +
+      "VALOR PAGO = R$ 2.500,00 — PIX R$ 5.000,00 total rateado nos 2 contratos (R$ 2.500 cada). PIX = o que passou.\n" +
+      "Nº Documento PIX: RESV19375400948454255370G6PYJ37A25EA — MESMO nos 2 contratos.\n" +
+      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 31/08/2026, prazo 07/09/2026, hoje 31/08/2026.\n" +
+      "ATENÇÃO: ZapSign status 'Em-Curso' — assinatura de Nelson PENDENTE. Cônjuge Barbara assinou 31/08/2026 18:57:36.\n" +
+      "Boletos corretagem: 2x R$ 496,66 (1ª 30/09/2026) + 1x R$ 496,68 (30/11/2026) — NÃO VENCIDOS.\n" +
+      "Sinal: 4x R$ 702,37 (1ª 10/12/2026). Saldo: 74x R$ 667,43 (1ª 10/04/2027) — NÃO VENCIDOS.\n" +
+      "Proposta nº 357651. ZapSign: feb75524-edc8-4c3d-859b-2dbfcc449f94.\n" +
+      "Cônjuge: Barbara Alessandra dos Santos Nascimento, CPF 023.767.131-02, RG 36743 PM/GO, nasc 28/02/1987, Policial militar(a), tel (61) 992473540.\n" +
+      "Nasc: 22/08/1989. Profissão: Policial militar(a). End: Quadra SQ 15 Quadra 8, 16, Centro, Cidade Ocidental/GO, CEP 72880568."
   }
 ];
