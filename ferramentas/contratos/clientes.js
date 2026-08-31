@@ -5284,5 +5284,58 @@ window.CLIENTES = [
       "Motivos: apelo emocional, sem tempo para leitura do contrato, dificuldades financeiras, omissão de informações.\n" +
       "Endereço: Rua Arroio do Meio, 175, Olarias, Lajeado/RS.\n" +
       "Referência arquivo: (281_29) no nome do documento original."
+  },
+
+  /* ---------- 98 — WAM — 105348 ONDAS PRAIA RESORT, C / C136 / Cota 09 ---------- */
+  {
+    id: "105348-alfredo-opr-c-c136-cota-09",
+    nome: "ALFREDO PEREIRA DA SILVA",
+    cpf: "578.279.746-00",
+    rg: "MG-3.803.171 PC/MG",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "ONDAS PRAIA RESORT",
+    bloco: "C",
+    apartamento: "C136",
+    andar: "",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "BAHIA",
+
+    empresa: "WAM",
+    razaoSocial: "SPE PORTO SEGURO 02 EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+    cnpj: "22.059.167/0001-60",
+
+    valorPago: 0,
+    valorTotal: 61801.83,
+    corretagem: 2990.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Corretagem", qtd: 1, valor: 2990.00, forma: "Cartão de Débito", vencimento: "2022-11-15" },
+      { tipo: "Iniciais fixas", qtd: 3, valor: 50.00, forma: "Parcelas", vencimento: "2022-12-15" },
+      { tipo: "Saldo (imóvel)", qtd: 120, valor: 488.85, forma: "Parcelas mensais reajustáveis", vencimento: "2023-03-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 2.990,00 cartão de débito (corretagem) + 3x R$ 50,00 parcelas fixas + 120x R$ 488,85 parcelas reajustáveis",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2022-11-15",
+    telefone: "31985472954 / 31987595939",
+    email: "PR_ALFREDO_SILVA@HOTMAIL.COM",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/105348-alfredo-opr-c-c136-cota-09--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO ANTIGO — assinado em 15/11/2022 (DocuSign). FORA DO PRAZO de arrependimento.\n" +
+      "Nº Contrato: 362/03-CC136/Cota 09. DocuSign Envelope ID: B6D751B6-B9ED-426A-8DA3-3FDC25CA84B4.\n" +
+      "VALOR PAGO = PENDENTE — contrato de 2022 com parcelas boleto reajustáveis. Corretagem R$ 2.990 (cartão débito) certamente paga. Parcelas do imóvel: 3x R$ 50 fixas (dez/2022–fev/2023) + 120x R$ 488,85 reajustáveis (a partir mar/2023). Aguardando valor real informado pelo usuário.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão de débito (instrumento principal listado primeiro).\n" +
+      "Preço imóvel sem corretagem: R$ 58.811,83. Corretagem: R$ 2.990,00. Total: R$ 61.801,83.\n" +
+      "Beneficiário corretagem: WAM BRASIL. Controladora: WAM COMERCIALIZAÇÃO S.A. (CNPJ 17.919.649/0003-75).\n" +
+      "Prazo quitação: 10/02/2033. Regime: Patrimônio de afetação. Registro incorporação: 38236.\n" +
+      "Área privativa: 44,5300 m². Área comum: 10,8454 m². Total: 55,3754 m². Fração ideal: 0,1973%.\n" +
+      "WAM Fidelidade inclusa (adesão 6 anos, sem custo adicional).\n" +
+      "Endereço: Rua Cruzeiro do Sul, 405, Novo Tempo, Timoteo/MG, CEP 35183116."
   }
 ];
