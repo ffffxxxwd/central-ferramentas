@@ -5548,5 +5548,56 @@ window.CLIENTES = [
       "ATENÇÃO: e-mail da cliente menciona R$ 7.800 (6x R$ 1.300) no cartão — dobro da corretagem deste contrato (R$ 3.900). Pode haver 2º contrato não recebido.\n" +
       "Não conheceu pessoalmente a unidade/empreendimento (marcou 'Não').\n" +
       "Nasc: 23/06/1959. Profissão: Aposentado."
+  },
+
+  /* ---------- 103 — GAV — AREYA BARRA RESORT, Bl 01 / 512 / Cota 10 ---------- */
+  {
+    id: "357404-vanessa-areya-bl01-512-cota-10",
+    nome: "VANESSA SAMPAIO DA SILVA",
+    cpf: "117.088.546-22",
+    rg: "MG16734561 SSP/MG",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "01",
+    apartamento: "512",
+    andar: "5",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+
+    empresa: "GAV",
+    razaoSocial: "GAV BARRA DE SÃO MIGUEL EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+
+    valorPago: 1000.00,
+    valorTotal: 50405.59,
+    corretagem: 3990.00,
+    sinal: 2520.27,
+    parcelas: [
+      { tipo: "Corretagem PIX", qtd: 1, valor: 1000.00, forma: "PIX", vencimento: "2026-08-29" },
+      { tipo: "Corretagem Boleto", qtd: 5, valor: 598.00, forma: "Boleto", vencimento: "2026-09-29" },
+      { tipo: "Sinal", qtd: 4, valor: 630.07, forma: "Conforme contrato", vencimento: "2027-02-10" },
+      { tipo: "Saldo", qtd: 74, valor: 593.18, forma: "Conforme contrato", vencimento: "2027-06-10" }
+    ],
+    formaPagamentoEntrada: "1x R$ 1.000,00 PIX (corretagem) + 5x R$ 598,00 boleto (corretagem) + 4x R$ 630,07 sinal + 74x R$ 593,18 saldo",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-29",
+    telefone: "(31) 999483428",
+    email: "eng.vanessasampaio@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/357404-vanessa-areya-bl01-512-cota-10--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 — PIX R$ 1.000 corretagem (comprovante no contrato). PIX = o que passou.\n" +
+      "Boletos corretagem: 5x R$ 598 (1ª 29/09/2026 — NÃO VENCIDO). Sinal: 4x R$ 630,07 (1ª 10/02/2027 — NÃO VENCIDO). Saldo: 74x R$ 593,18 (1ª 10/06/2027 — NÃO VENCIDO).\n" +
+      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 29/08/2026, prazo 05/09/2026, hoje 31/08/2026.\n" +
+      "Proposta nº 357404. ZapSign: 29ef9371-fb2b-4951-8708-93468c1e0a1c.\n" +
+      "Nº Documento PIX: RESV1937540094845425BR6G9I881063C15.\n" +
+      "Nasc: 29/12/1993. Profissão: Engenheiro(a). End: Rua Edmon de Sousa Melo, 33, C43 Ap14, Joao Paulo II Barreiro, Belo Horizonte/MG, CEP 30660585."
   }
 ];
