@@ -5308,7 +5308,7 @@ window.CLIENTES = [
     razaoSocial: "SPE PORTO SEGURO 02 EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
     cnpj: "22.059.167/0001-60",
 
-    valorPago: 29300.00,
+    valorPago: 32290.00,
     valorTotal: 61801.83,
     corretagem: 2990.00,
     sinal: 0,
@@ -5329,7 +5329,7 @@ window.CLIENTES = [
     observacoes:
       "CONTRATO ANTIGO — assinado em 15/11/2022 (DocuSign). FORA DO PRAZO de arrependimento.\n" +
       "Nº Contrato: 362/03-CC136/Cota 09. DocuSign Envelope ID: B6D751B6-B9ED-426A-8DA3-3FDC25CA84B4.\n" +
-      "VALOR PAGO = R$ 29.300,00 — informado pelo usuário. Contrato de 2022 com parcelas boleto reajustáveis. Corretagem R$ 2.990 (cartão débito) + parcelas do imóvel pagas.\n" +
+      "VALOR PAGO = R$ 32.290,00 — informado pelo usuário (corrigido de R$ 29.300). Contrato de 2022 com parcelas boleto reajustáveis. Corretagem R$ 2.990 (cartão débito) + parcelas do imóvel pagas.\n" +
       "DEVOLUÇÃO: Estorno Cartão — cartão de débito (instrumento principal listado primeiro).\n" +
       "Preço imóvel sem corretagem: R$ 58.811,83. Corretagem: R$ 2.990,00. Total: R$ 61.801,83.\n" +
       "Beneficiário corretagem: WAM BRASIL. Controladora: WAM COMERCIALIZAÇÃO S.A. (CNPJ 17.919.649/0003-75).\n" +
