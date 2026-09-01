@@ -5761,5 +5761,62 @@ window.CLIENTES = [
       "Sinal: 4x R$ 1.065,58 (1ª 10/12/2026). Saldo: 80x R$ 962,43 (1ª 10/04/2027) — NÃO VENCIDOS.\n" +
       "Proposta nº 357003. ZapSign: 042c0f94-ca6a-4d97-8432-701753d11929.\n" +
       "Nasc: 06/04/1997. Profissão: Analista Administrativo(a). End: Rodovia MT 199, SN, Casa, Zona Rural, Vila Bela da Santissima Trindade/MT, CEP 78245000."
+  },
+
+  /* ---------- 107 — WAM — ONDAS PRAIA RESORT, A / A280 / Cota 12 ---------- */
+  {
+    id: "opr-caio-a-a280-cota-12",
+    nome: "CAIO TADEU DE MESQUITA",
+    cpf: "382.310.648-18",
+    rg: "49405699 SSP/SP",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    conjuge: { nome: "CAROLINA FERRARI", cpf: "109.002.069-42", rg: "5823345 SSP/SC", email: "CAROL.FERRARI010@HOTMAIL.COM" },
+
+    empreendimento: "ONDAS PRAIA RESORT",
+    bloco: "A",
+    apartamento: "A280",
+    andar: "",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Porto Seguro/BA",
+
+    empresa: "WAM",
+    razaoSocial: "SPE PORTO SEGURO 02 EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+    cnpj: "22.059.167/0001-60",
+
+    valorPago: 510.00,
+    valorTotal: 67763.17,
+    corretagem: 5100.00,
+    sinal: 0,
+    parcelas: [
+      { tipo: "Intermediação depósito", qtd: 1, valor: 500.00, forma: "Depósito Bancário / Transferência Eletrônica", vencimento: "2026-08-30" },
+      { tipo: "Intermediação depósito", qtd: 1, valor: 10.00, forma: "Depósito Bancário / Transferência Eletrônica", vencimento: "2026-08-30" },
+      { tipo: "Intermediação boleto", qtd: 2, valor: 2295.00, forma: "Boleto - Cobrança W Palmerston", vencimento: "" },
+      { tipo: "Parcelas fixas", qtd: 3, valor: 50.00, forma: "Boleto", vencimento: "2026-09-15" },
+      { tipo: "Saldo", qtd: 96, valor: 651.18, forma: "Boleto", vencimento: "2026-12-20" }
+    ],
+    formaPagamentoEntrada: "1x R$ 500 depósito + 1x R$ 10 depósito (intermediação) + 2x R$ 2.295 boleto (intermediação) + 3x R$ 50 boleto + 96x R$ 651,18 boleto",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-30",
+    telefone: "(11) 96327-7826",
+    email: "Caiolucchi33@icloud.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/opr-caio-a-a280-cota-12--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 510,00 — depósito/transferência R$ 500 + R$ 10 (intermediação). Depósito = o que passou.\n" +
+      "Intermediação total R$ 5.100: depósitos R$ 510 (pagos) + 2x R$ 2.295 boleto W Palmerston (sem data de vencimento definida — conferir se pagos).\n" +
+      "DEVOLUÇÃO: Reembolso — depósito/transferência (instrumento principal listado primeiro).\n" +
+      "DENTRO DO PRAZO — contrato 30/08/2026, prazo 06/09/2026, hoje 01/09/2026.\n" +
+      "Parcelas cota: 3x R$ 50 boleto (1ª 15/09/2026 — NÃO VENCIDO) + 96x R$ 651,18 boleto (1ª 20/12/2026 — NÃO VENCIDO).\n" +
+      "Preço cota (sem intermediação): R$ 62.663,17. Intermediação: R$ 5.100,00. Total: R$ 67.763,17.\n" +
+      "Intermediadora: WAM COMERCIALIZAÇÃO S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "GSign Document ID: H4RT4FGVPL-BT7863T-4VCWEVY3MJW10A-L87HT.\n" +
+      "Cônjuge: Carolina Ferrari, CPF 109.002.069-42, RG 5823345 SSP/SC, nasc 15/11/1996, Empresário, tel (47) 98466-2124.\n" +
+      "Testemunhas: Noendell Leonnardo Coelho Barreto; Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
+      "Não conheceu pessoalmente a unidade/empreendimento (marcou 'Não').\n" +
+      "Nasc: 16/04/1991. Profissão: Empresário. Matrícula: 38.236."
   }
 ];
