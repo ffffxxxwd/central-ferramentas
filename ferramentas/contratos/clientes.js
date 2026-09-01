@@ -5818,5 +5818,55 @@ window.CLIENTES = [
       "Testemunhas: Noendell Leonnardo Coelho Barreto; Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
       "Não conheceu pessoalmente a unidade/empreendimento (marcou 'Não').\n" +
       "Nasc: 16/04/1991. Profissão: Empresário. Matrícula: 38.236."
+  },
+
+  /* ── Ficha 108 ─────────────────────────────────────────────── */
+  {
+    id: 108,
+    nome: "Cristina da Silva Lopes",
+    cpf: "111.036.616-71",
+    rg: "1103661671",
+    orgaoEmissor: "PC MG",
+    estadoCivil: "Solteiro",
+    empresa: "GAV",
+    empreendimento: "Kawana Residence",
+    bloco: "02",
+    unidade: "303",
+    andar: "",
+    cota: "D/K",
+    fracao: "1/52",
+    localizacao: "GOIÁS",
+    cidade: "Caldas Novas",
+    numeroContrato: "313497",
+    valorContrato: 82190.00,
+    valorIntermediacaoTotal: 12400.00,
+    valorPago: 12400.00,
+    parcelas: [
+      { tipo: "Intermediação depósito/TED", qtd: 1, valor: 6000.00, forma: "TED/DOC/Depósito", vencimento: "2026-08-30" },
+      { tipo: "Intermediação cartão crédito", qtd: 10, valor: 640.00, forma: "VISA Crédito", vencimento: "2026-08-30" },
+      { tipo: "Parcelas cota", qtd: 99, valor: 830.20, forma: "Boleto", vencimento: "2026-09-15" }
+    ],
+    formaPagamentoEntrada: "1x R$ 6.000 TED/DOC/depósito + 10x R$ 640 VISA crédito (intermediação) + 99x R$ 830,20 boleto (cota, 1º venc 15/09/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-30",
+    telefone: "(34) 99905-9563",
+    email: "cristinalopescr7@gmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/313497-cristina-kwr-bl02-303-cota-dk--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 12.400,00 — depósito/TED R$ 6.000 + cartão crédito VISA 10x R$ 640 (valor cheio R$ 6.400).\n" +
+      "Intermediação total R$ 12.400: depósito R$ 6.000 (pago) + VISA crédito R$ 6.400 (valor cheio).\n" +
+      "DEVOLUÇÃO: Reembolso — TED/DOC/depósito (instrumento principal listado primeiro).\n" +
+      "DENTRO DO PRAZO — contrato 30/08/2026, prazo 06/09/2026, hoje 01/09/2026.\n" +
+      "Parcelas cota: 99x R$ 830,20 boleto (1ª 15/09/2026 — NÃO VENCIDO).\n" +
+      "Preço cota (sem intermediação): R$ 82.190,00. Intermediação: R$ 12.400,00. Total: R$ 94.590,00.\n" +
+      "Intermediadora: WAM COMERCIALIZAÇÃO S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "PDF inclui Contrato de Cessão Kawana Park (TALLIN SPE LTDA) — mesma unidade, sem pagamento adicional.\n" +
+      "GSign Document ID: FYRE0AHMMM-KPLEU1B-4LUHNUF8TE5V78-0R0UH.\n" +
+      "Testemunhas: Wanderson Santos da Silveira; Yasmin Lorrane Silva Gomes (CPF 058.624.011-05).\n" +
+      "Não conheceu pessoalmente a unidade/empreendimento (marcou 'Não').\n" +
+      "Nasc: 27/01/1990. Profissão: Secretária. Matrícula: 77.345. Semanas de uso: 4/ano."
   }
 ];
