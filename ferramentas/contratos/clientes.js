@@ -5842,11 +5842,11 @@ window.CLIENTES = [
     valorIntermediacaoTotal: 12400.00,
     valorPago: 12400.00,
     parcelas: [
-      { tipo: "Intermediação PIX", qtd: 1, valor: 6000.00, forma: "PIX", vencimento: "2026-08-30" },
+      { tipo: "Intermediação TED/DOC/Depósito", qtd: 1, valor: 6000.00, forma: "TED/DOC/Depósito", vencimento: "2026-08-30" },
       { tipo: "Intermediação cartão crédito", qtd: 10, valor: 640.00, forma: "VISA Crédito", vencimento: "2026-08-30" },
       { tipo: "Parcelas cota", qtd: 99, valor: 830.20, forma: "Boleto", vencimento: "2026-09-15" }
     ],
-    formaPagamentoEntrada: "1x R$ 6.000 PIX + 10x R$ 640 VISA crédito (intermediação) + 99x R$ 830,20 boleto (cota, 1º venc 15/09/2026)",
+    formaPagamentoEntrada: "1x R$ 6.000 TED/DOC/depósito + 10x R$ 640 VISA crédito (intermediação) + 99x R$ 830,20 boleto (cota, 1º venc 15/09/2026)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-30",
     telefone: "(34) 99905-9563",
@@ -5856,9 +5856,9 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 12.400,00 — PIX R$ 6.000 + cartão crédito VISA 10x R$ 640 (valor cheio R$ 6.400).\n" +
-      "Intermediação total R$ 12.400: PIX R$ 6.000 (pago) + VISA crédito R$ 6.400 (valor cheio).\n" +
-      "DEVOLUÇÃO: Reembolso — PIX (instrumento principal listado primeiro).\n" +
+      "VALOR PAGO = R$ 12.400,00 — TED/DOC/depósito R$ 6.000 + cartão crédito VISA 10x R$ 640 (valor cheio R$ 6.400).\n" +
+      "Intermediação total R$ 12.400: TED/DOC/depósito R$ 6.000 (pago) + VISA crédito R$ 6.400 (valor cheio).\n" +
+      "DEVOLUÇÃO: Reembolso — TED/DOC/depósito (instrumento principal listado primeiro).\n" +
       "DENTRO DO PRAZO — contrato 30/08/2026, prazo 06/09/2026, hoje 01/09/2026.\n" +
       "Parcelas cota: 99x R$ 830,20 boleto (1ª 15/09/2026 — NÃO VENCIDO).\n" +
       "Preço cota (sem intermediação): R$ 82.190,00. Intermediação: R$ 12.400,00. Total: R$ 94.590,00.\n" +
