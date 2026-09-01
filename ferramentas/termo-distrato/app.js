@@ -295,52 +295,79 @@
     var forma = $("f_forma").value;
     var misto = (forma === "Reembolso + Estorno");
 
-    // Mostra/esconde blocos conforme o modo
+    // Mostra/esconde campos extras no formulário
     if ($("blocoMisto")) $("blocoMisto").hidden = !misto;
-    if ($("blocoSimples")) $("blocoSimples").hidden = misto;
-    if ($("blocoMistoDoc")) $("blocoMistoDoc").hidden = !misto;
-    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cartão");
+    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cart\u00e3o");
 
-    if (misto) {
-      // Modo misto: preenche os itens detalhados
+    // Busca ou cria o container de reembolso no documento
+    var area = $("areaReembolso");
+    if (!area) {
+      // fallback: procura os elementos do modo simples diretamente
+      area = $("op_estorno") ? $("op_estorno").parentElement.parentElement : null;
+    }
+
+    if (misto && area) {
+      // Modo misto: injeta lista numerada
       var reembStr = $("f_valor_reemb") ? $("f_valor_reemb").value.trim() : "";
       var meioReemb = $("f_meio_reemb") ? $("f_meio_reemb").value : "PIX";
       var qtdParc = $("f_qtd_parcelas") ? $("f_qtd_parcelas").value.trim() : "";
       var valParc = $("f_valor_parcela") ? $("f_valor_parcela").value.trim() : "";
-      setTxt("pv_reemb_valor", reembStr || "0,00");
-      setTxt("pv_reemb_extenso", valorPorExtenso(moedaParaNumero(reembStr)));
-      setTxt("pv_reemb_meio", meioReemb);
-      setTxt("pv_qtd_parcelas", qtdParc || "0");
-      setTxt("pv_valor_parcela", valParc || "0,00");
-      // Valor total
-      var total = moedaParaNumero(reembStr) + (parseInt(qtdParc, 10) || 0) * moedaParaNumero(valParc);
+      var reembNum = moedaParaNumero(reembStr);
+      var reembExt = valorPorExtenso(reembNum);
+      var total = reembNum + (parseInt(qtdParc, 10) || 0) * moedaParaNumero(valParc);
       $("f_extenso").value = valorPorExtenso(total);
-      setTxt("pv_extenso", $("f_extenso").value);
-      var totalStr = total.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-      setTxt("pv_valor", totalStr);
-    } else {
-      // Modo simples: checkboxes originais
+
+      area.innerHTML =
+        '<ol class="doc-lista">' +
+        '<li class="doc-p doc-p--bold">O cancelamento imediato dos referidos contratos;</li>' +
+        '<li class="doc-p doc-p--bold">O reembolso integral da import\u00e2ncia de R$ ' +
+          (reembStr || "0,00") + ' (' + reembExt + ') paga a t\u00edtulo de sinal via ' +
+          meioReemb + ', bem como a restitui\u00e7\u00e3o de qualquer outra quantia eventualmente cobrada;</li>' +
+        '<li class="doc-p doc-p--bold">O cancelamento do parcelamento de ' +
+          (qtdParc || "0") + ' vezes de R$ ' + (valParc || "0,00") +
+          ' e a inexigibilidade de quaisquer boletos vincendos.</li>' +
+        '</ol>';
+      area.id = "areaReembolso";
+    } else if (!misto && area) {
+      // Modo simples: restaura checkboxes
+      var temCheckboxes = $("op_estorno");
+      if (!temCheckboxes) {
+        // Precisa recriar o HTML simples
+        area.innerHTML =
+          '<div class="doc-opcoes">' +
+            '<div class="doc-opcao" id="op_estorno"><span>( <b class="mark" id="ck_estorno">\u00a0</b> ) Estorno Cart\u00e3o</span><span>R$ <span id="val_estorno">XXXX,00</span></span></div>' +
+            '<div class="doc-opcao" id="op_reemb"><span>( <b class="mark" id="ck_reemb">\u00a0</b> ) Reembolso</span><span>R$ <span id="val_reemb">XXXX,00</span></span></div>' +
+            '<div class="doc-opcao" id="op_cheque"><span>( <b class="mark" id="ck_cheque">\u00a0</b> ) Cheque</span><span>R$ <span id="val_cheque">XXXX,00</span></span></div>' +
+          '</div>' +
+          '<p class="doc-p doc-p--bold">GAV Resorts Gest\u00e3o de Neg\u00f3cios e Participa\u00e7\u00e3o LTDA compromete-se ainda a efetuar ' +
+            '<span id="pv_meio">a devolu\u00e7\u00e3o por transfer\u00eancia banc\u00e1ria</span> no valor de R$ <span id="pv_valor">0,00</span> ' +
+            '(<span id="pv_extenso">zero real</span>) referente ao sinal de proposta.</p>' +
+          '<p class="doc-p doc-p--bold">Comprometemos tamb\u00e9m em efetuar o cancelamento de quaisquer cobran\u00e7as futuras ' +
+            'referente as parcelas firmadas em contrato.</p>';
+        area.id = "areaReembolso";
+      }
+      // Preenche os valores do modo simples
       setTxt("pv_valor", valorStr || "0,00");
-      setTxt("pv_extenso", texto($("f_extenso").value, "—"));
+      setTxt("pv_extenso", texto($("f_extenso").value, "\u2014"));
       var MEIOS = {
-        "Reembolso": "a devolução por transferência bancária",
-        "Estorno Cartão": "o estorno no cartão de crédito",
-        "Cheque": "a devolução por cheque"
+        "Reembolso": "a devolu\u00e7\u00e3o por transfer\u00eancia banc\u00e1ria",
+        "Estorno Cart\u00e3o": "o estorno no cart\u00e3o de cr\u00e9dito",
+        "Cheque": "a devolu\u00e7\u00e3o por cheque"
       };
       setTxt("pv_meio", MEIOS[forma] || MEIOS["Reembolso"]);
-      setTxt("ck_estorno", " "); setTxt("val_estorno", "XXXX,00");
-      setTxt("ck_reemb", " ");   setTxt("val_reemb", "XXXX,00");
-      setTxt("ck_cheque", " ");  setTxt("val_cheque", "XXXX,00");
-      $("op_estorno").classList.remove("ativa");
-      $("op_reemb").classList.remove("ativa");
-      $("op_cheque").classList.remove("ativa");
+      setTxt("ck_estorno", "\u00a0"); setTxt("val_estorno", "XXXX,00");
+      setTxt("ck_reemb", "\u00a0");   setTxt("val_reemb", "XXXX,00");
+      setTxt("ck_cheque", "\u00a0");  setTxt("val_cheque", "XXXX,00");
+      if ($("op_estorno")) $("op_estorno").classList.remove("ativa");
+      if ($("op_reemb")) $("op_reemb").classList.remove("ativa");
+      if ($("op_cheque")) $("op_cheque").classList.remove("ativa");
       var ck, val, op;
-      if (forma === "Estorno Cartão") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
+      if (forma === "Estorno Cart\u00e3o") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
       else if (forma === "Cheque") { ck = "ck_cheque"; val = "val_cheque"; op = "op_cheque"; }
       else { ck = "ck_reemb"; val = "val_reemb"; op = "op_reemb"; }
       setTxt(ck, "X");
       setTxt(val, valorStr || "0,00");
-      $(op).classList.add("ativa");
+      if ($(op)) $(op).classList.add("ativa");
     }
   }
 
@@ -691,7 +718,7 @@
   }
 
   /* ---------- Persistência (cache local no navegador) ---------- */
-  var CHAVE = "termo-distrato-v6";
+  var CHAVE = "termo-distrato-v7";
   var CAMPOS = ["f_nome", "f_nac", "f_ec", "f_rg", "f_cpf", "f_fracao", "f_unidade", "f_cota",
     "f_local", "f_edificio", "f_empresa", "f_cnpj", "f_forma", "f_valor", "f_extenso", "f_pix",
     "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf",

@@ -287,8 +287,8 @@
           inscrita no CNPJ sob o nº <b id="pv_cnpj">45.298.124/0001-33</b>.
         </p>
 
-        <!-- Modo simples (1 forma de reembolso) -->
-        <div id="blocoSimples">
+        <!-- Área de reembolso (trocada dinamicamente pelo JS) -->
+        <div id="areaReembolso">
         <div class="doc-opcoes">
           <div class="doc-opcao" id="op_estorno">
             <span>( <b class="mark" id="ck_estorno">&nbsp;</b> ) Estorno Cartão</span>
@@ -314,15 +314,6 @@
           Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras
           referente as parcelas firmadas em contrato.
         </p>
-        </div>
-
-        <!-- Modo misto (Reembolso + Estorno detalhado) -->
-        <div id="blocoMistoDoc" hidden>
-        <ol class="doc-lista">
-          <li class="doc-p doc-p--bold">O cancelamento imediato dos referidos contratos;</li>
-          <li class="doc-p doc-p--bold">O reembolso integral da importância de R$ <span id="pv_reemb_valor">6.000,00</span> (<span id="pv_reemb_extenso">seis mil reais</span>) paga a título de sinal via <span id="pv_reemb_meio">PIX</span>, bem como a restituição de qualquer outra quantia eventualmente cobrada;</li>
-          <li class="doc-p doc-p--bold">O cancelamento do parcelamento de <span id="pv_qtd_parcelas">10</span> vezes de R$ <span id="pv_valor_parcela">640,00</span> e a inexigibilidade de quaisquer boletos vincendos.</li>
-        </ol>
         </div>
 
         <p class="doc-p">
@@ -365,6 +356,6 @@
   <script src="../../assets/lib/pdf.min.js"></script>
   <script src="../../assets/js/ler-contrato.js?v=3"></script>
   <script src="logo-data.js"></script>
-  <script src="app.js?v=21"></script>
+  <script src="app.js?v=22"></script>
 </body>
 </html>
