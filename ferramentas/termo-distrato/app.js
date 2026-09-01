@@ -259,36 +259,8 @@
       if ($("assConjuge")) $("assConjuge").hidden = true;
     }
 
-    // Valor + forma escolhida
-    var valorStr = $("f_valor").value.trim();
-    setTxt("pv_valor", valorStr || "0,00");
-
-    var forma = $("f_forma").value;
-    // Estorno no cartão não usa PIX -> some com a linha da chave
-    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cartão");
-    // A frase da empresa pagadora muda conforme a forma de devolução
-    var MEIOS = {
-      "Reembolso": "a devolução por transferência bancária",
-      "Estorno Cartão": "o estorno no cartão de crédito",
-      "Cheque": "a devolução por cheque"
-    };
-    setTxt("pv_meio", MEIOS[forma] || MEIOS["Reembolso"]);
-    setTxt("ck_estorno", " "); setTxt("val_estorno", "XXXX,00");
-    setTxt("ck_reemb", " ");   setTxt("val_reemb", "XXXX,00");
-    setTxt("ck_cheque", " ");  setTxt("val_cheque", "XXXX,00");
-    $("op_estorno").classList.remove("ativa");
-    $("op_reemb").classList.remove("ativa");
-    $("op_cheque").classList.remove("ativa");
-
-    var ck, val, op;
-    if (forma === "Estorno Cartão") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
-    else if (forma === "Cheque") { ck = "ck_cheque"; val = "val_cheque"; op = "op_cheque"; }
-    else { ck = "ck_reemb"; val = "val_reemb"; op = "op_reemb"; }
-    setTxt(ck, "X");
-    setTxt(val, valorStr || "0,00");
-    $(op).classList.add("ativa");
-
-    setTxt("pv_extenso", texto($("f_extenso").value, "—"));
+    // Valor + forma escolhida (delegado para atualizarValorForma)
+    atualizarValorForma();
     salvar();
   }
 
@@ -320,29 +292,56 @@
 
   function atualizarValorForma() {
     var valorStr = $("f_valor").value.trim();
-    setTxt("pv_valor", valorStr || "0,00");
-    setTxt("pv_extenso", texto($("f_extenso").value, "—"));
     var forma = $("f_forma").value;
+    var misto = (forma === "Reembolso + Estorno");
+
+    // Mostra/esconde blocos conforme o modo
+    if ($("blocoMisto")) $("blocoMisto").hidden = !misto;
+    if ($("blocoSimples")) $("blocoSimples").hidden = misto;
+    if ($("blocoMistoDoc")) $("blocoMistoDoc").hidden = !misto;
     if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cartão");
-    var MEIOS = {
-      "Reembolso": "a devolução por transferência bancária",
-      "Estorno Cartão": "o estorno no cartão de crédito",
-      "Cheque": "a devolução por cheque"
-    };
-    setTxt("pv_meio", MEIOS[forma] || MEIOS["Reembolso"]);
-    setTxt("ck_estorno", " "); setTxt("val_estorno", "XXXX,00");
-    setTxt("ck_reemb", " ");   setTxt("val_reemb", "XXXX,00");
-    setTxt("ck_cheque", " ");  setTxt("val_cheque", "XXXX,00");
-    $("op_estorno").classList.remove("ativa");
-    $("op_reemb").classList.remove("ativa");
-    $("op_cheque").classList.remove("ativa");
-    var ck, val, op;
-    if (forma === "Estorno Cartão") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
-    else if (forma === "Cheque") { ck = "ck_cheque"; val = "val_cheque"; op = "op_cheque"; }
-    else { ck = "ck_reemb"; val = "val_reemb"; op = "op_reemb"; }
-    setTxt(ck, "X");
-    setTxt(val, valorStr || "0,00");
-    $(op).classList.add("ativa");
+
+    if (misto) {
+      // Modo misto: preenche os itens detalhados
+      var reembStr = $("f_valor_reemb") ? $("f_valor_reemb").value.trim() : "";
+      var meioReemb = $("f_meio_reemb") ? $("f_meio_reemb").value : "PIX";
+      var qtdParc = $("f_qtd_parcelas") ? $("f_qtd_parcelas").value.trim() : "";
+      var valParc = $("f_valor_parcela") ? $("f_valor_parcela").value.trim() : "";
+      setTxt("pv_reemb_valor", reembStr || "0,00");
+      setTxt("pv_reemb_extenso", valorPorExtenso(moedaParaNumero(reembStr)));
+      setTxt("pv_reemb_meio", meioReemb);
+      setTxt("pv_qtd_parcelas", qtdParc || "0");
+      setTxt("pv_valor_parcela", valParc || "0,00");
+      // Valor total
+      var total = moedaParaNumero(reembStr) + (parseInt(qtdParc, 10) || 0) * moedaParaNumero(valParc);
+      $("f_extenso").value = valorPorExtenso(total);
+      setTxt("pv_extenso", $("f_extenso").value);
+      var totalStr = total.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      setTxt("pv_valor", totalStr);
+    } else {
+      // Modo simples: checkboxes originais
+      setTxt("pv_valor", valorStr || "0,00");
+      setTxt("pv_extenso", texto($("f_extenso").value, "—"));
+      var MEIOS = {
+        "Reembolso": "a devolução por transferência bancária",
+        "Estorno Cartão": "o estorno no cartão de crédito",
+        "Cheque": "a devolução por cheque"
+      };
+      setTxt("pv_meio", MEIOS[forma] || MEIOS["Reembolso"]);
+      setTxt("ck_estorno", " "); setTxt("val_estorno", "XXXX,00");
+      setTxt("ck_reemb", " ");   setTxt("val_reemb", "XXXX,00");
+      setTxt("ck_cheque", " ");  setTxt("val_cheque", "XXXX,00");
+      $("op_estorno").classList.remove("ativa");
+      $("op_reemb").classList.remove("ativa");
+      $("op_cheque").classList.remove("ativa");
+      var ck, val, op;
+      if (forma === "Estorno Cartão") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
+      else if (forma === "Cheque") { ck = "ck_cheque"; val = "val_cheque"; op = "op_cheque"; }
+      else { ck = "ck_reemb"; val = "val_reemb"; op = "op_reemb"; }
+      setTxt(ck, "X");
+      setTxt(val, valorStr || "0,00");
+      $(op).classList.add("ativa");
+    }
   }
 
   function sincronizarCampo(id) {
@@ -360,7 +359,7 @@
       case "f_cnpj": setTxt("pv_cnpj", texto($("f_cnpj").value, "—")); break;
       case "f_pix": setTxt("pv_pix", $("f_pix").value.trim()); break;
       case "f_data": setTxt("pv_data", (dataBR($("f_data").value) || "__/__/____") + "."); break;
-      case "f_valor": case "f_extenso": case "f_forma": atualizarValorForma(); break;
+      case "f_valor": case "f_extenso": case "f_forma": case "f_valor_reemb": case "f_qtd_parcelas": case "f_valor_parcela": case "f_meio_reemb": atualizarValorForma(); break;
       case "f_conj_nome": case "f_conj_nac": case "f_conj_rg": case "f_conj_cpf": atualizarConjuge(); break;
     }
   }
@@ -433,11 +432,14 @@
       this.value = mascaraMoeda(this.value);
       $("f_extenso").value = valorPorExtenso(moedaParaNumero(this.value));
     });
+    if ($("f_valor_reemb")) $("f_valor_reemb").addEventListener("input", function () { this.value = mascaraMoeda(this.value); });
+    if ($("f_valor_parcela")) $("f_valor_parcela").addEventListener("input", function () { this.value = mascaraMoeda(this.value); });
 
     var campos = ["f_nome", "f_nac", "f_rg", "f_cpf", "f_fracao", "f_unidade",
       "f_cota", "f_local", "f_edificio", "f_empresa", "f_cnpj", "f_forma",
       "f_valor", "f_extenso", "f_pix", "f_data",
-      "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf"];
+      "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf",
+      "f_meio_reemb", "f_valor_reemb", "f_qtd_parcelas", "f_valor_parcela"];
     campos.forEach(function (id) {
       var el = $(id);
       var h = function () { sincronizarCampo(id); salvar(); };
@@ -689,10 +691,11 @@
   }
 
   /* ---------- Persistência (cache local no navegador) ---------- */
-  var CHAVE = "termo-distrato-v5";
+  var CHAVE = "termo-distrato-v6";
   var CAMPOS = ["f_nome", "f_nac", "f_ec", "f_rg", "f_cpf", "f_fracao", "f_unidade", "f_cota",
     "f_local", "f_edificio", "f_empresa", "f_cnpj", "f_forma", "f_valor", "f_extenso", "f_pix",
     "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf",
+    "f_meio_reemb", "f_valor_reemb", "f_qtd_parcelas", "f_valor_parcela",
     "f_logo_align", "f_logo_size", "f_logo_top", "f_logo_bottom"];
 
   function salvar() {
