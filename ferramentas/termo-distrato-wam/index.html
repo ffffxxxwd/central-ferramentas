@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Termo de Distrato | WAM</title>
-  <link rel="stylesheet" href="style.css?v=16" />
+  <link rel="stylesheet" href="style.css?v=17" />
 </head>
 <body>
 
@@ -177,6 +177,7 @@
               <select id="f_forma">
                 <option value="Reembolso">Reembolso</option>
                 <option value="Estorno Cartão">Estorno Cartão</option>
+                <option value="Reembolso + Estorno">Reembolso + Estorno</option>
                 <option value="Cheque">Cheque</option>
               </select>
             </label>
@@ -184,6 +185,34 @@
               <span>Valor (R$)</span>
               <input type="text" id="f_valor" inputmode="numeric" placeholder="0,00" value="1.000,00" />
             </label>
+          </div>
+          <!-- Campos extras para modo misto (Reembolso + Estorno) -->
+          <div id="blocoMisto" hidden>
+            <div class="row">
+              <label class="field">
+                <span>Meio do reembolso</span>
+                <select id="f_meio_reemb">
+                  <option value="PIX">PIX</option>
+                  <option value="TED">TED</option>
+                  <option value="depósito">Depósito</option>
+                  <option value="TED/DOC/depósito">TED/DOC/depósito</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Valor reembolso (R$)</span>
+                <input type="text" id="f_valor_reemb" inputmode="numeric" placeholder="0,00" />
+              </label>
+            </div>
+            <div class="row">
+              <label class="field">
+                <span>Parcelas cartão (qtd)</span>
+                <input type="text" id="f_qtd_parcelas" inputmode="numeric" placeholder="10" />
+              </label>
+              <label class="field">
+                <span>Valor parcela (R$)</span>
+                <input type="text" id="f_valor_parcela" inputmode="numeric" placeholder="640,00" />
+              </label>
+            </div>
           </div>
           <label class="field field--full">
             <span>Valor por extenso <small>(automático — pode ajustar)</small></span>
@@ -258,6 +287,8 @@
           inscrita no CNPJ sob o nº <b id="pv_cnpj">45.298.124/0001-33</b>.
         </p>
 
+        <!-- Área de reembolso (trocada dinamicamente pelo JS) -->
+        <div id="areaReembolso">
         <div class="doc-opcoes">
           <div class="doc-opcao" id="op_estorno">
             <span>( <b class="mark" id="ck_estorno">&nbsp;</b> ) Estorno Cartão</span>
@@ -283,6 +314,7 @@
           Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras
           referente as parcelas firmadas em contrato.
         </p>
+        </div>
 
         <p class="doc-p">
           Sendo essa a expressão final de minha vontade assino o presente distrato em 02 (duas)
@@ -324,6 +356,6 @@
   <script src="../../assets/lib/pdf.min.js"></script>
   <script src="../../assets/js/ler-contrato.js?v=3"></script>
   <script src="logo-data.js"></script>
-  <script src="app.js?v=20"></script>
+  <script src="app.js?v=21"></script>
 </body>
 </html>

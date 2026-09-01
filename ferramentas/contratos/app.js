@@ -1229,6 +1229,7 @@
   // formaReembolso da ficha manda quando estiver preenchido (pagamento misto)
   function formaReembolso(c) {
     var manual = txt(c.formaReembolso);
+    if (/reembolso/i.test(manual) && /estorno/i.test(manual)) return "Reembolso + Estorno";
     if (/estorno/i.test(manual)) return "Estorno Cartão";
     if (/cheque/i.test(manual)) return "Cheque";
     if (/reembolso/i.test(manual)) return "Reembolso";
@@ -1301,7 +1302,7 @@
     var c = acharCliente(id);
     if (!c) return;
 
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v5" : "termo-distrato-v5";
+    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v6" : "termo-distrato-v8";
     var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
 
     var valorNum = num(c.valorPago);
@@ -1344,6 +1345,26 @@
       f_logo_bottom: antesCampos.f_logo_bottom || "6"
     };
 
+    // Campos extras para modo misto (Reembolso + Estorno)
+    if (forma === "Reembolso + Estorno" && c.parcelas && c.parcelas.length) {
+      var reembTotal = 0, meioReemb = "", qtdParc = 0, valParc = 0;
+      for (var pi = 0; pi < c.parcelas.length; pi++) {
+        var pp = c.parcelas[pi];
+        var pf = semAcento(pp.forma || "");
+        if (/ted|doc|deposit|pix/.test(pf)) {
+          reembTotal += (pp.qtd || 1) * (pp.valor || 0);
+          if (!meioReemb) meioReemb = pp.forma;
+        } else if (/credito|cartao|visa|master|elo/.test(pf)) {
+          qtdParc = pp.qtd || 0;
+          valParc = pp.valor || 0;
+        }
+      }
+      campos.f_valor_reemb = reembTotal ? moeda(reembTotal) : "";
+      campos.f_meio_reemb = meioReemb || "PIX";
+      campos.f_qtd_parcelas = qtdParc ? String(qtdParc) : "";
+      campos.f_valor_parcela = valParc ? moeda(valParc) : "";
+    }
+
     // usa docHTML salvo só se tiver o template novo (pv_imoveis), senão força docBase
     var htmlBase = anterior.docHTML && anterior.docHTML.indexOf("pv_imoveis") !== -1
       ? anterior.docHTML : docBase(c.empresa);
@@ -1379,7 +1400,7 @@
 
     // usa o primeiro contrato como base para dados pessoais
     var c = clientes[0];
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v5" : "termo-distrato-v5";
+    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v6" : "termo-distrato-v8";
     var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
 
     // soma valorPago de todos

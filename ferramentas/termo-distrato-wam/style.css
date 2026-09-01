@@ -268,6 +268,18 @@ body.modo-edicao .doc-opcao { cursor: text; }
 body.modo-edicao #docLogo { cursor: move; }
 body.modo-edicao #docLogo:hover { outline: 2px dashed var(--accent); outline-offset: 4px; }
 
+/* Lista numerada (modo misto Reembolso + Estorno) */
+.doc-lista {
+  margin: 12px 0 16px 0;
+  padding-left: 24px;
+  font-size: 11pt;
+  line-height: 1.7;
+}
+.doc-lista li {
+  margin-bottom: 6px;
+  padding-left: 4px;
+}
+
 /* Assinaturas (uma ou duas) */
 .doc-assinaturas {
   margin-top: 60px;
