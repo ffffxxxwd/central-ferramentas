@@ -5755,7 +5755,7 @@ window.CLIENTES = [
     pix: "",
     observacoes:
       "VALOR PAGO = R$ 3.990,00 — 3x R$ 1.330 cartão crédito VISA parcelado (CV 20640372, final 1437). Cartão = valor cheio.\n" +
-      "ATENÇÃO: comprovante cartão no PDF mostra R$ 7.980 (3x R$ 2.660) — DOBRO da corretagem deste contrato (R$ 3.990). Possível 2º contrato não recebido, mesma transação.\n" +
+      "NOTA: comprovante cartão no PDF mostra R$ 7.980 (3x R$ 2.660) — dobro da corretagem. Confirmado pelo usuário que valorPago é R$ 3.990.\n" +
       "DEVOLUÇÃO: Estorno Cartão — cartão crédito (instrumento principal).\n" +
       "DENTRO DO PRAZO — contrato 28/08/2026, prazo 04/09/2026, hoje 31/08/2026.\n" +
       "Sinal: 4x R$ 1.065,58 (1ª 10/12/2026). Saldo: 80x R$ 962,43 (1ª 10/04/2027) — NÃO VENCIDOS.\n" +
