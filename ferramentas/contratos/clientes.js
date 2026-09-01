@@ -5711,5 +5711,55 @@ window.CLIENTES = [
       "Proposta nº 357651. ZapSign: feb75524-edc8-4c3d-859b-2dbfcc449f94.\n" +
       "Cônjuge: Barbara Alessandra dos Santos Nascimento, CPF 023.767.131-02, RG 36743 PM/GO, nasc 28/02/1987, Policial militar(a), tel (61) 992473540.\n" +
       "Nasc: 22/08/1989. Profissão: Policial militar(a). End: Quadra SQ 15 Quadra 8, 16, Centro, Cidade Ocidental/GO, CEP 72880568."
+  },
+
+  /* ---------- 106 — GAV — PORTO 2 LIFE RESORT, Bl 05 / 0332 / Cota 07 ---------- */
+  {
+    id: "357003-julia-p2l-bl05-0332-cota-07",
+    nome: "JULIA MARIA POGGERE",
+    cpf: "109.919.719-81",
+    rg: "128575847 SESP/PR",
+    nacionalidade: "brasileira",
+    estadoCivil: "União estável",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+
+    empreendimento: "PORTO 2 LIFE RESORT",
+    bloco: "05",
+    apartamento: "0332",
+    andar: "2",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+
+    valorPago: 3990.00,
+    valorTotal: 85246.73,
+    corretagem: 3990.00,
+    sinal: 4262.33,
+    parcelas: [
+      { tipo: "Corretagem Cartão", qtd: 3, valor: 1330.00, forma: "Cartão de Crédito VISA", vencimento: "2026-09-27" },
+      { tipo: "Sinal", qtd: 4, valor: 1065.58, forma: "Conforme contrato", vencimento: "2026-12-10" },
+      { tipo: "Saldo", qtd: 80, valor: 962.43, forma: "Conforme contrato", vencimento: "2027-04-10" }
+    ],
+    formaPagamentoEntrada: "3x R$ 1.330,00 cartão crédito VISA (corretagem) + 4x R$ 1.065,58 sinal + 80x R$ 962,43 saldo",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-28",
+    telefone: "(65) 996975582",
+    email: "claudiosimionatto@hotmail.com",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/357003-julia-p2l-bl05-0332-cota-07--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.990,00 — 3x R$ 1.330 cartão crédito VISA parcelado (CV 20640372, final 1437). Cartão = valor cheio.\n" +
+      "ATENÇÃO: comprovante cartão no PDF mostra R$ 7.980 (3x R$ 2.660) — DOBRO da corretagem deste contrato (R$ 3.990). Possível 2º contrato não recebido, mesma transação.\n" +
+      "DEVOLUÇÃO: Estorno Cartão — cartão crédito (instrumento principal).\n" +
+      "DENTRO DO PRAZO — contrato 28/08/2026, prazo 04/09/2026, hoje 31/08/2026.\n" +
+      "Sinal: 4x R$ 1.065,58 (1ª 10/12/2026). Saldo: 80x R$ 962,43 (1ª 10/04/2027) — NÃO VENCIDOS.\n" +
+      "Proposta nº 357003. ZapSign: 042c0f94-ca6a-4d97-8432-701753d11929.\n" +
+      "Nasc: 06/04/1997. Profissão: Analista Administrativo(a). End: Rodovia MT 199, SN, Casa, Zona Rural, Vila Bela da Santissima Trindade/MT, CEP 78245000."
   }
 ];
