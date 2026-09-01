@@ -5828,7 +5828,7 @@ window.CLIENTES = [
     rg: "1103661671",
     orgaoEmissor: "PC MG",
     estadoCivil: "Solteiro",
-    empresa: "GAV",
+    empresa: "WAM",
     empreendimento: "Kawana Residence",
     bloco: "02",
     unidade: "303",
