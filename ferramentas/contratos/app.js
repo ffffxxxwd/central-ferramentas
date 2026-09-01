@@ -186,7 +186,8 @@
     return !!store.edits[id];
   }
   function ehArquivado(id) {
-    return !!store.arquivados[id];
+    if (store.arquivados[id]) return true;
+    return (window.CLIENTES || []).some(function (c) { return c.id === id && c.arquivado; });
   }
   // contratos já analisados saem da lista principal, mas continuam guardados
   function arquivar(id, arquiva) {
