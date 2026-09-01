@@ -5855,6 +5855,7 @@ window.CLIENTES = [
       { titulo: "Contrato", arquivo: "contratos-pdf/313497-cristina-kwr-bl02-303-cota-dk--contrato.pdf" }
     ],
     pix: "",
+    notaEnvio: "O termo de distrato precisa ser assinado novamente via gov.br.",
     observacoes:
       "VALOR PAGO = R$ 12.400,00 — TED/DOC/depósito R$ 6.000 + cartão crédito VISA 10x R$ 640 (valor cheio R$ 6.400).\n" +
       "Intermediação total R$ 12.400: TED/DOC/depósito R$ 6.000 (pago) + VISA crédito R$ 6.400 (valor cheio).\n" +

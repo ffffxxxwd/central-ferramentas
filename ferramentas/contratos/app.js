@@ -758,6 +758,15 @@
     return arr.slice(0, -1).join(", ") + " e " + arr[arr.length - 1];
   }
 
+  // Notas de envio personalizadas (campo notaEnvio de cada ficha)
+  function notasEnvio(cs) {
+    var notas = [];
+    cs.forEach(function (c) {
+      if (c.notaEnvio && notas.indexOf(c.notaEnvio) < 0) notas.push(c.notaEnvio);
+    });
+    return notas.length ? "*Importante:* " + notas.join(" ") + "\n\n" : "";
+  }
+
   function montarEmail(cs) {
     var um = cs.length === 1;
     var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
@@ -807,6 +816,7 @@
       (um ? "" : "Total a devolver: " + rs(total) + porExtensoDe(total) + "\n\n") +
       "Para darmos andamento ao cancelamento e à devolução dos valores, pedimos que:\n\n" +
       passos.join("\n") + "\n\n" +
+      notasEnvio(cs) +
       "Assim que recebermos " + (um ? "o termo assinado" : "os termos assinados") + ", seguimos com o processo.\n\n" +
       "Qualquer dúvida, é só responder este e-mail.\n\n" +
       "Atenciosamente,";
@@ -865,6 +875,7 @@
       (um ? "" : "*Total a devolver: " + rs(total) + "*\n\n") +
       "Para dar andamento, é só:\n" +
       passos.join("\n") + "\n\n" +
+      notasEnvio(cs) +
       "Qualquer dúvida, me chama por aqui.";
 
     var tel = telDigitos(cs[0]);
