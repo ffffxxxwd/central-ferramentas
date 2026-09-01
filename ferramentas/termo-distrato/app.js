@@ -302,8 +302,21 @@
     // Busca ou cria o container de reembolso no documento
     var area = $("areaReembolso");
     if (!area) {
-      // fallback: procura os elementos do modo simples diretamente
-      area = $("op_estorno") ? $("op_estorno").parentElement.parentElement : null;
+      // fallback: cache antigo sem areaReembolso — cria o wrapper
+      var opcoes = document.querySelector(".doc-opcoes");
+      if (opcoes) {
+        var wrapper = document.createElement("div");
+        wrapper.id = "areaReembolso";
+        // Pega opcoes + os 2 parágrafos seguintes (bold)
+        var pai = opcoes.parentElement;
+        var proximo = opcoes.nextElementSibling;
+        var proximo2 = proximo ? proximo.nextElementSibling : null;
+        pai.insertBefore(wrapper, opcoes);
+        wrapper.appendChild(opcoes);
+        if (proximo) wrapper.appendChild(proximo);
+        if (proximo2) wrapper.appendChild(proximo2);
+        area = wrapper;
+      }
     }
 
     if (misto && area) {
@@ -718,7 +731,7 @@
   }
 
   /* ---------- Persistência (cache local no navegador) ---------- */
-  var CHAVE = "termo-distrato-v7";
+  var CHAVE = "termo-distrato-v8";
   var CAMPOS = ["f_nome", "f_nac", "f_ec", "f_rg", "f_cpf", "f_fracao", "f_unidade", "f_cota",
     "f_local", "f_edificio", "f_empresa", "f_cnpj", "f_forma", "f_valor", "f_extenso", "f_pix",
     "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf",
@@ -764,4 +777,5 @@
   atualizarVisibilidadeConjuge();
   aplicarLogo();
   if (!restaurou) atualizar();   // se restaurou do cache, mantém o documento salvo (edições livres)
+  atualizarValorForma();         // sempre aplica o modo correto (simples ou misto), mesmo com cache
 })();
