@@ -103,15 +103,6 @@ tr:last-child td{border-bottom:none}
   <button onclick="navPeriodo(1)">&rarr;</button>
 </div>
 
-<!-- Resumo do período selecionado -->
-<div class="periodo-resumo" id="periodoResumo" style="display:none">
-  <div class="periodo-card"><div class="pc-label">Receitas</div><div class="pc-valor positivo" id="pReceitas">-</div></div>
-  <div class="periodo-card"><div class="pc-label">Gastos</div><div class="pc-valor negativo" id="pGastos">-</div></div>
-  <div class="periodo-card"><div class="pc-label">Lucro</div><div class="pc-valor saldo" id="pLucro">-</div></div>
-  <div class="periodo-card"><div class="pc-label">Cada (÷2)</div><div class="pc-valor saldo" id="pMetade">-</div></div>
-  <div class="periodo-card"><div class="pc-label">Entradas</div><div class="pc-valor" id="pQtd" style="color:#17203a">-</div></div>
-</div>
-
 <!-- Formulário -->
 <div class="form-row">
   <input type="text" id="descricao" placeholder="Descrição">
@@ -350,9 +341,10 @@ function renderizar() {
   const todos = carregar();
   const lista = filtrar();
 
-  // totais gerais (sempre tudo)
-  const receitasTotal = todos.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
-  const gastosTotal = todos.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
+  // totais baseados no período selecionado
+  const fonte = lista;
+  const receitasTotal = fonte.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
+  const gastosTotal = fonte.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
 
   document.getElementById('totalReceitas').textContent = fmt(receitasTotal);
   document.getElementById('totalGastos').textContent = fmt(gastosTotal);
@@ -368,35 +360,15 @@ function renderizar() {
   if (metade < 0) { metadeEl.textContent = '- ' + metadeEl.textContent; metadeEl.className = 'card-valor negativo'; }
   else { metadeEl.className = 'card-valor saldo'; }
 
-  // nav e resumo do período
+  // nav do período
   const navEl = document.getElementById('periodoNav');
-  const resumoEl = document.getElementById('periodoResumo');
-
   const isRapido = periodoAtual.endsWith('d') && periodoAtual !== 'dia';
   if (periodoAtual !== 'tudo') {
     const { label } = getRangePeriodo();
     navEl.style.display = isRapido ? 'none' : 'flex';
-    resumoEl.style.display = 'flex';
     document.getElementById('periodoLabel').textContent = label;
-
-    const pRec = lista.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
-    const pGas = lista.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
-    const pLuc = pRec - pGas;
-    document.getElementById('pReceitas').textContent = fmt(pRec);
-    document.getElementById('pGastos').textContent = fmt(pGas);
-    const pLucroEl = document.getElementById('pLucro');
-    pLucroEl.textContent = fmt(Math.abs(pLuc));
-    if (pLuc < 0) { pLucroEl.textContent = '- ' + pLucroEl.textContent; pLucroEl.className = 'pc-valor negativo'; }
-    else { pLucroEl.className = 'pc-valor saldo'; }
-    const pMet = pLuc / 2;
-    const pMetEl = document.getElementById('pMetade');
-    pMetEl.textContent = fmt(Math.abs(pMet));
-    if (pMet < 0) { pMetEl.textContent = '- ' + pMetEl.textContent; pMetEl.className = 'pc-valor negativo'; }
-    else { pMetEl.className = 'pc-valor saldo'; }
-    document.getElementById('pQtd').textContent = lista.length;
   } else {
     navEl.style.display = 'none';
-    resumoEl.style.display = 'none';
   }
 
   // categorias no filtro
@@ -480,15 +452,10 @@ function exportarImagem() {
   const w = 600;
   const ctx = c.getContext('2d');
 
-  // dados gerais
-  const recTotal = todos.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
-  const gasTotal = todos.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
+  // dados (já filtrados pelo período)
+  const recTotal = lista.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
+  const gasTotal = lista.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
   const lucTotal = recTotal - gasTotal;
-
-  // dados do período
-  const recP = lista.filter(e => e.tipo === 'receita').reduce((s, e) => s + e.valor, 0);
-  const gasP = lista.filter(e => e.tipo === 'gasto').reduce((s, e) => s + e.valor, 0);
-  const lucP = recP - gasP;
 
   // agrupar por dia
   const grupos = {};
@@ -497,7 +464,6 @@ function exportarImagem() {
 
   // calcular altura
   let h = 180; // header + totais
-  if (periodoAtual !== 'tudo') h += 60; // resumo período
   dias.forEach(d => { h += 30 + grupos[d].length * 24 + 28; }); // dia header + itens + subtotal
   h += 20; // padding bottom
 
@@ -505,7 +471,12 @@ function exportarImagem() {
   ctx.fillStyle = '#f5f7fc'; ctx.fillRect(0, 0, w, h);
 
   // título
-  ctx.fillStyle = '#17203a'; ctx.font = 'bold 18px system-ui'; ctx.fillText('Gastos e Receitas', 24, 36);
+  let titulo = 'Gastos e Receitas';
+  if (periodoAtual !== 'tudo') {
+    const isRap = periodoAtual.endsWith('d') && periodoAtual !== 'dia';
+    titulo += ' — ' + (isRap ? 'Últimos ' + parseInt(periodoAtual) + ' dias' : getRangePeriodo().label);
+  }
+  ctx.fillStyle = '#17203a'; ctx.font = 'bold 18px system-ui'; ctx.fillText(titulo, 24, 36);
 
   // totais gerais
   let y = 60;
@@ -519,18 +490,6 @@ function exportarImagem() {
   ctx.fillStyle = '#3160f5'; ctx.fillText(fmt(lucTotal / 2), 456, y);
 
   y += 30;
-
-  // resumo período (se não for "tudo")
-  if (periodoAtual !== 'tudo') {
-    const label = periodoAtual.endsWith('d') ? 'Últimos ' + parseInt(periodoAtual) + ' dias' : getRangePeriodo().label;
-    ctx.fillStyle = '#3160f5'; ctx.font = 'bold 13px system-ui'; ctx.fillText(label, 24, y); y += 20;
-    ctx.font = '12px system-ui';
-    ctx.fillStyle = '#17b26a'; ctx.fillText('Rec: ' + fmt(recP), 24, y);
-    ctx.fillStyle = '#e03131'; ctx.fillText('Gas: ' + fmt(gasP), 180, y);
-    ctx.fillStyle = '#3160f5'; ctx.fillText('Luc: ' + fmt(lucP), 336, y);
-    ctx.fillText('Cada: ' + fmt(lucP / 2), 470, y);
-    y += 30;
-  }
 
   // linha separadora
   ctx.strokeStyle = '#e3e8f2'; ctx.beginPath(); ctx.moveTo(24, y); ctx.lineTo(w - 24, y); ctx.stroke(); y += 16;
