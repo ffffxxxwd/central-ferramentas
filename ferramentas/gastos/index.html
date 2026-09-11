@@ -224,12 +224,19 @@ function fmtDiaCompleto(d) {
   return DIAS_SEMANA[dt.getDay()] + ', ' + dt.getDate() + ' de ' + MESES[dt.getMonth()];
 }
 
+// Data local em AAAA-MM-DD (toISOString converte pra UTC e vira o dia seguinte após 21h)
+function iso(d) {
+  return d.getFullYear() + '-' +
+    String(d.getMonth() + 1).padStart(2, '0') + '-' +
+    String(d.getDate()).padStart(2, '0');
+}
+
 // Período
 function getInicioSemana(date) {
   const d = new Date(date);
   const day = d.getDay();
   d.setDate(d.getDate() - day);
-  return d.toISOString().slice(0, 10);
+  return iso(d);
 }
 
 function getRangePeriodo() {
@@ -241,13 +248,13 @@ function getRangePeriodo() {
     const fim_d = new Date(hoje);
     const ini_d = new Date(hoje);
     ini_d.setDate(ini_d.getDate() - dias + 1);
-    inicio = ini_d.toISOString().slice(0, 10);
-    fim = fim_d.toISOString().slice(0, 10);
+    inicio = iso(ini_d);
+    fim = iso(fim_d);
     label = 'Últimos ' + dias + ' dias';
   } else if (periodoAtual === 'dia') {
     const d = new Date(hoje);
     d.setDate(d.getDate() + offsetPeriodo);
-    const ds = d.toISOString().slice(0, 10);
+    const ds = iso(d);
     inicio = ds; fim = ds;
     label = fmtDiaCompleto(ds);
   } else if (periodoAtual === 'semana') {
@@ -257,20 +264,20 @@ function getRangePeriodo() {
     seg.setDate(seg.getDate() - seg.getDay() + 1);
     const dom = new Date(seg);
     dom.setDate(dom.getDate() + 6);
-    inicio = seg.toISOString().slice(0, 10);
-    fim = dom.toISOString().slice(0, 10);
+    inicio = iso(seg);
+    fim = iso(dom);
     label = fmtData(inicio) + ' — ' + fmtData(fim);
   } else if (periodoAtual === 'mes') {
     const d = new Date(hoje.getFullYear(), hoje.getMonth() + offsetPeriodo, 1);
     const ultimo = new Date(d.getFullYear(), d.getMonth() + 1, 0);
-    inicio = d.toISOString().slice(0, 10);
-    fim = ultimo.toISOString().slice(0, 10);
+    inicio = iso(d);
+    fim = iso(ultimo);
     label = MESES[d.getMonth()] + ' ' + d.getFullYear();
   } else if (periodoAtual === 'ano') {
     const d = new Date(hoje.getFullYear() + offsetPeriodo, 0, 1);
     const ultimo = new Date(d.getFullYear(), 11, 31);
-    inicio = d.toISOString().slice(0, 10);
-    fim = ultimo.toISOString().slice(0, 10);
+    inicio = iso(d);
+    fim = iso(ultimo);
     label = '' + d.getFullYear();
   }
   return { inicio, fim, label };
@@ -305,7 +312,7 @@ function adicionar() {
   const valor = parseFloat(document.getElementById('valor').value);
   const tipo = document.getElementById('tipo').value;
   const cat = document.getElementById('categoria').value || 'Outros';
-  const data = document.getElementById('data').value || new Date().toISOString().slice(0, 10);
+  const data = document.getElementById('data').value || iso(new Date());
 
   if (!desc || isNaN(valor) || valor <= 0) { alert('Preencha descrição e valor.'); return; }
 
@@ -535,7 +542,7 @@ function exportarImagem() {
 }
 
 // data padrão = hoje
-document.getElementById('data').value = new Date().toISOString().slice(0, 10);
+document.getElementById('data').value = iso(new Date());
 renderizar();
 </script>
 </body>
