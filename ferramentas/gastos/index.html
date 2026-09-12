@@ -91,8 +91,8 @@ tr:last-child td{border-bottom:none}
   <button class="periodo-tab" onclick="setPeriodo('mes')">Mensal</button>
   <button class="periodo-tab" onclick="setPeriodo('ano')">Anual</button>
   <span style="display:inline-flex;align-items:center;gap:4px;margin-left:4px">
-    <input type="number" id="diasCustom" min="1" max="365" placeholder="X" style="width:50px;padding:6px 8px;border:1px solid #e3e8f2;border-radius:8px;font-size:.8rem;text-align:center">
-    <button class="periodo-tab" onclick="setPeriodoCustom()">dias</button>
+    <input type="number" id="diasCustom" min="1" max="365" placeholder="X" onkeydown="if(event.key==='Enter')setPeriodoCustom()" style="width:50px;padding:6px 8px;border:1px solid #e3e8f2;border-radius:8px;font-size:.8rem;text-align:center">
+    <button class="periodo-tab" id="btnDias" onclick="setPeriodoCustom()">dias</button>
   </span>
 </div>
 
@@ -292,6 +292,7 @@ function getRangePeriodo() {
 function setPeriodo(p) {
   periodoAtual = p;
   offsetPeriodo = 0;
+  document.getElementById('diasCustom').value = '';
   document.querySelectorAll('.periodo-tab').forEach(t => t.classList.remove('ativo'));
   const btn = document.querySelector(`.periodo-tab[onclick="setPeriodo('${p}')"]`);
   if (btn) btn.classList.add('ativo');
@@ -303,6 +304,7 @@ function setPeriodoCustom() {
   const dias = parseInt(input.value);
   if (!dias || dias < 1) { alert('Digite a quantidade de dias.'); return; }
   document.querySelectorAll('.periodo-tab').forEach(t => t.classList.remove('ativo'));
+  document.getElementById('btnDias').classList.add('ativo');
   periodoAtual = dias + 'd';
   offsetPeriodo = 0;
   renderizar();
