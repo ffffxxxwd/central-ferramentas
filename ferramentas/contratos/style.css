@@ -357,3 +357,50 @@ textarea.codigo {
 
 .tag.pend { background: #fdf8ee; color: #a56a06; border: 1px solid #f0d9a8; }
 .ficha.pendente { border-left-color: #e0b45a; border-left-style: dashed; }
+
+/* --- Aviso de duplicatas (mesmo CPF + unidade/cota) --- */
+#avisoDup { margin-bottom: 16px; }
+.aviso-duplicatas {
+  background: #fdf3f2;
+  border: 1px solid #f2c6c2;
+  border-left: 4px solid #b42318;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #7f1d1d;
+}
+.aviso-duplicatas__topo { font-size: 14px; margin-bottom: 8px; }
+.aviso-duplicatas__tag {
+  display: inline-block;
+  background: #b42318; color: #fff;
+  font-size: 11px; font-weight: 700; letter-spacing: .05em;
+  padding: 2px 8px; border-radius: 4px; margin-right: 6px;
+  text-transform: uppercase;
+}
+.aviso-duplicatas__lista { margin: 0; padding-left: 20px; font-size: 13px; }
+.aviso-duplicatas__lista li { margin-bottom: 4px; }
+.aviso-duplicatas__lista strong { color: #7f1d1d; }
+.dup-id {
+  background: #fff; border: 1px solid #f2c6c2; color: #7f1d1d;
+  padding: 2px 8px; border-radius: 4px; font-size: 12px;
+  cursor: pointer; margin: 0 2px; font-family: inherit;
+}
+.dup-id:hover { background: #b42318; color: #fff; }
+
+/* --- Preencher formulário a partir do PDF (bloco no topo do "Novo cliente") --- */
+.bloco-ler-pdf {
+  background: linear-gradient(180deg, #f0f7ff, #eaf2fb);
+  border: 1px solid #cfe1f7;
+  border-left: 4px solid #2564cf;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.ler-pdf__topo { display: flex; flex-direction: column; gap: 2px; margin-bottom: 10px; }
+.ler-pdf__topo strong { color: #1e3a5f; font-size: 14px; }
+.ler-pdf__topo .aviso { font-size: 12px; color: #4a6a8a; margin: 0; }
+.ler-pdf__acoes { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ler-pdf__acoes .btn { cursor: pointer; }
+.ler-pdf__status { font-size: 13px; color: #4a6a8a; }
+.ler-pdf__status.carregando { color: #6b7280; }
+.ler-pdf__status.ok       { color: #059669; font-weight: 600; }
+.ler-pdf__status.erro     { color: #b42318; font-weight: 600; }

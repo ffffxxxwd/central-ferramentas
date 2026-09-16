@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assinatura GAV</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #f0f2f5; color: #1a1a1a;
+    padding: 32px 16px; line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 700; color: #123170; margin: 0 0 4px; }
+  p.sub { color: #5a6270; font-size: 13px; margin: 0 0 24px; }
+  .card {
+    background: #fff; border: 1px solid #d4d8dd;
+    border-radius: 10px; padding: 24px; margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+    color: #123170; font-weight: 700; margin: 0 0 16px;
+  }
+  label { display: block; font-size: 12px; font-weight: 600; color: #5a6270; margin-bottom: 4px; margin-top: 14px; }
+  label:first-of-type { margin-top: 0; }
+  input[type=text] {
+    width: 100%; padding: 9px 10px; border: 1px solid #d4d8dd;
+    border-radius: 6px; font-size: 14px; font-family: 'Inter', sans-serif;
+    background: #fff; color: #1a1a1a;
+  }
+  input[type=text]:focus { outline: none; border-color: #123170; box-shadow: 0 0 0 3px rgba(18,49,112,0.12); }
+  .preview-outer {
+    overflow-x: auto; padding: 18px;
+    border: 1px solid #d4d8dd; border-radius: 8px; background: #f0f2f5;
+  }
+  .preview-note { margin: 10px 0 0; color: #5a6270; font-size: 11px; }
+  #copyBtn {
+    margin-top: 16px; background: #123170; color: #fff; border: none;
+    padding: 12px 22px; border-radius: 6px; font-size: 14px; font-weight: 600;
+    font-family: 'Inter', sans-serif; cursor: pointer;
+  }
+  #copyBtn:hover { background: #0e2558; }
+  #status { display: inline-block; margin-left: 12px; font-size: 13px; color: #a57a4c; font-weight: 600; }
+  ol.instrucoes { font-size: 13px; line-height: 1.8; padding-left: 20px; margin: 0; }
+  ol.instrucoes strong { color: #123170; }
+  ol.instrucoes code { background: #f0f2f5; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Gerador de assinatura de e-mail</h1>
+  <p class="sub">GAV Hotéis e Resorts — preencha seus dados, confira o preview e copie a assinatura.</p>
+
+  <div class="card">
+    <h2>Seus dados</h2>
+    <label>Nome completo</label>
+    <input type="text" id="fname" value="Hugo Bastos">
+    <label>Cargo ou função</label>
+    <input type="text" id="frole" placeholder="(opcional)">
+    <label>Telefone</label>
+    <input type="text" id="fphone" value="(62) 97602-5529">
+    <label>E-mail</label>
+    <input type="text" id="femail" value="">
+    <label>Site</label>
+    <input type="text" id="fsite" value="">
+    <label>Endereço (linha 1)</label>
+    <input type="text" id="faddr1" value="Av. 136 nº 767, Setor Sul">
+    <label>Endereço (linha 2)</label>
+    <input type="text" id="faddr2" value="Ed. New York, 16º andar, Goiânia-GO">
+  </div>
+
+  <div class="card">
+    <h2>Pré-visualização</h2>
+    <div class="preview-outer">
+      <div id="sig"></div>
+    </div>
+    <p class="preview-note">A assinatura é copiada como HTML formatado — cole diretamente nas configurações do seu e-mail.</p>
+    <button id="copyBtn">Copiar assinatura</button>
+    <span id="status"></span>
+  </div>
+
+  <div class="card">
+    <h2>Como usar no seu e-mail</h2>
+    <ol class="instrucoes">
+      <li>Preencha os campos acima e confira o preview.</li>
+      <li>Clique em <strong>"Copiar assinatura"</strong>.</li>
+      <li><strong>Gmail:</strong> Configurações → Ver todas → Geral → Assinatura → cole (<code>Ctrl+V</code>).</li>
+      <li><strong>Outlook desktop:</strong> Arquivo → Opções → E-mail → Assinaturas → cole.</li>
+      <li><strong>Outlook web:</strong> Configurações → E-mail → Composição e resposta → cole.</li>
+    </ol>
+  </div>
+</div>
+
+<script>
+const NAVY = '#123170', GOLD = '#a57a4c', W = '#ffffff';
+const F = "font-family:Arial,Helvetica,sans-serif;";
+function build() {
+  const v = id => document.getElementById(id).value;
+  const name = v('fname') || 'Nome Sobrenome';
+  const role = v('frole');
+  const phone = v('fphone');
+  const email = v('femail');
+  const site = v('fsite');
+  const addr1 = v('faddr1');
+  const addr2 = v('faddr2');
+
+  let r = '';
+  r += `<tr><td style="padding-bottom:2px"><span style="${F}font-size:16px;font-weight:bold;color:${W};line-height:20px">${esc(name)}</span></td></tr>`;
+
+  if (role) r += `<tr><td style="padding-bottom:14px"><span style="${F}font-size:12px;color:${W};line-height:16px">${esc(role)}</span></td></tr>`;
+  else r += `<tr><td style="padding-bottom:12px"></td></tr>`;
+
+  if (phone) r += `<tr><td style="padding-bottom:2px"><span style="${F}font-size:11px;color:${W};line-height:16px">${esc(phone)}</span></td></tr>`;
+
+  if (email) r += `<tr><td style="padding-bottom:2px"><a href="mailto:${esc(email)}" style="${F}font-size:11px;color:${W};text-decoration:none">${esc(email)}</a></td></tr>`;
+
+  if (site) {
+    const href = site.startsWith('http') ? site : 'https://' + site;
+    r += `<tr><td style="padding-bottom:2px"><a href="${esc(href)}" style="${F}font-size:11px;color:${W};text-decoration:none">${esc(site)}</a></td></tr>`;
+  }
+
+  if (phone || email || site) r += `<tr><td style="padding-bottom:12px"></td></tr>`;
+
+  if (addr1 || addr2) {
+    let a = esc(addr1);
+    if (addr2) a += '<br>' + esc(addr2);
+    r += `<tr><td><span style="${F}font-size:11px;color:${W};line-height:16px">${a}</span></td></tr>`;
+  }
+
+  return `<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;${F}width:625px">
+    <tr>
+      <td valign="top" bgcolor="${NAVY}" style="background-color:${NAVY};padding:20px 14px 20px 20px">
+        <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;color:${W}">
+          ${r}
+        </table>
+      </td>
+      <td valign="middle" bgcolor="${NAVY}" style="background-color:${NAVY};padding:20px 28px;text-align:center">
+        <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;margin:0 auto">
+          <tr><td style="${F}font-size:38px;font-weight:bold;color:${W};letter-spacing:5px;line-height:1;text-align:center;padding-bottom:6px;white-space:nowrap">GAV</td></tr>
+          <tr><td style="${F}font-size:9px;font-weight:bold;color:${W};letter-spacing:2.5px;line-height:1;text-align:center;white-space:nowrap">HOTÉIS E RESORTS</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="${GOLD}" style="background-color:${GOLD};font-size:0;line-height:0;height:10px"><div style="height:10px;font-size:0;line-height:0">&nbsp;</div></td>
+    </tr>
+  </table>`;
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function render() { document.getElementById('sig').innerHTML = build(); }
+
+document.querySelectorAll('input').forEach(i => i.addEventListener('input', render));
+
+document.getElementById('copyBtn').addEventListener('click', async () => {
+  const el = document.getElementById('sig');
+  const st = document.getElementById('status');
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([el.innerHTML], {type:'text/html'}),
+      'text/plain': new Blob([el.textContent], {type:'text/plain'})
+    })]);
+    st.textContent = '✓ Copiado!';
+  } catch {
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const sel = window.getSelection();
+    sel.removeAllRanges(); sel.addRange(range);
+    document.execCommand('copy');
+    sel.removeAllRanges();
+    st.textContent = '✓ Copiado!';
+  }
+  setTimeout(() => st.textContent = '', 3000);
+});
+
+render();
+</script>
+</body>
+</html>

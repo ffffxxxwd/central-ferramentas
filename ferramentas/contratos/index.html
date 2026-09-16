@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contratos | Fichas dos clientes</title>
-  <link rel="stylesheet" href="style.css?v=15" />
+  <link rel="stylesheet" href="style.css?v=17" />
 </head>
 <body>
 
@@ -23,6 +23,9 @@
       <button type="button" class="btn" id="btnExportar" title="Gera o código do clientes.js com as edições feitas aqui">Exportar clientes.js</button>
     </div>
   </header>
+
+  <!-- Aviso de duplicatas (aparece só quando há) -->
+  <section id="avisoDup" hidden></section>
 
   <!-- Resumo -->
   <section class="resumo" id="resumo"></section>
@@ -64,7 +67,9 @@
     </div>
   </div>
 
-  <script src="clientes.js?v=118"></script>
-  <script src="app.js?v=42"></script>
+  <script src="../../assets/lib/pdf.min.js"></script>
+  <script src="../../assets/js/ler-contrato.js?v=6"></script>
+  <script src="clientes.js?v=186"></script>
+  <script src="app.js?v=51"></script>
 </body>
 </html>

@@ -79,5 +79,14 @@ window.FERRAMENTAS = [
     categoria: "Financeiro",
     url: "ferramentas/gastos/index.html",
     pronta: true
+  },
+  {
+    id: "emails",
+    nome: "Modelos de Email",
+    descricao: "Modelos prontos de email para o cliente (continuidade do reembolso, etc). Preenche os campos e copia o email já formatado com botão de WhatsApp.",
+    icone: "✉️",
+    categoria: "Emails",
+    url: "ferramentas/emails/index.html",
+    pronta: true
   }
 ];

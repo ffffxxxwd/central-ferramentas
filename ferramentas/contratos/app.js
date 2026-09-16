@@ -154,7 +154,7 @@
     var o = {};
     ["id", "nome", "cpf", "rg", "nacionalidade", "estadoCivil", "empreendimento", "bloco",
      "apartamento", "andar", "cota", "fracao", "localizacao", "empresa", "razaoSocial", "cnpj",
-     "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "pix", "clausulaExtra", "observacoes"].forEach(function (k) {
+     "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "pix", "clausulaExtra", "observacoes", "notaEnvio"].forEach(function (k) {
       o[k] = txt(c[k]);
     });
     ["valorPago", "valorTotal", "corretagem", "sinal"].forEach(function (k) { o[k] = c[k]; });
@@ -165,6 +165,9 @@
     }).filter(function (a) { return a.arquivo; });
     o.parcelas = (c.parcelas || []).map(function (p) {
       return { tipo: txt(p.tipo), qtd: p.qtd, valor: p.valor, forma: txt(p.forma), vencimento: txt(p.vencimento) };
+    });
+    o.entradas = (c.entradas || []).map(function (e) {
+      return { descricao: txt(e.descricao), valor: e.valor };
     });
     o.empresa = (o.empresa || "").toUpperCase() === "WAM" ? "WAM" : "GAV";
     return o;
@@ -230,6 +233,37 @@
     return null;
   }
 
+  /* ---------- Detecção de duplicatas ----------
+     Duas fichas são consideradas o MESMO contrato quando têm:
+     - mesmo CPF do titular
+     - mesmo empreendimento
+     - mesmo bloco + unidade + cota
+     Ficha 140 (Lidia N/003/11) e uma nova 152 (mesmo N/003/11) — mesmo doc.
+     ------------------------------------------------------------- */
+  function chaveDuplicata(c) {
+    var partes = [
+      String(c.cpf || "").replace(/\D/g, ""),
+      semAcento(c.empreendimento || ""),
+      semAcento(c.bloco || ""),
+      semAcento(c.unidade || c.apartamento || ""),
+      semAcento(c.cota || "")
+    ];
+    // se algum campo essencial estiver vazio, não conta como duplicata
+    if (!partes[0] || !partes[1] || !partes[3]) return "";
+    return partes.join("|");
+  }
+  function acharDuplicatas() {
+    var mapa = {}, l = listaCompleta();
+    for (var i = 0; i < l.length; i++) {
+      var k = chaveDuplicata(l[i]);
+      if (!k) continue;
+      (mapa[k] = mapa[k] || []).push(l[i]);
+    }
+    var grupos = [];
+    for (var chave in mapa) if (mapa[chave].length > 1) grupos.push(mapa[chave]);
+    return grupos;
+  }
+
   /* ---------- Estado da tela ---------- */
   var filtroEmpresa = "";
   var filtroStatus = "ativos";   // "ativos" | "arquivados" | "todos"
@@ -252,6 +286,38 @@
       var alvo = semAcento([c.nome, c.empreendimento, c.cpf, c.razaoSocial, c.apartamento, c.cota].join(" "));
       return alvo.indexOf(t) > -1;
     });
+  }
+
+  /* ---------- Banner de duplicatas ----------
+     Mostra logo no topo, acima do resumo, quando há fichas apontando
+     pro mesmo contrato (mesmo CPF + empreendimento + bloco/unidade/cota).
+     Ficou útil depois do caso Lidia (ficha 140 e 152 apontando pro mesmo
+     Bloco N / 003 / Cota 11). */
+  function renderAvisoDuplicatas() {
+    var grupos = acharDuplicatas();
+    var host = $("avisoDup");
+    if (!host) return;
+    if (!grupos.length) { host.hidden = true; host.innerHTML = ""; return; }
+    var itens = grupos.map(function (g) {
+      var titulo = (g[0].nome || "—") + " · " +
+                   (g[0].empreendimento || "") + " · " +
+                   [g[0].bloco, g[0].unidade || g[0].apartamento, g[0].cota].filter(Boolean).join("/");
+      var ids = g.map(function (c) {
+        return '<button type="button" class="dup-id" data-acao="ver-ficha" data-id="' + esc(c.id) + '">' +
+               "ficha " + esc(c.id) + "</button>";
+      }).join(" ");
+      return '<li><strong>' + esc(titulo) + '</strong> — ' + ids + '</li>';
+    }).join("");
+    host.hidden = false;
+    host.innerHTML =
+      '<div class="aviso-duplicatas">' +
+        '<div class="aviso-duplicatas__topo">' +
+          '<span class="aviso-duplicatas__tag">Atenção</span> ' +
+          '<strong>' + grupos.length + ' contrato' + (grupos.length > 1 ? "s" : "") + ' com ficha duplicada</strong>' +
+          ' — mesmo CPF, mesmo empreendimento e mesma unidade/cota.' +
+        '</div>' +
+        '<ul class="aviso-duplicatas__lista">' + itens + '</ul>' +
+      '</div>';
   }
 
   /* ---------- Resumo ---------- */
@@ -629,6 +695,194 @@
     else { o[p[0]] = o[p[0]] || {}; o[p[0]][p[1]] = v; }
   }
 
+  /* ---------- Preencher formulário automaticamente a partir do PDF ---------- */
+  function preencherComPDF(file) {
+    var st = $("lerContratoStatus");
+    var form = $("formEdit");
+    if (!form) return;
+    if (!window.LerContrato) {
+      alert("Leitor de contrato não carregou. Recarregue a página.");
+      return;
+    }
+    if (st) { st.textContent = "Lendo PDF..."; st.className = "ler-pdf__status carregando"; }
+
+    window.LerContrato.lerPDF(file).then(function (texto) {
+      if (window.LerContrato.pareceEscaneado(texto)) {
+        if (st) { st.textContent = "PDF sem texto (escaneado). Preencha à mão."; st.className = "ler-pdf__status erro"; }
+        return;
+      }
+      var d = window.LerContrato.extrair(texto);
+
+      // Mapa campo do PDF -> name do input do formulário
+      var mapa = {
+        nome: "nome",
+        cpf: "cpf",
+        rg: "rg",
+        nacionalidade: "nacionalidade",
+        estadoCivil: "estadoCivil",
+        empreendimento: "empreendimento",
+        bloco: "bloco",
+        unidade: "apartamento",
+        andar: "andar",
+        cota: "cota",
+        fracao: "fracao",
+        local: "localizacao",
+        razaoSocial: "razaoSocial",
+        cnpj: "cnpj",
+        precoCota: null, // valorPago é decisão humana, não vem do contrato
+        precoIntermediacao: "corretagem",
+        precoTotal: "valorTotal",
+        formaPagamentoEntrada: "formaPagamentoEntrada",
+        dataAssinatura: "dataAssinatura",
+        telefone: "telefone",
+        email: "email",
+        conjugeNome: "conjuge.nome",
+        conjugeCpf: "conjuge.cpf",
+        conjugeRg: "conjuge.rg"
+      };
+
+      var preenchidos = [], sobrescritos = [];
+      Object.keys(mapa).forEach(function (chavePdf) {
+        var nomeCampo = mapa[chavePdf];
+        if (!nomeCampo) return;
+        var valor = d[chavePdf];
+        if (valor === undefined || valor === null || valor === "") return;
+        var input = form.querySelector('[name="' + nomeCampo + '"]');
+        if (!input) return;
+
+        // formata número como moeda se for campo de valor
+        if (["valorTotal", "corretagem"].indexOf(nomeCampo) > -1 && typeof valor === "number") {
+          valor = moeda(valor);
+        }
+
+        if (input.value.trim()) sobrescritos.push(nomeCampo);
+        else preenchidos.push(nomeCampo);
+        input.value = valor;
+      });
+
+      // Empresa
+      if (d.empresa) {
+        var selEmp = form.querySelector('[name="empresa"]');
+        if (selEmp) selEmp.value = d.empresa;
+      }
+
+      // Sugere id automático se o campo estiver vazio: ex "acson-areya-blc-1-649-30"
+      var inpId = form.querySelector('[name="id"]');
+      if (inpId && !inpId.value.trim() && d.nome) {
+        var slug = semAcento(d.nome).toLowerCase().replace(/[^\w\s]/g, "").split(/\s+/).slice(0, 2).join("-");
+        var unid = [d.bloco, d.unidade, d.cota].filter(Boolean).join("-").toLowerCase();
+        inpId.value = slug + (unid ? "-" + unid : "");
+      }
+
+      if (st) {
+        var msg = preenchidos.length + " campos preenchidos";
+        if (sobrescritos.length) msg += " · " + sobrescritos.length + " sobrescritos";
+        if (!d.nome && !d.cpf) msg = "Nada extraído — verifique se o PDF tem texto";
+        st.textContent = msg;
+        st.className = "ler-pdf__status " + ((!d.nome && !d.cpf) ? "erro" : "ok");
+      }
+    }).catch(function (err) {
+      if (st) { st.textContent = "Erro: " + (err.message || err); st.className = "ler-pdf__status erro"; }
+    });
+  }
+
+  /* ---------- Processar VÁRIOS PDFs de uma vez ----------
+     Lê cada um, cria 1 ficha por contrato (mesma pessoa, unidades diferentes),
+     salva tudo em store.novos e fecha o modal. */
+  function processarVariosPDFs(files) {
+    var st = $("lerContratoStatus");
+    if (!window.LerContrato) return alert("Leitor de contrato não carregou.");
+
+    var resultados = [];
+    var promessa = Promise.resolve();
+    files.forEach(function (file, idx) {
+      promessa = promessa.then(function () {
+        if (st) { st.textContent = "Lendo " + (idx + 1) + " de " + files.length + "..."; st.className = "ler-pdf__status carregando"; }
+        return window.LerContrato.lerPDF(file).then(function (texto) {
+          if (window.LerContrato.pareceEscaneado(texto)) {
+            resultados.push({ file: file.name, ok: false, motivo: "PDF sem texto (escaneado)" });
+            return;
+          }
+          var d = window.LerContrato.extrair(texto);
+          if (!d.nome && !d.cpf) {
+            resultados.push({ file: file.name, ok: false, motivo: "Nada extraído" });
+            return;
+          }
+          resultados.push({ file: file.name, ok: true, dados: d });
+        }).catch(function (err) {
+          resultados.push({ file: file.name, ok: false, motivo: err.message || String(err) });
+        });
+      });
+    });
+
+    promessa.then(function () {
+      // cria as fichas — uma por PDF que teve extração ok
+      var criados = [];
+      resultados.forEach(function (r) {
+        if (!r.ok) return;
+        var d = r.dados;
+        var slug = semAcento(d.nome || "").toLowerCase().replace(/[^\w\s]/g, "").split(/\s+/).slice(0, 2).join("-");
+        var unid = [d.bloco, d.unidade, d.cota].filter(Boolean).join("-").toLowerCase();
+        var id = (slug + (unid ? "-" + unid : "")) || ("cliente-" + Date.now() + "-" + criados.length);
+
+        // se já existir esse id, adiciona sufixo
+        var idUnico = id, n = 2;
+        while (acharCliente(idUnico)) idUnico = id + "-" + (n++);
+
+        var novo = fichaAPartirDeExtracao(d, idUnico);
+        store.novos.push(novo);
+        criados.push({ id: idUnico, nome: d.nome, unidade: [d.bloco, d.unidade, d.cota].filter(Boolean).join("/") });
+      });
+      gravarStore(store);
+      renderTudo();
+      fecharModal();
+
+      // relatório final
+      var falhas = resultados.filter(function (r) { return !r.ok; });
+      var msg = criados.length + " ficha" + (criados.length !== 1 ? "s" : "") + " criada" + (criados.length !== 1 ? "s" : "") + ":\n\n" +
+                criados.map(function (c) { return "· " + c.id + " (" + c.unidade + ")"; }).join("\n") +
+                (falhas.length ? "\n\nFalhas (" + falhas.length + "):\n" +
+                                 falhas.map(function (r) { return "· " + r.file + ": " + r.motivo; }).join("\n") : "");
+      alert(msg);
+    });
+  }
+
+  /* Converte a saída do extrator numa ficha pronta pra store.novos */
+  function fichaAPartirDeExtracao(d, id) {
+    var f = {
+      id: id,
+      empresa: d.empresa || "GAV",
+      nome: d.nome || "",
+      cpf: d.cpf || "",
+      rg: d.rg || "",
+      nacionalidade: d.nacionalidade || "brasileiro(a)",
+      estadoCivil: d.estadoCivil || "",
+      empreendimento: d.empreendimento || "",
+      bloco: d.bloco || "",
+      apartamento: d.unidade || "",
+      andar: d.andar || "",
+      cota: d.cota || "",
+      fracao: d.fracao || "1/52",
+      localizacao: d.local || "",
+      razaoSocial: d.razaoSocial || "",
+      cnpj: d.cnpj || "",
+      valorTotal: d.precoTotal || "",
+      corretagem: d.precoIntermediacao || "",
+      formaPagamentoEntrada: d.formaPagamentoEntrada || "",
+      dataAssinatura: d.dataAssinatura || "",
+      telefone: d.telefone || "",
+      email: d.email || "",
+      conjuge: {
+        nome: d.conjugeNome || "",
+        cpf: d.conjugeCpf || "",
+        rg: d.conjugeRg || ""
+      },
+      parcelas: d.parcelas || [],
+      observacoes: ""
+    };
+    return normalizar(f);
+  }
+
   function editarCliente(id, criando) {
     var c = criando
       ? normalizar({ id: "", empresa: "GAV", nacionalidade: "brasileiro(a)", fracao: "1/52", parcelas: [] })
@@ -636,6 +890,22 @@
     if (!c) return;
 
     var html = '<form id="formEdit" autocomplete="off">';
+
+    // Botão "Ler contrato (PDF)" só no fluxo de criação — pré-preenche todos os campos
+    if (criando) {
+      html += '<div class="bloco bloco-ler-pdf">' +
+        '<div class="ler-pdf__topo">' +
+          '<strong>Preenchimento automático</strong>' +
+          '<span class="aviso">Selecione um PDF pra pré-preencher esta ficha, ou vários PDFs de uma vez pra criar N fichas (uma por contrato).</span>' +
+        '</div>' +
+        '<div class="ler-pdf__acoes">' +
+          '<label class="btn btn-primary" for="fileLerContrato">📄 Ler contrato(s) (PDF)</label>' +
+          '<input type="file" id="fileLerContrato" accept="application/pdf,.pdf" multiple hidden />' +
+          '<span id="lerContratoStatus" class="ler-pdf__status"></span>' +
+        '</div>' +
+      '</div>';
+    }
+
     html += '<div class="bloco"><div class="form-grid">';
     html += '<label class="campo"><span>Identificador (id)</span><input type="text" name="id" value="' + esc(c.id) + '"' + (criando ? "" : " readonly") + ' /></label>';
     html += '<label class="campo"><span>Empresa</span><select name="empresa">' +
@@ -664,6 +934,18 @@
     var box = $("parcelasBox");
     (c.parcelas.length ? c.parcelas : []).forEach(addParcela);
     $("btnAddParcela").addEventListener("click", function () { addParcela({}); });
+
+    // Preenchimento automático a partir do PDF do contrato (1 ou vários)
+    if (criando) {
+      var input = $("fileLerContrato");
+      if (input) input.addEventListener("change", function (e) {
+        var files = Array.prototype.slice.call(e.target.files || []);
+        e.target.value = "";
+        if (!files.length) return;
+        if (files.length === 1) preencherComPDF(files[0]);
+        else processarVariosPDFs(files);
+      });
+    }
 
     function addParcela(p) {
       var div = document.createElement("div");
@@ -709,6 +991,22 @@
 
     if (criando) {
       if (acharCliente(dados.id)) { alert("Já existe um cliente com o id \"" + dados.id + "\"."); return; }
+      // Aviso de duplicata: mesmo CPF + empreendimento + bloco/unidade/cota
+      var chaveNovo = chaveDuplicata(normalizar(dados));
+      if (chaveNovo) {
+        var l = listaCompleta(), existente = null;
+        for (var i = 0; i < l.length; i++) {
+          if (chaveDuplicata(l[i]) === chaveNovo) { existente = l[i]; break; }
+        }
+        if (existente) {
+          var msg = "ATENÇÃO: já existe uma ficha para este mesmo contrato:\n\n" +
+                    "  · ficha " + existente.id + " — " + (existente.nome || "—") + "\n" +
+                    "  · " + (existente.empreendimento || "") + " · " +
+                    [existente.bloco, existente.unidade || existente.apartamento, existente.cota].filter(Boolean).join("/") + "\n\n" +
+                    "Deseja salvar mesmo assim? (Isso vai criar uma duplicata.)";
+          if (!confirm(msg)) return;
+        }
+      }
       store.novos.push(dados);
     } else if (ehNovo(dados.id)) {
       store.novos = store.novos.map(function (c) { return c.id === dados.id ? dados : c; });
@@ -727,6 +1025,7 @@
   var TEXTO_FORMA = {
     "Estorno Cartão": "estorno no cartão utilizado na compra",
     "Reembolso": "reembolso na chave PIX informada no termo",
+    "Reembolso + Estorno": "reembolso via TED/PIX + cancelamento do parcelamento no cartão",
     "Cheque": "cheque"
   };
 
@@ -770,7 +1069,7 @@
   function montarEmail(cs) {
     var um = cs.length === 1;
     var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
-    var precisaPix = cs.some(function (c) { return formaReembolso(c) === "Reembolso"; });
+    var precisaPix = cs.some(function (c) { var f = formaReembolso(c); return f === "Reembolso" || f === "Reembolso + Estorno"; });
 
     // o e-mail vai para todos que assinam — inclusive o cônjuge, quando houver
     var quemAssina = signatarios(cs);
@@ -795,29 +1094,25 @@
         " — " + (TEXTO_FORMA[formaReembolso(c)] || TEXTO_FORMA["Reembolso"]);
     }).join("\n");
 
-    var todosPix = cs.every(function (c) { return formaReembolso(c) === "Reembolso"; });
-    var passos = ["1. Confira os dados " + (um ? "do termo" : "dos termos") + ";"];
+    // Agora sempre é 1 Termo consolidado, mesmo com N contratos.
+    var passos = ["1. Confira os dados do termo;"];
     if (precisaPix) {
-      var onde = um || todosPix
-        ? "no campo indicado " + (um ? "no documento" : "em cada documento")
-        : "no campo indicado no termo que vai por reembolso";
-      passos.push((passos.length + 1) + ". Preencha a chave PIX para o reembolso " + onde + ";");
+      passos.push((passos.length + 1) + ". Preencha a chave PIX para o reembolso no campo indicado no documento;");
     }
-    passos.push((passos.length + 1) + ". Assine " + (um ? "o termo" : "os " + cs.length + " termos") +
-      " e devolva " + (um ? "" : "todos ") + "respondendo a este e-mail.");
+    passos.push((passos.length + 1) + ". Assine o termo via gov.br e devolva respondendo a este e-mail.");
 
     var total = cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
 
     var corpo =
       saudacao + "\n\n" +
-      (um ? "Segue em anexo " : "Seguem em anexo ") + termoTexto(cs.length, true) +
-      (um ? " referente ao contrato" : " referentes aos contratos") + " de multipropriedade abaixo, para assinatura:" +
+      "Segue em anexo " + termoTexto(1, true) +
+      (um ? " referente ao contrato" : " referente aos contratos") + " de multipropriedade abaixo, para assinatura:" +
       "\n\n" + itens + "\n\n" +
       (um ? "" : "Total a devolver: " + rs(total) + porExtensoDe(total) + "\n\n") +
       "Para darmos andamento ao cancelamento e à devolução dos valores, pedimos que:\n\n" +
       passos.join("\n") + "\n\n" +
       notasEnvio(cs) +
-      "Assim que recebermos " + (um ? "o termo assinado" : "os termos assinados") + ", seguimos com o processo.\n\n" +
+      "Assim que recebermos o termo assinado, seguimos com o processo.\n\n" +
       "Qualquer dúvida, é só responder este e-mail.\n\n" +
       "Atenciosamente,";
 
@@ -825,8 +1120,8 @@
       ? nomeProprio(cs[0].nome)
       : cs.map(function (c) { return nomeProprio(c.nome); }).join(" e ");
 
-    var assunto = (um ? termoTexto(1) + " para assinatura" : termoTexto(cs.length) + " para assinatura (" + cs.length + " documentos)") +
-      " — " + quem + (um ? " — " + (cs[0].empreendimento || "") : "");
+    var assunto = termoTexto(1) + " para assinatura — " + quem +
+      (um ? " — " + (cs[0].empreendimento || "") : "");
 
     return { assunto: assunto, corpo: corpo, destinos: destinos };
   }
@@ -848,7 +1143,7 @@
   function montarWhats(cs) {
     var um = cs.length === 1;
     var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
-    var precisaPix = cs.some(function (c) { return formaReembolso(c) === "Reembolso"; });
+    var precisaPix = cs.some(function (c) { var f = formaReembolso(c); return f === "Reembolso" || f === "Reembolso + Estorno"; });
 
     var quem = (um || mesmaPessoa)
       ? primeiroNome(cs[0].nome)
@@ -861,15 +1156,15 @@
         "Valor a devolver: *" + (rs(c.valorPago) || "—") + "* — " + (TEXTO_FORMA[formaReembolso(c)] || TEXTO_FORMA["Reembolso"]);
     }).join("\n\n");
 
-    var passos = ["1. Conferir os dados " + (um ? "do termo" : "dos termos") + ";"];
-    if (precisaPix) passos.push((passos.length + 1) + ". Preencher a chave PIX no campo indicado" + (um ? "" : " de cada um") + ";");
-    passos.push((passos.length + 1) + ". Assinar e me devolver " + (um ? "o documento" : "os " + cs.length + " documentos") + ".");
+    var passos = ["1. Conferir os dados do termo;"];
+    if (precisaPix) passos.push((passos.length + 1) + ". Preencher a chave PIX no campo indicado;");
+    passos.push((passos.length + 1) + ". Assinar via gov.br e me devolver o documento.");
 
     var total = cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
 
     var texto =
       "Olá, " + quem + "! Tudo bem?\n\n" +
-      "Estou te enviando " + (um ? "o " : "os ") + "*" + termoTexto(cs.length) + "*" +
+      "Estou te enviando o *" + termoTexto(1) + "*" +
       (um ? " do seu contrato" : " dos seus contratos") + " de multipropriedade para assinatura:\n\n" +
       itens + "\n\n" +
       (um ? "" : "*Total a devolver: " + rs(total) + "*\n\n") +
@@ -897,10 +1192,10 @@
 
     var texto =
       "Olá, " + quem + "! Tudo bem?\n\n" +
-      "Acabei de te enviar por e-mail " + (um ? "o " : "os ") + "*" + termoTexto(cs.length) + "*" +
+      "Acabei de te enviar por e-mail o *" + termoTexto(1) + "*" +
       " para assinatura" + (mail && mesmoMail ? ", no endereço " + mail : "") + ".\n\n" +
       "Dá uma olhada na caixa de entrada — se não achar, confere o spam/lixo eletrônico.\n\n" +
-      "É só conferir os dados, assinar e me devolver: pode responder o próprio e-mail ou " +
+      "É só conferir os dados, assinar via gov.br e me devolver: pode responder o próprio e-mail ou " +
       "mandar por aqui mesmo, como preferir. Qualquer dúvida, me chama.";
 
     return { texto: texto, tel: telDigitos(cs[0]), telFmt: txt(cs[0].telefone) };
@@ -1357,19 +1652,51 @@
     };
 
     // Campos extras para modo misto (Reembolso + Estorno)
-    if (forma === "Reembolso + Estorno" && c.parcelas && c.parcelas.length) {
-      var reembTotal = 0, meioReemb = "", qtdParc = 0, valParc = 0;
-      for (var pi = 0; pi < c.parcelas.length; pi++) {
-        var pp = c.parcelas[pi];
+    // Estratégia: identifica a porção de cartão de CRÉDITO (estorno) e
+    // calcula reembolso = valorPago − estorno. Aceita 2 formatos de ficha:
+    //   - parcelas: [{ tipo, qtd, valor, forma, vencimento }] — formato antigo
+    //   - entradas: [{ descricao, valor }] — formato novo (a forma é extraída da descricao)
+    if (forma === "Reembolso + Estorno") {
+      // Normaliza tudo pra um array uniforme { qtd, valor, forma }
+      var itens = [];
+      if (c.parcelas && c.parcelas.length) {
+        itens = c.parcelas.map(function (p) {
+          return { qtd: p.qtd || 1, valor: p.valor || 0, forma: p.forma || "" };
+        });
+      } else if (c.entradas && c.entradas.length) {
+        itens = c.entradas.map(function (e) {
+          // Descobre qtd a partir de "3x R$ 100" na descrição, mas o valor
+          // unitário SEMPRE sai de e.valor (que já é numérico e correto).
+          // Assim "1x R$ 9.200" com e.valor=9200 dá qtd=1, valor=9200 (não 9,20).
+          var m = String(e.descricao || "").match(/(\d+)\s*x\s*R?\$?\s*[\d.,]+/i);
+          var qtd = m ? parseInt(m[1], 10) : 1;
+          var valorTotal = e.valor || 0;
+          var valorUn = qtd > 0 ? valorTotal / qtd : valorTotal;
+          return { qtd: qtd, valor: valorUn, forma: e.descricao || "" };
+        });
+      }
+
+      var cartaoCredTotal = 0, meioReemb = "", qtdParc = 0, valParc = 0;
+      for (var pi = 0; pi < itens.length; pi++) {
+        var pp = itens[pi];
         var pf = semAcento(pp.forma || "");
-        if (/ted|doc|deposit|pix/.test(pf)) {
-          reembTotal += (pp.qtd || 1) * (pp.valor || 0);
-          if (!meioReemb) meioReemb = pp.forma;
-        } else if (/credito|cartao|visa|master|elo/.test(pf)) {
-          qtdParc = pp.qtd || 0;
+        // crédito vai pro estorno; débito NÃO (débito = reembolso)
+        // "recorrente" via GALAX/CREDAV também é cartão de crédito
+        var ehCredito = (/credito|cartao\s+credito|recorrente|credav|galax/.test(pf) && !/debito/.test(pf));
+        if (ehCredito) {
+          cartaoCredTotal += (pp.qtd || 1) * (pp.valor || 0);
+          qtdParc += (pp.qtd || 0);
           valParc = pp.valor || 0;
+        } else if (!meioReemb) {
+          // deduz o "meio" pelo 1º pagamento não-crédito
+          if (/pix/.test(pf)) meioReemb = "PIX";
+          else if (/ted/.test(pf)) meioReemb = "TED";
+          else if (/deposit/.test(pf)) meioReemb = "depósito";
+          else if (/boleto|debito/.test(pf)) meioReemb = "TED/DOC/depósito";
         }
       }
+      var reembTotal = (valorNum || 0) - cartaoCredTotal;
+      if (reembTotal < 0) reembTotal = 0;
       campos.f_valor_reemb = reembTotal ? moeda(reembTotal) : "";
       campos.f_meio_reemb = meioReemb || "PIX";
       campos.f_qtd_parcelas = qtdParc ? String(qtdParc) : "";
@@ -1742,6 +2069,7 @@
     var id = b.getAttribute("data-id");
 
     if (acao === "editar") editarCliente(id, false);
+    else if (acao === "ver-ficha") verCliente(id);
     else if (acao === "salvar") salvarEdicao(b.getAttribute("data-criando") === "1");
     else if (acao === "distrato") gerarDistrato(id, b.getAttribute("data-nova") === "1");
     else if (acao === "email") abrirEmail([id]);
@@ -1803,6 +2131,6 @@
   });
 
   /* ---------- Início ---------- */
-  function renderTudo() { renderResumo(); renderGrid(); }
+  function renderTudo() { renderAvisoDuplicatas(); renderResumo(); renderGrid(); }
   renderTudo();
 })();

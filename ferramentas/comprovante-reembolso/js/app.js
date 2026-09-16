@@ -19,11 +19,20 @@ $(document).ready(function() {
 
   // Empreendimentos GAV Resorts
   const empreendimentos = [
-    'Areya Barra Resort', 'Beach GAV Resorts', 'Exclusive GAV Resorts',
+    'Areya Barra Resort', 'Beach GAV Resorts', 'Búzios Fractional Resort',
+    'Condomínio Chalé', 'Dom Pedro Laguna', 'Encontro das Águas',
+    'Exclusive GAV Resorts', 'GAV Vacation Club (Pontos)',
     'Gran Garden Resort', 'Gran Haus Resort', 'Gran Valley Resort',
-    'Jeriquiá Dunas Resort', 'Jeriquiá Lagoa Resort', 'Oikos Maragogi Resort',
+    'Hotel Dom Pedro Laguna', 'Hotel Fazenda China Park',
+    'Ilhas do Lago Eco Resort', 'Jeriquiá Dunas Resort', 'Jeriquiá Lagoa Resort',
+    'Kawana Residence', 'Le Charmant Maison de Luxe',
+    'Magic Home Residence Park', 'Mandala dos Pirineus Eco Village',
+    'Oikos Maragogi Resort', 'Olímpia Park Resort', 'Ondas Praia Resort',
     'Park GAV Resorts', 'Porto 2 Life Resort', 'Porto Alto Resort',
-    'Premium GAV Resorts', 'Pyrenéus Residence', 'Outro (não listado)'
+    'Praias do Lago Eco Resort', 'Premium GAV Resorts', 'Pyrenéus Residence',
+    'Refúgio das Lontras', 'Resort do Lago', 'Salinas Beach Resort',
+    'Solar das Águas Park Resort', 'Terra Nova Ondas Resort',
+    'Tree Bies Beach Resort', 'WVC Time Share', 'Outro (não listado)'
   ];
   $.each(empreendimentos, function(i, value) {
     selectEmpreendimento.append($('<option>', { value: value, text: value }));
