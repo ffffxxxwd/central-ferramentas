@@ -9538,5 +9538,93 @@ window.CLIENTES = [
       "Inclui Passaporte +Diversão (Clube Privé / Náutico Praia Clube), contrato I04-H201/35.\n" +
       "Solteira. Nasc 28/07/1998. Profissão: outra.\n" +
       "End: Quadra QR 47, Itapuã I, Planaltina/GO, CEP 73754047."
+  },
+
+  // ── Ficha 184 ── Ana Clara do Nascimento Silva — Ondas Praia Resort ──
+  {
+    id: 184,
+    nome: "Ana Clara do Nascimento Silva",
+    cpf: "462.590.128-61",
+    rg: "39791127 - SSP SP",
+    empresa: "WAM",
+    razaoSocial: "SPE Porto Seguro 02 Empreendimentos Imobiliários S.A.",
+    cnpj: "22.059.167/0001-60",
+    empreendimento: "Ondas Praia Resort",
+    localizacao: "Porto Seguro/BA",
+    bloco: "A",
+    unidade: "A232",
+    cota: "13",
+    fracao: "1/52",
+    valorTotal: 72513.17,
+    valorPago: 765.00,
+    entradas: [
+      { descricao: "Depósito bancário intermediação (R$ 765)", valor: 765.00 }
+    ],
+    formaPagamentoEntrada: "Intermediação R$ 7.650: 1x R$ 765 depósito bancário + 9x R$ 765 boleto W Palmerston | Cota R$ 64.863,17: 5x R$ 50 boleto (1ª 15/10/2026) + 96x R$ 673,05 boleto (1ª 20/03/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-11",
+    telefone: "(11) 91414-0257",
+    email: "ana.clara.nasc0@gmail.com",
+    conjuge: {
+      nome: "Victor Hugo Calabresi Dias Claro",
+      cpf: "401.390.038-60",
+      rg: "508402426 - SSP SP"
+    },
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 765 — depósito bancário (intermediação).\n" +
+      "Boletos intermediação (9x R$ 765 W Palmerston) e boletos cota NÃO iniciados.\n" +
+      "DENTRO DO PRAZO — contrato 11/09/2026, prazo arrependimento vence 18/09/2026.\n" +
+      "GSign: 6HXXN5AE0I-QYIHAT2-DEWBPZYPYF10RN-84QEF.\n" +
+      "2 semanas de uso por ano. Não conheceu o empreendimento pessoalmente.\n" +
+      "União estável. Nasc 08/03/1999. Profissão: cirurgião dentista.\n" +
+      "Cônjuge: Victor Hugo Calabresi Dias Claro, CPF 401.390.038-60, nasc 09/09/1998, autônomo.\n" +
+      "Contrato enviado via screenshots (20 imgs). Sem PDF original armazenado."
+  },
+
+  // ── Ficha 185 ── Vanilson Dias Alencar — Gran Garden Resort ──
+  {
+    id: 185,
+    nome: "Vanilson Dias Alencar",
+    cpf: "612.594.891-91",
+    rg: "33090244063023 - SSP GO",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    bloco: "A3",
+    unidade: "201",
+    cota: "16",
+    fracao: "1/52",
+    valorTotal: 79573.47,
+    valorPago: 1990.00,
+    entradas: [
+      { descricao: "Cartão crédito Mastercard (R$ 1.990 corretagem)", valor: 1990.00 }
+    ],
+    formaPagamentoEntrada: "Corretagem R$ 4.490: 1x R$ 1.990 cartão crédito Master + 2x boleto (R$ 833,33 em 10/11/2026 + R$ 833,34 em 10/01/2027) | Sinal R$ 3.978,67: 5x R$ 795,73 boleto (1ª 10/02/2027) | Saldo R$ 71.104,80: 86x R$ 826,80 boleto (1ª 07/07/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-14",
+    telefone: "(63) 98428-5464",
+    email: "vanilsonalencar@yahoo.com.br",
+    conjuge: {
+      nome: "Silvia Rodrigues Lima Alencar",
+      cpf: "014.405.731-07",
+      rg: "853415 - SSP TO"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/185-vanilson-dias-alencar--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.990 — cartão crédito Mastercard (corretagem, CV 25527072).\n" +
+      "Boletos corretagem (R$ 833,33 + R$ 833,34) e parcelas sinal/saldo NÃO vencidos.\n" +
+      "DENTRO DO PRAZO — contrato 14/09/2026, prazo arrependimento vence 21/09/2026.\n" +
+      "Contrato nº 360058. ZapSign: f5c80aa4-cd20-4711-9eb3-4daeb86574de.\n" +
+      "Bloco A3, 2º andar, Apto 201, 2 quartos. 1 semana/ano.\n" +
+      "Casado. Nasc 30/10/1977. Profissão: funcionário público.\n" +
+      "Cônjuge: Silvia Rodrigues Lima Alencar, CPF 014.405.731-07, nasc 09/11/1986, autônoma.\n" +
+      "End: Quadra ARNE 51, Alameda 2, SN, Lote 2, Plano Diretor Norte, Palmas/TO, CEP 77006426."
   }
 ];

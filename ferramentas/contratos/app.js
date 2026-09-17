@@ -139,10 +139,10 @@
   function lerStore() {
     try {
       var raw = localStorage.getItem(STORE);
-      if (!raw) return { edits: {}, novos: [], arquivados: {}, reembolsos: [] };
+      if (!raw) return { edits: {}, novos: [], arquivados: {}, pagos: {}, reembolsos: [] };
       var d = JSON.parse(raw);
-      return { edits: d.edits || {}, novos: d.novos || [], arquivados: d.arquivados || {}, reembolsos: d.reembolsos || [] };
-    } catch (e) { return { edits: {}, novos: [], arquivados: {}, reembolsos: [] }; }
+      return { edits: d.edits || {}, novos: d.novos || [], arquivados: d.arquivados || {}, pagos: d.pagos || {}, reembolsos: d.reembolsos || [] };
+    } catch (e) { return { edits: {}, novos: [], arquivados: {}, pagos: {}, reembolsos: [] }; }
   }
   function gravarStore(d) {
     try { localStorage.setItem(STORE, JSON.stringify(d)); } catch (e) {}
@@ -196,6 +196,13 @@
   function arquivar(id, arquiva) {
     if (arquiva) store.arquivados[id] = true;
     else delete store.arquivados[id];
+    gravarStore(store);
+  }
+
+  function ehPago(id) { return !!store.pagos[id]; }
+  function marcarPago(id, pago) {
+    if (pago) store.pagos[id] = true;
+    else delete store.pagos[id];
     gravarStore(store);
   }
 
@@ -392,12 +399,14 @@
     var marca = ehPendente(c.id) ? "aguardando contrato" : (ehNovo(c.id) ? "adicionado aqui" : (ehEditado(c.id) ? "editado" : ""));
     var p = prazo7(c);
     var arq = ehArquivado(c.id);
-    // caixa é <div role="button"> e não <button> porque tem o botão de arquivar dentro
+    var pago = ehPago(c.id);
     return (
-      '<div role="button" tabindex="0" class="ficha' + (c.empresa === "WAM" ? " wam" : "") + (arq ? " arquivada" : "") + '" data-id="' + esc(c.id) + '">' +
+      '<div role="button" tabindex="0" class="ficha' + (c.empresa === "WAM" ? " wam" : "") + (arq ? " arquivada" : "") + (pago ? " pago" : "") + '" data-id="' + esc(c.id) + '">' +
+        (pago ? '<div class="ficha__carimbo">PAGO</div>' : "") +
         '<div class="ficha__topo">' +
           '<span class="tag' + (c.empresa === "WAM" ? " wam" : "") + '">' + esc(c.empresa) + "</span>" +
           (arq ? '<span class="tag arq">arquivado</span>' : "") +
+          (pago ? '<span class="tag pago-tag">pago</span>' : "") +
           (ehPendente(c.id) ? '<span class="tag pend">aguardando contrato</span>' : "") +
           '<span class="ficha__data">' + esc(dataBR(c.dataAssinatura)) + "</span>" +
           '<button type="button" class="ficha__acao" data-arquivar="' + esc(c.id) + '" data-arq="' + (arq ? "1" : "0") + '">' +
@@ -406,10 +415,10 @@
         "</div>" +
         '<div class="ficha__nome">' + esc(titulo) + "</div>" +
         '<div class="ficha__sub">' + esc(sub) + "</div>" +
+        (c.telefone ? '<div class="ficha__tel">' + esc(c.telefone) + '</div>' : "") +
         (p ? '<div class="prazo-tag ' + (p.aberto ? "aberto" : "vencido") + '">' + esc(prazoCurto(p)) + "</div>" : "") +
         '<div class="ficha__valor"><span>Valor pago</span><b>' + esc(rs(c.valorPago) || "—") + "</b></div>" +
         (marca ? '<div class="ficha__marca">' + esc(marca) + "</div>" : "") +
-        // ações direto na caixa, sem precisar abrir a ficha
         '<div class="ficha__botoes">' +
           (contratoDe(c)
             ? '<button type="button" class="ficha__btn" data-acao="ver-contrato" data-id="' + esc(c.id) + '">Ver contrato</button>'
@@ -417,6 +426,9 @@
           '<button type="button" class="ficha__btn destaque" data-acao="distrato" data-id="' + esc(c.id) + '">Distrato ' + esc(c.empresa) + "</button>" +
           '<button type="button" class="ficha__btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia">Nova guia ↗</button>' +
           '<button type="button" class="ficha__btn" data-acao="email" data-id="' + esc(c.id) + '">Mensagem</button>' +
+          '<button type="button" class="ficha__btn' + (pago ? " pago-ativo" : "") + '" data-pago="' + esc(c.id) + '" data-pg="' + (pago ? "1" : "0") + '">' +
+            (pago ? "Desmarcar pago" : "Marcar pago") +
+          "</button>" +
         "</div>" +
       "</div>"
     );
@@ -1969,6 +1981,14 @@
     var arqBt = e.target.closest("[data-arquivar]");
     if (arqBt) {
       arquivar(arqBt.getAttribute("data-arquivar"), arqBt.getAttribute("data-arq") === "0");
+      renderTudo();
+      return;
+    }
+    // marcar/desmarcar pago
+    var pgBt = e.target.closest("[data-pago]");
+    if (pgBt) {
+      e.stopPropagation();
+      marcarPago(pgBt.getAttribute("data-pago"), pgBt.getAttribute("data-pg") === "0");
       renderTudo();
       return;
     }
