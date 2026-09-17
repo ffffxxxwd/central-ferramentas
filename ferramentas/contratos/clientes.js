@@ -9447,5 +9447,96 @@ window.CLIENTES = [
       "Mesma pessoa da ficha 179 (Gran Haus Resort, Bl 6/203/Cota 52).\n" +
       "Casado. Cônjuge Teresa Lucia Bandeira dos Reis Pereira, CPF 576.688.683-72.\n" +
       "End: Chacara Vale do Santana, SN, Zona Rural, Lajeado Novo/MA, CEP 65937-000."
+  },
+
+  // ── Ficha 182 ── Uriel Adonias Rocha dos Santos — GAV TS (100.000 pontos) ──
+  {
+    id: 182,
+    nome: "Uriel Adonias Rocha dos Santos",
+    cpf: "108.134.494-64",
+    rg: "36024945 SSPAL",
+    empresa: "GAV",
+    razaoSocial: "GAV TS ADMINISTRAÇÃO UNIPESSOAL LTDA",
+    cnpj: "47.008.570/0001-91",
+    empreendimento: "GAV Vacation Club (Pontos)",
+    localizacao: "",
+    bloco: "",
+    unidade: "",
+    cota: "",
+    fracao: "",
+    valorTotal: 12900.00,
+    valorPago: 215.00,
+    entradas: [
+      { descricao: "Dinheiro sinal (R$ 215, venc 17/09/2026)", valor: 215.00 }
+    ],
+    formaPagamentoEntrada: "Sinal: R$ 215 dinheiro (venc 17/09/2026) | Saldo: R$ 12.685 em 59x R$ 215 boleto (1ª 10/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-16",
+    telefone: "(82) 99174-7125",
+    email: "urieladonias12345@gmail.com",
+    conjuge: {
+      nome: "",
+      cpf: "",
+      rg: ""
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/182-uriel-adonias-rocha-dos-santos-gav-ts-100mil-pontos--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 215 — dinheiro (sinal).\n" +
+      "Contrato de PONTOS (100.000 pontos, 5 anos) — sem resort/unidade/cota.\n" +
+      "Saldo R$ 12.685 em 59x R$ 215 boleto (1ª 10/10/2026) — nenhum vencido.\n" +
+      "DENTRO DO PRAZO — contrato 16/09/2026, prazo arrependimento vence 23/09/2026.\n" +
+      "Contrato nº 100.000-005479 (+(63369)). ZapSign: a4a97f98-70b4-48a1-ab61-8dfa4fb3accc.\n" +
+      "ATENÇÃO: ZapSign status 'Em-Curso' — 3 assinaturas pendentes (Alan Clebson da Silva, Karolayne Ismenia, Ingrid Vitoria Ribeiro dos Santos Bezerra).\n" +
+      "Escritório de vendas: Praia do Francês (AL).\n" +
+      "Casado mas cônjuge NÃO INFORMADO. Nascimento 12/03/1990. Profissão: autônomo.\n" +
+      "End: Rua Marechal Castelo Branco, 120, Centro, Tanque d'Arca/AL, CEP 57635-000."
+  },
+
+  // ── Ficha 183 ── Sarah Martins Kiihn Batista — Ilhas do Lago Eco Resort ──
+  {
+    id: 183,
+    nome: "Sarah Martins Kiihn Batista",
+    cpf: "707.133.541-94",
+    rg: "3445082 - SESP DF",
+    empresa: "WAM",
+    razaoSocial: "Ilhas do Lago Incorporação SPE S.A.",
+    cnpj: "15.797.526/0001-11",
+    empreendimento: "Ilhas do Lago Eco Resort",
+    localizacao: "Caldas Novas/GO",
+    bloco: "H",
+    unidade: "201",
+    cota: "35",
+    fracao: "1/52",
+    valorTotal: 32780.82,
+    valorPago: 2900.00,
+    entradas: [
+      { descricao: "Depósito bancário intermediação (R$ 290)", valor: 290.00 },
+      { descricao: "Crédito recorrente intermediação (2x R$ 1.305)", valor: 2610.00 }
+    ],
+    formaPagamentoEntrada: "Intermediação R$ 2.900: 1x R$ 290 depósito bancário + 2x R$ 1.305 crédito recorrente | Cota R$ 29.880,82: 5x R$ 50 boleto (1ª 10/10/2026) + 76x R$ 389,88 boleto (1ª 20/03/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-12",
+    telefone: "(61) 99551-0797",
+    email: "sarahmkiihn@outlook.com",
+    conjuge: {
+      nome: "",
+      cpf: "",
+      rg: ""
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/183-sarah-martins-kiihn-batista--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 2.900 — intermediação (R$ 290 depósito + R$ 2.610 crédito recorrente).\n" +
+      "Boletos da cota NÃO iniciados (1ª parcela 10/10/2026).\n" +
+      "DENTRO DO PRAZO — contrato 12/09/2026, prazo arrependimento vence 19/09/2026.\n" +
+      "Contrato nº 315302. GSign: LCGBDRXY6B-461W9HU-1KEAF5EGJPQ88A-9GOSO.\n" +
+      "Inclui Passaporte +Diversão (Clube Privé / Náutico Praia Clube), contrato I04-H201/35.\n" +
+      "Solteira. Nasc 28/07/1998. Profissão: outra.\n" +
+      "End: Quadra QR 47, Itapuã I, Planaltina/GO, CEP 73754047."
   }
 ];
