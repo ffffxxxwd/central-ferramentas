@@ -9626,5 +9626,57 @@ window.CLIENTES = [
       "Casado. Nasc 30/10/1977. Profissão: funcionário público.\n" +
       "Cônjuge: Silvia Rodrigues Lima Alencar, CPF 014.405.731-07, nasc 09/11/1986, autônoma.\n" +
       "End: Quadra ARNE 51, Alameda 2, SN, Lote 2, Plano Diretor Norte, Palmas/TO, CEP 77006426."
+  },
+
+  // ── Ficha 186 ──────────────────────────────────────────────
+  {
+    id: "359843-rufino-jlr-bloco02-323-cota-13",
+    vispiId: "",
+    nContrato: "359843",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    cidade: "Cruz/CE",
+    bloco: "02",
+    unidade: "323",
+    cota: "13",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Rufino de Barros Pereira Netto",
+    cpf: "009.887.719-42",
+    rg: "4439695 SSP/SC",
+    dataNascimento: "23/07/1982",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Joao da Cruz Kreiling, 1013, Casa, Centro, Canoinhas/SC, CEP 89460154",
+    valorTotal: 58029.88,
+    valorPago: 1330.00,
+    entradas: [
+      { descricao: "Cartão débito Mastercard (R$ 1.330 corretagem)", valor: 1330.00 }
+    ],
+    formaPagamentoEntrada: "Corretagem R$ 3.990: 1x R$ 1.330 débito Mastercard (CV 172631726) + 2x boleto (R$ 886,67 em 10/10/2026 + R$ 886,66 em 10/12/2026) | Sinal R$ 2.901,48: 4x R$ 725,37 boleto (1ª 10/01/2027) | Saldo R$ 51.138,40: 80x R$ 639,23 boleto (1ª 10/05/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-13",
+    telefone: "(47) 99977-0538",
+    email: "rufinodebarros@gmail.com",
+    conjuge: {
+      nome: "Não informado",
+      cpf: "",
+      rg: ""
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/186-rufino-de-barros-pereira-netto--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.330 — débito Mastercard ****0645 (corretagem, CV 172631726).\n" +
+      "Boletos corretagem (R$ 886,67 + R$ 886,66) e parcelas sinal/saldo NÃO vencidos.\n" +
+      "DENTRO DO PRAZO — contrato 13/09/2026, prazo arrependimento vence 20/09/2026 (ÚLTIMO DIA HOJE!).\n" +
+      "Contrato nº 359843. ZapSign: d4983424-4899-4d4f-b11d-26996b3d652c.\n" +
+      "Torre Bloco 02, 3º andar, Apto 323, Cota 13. 2 semanas/ano.\n" +
+      "Casado. Nasc 23/07/1982. Profissão: empresário.\n" +
+      "Cônjuge não informado no contrato.\n" +
+      "End: Rua Joao da Cruz Kreiling, 1013, Casa, Centro, Canoinhas/SC, CEP 89460154."
   }
 ];
