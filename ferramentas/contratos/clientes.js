@@ -10064,5 +10064,64 @@ window.CLIENTES = [
       "Parcelas: 7x R$ 150 (a partir 15/04/2026) + 60x R$ 539,01 (a partir 15/11/2026).\n" +
       "Corretor: Jose Roberto Domenico (CRECI).\n" +
       "End: Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220."
+  },
+
+  // ── Ficha 194 ── Erikes Vianna Honorato — Hotel Fazenda China Park Apto 233/Cota 14 ──
+  {
+    id: "hfcp-erikes-vianna-233-cota-14",
+    vispiId: "",
+    nContrato: "",
+    empresa: "Chalé",
+    empreendimento: "Hotel Fazenda China Park",
+    cidade: "Domingos Martins/ES",
+    bloco: "",
+    unidade: "233",
+    cota: "14",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Erikes Vianna Honorato",
+    cpf: "174.914.927-38",
+    rg: "3825499-ES SESP/ES",
+    dataNascimento: "30/07/1997",
+    estadoCivil: "Casado",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Alcides Simões, 50, Camurugi, Guarapari/ES, CEP 29210342",
+    valorTotal: 50820.00,
+    valorPago: 3300.00,
+    entradas: [
+      { descricao: "Corretagem — cartão crédito (Cielo)", valor: 3300.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Crédito (Cielo) — 3x R$ 500 + 1x R$ 266,68 + 2x R$ 266,66 + 1x R$ 333,34 + 2x R$ 333,33 = R$ 3.300",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2022-04-17",
+    telefone: "(27) 99885-5383 / (27) 99689-2430",
+    email: "Erikesvianna@gmail.com",
+    conjuge: {
+      nome: "Shirley de Souza da Silva Honorato",
+      cpf: "147.959.217-09",
+      rg: "3545428-ES SESP/ES"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/194-erikes-vianna-honorato--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.300,00 (corretagem/sinal) — todo via cartão de crédito (Cielo), parcelado em múltiplas transações.\n" +
+      "Empresa vendedora: CHALE CONSTRUTORA E INCORPORADORA LTDA (CNPJ 04.733.546/0001-02) — NÃO é GAV nem WAM.\n" +
+      "Empreendimento: Hotel Fazenda China Park / Condomínio Chalé 2.\n" +
+      "Preço total de venda: R$ 50.820,00 (entrada/corretagem R$ 3.300 + saldo R$ 47.520).\n" +
+      "FORA DO PRAZO — contrato 17/04/2022, prazo arrependimento venceu 24/04/2022.\n" +
+      "DocuSign Envelope ID: D54CC8DC-E1CC-4E19-B97F-322A78ADF739.\n" +
+      "Apartamento 233, Fração/Cota 14. 26 cotas por apartamento. Diária(s): 14.\n" +
+      "Fração ideal: 0,0013 (38,12 m²). Área privativa: 1,466153. Tipo: Unidade.\n" +
+      "Casado. Nasc 30/07/1997. Profissão: empresário.\n" +
+      "Cônjuge: Shirley de Souza da Silva Honorato, CPF 147.959.217-09, RG 3545428-ES, nasc 30/06/1993, empresária.\n" +
+      "Parcelas fidelização: 3x R$ 50 (a partir 15/05/2022). Saldo: 96x R$ 493,44 (a partir 15/08/2022).\n" +
+      "Corretora: Silva Dalvi de Abreu (CRECI 010108-P).\n" +
+      "Beneficiário corretagem: W7 Brasil Negócios Inteligentes LTDA (CNPJ 26.649.045/0003-47).\n" +
+      "E-mails: Erikesvianna@gmail.com / Shirleyecaiosilva@gmail.com.\n" +
+      "End: Rua Alcides Simões, 50, Camurugi, Guarapari/ES, CEP 29210342."
   }
 ];
