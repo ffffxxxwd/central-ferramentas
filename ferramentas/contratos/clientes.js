@@ -10184,5 +10184,62 @@ window.CLIENTES = [
       "Inclui Termo de Adesão WAM Pass (empreendimento: DPL TIMESHARE).\n" +
       "Corretora: Sara Melo (CRECI).\n" +
       "End: Rua Ítalo Primo Bellini, 302, Jardim Florestal, Jundiaí/SP, CEP 13215660."
+  },
+
+  // ── Ficha 196 ── Everton Jaques Canhestro — Ondas Praia Resort Bl A / A211 / Cota 04 ──
+  {
+    id: "316137-everton-jaques-opr-a-a211-cota-04",
+    vispiId: "",
+    nContrato: "316137",
+    empresa: "WAM",
+    razaoSocial: "SPE PORTO SEGURO 02 EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+    cnpj: "22.059.167/0001-60",
+    empreendimento: "Ondas Praia Resort",
+    localizacao: "Porto Seguro/BA",
+    cidade: "Porto Seguro/BA",
+    bloco: "A",
+    unidade: "A211",
+    cota: "04",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Everton Jaques Canhestro",
+    cpf: "582.587.366-04",
+    rg: "03860199775 - SSPMG",
+    dataNascimento: "03/07/1965",
+    estadoCivil: "Casado",
+    profissao: "Supervisor Administrativo",
+    nacionalidade: "Brasileiro",
+    endereco: "",
+    valorTotal: 70983.17,
+    valorPago: 660.00,
+    entradas: [
+      { descricao: "Corretagem — cartão de crédito Cielo", valor: 660.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito 1x R$ 660,00 (Cielo) + Boleto 5x R$ 1.092,00 (W Palmerston)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-18",
+    telefone: "(31) 98107-0585",
+    email: "DENIZEDIASCANHESTRO@HOTMAIL.COM",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/196-everton-jaques-canhestro--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 660,00 (corretagem) — cartão de crédito Cielo.\n" +
+      "Corretagem total R$ 6.120,00: 1x R$ 660 cartão crédito + 5x R$ 1.092 boleto (W Palmerston).\n" +
+      "Vendedora: SPE Porto Seguro 02 Empreendimentos Imobiliários S.A. (CNPJ 22.059.167/0001-60).\n" +
+      "Intermediadora: WAM Comercialização S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "Preço total: R$ 70.983,17 (cota R$ 64.863,17 + corretagem R$ 6.120,00).\n" +
+      "Saldo devedor cota: 5x R$ 50,00 (boleto, 15/10/2026) + 96x R$ 673,05 (boleto, 20/03/2027).\n" +
+      "DENTRO DO PRAZO — contrato 18/09/2026, prazo arrependimento vence 25/09/2026.\n" +
+      "GSign ID: ZDS8J7I2ZV-BN9JOTZ-QKGEFR44AYXNIH-DX09A.\n" +
+      "Bloco A / Unidade A211 / Cota 04. 2 semanas de uso por ano.\n" +
+      "CASADO (comunhão parcial de bens) — cônjuge não consta no contrato.\n" +
+      "ATENÇÃO: nome do arquivo diz 'SOLTEIRO' mas contrato diz CASADO.\n" +
+      "Endereço não consta no quadro-resumo do contrato.\n" +
+      "Nasc 03/07/1965. Profissão: Supervisor Administrativo.\n" +
+      "Tel: (31) 98107-0585. E-mail: DENIZEDIASCANHESTRO@HOTMAIL.COM."
   }
 ];
