@@ -10241,5 +10241,63 @@ window.CLIENTES = [
       "Endereço não consta no quadro-resumo do contrato.\n" +
       "Nasc 03/07/1965. Profissão: Supervisor Administrativo.\n" +
       "Tel: (31) 98107-0585. E-mail: DENIZEDIASCANHESTRO@HOTMAIL.COM."
+  },
+
+  // ── Ficha 197 ── Brenda Mota da Costa Mattos — Búzios Fractional Resort Bl 19 / 19104 / Cota 25 ──
+  {
+    id: "315421-brenda-mota-bfr-19-19104-cota-25",
+    vispiId: "",
+    nContrato: "315421",
+    empresa: "WAM",
+    razaoSocial: "W50 EMPREENDIMENTOS IMOBILIARIOS LTDA.",
+    cnpj: "33.770.634/0001-82",
+    empreendimento: "Búzios Fractional Resort",
+    localizacao: "Armação dos Búzios/RJ",
+    cidade: "Armação dos Búzios/RJ",
+    bloco: "19",
+    unidade: "19104",
+    cota: "25",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Brenda Mota da Costa Mattos",
+    cpf: "188.966.497-90",
+    rg: "0 - Detran RJ",
+    dataNascimento: "29/08/2000",
+    estadoCivil: "Solteiro",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro",
+    endereco: "",
+    valorTotal: 60376.79,
+    valorPago: 504.00,
+    entradas: [
+      { descricao: "Corretagem — depósito bancário/transferência eletrônica", valor: 504.00 }
+    ],
+    formaPagamentoEntrada: "Depósito Bancário/Transferência Eletrônica 1x R$ 504,00 + Boleto 5x R$ 907,20 (W Palmerston)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-13",
+    telefone: "(22) 99982-7211",
+    email: "brendamattos2808@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/197-brenda-mota-da-costa-mattos--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 504,00 (corretagem) — depósito bancário/transferência eletrônica.\n" +
+      "Corretagem total R$ 5.040,00: 1x R$ 504 depósito/transferência + 5x R$ 907,20 boleto (W Palmerston).\n" +
+      "Vendedora: W50 Empreendimentos Imobiliários Ltda. (CNPJ 33.770.634/0001-82).\n" +
+      "Intermediadora: WAM Comercialização S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "Preço total: R$ 60.376,79 (cota R$ 55.336,79 + corretagem R$ 5.040,00).\n" +
+      "Saldo devedor cota: 6x R$ 50,00 (boleto, 15/10/2026) + 96x R$ 573,30 (boleto, 20/04/2027).\n" +
+      "FORA DO PRAZO — contrato 13/09/2026, prazo arrependimento venceu 20/09/2026.\n" +
+      "GSign ID: M9HB7OBD6L-2WNX94X-BPMSJJ7SUAQJ33-P1GDV.\n" +
+      "Bloco 19 / Unidade 19104 / Cota 25. 2 semanas de uso por ano.\n" +
+      "Solteira. Nasc 29/08/2000. Profissão: Autônoma.\n" +
+      "RG consta como '0 - Detran RJ' no contrato.\n" +
+      "Endereço não consta no quadro-resumo do contrato.\n" +
+      "Sala de venda: Armação de Búzios - Búzios Beach Resort.\n" +
+      "Consultora: Hadassa Taysa Rodrigues da Silva.\n" +
+      "Tel: (22) 99982-7211. E-mail: brendamattos2808@gmail.com."
   }
 ];
