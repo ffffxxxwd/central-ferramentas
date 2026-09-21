@@ -9730,5 +9730,59 @@ window.CLIENTES = [
       "ATENÇÃO: nome no contrato grafado 'FERRREIRA' (3 R) — possível erro.\n" +
       "Parcelas: 7x R$ 150 (a partir 15/04/2026, 6 vencidas) + 60x R$ 539,01 (a partir 15/11/2026).\n" +
       "End: Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220."
+  },
+
+  // ── Ficha 188 ──────────────────────────────────────────────
+  {
+    id: "bfr-luizane-mello-bl20-20106-cota-18",
+    vispiId: "",
+    nContrato: "",
+    empresa: "WAM",
+    empreendimento: "Búzios Fractional Resort",
+    cidade: "Armação dos Búzios/RJ",
+    bloco: "20",
+    unidade: "20106",
+    cota: "18",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Luizane de Mello Mendes",
+    cpf: "055.657.897-02",
+    rg: "122771645 IFP/RJ",
+    dataNascimento: "23/04/1979",
+    estadoCivil: "Solteiro",
+    profissao: "Empresário",
+    nacionalidade: "Brasileira",
+    endereco: "",
+    valorTotal: 54829.72,
+    valorPago: 1200.00,
+    entradas: [
+      { descricao: "Depósito bancário/transferência eletrônica (R$ 1.200 intermediação)", valor: 1200.00 }
+    ],
+    formaPagamentoEntrada: "Intermediação R$ 4.200: 1x R$ 1.200 depósito/transferência + 2x R$ 1.500 boleto (Cobrança W Palmerston) | Preço cota R$ 54.829,72: 2x R$ 25 boleto (1ª 15/08/2026) + 96x R$ 570,62 boleto (1ª 20/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-11",
+    telefone: "(21) 97003-3726",
+    email: "luizanedemello@gmail.com",
+    conjuge: {
+      nome: "",
+      cpf: "",
+      rg: ""
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/188-luizane-de-mello-mendes--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.200 — depósito/transferência eletrônica (intermediação).\n" +
+      "Boletos intermediação 2x R$ 1.500 (Cobrança W Palmerston) — sem data de vencimento no contrato, verificar se pagos.\n" +
+      "Parcelas cota: 2x R$ 25 boleto (1ª 15/08/2026) + 96x R$ 570,62 boleto (1ª 20/10/2026).\n" +
+      "FORA DO PRAZO — contrato 11/07/2026, prazo arrependimento venceu 18/07/2026.\n" +
+      "GSign ID: TV4WMFP582-X7VG4YA-1PGMFO4H1VRZV9-P3C69.\n" +
+      "Bloco 20, Unidade 20106, Cota 18. 2 semanas/ano. Solteiro.\n" +
+      "Nasc 23/04/1979. Profissão: empresário.\n" +
+      "Endereço não consta no contrato.\n" +
+      "Vendedora: W50 Empreendimentos Imobiliários Ltda (CNPJ 33.770.634/0001-82).\n" +
+      "Empreendimento em retrofit (cláusula 7 do contrato)."
   }
 ];
