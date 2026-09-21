@@ -9894,5 +9894,115 @@ window.CLIENTES = [
       "Cônjuge: Priscila Soares Cardoso, CPF 103.403.376-05, nasc 21/02/1992, gerente.\n" +
       "Náutico Praia Clube: Nº 07-M201/05.\n" +
       "End: Rua Ouro Minas, 62, Padre Miguel, Santa Luzia/MG, CEP 33082012."
+  },
+
+  // ── Ficha 191 ── Ana Paula Oliveira Saraiva — Salinas Beach Resort Bl 01/0307/Cota 14 ──
+  {
+    id: 191,
+    nome: "Ana Paula Oliveira Saraiva",
+    cpf: "671.613.082-91",
+    rg: "2793477 PC/PA",
+    nascimento: "1980-06-09",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônoma (Loja de Cosméticos)",
+    empresa: "GAV",
+    empreendimento: "Salinas Beach Resort",
+    cidade: "Salinópolis/PA",
+    bloco: "01",
+    unidade: "0307",
+    andar: "3",
+    cota: "14",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    precoCota: 37305.27,
+    precoIntermediacao: 3990.00,
+    precoTotal: 37305.27,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Corretagem — cartão crédito Master à vista", valor: 1000.00 },
+      { descricao: "Corretagem — boleto 4x R$ 747,50", valor: 2990.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Crédito Master à Vista R$ 1.000,00 + Boleto 4x R$ 747,50 (R$ 2.990,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2024-11-10",
+    telefone: "(91) 98137-1061",
+    email: "anapaula680@hotmail.com",
+    conjuge: {
+      nome: "Gilmar Barros da Silva",
+      cpf: "671.080.832-72",
+      rg: "3193930 PC/PA"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/191-ana-paula-oliveira-saraiva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.990,00 (corretagem) — cartão crédito Master à vista R$ 1.000 (doc 16660798) + boleto 4x R$ 747,50 = R$ 2.990 (1º venc. 15/01/2025).\n" +
+      "Boletos da corretagem: todos com vencimento até ~abr/2025. Regra boleto = só o quitado — confirmar quitação se necessário.\n" +
+      "Sinal de Negócio R$ 1.865,27 em 4 parcelas de R$ 466,32 (1ª 15/05/2025) — forma de pagamento não especificada no contrato. NÃO incluído no valorPago.\n" +
+      "Saldo Devedor R$ 31.450,00 em 68 parcelas de R$ 462,50 (1ª 15/09/2025) — NÃO incluído no valorPago.\n" +
+      "FORA DO PRAZO — contrato 10/11/2024, prazo arrependimento venceu 17/11/2024.\n" +
+      "D4Sign: 4ffc60bd-7727-4e83-92be-ee27f1c421a6. Assinatura presencial 10/11/2024 em Salinópolis/PA.\n" +
+      "Empreendimento: Salinas Beach Resort, ROD. PA 144, Quadra 152, Salinópolis/PA, CEP 68721-000.\n" +
+      "Torre Bloco 1, 3º andar, Apto 0307, Cota 14. 1 quarto. Área privativa 30m², comum 31,268m², total 61,268m².\n" +
+      "Cônjuge: Gilmar Barros da Silva, CPF 671.080.832-72, RG 3193930 PC/PA, professor, nasc 28/04/1980, tel (91) 98138-6418.\n" +
+      "End: Passagem Ana Cristina, 84, Residência Casa 02, Águas Brancas, Ananindeua/PA, CEP 67033680."
+  },
+
+  // ── Ficha 192 ── Mariliza Silva — Areya Barra Resort Bl 01/226/Cota 13 ──
+  {
+    id: 192,
+    nome: "Mariliza Silva",
+    cpf: "574.545.236-68",
+    rg: "57454523668 PCMG/MG",
+    nascimento: "1966-12-31",
+    estadoCivil: "União Estável",
+    profissao: "Bancária",
+    empresa: "GAV",
+    empreendimento: "Areya Barra Resort",
+    cidade: "Barra de São Miguel/AL",
+    bloco: "01",
+    unidade: "226",
+    andar: "2",
+    cota: "13",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    precoCota: 52884.22,
+    precoIntermediacao: 3990.00,
+    precoTotal: 52884.22,
+    valorPago: 1200.00,
+    entradas: [
+      { descricao: "Corretagem — cartão crédito Elo à vista", valor: 1200.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Crédito Elo à Vista R$ 1.200,00 + Boleto 3x R$ 930,00 (R$ 2.790,00 — 1º venc. 20/11/2026, NÃO vencidos)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-20",
+    telefone: "(31) 98874-6647",
+    email: "marilizasilva@yahoo.com.br",
+    conjuge: {
+      nome: "",
+      cpf: "",
+      rg: ""
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/192-mariliza-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "DENTRO DO PRAZO — contrato 20/09/2026, prazo arrependimento vence 27/09/2026.\n" +
+      "VALOR PAGO = R$ 1.200,00 — cartão crédito Elo à vista (final 2117, CV 18764108, Laranjinha Itaú, 20/09/2026 11h15, aprovado com senha).\n" +
+      "Boletos corretagem 3x R$ 930 = R$ 2.790 (1º venc. 20/11/2026) — NÃO vencidos, NÃO incluídos no valorPago.\n" +
+      "Sinal de Negócio R$ 2.644,22 em 4 parcelas de R$ 661,06 (1ª 10/02/2027) — NÃO incluído no valorPago.\n" +
+      "Saldo Devedor R$ 46.250,00 em 74 parcelas de R$ 625,00 (1ª 10/06/2027) — NÃO incluído no valorPago.\n" +
+      "ATENÇÃO: RG no contrato (57454523668) é idêntico ao CPF — provável erro de digitação no campo Identidade.\n" +
+      "Estado civil: União estável, mas cônjuge NÃO INFORMADO no contrato.\n" +
+      "ZapSign: 85c4fa19-021f-4165-b444-27eb0a00ca8f. Assinatura 20/09/2026 12:27:24, Marechal Deodoro/AL.\n" +
+      "Consultora: Barbara Vitoria Conegundes de Souza.\n" +
+      "Empreendimento: Areya Barra Resort, Av. Moema Cavalcante Bastos 23, Barra Mar, Barra de São Miguel/AL, CEP 57180-000.\n" +
+      "Bloco 01, 2º andar, Apto 226, Cota 13. 1 quarto. Área privativa 34,01m², comum 39,71m², total 73,72m².\n" +
+      "Contrato nº 360915. Vendedora: GAV Barra de São Miguel Empreendimento Imobiliário SPE LTDA (CNPJ 45.298.124/0001-33).\n" +
+      "End: Rua Pouso Alegre, 2495, Ap 403, Horto, Belo Horizonte/MG, CEP 31015025."
   }
 ];
