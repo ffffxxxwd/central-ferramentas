@@ -18,6 +18,10 @@ h1{font-size:1.4rem;margin-bottom:20px;font-weight:600}
 .card-valor.negativo{color:#e03131}
 .card-valor.saldo{color:#3160f5}
 
+/* Info do período */
+.periodo-info{font-size:.78rem;color:#6b7690;margin:-8px 0 16px;padding:0 2px}
+.periodo-info b{color:#17203a;font-weight:600}
+
 /* Período tabs */
 .periodo-tabs{display:flex;gap:4px;margin-bottom:16px;background:#fff;border-radius:10px;padding:4px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .periodo-tab{flex:1;text-align:center;padding:8px 12px;border:none;background:none;border-radius:8px;font-size:.8rem;font-weight:500;color:#6b7690;cursor:pointer;transition:all .15s}
@@ -79,6 +83,8 @@ tr:last-child td{border-bottom:none}
   <div class="card"><div class="card-label">Lucro</div><div class="card-valor saldo" id="saldo">R$ 0,00</div></div>
   <div class="card"><div class="card-label">Cada (÷2)</div><div class="card-valor saldo" id="saldoMetade">R$ 0,00</div></div>
 </div>
+
+<div class="periodo-info" id="periodoInfo"></div>
 
 <!-- Tabs de período -->
 <div class="periodo-tabs">
@@ -404,6 +410,22 @@ function renderizar() {
   metadeEl.textContent = fmt(Math.abs(metade));
   if (metade < 0) { metadeEl.textContent = '- ' + metadeEl.textContent; metadeEl.className = 'card-valor negativo'; }
   else { metadeEl.className = 'card-valor saldo'; }
+
+  // linha de info: de quando ate quando esses numeros vem
+  const infoEl = document.getElementById('periodoInfo');
+  const datas = fonte.map(e => e.data).filter(Boolean).sort();
+  if (!datas.length) {
+    infoEl.textContent = '';
+  } else {
+    const ini = datas[0], fimD = datas[datas.length - 1];
+    const diasCorridos = Math.round((new Date(fimD + 'T12:00:00') - new Date(ini + 'T12:00:00')) / 86400000) + 1;
+    const diasComLancamento = new Set(datas).size;
+    const escopo = periodoAtual === 'tudo' ? 'Tudo' : getRangePeriodo().label;
+    infoEl.innerHTML = escopo + ': de <b>' + fmtData(ini) + '</b> a <b>' + fmtData(fimD) + '</b>'
+      + ' · ' + diasCorridos + (diasCorridos === 1 ? ' dia' : ' dias')
+      + ' · ' + diasComLancamento + (diasComLancamento === 1 ? ' dia com movimento' : ' dias com movimento')
+      + ' · ' + fonte.length + (fonte.length === 1 ? ' lançamento' : ' lançamentos');
+  }
 
   // nav do período
   const navEl = document.getElementById('periodoNav');
