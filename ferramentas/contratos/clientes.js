@@ -9680,64 +9680,6 @@ window.CLIENTES = [
       "End: Rua Joao da Cruz Kreiling, 1013, Casa, Centro, Canoinhas/SC, CEP 89460154."
   },
 
-  // ── Ficha 187 ──────────────────────────────────────────────
-  {
-    id: "sapr-lucas-vinicius-d-1005-cota-132",
-    vispiId: "",
-    nContrato: "",
-    empresa: "WAM",
-    empreendimento: "Solar das Águas Park Resort",
-    cidade: "Olímpia/SP",
-    bloco: "D",
-    unidade: "1005",
-    cota: "13.2",
-    fracao: "1/52",
-    checkIn: "",
-    checkOut: "",
-    nome: "Lucas Vinicius Ferrreira de Lima",
-    cpf: "427.841.068-96",
-    rg: "368595250 SSP/SP",
-    dataNascimento: "07/06/1996",
-    estadoCivil: "Casado",
-    profissao: "Motorista(a)",
-    nacionalidade: "Brasileiro",
-    endereco: "Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220",
-    valorTotal: 33390.62,
-    valorPago: 6311.00,
-    entradas: [
-      { descricao: "Corretagem — dinheiro", valor: 800.00 },
-      { descricao: "Corretagem — TED/DOC/depósito", valor: 1200.00 },
-      { descricao: "Corretagem — cartão crédito Elo 8x R$ 538,87", valor: 4311.00 }
-    ],
-    formaPagamentoEntrada: "Dinheiro R$ 800 + TED/DOC/Depósito R$ 1.200 + Cartão Crédito Elo 8x R$ 538,87 (R$ 4.311)",
-    formaReembolso: "Reembolso",
-    dataAssinatura: "2026-02-20",
-    telefone: "(11) 96637-3433",
-    email: "lucaspalio.31@gmail.com",
-    conjuge: {
-      nome: "Kathleen Soares Ferreira Santos",
-      cpf: "409.794.518-17",
-      rg: "374815732 SSP/SP"
-    },
-    arquivos: [
-      { titulo: "Contrato", arquivo: "contratos-pdf/187-lucas-vinicius-ferrreira-de-lima--contrato.pdf" }
-    ],
-    pix: "",
-    observacoes:
-      "VALOR PAGO = R$ 6.311,00 (corretagem/sinal) — dinheiro R$ 800 + TED/DOC/depósito R$ 1.200 + cartão crédito Elo 8x R$ 538,87 = R$ 4.311.\n" +
-      "Dados de pagamento extraídos da PROPOSTA WAM (última página do PDF), não do quadro-resumo do contrato (que estava em branco).\n" +
-      "Preço total de venda: R$ 39.701,62 (sinal/corretagem R$ 6.311 + saldo R$ 33.390,62).\n" +
-      "FORA DO PRAZO — contrato 20/02/2026, prazo arrependimento venceu 27/02/2026.\n" +
-      "GSign ID: O19RSY4SO2-6T3GBXV-QXXWUSTT6NXGLL-33M7E.\n" +
-      "Bloco D, Pav 10, Apto 1005, Cota 13.2. 1 quarto. 1 semana/ano.\n" +
-      "Casado (comunhão parcial). Nasc 07/06/1996. Profissão: motorista.\n" +
-      "Cônjuge: Kathleen Soares Ferreira Santos, CPF 409.794.518-17, nasc 17/05/1998.\n" +
-      "ATENÇÃO: nome no contrato grafado 'FERRREIRA' (3 R) — possível erro.\n" +
-      "Parcelas: 7x R$ 150 (a partir 15/04/2026) + 60x R$ 539,01 (a partir 15/11/2026).\n" +
-      "Corretor: Jose Roberto Domenico (CRECI).\n" +
-      "End: Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220."
-  },
-
   // ── Ficha 188 ──────────────────────────────────────────────
   {
     id: "bfr-luizane-mello-bl20-20106-cota-18",
@@ -10064,5 +10006,63 @@ window.CLIENTES = [
       "Contrato nº 359507. Vendedora: JERI 1 Empreendimento Imobiliário SPE LTDA (CNPJ 33.578.977/0001-40).\n" +
       "Bloco 03, térreo, Apto 007, Cota 18. 1 quarto. Área privativa 35,29m², comum 62,78m², total 98,07m².\n" +
       "End: Rua Minas Gerais, 637, Apto 401, Celvia, Vespasiano/MG, CEP 33200606."
+  },
+
+  // ── Ficha 187 ── Lucas Vinicius Ferrreira de Lima — Solar das Águas Park Resort Bl D/1005/Cota 13.2 (movida pro final) ──
+  {
+    id: "sapr-lucas-vinicius-d-1005-cota-132",
+    vispiId: "",
+    nContrato: "",
+    empresa: "WAM",
+    empreendimento: "Solar das Águas Park Resort",
+    cidade: "Olímpia/SP",
+    bloco: "D",
+    unidade: "1005",
+    cota: "13.2",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucas Vinicius Ferrreira de Lima",
+    cpf: "427.841.068-96",
+    rg: "368595250 SSP/SP",
+    dataNascimento: "07/06/1996",
+    estadoCivil: "Casado",
+    profissao: "Motorista(a)",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220",
+    valorTotal: 33390.62,
+    valorPago: 6311.00,
+    entradas: [
+      { descricao: "Corretagem — dinheiro", valor: 800.00 },
+      { descricao: "Corretagem — TED/DOC/depósito", valor: 1200.00 },
+      { descricao: "Corretagem — cartão crédito Elo 8x R$ 538,87", valor: 4311.00 }
+    ],
+    formaPagamentoEntrada: "Dinheiro R$ 800 + TED/DOC/Depósito R$ 1.200 + Cartão Crédito Elo 8x R$ 538,87 (R$ 4.311)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-02-20",
+    telefone: "(11) 96637-3433",
+    email: "lucaspalio.31@gmail.com",
+    conjuge: {
+      nome: "Kathleen Soares Ferreira Santos",
+      cpf: "409.794.518-17",
+      rg: "374815732 SSP/SP"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/187-lucas-vinicius-ferrreira-de-lima--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 6.311,00 (corretagem/sinal) — dinheiro R$ 800 + TED/DOC/depósito R$ 1.200 + cartão crédito Elo 8x R$ 538,87 = R$ 4.311.\n" +
+      "Dados de pagamento extraídos da PROPOSTA WAM (última página do PDF), não do quadro-resumo do contrato (que estava em branco).\n" +
+      "Preço total de venda: R$ 39.701,62 (sinal/corretagem R$ 6.311 + saldo R$ 33.390,62).\n" +
+      "FORA DO PRAZO — contrato 20/02/2026, prazo arrependimento venceu 27/02/2026.\n" +
+      "GSign ID: O19RSY4SO2-6T3GBXV-QXXWUSTT6NXGLL-33M7E.\n" +
+      "Bloco D, Pav 10, Apto 1005, Cota 13.2. 1 quarto. 1 semana/ano.\n" +
+      "Casado (comunhão parcial). Nasc 07/06/1996. Profissão: motorista.\n" +
+      "Cônjuge: Kathleen Soares Ferreira Santos, CPF 409.794.518-17, nasc 17/05/1998.\n" +
+      "ATENÇÃO: nome no contrato grafado 'FERRREIRA' (3 R) — possível erro.\n" +
+      "Parcelas: 7x R$ 150 (a partir 15/04/2026) + 60x R$ 539,01 (a partir 15/11/2026).\n" +
+      "Corretor: Jose Roberto Domenico (CRECI).\n" +
+      "End: Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220."
   }
 ];
