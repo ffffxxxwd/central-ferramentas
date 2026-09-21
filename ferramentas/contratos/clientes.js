@@ -10299,5 +10299,213 @@ window.CLIENTES = [
       "Sala de venda: Armação de Búzios - Búzios Beach Resort.\n" +
       "Consultora: Hadassa Taysa Rodrigues da Silva.\n" +
       "Tel: (22) 99982-7211. E-mail: brendamattos2808@gmail.com."
+  },
+
+  // ── Ficha 198 ── Marlussi Scarsi Panato — Gran Garden Resort Bl C2 / 105A / Cota 01 ──
+  {
+    id: "ggr-marlussi-c2-105a-cota-01",
+    vispiId: "",
+    nContrato: "361046",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    cidade: "Gramado/RS",
+    bloco: "C2",
+    unidade: "105A",
+    cota: "01",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Marlussi Scarsi Panato",
+    cpf: "059.643.709-93",
+    rg: "4874283 SSP/SC",
+    dataNascimento: "17/02/1988",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Alfredo Pessi, SN, Centro, Nova Veneza/SC, CEP 88865-000",
+    valorTotal: 50744.84,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 698,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(48) 99944-5749",
+    email: "marlussipanatto3@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/198-marlussi-scarsi-panato--contrato-c2-105a-cota01.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX.\n" +
+      "Corretagem total R$ 4.490,00: 1x R$ 1.000 PIX + 5x R$ 698 boleto.\n" +
+      "Sinal de Negócio: R$ 2.537,24 (4x R$ 634,31, venc. 10/03/2027).\n" +
+      "Saldo: R$ 43.717,60 (80x R$ 546,47, venc. 10/07/2027).\n" +
+      "DENTRO DO PRAZO — contrato 20/09/2026, prazo vence 27/09/2026.\n" +
+      "Contrato 1 de 4 (mesma pessoa). PIX Nº Doc: RESN9712060093 / ADB8378.\n" +
+      "Comprovante PIX R$ 1.000 em 20/09/2026 (extrato Caixa Ag 4878 Cc 581924979-4).\n" +
+      "Casada — cônjuge não informado no contrato.\n" +
+      "ZapSign: c57487ea-38dc-49e3-803a-d7db1fb817d6."
+  },
+
+  // ── Ficha 199 ── Marlussi Scarsi Panato — Gran Garden Resort Bl C3 / 01B / Cota 10 ──
+  {
+    id: "ggr-marlussi-c3-01b-cota-10",
+    vispiId: "",
+    nContrato: "361045",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    cidade: "Gramado/RS",
+    bloco: "C3",
+    unidade: "01B",
+    cota: "10",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Marlussi Scarsi Panato",
+    cpf: "059.643.709-93",
+    rg: "4874283 SSP/SC",
+    dataNascimento: "17/02/1988",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Alfredo Pessi, SN, Centro, Nova Veneza/SC, CEP 88865-000",
+    valorTotal: 51701.47,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 698,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(48) 99944-5749",
+    email: "marlussipanatto3@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/199-marlussi-scarsi-panato--contrato-c3-01b-cota10.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX.\n" +
+      "Corretagem total R$ 4.490,00: 1x R$ 1.000 PIX + 5x R$ 698 boleto.\n" +
+      "Sinal de Negócio: R$ 2.585,07 (4x R$ 646,27, venc. 10/03/2027).\n" +
+      "Saldo: R$ 44.626,40 (80x R$ 557,83, venc. 10/07/2027).\n" +
+      "DENTRO DO PRAZO — contrato 20/09/2026, prazo vence 27/09/2026.\n" +
+      "Contrato 2 de 4 (mesma pessoa). PIX Nº Doc: RESN9712060093 / 09EB5FA.\n" +
+      "ATENÇÃO: Nº Doc PIX idêntico nos contratos 2, 3 e 4 — conferir se foi 1 PIX rateado ou separados.\n" +
+      "Comprovante PIX R$ 3.000 em 21/09/2026 (Conta Poupança, doc 92.101) cobre contratos 2-4.\n" +
+      "Casada — cônjuge não informado no contrato.\n" +
+      "ZapSign: a88db773-f068-403c-9720-8db0931b6927."
+  },
+
+  // ── Ficha 200 ── Marlussi Scarsi Panato — Gran Garden Resort Bl C2 / 05A / Cota 05 ──
+  {
+    id: "ggr-marlussi-c2-05a-cota-05",
+    vispiId: "",
+    nContrato: "361044",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    cidade: "Gramado/RS",
+    bloco: "C2",
+    unidade: "05A",
+    cota: "05",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Marlussi Scarsi Panato",
+    cpf: "059.643.709-93",
+    rg: "4874283 SSP/SC",
+    dataNascimento: "17/02/1988",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Alfredo Pessi, SN, Centro, Nova Veneza/SC, CEP 88865-000",
+    valorTotal: 51701.47,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 698,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(48) 99944-5749",
+    email: "marlussipanatto3@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/200-marlussi-scarsi-panato--contrato-c2-05a-cota05.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX.\n" +
+      "Corretagem total R$ 4.490,00: 1x R$ 1.000 PIX + 5x R$ 698 boleto.\n" +
+      "Sinal de Negócio: R$ 2.585,07 (4x R$ 646,27, venc. 10/03/2027).\n" +
+      "Saldo: R$ 44.626,40 (80x R$ 557,83, venc. 10/07/2027).\n" +
+      "DENTRO DO PRAZO — contrato 20/09/2026, prazo vence 27/09/2026.\n" +
+      "Contrato 3 de 4 (mesma pessoa). PIX Nº Doc: RESN9712060093 / 09EB5FA.\n" +
+      "ATENÇÃO: Nº Doc PIX idêntico nos contratos 2, 3 e 4.\n" +
+      "Casada — cônjuge não informado no contrato.\n" +
+      "ZapSign: c05b1ed3-a6e3-4f43-9098-db5fb75cf113."
+  },
+
+  // ── Ficha 201 ── Marlussi Scarsi Panato — Gran Garden Resort Bl C2 / 02A / Cota 06 ──
+  {
+    id: "ggr-marlussi-c2-02a-cota-06",
+    vispiId: "",
+    nContrato: "361043",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    cidade: "Gramado/RS",
+    bloco: "C2",
+    unidade: "02A",
+    cota: "06",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Marlussi Scarsi Panato",
+    cpf: "059.643.709-93",
+    rg: "4874283 SSP/SC",
+    dataNascimento: "17/02/1988",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Alfredo Pessi, SN, Centro, Nova Veneza/SC, CEP 88865-000",
+    valorTotal: 51701.47,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 698,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(48) 99944-5749",
+    email: "marlussipanatto3@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/201-marlussi-scarsi-panato--contrato-c2-02a-cota06.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX.\n" +
+      "Corretagem total R$ 4.490,00: 1x R$ 1.000 PIX + 5x R$ 698 boleto.\n" +
+      "Sinal de Negócio: R$ 2.585,07 (4x R$ 646,27, venc. 10/03/2027).\n" +
+      "Saldo: R$ 44.626,40 (80x R$ 557,83, venc. 10/07/2027).\n" +
+      "DENTRO DO PRAZO — contrato 20/09/2026, prazo vence 27/09/2026.\n" +
+      "Contrato 4 de 4 (mesma pessoa). PIX Nº Doc: RESN9712060093 / 09EB5FA.\n" +
+      "ATENÇÃO: Nº Doc PIX idêntico nos contratos 2, 3 e 4.\n" +
+      "Casada — cônjuge não informado no contrato."
   }
 ];
