@@ -10004,5 +10004,59 @@ window.CLIENTES = [
       "Bloco 01, 2º andar, Apto 226, Cota 13. 1 quarto. Área privativa 34,01m², comum 39,71m², total 73,72m².\n" +
       "Contrato nº 360915. Vendedora: GAV Barra de São Miguel Empreendimento Imobiliário SPE LTDA (CNPJ 45.298.124/0001-33).\n" +
       "End: Rua Pouso Alegre, 2495, Ap 403, Horto, Belo Horizonte/MG, CEP 31015025."
+  },
+
+  // ── Ficha 193 ── Pedro Henrique Teixeira Silva — Jeriquiá Lagoa Resort Bl 03/007/Cota 18 ──
+  {
+    id: 193,
+    nome: "Pedro Henrique Teixeira Silva",
+    cpf: "069.330.776-59",
+    rg: "MG14441637 SSP/MG",
+    nascimento: "1984-06-25",
+    estadoCivil: "Casado(a)",
+    profissao: "Motorista",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    cidade: "Cruz/CE",
+    bloco: "03",
+    unidade: "007",
+    andar: "0",
+    cota: "18",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    precoCota: 52387.79,
+    precoIntermediacao: 3990.00,
+    precoTotal: 52387.79,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 + Boleto 5x R$ 598,00 (R$ 2.990,00 — 1º venc. 11/10/2026, NÃO vencidos)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-11",
+    telefone: "(31) 99909-5460",
+    email: "bethaniafisiotavares@yahoo.com.br",
+    conjuge: {
+      nome: "",
+      cpf: "",
+      rg: ""
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/193-pedro-henrique-teixeira-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "FORA DO PRAZO — contrato 11/09/2026, prazo arrependimento venceu 18/09/2026.\n" +
+      "VALOR PAGO = R$ 1.000,00 — PIX (Laranjinha Itaú, JERI1 BEACH, CV 181823898, 11/09/2026 13h23, ID RESN5161620917867706ZY6HPB2A281788).\n" +
+      "Boletos corretagem 5x R$ 598 = R$ 2.990 (1º venc. 11/10/2026) — NÃO vencidos, NÃO incluídos no valorPago.\n" +
+      "Sinal de Negócio R$ 2.619,39 em 4 parcelas de R$ 654,85 (1ª 10/03/2027) — NÃO incluído no valorPago.\n" +
+      "Saldo Devedor R$ 45.778,40 em 80 parcelas de R$ 572,23 (1ª 10/07/2027) — NÃO incluído no valorPago.\n" +
+      "Estado civil: Casado, mas cônjuge NÃO INFORMADO no contrato.\n" +
+      "ZapSign: 1a7f5b37-1448-408f-b6bb-6a7b2687bf70. Assinatura 11/09/2026 14:55:24, Pipa/RN.\n" +
+      "Consultor: Lyjorsson Palhares.\n" +
+      "Contrato nº 359507. Vendedora: JERI 1 Empreendimento Imobiliário SPE LTDA (CNPJ 33.578.977/0001-40).\n" +
+      "Bloco 03, térreo, Apto 007, Cota 18. 1 quarto. Área privativa 35,29m², comum 62,78m², total 98,07m².\n" +
+      "End: Rua Minas Gerais, 637, Apto 401, Celvia, Vespasiano/MG, CEP 33200606."
   }
 ];
