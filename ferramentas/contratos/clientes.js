@@ -10123,5 +10123,60 @@ window.CLIENTES = [
       "Beneficiário corretagem: W7 Brasil Negócios Inteligentes LTDA (CNPJ 26.649.045/0003-47).\n" +
       "E-mails: Erikesvianna@gmail.com / Shirleyecaiosilva@gmail.com.\n" +
       "End: Rua Alcides Simões, 50, Camurugi, Guarapari/ES, CEP 29210342."
+  },
+
+  // ── Ficha 195 ── Lucas Francisco Pinheiro — Hotel Dom Pedro Laguna Bl 01/205/Cota 03 ──
+  {
+    id: "dpl-lucas-francisco-01-205-cota-03",
+    vispiId: "",
+    nContrato: "02-01.205/03",
+    empresa: "WAM",
+    empreendimento: "Hotel Dom Pedro Laguna",
+    cidade: "Aquiraz/CE",
+    bloco: "01",
+    unidade: "205",
+    cota: "03",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucas Francisco Pinheiro",
+    cpf: "438.211.258-37",
+    rg: "40576913 SSP/SP",
+    dataNascimento: "07/11/1995",
+    estadoCivil: "Solteiro",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Ítalo Primo Bellini, 302, Jardim Florestal, Jundiaí/SP, CEP 13215660",
+    valorTotal: 25746.94,
+    valorPago: 3140.00,
+    entradas: [
+      { descricao: "Corretagem — depósito bancário/transferência eletrônica", valor: 3140.00 }
+    ],
+    formaPagamentoEntrada: "Depósito Bancário / Transferência Eletrônica 1x R$ 3.140,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(11) 94735-8059",
+    email: "DIAMONDCOMPONENTES@GMAIL.COM",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/195-lucas-francisco-pinheiro--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 3.140,00 (corretagem) — depósito bancário/transferência eletrônica.\n" +
+      "Contrato de CESSÃO DE DIREITO DE USO (CDU) — time-share por 10 anos, NÃO é multipropriedade.\n" +
+      "Cedente: Consórcio Dom Pedro Laguna (CNPJ 43.740.923/0001-92), representado por Dom Pedro Laguna Resort Empreendimentos Imobiliários Ltda (CNPJ 41.928.634/0001-96).\n" +
+      "Preço total: R$ 25.746,94 (CDU R$ 22.606,94 + corretagem R$ 3.140).\n" +
+      "Saldo devedor: 98x R$ 230,68 (primeira parcela 20/09/2026).\n" +
+      "FORA DO PRAZO — contrato 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "GSign ID: 1RLUIVP29P-YQGQT72-FIAOTUV16V8ZSB-I45KA.\n" +
+      "CDU: Bloco 01 / 205 / Cota 03. Tipo: Deluxe 1Q (1 quarto, 1 banheiro, 1 varanda).\n" +
+      "Período de vigência: 10 anos. 1 semana/ano (7 dias consecutivos).\n" +
+      "Solteiro. Nasc 07/11/1995. Profissão: empresário.\n" +
+      "Taxa anual de serviços e manutenção: R$ 1.300,00/ano.\n" +
+      "Beneficiária corretagem: W7 Brasil Negócios Inteligentes Ltda.\n" +
+      "Inclui Termo de Adesão WAM Pass (empreendimento: DPL TIMESHARE).\n" +
+      "Corretora: Sara Melo (CRECI).\n" +
+      "End: Rua Ítalo Primo Bellini, 302, Jardim Florestal, Jundiaí/SP, CEP 13215660."
   }
 ];
