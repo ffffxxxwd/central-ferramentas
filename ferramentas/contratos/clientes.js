@@ -9703,10 +9703,14 @@ window.CLIENTES = [
     nacionalidade: "Brasileiro",
     endereco: "Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220",
     valorTotal: 33390.62,
-    valorPago: 0,
-    entradas: [],
-    formaPagamentoEntrada: "Corretagem R$ 6.311 (tabela de pagamento em BRANCO no contrato — forma não informada) | 7x R$ 150 a partir de 15/04/2026 | 60x R$ 539,01 a partir de 15/11/2026",
-    formaReembolso: "",
+    valorPago: 6311.00,
+    entradas: [
+      { descricao: "Corretagem — dinheiro", valor: 800.00 },
+      { descricao: "Corretagem — TED/DOC/depósito", valor: 1200.00 },
+      { descricao: "Corretagem — cartão crédito Elo 8x R$ 538,87", valor: 4311.00 }
+    ],
+    formaPagamentoEntrada: "Dinheiro R$ 800 + TED/DOC/Depósito R$ 1.200 + Cartão Crédito Elo 8x R$ 538,87 (R$ 4.311)",
+    formaReembolso: "Reembolso",
     dataAssinatura: "2026-02-20",
     telefone: "(11) 96637-3433",
     email: "lucaspalio.31@gmail.com",
@@ -9720,15 +9724,17 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "⚠ FICHA INCOMPLETA — tabela de pagamento da corretagem está EM BRANCO no contrato.\n" +
-      "Não foi possível determinar valorPago nem formaReembolso.\n" +
+      "VALOR PAGO = R$ 6.311,00 (corretagem/sinal) — dinheiro R$ 800 + TED/DOC/depósito R$ 1.200 + cartão crédito Elo 8x R$ 538,87 = R$ 4.311.\n" +
+      "Dados de pagamento extraídos da PROPOSTA WAM (última página do PDF), não do quadro-resumo do contrato (que estava em branco).\n" +
+      "Preço total de venda: R$ 39.701,62 (sinal/corretagem R$ 6.311 + saldo R$ 33.390,62).\n" +
       "FORA DO PRAZO — contrato 20/02/2026, prazo arrependimento venceu 27/02/2026.\n" +
       "GSign ID: O19RSY4SO2-6T3GBXV-QXXWUSTT6NXGLL-33M7E.\n" +
       "Bloco D, Pav 10, Apto 1005, Cota 13.2. 1 quarto. 1 semana/ano.\n" +
       "Casado (comunhão parcial). Nasc 07/06/1996. Profissão: motorista.\n" +
       "Cônjuge: Kathleen Soares Ferreira Santos, CPF 409.794.518-17, nasc 17/05/1998.\n" +
       "ATENÇÃO: nome no contrato grafado 'FERRREIRA' (3 R) — possível erro.\n" +
-      "Parcelas: 7x R$ 150 (a partir 15/04/2026, 6 vencidas) + 60x R$ 539,01 (a partir 15/11/2026).\n" +
+      "Parcelas: 7x R$ 150 (a partir 15/04/2026) + 60x R$ 539,01 (a partir 15/11/2026).\n" +
+      "Corretor: Jose Roberto Domenico (CRECI).\n" +
       "End: Rua Baltazar Nunes, 467, Vila Carmosina, São Paulo/SP, CEP 08290220."
   },
 
