@@ -9784,5 +9784,115 @@ window.CLIENTES = [
       "Endereço não consta no contrato.\n" +
       "Vendedora: W50 Empreendimentos Imobiliários Ltda (CNPJ 33.770.634/0001-82).\n" +
       "Empreendimento em retrofit (cláusula 7 do contrato)."
+  },
+
+  // ── Ficha 189 ──────────────────────────────────────────────
+  {
+    id: "pdl-jackson-cardoso-l-501-cota-12",
+    vispiId: "",
+    nContrato: "",
+    empresa: "WAM",
+    empreendimento: "Praias do Lago Eco Resort",
+    cidade: "Caldas Novas/GO",
+    bloco: "L",
+    unidade: "501",
+    cota: "12",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Jackson Santos Cardoso",
+    cpf: "091.470.296-33",
+    rg: "MG14827772 SSP/MG",
+    dataNascimento: "19/10/1987",
+    estadoCivil: "Casado",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Ouro Minas, 62, Padre Miguel, Santa Luzia/MG, CEP 33082012",
+    valorTotal: 46446.75,
+    valorPago: 615.99,
+    entradas: [
+      { descricao: "Depósito/transferência eletrônica (R$ 382,66 intermediação)", valor: 382.66 },
+      { descricao: "Cartão crédito Cielo (R$ 233,33 intermediação)", valor: 233.33 }
+    ],
+    formaPagamentoEntrada: "Intermediação R$ 6.160: 1x R$ 382,66 depósito/transferência + 1x R$ 233,33 cartão crédito Cielo + 9x R$ 616 boleto (Cobrança W Palmerston) | Preço cota R$ 46.446,75: 4x R$ 50 boleto (1ª 15/09/2026) + 88x R$ 525,53 boleto (1ª 20/01/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-17",
+    telefone: "(31) 99280-8902",
+    email: "jacksonsantosc1@gmail.com",
+    conjuge: {
+      nome: "Priscila Soares Cardoso",
+      cpf: "103.403.376-05",
+      rg: "MG16897852 PC/MG"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/189-jackson-santos-cardoso-l501-cota12--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 615,99 — depósito R$ 382,66 + cartão crédito Cielo R$ 233,33 (intermediação).\n" +
+      "Boletos intermediação 9x R$ 616 (Cobrança W Palmerston) — sem vencimento no contrato.\n" +
+      "Parcelas cota: 4x R$ 50 boleto (1ª 15/09/2026) + 88x R$ 525,53 boleto (1ª 20/01/2027).\n" +
+      "FORA DO PRAZO — contrato 17/08/2026, prazo arrependimento venceu 24/08/2026.\n" +
+      "GSign: 26N23GUIBI-RJGTM7P-1UNISOJKDM3MXN-RUSP7.\n" +
+      "Bloco L, Apto 501, Cota 12. 3 semanas/ano. Não conheceu o empreendimento.\n" +
+      "Casado (comunhão parcial). Nasc 19/10/1987.\n" +
+      "Cônjuge: Priscila Soares Cardoso, CPF 103.403.376-05, nasc 21/02/1992, gerente.\n" +
+      "Náutico Praia Clube: Nº 11-L501/12.\n" +
+      "End: Rua Ouro Minas, 62, Padre Miguel, Santa Luzia/MG, CEP 33082012."
+  },
+
+  // ── Ficha 190 ──────────────────────────────────────────────
+  {
+    id: "pdl-jackson-cardoso-m-201-cota-17",
+    vispiId: "",
+    nContrato: "",
+    empresa: "WAM",
+    empreendimento: "Praias do Lago Eco Resort",
+    cidade: "Caldas Novas/GO",
+    bloco: "M",
+    unidade: "201",
+    cota: "17",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Jackson Santos Cardoso",
+    cpf: "091.470.296-33",
+    rg: "MG14827772 SSP/MG",
+    dataNascimento: "19/10/1987",
+    estadoCivil: "Casado",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Ouro Minas, 62, Padre Miguel, Santa Luzia/MG, CEP 33082012",
+    valorTotal: 46446.75,
+    valorPago: 615.99,
+    entradas: [
+      { descricao: "Depósito/transferência eletrônica (R$ 382,66 intermediação)", valor: 382.66 },
+      { descricao: "Cartão crédito Cielo (R$ 233,33 intermediação)", valor: 233.33 }
+    ],
+    formaPagamentoEntrada: "Intermediação R$ 6.160: 1x R$ 382,66 depósito/transferência + 1x R$ 233,33 cartão crédito Cielo + 9x R$ 616 boleto (Cobrança W Palmerston) | Preço cota R$ 46.446,75: 4x R$ 50 boleto (1ª 15/09/2026) + 88x R$ 525,53 boleto (1ª 20/01/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-17",
+    telefone: "(31) 99280-8902",
+    email: "jacksonsantosc1@gmail.com",
+    conjuge: {
+      nome: "Priscila Soares Cardoso",
+      cpf: "103.403.376-05",
+      rg: "MG16897852 PC/MG"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/190-jackson-santos-cardoso-m201-cota17--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 615,99 — depósito R$ 382,66 + cartão crédito Cielo R$ 233,33 (intermediação).\n" +
+      "Boletos intermediação 9x R$ 616 (Cobrança W Palmerston) — sem vencimento no contrato.\n" +
+      "Parcelas cota: 4x R$ 50 boleto (1ª 15/09/2026) + 88x R$ 525,53 boleto (1ª 20/01/2027).\n" +
+      "FORA DO PRAZO — contrato 17/08/2026, prazo arrependimento venceu 24/08/2026.\n" +
+      "GSign: 3E3IZL8E8M-P2ALR1A-WSILIC399JHQJB-Z10A0.\n" +
+      "Bloco M, Apto 201, Cota 17. 3 semanas/ano. Não conheceu o empreendimento.\n" +
+      "Casado (comunhão parcial). Nasc 19/10/1987.\n" +
+      "Cônjuge: Priscila Soares Cardoso, CPF 103.403.376-05, nasc 21/02/1992, gerente.\n" +
+      "Náutico Praia Clube: Nº 07-M201/05.\n" +
+      "End: Rua Ouro Minas, 62, Padre Miguel, Santa Luzia/MG, CEP 33082012."
   }
 ];
