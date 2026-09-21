@@ -10507,5 +10507,63 @@ window.CLIENTES = [
       "Contrato 4 de 4 (mesma pessoa). PIX Nº Doc: RESN9712060093 / 09EB5FA.\n" +
       "ATENÇÃO: Nº Doc PIX idêntico nos contratos 2, 3 e 4.\n" +
       "Casada — cônjuge não informado no contrato."
+  },
+
+  // ── Ficha 202 ── Régius Strelow Colossi — Ondas Praia Resort Bl B / 233 / Cota 18 ──
+  {
+    id: "3443093-regius-strelow-opr-b-233-cota-18",
+    vispiId: "",
+    nContrato: "3443093",
+    empresa: "WAM",
+    razaoSocial: "SPE PORTO SEGURO 02 EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+    cnpj: "22.059.167/0001-60",
+    empreendimento: "Ondas Praia Resort",
+    localizacao: "Porto Seguro/BA",
+    cidade: "Porto Seguro/BA",
+    bloco: "B",
+    unidade: "233",
+    cota: "18",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Régius Strelow Colossi",
+    cpf: "817.553.920-87",
+    rg: "",
+    dataNascimento: "",
+    estadoCivil: "",
+    profissao: "Advogado",
+    nacionalidade: "Brasileiro",
+    endereco: "Espumoso/RS",
+    valorTotal: 0,
+    valorPago: 14519.58,
+    entradas: [
+      { descricao: "Sinal presumido (contrato paradigma)", valor: 2990.00 },
+      { descricao: "19 parcelas boleto (R$ 606,82/mês)", valor: 11529.58 }
+    ],
+    formaPagamentoEntrada: "Sinal R$ 2.990,00 + 19x R$ 606,82 Boleto (pago até set/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "",
+    telefone: "",
+    email: "",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Notificação Extrajudicial", arquivo: "contratos-pdf/202-regius-strelow-colossi--notificacao-extrajudicial.pdf" },
+      { titulo: "Planilha Estimativa", arquivo: "contratos-pdf/202-regius-strelow-colossi--planilha-estimativa.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "FICHA INCOMPLETA — cadastrada a partir de notificação extrajudicial + planilha estimativa, SEM contrato original.\n" +
+      "Faltam: RG, data nascimento, estado civil, telefone, e-mail, data assinatura, valor total do contrato.\n" +
+      "VALOR PAGO = R$ 14.519,58 (preço) — sinal presumido R$ 2.990 + 19 parcelas R$ 606,82 boleto.\n" +
+      "Condomínio pago estimado: R$ 2.886,29 (19x R$ 151,91). Desembolso total estimado: R$ 17.405,87.\n" +
+      "Restituição contratual estimada: R$ 9.223,66 (80% das parcelas, sinal retido integralmente).\n" +
+      "FORA DO PRAZO — parcelas desde 03/2025, contrato provavelmente de ~fev/2025.\n" +
+      "Notificante: Régius Strelow Colossi, CPF 817.553.920-87, OAB/RS 67.714.\n" +
+      "Notificação datada de 21/09/2026, Espumoso/RS.\n" +
+      "Notificada: SPE Porto Seguro 02 (CNPJ 22.059.167/0001-60).\n" +
+      "Com cópia: WAM Group / Forte Securitizadora S.A. (CNPJ 12.979.898/0001-70).\n" +
+      "Referência/título: 3443093. Unidade B233/18.\n" +
+      "Valores da planilha são preliminares (contrato paradigma, sem comprovantes individuais).\n" +
+      "Parcelas e condomínio pagas até set/2026 (informação do adquirente). Sem mora."
   }
 ];
