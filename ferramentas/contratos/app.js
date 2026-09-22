@@ -425,7 +425,7 @@
             : "") +
           '<button type="button" class="ficha__btn destaque" data-acao="distrato" data-id="' + esc(c.id) + '">Distrato ' + esc(c.empresa) + "</button>" +
           '<button type="button" class="ficha__btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia">Nova guia ↗</button>' +
-          '<button type="button" class="ficha__btn" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Reembolso</button>' +
+          '<button type="button" class="ficha__btn reembolso" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Reembolso</button>' +
           '<button type="button" class="ficha__btn" data-acao="email" data-id="' + esc(c.id) + '">Mensagem</button>' +
           '<button type="button" class="ficha__btn' + (pago ? " pago-ativo" : "") + '" data-pago="' + esc(c.id) + '" data-pg="' + (pago ? "1" : "0") + '">' +
             (pago ? "Desmarcar pago" : "Marcar pago") +
