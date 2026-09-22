@@ -92,7 +92,8 @@ tr:last-child td{border-bottom:none}
   <button class="periodo-tab" onclick="setPeriodo('7d')">7 dias</button>
   <button class="periodo-tab" onclick="setPeriodo('15d')">15 dias</button>
   <button class="periodo-tab" onclick="setPeriodo('30d')">30 dias</button>
-  <button class="periodo-tab" onclick="setPeriodo('dia')">Diário</button>
+  <button class="periodo-tab" onclick="setPeriodo('dia')">Hoje</button>
+  <button class="periodo-tab" onclick="setPeriodo('ontem')">Ontem</button>
   <button class="periodo-tab" onclick="setPeriodo('semana')">Semanal</button>
   <button class="periodo-tab" onclick="setPeriodo('mes')">Mensal</button>
   <button class="periodo-tab" onclick="setPeriodo('ano')">Anual</button>
@@ -290,9 +291,9 @@ function getRangePeriodo() {
     inicio = iso(ini_d);
     fim = iso(fim_d);
     label = 'Últimos ' + dias + ' dias';
-  } else if (periodoAtual === 'dia') {
+  } else if (periodoAtual === 'dia' || periodoAtual === 'ontem') {
     const d = new Date(hoje);
-    d.setDate(d.getDate() + offsetPeriodo);
+    d.setDate(d.getDate() + offsetPeriodo + (periodoAtual === 'ontem' ? -1 : 0));
     const ds = iso(d);
     inicio = ds; fim = ds;
     label = fmtDiaCompleto(ds);
