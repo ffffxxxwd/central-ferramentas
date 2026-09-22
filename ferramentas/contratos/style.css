@@ -169,8 +169,10 @@ body {
 }
 .tag.pago-tag { background: #e6f4ea; color: #1a7f37; }
 .ficha__btn.pago-ativo { background: #e6f4ea; border-color: #1a7f37; color: #1a7f37; }
-.ficha__btn.reembolso { background: #d4a017; border-color: #d4a017; color: #fff; font-weight: 700; }
-.ficha__btn.reembolso:hover { background: #b8860b; border-color: #b8860b; }
+.ficha__btn.reembolso { background: var(--brand); border-color: var(--brand); color: #fff; }
+.ficha__btn.reembolso:hover { background: var(--brand-600); border-color: var(--brand-600); }
+.ficha.wam .ficha__btn.reembolso { background: var(--wam); border-color: var(--wam); }
+.ficha.wam .ficha__btn.reembolso:hover { background: #17643e; border-color: #17643e; }
 .ficha__valor {
   display: flex; align-items: baseline; justify-content: space-between; gap: 8px;
   margin-top: 4px; padding-top: 10px; border-top: 1px dashed var(--border);
