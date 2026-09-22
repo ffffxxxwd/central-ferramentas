@@ -2008,6 +2008,7 @@
       var ac = acaoBt.getAttribute("data-acao"), idc = acaoBt.getAttribute("data-id");
       if (ac === "distrato") gerarDistrato(idc, acaoBt.getAttribute("data-nova") === "1");
       else if (ac === "email") abrirEmail([idc]);
+      else if (ac === "novo-reembolso") formReembolso(idc);
       else if (ac === "ver-contrato") {
         var cli = acharCliente(idc), pdf = cli ? contratoDe(cli) : "";
         if (pdf) window.open(pdf, "_blank");
