@@ -10767,5 +10767,59 @@ window.CLIENTES = [
       "Assinado via ZapSign em 20/09/2026 (doc 336f31cf-dd14-44c6-ba62-fa06a9a80b72).\n" +
       "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
       "Andar 2. Área privativa 86,2 m², área comum 40,13 m², área total 126,33 m²."
+  },
+
+  // ── Ficha 207 ── Adriano da Silva Queiroz — Park Gav Resorts (Maçarico/705/Cota 2D)
+  {
+    id: "361026-adriano-silva-queiroz-pgr-macarico-705-cota-2d",
+    empresa: "GAV",
+    razaoSocial: "E.T.R. CONSTRUTORA E INCORPORADORA LTDA.",
+    cnpj: "14.194.873/0001-97",
+    empreendimento: "Park Gav Resorts",
+    localizacao: "PARÁ",
+    cidade: "Salinópolis/PA",
+    bloco: "Maçarico",
+    unidade: "705",
+    cota: "2D",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Adriano da Silva Queiroz",
+    cpf: "000.907.842-86",
+    rg: "6018306 PC/PA",
+    dataNascimento: "31/10/1989",
+    estadoCivil: "Casado(a)",
+    profissao: "Laboratorista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Travessa SN 01, 27, Almir Gabriel, Capanema/PA, CEP 68703380",
+    valorTotal: 26183.45,
+    valorPago: 1995.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 500.00 },
+      { descricao: "Corretagem — Cartão Crédito Master 5x R$ 100", valor: 500.00 },
+      { descricao: "Corretagem — Cartão Crédito Master 5x R$ 199", valor: 995.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 500 + Cartão Crédito 5x R$ 100 + Cartão Crédito 5x R$ 199",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(91) 992458011",
+    email: "dricko25laborel@gmail.com",
+    conjuge: { nome: "Maria Cristina Barros Queiroz", cpf: "008.692.732-99", rg: "6330318 PC/PA", email: "" },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/207-adriano-da-silva-queiroz--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.995,00 (corretagem total) — PIX R$ 500 + Cartão Crédito Master R$ 500 (5x100, doc 26671744) + Cartão Crédito Master R$ 995 (5x199, doc 27233108).\n" +
+      "Nº Documento PIX: RESN4795180050 918060VZGVLIEYE 8FEA31.\n" +
+      "Cartão crédito parcelado = valor cheio.\n" +
+      "Forma reembolso: PIX é o instrumento principal (listado primeiro). Cartão R$ 1.495 precisaria Estorno — CONFERIR como tratar pagamento misto.\n" +
+      "Corretagem total R$ 1.995,00 (11 parcelas). Beneficiários: Jessica Rodrigues (27434285000125), Fadel Incorporações (34872782000170), Simara Silva Rachid (53245160000167).\n" +
+      "Sinal de Negócio: R$ 1.309,17 (4x R$ 327,29, venc. 10/03/2027).\n" +
+      "Saldo: R$ 22.879,28 (68x R$ 336,46, venc. 10/07/2027).\n" +
+      "Assinado via ZapSign em 20/09/2026 (doc 9b9b1ef1-fc59-4b44-9715-ccd308da8502).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
+      "Cônjuge: Maria Cristina Barros Queiroz, CPF 008.692.732-99, RG 6330318 PC/PA, Assistente Administrativo, nasc. 21/11/1989, tel (91) 989923942.\n" +
+      "Andar 7. Área privativa 54,8 m², área total 99,37 m²."
   }
 ];
