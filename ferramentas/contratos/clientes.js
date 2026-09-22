@@ -10565,5 +10565,207 @@ window.CLIENTES = [
       "Referência/título: 3443093. Unidade B233/18.\n" +
       "Valores da planilha são preliminares (contrato paradigma, sem comprovantes individuais).\n" +
       "Parcelas e condomínio pagas até set/2026 (informação do adquirente). Sem mora."
+  },
+
+  // ── Ficha 203 ──────────────────────────────────────────────
+  {
+    id: "359507-pedro-henrique-jlr-bloco03-007-cota-18",
+    vispiId: "",
+    nContrato: "359507",
+    empresa: "GAV",
+    razaoSocial: "JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    localizacao: "Cruz/CE",
+    cidade: "Cruz/CE",
+    bloco: "03",
+    unidade: "007",
+    cota: "18",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Pedro Henrique Teixeira Silva",
+    cpf: "069.330.776-59",
+    rg: "MG14441637 SSP/MG",
+    dataNascimento: "25/06/1984",
+    estadoCivil: "Casado(a)",
+    profissao: "Motorista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Minas Gerais, 637, Apto 401, Celvia, Vespasiano/MG, CEP 33200-606",
+    valorTotal: 52387.79,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 598,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-11",
+    telefone: "(31) 99909-5460",
+    email: "bethaniafisiotavares@yahoo.com.br",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/203-pedro-henrique-teixeira-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX em 11/09/2026.\n" +
+      "Corretagem total R$ 3.990,00: 1x R$ 1.000 PIX + 5x R$ 598 boleto (1º venc. 11/10/2026, NÃO pago).\n" +
+      "Nº Documento PIX: RESN51616200917867706ZY6HPB2A281788.\n" +
+      "Sinal de Negócio: R$ 2.619,39 (4x R$ 654,85, venc. 10/03/2027).\n" +
+      "Saldo: R$ 45.778,40 (80x R$ 572,23, venc. 10/07/2027).\n" +
+      "Assinado via ZapSign em 11/09/2026 14:55 (doc 1a7f5b37-1448-408f-b6bb-6a7b2687bf70).\n" +
+      "FORA DO PRAZO de arrependimento — prazo de 7 dias venceu em 18/09/2026.\n" +
+      "Estado civil Casado(a), mas cônjuge consta \'Não informado\' no contrato e não assinou.\n" +
+      "E-mail do contrato está em nome de terceiro (bethaniafisiotavares@yahoo.com.br) — conferir com o cliente."
+  },
+
+  // ── Ficha 204 ──────────────────────────────────────────────
+  {
+    id: "238653-nataly-jessie-wvc-30000-pontos",
+    empresa: "WAM",
+    razaoSocial: "WAM CORRETAGEM DE IMÓVEIS LTDA.",
+    cnpj: "35.561.514/0001-09",
+    empreendimento: "WVC - WAM VACATION CLUB (PONTOS)",
+    localizacao: "GOIÁS",
+    cidade: "Caldas Novas/GO",
+    bloco: "Contrato 30/2108",
+    unidade: "30.000 pontos",
+    cota: "238653",
+    fracao: "30.000 pontos / 3 anos",
+    checkIn: "",
+    checkOut: "",
+    nome: "Nátaly Jessie Mato Grosso Lima Santos de Jesus",
+    cpf: "066.437.195-77",
+    rg: "1437245099 SSP/BA",
+    dataNascimento: "03/04/1997",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Nutricionista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Fazenda Viveiro, S/N, Zona Rural, Conceição do Almeida/BA, CEP 44540000",
+    valorTotal: 4200.00,
+    valorPago: 4200.00,
+    entradas: [
+      { descricao: "Entrada — cartão/débito/recorrente/PIX", valor: 420.00 },
+      { descricao: "Mensal — boleto bancário", valor: 3780.00 }
+    ],
+    formaPagamentoEntrada: "Entrada R$ 420,00 (cartão/débito/recorrente/PIX) + R$ 3.780,00 boleto",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2024-11-14",
+    telefone: "(75) 98277-9393 / (75) 98246-2751",
+    email: "natalyjessie@hotmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/204-nataly-jessie-mato-grosso--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO DE PONTOS (WVC - WAM Vacation Club) — programa de troca de pontos em benefícios/diárias, NÃO é multipropriedade.\n" +
+      "30.000 pontos, validade 3 anos, valor total R$ 4.200,00.\n" +
+      "Pagamento: entrada R$ 420,00 (cartão/débito/recorrente/PIX) + mensal R$ 3.780,00 (boleto bancário). Sem comprovantes — conferir o que foi efetivamente pago.\n" +
+      "FORA DO PRAZO de arrependimento — contrato 14/11/2024, venceu em 21/11/2024.\n" +
+      "Hotéis do programa: Ilhas do Lago e Praias do Lago (Caldas Novas/GO), Búzios Beach Resort (Búzios/RJ), Ondas Praia Resort (Porto Seguro/BA).\n" +
+      "WAM Fidelidade vinculada: Club Cia Viagens e Vantagens S.A. (CNPJ 18.601.079/0001-71).\n" +
+      "Testemunhas: Cleisla Gabriela Alves do Nascimento (CPF 048.345.781-78), Ruan Borges (CPF 112.060.754-06).\n" +
+      "GSign Doc ID: I9HDU6I8EV-QPY71KH-3ITRLGXZIW953I-493C4."
+  },
+
+  // ── Ficha 205 ──────────────────────────────────────────────
+  {
+    id: "361008-lucas-rodrigues-mello-ggr-b2-002-cota-52",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "RIO GRANDE DO SUL",
+    cidade: "Gramado/RS",
+    bloco: "B2",
+    unidade: "002",
+    cota: "52",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucas Rodrigues Mello",
+    cpf: "026.067.500-80",
+    rg: "1110421284 SJS II/RS",
+    dataNascimento: "18/09/1991",
+    estadoCivil: "União estável",
+    profissao: "Autônomo",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Maria do Carmo Miranda da Cunha, 968, Casa, Canudos, Novo Hamburgo/RS, CEP 93546460",
+    valorTotal: 76732.22,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 698,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(51) 981421560",
+    email: "lucasrodriguesmello1991@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/205-lucas-rodrigues-mello--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX em 20/09/2026.\n" +
+      "Nº Documento PIX: RESN4197170093 814895VQHZQ0X E6220F51.\n" +
+      "Corretagem total R$ 4.490,00: 1x R$ 1.000 PIX + 5x R$ 698 boleto (1º venc. 20/10/2026, NÃO pago).\n" +
+      "Sinal de Negócio: R$ 3.836,61 (5x R$ 767,32, venc. 10/03/2027).\n" +
+      "Saldo: R$ 68.405,61 (91x R$ 751,71, venc. 10/08/2027).\n" +
+      "Assinado via ZapSign em 20/09/2026 (doc cb2177fa-3989-47c6-9796-f1f12028ce47).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
+      "Estado civil União estável, cônjuge 'Não informado' no contrato.\n" +
+      "Andar T. Área privativa 86,2 m², área comum 39,3 m², área total 125,5 m²."
+  },
+
+  // ── Ficha 206 ── Lucas Rodrigues Mello — Gran Garden Resort (2º contrato: A1/201/Cota 21)
+  {
+    id: "361007-lucas-rodrigues-mello-ggr-a1-201-cota-21",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "RIO GRANDE DO SUL",
+    cidade: "Gramado/RS",
+    bloco: "A1",
+    unidade: "201",
+    cota: "21",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucas Rodrigues Mello",
+    cpf: "026.067.500-80",
+    rg: "1110421284 SJS II/RS",
+    dataNascimento: "18/09/1991",
+    estadoCivil: "União estável",
+    profissao: "Autônomo",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Maria do Carmo Miranda da Cunha, 968, Casa, Canudos, Novo Hamburgo/RS, CEP 93546460",
+    valorTotal: 76732.22,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 5x R$ 698,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(51) 981421560",
+    email: "lucasrodriguesmello1991@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/206-lucas-rodrigues-mello--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "2º CONTRATO do mesmo comprador (ver ficha 205 — B2/002/Cota 52).\n" +
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX em 20/09/2026.\n" +
+      "Nº Documento PIX: RESN4197170093 814895VQHZQ0X E6220F51 — IDÊNTICO ao da ficha 205. Conferir se foi 1 PIX rateado (R$ 1.000 total) ou 2 PIX separados (R$ 2.000 total).\n" +
+      "Corretagem total R$ 4.490,00: 1x R$ 1.000 PIX + 5x R$ 698 boleto (1º venc. 20/10/2026, NÃO pago).\n" +
+      "Sinal de Negócio: R$ 3.836,61 (5x R$ 767,32, venc. 10/03/2027).\n" +
+      "Saldo: R$ 68.405,61 (91x R$ 751,71, venc. 10/08/2027).\n" +
+      "Assinado via ZapSign em 20/09/2026 (doc 336f31cf-dd14-44c6-ba62-fa06a9a80b72).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
+      "Andar 2. Área privativa 86,2 m², área comum 40,13 m², área total 126,33 m²."
   }
 ];
