@@ -10809,6 +10809,12 @@ window.CLIENTES = [
       { titulo: "Contrato", arquivo: "contratos-pdf/207-adriano-da-silva-queiroz--contrato.pdf" }
     ],
     pix: "",
+    clausulaExtra:
+      "O presente cancelamento decorre exclusivamente do exercício do direito de arrependimento previsto no art. 49 do Código de Defesa do Consumidor, exercido dentro do prazo legal e contratual de 7 (sete) dias, não se tratando de simples distrato ou desistência convencional.\n" +
+      "Valores pagos pelos ADQUIRENTES: (i) PIX corretagem R$ 500,00; (ii) Cartão de Crédito Mastercard 5x R$ 100,00 = R$ 500,00 (doc 26671744); (iii) Cartão de Crédito Mastercard 5x R$ 199,00 = R$ 995,00 (doc 27233108). Total efetivamente pago: R$ 1.995,00.\n" +
+      "A VENDEDORA restituirá integralmente todos os valores pagos, no montante de R$ 1.995,00, incluindo os valores relativos à comissão de corretagem, conforme previsto na Cláusula I.6 do contrato, por se tratar de exercício do direito de arrependimento dentro do prazo legal.\n" +
+      "Ficam canceladas todas as cobranças futuras relacionadas à presente contratação, incluindo parcelas do sinal de negócio, saldo devedor e quaisquer outras obrigações decorrentes do contrato.\n" +
+      "A quitação mútua entre as partes somente produzirá seus efeitos após a efetiva restituição integral dos valores devidos aos ADQUIRENTES.",
     observacoes:
       "VALOR PAGO = R$ 1.995,00 (corretagem total) — PIX R$ 500 + Cartão Crédito Master R$ 500 (5x100, doc 26671744) + Cartão Crédito Master R$ 995 (5x199, doc 27233108).\n" +
       "Nº Documento PIX: RESN4795180050 918060VZGVLIEYE 8FEA31.\n" +
@@ -10821,5 +10827,442 @@ window.CLIENTES = [
       "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
       "Cônjuge: Maria Cristina Barros Queiroz, CPF 008.692.732-99, RG 6330318 PC/PA, Assistente Administrativo, nasc. 21/11/1989, tel (91) 989923942.\n" +
       "Andar 7. Área privativa 54,8 m², área total 99,37 m²."
+  },
+
+  // ── Ficha 208 ── Lucilene Engelmann Lisbinski — Porto Alto Resort (Bl 03/0221/Cota 05)
+  {
+    id: "361065-lucilene-engelmann-lisbinski-par-bl03-0221-cota-05",
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    localizacao: "PERNAMBUCO",
+    cidade: "Ipojuca/PE",
+    bloco: "03",
+    unidade: "0221",
+    cota: "05",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucilene Engelmann Lisbinski",
+    cpf: "978.805.070-00",
+    rg: "1068959401 SJS/RS",
+    dataNascimento: "23/04/1982",
+    estadoCivil: "Casado(a)",
+    profissao: "Advogada",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro chacara, Eldorado do Sul/RS, CEP 92990000",
+    valorTotal: 67647.57,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão Crédito Visa à vista", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "Boleto R$ 2.990 (venc. 25/09) + Cartão Crédito Visa R$ 1.000",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-21",
+    telefone: "(51) 984264140",
+    email: "luengelmann@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/208-lucilene-engelmann-lisbinski--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 (corretagem parcial) — Cartão Crédito Visa à vista (doc 174777202).\n" +
+      "Boleto corretagem R$ 2.990 vencimento 25/09/2026 — NÃO confirmado como pago (vence em 3 dias). Se pago, valorPago sobe pra R$ 3.990.\n" +
+      "Corretagem total R$ 3.990,00.\n" +
+      "Sinal de Negócio: R$ 3.382,37 (4x R$ 845,59, venc. 05/11/2026).\n" +
+      "Saldo: R$ 60.275,20 (68x R$ 886,40, venc. 05/03/2027).\n" +
+      "Assinado via ZapSign em 21/09/2026 (doc 48a10748-8946-438f-b636-919f6efb3e83).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 28/09/2026.\n" +
+      "Estado civil Casada, cônjuge 'Não informado' no contrato.\n" +
+      "Andar 2. Área privativa 32,54 m², área total 64,54 m²."
+  },
+
+  // ── Ficha 209 ── Lucilene Engelmann Lisbinski — Oikos Maragogi Resort (2º contrato: Bl 01/037/Cota 29)
+  {
+    id: "361066-lucilene-engelmann-lisbinski-omr-bl01-037-cota-29",
+    empresa: "GAV",
+    razaoSocial: "GAV MARAGOGI EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "ALAGOAS",
+    cidade: "Maragogi/AL",
+    bloco: "01",
+    unidade: "037",
+    cota: "29",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucilene Engelmann Lisbinski",
+    cpf: "978.805.070-00",
+    rg: "1068959401 SJS/RS",
+    dataNascimento: "23/04/1982",
+    estadoCivil: "Casado(a)",
+    profissao: "Advogada",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro chacara, Eldorado do Sul/RS, CEP 92990000",
+    valorTotal: 35742.70,
+    valorPago: 1005.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão Crédito Visa à vista", valor: 1005.00 }
+    ],
+    formaPagamentoEntrada: "Boleto R$ 2.985 (venc. 25/09) + Cartão Crédito Visa R$ 1.005",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-21",
+    telefone: "(51) 984264140",
+    email: "luengelmann@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/209-lucilene-engelmann-lisbinski--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "2º CONTRATO da mesma compradora (ver ficha 208 — Porto Alto Resort, Bl 03/0221/Cota 05).\n" +
+      "VALOR PAGO = R$ 1.005,00 (corretagem parcial) — Cartão Crédito Visa à vista (doc 174583658).\n" +
+      "Boleto corretagem R$ 2.985 vencimento 25/09/2026 — NÃO confirmado como pago. Se pago, valorPago sobe pra R$ 3.990.\n" +
+      "Corretagem total R$ 3.990,00.\n" +
+      "Sinal de Negócio: R$ 1.787,14 (4x R$ 446,78, venc. 05/11/2026).\n" +
+      "Saldo: R$ 29.965,56 (68x R$ 440,67, venc. 05/03/2027).\n" +
+      "Assinado via ZapSign em 21/09/2026 (doc 104240fb-5c79-4041-b61c-95ed21132b1d).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 28/09/2026.\n" +
+      "Andar T. Área privativa 36,41 m², área total 100,43 m²."
+  },
+
+  // ── Ficha 210 ── Vitoria Rafaela da Silva Dutra — Gran Garden Resort (Bloco C1/104A/Cota 22)
+  {
+    id: "360910-vitoria-rafaela-da-silva-dutra-ggr-c1-104a-cota-22",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "RIO GRANDE DO SUL",
+    cidade: "Gramado/RS",
+    bloco: "C1",
+    unidade: "104A",
+    cota: "22",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Vitoria Rafaela da Silva Dutra",
+    cpf: "051.222.330-04",
+    rg: "3127104341 SSP/RS",
+    dataNascimento: "02/06/2001",
+    estadoCivil: "Casado(a)",
+    profissao: "Do lar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Araci, 70, Bairro Barnabe, Gravatai/RS, CEP 94155010",
+    valorTotal: 50744.84,
+    valorPago: 1500.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 750.00 },
+      { descricao: "Corretagem — Cartão Crédito Master à vista", valor: 750.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 750 + Cartão Crédito Master R$ 750 + Boleto R$ 2.990 (5x R$ 598 — nenhum quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(51) 989027801",
+    email: "vitoriadutra252@gmail.com",
+    conjuge: {
+      nome: "Yan Matheus da Rosa Freitas",
+      cpf: "042.156.770-84",
+      rg: "1124892678 SSP/RS",
+      dataNascimento: "05/01/2000",
+      profissao: "Pintor(a)"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/210-vitoria-rafaela-da-silva-dutra--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.500,00 — PIX R$ 750 (doc RESV0820700093) + Cartão Crédito Master à vista R$ 750 (doc 18284026).\n" +
+      "Boleto corretagem R$ 2.990 (5x R$ 598, venc. 20/11/2026) — nenhum quitado. Se pago, valorPago sobe pra R$ 4.490.\n" +
+      "Corretagem total R$ 4.490,00.\n" +
+      "Sinal de Negócio: R$ 2.537,24 (4x R$ 634,31, venc. 10/04/2027).\n" +
+      "Saldo: R$ 43.717,60 (80x R$ 546,47, venc. 10/08/2027).\n" +
+      "Assinado via ZapSign em 20/09/2026 (doc 1f476b45-c2b0-4d57-acf4-6f4e9b071d5f).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
+      "Andar 1. Área privativa 43,1 m², área total 63,11 m²."
+  },
+
+  // ── Ficha 211 ── Robson Alexandre de Souza Guimaraes — Gran Haus Resort (Bloco 05/201/Cota 16)
+  {
+    id: "361017-robson-alexandre-de-souza-guimaraes-ghr-bl05-201-cota-16",
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    localizacao: "RIO GRANDE DO SUL",
+    cidade: "Gramado/RS",
+    bloco: "05",
+    unidade: "201",
+    cota: "16",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Robson Alexandre de Souza Guimaraes",
+    cpf: "602.713.310-46",
+    rg: "8109396071 SSP/RS",
+    dataNascimento: "18/01/2002",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Dois, 86, Casa, Bairro Agronomia, Porto Alegre/RS, CEP 91540600",
+    valorTotal: 57817.32,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 + Boleto R$ 3.490 (4x R$ 872,50 — nenhum quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(51) 985117328",
+    email: "robsonsz151@gmail.com",
+    conjuge: null,
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/211-robson-alexandre-de-souza-guimaraes--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 1.000,00 — PIX corretagem (doc RESV8814280106).\n" +
+      "Boleto corretagem R$ 3.490 (4x R$ 872,50, venc. 10/10/2026) — nenhum quitado. Se pago, valorPago sobe pra R$ 4.490.\n" +
+      "Corretagem total R$ 4.490,00.\n" +
+      "Sinal de Negócio: R$ 2.890,87 (5x R$ 578,17, venc. 10/02/2027).\n" +
+      "Saldo: R$ 50.436,45 (85x R$ 593,37, venc. 10/07/2027).\n" +
+      "Assinado via ZapSign em 20/09/2026 (doc 0830fcbf-9ee8-4de7-8147-e1ee3d38afee).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
+      "Estado civil Casado, cônjuge 'Não informado' no contrato.\n" +
+      "Andar 1. Área privativa 73,67 m², área total 131,41 m². 2 quartos."
+  },
+
+  // ── Ficha 212 ── João Gabriel dos Santos Freitas — Salinas Beach Resort (Bloco 1/1114/Cota 13)
+  {
+    id: "40827-joao-gabriel-dos-santos-freitas-sbr-bl01-1114-cota-13",
+    empresa: "GAV",
+    razaoSocial: "SALINAS BEACH RESORT EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Salinas Beach Resort",
+    localizacao: "PARÁ",
+    cidade: "Salinópolis/PA",
+    bloco: "01",
+    unidade: "1114",
+    cota: "13",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "João Gabriel dos Santos Freitas",
+    cpf: "416.316.528-26",
+    rg: "412885712 SSP/SP",
+    dataNascimento: "26/09/1994",
+    estadoCivil: "União estável",
+    profissao: "Militar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua dos Sombreiros, 21, Vila Militar, Bairro Nova Marabá, Marabá/PA, CEP 68509570",
+    valorTotal: 35848.62,
+    valorPago: 29126.16,
+    entradas: [
+      { descricao: "Corretagem — Cartão Crédito Visa parcelado 5x", valor: 3990.00 },
+      { descricao: "Sinal de Negócio (4x R$ 448,11)", valor: 1792.42 },
+      { descricao: "Parcelas do saldo", valor: 23343.74 }
+    ],
+    formaPagamentoEntrada: "Cartão Crédito Visa parcelado 5x R$ 798 (Cielo, doc 322080)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2022-04-22",
+    telefone: "(12) 997457679",
+    email: "joao.gabriel94@hotmail.com",
+    conjuge: {
+      nome: "Ananda Kelly de Medeiros",
+      cpf: "424.128.408-65",
+      rg: "495597867 SSP/SP",
+      dataNascimento: "17/11/1993",
+      profissao: "Engenheira de Manutenção"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/212-joao-gabriel-dos-santos-freitas--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 29.126,16 — Corretagem R$ 3.990 (cartão 5x) + Sinal R$ 1.792,42 (4x) + Parcelas saldo R$ 23.343,74.\n" +
+      "Corretagem total R$ 3.990,00 (paga integralmente via cartão Visa Cielo, doc 322080).\n" +
+      "Sinal de Negócio: R$ 1.792,42 (4x R$ 448,11, venc. 15/10/2022).\n" +
+      "Saldo: R$ 30.066,20 (68x R$ 442,15, venc. 15/02/2023).\n" +
+      "Assinado via D4Sign em 22/04/2022 (doc 0ffa63f3-6ca1-4d51-bf79-2813daa4d43f). Assinatura presencial.\n" +
+      "FORA DO PRAZO de arrependimento (contrato de 22/04/2022).\n" +
+      "Cônjuge Ananda Kelly de Medeiros (união estável). Email cônjuge: ananmedeiros@hotmail.com, tel: (12) 997984838.\n" +
+      "Andar 11. Área privativa 30 m², área total 61,268 m². 1 quarto."
+  },
+
+  // ── Ficha 213 ── Dianne Patricia Brito Alves de Sousa Silva — Praias do Lago Eco Resort (J/306/Cota 17)
+  {
+    id: "praias-lago-dianne-patricia-j-306-cota-17",
+    empresa: "WAM",
+    razaoSocial: "NG20 EMPREENDIMENTOS IMOBILIÁRIOS S/A",
+    cnpj: "19.829.219/0001-26",
+    empreendimento: "Praias do Lago Eco Resort",
+    localizacao: "GOIÁS",
+    cidade: "Caldas Novas/GO",
+    bloco: "J",
+    unidade: "306",
+    cota: "17",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Dianne Patricia Brito Alves de Sousa Silva",
+    cpf: "046.873.974-25",
+    rg: "3217242 SESP/DF",
+    dataNascimento: "20/06/1980",
+    estadoCivil: "Casado(a)",
+    profissao: "Servidor Público(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Quadra 107, Rua A, Lote 01/02 - Norte (Águas Claras), Brasília/DF, CEP 71920710",
+    valorTotal: 51726.75,
+    valorPago: 26280.00,
+    entradas: [
+      { descricao: "Intermediação — Depósito/Transferência", valor: 3500.00 },
+      { descricao: "Intermediação — Cartão Crédito Cielo 10x", valor: 1780.00 },
+      { descricao: "Depósito em favor da WAM (fora do contrato)", valor: 21000.00 }
+    ],
+    formaPagamentoEntrada: "Depósito/TED R$ 3.500 + Cartão Crédito Cielo 10x R$ 178",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-19",
+    telefone: "(61) 98472-0696",
+    email: "diannepbas@gmail.com",
+    conjuge: {
+      nome: "Vagner Barbosa Chaves",
+      cpf: "815.815.561-87",
+      rg: "1472740 SSP/DF",
+      dataNascimento: "02/06/1977",
+      profissao: "Servidor Público(a)"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/213-dianne-patricia-brito-alves-de-sousa-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 26.280,00 — Intermediação R$ 5.280 (Depósito R$ 3.500 + Cartão 10x R$ 178) + R$ 21.000 depósito fora do contrato.\n" +
+      "Intermediação R$ 5.280,00 devida à WAM Comercialização S.A. (CNPJ 17.919.649/0001-03).\n" +
+      "Preço da Cota: R$ 46.446,75 — 3x R$ 50 boleto (venc. 15/08/2026) + 88x R$ 526,10 boleto (venc. 10/11/2026).\n" +
+      "Contrato assinado em Caldas Novas, 19/07/2026. Contrato físico escaneado (sem D4Sign/GSign).\n" +
+      "FORA DO PRAZO de arrependimento (contrato de 19/07/2026, venceu 26/07/2026).\n" +
+      "Regime de bens: comunhão parcial. Cônjuge Vagner Barbosa Chaves, email: vaheed2006@gmail.com, tel: (61) 99152-1805.\n" +
+      "3 semanas de uso por ano. Passaporte Náutico Praia Clube incluído.\n" +
+      "TOTAL: 4 COTAS a cancelar (este é 1 de 4 contratos). Faltam PDFs dos outros 3.\n" +
+      "R$ 21.000,00 pagos FORA DO CONTRATO (depositado em favor da WAM, não consta nos contratos) + condomínios.\n" +
+      "Protocolo cancelamento: 2026092355933. Solicitado por Vagner Chaves em 23/09/2026 via suporte@wamgroup.club."
+  },
+
+  // ── Ficha 214 ── Wislem Alves Santana — Resort do Lago (Bloco E/110/Cota PL/A2)
+  {
+    id: "316321-wislem-alves-santana-rdl-e-110-cota-pla2",
+    empresa: "WAM",
+    razaoSocial: "SPE RESORT DO LAGO CALDAS NOVAS LTDA.",
+    cnpj: "20.269.496/0001-00",
+    empreendimento: "Resort do Lago",
+    localizacao: "GOIÁS",
+    cidade: "Caldas Novas/GO",
+    bloco: "E",
+    unidade: "110",
+    cota: "PL/A2",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Wislem Alves Santana",
+    cpf: "013.874.891-86",
+    rg: "01387489186 SSP/GO",
+    dataNascimento: "17/01/1982",
+    estadoCivil: "Casado(a)",
+    profissao: "Outra",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "",
+    valorTotal: 21804.13,
+    valorPago: 300.00,
+    entradas: [
+      { descricao: "Intermediação — TED/DOC/Depósito", valor: 300.00 }
+    ],
+    formaPagamentoEntrada: "TED/Depósito R$ 300 + Boleto Itaú 5x R$ 300 (nenhum quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-19",
+    telefone: "(62) 99396-2837",
+    email: "dhaiannedr34@gmail.com",
+    conjuge: {
+      nome: "Daiane da Silva Carvalho",
+      cpf: "037.934.841-14",
+      rg: "03793484114 SSP/GO",
+      dataNascimento: "28/03/1996",
+      profissao: "Arquiteto(a)"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/214-wislem-alves-santana--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 300,00 — TED/DOC/Depósito intermediação.\n" +
+      "Boleto intermediação 5x R$ 300 (R$ 1.500) — nenhum quitado. Se pago, valorPago sobe pra R$ 1.800.\n" +
+      "Intermediação R$ 1.800,00 devida à WAM Comercialização SA (CNPJ 17.919.649/0004-56).\n" +
+      "Preço da Cota: R$ 20.004,13 — 3x R$ 50 boleto (venc. 15/10/2026) + 60x R$ 330,90 boleto (venc. 15/01/2027).\n" +
+      "Assinado via GSign em 19/09/2026 (doc OB9HUY5YHU-NF3S7WC-1EGD6P36QPKKBW-P6RPF).\n" +
+      "DENTRO DO PRAZO de arrependimento — vence em 26/09/2026.\n" +
+      "Regime de bens: comunhão parcial. Cônjuge Daiane da Silva Carvalho, email: wislemalves0117@gmail.com.\n" +
+      "ATENÇÃO: emails parecem trocados no contrato — buyer email 'dhaiannedr34' (parece da cônjuge Daiane), cônjuge email 'wislemalves0117' (parece do buyer Wislem).\n" +
+      "Endereço não consta no quadro-resumo. 1 semana de uso por ano. Empreendimento ENTREGUE."
+  },
+
+  // ── Ficha 215 ── Julio Cesar Della Croce — Porto 2 Life Resort (Bloco 03/0411/Cota 01)
+  {
+    id: "174000-julio-cesar-della-croce-p2lr-bl03-0411-cota-01",
+    empresa: "GAV",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "PERNAMBUCO",
+    cidade: "Ipojuca/PE",
+    bloco: "03",
+    unidade: "0411",
+    cota: "01",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Julio Cesar Della Croce",
+    cpf: "153.046.938-41",
+    rg: "21776834 SSP/SP",
+    dataNascimento: "27/05/1972",
+    estadoCivil: "Casado(a)",
+    profissao: "Policial Militar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Canção do Novo Mundo, 16, Bairro Itaquera, São Paulo/SP, CEP 08257040",
+    valorTotal: 57981.64,
+    valorPago: 21388.32,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 500.00 },
+      { descricao: "Corretagem — Cartão Crédito Master à vista", valor: 500.00 },
+      { descricao: "Corretagem — Boleto 4x R$ 747,50", valor: 2990.00 },
+      { descricao: "Sinal de Negócio (4x R$ 724,77)", valor: 2899.08 },
+      { descricao: "Parcelas do saldo (21x R$ 690,44)", valor: 14499.24 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 500 + Cartão Crédito Master R$ 500 + Boleto 4x R$ 747,50",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2024-03-20",
+    telefone: "(11) 988368714",
+    email: "dellacroce69@yahoo.com.br",
+    conjuge: {
+      nome: "Valquíria Lacerda Della Croce",
+      cpf: "186.125.648-59",
+      rg: "27.066.540-7 SSP/SP",
+      dataNascimento: "28/08/1975",
+      profissao: "Do lar"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/215-julio-cesar-della-croce--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "VALOR PAGO = R$ 21.388,32 — Corretagem R$ 3.990 (PIX R$ 500 + Cartão R$ 500 + Boleto 4x R$ 747,50) + Sinal R$ 2.899,08 (4x) + Saldo 21x R$ 690,44 (R$ 14.499,24).\n" +
+      "Corretagem total R$ 3.990,00.\n" +
+      "Sinal de Negócio: R$ 2.899,08 (4x R$ 724,77, venc. 15/09/2024).\n" +
+      "Saldo: R$ 51.092,56 (74x R$ 690,44, venc. 15/01/2025).\n" +
+      "Assinado via D4Sign em 20/03/2024 em Maragogi/AL (doc f77af33d-4d20-4a0f-a44a-f43cdf45de66).\n" +
+      "FORA DO PRAZO de arrependimento (contrato de 20/03/2024).\n" +
+      "Cônjuge Valquíria Lacerda Della Croce, tel: (11) 942589018.\n" +
+      "Andar 3. Área privativa 32,54 m², área total 69,89 m². 1 quarto."
   }
 ];
