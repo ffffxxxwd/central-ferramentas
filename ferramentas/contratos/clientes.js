@@ -11264,5 +11264,47 @@ window.CLIENTES = [
       "FORA DO PRAZO de arrependimento (contrato de 20/03/2024).\n" +
       "Cônjuge Valquíria Lacerda Della Croce, tel: (11) 942589018.\n" +
       "Andar 3. Área privativa 32,54 m², área total 69,89 m². 1 quarto."
+  },
+
+  // ── Ficha 216 ── Ataine Aparecida Santiago Fernandes (ficha mínima pra distrato)
+  {
+    id: "ataine-aparecida-santiago-fernandes",
+    empresa: "GAV",
+    razaoSocial: "",
+    cnpj: "",
+    empreendimento: "",
+    localizacao: "",
+    cidade: "",
+    bloco: "",
+    unidade: "",
+    cota: "",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Ataine Aparecida Santiago Fernandes",
+    cpf: "014.346.601-17",
+    rg: "",
+    dataNascimento: "",
+    estadoCivil: "",
+    profissao: "",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "",
+    valorTotal: 0,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Valor pago", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-10",
+    telefone: "",
+    email: "",
+    conjuge: null,
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "FICHA MÍNIMA — criada apenas para gerar distrato.\n" +
+      "Valor total pago: R$ 1.000,00. Data da compra: 10/09/2026.\n" +
+      "Dados incompletos — preencher quando contrato disponível."
   }
 ];
