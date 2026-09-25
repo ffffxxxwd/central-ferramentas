@@ -11270,8 +11270,8 @@ window.CLIENTES = [
   {
     id: "ataine-aparecida-santiago-fernandes",
     empresa: "GAV",
-    razaoSocial: "",
-    cnpj: "",
+    razaoSocial: "GAV RESORTS EMPREENDIMENTOS IMOBILIÁRIOS LTDA",
+    cnpj: "45.298.124/0001-33",
     empreendimento: "",
     localizacao: "",
     cidade: "",
@@ -11306,5 +11306,455 @@ window.CLIENTES = [
       "FICHA MÍNIMA — criada apenas para gerar distrato.\n" +
       "Valor total pago: R$ 1.000,00. Data da compra: 10/09/2026.\n" +
       "Dados incompletos — preencher quando contrato disponível."
+  },
+
+  // ── Ficha 217 ── Lays Lucena Tavares Barros (1 de 2)
+  {
+    id: "lays-lucena-tavares-barros-1",
+    empresa: "GAV",
+    razaoSocial: "GAV MARAGOGI EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "Maragogi/AL",
+    cidade: "Maragogi/AL",
+    bloco: "01",
+    unidade: "041",
+    cota: "04",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lays Lucena Tavares Barros",
+    cpf: "322.287.638-02",
+    rg: "506837956 SSP/SP",
+    dataNascimento: "2000-04-19",
+    estadoCivil: "Casado(a)",
+    profissao: "Médica",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Oscar Gomes de Oliveira, 564, Moradas do Porto, Santa Candida, Curitiba/PR, CEP 82720-540",
+    valorTotal: 35742.82,
+    valorPago: 1995.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão Master ****7079 (5x R$ 399,00) — CV 179243914", valor: 1995.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master crédito parcelado 5x R$ 399,00",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-22",
+    telefone: "(18) 98120-1508",
+    email: "laystavares@live.com",
+    conjuge: {
+      nome: "Augusto Moraes",
+      cpf: "110.743.659-17",
+      rg: "142860465 SESP/PR",
+      dataNascimento: "2001-01-11",
+      profissao: "Médico",
+      nacionalidade: "Brasileiro(a)",
+      telefone: "(41) 99596-1032",
+      email: "augusto11moraes@gmail.com"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/217-lays-lucena-tavares-barros-1--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 2 — mesma compradora.\n" +
+      "Bloco 01 / UH 041 / Cota 04. Contrato 361251.\n" +
+      "Corretagem: 1 transação de R$ 3.990,00 (CV 179243914) cobre os 2 contratos (R$ 1.995 cada).\n" +
+      "Sinal R$ 1.787,14 (4x, vence 05/03/2027) e Saldo R$ 31.960,68 (68x, vence 05/07/2027) — não pagos.\n" +
+      "DENTRO DO PRAZO — assinado 22/09/2026, vence 29/09/2026.\n" +
+      "ZapSign contrato 1: assinatura do cônjuge Augusto PENDENTE."
+  },
+
+  // ── Ficha 218 ── Lays Lucena Tavares Barros (2 de 2)
+  {
+    id: "lays-lucena-tavares-barros-2",
+    empresa: "GAV",
+    razaoSocial: "GAV MARAGOGI EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "Maragogi/AL",
+    cidade: "Maragogi/AL",
+    bloco: "02",
+    unidade: "021",
+    cota: "13",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lays Lucena Tavares Barros",
+    cpf: "322.287.638-02",
+    rg: "506837956 SSP/SP",
+    dataNascimento: "2000-04-19",
+    estadoCivil: "Casado(a)",
+    profissao: "Médica",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Oscar Gomes de Oliveira, 564, Moradas do Porto, Santa Candida, Curitiba/PR, CEP 82720-540",
+    valorTotal: 36880.91,
+    valorPago: 1995.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão Master ****7079 (5x R$ 399,00) — CV 179243914", valor: 1995.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master crédito parcelado 5x R$ 399,00",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-22",
+    telefone: "(18) 98120-1508",
+    email: "laystavares@live.com",
+    conjuge: {
+      nome: "Augusto Moraes",
+      cpf: "110.743.659-17",
+      rg: "142860465 SESP/PR",
+      dataNascimento: "2001-01-11",
+      profissao: "Médico",
+      nacionalidade: "Brasileiro(a)",
+      telefone: "(41) 99596-1032",
+      email: "augusto11moraes@gmail.com"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/218-lays-lucena-tavares-barros-2--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 2 — mesma compradora.\n" +
+      "Bloco 02 / UH 021 / Cota 13. Contrato 361250.\n" +
+      "Corretagem: 1 transação de R$ 3.990,00 (CV 179243914) cobre os 2 contratos (R$ 1.995 cada).\n" +
+      "Sinal R$ 1.844,03 (4x, vence 05/03/2027) e Saldo R$ 33.041,88 (68x, vence 05/07/2027) — não pagos.\n" +
+      "DENTRO DO PRAZO — assinado 22/09/2026, vence 29/09/2026.\n" +
+      "ZapSign contrato 2: totalmente assinado (5 de 5 assinaturas)."
+  },
+
+  // ── Ficha 219 ── Savio Rangel de Assis Lemos
+  {
+    id: "savio-rangel-de-assis-lemos",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    localizacao: "Gramado/RS",
+    cidade: "Gramado/RS",
+    bloco: "05",
+    unidade: "205",
+    cota: "16",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Savio Rangel de Assis Lemos",
+    cpf: "080.336.673-62",
+    rg: "6140208759 SSP/RS",
+    dataNascimento: "2001-08-15",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua D, 50, Casa, Belem Velho, Porto Alegre/RS, CEP 91787-285",
+    valorTotal: 57817.32,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX R$ 1.000,00 (Mercado Pago, 20/09/2026) — Nº RESV8814280106108450KHJI3FZJ6E45278", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (corretagem)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-20",
+    telefone: "(51) 99212-9879",
+    email: "juliarogerpin@icloud.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/219-savio-rangel-de-assis-lemos--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato 361019 — Gran Haus Resort, Bloco 05 / Apto 205 / Cota 16.\n" +
+      "Corretagem total R$ 4.490,00: PIX R$ 1.000,00 (pago 20/09) + Boleto 4x R$ 872,50 (venc. 10/10/2026 — não pagos).\n" +
+      "Sinal R$ 2.890,87 (5x R$ 578,17, venc. 10/02/2027) e Saldo R$ 50.436,45 (85x R$ 593,37, venc. 10/07/2027) — não pagos.\n" +
+      "Cônjuge não informado no contrato.\n" +
+      "DENTRO DO PRAZO — assinado 20/09/2026, vence 27/09/2026.\n" +
+      "ZapSign totalmente assinado (4 de 4 assinaturas, 20/09/2026)."
+  },
+
+  // ── Ficha 220 ── Hiago Rodrigues de Souza Leal
+  {
+    id: "hiago-rodrigues-de-souza-leal",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    localizacao: "Cruz/CE",
+    cidade: "Cruz/CE",
+    bloco: "02",
+    unidade: "322",
+    cota: "19",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Hiago Rodrigues de Souza Leal",
+    cpf: "046.144.253-13",
+    rg: "2817320 SSP/DF",
+    dataNascimento: "1994-03-02",
+    estadoCivil: "União estável",
+    profissao: "Engenheiro(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Quadra EPTG QE 2 Bloco A-13, SN, Apto 204, Quadras Econômicas Lúcio Costa Guará, Brasília/DF, CEP 71100-063",
+    valorTotal: 58029.88,
+    valorPago: 1598.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão Débito VISA Electron ****9276 (CV 24763424, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Corretagem — Boleto 1/5 (venc. 10/09/2026)", valor: 598.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Débito VISA Electron R$ 1.000,00 + Boleto 5x R$ 598,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-10",
+    telefone: "(61) 98165-2093",
+    email: "hiagolealeng9@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/220-hiago-rodrigues-de-souza-leal--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato 354170 — Jeriquiá Lagoa Resort, Bloco 02 / Apto 322 / Cota 19.\n" +
+      "Corretagem total R$ 3.990,00: Cartão Débito R$ 1.000,00 (CV 24763424) + Boleto 5x R$ 598,00 (venc. 10/09/2026).\n" +
+      "ATENÇÃO: recibo débito mostra R$ 2.000,00 (CV 24763424) mas contrato aloca R$ 1.000,00 — possível 2º contrato com mesma transação.\n" +
+      "Boleto 1ª parcela (10/09/2026) vencida — contabilizada. Demais 4 boletos não vencidos.\n" +
+      "Sinal R$ 2.901,48 (4x R$ 725,37, venc. 10/02/2027) e Saldo R$ 51.138,40 (80x R$ 639,23, venc. 10/06/2027) — não pagos.\n" +
+      "Cônjuge não informado (estado civil: união estável).\n" +
+      "FORA DO PRAZO — assinado 10/08/2026, venceu 17/08/2026.\n" +
+      "ZapSign totalmente assinado (4 de 4 assinaturas, 10/08/2026)."
+  },
+
+  // ── Ficha 221 ── Lucilene Engelmann Lisbinski (3 de 3)
+  {
+    id: "lucilene-engelmann-lisbinski-3",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "Maragogi/AL",
+    cidade: "Maragogi/AL",
+    bloco: "01",
+    unidade: "037",
+    cota: "29",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Lucilene Engelmann Lisbinski",
+    cpf: "978.805.070-00",
+    rg: "1068959401 SJS/RS",
+    dataNascimento: "1982-04-23",
+    estadoCivil: "Casado(a)",
+    profissao: "Advogado(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro Chácara, Eldorado do Sul/RS, CEP 92990-000",
+    valorTotal: 35742.70,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Corretagem — Boleto R$ 2.985,00 (venc. 25/09/2026)", valor: 2985.00 },
+      { descricao: "Corretagem — Cartão Crédito à Vista VISA ****7417 (CV 174583658, 21/09/2026)", valor: 1005.00 }
+    ],
+    formaPagamentoEntrada: "Boleto R$ 2.985,00 + Cartão Crédito à Vista VISA R$ 1.005,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-21",
+    telefone: "(51) 98426-4140",
+    email: "luengelmann@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/221-lucilene-engelmann-lisbinski-3--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 3 DE 3 — mesma compradora (fichas 208-209 anteriores).\n" +
+      "Contrato 361066 — Oikos Maragogi Resort, Bloco 01 / UH 037 / Cota 29.\n" +
+      "Corretagem total R$ 3.990,00: Boleto R$ 2.985,00 (venc. 25/09/2026) + Cartão Crédito à Vista VISA R$ 1.005,00 (CV 174583658, 21/09/2026).\n" +
+      "Sinal R$ 1.787,14 (4x R$ 446,78, venc. 05/11/2026) e Saldo R$ 29.965,56 (68x R$ 440,67, venc. 05/03/2027) — não pagos.\n" +
+      "Cônjuge não informado no contrato.\n" +
+      "DENTRO DO PRAZO — assinado 21/09/2026, vence 28/09/2026.\n" +
+      "ZapSign totalmente assinado (4 de 4 assinaturas, 21/09/2026)."
+  },
+
+  // ── Ficha 222 ── Nayara Costa da Silva (1 de 4)
+  {
+    id: "nayara-costa-da-silva-1",
+    empresa: "WAM",
+    razaoSocial: "Consórcio Dom Pedro Laguna",
+    cnpj: "43.740.923/0001-92",
+    empreendimento: "Hotel Dom Pedro Laguna",
+    localizacao: "Aquiraz/CE",
+    cidade: "Aquiraz/CE",
+    bloco: "T1301",
+    unidade: "",
+    cota: "11",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Nayara Costa da Silva",
+    cpf: "057.549.373-93",
+    rg: "5515814 MTE/CE",
+    dataNascimento: "1991-12-18",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Do Lar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Travessa Felismino Filho, 1335, Várzea da Matriz, Aracati/CE, CEP 62800-388",
+    valorTotal: 35026.27,
+    valorPago: 3700.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.950,00", valor: 1950.00 },
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.750,00", valor: 1750.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-12",
+    telefone: "(88) 98230-0993",
+    email: "marcos_nayara2020@hotmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/222-nayara-costa-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 1 DE 4 — mesma compradora (fichas 222-225).\n" +
+      "Contrato 04-T1.301/11 — Hotel Dom Pedro Laguna, Bloco T1301 / Cota 11, Water Villas 1Q.\n" +
+      "CDU R$ 31.326,27 — Fidelização 6x R$ 50,00 (venc. 15/10/2026, não vencidas) + Saldo 80x R$ 387,83 (venc. 20/04/2027) — nenhuma parcela paga.\n" +
+      "Corretagem R$ 3.700,00: Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00). Beneficiária: W7 Brasil Negócios Inteligentes Ltda.\n" +
+      "FORA DO PRAZO — assinado 12/09/2026, venceu 19/09/2026.\n" +
+      "GSign totalmente assinado (12/09/2026)."
+  },
+
+  // ── Ficha 223 ── Nayara Costa da Silva (2 de 4)
+  {
+    id: "nayara-costa-da-silva-2",
+    empresa: "WAM",
+    razaoSocial: "Consórcio Dom Pedro Laguna",
+    cnpj: "43.740.923/0001-92",
+    empreendimento: "Hotel Dom Pedro Laguna",
+    localizacao: "Aquiraz/CE",
+    cidade: "Aquiraz/CE",
+    bloco: "T1302",
+    unidade: "",
+    cota: "07",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Nayara Costa da Silva",
+    cpf: "057.549.373-93",
+    rg: "5515814 MTE/CE",
+    dataNascimento: "1991-12-18",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Do Lar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Travessa Felismino Filho, 1335, Várzea da Matriz, Aracati/CE, CEP 62800-388",
+    valorTotal: 35026.27,
+    valorPago: 3700.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.950,00", valor: 1950.00 },
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.750,00", valor: 1750.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-12",
+    telefone: "(88) 98230-0993",
+    email: "marcos_nayara2020@hotmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/223-nayara-costa-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 2 DE 4 — mesma compradora (fichas 222-225).\n" +
+      "Contrato 02-T1.302/07 — Hotel Dom Pedro Laguna, Bloco T1302 / Cota 07, Water Villas 1Q.\n" +
+      "CDU R$ 31.326,27 — Fidelização 6x R$ 50,00 (venc. 15/10/2026, não vencidas) + Saldo 80x R$ 387,83 (venc. 20/04/2027) — nenhuma parcela paga.\n" +
+      "Corretagem R$ 3.700,00: Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00). Beneficiária: W7 Brasil Negócios Inteligentes Ltda.\n" +
+      "FORA DO PRAZO — assinado 12/09/2026, venceu 19/09/2026.\n" +
+      "GSign totalmente assinado (12/09/2026)."
+  },
+
+  // ── Ficha 224 ── Nayara Costa da Silva (3 de 4)
+  {
+    id: "nayara-costa-da-silva-3",
+    empresa: "WAM",
+    razaoSocial: "Consórcio Dom Pedro Laguna",
+    cnpj: "43.740.923/0001-92",
+    empreendimento: "Hotel Dom Pedro Laguna",
+    localizacao: "Aquiraz/CE",
+    cidade: "Aquiraz/CE",
+    bloco: "T1401",
+    unidade: "",
+    cota: "12",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Nayara Costa da Silva",
+    cpf: "057.549.373-93",
+    rg: "5515814 MTE/CE",
+    dataNascimento: "1991-12-18",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Do Lar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Travessa Felismino Filho, 1335, Várzea da Matriz, Aracati/CE, CEP 62800-388",
+    valorTotal: 35026.27,
+    valorPago: 3700.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.950,00", valor: 1950.00 },
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.750,00", valor: 1750.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-12",
+    telefone: "(88) 98230-0993",
+    email: "marcos_nayara2020@hotmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/224-nayara-costa-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 3 DE 4 — mesma compradora (fichas 222-225).\n" +
+      "Contrato 01-T1.401/12 — Hotel Dom Pedro Laguna, Bloco T1401 / Cota 12, Water Villas 1Q.\n" +
+      "CDU R$ 31.326,27 — Fidelização 6x R$ 50,00 (venc. 15/10/2026, não vencidas) + Saldo 80x R$ 387,83 (venc. 20/04/2027) — nenhuma parcela paga.\n" +
+      "Corretagem R$ 3.700,00: Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00). Beneficiária: W7 Brasil Negócios Inteligentes Ltda.\n" +
+      "FORA DO PRAZO — assinado 12/09/2026, venceu 19/09/2026.\n" +
+      "GSign totalmente assinado (12/09/2026)."
+  },
+
+  // ── Ficha 225 ── Nayara Costa da Silva (4 de 4)
+  {
+    id: "nayara-costa-da-silva-4",
+    empresa: "WAM",
+    razaoSocial: "Consórcio Dom Pedro Laguna",
+    cnpj: "43.740.923/0001-92",
+    empreendimento: "Hotel Dom Pedro Laguna",
+    localizacao: "Aquiraz/CE",
+    cidade: "Aquiraz/CE",
+    bloco: "T1302",
+    unidade: "",
+    cota: "02",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Nayara Costa da Silva",
+    cpf: "057.549.373-93",
+    rg: "5515814 MTE/CE",
+    dataNascimento: "1991-12-18",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Do Lar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Travessa Felismino Filho, 1335, Várzea da Matriz, Aracati/CE, CEP 62800-388",
+    valorTotal: 35026.27,
+    valorPago: 3700.00,
+    entradas: [
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.950,00", valor: 1950.00 },
+      { descricao: "Corretagem — Cartão de Crédito Cielo 1x R$ 1.750,00", valor: 1750.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-12",
+    telefone: "(88) 98230-0993",
+    email: "marcos_nayara2020@hotmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/225-nayara-costa-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "CONTRATO 4 DE 4 — mesma compradora (fichas 222-225).\n" +
+      "Contrato 07-T1.302/02 — Hotel Dom Pedro Laguna, Bloco T1302 / Cota 02, Water Villas 1Q.\n" +
+      "CDU R$ 31.326,27 — Fidelização 6x R$ 50,00 (venc. 15/10/2026, não vencidas) + Saldo 80x R$ 387,83 (venc. 20/04/2027) — nenhuma parcela paga.\n" +
+      "Corretagem R$ 3.700,00: Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00). Beneficiária: W7 Brasil Negócios Inteligentes Ltda.\n" +
+      "FORA DO PRAZO — assinado 12/09/2026, venceu 19/09/2026.\n" +
+      "GSign totalmente assinado (12/09/2026)."
   }
 ];

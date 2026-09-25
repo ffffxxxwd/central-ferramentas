@@ -1930,7 +1930,16 @@
 
     aplicarClausula(box, doc, clausula);
 
-    return box.innerHTML;
+    var resultado = box.innerHTML;
+    // Quando campo vazio (ficou "—"), reescreve o trecho pra ficar limpo
+    resultado = resultado.replace(/titular da CI\/RG <b[^>]*>—<\/b> e do CPF:/g, "titular do CPF:");
+    resultado = resultado.replace(/ do Edifício <b[^>]*>—<\/b>,/g, ",");
+    resultado = resultado.replace(/ localizado em <b[^>]*>—<\/b>,/g, "");
+    resultado = resultado.replace(/ de propriedade da empresa <b[^>]*>—<\/b>, inscrita no CNPJ sob o nº <b[^>]*>—<\/b>/g, "");
+    resultado = resultado.replace(/ do <span[^>]*>(?:<b[^>]*>—<\/b>(?:, nominado |[^<])*)+<\/span>/g, "");
+    resultado = resultado.replace(/,\s*\./g, ".");
+    resultado = resultado.replace(/\s{2,}/g, " ");
+    return resultado;
   }
 
   // cláusulas entram como parágrafos logo abaixo do valor.
