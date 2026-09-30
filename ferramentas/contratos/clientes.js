@@ -10071,7 +10071,7 @@ window.CLIENTES = [
     id: "hfcp-erikes-vianna-233-cota-14",
     vispiId: "",
     nContrato: "",
-    empresa: "Chalé",
+    empresa: "WAM",
     razaoSocial: "CHALE CONSTRUTORA E INCORPORADORA LTDA",
     cnpj: "04.733.546/0001-02",
     empreendimento: "Hotel Fazenda China Park",
@@ -10092,12 +10092,13 @@ window.CLIENTES = [
     nacionalidade: "Brasileiro",
     endereco: "Rua Alcides Simões, 50, Camurugi, Guarapari/ES, CEP 29210342",
     valorTotal: 50820.00,
-    valorPago: 3300.00,
+    valorPago: 32025.14,
     entradas: [
-      { descricao: "Corretagem — cartão crédito (Cielo)", valor: 3300.00 }
+      { descricao: "Corretagem — cartão crédito (Cielo) R$ 3.300,00", valor: 3300.00 },
+      { descricao: "Parcelas boleto Condomínio Chalé 2 (53 parcelas, mai/2022 a set/2026)", valor: 28725.14 }
     ],
-    formaPagamentoEntrada: "Cartão Crédito (Cielo) — 3x R$ 500 + 1x R$ 266,68 + 2x R$ 266,66 + 1x R$ 333,34 + 2x R$ 333,33 = R$ 3.300",
-    formaReembolso: "Estorno Cartão",
+    formaPagamentoEntrada: "Cartão Crédito (Cielo) R$ 3.300 (corretagem) + Boleto 53 parcelas quitadas R$ 28.725,14 (Condomínio Chalé 2, título 1273766)",
+    formaReembolso: "Reembolso + Estorno",
     dataAssinatura: "2022-04-17",
     telefone: "(27) 99885-5383 / (27) 99689-2430",
     email: "Erikesvianna@gmail.com",
@@ -10111,8 +10112,8 @@ window.CLIENTES = [
     ],
     pix: "",
     observacoes:
-      "VALOR PAGO = R$ 3.300,00 (corretagem/sinal) — todo via cartão de crédito (Cielo), parcelado em múltiplas transações.\n" +
-      "Empresa vendedora: CHALE CONSTRUTORA E INCORPORADORA LTDA (CNPJ 04.733.546/0001-02) — NÃO é GAV nem WAM.\n" +
+      "VALOR PAGO = R$ 32.025,14 — corretagem R$ 3.300 (cartão crédito Cielo) + 53 parcelas boleto R$ 28.725,14 (Condomínio Chalé 2, extrato 09/09/2026).\n" +
+      "Empresa vendedora: CHALE CONSTRUTORA E INCORPORADORA LTDA (CNPJ 04.733.546/0001-02) — grupo WAM.\n" +
       "Empreendimento: Hotel Fazenda China Park / Condomínio Chalé 2.\n" +
       "Preço total de venda: R$ 50.820,00 (entrada/corretagem R$ 3.300 + saldo R$ 47.520).\n" +
       "FORA DO PRAZO — contrato 17/04/2022, prazo arrependimento venceu 24/04/2022.\n" +
@@ -10793,13 +10794,13 @@ window.CLIENTES = [
     nacionalidade: "Brasileiro(a)",
     endereco: "Travessa SN 01, 27, Almir Gabriel, Capanema/PA, CEP 68703380",
     valorTotal: 26183.45,
-    valorPago: 1995.00,
+    valorPago: 3990.00,
     entradas: [
-      { descricao: "Corretagem — PIX", valor: 500.00 },
-      { descricao: "Corretagem — Cartão Crédito Master 5x R$ 100", valor: 500.00 },
-      { descricao: "Corretagem — Cartão Crédito Master 5x R$ 199", valor: 995.00 }
+      { descricao: "Corretagem — PIX Nubank R$ 1.000,00", valor: 1000.00 },
+      { descricao: "Corretagem — Cartão Crédito Master Santander 5x R$ 200,00 (final 3805)", valor: 1000.00 },
+      { descricao: "Corretagem — Cartão Crédito Master Nubank 5x R$ 398,00 (final 4684)", valor: 1990.00 }
     ],
-    formaPagamentoEntrada: "PIX R$ 500 + Cartão Crédito 5x R$ 100 + Cartão Crédito 5x R$ 199",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (Nubank) + Cartão Crédito Master 5x R$ 200,00 (Santander, final 3805) + Cartão Crédito Master 5x R$ 398,00 (Nubank, final 4684)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-09-20",
     telefone: "(91) 992458011",
@@ -10811,122 +10812,21 @@ window.CLIENTES = [
     pix: "",
     clausulaExtra:
       "O presente cancelamento decorre exclusivamente do exercício do direito de arrependimento previsto no art. 49 do Código de Defesa do Consumidor, exercido dentro do prazo legal e contratual de 7 (sete) dias, não se tratando de simples distrato ou desistência convencional.\n" +
-      "Valores pagos pelos ADQUIRENTES: (i) PIX corretagem R$ 500,00; (ii) Cartão de Crédito Mastercard 5x R$ 100,00 = R$ 500,00 (doc 26671744); (iii) Cartão de Crédito Mastercard 5x R$ 199,00 = R$ 995,00 (doc 27233108). Total efetivamente pago: R$ 1.995,00.\n" +
-      "A VENDEDORA restituirá integralmente todos os valores pagos, no montante de R$ 1.995,00, incluindo os valores relativos à comissão de corretagem, conforme previsto na Cláusula I.6 do contrato, por se tratar de exercício do direito de arrependimento dentro do prazo legal.\n" +
+      "Valores pagos pelos ADQUIRENTES: (i) PIX R$ 1.000,00 (Nubank); (ii) Cartão de Crédito Mastercard Santander 5x R$ 200,00 = R$ 1.000,00 (final 3805, CV 26671744); (iii) Cartão de Crédito Mastercard Nubank 5x R$ 398,00 = R$ 1.990,00 (final 4684, CV 27233108). Total efetivamente pago: R$ 3.990,00.\n" +
+      "A VENDEDORA restituirá integralmente todos os valores pagos, no montante de R$ 3.990,00, incluindo os valores relativos à comissão de corretagem, conforme previsto na Cláusula I.6 do contrato, por se tratar de exercício do direito de arrependimento dentro do prazo legal.\n" +
       "Ficam canceladas todas as cobranças futuras relacionadas à presente contratação, incluindo parcelas do sinal de negócio, saldo devedor e quaisquer outras obrigações decorrentes do contrato.\n" +
       "A quitação mútua entre as partes somente produzirá seus efeitos após a efetiva restituição integral dos valores devidos aos ADQUIRENTES.",
     observacoes:
-      "VALOR PAGO = R$ 1.995,00 (corretagem total) — PIX R$ 500 + Cartão Crédito Master R$ 500 (5x100, doc 26671744) + Cartão Crédito Master R$ 995 (5x199, doc 27233108).\n" +
-      "Nº Documento PIX: RESN4795180050 918060VZGVLIEYE 8FEA31.\n" +
-      "Cartão crédito parcelado = valor cheio.\n" +
-      "Forma reembolso: PIX é o instrumento principal (listado primeiro). Cartão R$ 1.495 precisaria Estorno — CONFERIR como tratar pagamento misto.\n" +
-      "Corretagem total R$ 1.995,00 (11 parcelas). Beneficiários: Jessica Rodrigues (27434285000125), Fadel Incorporações (34872782000170), Simara Silva Rachid (53245160000167).\n" +
-      "Sinal de Negócio: R$ 1.309,17 (4x R$ 327,29, venc. 10/03/2027).\n" +
-      "Saldo: R$ 22.879,28 (68x R$ 336,46, venc. 10/07/2027).\n" +
-      "Assinado via ZapSign em 20/09/2026 (doc 9b9b1ef1-fc59-4b44-9715-ccd308da8502).\n" +
-      "DENTRO DO PRAZO de arrependimento — vence em 27/09/2026.\n" +
-      "Cônjuge: Maria Cristina Barros Queiroz, CPF 008.692.732-99, RG 6330318 PC/PA, Assistente Administrativo, nasc. 21/11/1989, tel (91) 989923942.\n" +
-      "Andar 7. Área privativa 54,8 m², área total 99,37 m²."
-  },
-
-  // ── Ficha 208 ── Lucilene Engelmann Lisbinski — Porto Alto Resort (Bl 03/0221/Cota 05)
-  {
-    id: "361065-lucilene-engelmann-lisbinski-par-bl03-0221-cota-05",
-    empresa: "GAV",
-    razaoSocial: "GAV MURO ALTO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
-    cnpj: "34.832.326/0001-05",
-    empreendimento: "Porto Alto Resort",
-    localizacao: "PERNAMBUCO",
-    cidade: "Ipojuca/PE",
-    bloco: "03",
-    unidade: "0221",
-    cota: "05",
-    fracao: "1/52",
-    checkIn: "",
-    checkOut: "",
-    nome: "Lucilene Engelmann Lisbinski",
-    cpf: "978.805.070-00",
-    rg: "1068959401 SJS/RS",
-    dataNascimento: "23/04/1982",
-    estadoCivil: "Casado(a)",
-    profissao: "Advogada",
-    nacionalidade: "Brasileiro(a)",
-    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro chacara, Eldorado do Sul/RS, CEP 92990000",
-    valorTotal: 67647.57,
-    valorPago: 1000.00,
-    entradas: [
-      { descricao: "Corretagem — Cartão Crédito Visa à vista", valor: 1000.00 }
-    ],
-    formaPagamentoEntrada: "Boleto R$ 2.990 (venc. 25/09) + Cartão Crédito Visa R$ 1.000",
-    formaReembolso: "Reembolso",
-    dataAssinatura: "2026-09-21",
-    telefone: "(51) 984264140",
-    email: "luengelmann@gmail.com",
-    conjuge: null,
-    arquivos: [
-      { titulo: "Contrato", arquivo: "contratos-pdf/208-lucilene-engelmann-lisbinski--contrato.pdf" }
-    ],
-    pix: "",
-    observacoes:
-      "VALOR PAGO = R$ 1.000,00 (corretagem parcial) — Cartão Crédito Visa à vista (doc 174777202).\n" +
-      "Boleto corretagem R$ 2.990 vencimento 25/09/2026 — NÃO confirmado como pago (vence em 3 dias). Se pago, valorPago sobe pra R$ 3.990.\n" +
-      "Corretagem total R$ 3.990,00.\n" +
-      "Sinal de Negócio: R$ 3.382,37 (4x R$ 845,59, venc. 05/11/2026).\n" +
-      "Saldo: R$ 60.275,20 (68x R$ 886,40, venc. 05/03/2027).\n" +
-      "Assinado via ZapSign em 21/09/2026 (doc 48a10748-8946-438f-b636-919f6efb3e83).\n" +
-      "DENTRO DO PRAZO de arrependimento — vence em 28/09/2026.\n" +
-      "Estado civil Casada, cônjuge 'Não informado' no contrato.\n" +
-      "Andar 2. Área privativa 32,54 m², área total 64,54 m²."
-  },
-
-  // ── Ficha 209 ── Lucilene Engelmann Lisbinski — Oikos Maragogi Resort (2º contrato: Bl 01/037/Cota 29)
-  {
-    id: "361066-lucilene-engelmann-lisbinski-omr-bl01-037-cota-29",
-    empresa: "GAV",
-    razaoSocial: "GAV MARAGOGI EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
-    cnpj: "39.757.445/0001-56",
-    empreendimento: "Oikos Maragogi Resort",
-    localizacao: "ALAGOAS",
-    cidade: "Maragogi/AL",
-    bloco: "01",
-    unidade: "037",
-    cota: "29",
-    fracao: "1/52",
-    checkIn: "",
-    checkOut: "",
-    nome: "Lucilene Engelmann Lisbinski",
-    cpf: "978.805.070-00",
-    rg: "1068959401 SJS/RS",
-    dataNascimento: "23/04/1982",
-    estadoCivil: "Casado(a)",
-    profissao: "Advogada",
-    nacionalidade: "Brasileiro(a)",
-    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro chacara, Eldorado do Sul/RS, CEP 92990000",
-    valorTotal: 35742.70,
-    valorPago: 1005.00,
-    entradas: [
-      { descricao: "Corretagem — Cartão Crédito Visa à vista", valor: 1005.00 }
-    ],
-    formaPagamentoEntrada: "Boleto R$ 2.985 (venc. 25/09) + Cartão Crédito Visa R$ 1.005",
-    formaReembolso: "Reembolso",
-    dataAssinatura: "2026-09-21",
-    telefone: "(51) 984264140",
-    email: "luengelmann@gmail.com",
-    conjuge: null,
-    arquivos: [
-      { titulo: "Contrato", arquivo: "contratos-pdf/209-lucilene-engelmann-lisbinski--contrato.pdf" }
-    ],
-    pix: "",
-    observacoes:
-      "2º CONTRATO da mesma compradora (ver ficha 208 — Porto Alto Resort, Bl 03/0221/Cota 05).\n" +
-      "VALOR PAGO = R$ 1.005,00 (corretagem parcial) — Cartão Crédito Visa à vista (doc 174583658).\n" +
-      "Boleto corretagem R$ 2.985 vencimento 25/09/2026 — NÃO confirmado como pago. Se pago, valorPago sobe pra R$ 3.990.\n" +
-      "Corretagem total R$ 3.990,00.\n" +
-      "Sinal de Negócio: R$ 1.787,14 (4x R$ 446,78, venc. 05/11/2026).\n" +
-      "Saldo: R$ 29.965,56 (68x R$ 440,67, venc. 05/03/2027).\n" +
-      "Assinado via ZapSign em 21/09/2026 (doc 104240fb-5c79-4041-b61c-95ed21132b1d).\n" +
-      "DENTRO DO PRAZO de arrependimento — vence em 28/09/2026.\n" +
-      "Andar T. Área privativa 36,41 m², área total 100,43 m²."
+      "Contrato 361026 — Park Gav Resorts, Torre Maçarico / Apt 705 / Cota 2D, 1 Quarto.\n" +
+      "VALOR PAGO = R$ 3.990,00 — PIX R$ 1.000 (Nubank) + Cartão Crédito Master Santander 5x R$ 200 = R$ 1.000 (final 3805, CV 26671744) + Cartão Crédito Master Nubank 5x R$ 398 = R$ 1.990 (final 4684, CV 27233108).\n" +
+      "Nº Documento PIX: RESN4795180050918060VZGVLIEYE8FEA31.\n" +
+      "Proposta de venda credita metade (R$ 1.995) — valores reais confirmados pelos comprovantes.\n" +
+      "Sinal de Negócio: R$ 1.309,17 (4x R$ 327,29, venc. 10/03/2027, não pagas).\n" +
+      "Saldo: R$ 22.879,28 (68x R$ 336,46, venc. 10/07/2027, não pagas).\n" +
+      "Beneficiários corretagem: Jessica Rodrigues, Fadel Incorporações (34872782000170), Simara Silva Rachid.\n" +
+      "DENTRO DO PRAZO — assinado 20/09/2026, vence 27/09/2026.\n" +
+      "ZapSign assinado (20/09/2026, doc 9b9b1ef1-fc59-4b44-9715-ccd308da8502).\n" +
+      "Cônjuge: Maria Cristina Barros Queiroz, CPF 008.692.732-99, RG 6330318 PC/PA, Assistente Administrativo, nasc. 21/11/1989, tel (91) 989923942."
   },
 
   // ── Ficha 210 ── Vitoria Rafaela da Silva Dutra — Gran Garden Resort (Bloco C1/104A/Cota 22)
@@ -11517,55 +11417,6 @@ window.CLIENTES = [
       "ZapSign totalmente assinado (4 de 4 assinaturas, 10/08/2026)."
   },
 
-  // ── Ficha 221 ── Lucilene Engelmann Lisbinski (3 de 3)
-  {
-    id: "lucilene-engelmann-lisbinski-3",
-    empresa: "GAV",
-    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda",
-    cnpj: "39.757.445/0001-56",
-    empreendimento: "Oikos Maragogi Resort",
-    localizacao: "Maragogi/AL",
-    cidade: "Maragogi/AL",
-    bloco: "01",
-    unidade: "037",
-    cota: "29",
-    fracao: "1/52",
-    checkIn: "",
-    checkOut: "",
-    nome: "Lucilene Engelmann Lisbinski",
-    cpf: "978.805.070-00",
-    rg: "1068959401 SJS/RS",
-    dataNascimento: "1982-04-23",
-    estadoCivil: "Casado(a)",
-    profissao: "Advogado(a)",
-    nacionalidade: "Brasileiro(a)",
-    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro Chácara, Eldorado do Sul/RS, CEP 92990-000",
-    valorTotal: 35742.70,
-    valorPago: 3990.00,
-    entradas: [
-      { descricao: "Corretagem — Boleto R$ 2.985,00 (venc. 25/09/2026)", valor: 2985.00 },
-      { descricao: "Corretagem — Cartão Crédito à Vista VISA ****7417 (CV 174583658, 21/09/2026)", valor: 1005.00 }
-    ],
-    formaPagamentoEntrada: "Boleto R$ 2.985,00 + Cartão Crédito à Vista VISA R$ 1.005,00",
-    formaReembolso: "Reembolso",
-    dataAssinatura: "2026-09-21",
-    telefone: "(51) 98426-4140",
-    email: "luengelmann@gmail.com",
-    conjuge: "",
-    arquivos: [
-      { titulo: "Contrato", arquivo: "contratos-pdf/221-lucilene-engelmann-lisbinski-3--contrato.pdf" }
-    ],
-    pix: "",
-    observacoes:
-      "CONTRATO 3 DE 3 — mesma compradora (fichas 208-209 anteriores).\n" +
-      "Contrato 361066 — Oikos Maragogi Resort, Bloco 01 / UH 037 / Cota 29.\n" +
-      "Corretagem total R$ 3.990,00: Boleto R$ 2.985,00 (venc. 25/09/2026) + Cartão Crédito à Vista VISA R$ 1.005,00 (CV 174583658, 21/09/2026).\n" +
-      "Sinal R$ 1.787,14 (4x R$ 446,78, venc. 05/11/2026) e Saldo R$ 29.965,56 (68x R$ 440,67, venc. 05/03/2027) — não pagos.\n" +
-      "Cônjuge não informado no contrato.\n" +
-      "DENTRO DO PRAZO — assinado 21/09/2026, vence 28/09/2026.\n" +
-      "ZapSign totalmente assinado (4 de 4 assinaturas, 21/09/2026)."
-  },
-
   // ── Ficha 222 ── Nayara Costa da Silva (1 de 4)
   {
     id: "nayara-costa-da-silva-1",
@@ -11756,5 +11607,1052 @@ window.CLIENTES = [
       "Corretagem R$ 3.700,00: Cartão de Crédito Cielo (1x R$ 1.950,00 + 1x R$ 1.750,00). Beneficiária: W7 Brasil Negócios Inteligentes Ltda.\n" +
       "FORA DO PRAZO — assinado 12/09/2026, venceu 19/09/2026.\n" +
       "GSign totalmente assinado (12/09/2026)."
+  },
+
+  // ── Ficha 226 ── Wislem Alves Santana
+  {
+    id: "wislem-alves-santana",
+    empresa: "WAM",
+    razaoSocial: "SPE Resort do Lago Caldas Novas Ltda",
+    cnpj: "20.269.496/0001-00",
+    empreendimento: "Resort do Lago",
+    localizacao: "Caldas Novas/GO",
+    cidade: "Caldas Novas/GO",
+    bloco: "E",
+    unidade: "110",
+    cota: "PL/A2",
+    fracao: "1/52",
+    checkIn: "",
+    checkOut: "",
+    nome: "Wislem Alves Santana",
+    cpf: "013.874.891-86",
+    rg: "01387489186 SSP/GO",
+    dataNascimento: "1982-01-17",
+    estadoCivil: "Casado(a)",
+    profissao: "Outra",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "",
+    valorTotal: 21804.13,
+    valorPago: 300.00,
+    entradas: [
+      { descricao: "Intermediação — TED/DOC/Depósito 1x R$ 300,00", valor: 300.00 }
+    ],
+    formaPagamentoEntrada: "TED/DOC/Depósito R$ 300,00 + 5x R$ 300,00 Boleto Itaú",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-19",
+    telefone: "(62) 99396-2837",
+    email: "dhaiannedr34@gmail.com",
+    conjuge: "Daiane da Silva Carvalho (CPF 037.934.841-14, RG 03793484114 SSP/GO, Arquiteta, nasc. 28/03/1996)",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/226-wislem-alves-santana--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato 316321 — Resort do Lago (ENTREGUE), Bloco E / 110 / Cota PL/A2.\n" +
+      "Regime de bens: Comunhão Parcial. E-mail cônjuge: wislemalves0117@gmail.com.\n" +
+      "Cota R$ 20.004,13: Fidelização 3x R$ 50,00 (boleto, venc. 15/10/2026, não vencidas) + Saldo 60x R$ 330,90 (boleto, venc. 15/01/2027).\n" +
+      "Intermediação R$ 1.800,00: 1x R$ 300,00 TED/DOC/Depósito (pago) + 5x R$ 300,00 Boleto Itaú. Intermediadora: WAM Comercialização SA (CNPJ 17.919.649/0004-56).\n" +
+      "Adquirente NÃO conheceu pessoalmente o empreendimento.\n" +
+      "DENTRO DO PRAZO — assinado 19/09/2026, vence 26/09/2026.\n" +
+      "GSign assinado (19/09/2026)."
+  },
+
+  // ── Ficha 227 ── Andresa Lucas Carvalho Lourenço dos Santos (PONTOS)
+  {
+    id: "andresa-lucas-carvalho-pontos",
+    empresa: "GAV",
+    razaoSocial: "GAV TS Administração Unipessoal Ltda",
+    cnpj: "47.008.570/0001-91",
+    empreendimento: "GAV TS Time Share (Pontos)",
+    localizacao: "Salinópolis/PA",
+    cidade: "Alvorada/RS",
+    bloco: "",
+    unidade: "",
+    cota: "",
+    fracao: "",
+    checkIn: "",
+    checkOut: "",
+    nome: "Andresa Lucas Carvalho Lourenço dos Santos",
+    cpf: "968.529.500-00",
+    rg: "5076600864 SSP/RS",
+    dataNascimento: "1978-06-30",
+    estadoCivil: "Casado(a)",
+    profissao: "Cuidador de Idosos",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Pelotas, 178, Casa, Aparecida, Alvorada/RS, CEP 94853-030",
+    valorTotal: 12900.00,
+    valorPago: 215.00,
+    entradas: [
+      { descricao: "Sinal — Cartão de Crédito Master à vista R$ 215,00 (final 8534)", valor: 215.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito Mastercard à vista R$ 215,00 (final 8534, CV 32272424)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-06",
+    telefone: "(51) 98966-9140",
+    email: "desadosul@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/227-andresa-lucas-carvalho--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato de PONTOS nº 100.000-005429 (nº 63315) — GAV TS Time Share, 100.000 pontos, prazo 5 anos.\n" +
+      "Sinal R$ 215,00: Cartão Crédito Mastercard à vista (final 8534, CV 32272424, AUTE 930907). CNPJ: 47.008.570/0001-91.\n" +
+      "Saldo R$ 12.685,00 em 59x R$ 215,00 boleto (venc. 05/11/2026, não pagas).\n" +
+      "Sala de vendas: Gramado - Noite. Liner/Closer/PEP: Maristela R. Vieira. Líder: Kathyane Dicioneli.\n" +
+      "Cônjuge consta como casada mas dados do cônjuge em branco.\n" +
+      "FORA DO PRAZO — assinado 06/09/2026, venceu 13/09/2026.\n" +
+      "ZapSign assinado (06/09/2026, doc 8abccde2-d321-4fac-8067-a5d483732c23)."
+  },
+
+  // ── Ficha 228 — Joice Larissa Barbosa da Silva (contrato 1/2) ──
+  {
+    id: 228,
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    localizacao: "Av. Moema Cavalcante Bastos, nº 23 e Rua Denison Flores Corretor, nº 53, Barra Mar, Barra de São Miguel/AL, CEP 57.180-000",
+    nome: "Joice Larissa Barbosa da Silva",
+    cpf: "481.558.598-94",
+    rg: "381962891 SSP/SP",
+    dataNascimento: "1997-09-23",
+    estadoCivil: "União estável",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Avenida Forte do Leme, 680, Apto 22, Parque São Lourenço, São Paulo/SP, CEP 08340-010",
+    bloco: "Bloco 01",
+    unidade: "353",
+    cota: "28",
+    fracao: "1/52",
+    valorTotal: 29104.57,
+    valorPago: 665.00,
+    entradas: [
+      { descricao: "Corretagem — PIX R$ 665,00 (Nº Doc RESV2013940094845425J14IUKNYBAF8D8B)", valor: 665.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 665,00 (corretagem, 25/09/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-25",
+    telefone: "(11) 94942-7891",
+    email: "joicebarbosaaa58@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/228-joice-larissa-barbosa-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361761 — Areya Barra Resort, Bloco 01 / Apt 353 / Cota 28 / Andar 3.\n" +
+      "Corretagem R$ 1.995,00: PIX R$ 665,00 (pago 25/09/2026) + Boleto 4x R$ 332,50 (venc. 25/10/2026, não pagos).\n" +
+      "Sinal R$ 1.455,25 em 4x R$ 363,81 (venc. 05/02/2027). Saldo R$ 25.654,32 em 74x R$ 346,68 (venc. 05/06/2027).\n" +
+      "Recibo PIX R$ 1.330,00 (CV 43990892, 25/09/2026 20h36) — total dos 2 contratos (R$ 665 cada).\n" +
+      "2 contratos mesma pessoa: ficha 228 (Apt 353/Cota 28) e ficha 229 (Apt 350/Cota 51).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign assinado (25/09/2026 21:43:12, doc 7e2eee38-0132-4d68-9def-d9eef63ad6c0)."
+  },
+
+  // ── Ficha 229 — Joice Larissa Barbosa da Silva (contrato 2/2) ──
+  {
+    id: 229,
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    localizacao: "Av. Moema Cavalcante Bastos, nº 23 e Rua Denison Flores Corretor, nº 53, Barra Mar, Barra de São Miguel/AL, CEP 57.180-000",
+    nome: "Joice Larissa Barbosa da Silva",
+    cpf: "481.558.598-94",
+    rg: "381962891 SSP/SP",
+    dataNascimento: "1997-09-23",
+    estadoCivil: "União estável",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Avenida Forte do Leme, 680, Apto 22, Parque São Lourenço, São Paulo/SP, CEP 08340-010",
+    bloco: "Bloco 01",
+    unidade: "350",
+    cota: "51",
+    fracao: "1/52",
+    valorTotal: 29104.57,
+    valorPago: 665.00,
+    entradas: [
+      { descricao: "Corretagem — PIX R$ 665,00 (Nº Doc RESV2013940094845425J14IUKNYBAF8D8B)", valor: 665.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 665,00 (corretagem, 25/09/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-25",
+    telefone: "(11) 94942-7891",
+    email: "joicebarbosaaa58@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/229-joice-larissa-barbosa-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361760 — Areya Barra Resort, Bloco 01 / Apt 350 / Cota 51 / Andar 3.\n" +
+      "Corretagem R$ 1.995,00: PIX R$ 665,00 (pago 25/09/2026) + Boleto 4x R$ 332,50 (venc. 25/10/2026, não pagos).\n" +
+      "Sinal R$ 1.455,25 em 4x R$ 363,81 (venc. 05/02/2027). Saldo R$ 25.654,32 em 74x R$ 346,68 (venc. 05/06/2027).\n" +
+      "Recibo PIX R$ 1.330,00 (CV 43990892, 25/09/2026 20h36) — total dos 2 contratos (R$ 665 cada).\n" +
+      "2 contratos mesma pessoa: ficha 228 (Apt 353/Cota 28) e ficha 229 (Apt 350/Cota 51).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign assinado (25/09/2026 21:43:59, doc 3769e791-65df-443d-9edd-00c4809f265d)."
+  },
+
+  // ── Ficha 230 — Jose Andre da Silva ──
+  {
+    id: 230,
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "Rodovia AL 101 Norte, km 124, nº 600, Bairro de Camacho, Maragogi/AL, CEP 57.955-000",
+    nome: "Jose Andre da Silva",
+    cpf: "732.027.384-53",
+    rg: "40883 SDS/PE",
+    dataNascimento: "1973-03-10",
+    estadoCivil: "Casado(a)",
+    profissao: "Policial militar(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Presidente Costa e Silva, 130, Jardim Primavera, Camaragibe/PE, CEP 54753-400",
+    bloco: "Bloco 01",
+    unidade: "UH 228",
+    cota: "16",
+    fracao: "1/26",
+    valorTotal: 60220.55,
+    valorPago: 2000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX R$ 2.000,00 (CV 202085676, 26/09/2026)", valor: 2000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 2.000,00 (corretagem, 26/09/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-26",
+    telefone: "(81) 98873-6886",
+    email: "adegilsoncassimiro@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/230-jose-andre-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361996 — Oikos Maragogi Resort, Bloco 01 / UH 228 / Cota 16 / Andar 2.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/26).\n" +
+      "Corretagem R$ 3.990,00: PIX R$ 2.000,00 (pago 26/09/2026 23h06) + Boleto 2x R$ 995,00 (venc. 05/11/2026, não pagos).\n" +
+      "Sinal R$ 3.011,03 em 4x R$ 752,76 (venc. 05/01/2027). Saldo R$ 53.219,52 em 68x R$ 782,64 (venc. 05/05/2027).\n" +
+      "Recibo PIX R$ 2.000,00 — GAV Maragogi (CV 202085676, Nº Doc RESN9019400093761171WOTK9P5S5A51131).\n" +
+      "Cônjuge casado(a) mas dados do cônjuge em branco no contrato.\n" +
+      "Proposta assinada em Ipojuca/PE, 26/09/2026.\n" +
+      "DENTRO DO PRAZO — assinado 26/09/2026, vence 03/10/2026.\n" +
+      "ZapSign assinado (26/09/2026 23:59:39, doc 1f4e3bde-4d57-48cd-8e13-1c485193e40d)."
+  },
+
+  // ── Ficha 231 — Liliane Silva da Cunha ──
+  {
+    id: 231,
+    empresa: "GAV",
+    razaoSocial: "E.T.R. Construtora e Incorporadora Ltda",
+    cnpj: "14.194.873/0001-97",
+    empreendimento: "Salinas Park Resort",
+    localizacao: "Salinópolis/PA",
+    nome: "Liliane Silva da Cunha",
+    cpf: "928.604.352-04",
+    rg: "5554691 PC PA",
+    dataNascimento: "1988-09-16",
+    estadoCivil: "União estável",
+    profissao: "Do lar",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Pass Samauma, 59, casa, Pratinha, Belém/PA, CEP 66816310",
+    bloco: "",
+    unidade: "508",
+    cota: "11",
+    fracao: "1/13",
+    valorTotal: 106828.79,
+    valorPago: 31021.25,
+    entradas: [
+      { descricao: "Cartão crédito VISA à vista R$ 1.330,00 (corretagem)", valor: 1330.00 },
+      { descricao: "Boleto corretagem 2x R$ 1.330,00", valor: 2660.00 },
+      { descricao: "Sinal 6x R$ 890,24 (quitado)", valor: 5341.43 },
+      { descricao: "Saldo parcelas pagas (boleto)", valor: 21689.82 }
+    ],
+    formaPagamentoEntrada: "Corretagem R$ 3.990: cartão VISA R$ 1.330 + boleto 2x R$ 1.330 | Sinal R$ 5.341,43: 6x R$ 890,24 (quitado) | Saldo R$ 97.497,36: 114x R$ 855,24 (1ª 05/03/2025) | TOTAL PAGO R$ 31.021,25 (informado pelo cliente)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2024-05-18",
+    telefone: "(91) 99300-2299",
+    email: "li-k5@hotmail.com",
+    conjuge: "Gerson Silva Meireles (CPF 803.074.002-63, RG 4588466 PC PA)",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/231-liliane-silva-da-cunha--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato Salinas Park Resort — Torre Atalaia / Andar 5 / Apt 508 / Cota 11.\n" +
+      "Período de utilização: 4 semanas por ano (fração 1/13, 13 frações por unidade).\n" +
+      "Corretagem R$ 3.990: cartão crédito VISA R$ 1.330 (Nº Doc 690182) + boleto 2x R$ 1.330.\n" +
+      "Sinal R$ 5.341,43 em 6x R$ 890,24 (1ª 05/09/2024). Saldo R$ 97.497,36 em 114x R$ 855,24 (1ª 05/03/2025).\n" +
+      "Cônjuge: Gerson Silva Meireles, CPF 803.074.002-63, RG 4588466 PC PA, nasc 08/01/1984, profissão Aquaviário.\n" +
+      "FORA DO PRAZO — contrato 18/05/2024, prazo arrependimento venceu 25/05/2024.\n" +
+      "D4Sign: doc 6ed11751-9add-4eb9-831e-687a68efe5ef, assinado presencialmente 18/05/2024."
+  },
+
+  // ── Ficha 232 — Jayne de Cassia da Silva Dias ──
+  {
+    id: 232,
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    localizacao: "Salinópolis/PA",
+    nome: "Jayne de Cassia da Silva Dias",
+    cpf: "059.909.233-50",
+    rg: "0407622620109 SESP/MA",
+    dataNascimento: "1994-01-27",
+    estadoCivil: "Casado(a)",
+    profissao: "",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Passagem Vinte e Quatro de Dezembro, 52, Terra Firme, Belém/PA, CEP 66077720",
+    bloco: "Bloco 1",
+    unidade: "0720",
+    cota: "23",
+    fracao: "1/26",
+    valorTotal: 45445.92,
+    valorPago: 1330.00,
+    entradas: [
+      { descricao: "PIX R$ 1.330,00 corretagem (CV 30451774, 26/09/2026)", valor: 1330.00 }
+    ],
+    formaPagamentoEntrada: "Corretagem R$ 3.990: PIX R$ 1.330 (CV 30451774, 26/09/2026) + 2x R$ 1.330 boleto (venc 26/10/2026) | Sinal R$ 2.272,28: 4x R$ 568,07 (1ª 10/12/2026) | Saldo R$ 39.183,64: 68x R$ 576,23 (1ª 10/04/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-26",
+    telefone: "(98) 98530-4764",
+    email: "jayne.silvadias@outlook.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/232-jayne-de-cassia-da-silva-dias--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361873 — Beach GAV Resorts, Bloco 1 / Andar 7 / Apt 0720 / Cota 23.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/26, 26 frações por unidade).\n" +
+      "Corretagem R$ 3.990: PIX R$ 1.330 (CV 30451774, 26/09/2026 13h54) + boleto 2x R$ 1.330 (venc 26/10/2026, não pagos).\n" +
+      "Sinal R$ 2.272,28 em 4x R$ 568,07 (1ª 10/12/2026). Saldo R$ 39.183,64 em 68x R$ 576,23 (1ª 10/04/2027).\n" +
+      "Recibo PIX R$ 1.330 — Beach GAV Resorts (Laranjinha Itaú, CNPJ 33.531.685/0001-51, CV 30451774, ID RESV378985009515824376FIWBKW3EEF21F).\n" +
+      "Casada, cônjuge não informado no contrato.\n" +
+      "DENTRO DO PRAZO — assinado 26/09/2026, vence 03/10/2026.\n" +
+      "ZapSign assinado (26/09/2026 14:39:14, doc f7a95ab2-b0e1-4166-b96c-6f658247ae34)."
+  },
+
+  // ── Ficha 233 — Alanderson Soares Zacarias ──
+  {
+    id: 233,
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    localizacao: "Barra de São Miguel/AL",
+    nome: "Alanderson Soares Zacarias",
+    cpf: "008.136.344-31",
+    rg: "00813634431 SSDS/PE",
+    dataNascimento: "1982-01-08",
+    estadoCivil: "União estável",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Aracaji, 204, Casa, Barro, Recife/PE, CEP 50900360",
+    bloco: "Bloco 01",
+    unidade: "601",
+    cota: "16",
+    fracao: "1/26",
+    valorTotal: 0,
+    valorPago: 0,
+    entradas: [],
+    formaPagamentoEntrada: "",
+    formaReembolso: "",
+    dataAssinatura: "2026-07-20",
+    telefone: "(81) 98514-3031",
+    email: "alandersonsoares149@gmail.com",
+    conjuge: "",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "Contrato nº 349580 — Areya Barra Resort, Bloco 01 / Apt 601 / Cota 16.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/26, 26 frações por unidade).\n" +
+      "FICHA INCOMPLETA — só recebemos Procuração + Termo de Verificação (fotos). Faltam: Proposta de Venda, valores, forma de pagamento, comprovantes.\n" +
+      "RG no documento = mesmo nº do CPF (possível erro do preenchimento).\n" +
+      "FORA DO PRAZO — documentos datados 20/07/2026, prazo venceu 27/07/2026.\n" +
+      "Endereço: Rua Aracaji, 204, Casa, Barro, Recife/PE, CEP 50900360."
+  },
+
+  // ── Ficha 234 — Patricia Caldas — Gran Garden Resort (B2/205/Cota 03) ──
+  {
+    id: 234,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Patricia Caldas",
+    cpf: "032.431.166-43",
+    rg: "MG8252773 SSP/MG",
+    dataNascimento: "1977-01-07",
+    estadoCivil: "Casado(a)",
+    profissao: "Dentista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Ricardo Leite, 81, Nossa Senhora da Conceição, João Monlevade/MG, CEP 35930017",
+    bloco: "Bloco B2",
+    apartamento: "205",
+    andar: "2",
+    cota: "03",
+    fracao: "1/52",
+    valorTotal: 76732.22,
+    valorPago: 4490.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (N.ESTAB. 000000093814895)", valor: 1000.00 },
+      { descricao: "Cartão crédito Mastercard final 5120 R$ 3.166,67", valor: 3166.67 },
+      { descricao: "Cartão crédito Mastercard final 3650 R$ 323,33", valor: 323.33 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 (N.ESTAB. 000000093814895) + Cartão Mastercard final 5120 R$ 3.166,67 + Cartão Mastercard final 3650 R$ 323,33 | Total 6 contratos: PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940 = R$ 26.940",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-09-25",
+    telefone: "(31) 986677541",
+    email: "paticaldas@yahoo.com.br",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/234-patricia-caldas--contrato-cota-03.pdf" },
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361707 — Gran Garden Resort, Torre Bloco B2 / Andar 2 / Apt 205 / Cota 03.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "TOTAL 6 CONTRATOS (361707-361712), fichas 234-239.\n" +
+      "TOTAL PAGO (6 contratos): R$ 26.940 — PIX R$ 6.000 (N.ESTAB. 000000093814895) + Mastercard final 5120 R$ 19.000 + Mastercard final 3650 R$ 1.940. Valor por contrato: R$ 4.490.\n" +
+      "Corretagem DESTE contrato R$ 4.490: PIX R$ 1.000 (RESV0820580093) + Cartão Master crédito parcelado R$ 3.490 (docs 185774688/185726848).\n" +
+      "Sinal R$ 3.836,61 em 5x R$ 767,32 (1ª 10/03/2027). Saldo R$ 68.405,61 em 91x R$ 751,71 (1ª 10/08/2027).\n" +
+      "Inclui contrato de associação ao Select Club e procurações outorgadas.\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "Notificação extrajudicial enviada por e-mail, WhatsApp, carta registrada com AR e protocolo presencial.\n" +
+      "Telefone alternativo: (31) 98667-7542.\n" +
+      "ZapSign doc b3a9808e-c2c4-4b05-9712-29a65f20b3a9."
+  },
+
+  // ── Ficha 235 — Patricia Caldas — Gran Garden Resort (B2/205/Cota 10) ──
+  {
+    id: 235,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Patricia Caldas",
+    cpf: "032.431.166-43",
+    rg: "MG8252773 SSP/MG",
+    dataNascimento: "1977-01-07",
+    estadoCivil: "Casado(a)",
+    profissao: "Dentista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Ricardo Leite, 81, Nossa Senhora da Conceição, João Monlevade/MG, CEP 35930017",
+    bloco: "Bloco B2",
+    apartamento: "205",
+    andar: "2",
+    cota: "10",
+    fracao: "1/52",
+    valorTotal: 76732.22,
+    valorPago: 4490.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (N.ESTAB. 000000093814895)", valor: 1000.00 },
+      { descricao: "Cartão crédito Mastercard final 5120 R$ 3.166,67", valor: 3166.67 },
+      { descricao: "Cartão crédito Mastercard final 3650 R$ 323,33", valor: 323.33 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 (N.ESTAB. 000000093814895) + Cartão Mastercard final 5120 R$ 3.166,67 + Cartão Mastercard final 3650 R$ 323,33 | Total 6 contratos: PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940 = R$ 26.940",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-09-25",
+    telefone: "(31) 986677541",
+    email: "paticaldas@yahoo.com.br",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/235-patricia-caldas--contrato-cota-10.pdf" },
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361709 — Gran Garden Resort, Torre Bloco B2 / Andar 2 / Apt 205 / Cota 10.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "TOTAL 6 CONTRATOS (361707-361712), fichas 234-239. Faltam 361710-361712.\n" +
+      "TOTAL PAGO (6 contratos): R$ 26.940 — PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940. Valor por contrato: R$ 4.490.\n" +
+      "Corretagem DESTE contrato R$ 4.490: PIX R$ 1.000 (RESV0820580093) + Cartão Master crédito parcelado R$ 3.490 (docs 185774688/185726848).\n" +
+      "Sinal R$ 3.836,61 em 5x R$ 767,32 (1ª 10/03/2027). Saldo R$ 68.405,61 em 91x R$ 751,71 (1ª 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign doc d02335c4-de9a-40aa-9fc2-313e4b66e4e8."
+  },
+
+  // ── Ficha 236 — Patricia Caldas — Gran Garden Resort (B2/205/Cota 33) ──
+  {
+    id: 236,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Patricia Caldas",
+    cpf: "032.431.166-43",
+    rg: "MG8252773 SSP/MG",
+    dataNascimento: "1977-01-07",
+    estadoCivil: "Casado(a)",
+    profissao: "Dentista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Ricardo Leite, 81, Nossa Senhora da Conceição, João Monlevade/MG, CEP 35930017",
+    bloco: "Bloco B2",
+    apartamento: "205",
+    andar: "2",
+    cota: "33",
+    fracao: "1/52",
+    valorTotal: 76732.22,
+    valorPago: 4490.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (N.ESTAB. 000000093814895)", valor: 1000.00 },
+      { descricao: "Cartão crédito Mastercard final 5120 R$ 3.166,67", valor: 3166.67 },
+      { descricao: "Cartão crédito Mastercard final 3650 R$ 323,33", valor: 323.33 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 (N.ESTAB. 000000093814895) + Cartão Mastercard final 5120 R$ 3.166,67 + Cartão Mastercard final 3650 R$ 323,33 | Total 6 contratos: PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940 = R$ 26.940",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-09-25",
+    telefone: "(31) 986677541",
+    email: "paticaldas@yahoo.com.br",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/236-patricia-caldas--contrato-cota-33.pdf" },
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361708 — Gran Garden Resort, Torre Bloco B2 / Andar 2 / Apt 205 / Cota 33.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "TOTAL 6 CONTRATOS (361707-361712), fichas 234-239. Faltam 361710-361712.\n" +
+      "TOTAL PAGO (6 contratos): R$ 26.940 — PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940. Valor por contrato: R$ 4.490.\n" +
+      "Corretagem DESTE contrato R$ 4.490: PIX R$ 1.000 (RESV0820580093) + Cartão Master crédito parcelado R$ 3.490 (docs 185774688/185726848).\n" +
+      "Sinal R$ 3.836,61 em 5x R$ 767,32 (1ª 10/03/2027). Saldo R$ 68.405,61 em 91x R$ 751,71 (1ª 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign doc f1b5090d-65a7-4d46-b444-28173f0df90a."
+  },
+
+  // ── Ficha 237 — Patricia Caldas — Gran Garden Resort (B2/202/Cota 11) ──
+  {
+    id: 237,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Patricia Caldas",
+    cpf: "032.431.166-43",
+    rg: "MG8252773 SSP/MG",
+    dataNascimento: "1977-01-07",
+    estadoCivil: "Casado(a)",
+    profissao: "Dentista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Ricardo Leite, 81, Nossa Senhora da Conceição, João Monlevade/MG, CEP 35930017",
+    bloco: "Bloco B2",
+    apartamento: "202",
+    andar: "2",
+    cota: "11",
+    fracao: "1/52",
+    valorTotal: 76732.22,
+    valorPago: 4490.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (N.ESTAB. 000000093814895)", valor: 1000.00 },
+      { descricao: "Cartão crédito Mastercard final 5120 R$ 3.166,67", valor: 3166.67 },
+      { descricao: "Cartão crédito Mastercard final 3650 R$ 323,33", valor: 323.33 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 (N.ESTAB. 000000093814895) + Cartão Mastercard final 5120 R$ 3.166,67 + Cartão Mastercard final 3650 R$ 323,33 | Total 6 contratos: PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940 = R$ 26.940",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-09-25",
+    telefone: "(31) 986677541",
+    email: "paticaldas@yahoo.com.br",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/237-patricia-caldas--contrato-cota-11-apt-202.pdf" },
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361711 — Gran Garden Resort, Torre Bloco B2 / Andar 2 / Apt 202 / Cota 11.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "TOTAL 6 CONTRATOS (361707-361712), fichas 234-239. Total pago R$ 26.940.\n" +
+      "Corretagem DESTE contrato R$ 4.490: PIX R$ 1.000 + Master 5120 R$ 3.166,67 + Master 3650 R$ 323,33.\n" +
+      "Sinal R$ 3.836,61 em 5x R$ 767,32 (1ª 10/03/2027). Saldo R$ 68.405,61 em 91x R$ 751,71 (1ª 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign doc 7127630a-566f-4a48-b5a0-b658fc1d47ea."
+  },
+
+  // ── Ficha 238 — Patricia Caldas — Gran Garden Resort (B2/203/Cota 49) ──
+  {
+    id: 238,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Patricia Caldas",
+    cpf: "032.431.166-43",
+    rg: "MG8252773 SSP/MG",
+    dataNascimento: "1977-01-07",
+    estadoCivil: "Casado(a)",
+    profissao: "Dentista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Ricardo Leite, 81, Nossa Senhora da Conceição, João Monlevade/MG, CEP 35930017",
+    bloco: "Bloco B2",
+    apartamento: "203",
+    andar: "2",
+    cota: "49",
+    fracao: "1/52",
+    valorTotal: 76732.22,
+    valorPago: 4490.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (N.ESTAB. 000000093814895)", valor: 1000.00 },
+      { descricao: "Cartão crédito Mastercard final 5120 R$ 3.166,67", valor: 3166.67 },
+      { descricao: "Cartão crédito Mastercard final 3650 R$ 323,33", valor: 323.33 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 (N.ESTAB. 000000093814895) + Cartão Mastercard final 5120 R$ 3.166,67 + Cartão Mastercard final 3650 R$ 323,33 | Total 6 contratos: PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940 = R$ 26.940",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-09-25",
+    telefone: "(31) 986677541",
+    email: "paticaldas@yahoo.com.br",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/238-patricia-caldas--contrato-cota-49-apt-203.pdf" },
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361710 — Gran Garden Resort, Torre Bloco B2 / Andar 2 / Apt 203 / Cota 49.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "TOTAL 6 CONTRATOS (361707-361712), fichas 234-239. Total pago R$ 26.940.\n" +
+      "Corretagem DESTE contrato R$ 4.490: PIX R$ 1.000 + Master 5120 R$ 3.166,67 + Master 3650 R$ 323,33.\n" +
+      "Sinal R$ 3.836,61 em 5x R$ 767,32 (1ª 10/03/2027). Saldo R$ 68.405,61 em 91x R$ 751,71 (1ª 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign doc 71a6be02-bc9b-4478-a3fd-16ed9cfeedc6."
+  },
+
+  // ── Ficha 239 — Patricia Caldas — Gran Garden Resort (B2/204/Cota 04) ──
+  {
+    id: 239,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Patricia Caldas",
+    cpf: "032.431.166-43",
+    rg: "MG8252773 SSP/MG",
+    dataNascimento: "1977-01-07",
+    estadoCivil: "Casado(a)",
+    profissao: "Dentista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Ricardo Leite, 81, Nossa Senhora da Conceição, João Monlevade/MG, CEP 35930017",
+    bloco: "Bloco B2",
+    apartamento: "204",
+    andar: "2",
+    cota: "04",
+    fracao: "1/52",
+    valorTotal: 76732.22,
+    valorPago: 4490.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (N.ESTAB. 000000093814895)", valor: 1000.00 },
+      { descricao: "Cartão crédito Mastercard final 5120 R$ 3.166,67", valor: 3166.67 },
+      { descricao: "Cartão crédito Mastercard final 3650 R$ 323,33", valor: 323.33 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000 (N.ESTAB. 000000093814895) + Cartão Mastercard final 5120 R$ 3.166,67 + Cartão Mastercard final 3650 R$ 323,33 | Total 6 contratos: PIX R$ 6.000 + Master 5120 R$ 19.000 + Master 3650 R$ 1.940 = R$ 26.940",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-09-25",
+    telefone: "(31) 986677541",
+    email: "paticaldas@yahoo.com.br",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/239-patricia-caldas--contrato-cota-04-apt-204.pdf" },
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361712 — Gran Garden Resort, Torre Bloco B2 / Andar 2 / Apt 204 / Cota 04.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "TOTAL 6 CONTRATOS (361707-361712), fichas 234-239. Total pago R$ 26.940.\n" +
+      "Corretagem DESTE contrato R$ 4.490: PIX R$ 1.000 + Master 5120 R$ 3.166,67 + Master 3650 R$ 323,33.\n" +
+      "Sinal R$ 3.836,61 em 5x R$ 767,32 (1ª 10/03/2027). Saldo R$ 68.405,61 em 91x R$ 751,71 (1ª 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 25/09/2026, vence 02/10/2026.\n" +
+      "ZapSign doc 96254be0-43e7-4420-a7b6-746a5799262e."
+  },
+
+  // ── Ficha 240 — Willian Torres — Gran Haus Resort (Bloco 5/201/Cota 46) ──
+  {
+    id: 240,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliarios SPE Ltda",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    localizacao: "Gramado/RS",
+    nome: "Willian Torres",
+    cpf: "017.737.640-63",
+    rg: "1091147221 SJS/RS",
+    dataNascimento: "1990-05-27",
+    estadoCivil: "União estável",
+    profissao: "Outra",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua São Benedito, 654, Casa, Bom Jesus, Porto Alegre/RS, CEP 91420-530",
+    bloco: "Bloco 5",
+    apartamento: "201",
+    andar: "1",
+    cota: "46",
+    fracao: "1/52",
+    valorTotal: 57817.32,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (CV 184785424, N.ESTAB. 000000106108450)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 15/11/2026, não quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-27",
+    telefone: "(51) 98954-7885",
+    email: "williantorres9090@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/240-willian-torres--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 362146 — Gran Haus Resort, Bloco 5 / Andar 1 / Apt 201 / Cota 46.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "Valor total R$ 57.817,32. Corretagem R$ 4.490 (PIX R$ 1.000 + Boleto 5x R$ 698).\n" +
+      "Sinal R$ 2.890,87 em 5x R$ 578,17 (1ª 10/04/2027). Saldo R$ 50.436,45 em 85x R$ 593,37 (1ª 10/09/2027).\n" +
+      "Boleto corretagem não quitado (1º venc. 15/11/2026) — valorPago somente PIX R$ 1.000.\n" +
+      "DENTRO DO PRAZO — assinado 27/09/2026, vence 04/10/2026.\n" +
+      "ZapSign doc b6d0e5fb-7f84-43ea-9ea1-26bf0eb965d9."
+  },
+
+  // ── Ficha 241 — Rodrigo Octavio Saldanha Leite — Beach GAV Resorts (Bloco 2/1617/Cota 02) ──
+  {
+    id: 241,
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliarios SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    localizacao: "Salinópolis/PA",
+    nome: "Rodrigo Octavio Saldanha Leite",
+    cpf: "635.067.932-68",
+    rg: "27034 PMPA/PA",
+    dataNascimento: "1979-02-08",
+    estadoCivil: "Casado(a)",
+    profissao: "Policial militar(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Joaquim Maciel Vieira, SN, Tropical, Paragominas/PA, CEP 68626-706",
+    bloco: "Bloco 2",
+    apartamento: "1617",
+    andar: "16",
+    cota: "02",
+    fracao: "1/26",
+    valorTotal: 92673.60,
+    valorPago: 1158.42,
+    entradas: [
+      { descricao: "PIX R$ 1.158,42 (CV 21982394, N.ESTAB. 000000095158243)", valor: 1158.42 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.158,42 + Boleto 3x R$ 1.158,42 (1º venc. 10/10/2026, não quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-31",
+    telefone: "(91) 98733-0536",
+    email: "Rodrigo.pmpa@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/241-rodrigo-octavio-saldanha-leite--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 357576 — Beach GAV Resorts, Bloco 2 / Andar 16 / Apt 1617 / Cota 02.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/26).\n" +
+      "Valor total R$ 92.673,60. Corretagem R$ 4.633,68 (PIX R$ 1.158,42 + Boleto 3x R$ 1.158,42).\n" +
+      "Sinal R$ 4.633,68 em 4x R$ 1.158,42 (1ª 10/01/2027). Saldo R$ 83.406,24 em 72x R$ 1.158,42 (1ª 10/05/2027).\n" +
+      "Boleto corretagem não quitado (1º venc. 10/10/2026) — valorPago somente PIX R$ 1.158,42.\n" +
+      "FORA DO PRAZO — assinado 31/08/2026, venceu 07/09/2026 (29 dias desde assinatura).\n" +
+      "POLICIAL MILITAR — profissão declarada no contrato.\n" +
+      "ZapSign doc 13a633bb-9eee-49e9-8ce7-14e72488e451."
+  },
+
+  // ── Ficha 242 — Douglas Oliveira dos Santos — Refúgio das Lontras Pousada (A/215/Cota 07) ──
+  {
+    id: 242,
+    empresa: "WAM",
+    razaoSocial: "Refúgio das Lontras Pousada Empreendimentos Imobiliarios Ltda",
+    cnpj: "41.402.028/0001-32",
+    empreendimento: "Refúgio das Lontras Pousada",
+    localizacao: "Barra de Santo Antônio/AL",
+    nome: "Douglas Oliveira dos Santos",
+    cpf: "040.879.711-80",
+    rg: "30363110 SESP/MT",
+    dataNascimento: "2007-06-01",
+    estadoCivil: "Solteiro",
+    profissao: "Construtor(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Não informado no contrato",
+    bloco: "A",
+    apartamento: "215",
+    andar: "",
+    cota: "07",
+    fracao: "1/26",
+    valorTotal: 46148.53,
+    valorPago: 3950.00,
+    entradas: [
+      { descricao: "Cartão de crédito Cielo 4x R$ 987,50 (intermediação)", valor: 3950.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de crédito Cielo 4x R$ 987,50",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-24",
+    telefone: "(66) 99231-9456",
+    email: "dodidc10@Gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/242-douglas-oliveira-dos-santos--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 316576 — Refúgio das Lontras Pousada, Bloco A / Apt 215 / Cota 07.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/26).\n" +
+      "Preço da cota R$ 42.198,53 + intermediação R$ 3.950 = R$ 46.148,53.\n" +
+      "Cota: Boleto 5x R$ 50 (1º venc. 15/10/2026) + 84x R$ 499,39 (1º venc. 10/03/2027) — nenhum quitado.\n" +
+      "Intermediação: Cartão crédito Cielo 4x R$ 987,50 = R$ 3.950 (WAM Comercialização SA, CNPJ 17.919.649/0001-03).\n" +
+      "DENTRO DO PRAZO — assinado 24/09/2026 (Maceió), vence 01/10/2026.\n" +
+      "GSign doc NFSG60C9UW-D0NRSSF-EQW3MAXZT63LAS-NZRTI."
+  },
+
+  // ── Ficha 243 — Lucilene Engelmann Lisbinski — Oikos Maragogi Resort (Bloco 01/UH 037/Cota 29) ──
+  {
+    id: 243,
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "Maragogi/AL",
+    nome: "Lucilene Engelmann Lisbinski",
+    cpf: "978.805.070-00",
+    rg: "1068959401 SJS/RS",
+    dataNascimento: "1982-04-23",
+    estadoCivil: "Casado(a)",
+    profissao: "Advogado(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Francisca Azevedo da Silva, 460, Bairro Chácara, Eldorado do Sul/RS, CEP 92990-000",
+    bloco: "Bloco 01",
+    apartamento: "UH 037",
+    andar: "T",
+    cota: "29",
+    fracao: "1/52",
+    valorTotal: 35742.70,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Boleto R$ 2.985,00 (venc. 25/09/2026)", valor: 2985.00 },
+      { descricao: "Cartão crédito à vista Visa final 7417 R$ 1.005,00 (CV 174583658)", valor: 1005.00 }
+    ],
+    formaPagamentoEntrada: "Boleto R$ 2.985,00 + Cartão crédito à vista Visa final 7417 R$ 1.005,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-21",
+    telefone: "(51) 98426-4140",
+    email: "luengelmann@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/243-lucilene-engelmann-lisbinski--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361066 — Oikos Maragogi Resort, Bloco 01 / Andar T / UH 037 / Cota 29.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "Corretagem R$ 3.990: Boleto R$ 2.985 (venc. 25/09/2026) + Cartão Visa final 7417 R$ 1.005 (CV 174583658, 21/09/2026).\n" +
+      "Sinal R$ 1.787,14 em 4x R$ 446,78 (1ª 05/11/2026). Saldo R$ 29.965,56 em 68x R$ 440,67 (1ª 05/03/2027).\n" +
+      "FORA DO PRAZO — assinado 21/09/2026, venceu 28/09/2026.\n" +
+      "ZapSign doc 104240fb-5c79-4041-b61c-95ed21132b1d."
+  },
+
+  // ── Ficha 244 — Kaio Brito Oliveira — Oikos Maragogi Resort (Bloco 02/UH 219/Cota 16) ──
+  {
+    id: 244,
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    localizacao: "Maragogi/AL",
+    nome: "Kaio Brito Oliveira",
+    cpf: "346.122.108-24",
+    rg: "38.577.360-2 SSP/SP",
+    dataNascimento: "2000-04-25",
+    estadoCivil: "Casado(a)",
+    profissao: "Engenheiro eletricista",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Sebastiao Advincula da Cunha, 11, Bairro Jardim Eledy, São Paulo/SP, CEP 05856-140",
+    bloco: "Bloco 02",
+    apartamento: "UH 219",
+    andar: "2",
+    cota: "16",
+    fracao: "1/26",
+    valorTotal: 63370.04,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "PIX R$ 1.000,00 (CV 191092958, 24/09/2026)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$ 1.000,00 + Boleto 4x R$ 747,50 (1º venc. 24/10/2026, não quitados)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-24",
+    telefone: "(11) 98515-1491",
+    email: "kaio.o.oliveira@hotmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/244-kaio-brito-oliveira--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361557 — Oikos Maragogi Resort, Bloco 02 / Andar 2 / UH 219 / Cota 16.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/26).\n" +
+      "Corretagem R$ 3.990: PIX R$ 1.000 (CV 191092958, 24/09/2026) + Boleto 4x R$ 747,50 (1º venc. 24/10/2026).\n" +
+      "Sinal R$ 3.168,52 em 4x R$ 792,13 (1ª 10/02/2027). Saldo R$ 56.211,52 em 68x R$ 826,64 (1ª 10/06/2027).\n" +
+      "DENTRO DO PRAZO — assinado 24/09/2026, vence 01/10/2026.\n" +
+      "ZapSign doc 2cb62f84-87d6-4d26-8eb0-b91c73ac0bca."
+  },
+
+  // ── Ficha 245 ─────────────────────────────────────────
+  {
+    id: 245,
+    nome: "Bruno Temotio Ferreira de Brito",
+    cpf: "333.534.828-14",
+    rg: "42.893.753 - SSP/SP",
+    nacionalidade: "Brasileiro",
+    estadoCivil: "Casado",
+    profissao: "Diretoria Financeira/Administrativa",
+    dataNascimento: "1986-07-18",
+    endereco: "Rua Roque Oliveira, CASA 94, Jardim Adriana, Itaquaquecetuba/SP, CEP 08582-225",
+    empresa: "WAM",
+    razaoSocial: "SPE WGSA 02 Empreendimentos Imobiliários S/A",
+    cnpj: "19.924.962/0001-65",
+    empreendimento: "Solar das Águas Park Resort",
+    localizacao: "Olímpia/SP",
+    bloco: "Bloco C",
+    apartamento: "APTO 910",
+    andar: "PAV. 09",
+    cota: "09",
+    fracao: "1/52",
+    valorTotal: 78555.62,
+    valorPago: 63710.00,
+    entradas: [
+      { descricao: "Parcelas boleto (aprox. R$ 63.710, com reajuste INCC/IGPM, mar/2021 a set/2026)", valor: 63710.00 }
+    ],
+    formaPagamentoEntrada: "Boleto 121x R$ 649,22 (1º venc. 15/03/2021)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2020-12-20",
+    telefone: "(11) 97236-5804",
+    email: "brntfb@outlook.com",
+    conjuge: {
+      nome: "Heloiza Ferrarezi Mesquita de Brito",
+      cpf: "369.290.618-83",
+      rg: "43.110.671-X - SSP/SP"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/245-bruno-temotio-ferreira-de-brito--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato de promessa de venda — Solar das Águas Park Resort, Bloco C / PAV. 09 / APTO 910 / Cota 09.\n" +
+      "Vendedora: SPE WGSA 02 Empreendimentos Imobiliários S/A (CNPJ 19.924.962/0001-65).\n" +
+      "Preço total R$ 78.555,62 — sem entrada, sem corretagem preenchida.\n" +
+      "121 parcelas de R$ 649,22 (1º venc. 15/03/2021), sujeitas a reajuste INCC/IGPM.\n" +
+      "valorPago aprox. R$ 63.710,00 (parcelas com reajuste INCC/IGPM, informado pela cliente).\n" +
+      "Cônjuge: Heloiza Ferrarezi Mesquita de Brito, nasc. 25/11/1988, prof. Administrativo/Operacional.\n" +
+      "FORA DO PRAZO — assinado 20/12/2020, arrependimento venceu 27/12/2020."
+  },
+
+  // ── Ficha 246 ─────────────────────────────────────────
+  {
+    id: 246,
+    nome: "Lindomar Paulo da Silva",
+    cpf: "042.132.876-29",
+    rg: "MG7273803 - SSP/MG",
+    nacionalidade: "Brasileiro",
+    estadoCivil: "União Estável",
+    profissao: "Gerente",
+    dataNascimento: "1978-02-16",
+    endereco: "Rua Roque Oliveira — ver contrato (34) 99134-0686",
+    empresa: "WAM",
+    razaoSocial: "SPE Porto Seguro 02 Empreendimentos Imobiliários S.A.",
+    cnpj: "22.059.167/0001-60",
+    empreendimento: "Ondas Praia Resort",
+    localizacao: "Porto Seguro/BA",
+    bloco: "Bloco A",
+    apartamento: "A238",
+    andar: "",
+    cota: "22",
+    fracao: "1/26",
+    valorTotal: 62663.17,
+    valorPago: 1390.90,
+    entradas: [
+      { descricao: "Cartão crédito Cielo R$ 765,00 (intermediação)", valor: 765.00 },
+      { descricao: "Cartão crédito recorrente 1ª parcela R$ 625,90 (intermediação)", valor: 625.90 }
+    ],
+    formaPagamentoEntrada: "Cartão crédito Cielo 1x R$ 765,00 + Crédito recorrente 11x R$ 625,90 (intermediação R$ 7.650)\nCota: Boleto 5x R$ 50 (1º venc. 15/10/2026) + 96x R$ 650,14 (1º venc. 20/03/2027) — nenhuma vencida",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-23",
+    telefone: "(34) 99134-0686 / (34) 99179-5544",
+    email: "lindomar@engap.com.br",
+    conjuge: {
+      nome: "Carla de Almeida Alexandre",
+      cpf: "046.410.476-93",
+      rg: "04641047693 - SSP/MG"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/246-lindomar-paulo-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato 1 de 2 — Ondas Praia Resort, Bloco A / A238 / Cota 22.\n" +
+      "2 semanas de uso por ano (fração 1/26).\n" +
+      "Preço da cota R$ 62.663,17 + Intermediação R$ 7.650,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Intermediação: cartão crédito Cielo 1x R$ 765,00 + crédito recorrente 11x R$ 625,90.\n" +
+      "Parcelas cota: 5x R$ 50 boleto (1º 15/10/2026) + 96x R$ 650,14 boleto (1º 20/03/2027) — nenhuma paga.\n" +
+      "Cônjuge: Carla de Almeida Alexandre, nasc. 25/11/1981, enfermeira, email carlajulia2003@yahoo.com.br.\n" +
+      "Não conheceu o empreendimento pessoalmente.\n" +
+      "DENTRO DO PRAZO — assinado 23/09/2026, vence 30/09/2026 (HOJE).\n" +
+      "GSign doc OM8DNMP7MP-FWT0MQR-KN48GCT0MP8F4V-1V82L."
+  },
+
+  // ── Ficha 247 ─────────────────────────────────────────
+  {
+    id: 247,
+    nome: "Lindomar Paulo da Silva",
+    cpf: "042.132.876-29",
+    rg: "MG7273803 - SSP/MG",
+    nacionalidade: "Brasileiro",
+    estadoCivil: "União Estável",
+    profissao: "Gerente",
+    dataNascimento: "1978-02-16",
+    endereco: "Rua Roque Oliveira — ver contrato (34) 99134-0686",
+    empresa: "WAM",
+    razaoSocial: "SPE Porto Seguro 02 Empreendimentos Imobiliários S.A.",
+    cnpj: "22.059.167/0001-60",
+    empreendimento: "Ondas Praia Resort",
+    localizacao: "Porto Seguro/BA",
+    bloco: "Bloco C",
+    apartamento: "C205",
+    andar: "",
+    cota: "15",
+    fracao: "1/26",
+    valorTotal: 62663.17,
+    valorPago: 1390.90,
+    entradas: [
+      { descricao: "Cartão crédito Cielo R$ 765,00 (intermediação)", valor: 765.00 },
+      { descricao: "Cartão crédito recorrente 1ª parcela R$ 625,90 (intermediação)", valor: 625.90 }
+    ],
+    formaPagamentoEntrada: "Cartão crédito Cielo 1x R$ 765,00 + Crédito recorrente 11x R$ 625,90 (intermediação R$ 7.650)\nCota: Boleto 5x R$ 50 (1º venc. 15/10/2026) + 96x R$ 650,14 (1º venc. 20/03/2027) — nenhuma vencida",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-23",
+    telefone: "(34) 99134-0686 / (34) 99179-5544",
+    email: "lindomar@engap.com.br",
+    conjuge: {
+      nome: "Carla de Almeida Alexandre",
+      cpf: "046.410.476-93",
+      rg: "04641047693 - SSP/MG"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/247-lindomar-paulo-da-silva--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato 2 de 2 — Ondas Praia Resort, Bloco C / C205 / Cota 15.\n" +
+      "2 semanas de uso por ano (fração 1/26).\n" +
+      "Preço da cota R$ 62.663,17 + Intermediação R$ 7.650,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Intermediação: cartão crédito Cielo 1x R$ 765,00 + crédito recorrente 11x R$ 625,90.\n" +
+      "Parcelas cota: 5x R$ 50 boleto (1º 15/10/2026) + 96x R$ 650,14 boleto (1º 20/03/2027) — nenhuma paga.\n" +
+      "Cônjuge: Carla de Almeida Alexandre, nasc. 25/11/1981, enfermeira, email carlajulia2003@yahoo.com.br.\n" +
+      "Não conheceu o empreendimento pessoalmente.\n" +
+      "DENTRO DO PRAZO — assinado 23/09/2026, vence 30/09/2026 (HOJE).\n" +
+      "GSign doc CDB6UPFCQV-5CC39MA-DD6DTFAQ9R5T6D-SR6ON."
   }
 ];

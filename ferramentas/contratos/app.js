@@ -154,7 +154,7 @@
     var o = {};
     ["id", "nome", "cpf", "rg", "nacionalidade", "estadoCivil", "empreendimento", "bloco",
      "apartamento", "andar", "cota", "fracao", "localizacao", "empresa", "razaoSocial", "cnpj",
-     "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "pix", "clausulaExtra", "observacoes", "notaEnvio"].forEach(function (k) {
+     "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "pix", "clausulaExtra", "observacoes", "notaEnvio", "profissao"].forEach(function (k) {
       o[k] = txt(c[k]);
     });
     ["valorPago", "valorTotal", "corretagem", "sinal"].forEach(function (k) { o[k] = c[k]; });
@@ -408,6 +408,7 @@
           (arq ? '<span class="tag arq">arquivado</span>' : "") +
           (pago ? '<span class="tag pago-tag">pago</span>' : "") +
           (ehPendente(c.id) ? '<span class="tag pend">aguardando contrato</span>' : "") +
+          (/policial/i.test(c.profissao) ? '<span class="tag policial">POLICIAL</span>' : "") +
           '<span class="ficha__data">' + esc(dataBR(c.dataAssinatura)) + "</span>" +
           '<button type="button" class="ficha__acao" data-arquivar="' + esc(c.id) + '" data-arq="' + (arq ? "1" : "0") + '">' +
             (arq ? "Reabrir" : "Arquivar") +
@@ -875,7 +876,7 @@
       apartamento: d.unidade || "",
       andar: d.andar || "",
       cota: d.cota || "",
-      fracao: d.fracao || "1/52",
+      fracao: d.fracao || "",
       localizacao: d.local || "",
       razaoSocial: d.razaoSocial || "",
       cnpj: d.cnpj || "",
@@ -1214,6 +1215,115 @@
     return { texto: texto, tel: telDigitos(cs[0]), telFmt: txt(cs[0].telefone) };
   }
 
+  /* ---------- Falta contrato (pedir o anexo que esqueceram) ---------- */
+  function montarFaltaContrato(cs) {
+    var um = cs.length === 1;
+    var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
+
+    var quemAssina = signatarios(cs);
+    var destinos = [];
+    quemAssina.forEach(function (p) {
+      if (p.email && destinos.indexOf(p.email) < 0) destinos.push(p.email);
+    });
+
+    var saudacao = quemAssina.length === 1
+      ? "Prezado(a) " + nomeProprio(quemAssina[0].nome) + ","
+      : "Prezados(as) " + juntarNomes(quemAssina.map(function (p) { return nomeProprio(p.nome); })) + ",";
+
+    var corpo =
+      saudacao + "\n\n" +
+      "Recebemos sua solicitação de distrato, porém não identificamos o contrato em anexo no e-mail.\n\n" +
+      "Para que possamos dar andamento ao processo, pedimos que envie em resposta a este e-mail:\n\n" +
+      "1. O contrato de compra e venda (PDF assinado);\n" +
+      "2. Comprovantes de pagamento, se houver.\n\n" +
+      "Assim que recebermos a documentação, daremos sequência ao seu pedido.\n\n" +
+      "Qualquer dúvida, é só responder este e-mail.\n\n" +
+      "Atenciosamente,";
+
+    var quem = (um || mesmaPessoa)
+      ? nomeProprio(cs[0].nome)
+      : cs.map(function (c) { return nomeProprio(c.nome); }).join(" e ");
+
+    var assunto = "Re: Solicitação de distrato — " + quem + " — falta contrato em anexo";
+
+    return { assunto: assunto, corpo: corpo, destinos: destinos };
+  }
+
+  function montarFaltaContratoWhats(cs) {
+    var um = cs.length === 1;
+    var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
+
+    var quem = (um || mesmaPessoa)
+      ? primeiroNome(cs[0].nome)
+      : cs.map(function (c) { return primeiroNome(c.nome); }).join(" e ");
+
+    var texto =
+      "Olá, " + quem + "! Tudo bem?\n\n" +
+      "Recebi sua solicitação de distrato, mas não veio o contrato em anexo no e-mail.\n\n" +
+      "Para dar andamento, preciso que me envie:\n" +
+      "1. O contrato de compra e venda (PDF assinado);\n" +
+      "2. Comprovantes de pagamento, se tiver.\n\n" +
+      "Pode responder o próprio e-mail ou mandar por aqui mesmo. Qualquer dúvida, me chama.";
+
+    return { texto: texto, tel: telDigitos(cs[0]), telFmt: txt(cs[0].telefone) };
+  }
+
+  /* ---------- Modal standalone: Falta contrato (sem ficha) ---------- */
+  function abrirFaltaContrato() {
+    var html =
+      '<div class="bloco"><h3>Nome do cliente</h3>' +
+        '<input type="text" class="assunto" id="fcNome" placeholder="Ex.: João da Silva" /></div>' +
+      '<div class="bloco"><h3>E-mail do cliente</h3>' +
+        '<input type="text" class="assunto" id="fcEmail" placeholder="Ex.: joao@email.com" /></div>' +
+      '<div id="fcSaida"></div>';
+
+    abrirModal("Falta contrato", "", html, "");
+    renderFaltaContrato();
+
+    var corpo = $("mdCorpo");
+    if (corpo) corpo.addEventListener("input", function (e) {
+      if (e.target.id === "fcNome" || e.target.id === "fcEmail") renderFaltaContrato();
+    });
+  }
+
+  function renderFaltaContrato() {
+    var saida = $("fcSaida");
+    if (!saida) return;
+
+    var nome = txt($("fcNome") ? $("fcNome").value : "");
+    var email = txt($("fcEmail") ? $("fcEmail").value : "");
+
+    var saudacao = nome
+      ? "Prezado(a) " + nomeProprio(nome) + ","
+      : "Prezado(a),";
+
+    var corpo =
+      saudacao + "\n\n" +
+      "Recebemos sua solicitação de distrato, porém não identificamos o contrato em anexo no e-mail.\n\n" +
+      "Para que possamos dar andamento ao processo, pedimos que envie em resposta a este e-mail:\n\n" +
+      "1. O contrato de compra e venda (PDF assinado);\n" +
+      "2. Comprovantes de pagamento, se houver.\n\n" +
+      "Assim que recebermos a documentação, daremos sequência ao seu pedido.\n\n" +
+      "Qualquer dúvida, é só responder este e-mail.\n\n" +
+      "Atenciosamente,";
+
+    var assunto = "Re: Solicitação de distrato" +
+      (nome ? " — " + nomeProprio(nome) : "") +
+      " — falta contrato em anexo";
+
+    saida.innerHTML =
+      '<div class="bloco"><h3>Assunto</h3>' +
+        '<input type="text" class="assunto" id="fcAssunto" value="' + esc(assunto) + '" /></div>' +
+      '<div class="bloco"><h3>Corpo do e-mail</h3>' +
+        '<textarea class="codigo email" id="fcCorpo">' + esc(corpo) + '</textarea></div>';
+
+    $("mdRodape").innerHTML =
+      '<button type="button" class="btn" data-fechar>Fechar</button>' +
+      (email ? '<button type="button" class="btn" data-acao="copiar-fc-email">Copiar e-mail</button>' : "") +
+      '<button type="button" class="btn" data-acao="copiar-fc-assunto">Copiar assunto</button>' +
+      '<button type="button" class="btn btn-primary" data-acao="copiar-fc-corpo">Copiar corpo</button>';
+  }
+
   /* ---------- Cláusulas do distrato ----------
      Não há mais cláusula automática de prazo de pagamento: o distrato só
      recebe o que estiver escrito no campo "Cláusula extra" da ficha.
@@ -1257,7 +1367,7 @@
   }
 
   var emailSel = null;       // {id: true} enquanto o painel de mensagem está aberto
-  var emailModo = "email";   // "email" | "whatsapp" | "aviso"
+  var emailModo = "email";   // "email" | "whatsapp" | "aviso" | "falta-contrato"
   var emailCorrigido = false; // reenvio: troca o texto para "termo corrigido"
 
   // "o Termo de Distrato" / "os 2 Termos de Distrato corrigidos" etc.
@@ -1632,10 +1742,8 @@
     var ec = estadoCivilSelect(c.estadoCivil);
     if (temConj && ec !== "Casado(a)" && ec !== "União estável") ec = "Casado(a)";
 
-    // aproveita o que já está salvo na ferramenta de distrato (documento e ajustes do logo)
-    var anterior = {};
-    try { anterior = JSON.parse(localStorage.getItem(chave) || "{}") || {}; } catch (e) {}
-    var antesCampos = anterior.campos || {};
+    // limpa localStorage antigo pra nunca reutilizar HTML editado
+    try { localStorage.removeItem(chave); } catch (e) {}
 
     var campos = {
       f_nome: c.nome,
@@ -1643,7 +1751,7 @@
       f_ec: ec,
       f_rg: c.rg,
       f_cpf: c.cpf,
-      f_fracao: c.fracao || "1/52",
+      f_fracao: c.fracao || "",
       f_unidade: unidadeDistrato(c),
       f_cota: cotaDistrato(c),
       f_local: c.localizacao,
@@ -1658,10 +1766,10 @@
       f_conj_nac: "brasileiro(a)",
       f_conj_rg: c.conjuge.rg,
       f_conj_cpf: c.conjuge.cpf,
-      f_logo_align: antesCampos.f_logo_align || "right",
-      f_logo_size: antesCampos.f_logo_size || "62",
-      f_logo_top: antesCampos.f_logo_top || "0",
-      f_logo_bottom: antesCampos.f_logo_bottom || "6"
+      f_logo_align: "right",
+      f_logo_size: "62",
+      f_logo_top: "0",
+      f_logo_bottom: "6"
     };
 
     // Campos extras para modo misto (Reembolso + Estorno)
@@ -1716,9 +1824,7 @@
       campos.f_valor_parcela = valParc ? moeda(valParc) : "";
     }
 
-    // usa docHTML salvo só se tiver o template novo (pv_imoveis), senão força docBase
-    var htmlBase = anterior.docHTML && anterior.docHTML.indexOf("pv_imoveis") !== -1
-      ? anterior.docHTML : docBase(c.empresa);
+    var htmlBase = docBase(c.empresa);
     var docHTML = preencherDoc(htmlBase, campos, temConj, clausulasDoDistrato(c), meioDoEstorno(c));
 
     try {
@@ -1772,9 +1878,8 @@
       });
     }
 
-    var anterior = {};
-    try { anterior = JSON.parse(localStorage.getItem(chave) || "{}") || {}; } catch (e) {}
-    var antesCampos = anterior.campos || {};
+    // limpa localStorage antigo pra nunca reutilizar HTML editado
+    try { localStorage.removeItem(chave); } catch (e) {}
 
     var campos = {
       f_nome: c.nome,
@@ -1782,7 +1887,7 @@
       f_ec: ec,
       f_rg: c.rg,
       f_cpf: c.cpf,
-      f_fracao: c.fracao || "1/52",
+      f_fracao: c.fracao || "",
       f_unidade: unidadeDistrato(c),
       f_cota: cotaDistrato(c),
       f_local: c.localizacao,
@@ -1797,12 +1902,45 @@
       f_conj_nac: "brasileiro(a)",
       f_conj_rg: c.conjuge.rg,
       f_conj_cpf: c.conjuge.cpf,
-      f_logo_align: antesCampos.f_logo_align || "right",
-      f_logo_size: antesCampos.f_logo_size || "62",
-      f_logo_top: antesCampos.f_logo_top || "0",
-      f_logo_bottom: antesCampos.f_logo_bottom || "6",
+      f_logo_align: "right",
+      f_logo_size: "62",
+      f_logo_top: "0",
+      f_logo_bottom: "6",
       _imoveisExtra: imoveisExtra
     };
+
+    if (forma === "Reembolso + Estorno") {
+      var cartaoCredTotalG = 0, meioReembG = "", qtdParcG = 0, valParcG = 0;
+      for (var ci = 0; ci < clientes.length; ci++) {
+        var cl = clientes[ci];
+        var itensG = (cl.entradas || []).map(function (e) {
+          var m = String(e.descricao || "").match(/(\d+)\s*x\s*R?\$?\s*[\d.,]+/i);
+          var qtd = m ? parseInt(m[1], 10) : 1;
+          return { qtd: qtd, valor: (e.valor || 0) / (qtd > 0 ? qtd : 1), forma: e.descricao || "" };
+        });
+        for (var pi = 0; pi < itensG.length; pi++) {
+          var pp = itensG[pi];
+          var pf = semAcento(pp.forma || "");
+          var ehCredito = (/credito|cartao\s+credito|recorrente|credav|galax/.test(pf) && !/debito/.test(pf));
+          if (ehCredito) {
+            cartaoCredTotalG += (pp.qtd || 1) * (pp.valor || 0);
+            qtdParcG += (pp.qtd || 0);
+            valParcG = pp.valor || 0;
+          } else if (!meioReembG) {
+            if (/pix/.test(pf)) meioReembG = "PIX";
+            else if (/ted/.test(pf)) meioReembG = "TED";
+            else if (/deposit/.test(pf)) meioReembG = "depósito";
+            else if (/boleto|debito/.test(pf)) meioReembG = "TED/DOC/depósito";
+          }
+        }
+      }
+      var reembTotalG = valorTotal - cartaoCredTotalG;
+      if (reembTotalG < 0) reembTotalG = 0;
+      campos.f_valor_reemb = reembTotalG ? moeda(reembTotalG) : "";
+      campos.f_meio_reemb = meioReembG || "PIX";
+      campos.f_qtd_parcelas = qtdParcG ? String(qtdParcG) : "";
+      campos.f_valor_parcela = valParcG ? moeda(valParcG) : "";
+    }
 
     var clausulas = clausulasDoDistrato(c);
     var meio = meioDoEstorno(c);
@@ -1906,9 +2044,15 @@
       "Estorno Cartão": "o estorno no cartão de crédito",
       "Cheque": "a devolução por cheque"
     };
-    // meio passa por fora quando a ficha pede outra redação
-    // (ex.: pagamento no débito, para não sair "cartão de crédito")
-    set("pv_meio", txt(meio) || MEIOS[f.f_forma] || MEIOS["Reembolso"]);
+    if (f.f_forma === "Reembolso + Estorno" && f.f_valor_reemb) {
+      var meioReembTxt = f.f_meio_reemb || "PIX";
+      var estornoVal = moeda((parseFloat(String(valorStr).replace(/\./g,"").replace(",",".")) || 0) - (parseFloat(String(f.f_valor_reemb).replace(/\./g,"").replace(",",".")) || 0));
+      set("pv_meio",
+        "a devolução por transferência bancária " + meioReembTxt + " no valor de R$ " + f.f_valor_reemb +
+        " e R$ " + estornoVal + " em cancelamento e estorno formal das operações lançadas nos cartões de crédito");
+    } else {
+      set("pv_meio", txt(meio) || MEIOS[f.f_forma] || MEIOS["Reembolso"]);
+    }
 
     var linhaPix = box.querySelector("#linhaPix");
     if (linhaPix) {
@@ -1922,11 +2066,24 @@
       var op = box.querySelector("#op_" + k);
       if (op) op.classList.remove("ativa");
     });
-    var k = f.f_forma === "Estorno Cartão" ? "estorno" : (f.f_forma === "Cheque" ? "cheque" : "reemb");
-    set("ck_" + k, "X");
-    set("val_" + k, valorStr);
-    var op = box.querySelector("#op_" + k);
-    if (op) op.classList.add("ativa");
+    if (f.f_forma === "Reembolso + Estorno" && f.f_valor_reemb) {
+      set("ck_estorno", "X");
+      set("val_estorno", f.f_valor_parcela && f.f_qtd_parcelas
+        ? moeda((parseFloat(String(f.f_valor_parcela).replace(/\./g,"").replace(",",".")) || 0) * (parseInt(f.f_qtd_parcelas,10) || 0))
+        : moeda((parseFloat(String(valorStr).replace(/\./g,"").replace(",",".")) || 0) - (parseFloat(String(f.f_valor_reemb).replace(/\./g,"").replace(",",".")) || 0)));
+      var opE = box.querySelector("#op_estorno");
+      if (opE) opE.classList.add("ativa");
+      set("ck_reemb", "X");
+      set("val_reemb", f.f_valor_reemb);
+      var opR = box.querySelector("#op_reemb");
+      if (opR) opR.classList.add("ativa");
+    } else {
+      var k = f.f_forma === "Estorno Cartão" ? "estorno" : (f.f_forma === "Cheque" ? "cheque" : "reemb");
+      set("ck_" + k, "X");
+      set("val_" + k, valorStr);
+      var op = box.querySelector("#op_" + k);
+      if (op) op.classList.add("ativa");
+    }
 
     aplicarClausula(box, doc, clausula);
 
@@ -1937,6 +2094,13 @@
     resultado = resultado.replace(/ localizado em <b[^>]*>—<\/b>,/g, "");
     resultado = resultado.replace(/ de propriedade da empresa <b[^>]*>—<\/b>, inscrita no CNPJ sob o nº <b[^>]*>—<\/b>/g, "");
     resultado = resultado.replace(/ do <span[^>]*>(?:<b[^>]*>—<\/b>(?:, nominado |[^<])*)+<\/span>/g, "");
+    // fração vazia: remove "de uma fração de —"
+    resultado = resultado.replace(/ de uma fração de <b[^>]*>—<\/b>/g, "");
+    // span pv_imoveis com qualquer "—" dentro: remove o trecho inteiro
+    resultado = resultado.replace(/<span[^>]*id="pv_imoveis"[^>]*>[\s\S]*?<\/span>/g, function(m) {
+      return m.indexOf("—") !== -1 ? "" : m;
+    });
+    resultado = resultado.replace(/,\s*,/g, ",");
     resultado = resultado.replace(/,\s*\./g, ".");
     resultado = resultado.replace(/\s{2,}/g, " ");
     return resultado;
@@ -2062,6 +2226,7 @@
 
   $("btnNovo").addEventListener("click", function () { editarCliente(null, true); });
   $("btnEmail").addEventListener("click", function () { abrirEmail([]); });
+  $("btnFaltaContrato").addEventListener("click", abrirFaltaContrato);
 
   $("btnReabrirTodos").addEventListener("click", function () {
     var n = Object.keys(store.arquivados || {}).length;
@@ -2119,6 +2284,9 @@
     else if (acao === "copiar-link") copiarDe("emLink", b, "Copiar link");
     else if (acao === "copiar-corpo") copiarDe("emCorpo", b, "Copiar corpo");
     else if (acao === "copiar-whats") copiarDe("emWhats", b, "Copiar mensagem");
+    else if (acao === "copiar-fc-email") copiarDe("fcEmail", b, "Copiar e-mail");
+    else if (acao === "copiar-fc-assunto") copiarDe("fcAssunto", b, "Copiar assunto");
+    else if (acao === "copiar-fc-corpo") copiarDe("fcCorpo", b, "Copiar corpo");
     else if (acao === "abrir-whats") {
       // abre a conversa com o texto pronto — quem envia é você, dentro do WhatsApp
       var msg = $("emWhats") ? $("emWhats").value : "";

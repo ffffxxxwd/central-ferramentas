@@ -376,6 +376,7 @@ textarea.codigo {
 .grupo__acoes { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .tag.pend { background: #fdf8ee; color: #a56a06; border: 1px solid #f0d9a8; }
+.tag.policial { background: #fdeaea; color: #c0392b; border: 1px solid #e6a0a0; font-weight: 700; }
 .ficha.pendente { border-left-color: #e0b45a; border-left-style: dashed; }
 
 /* --- Aviso de duplicatas (mesmo CPF + unidade/cota) --- */

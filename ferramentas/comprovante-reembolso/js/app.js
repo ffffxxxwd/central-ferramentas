@@ -30,7 +30,7 @@ $(document).ready(function() {
     'Oikos Maragogi Resort', 'Olímpia Park Resort', 'Ondas Praia Resort',
     'Park GAV Resorts', 'Porto 2 Life Resort', 'Porto Alto Resort',
     'Praias do Lago Eco Resort', 'Premium GAV Resorts', 'Pyrenéus Residence',
-    'Refúgio das Lontras', 'Resort do Lago', 'Salinas Beach Resort',
+    'Refúgio das Lontras', 'Resort do Lago', 'Salinas Beach Resort', 'Salinas Park Resort',
     'Solar das Águas Park Resort', 'Terra Nova Ondas Resort',
     'Tree Bies Beach Resort', 'WVC Time Share', 'Outro (não listado)'
   ];
