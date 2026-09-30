@@ -317,28 +317,7 @@
       }
     }
 
-    if (misto && area) {
-      var reembStr = $("f_valor_reemb") ? $("f_valor_reemb").value.trim() : "";
-      var meioReemb = $("f_meio_reemb") ? $("f_meio_reemb").value : "PIX";
-      var qtdParc = $("f_qtd_parcelas") ? $("f_qtd_parcelas").value.trim() : "";
-      var valParc = $("f_valor_parcela") ? $("f_valor_parcela").value.trim() : "";
-      var reembNum = moedaParaNumero(reembStr);
-      var reembExt = valorPorExtenso(reembNum);
-      var total = reembNum + (parseInt(qtdParc, 10) || 0) * moedaParaNumero(valParc);
-      $("f_extenso").value = valorPorExtenso(total);
-
-      area.innerHTML =
-        '<ol class="doc-lista">' +
-        '<li class="doc-p doc-p--bold">O cancelamento imediato dos referidos contratos;</li>' +
-        '<li class="doc-p doc-p--bold">O reembolso integral da importância de R$ ' +
-          (reembStr || "0,00") + ' (' + reembExt + ') paga a título de sinal via ' +
-          meioReemb + ', bem como a restituição de qualquer outra quantia eventualmente cobrada;</li>' +
-        '<li class="doc-p doc-p--bold">O cancelamento do parcelamento de ' +
-          (qtdParc || "0") + ' vezes de R$ ' + (valParc || "0,00") +
-          ' e a inexigibilidade de quaisquer boletos vincendos.</li>' +
-        '</ol>';
-      area.id = "areaReembolso";
-    } else if (!misto && area) {
+    if (area) {
       var temCheckboxes = $("op_estorno");
       if (!temCheckboxes) {
         area.innerHTML =
@@ -368,13 +347,29 @@
       if ($("op_estorno")) $("op_estorno").classList.remove("ativa");
       if ($("op_reemb")) $("op_reemb").classList.remove("ativa");
       if ($("op_cheque")) $("op_cheque").classList.remove("ativa");
-      var ck, val, op;
-      if (forma === "Estorno Cartão") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
-      else if (forma === "Cheque") { ck = "ck_cheque"; val = "val_cheque"; op = "op_cheque"; }
-      else { ck = "ck_reemb"; val = "val_reemb"; op = "op_reemb"; }
-      setTxt(ck, "X");
-      setTxt(val, valorStr || "0,00");
-      if ($(op)) $(op).classList.add("ativa");
+      if (misto) {
+        var reembStr = $("f_valor_reemb") ? $("f_valor_reemb").value.trim() : "";
+        var meioReemb = $("f_meio_reemb") ? $("f_meio_reemb").value : "PIX";
+        var estornoNum = moedaParaNumero(valorStr) - moedaParaNumero(reembStr);
+        if (estornoNum < 0) estornoNum = 0;
+        var estornoVal = estornoNum.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        setTxt("ck_estorno", "X"); setTxt("val_estorno", estornoVal);
+        if ($("op_estorno")) $("op_estorno").classList.add("ativa");
+        setTxt("ck_reemb", "X"); setTxt("val_reemb", reembStr || "0,00");
+        if ($("op_reemb")) $("op_reemb").classList.add("ativa");
+        setTxt("pv_meio",
+          "a devolução por transferência bancária " + meioReemb + " no valor de R$ " + (reembStr || "0,00") +
+          ", bem como o cancelamento e estorno formal das operações lançadas nos cartões de crédito" +
+          " no valor de R$ " + estornoVal + ", totalizando o valor");
+      } else {
+        var ck, val, op;
+        if (forma === "Estorno Cartão") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
+        else if (forma === "Cheque") { ck = "ck_cheque"; val = "val_cheque"; op = "op_cheque"; }
+        else { ck = "ck_reemb"; val = "val_reemb"; op = "op_reemb"; }
+        setTxt(ck, "X");
+        setTxt(val, valorStr || "0,00");
+        if ($(op)) $(op).classList.add("ativa");
+      }
     }
   }
 

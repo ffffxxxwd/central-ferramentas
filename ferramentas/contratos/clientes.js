@@ -12654,5 +12654,102 @@ window.CLIENTES = [
       "Não conheceu o empreendimento pessoalmente.\n" +
       "DENTRO DO PRAZO — assinado 23/09/2026, vence 30/09/2026 (HOJE).\n" +
       "GSign doc CDB6UPFCQV-5CC39MA-DD6DTFAQ9R5T6D-SR6ON."
+  },
+
+  // ── Ficha 248 — Jesus Amaral Werneck — Kawana Residence (Bloco 02/202/Cota O/I) ──
+  {
+    id: 248,
+    empresa: "WAM",
+    razaoSocial: "TALLIN SPE LTDA",
+    cnpj: "54.272.360/0001-71",
+    empreendimento: "Kawana Residence",
+    localizacao: "Caldas Novas/GO",
+    nome: "Jesus Amaral Werneck",
+    cpf: "153.796.471-20",
+    rg: "1537964712 CBMDF",
+    dataNascimento: "1960-01-31",
+    estadoCivil: "Solteiro",
+    profissao: "Aposentado",
+    nacionalidade: "Brasileiro",
+    endereco: "Colônia Agrícola Sucupira, Chácara 26, SN, Riacho Fundo I, Brasília/DF, CEP 71827-695",
+    bloco: "Bloco 02",
+    apartamento: "202",
+    andar: "2",
+    cota: "O/I",
+    fracao: "1/52",
+    valorTotal: 0,
+    valorPago: 0,
+    entradas: [],
+    formaPagamentoEntrada: "",
+    formaReembolso: "",
+    dataAssinatura: "2026-09-26",
+    telefone: "(61) 98188-3591",
+    email: "fatimawerneck717@mail.com",
+    conjuge: "",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "Contrato de Cessão de Direitos de Utilização do Kawana Park — TALLIN SPE LTDA (CNPJ 54.272.360/0001-71).\n" +
+      "Kawana Residence, Bloco 02 / Apto 202 / Cota O/I. Fração 1/52.\n" +
+      "FICHA INCOMPLETA — faltam valorPago, entradas, forma de pagamento e formaReembolso.\n" +
+      "Dependente: Fatima de Silva Werneck (preenchido à mão no contrato).\n" +
+      "DENTRO DO PRAZO — assinado 26/09/2026, vence 03/10/2026.\n" +
+      "GSign doc Q17D41BRQMD."
+  },
+
+  // ── Ficha 249 — Mahieli da Silva Pacheco Oliveira — Resort do Lago (Bloco A/303/Cota SP/D) ──
+  {
+    id: 249,
+    empresa: "WAM",
+    razaoSocial: "SPE RESORT DO LAGO CALDAS NOVAS LTDA",
+    cnpj: "20.269.496/0001-00",
+    empreendimento: "Resort do Lago",
+    localizacao: "Caldas Novas/GO",
+    nome: "Mahieli da Silva Pacheco Oliveira",
+    cpf: "024.659.401-20",
+    rg: "1657695 SEJUSP/MS",
+    dataNascimento: "1988-06-27",
+    estadoCivil: "Casado",
+    profissao: "Pedagogo",
+    nacionalidade: "Brasileira",
+    endereco: "",
+    bloco: "Bloco A",
+    apartamento: "303",
+    andar: "",
+    cota: "SP/D",
+    fracao: "1/52",
+    valorTotal: 33957.23,
+    valorPago: 2400.00,
+    entradas: [
+      { descricao: "Cartão crédito Master 1x R$ 800,00 (intermediação)", valor: 800.00 },
+      { descricao: "Crédito recorrente Galax Pay 2x R$ 800,00 (intermediação)", valor: 1600.00 }
+    ],
+    formaPagamentoEntrada: "1x R$ 800,00 Master Crédito + 2x R$ 800,00 Crédito Recorrente Galax Pay (intermediação R$ 2.400)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-30",
+    telefone: "(67) 99656-3008",
+    email: "mahielipacheco@gmail.com",
+    conjuge: {
+      nome: "Renato Souza de Oliveira",
+      cpf: "009.164.461-58",
+      rg: "1452736 SSP/MS"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/249-mahieli-da-silva-pacheco-oliveira--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 307636 — Resort do Lago, Bloco A / Apto 303 / Cota SP/D.\n" +
+      "Semanas de uso: 2 por ano. Matrícula nº 53.043.\n" +
+      "Preço da cota (sem intermediação): R$ 31.557,23. Intermediação: R$ 2.400,00 (WAM Comercialização SA, CNPJ 17.919.649/0004-56).\n" +
+      "Intermediação: 1x R$ 800 Master Crédito + 2x R$ 800 Crédito Recorrente Galax Pay.\n" +
+      "Cota entrada: 2x R$ 50 boleto (1ª 15/08/2026) — provavelmente NÃO PAGO. Cota saldo: 84x R$ 374,49 boleto (1ª 20/10/2026) — NÃO PAGO.\n" +
+      "Regime de bens: Comunhão Parcial. Cônjuge: Renato Souza de Oliveira, CPF 009.164.461-58, RG 1452736 SSP/MS, nasc 11/02/1985, pedagogo.\n" +
+      "E-mail cônjuge: renatomahieli@gmail.com. Tel cônjuge: (67) 99968-3265.\n" +
+      "NÃO conheceu o empreendimento pessoalmente.\n" +
+      "FORA DO PRAZO — contrato 30/07/2026, prazo arrependimento venceu 06/08/2026.\n" +
+      "Ônus: Hipoteca R17-53.043 na matrícula 53.043.\n" +
+      "Testemunhas: Noendell Leonnardo Coelho Barreto; Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
+      "GSign doc JGEK5U4ZQF-XGLMD15-872XF6O9PZYGE1-FTRM1."
   }
 ];
