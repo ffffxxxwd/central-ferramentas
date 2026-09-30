@@ -1113,7 +1113,7 @@
     if (precisaPix) {
       passos.push((passos.length + 1) + ". Preencha a chave PIX para o reembolso no campo indicado no documento;");
     }
-    passos.push((passos.length + 1) + ". Assine o termo via gov.br e devolva respondendo a este e-mail.");
+    passos.push((passos.length + 1) + ". Assine o termo e devolva respondendo a este e-mail.");
 
     var total = cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
 
@@ -1172,7 +1172,7 @@
 
     var passos = ["1. Conferir os dados do termo;"];
     if (precisaPix) passos.push((passos.length + 1) + ". Preencher a chave PIX no campo indicado;");
-    passos.push((passos.length + 1) + ". Assinar via gov.br e me devolver o documento.");
+    passos.push((passos.length + 1) + ". Assinar e me devolver o documento.");
 
     var total = cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
 
@@ -1209,7 +1209,7 @@
       "Acabei de te enviar por e-mail o *" + termoTexto(1) + "*" +
       " para assinatura" + (mail && mesmoMail ? ", no endereço " + mail : "") + ".\n\n" +
       "Dá uma olhada na caixa de entrada — se não achar, confere o spam/lixo eletrônico.\n\n" +
-      "É só conferir os dados, assinar via gov.br e me devolver: pode responder o próprio e-mail ou " +
+      "É só conferir os dados, assinar e me devolver: pode responder o próprio e-mail ou " +
       "mandar por aqui mesmo, como preferir. Qualquer dúvida, me chama.";
 
     return { texto: texto, tel: telDigitos(cs[0]), telFmt: txt(cs[0].telefone) };

@@ -10098,7 +10098,7 @@ window.CLIENTES = [
       { descricao: "Parcelas boleto Condomínio Chalé 2 (53 parcelas, mai/2022 a set/2026)", valor: 28725.14 }
     ],
     formaPagamentoEntrada: "Cartão Crédito (Cielo) R$ 3.300 (corretagem) + Boleto 53 parcelas quitadas R$ 28.725,14 (Condomínio Chalé 2, título 1273766)",
-    formaReembolso: "Reembolso + Estorno",
+    formaReembolso: "Reembolso",
     dataAssinatura: "2022-04-17",
     telefone: "(27) 99885-5383 / (27) 99689-2430",
     email: "Erikesvianna@gmail.com",
@@ -12751,5 +12751,62 @@ window.CLIENTES = [
       "Ônus: Hipoteca R17-53.043 na matrícula 53.043.\n" +
       "Testemunhas: Noendell Leonnardo Coelho Barreto; Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
       "GSign doc JGEK5U4ZQF-XGLMD15-872XF6O9PZYGE1-FTRM1."
+  },
+
+  // ── Ficha 250 — Ivan Carvalho de Gois — Búzios Beach Resort (Bloco 17/17101/Cota 14) ──
+  {
+    id: 250,
+    empresa: "WAM",
+    razaoSocial: "W50 EMPREENDIMENTOS IMOBILIARIOS LTDA",
+    cnpj: "33.770.634/0001-82",
+    empreendimento: "Búzios Beach Resort",
+    localizacao: "Armação dos Búzios/RJ",
+    nome: "Ivan Carvalho de Gois",
+    cpf: "780.252.653-15",
+    rg: "106017122 DETRAN/RJ",
+    dataNascimento: "1978-01-27",
+    estadoCivil: "Casado",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro",
+    endereco: "",
+    bloco: "Bloco 17",
+    apartamento: "17101",
+    andar: "",
+    cota: "14",
+    fracao: "1/52",
+    valorTotal: 56175.33,
+    valorPago: 5135.94,
+    entradas: [
+      { descricao: "Depósito bancário / transferência eletrônica R$ 3.900,00 (intermediação)", valor: 3900.00 },
+      { descricao: "Boleto cota entrada 3x R$ 50,00", valor: 150.00 },
+      { descricao: "Boleto cota saldo 2x R$ 542,97", valor: 1085.94 }
+    ],
+    formaPagamentoEntrada: "1x R$ 3.900,00 Depósito/Transferência (intermediação) + 3x R$ 50 boleto (cota entrada) + 2x R$ 542,97 boleto (cota saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-04-19",
+    telefone: "(21) 98717-2555",
+    email: "ivancarvalho500@gmail.com",
+    conjuge: {
+      nome: "Joseli Lopes Cordeiro de Gois",
+      cpf: "110.416.747-67",
+      rg: "211051644 DETRAN/RJ"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/250-ivan-carvalho-de-gois--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 288101 — Búzios Fractional Resort (nome jurídico) / Búzios Beach Resort.\n" +
+      "Bloco 17 / UH 17101 / Cota 14. Semanas de uso: 2 por ano. Matrícula nº 5.721.\n" +
+      "Preço da cota (sem intermediação): R$ 52.275,33. Intermediação: R$ 3.900,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Intermediação: 1x R$ 3.900 depósito bancário / transferência eletrônica.\n" +
+      "Cota entrada: 3x R$ 50 boleto (1ª 15/05/2026) — provavelmente NÃO PAGO. Cota saldo: 96x R$ 542,97 boleto (1ª 15/08/2026) — NÃO PAGO.\n" +
+      "Regime de bens: Separação de Bens. Cônjuge: Joseli Lopes Cordeiro de Gois, CPF 110.416.747-67, RG 211051644 DETRAN/RJ, nasc 18/04/1984, empresária.\n" +
+      "E-mail cônjuge: josylopes43@gmail.com. Tel cônjuge: (21) 96011-8544.\n" +
+      "CONHECEU o empreendimento pessoalmente — SEM DIREITO A ARREPENDIMENTO.\n" +
+      "FORA DO PRAZO — contrato 19/04/2026, prazo arrependimento venceu 26/04/2026.\n" +
+      "Habite-se: 002/2010 (13/03/2010). Empreendimento em retrofit (item 7 do contrato).\n" +
+      "Testemunhas: Matheus Henrique (CPF 70379435179); Yasmin Lorrane Silva Gomes (CPF 058.624.011-05).\n" +
+      "GSign doc BZCEM5IXLL-2148WDR-WMOTE2AEHBNJMJ-KLT5H."
   }
 ];
