@@ -2049,7 +2049,8 @@
       var estornoVal = moeda((parseFloat(String(valorStr).replace(/\./g,"").replace(",",".")) || 0) - (parseFloat(String(f.f_valor_reemb).replace(/\./g,"").replace(",",".")) || 0));
       set("pv_meio",
         "a devolução por transferência bancária " + meioReembTxt + " no valor de R$ " + f.f_valor_reemb +
-        " e R$ " + estornoVal + " em cancelamento e estorno formal das operações lançadas nos cartões de crédito");
+        ", bem como o cancelamento e estorno formal das operações lançadas nos cartões de crédito" +
+        " no valor de R$ " + estornoVal + ", totalizando o valor");
     } else {
       set("pv_meio", txt(meio) || MEIOS[f.f_forma] || MEIOS["Reembolso"]);
     }

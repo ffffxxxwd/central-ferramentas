@@ -366,7 +366,8 @@
         if ($("op_reemb")) $("op_reemb").classList.add("ativa");
         setTxt("pv_meio",
           "a devolu\u00e7\u00e3o por transfer\u00eancia banc\u00e1ria " + meioReemb + " no valor de R$ " + (reembStr || "0,00") +
-          " e R$ " + estornoVal + " em cancelamento e estorno formal das opera\u00e7\u00f5es lan\u00e7adas nos cart\u00f5es de cr\u00e9dito");
+          ", bem como o cancelamento e estorno formal das opera\u00e7\u00f5es lan\u00e7adas nos cart\u00f5es de cr\u00e9dito" +
+          " no valor de R$ " + estornoVal + ", totalizando o valor");
       } else {
         var ck, val, op;
         if (forma === "Estorno Cart\u00e3o") { ck = "ck_estorno"; val = "val_estorno"; op = "op_estorno"; }
