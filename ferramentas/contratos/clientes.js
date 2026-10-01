@@ -12808,5 +12808,395 @@ window.CLIENTES = [
       "Habite-se: 002/2010 (13/03/2010). Empreendimento em retrofit (item 7 do contrato).\n" +
       "Testemunhas: Matheus Henrique (CPF 70379435179); Yasmin Lorrane Silva Gomes (CPF 058.624.011-05).\n" +
       "GSign doc BZCEM5IXLL-2148WDR-WMOTE2AEHBNJMJ-KLT5H."
+  },
+
+  // ── Ficha 251 ─────────────────────────────────────────
+  {
+    id: 251,
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    localizacao: "Barra de São Miguel/AL",
+    nome: "Sheila Cristina de Carvalho Pinto",
+    cpf: "020.871.245-31",
+    rg: "6048366 SSP/GO",
+    dataNascimento: "1986-01-03",
+    estadoCivil: "União estável",
+    profissao: "Corretor(a) de seguros",
+    nacionalidade: "Brasileira",
+    endereco: "Alameda Jose de Oliveira Guimaraes, SN, BL04 AP304, Jardim Holanda, Uberlândia/MG, CEP 38412-324",
+    bloco: "Bloco 01",
+    apartamento: "211",
+    andar: "2",
+    cota: "24",
+    fracao: "1/52",
+    valorTotal: 49417.11,
+    valorPago: 2196.00,
+    entradas: [
+      { descricao: "Cartão Visa crédito à vista R$ 1.000,00 (corretagem, 10/07/2026)", valor: 1000.00 },
+      { descricao: "Boleto 2x R$ 598,00 quitados (corretagem, 1º venc. 10/08/2026)", valor: 1196.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Visa R$ 1.000,00 + Boleto 5x R$ 598,00 (1º venc. 10/08/2026, 2 quitados)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-06-10",
+    telefone: "(34) 99826-0314",
+    email: "rsmiranda27@hotmail.com",
+    conjuge: {
+      nome: "Rogerio da Silva Miranda",
+      cpf: "015.658.376-30",
+      rg: "MG13598066 SSP/MG"
+    },
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "Contrato nº 342415 — Areya Barra Resort, Bloco 01 / Andar 2 / Apto 211 / Cota 24.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/52).\n" +
+      "Corretagem R$ 3.990: Cartão Visa R$ 1.000 (crédito à vista, 10/07/2026) + Boleto 5x R$ 598 (1º venc. 10/08/2026).\n" +
+      "Sinal R$ 2.470,85 em 4x R$ 617,71 (1ª 10/01/2027). Saldo R$ 42.956,26 em 74x R$ 580,49 (1ª 10/01/2027).\n" +
+      "Cônjuge: Rogerio da Silva Miranda, CPF 015.658.376-30, RG MG13598066 SSP/MG, nasc 11/06/1986.\n" +
+      "E-mail cônjuge: sheuc340@gmail.com. Tel cônjuge: (34) 99833-5796.\n" +
+      "FORA DO PRAZO — assinado 10/06/2026, prazo arrependimento venceu 17/06/2026.\n" +
+      "D4Sign 9df7cfde-5128-49ad-bd9b-60a044fa1e0c.\n" +
+      "PDF original não disponível no Downloads — ficha sem arquivo anexado."
+  },
+
+  // ── Fichas 252-257 — Luciane Kenne Lima (6 contratos Gran Garden Resort) ──
+
+  // ── Ficha 252 ─────────────────────────────────────────
+  {
+    id: 252,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Luciane Kenne Lima",
+    cpf: "974.372.710-87",
+    rg: "3057844651 SSP DI/RS",
+    dataNascimento: "1980-06-05",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Professora Silvia Sieben Meotti, 84, Torre C apto 404, São José, Canoas/RS, CEP 92420-236",
+    bloco: "Bloco C2",
+    apartamento: "02A",
+    andar: "T",
+    cota: "19",
+    fracao: "1/52",
+    valorTotal: 51701.43,
+    valorPago: 1698.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(51) 98687-8730",
+    email: "lukenne6@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/252-luciane-kenne-lima--contrato-c2-02a.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 354040 — Gran Garden Resort, Bloco C2 / Andar T / Apto 02A / Cota 19.\n" +
+      "Período de utilização: 1 semana por ano.\n" +
+      "Corretagem R$ 4.490: Cartão Master/Débito R$ 1.000 (nº doc 25743052, 10/08/2026) + Boleto 5x R$ 698 (1º venc. 10/09/2026).\n" +
+      "Sinal R$ 2.585,07 em 4x R$ 646,27 (1ª 10/02/2027). Saldo R$ 44.626,36 em 68x R$ 656,27 (1ª 10/06/2027).\n" +
+      "ATENÇÃO: Nº Documento cartão (25743052) IDÊNTICO nos 6 contratos — conferir se foi 1 transação rateada ou 6 separadas.\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "Cônjuge: não informado (estado civil: união estável).\n" +
+      "ZapSign a4f1fa9f-3324-4310-88f9-30fd03f6d206."
+  },
+
+  // ── Ficha 253 ─────────────────────────────────────────
+  {
+    id: 253,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Luciane Kenne Lima",
+    cpf: "974.372.710-87",
+    rg: "3057844651 SSP DI/RS",
+    dataNascimento: "1980-06-05",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Professora Silvia Sieben Meotti, 84, Torre C apto 404, São José, Canoas/RS, CEP 92420-236",
+    bloco: "Bloco C2",
+    apartamento: "04A",
+    andar: "T",
+    cota: "43",
+    fracao: "1/52",
+    valorTotal: 51701.43,
+    valorPago: 1698.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(51) 98687-8730",
+    email: "lukenne6@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/253-luciane-kenne-lima--contrato-c2-04a.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 354044 — Gran Garden Resort, Bloco C2 / Andar T / Apto 04A / Cota 43.\n" +
+      "Período de utilização: 1 semana por ano.\n" +
+      "Corretagem R$ 4.490: Cartão Master/Débito R$ 1.000 (nº doc 25743052, 10/08/2026) + Boleto 5x R$ 698 (1º venc. 10/09/2026).\n" +
+      "Sinal R$ 2.585,07 em 4x R$ 646,27 (1ª 10/02/2027). Saldo R$ 44.626,36 em 68x R$ 656,27 (1ª 10/06/2027).\n" +
+      "ATENÇÃO: Nº Documento cartão (25743052) IDÊNTICO nos 6 contratos — conferir se foi 1 transação rateada ou 6 separadas.\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "ZapSign 08fdfabf-d98d-4bf7-898c-00a1ec548274."
+  },
+
+  // ── Ficha 254 ─────────────────────────────────────────
+  {
+    id: 254,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Luciane Kenne Lima",
+    cpf: "974.372.710-87",
+    rg: "3057844651 SSP DI/RS",
+    dataNascimento: "1980-06-05",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Professora Silvia Sieben Meotti, 84, Torre C apto 404, São José, Canoas/RS, CEP 92420-236",
+    bloco: "Bloco C3",
+    apartamento: "201B",
+    andar: "2",
+    cota: "27",
+    fracao: "1/52",
+    valorTotal: 51701.43,
+    valorPago: 1698.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(51) 98687-8730",
+    email: "lukenne6@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/254-luciane-kenne-lima--contrato-c3-201b.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 354043 — Gran Garden Resort, Bloco C3 / Andar 2 / Apto 201B / Cota 27.\n" +
+      "Período de utilização: 1 semana por ano.\n" +
+      "Corretagem R$ 4.490: Cartão Master/Débito R$ 1.000 (nº doc 25743052, 10/08/2026) + Boleto 5x R$ 698 (1º venc. 10/09/2026).\n" +
+      "Sinal R$ 2.585,07 em 4x R$ 646,27 (1ª 10/02/2027). Saldo R$ 44.626,36 em 68x R$ 656,27 (1ª 10/06/2027).\n" +
+      "ATENÇÃO: Nº Documento cartão (25743052) IDÊNTICO nos 6 contratos — conferir se foi 1 transação rateada ou 6 separadas.\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "ZapSign 898d6bca-0c77-4a59-ac9a-6f99cbca319b."
+  },
+
+  // ── Ficha 255 ─────────────────────────────────────────
+  {
+    id: 255,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Luciane Kenne Lima",
+    cpf: "974.372.710-87",
+    rg: "3057844651 SSP DI/RS",
+    dataNascimento: "1980-06-05",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Professora Silvia Sieben Meotti, 84, Torre C apto 404, São José, Canoas/RS, CEP 92420-236",
+    bloco: "Bloco C3",
+    apartamento: "205B",
+    andar: "2",
+    cota: "26",
+    fracao: "1/52",
+    valorTotal: 51701.43,
+    valorPago: 1698.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(51) 98687-8730",
+    email: "lukenne6@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/255-luciane-kenne-lima--contrato-c3-205b.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 354042 — Gran Garden Resort, Bloco C3 / Andar 2 / Apto 205B / Cota 26.\n" +
+      "Período de utilização: 1 semana por ano.\n" +
+      "Corretagem R$ 4.490: Cartão Master/Débito R$ 1.000 (nº doc 25743052, 10/08/2026) + Boleto 5x R$ 698 (1º venc. 10/09/2026).\n" +
+      "Sinal R$ 2.585,07 em 4x R$ 646,27 (1ª 10/02/2027). Saldo R$ 44.626,36 em 68x R$ 656,27 (1ª 10/06/2027).\n" +
+      "ATENÇÃO: Nº Documento cartão (25743052) IDÊNTICO nos 6 contratos — conferir se foi 1 transação rateada ou 6 separadas.\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "ZapSign 7001702c-9706-42fa-9e28-be9122a09c5b."
+  },
+
+  // ── Ficha 256 ─────────────────────────────────────────
+  {
+    id: 256,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Luciane Kenne Lima",
+    cpf: "974.372.710-87",
+    rg: "3057844651 SSP DI/RS",
+    dataNascimento: "1980-06-05",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Professora Silvia Sieben Meotti, 84, Torre C apto 404, São José, Canoas/RS, CEP 92420-236",
+    bloco: "Bloco C4",
+    apartamento: "02A",
+    andar: "T",
+    cota: "38",
+    fracao: "1/52",
+    valorTotal: 51701.43,
+    valorPago: 1698.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(51) 98687-8730",
+    email: "lukenne6@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/256-luciane-kenne-lima--contrato-c4-02a.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 354041 — Gran Garden Resort, Bloco C4 / Andar T / Apto 02A / Cota 38.\n" +
+      "Período de utilização: 1 semana por ano.\n" +
+      "Corretagem R$ 4.490: Cartão Master/Débito R$ 1.000 (nº doc 25743052, 10/08/2026) + Boleto 5x R$ 698 (1º venc. 10/09/2026).\n" +
+      "Sinal R$ 2.585,07 em 4x R$ 646,27 (1ª 10/02/2027). Saldo R$ 44.626,36 em 68x R$ 656,27 (1ª 10/06/2027).\n" +
+      "ATENÇÃO: Nº Documento cartão (25743052) IDÊNTICO nos 6 contratos — conferir se foi 1 transação rateada ou 6 separadas.\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "ZapSign 790f4e7c-9907-40b3-9dae-e06fcdc336d5."
+  },
+
+  // ── Ficha 257 ─────────────────────────────────────────
+  {
+    id: 257,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Luciane Kenne Lima",
+    cpf: "974.372.710-87",
+    rg: "3057844651 SSP DI/RS",
+    dataNascimento: "1980-06-05",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Professora Silvia Sieben Meotti, 84, Torre C apto 404, São José, Canoas/RS, CEP 92420-236",
+    bloco: "Bloco C4",
+    apartamento: "05B",
+    andar: "T",
+    cota: "20",
+    fracao: "1/52",
+    valorTotal: 51701.43,
+    valorPago: 1698.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
+      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    telefone: "(51) 98687-8730",
+    email: "lukenne6@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/257-luciane-kenne-lima--contrato-c4-05b.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 354045 — Gran Garden Resort, Bloco C4 / Andar T / Apto 05B / Cota 20.\n" +
+      "Período de utilização: 1 semana por ano.\n" +
+      "Corretagem R$ 4.490: Cartão Master/Débito R$ 1.000 (nº doc 25743052, 10/08/2026) + Boleto 5x R$ 698 (1º venc. 10/09/2026).\n" +
+      "Sinal R$ 2.585,07 em 4x R$ 646,27 (1ª 10/02/2027). Saldo R$ 44.626,36 em 68x R$ 656,27 (1ª 10/06/2027).\n" +
+      "ATENÇÃO: Nº Documento cartão (25743052) IDÊNTICO nos 6 contratos — conferir se foi 1 transação rateada ou 6 separadas.\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo arrependimento venceu 16/08/2026.\n" +
+      "ZapSign 44b33638-d840-4d8f-98ec-d389441e5f3f."
+  },
+
+  // ── Ficha 258 ─────────────────────────────────────────
+  {
+    id: 258,
+    empresa: "WAM",
+    razaoSocial: "NG20 Empreendimentos Imobiliários S/A",
+    cnpj: "19.829.219/0001-26",
+    empreendimento: "Praias do Lago Eco Resort",
+    localizacao: "Caldas Novas/GO",
+    nome: "Thais Virginia Pereira Santos Barbosa",
+    cpf: "022.710.435-81",
+    rg: "6669660 PC/GO",
+    dataNascimento: "1988-12-14",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "",
+    bloco: "I",
+    apartamento: "404",
+    andar: "",
+    cota: "05",
+    fracao: "1/52",
+    valorTotal: 56871.28,
+    valorPago: 750.00,
+    entradas: [
+      { descricao: "Depósito/transferência R$ 700,00 (intermediação)", valor: 700.00 },
+      { descricao: "Boleto cota entrada 1x R$ 50,00 quitado (1º venc. 15/09/2026)", valor: 50.00 }
+    ],
+    formaPagamentoEntrada: "Depósito R$ 700,00 (intermediação) + Boleto 4x R$ 50,00 (cota entrada, 1º venc. 15/09/2026, 1 quitado) + Boleto 5x R$ 1.132,00 (intermediação W Palmerston)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-27",
+    telefone: "(62) 98291-4458",
+    email: "Thaisgustavoalexandre@gmail.com",
+    conjuge: {
+      nome: "Alexandre Jeancarlo Barbosa Lima Teixeira",
+      cpf: "004.686.671-05",
+      rg: "4626696 CRECI/GO"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/258-thais-virginia-pereira-santos-barbosa--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 313096 — Praias do Lago Eco Resort, Bloco I / Apto 404 / Cota 05.\n" +
+      "Semanas de uso: 3 por ano. Habite-se nº 2020001124 (20/11/2020).\n" +
+      "Preço da cota (sem intermediação): R$ 56.871,28. Intermediação WAM: R$ 6.360,00.\n" +
+      "Pagamento cota: 4x R$ 50 boleto (1º venc. 15/09/2026) + 88x R$ 643,99 boleto (1º venc. 20/01/2027).\n" +
+      "Intermediação: Depósito R$ 700 + 5x R$ 1.132 boleto Cobrança W Palmerston (datas não especificadas no contrato).\n" +
+      "Regime de bens: Comunhão Parcial. Cônjuge: Alexandre Jeancarlo Barbosa Lima Teixeira, CPF 004.686.671-05, RG 4626696 CRECI/GO, nasc 18/03/1984, Corretor de Imóveis.\n" +
+      "E-mail cônjuge: alexandre.b2go@gmail.com. Tel cônjuge: (62) 99858-0703.\n" +
+      "CONHECEU O EMPREENDIMENTO PESSOALMENTE — SEM DIREITO A ARREPENDIMENTO.\n" +
+      "FORA DO PRAZO — assinado 27/08/2026, prazo arrependimento venceu 03/09/2026.\n" +
+      "GSign doc ABGPR844LD-OG52DSR-0BBP421QKLG10J-PRGF9."
   }
 ];
