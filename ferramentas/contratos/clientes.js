@@ -13378,5 +13378,107 @@ window.CLIENTES = [
       "NÃO CONHECEU o empreendimento.\n" +
       "FORA DO PRAZO — assinado 04/09/2026, prazo arrependimento venceu 11/09/2026.\n" +
       "GSign doc 3JU80T96TC-2HEQVC2-73GA7TLOAFEF33-OLNQX."
+  },
+
+  // ── Ficha 263 ─────────────────────────────────────────
+  {
+    id: 263,
+    empresa: "WAM",
+    razaoSocial: "Refúgio das Lontras Pousada Empreendimentos Imobiliários Ltda",
+    cnpj: "41.402.028/0001-32",
+    empreendimento: "Refúgio das Lontras Pousada",
+    localizacao: "Barra de Santo Antônio/AL",
+    nome: "Clenilde Ernesto",
+    cpf: "027.620.448-47",
+    rg: "134703674 SSP/SP",
+    dataNascimento: "1963-09-26",
+    estadoCivil: "Solteiro",
+    profissao: "Cozinheiro Geral",
+    nacionalidade: "Brasileira",
+    endereco: "Rua Raphael Perissinotto, 197, João Aranha, Paulínia/SP, CEP 13145758",
+    bloco: "A",
+    apartamento: "A222",
+    andar: "3",
+    cota: "02",
+    fracao: "1/52",
+    valorTotal: 42198.53,
+    valorPago: 3669.44,
+    entradas: [
+      { descricao: "Depósito/transferência R$ 1.223,14 (intermediação)", valor: 1223.14 },
+      { descricao: "Crédito recorrente 2x R$ 1.223,15 (intermediação)", valor: 2446.30 }
+    ],
+    formaPagamentoEntrada: "Depósito R$ 1.223,14 + Crédito recorrente 2x R$ 1.223,15 (intermediação) + 2x R$ 50,00 iniciais (WAM Brasil) + 84x R$ 501,17 mensais",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2023-09-13",
+    telefone: "(11) 96355-1640",
+    email: "Kety.fisioterapia91@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/263-clenilde-ernesto--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 02-A222/02 — Refúgio das Lontras Pousada, 2 Semanas, Unidade A222/02, Cota 02, 3º Pavimento.\n" +
+      "Preço da cota (sem intermediação): R$ 42.198,53. Intermediação (corretagem): R$ 3.669,44.\n" +
+      "Pagamento intermediação: Depósito/transferência R$ 1.223,14 + Crédito recorrente 2x R$ 1.223,15.\n" +
+      "Pagamento cota: 2x R$ 50,00 iniciais (WAM Brasil, a partir 15/10/2023) + 84x R$ 501,17 mensais (a partir 05/12/2023).\n" +
+      "valorPago = R$ 3.669,44 (somente intermediação confirmada — parcelas mensais são boleto, status desconhecido).\n" +
+      "Solteiro. NÃO CONHECEU o empreendimento (mora em Paulínia/SP, resort em Barra de Santo Antônio/AL).\n" +
+      "FORA DO PRAZO — contrato assinado 13/09/2023, prazo arrependimento venceu 20/09/2023.\n" +
+      "GSign doc NXV9AYZI8H-L9XHNQC-TEPCUL8OVT8VVT-SQGTC.\n" +
+      "OBS: Assinatura digital do Promitente Comprador foi feita por KELI REGINA DE MORAIS FIRMINO (GSignId UYACPAKGP3QC), não pelo titular Clenilde Ernesto.\n" +
+      "Corretora: Alessandra Cristina (GSignId IKU515D3WPH1).\n" +
+      "Inclui Contrato de Associação WAM Fidelidade (Club CIA Viagens e Vantagens S.A., CNPJ 18.601.079/0001-71)."
+  },
+
+  // ── Ficha 264 ─────────────────────────────────────────
+  {
+    id: 264,
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Amelia Ribeiro dos Santos",
+    cpf: "037.389.121-00",
+    rg: "1066679 SSP/TO",
+    dataNascimento: "1991-06-12",
+    estadoCivil: "Casada",
+    profissao: "Empresária",
+    nacionalidade: "Brasileira",
+    endereco: "1506 Sul Alameda 17 QI 29, 17, Plano Diretor Sul, Palmas/TO, CEP 77027118",
+    bloco: "07",
+    apartamento: "0402",
+    andar: "3",
+    cota: "13",
+    fracao: "1/52",
+    valorTotal: 58271.41,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, Nº Doc 337011)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 (corretagem) + Boleto 4x R$ 747,50 (corretagem) + Sinal 5x R$ 582,71 (a partir 15/11/2024) + 85x R$ 604,33 mensais (a partir 15/04/2025)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2024-06-14",
+    telefone: "(63) 98438-1166",
+    email: "melloamelia@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/264-amelia-ribeiro-dos-santos--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 189626 — Porto 2 Life Resort, Bloco 07 / Apto 0402 / Cota 13, 3º andar.\n" +
+      "Período de utilização: 2 semanas por ano-calendário. Área total: 69,89 m² (1 Quarto).\n" +
+      "Preço da cota (sem corretagem): R$ 58.271,41. Corretagem: R$ 3.990,00.\n" +
+      "Pagamento corretagem: Cartão Master/Débito R$ 1.000,00 (Nº Doc 337011) + Boleto 4x R$ 747,50 (1º venc. 15/07/2024).\n" +
+      "Sinal de Negócio: R$ 2.913,57 em 5x R$ 582,71 (1º venc. 15/11/2024).\n" +
+      "Saldo devedor: R$ 51.367,84 em 85x R$ 604,33 (1º venc. 15/04/2025).\n" +
+      "valorPago = R$ 1.000,00 (somente cartão débito confirmado — boletos e sinal status desconhecido).\n" +
+      "Casada, cônjuge NÃO INFORMADO no contrato.\n" +
+      "FORA DO PRAZO — assinado 14/06/2024, prazo arrependimento venceu 21/06/2024.\n" +
+      "D4Sign 9e0f56f6-908c-4a2f-bd2a-d51003934ffd. Assinatura presencial pela compradora em 14/06/2024 17:58.\n" +
+      "Corretores/beneficiários: Matheus Henrique Gomes Castro (CPF 51118197000107), Everton Sandy Alves de Oliveira (CPF 43711580000138), P.C. De Araujo Corretagem de Imoveis (CNPJ 20363146000109).\n" +
+      "Inclui Select Club (GAV Resorts)."
   }
 ];
