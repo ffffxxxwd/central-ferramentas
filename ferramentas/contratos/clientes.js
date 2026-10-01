@@ -12885,12 +12885,11 @@ window.CLIENTES = [
     cota: "19",
     fracao: "1/52",
     valorTotal: 51701.43,
-    valorPago: 1698.00,
+    valorPago: 1000.00,
     entradas: [
-      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
-      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 }
     ],
-    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-09",
     telefone: "(51) 98687-8730",
@@ -12933,12 +12932,11 @@ window.CLIENTES = [
     cota: "43",
     fracao: "1/52",
     valorTotal: 51701.43,
-    valorPago: 1698.00,
+    valorPago: 1000.00,
     entradas: [
-      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
-      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 }
     ],
-    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-09",
     telefone: "(51) 98687-8730",
@@ -12980,12 +12978,11 @@ window.CLIENTES = [
     cota: "27",
     fracao: "1/52",
     valorTotal: 51701.43,
-    valorPago: 1698.00,
+    valorPago: 1000.00,
     entradas: [
-      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
-      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 }
     ],
-    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-09",
     telefone: "(51) 98687-8730",
@@ -13027,12 +13024,11 @@ window.CLIENTES = [
     cota: "26",
     fracao: "1/52",
     valorTotal: 51701.43,
-    valorPago: 1698.00,
+    valorPago: 1000.00,
     entradas: [
-      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
-      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 }
     ],
-    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-09",
     telefone: "(51) 98687-8730",
@@ -13074,12 +13070,11 @@ window.CLIENTES = [
     cota: "38",
     fracao: "1/52",
     valorTotal: 51701.43,
-    valorPago: 1698.00,
+    valorPago: 1000.00,
     entradas: [
-      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
-      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 }
     ],
-    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-09",
     telefone: "(51) 98687-8730",
@@ -13121,12 +13116,11 @@ window.CLIENTES = [
     cota: "20",
     fracao: "1/52",
     valorTotal: 51701.43,
-    valorPago: 1698.00,
+    valorPago: 1000.00,
     entradas: [
-      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 },
-      { descricao: "Boleto 1x R$ 698,00 quitado (corretagem, 1º venc. 10/09/2026)", valor: 698.00 }
+      { descricao: "Cartão Master/Débito R$ 1.000,00 (corretagem, nº doc 25743052, 10/08/2026)", valor: 1000.00 }
     ],
-    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, 1 quitado)",
+    formaPagamentoEntrada: "Cartão Master/Débito R$ 1.000,00 + Boleto 5x R$ 698,00 (1º venc. 10/09/2026, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-09",
     telefone: "(51) 98687-8730",
@@ -13168,12 +13162,11 @@ window.CLIENTES = [
     cota: "05",
     fracao: "1/52",
     valorTotal: 56871.28,
-    valorPago: 750.00,
+    valorPago: 700.00,
     entradas: [
-      { descricao: "Depósito/transferência R$ 700,00 (intermediação)", valor: 700.00 },
-      { descricao: "Boleto cota entrada 1x R$ 50,00 quitado (1º venc. 15/09/2026)", valor: 50.00 }
+      { descricao: "Depósito/transferência R$ 700,00 (intermediação)", valor: 700.00 }
     ],
-    formaPagamentoEntrada: "Depósito R$ 700,00 (intermediação) + Boleto 4x R$ 50,00 (cota entrada, 1º venc. 15/09/2026, 1 quitado) + Boleto 5x R$ 1.132,00 (intermediação W Palmerston)",
+    formaPagamentoEntrada: "Depósito R$ 700,00 (intermediação) + Boleto 4x R$ 50,00 (cota entrada, 1º venc. 15/09/2026, não quitados) + Boleto 5x R$ 1.132,00 (intermediação W Palmerston, não quitados)",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-08-27",
     telefone: "(62) 98291-4458",
@@ -13198,5 +13191,192 @@ window.CLIENTES = [
       "CONHECEU O EMPREENDIMENTO PESSOALMENTE — SEM DIREITO A ARREPENDIMENTO.\n" +
       "FORA DO PRAZO — assinado 27/08/2026, prazo arrependimento venceu 03/09/2026.\n" +
       "GSign doc ABGPR844LD-OG52DSR-0BBP421QKLG10J-PRGF9."
+  },
+
+  // ── Ficha 259 ─────────────────────────────────────────
+  {
+    id: 259,
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    nome: "Maria Alice Goulart Silva da Silva",
+    cpf: "816.304.170-68",
+    rg: "",
+    dataNascimento: "",
+    estadoCivil: "",
+    profissao: "",
+    nacionalidade: "Brasileira",
+    endereco: "",
+    bloco: "",
+    apartamento: "",
+    andar: "",
+    cota: "",
+    fracao: "1/52",
+    valorTotal: 0,
+    valorPago: 8280.00,
+    entradas: [
+      { descricao: "Entrada R$ 1.500,00", valor: 1500.00 },
+      { descricao: "12 parcelas de R$ 565,00", valor: 6780.00 }
+    ],
+    formaPagamentoEntrada: "R$ 1.500,00 entrada + 12x R$ 565,00",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-07-28",
+    telefone: "",
+    email: "",
+    conjuge: "",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "FICHA INCOMPLETA — cadastrada a partir de dados manuais, sem contrato.\n" +
+      "Faltam: RG, estado civil, profissão, endereço, telefone, e-mail, bloco/apto/cota, valor total do contrato.\n" +
+      "Gran Garden Resort — 1 cota. Data da compra: 28/07/2025.\n" +
+      "FORA DO PRAZO — contrato 28/07/2025, prazo arrependimento venceu 04/08/2025."
+  },
+
+  // ── Ficha 260 ─────────────────────────────────────────
+  {
+    id: 260,
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    localizacao: "Cruz/CE",
+    nome: "Monica Maria da Silva",
+    cpf: "034.527.394-06",
+    rg: "2017961 SSDS/PB",
+    dataNascimento: "1972-05-17",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante",
+    nacionalidade: "Brasileira",
+    endereco: "Rua das Jacobinas, 362, Casa, Mangabeira, João Pessoa/PB, CEP 58059-732",
+    bloco: "Bloco 02",
+    apartamento: "107",
+    andar: "1",
+    cota: "21",
+    fracao: "1/52",
+    valorTotal: 54805.49,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Cartão Visa crédito à vista R$ 1.000,00 (corretagem, CV 42421150, 24/09/2026)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Visa R$ 1.000,00 (crédito à vista) + Boleto 5x R$ 598,00 (1º venc. 24/11/2026, não quitados)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-24",
+    telefone: "(83) 97400-7290",
+    email: "marinaldoluna1@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/260-monica-maria-da-silva--contrato-jlr.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 361596 — Jeriquiá Lagoa Resort, Bloco 02 / Andar 1 / Apto 107 / Cota 21.\n" +
+      "Período de utilização: 2 semanas por ano.\n" +
+      "Corretagem R$ 3.990: Cartão Visa R$ 1.000 (crédito à vista, CV 42421150, Visa ****7251, 24/09/2026) + Boleto 5x R$ 598 (1º venc. 24/11/2026).\n" +
+      "Sinal R$ 2.740,29 em 4x R$ 685,07 (1ª 10/04/2027). Saldo R$ 48.075,20 em 80x R$ 600,94 (1ª 10/08/2027).\n" +
+      "Cônjuge: não informado (estado civil: casado).\n" +
+      "DENTRO DO PRAZO — assinado 24/09/2026 (Pipa/RN), prazo arrependimento vence 01/10/2026 — ÚLTIMO DIA HOJE.\n" +
+      "ZapSign 94126ebd-d9e7-4f48-886d-5ff04df2628f. Assinado pela compradora em 25/09/2026 00:12.\n" +
+      "Recibo cartão: Laranjinha Itaú, JERI1 BEACH, Goiânia/GO, ESTAB 91786770."
+  },
+
+  // ── Ficha 261 ─────────────────────────────────────────
+  {
+    id: 261,
+    empresa: "WAM",
+    razaoSocial: "WAM Comercialização S/A",
+    cnpj: "",
+    empreendimento: "Praias do Lago Eco Resort",
+    localizacao: "Caldas Novas/GO",
+    nome: "Maria Aparecida Dias de Andrade",
+    cpf: "138.589.868-28",
+    rg: "23255453 SSP/SP",
+    dataNascimento: "",
+    estadoCivil: "Divorciada",
+    profissao: "",
+    nacionalidade: "Brasileira",
+    endereco: "",
+    bloco: "",
+    apartamento: "O-207",
+    andar: "",
+    cota: "13",
+    fracao: "1/18",
+    valorTotal: 0,
+    valorPago: 5280.00,
+    entradas: [
+      { descricao: "Estorno Cartão R$ 5.280,00 (valor do distrato)", valor: 5280.00 }
+    ],
+    formaPagamentoEntrada: "Cartão (valor original não informado — distrato prevê estorno de R$ 5.280,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-08-19",
+    telefone: "",
+    email: "",
+    conjuge: "",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "FICHA CADASTRADA A PARTIR DO DISTRATO (não do contrato original).\n" +
+      "Praias do Lago Eco Resort, Apto O-207 / Cota 13. Fração 1/18.\n" +
+      "Distrato assinado em Caldas Novas, 19/08/2026. Estorno Cartão R$ 5.280,00.\n" +
+      "Dados bancários no distrato: Caixa Econômica Federal, Ag 2322, CC 001000436490, titular Aparecido Antonieti, CPF 861.966.268-68.\n" +
+      "GSign doc 7M2HB3VF8V-QT22GRZ-6F5UCZC8BEK6EZ-8CQQS.\n" +
+      "Faltam: data de nascimento, profissão, endereço, telefone, e-mail, valor total do contrato, CNPJ da vendedora."
+  },
+
+  // ── Ficha 262 ─────────────────────────────────────────
+  {
+    id: 262,
+    empresa: "WAM",
+    razaoSocial: "SPE Porto Seguro 02 Empreendimentos Imobiliários S.A.",
+    cnpj: "22.059.167/0001-60",
+    empreendimento: "Ondas Praia Resort",
+    localizacao: "Porto Seguro/BA",
+    nome: "Mauro Cesar Fernandes Coimbra",
+    cpf: "898.464.197-91",
+    rg: "89846419791 DETRAN/RJ",
+    dataNascimento: "1965-03-26",
+    estadoCivil: "Casado",
+    profissao: "Funcionário Público",
+    nacionalidade: "Brasileiro",
+    endereco: "",
+    bloco: "B",
+    apartamento: "B112",
+    andar: "",
+    cota: "26",
+    fracao: "1/52",
+    valorTotal: 62663.17,
+    valorPago: 650.00,
+    entradas: [
+      { descricao: "Depósito/transferência R$ 250,00 (intermediação)", valor: 250.00 },
+      { descricao: "Depósito/transferência R$ 260,00 (intermediação)", valor: 260.00 },
+      { descricao: "Outros pagamentos (informado pelo cliente)", valor: 140.00 }
+    ],
+    formaPagamentoEntrada: "Depósito R$ 250,00 + Depósito R$ 260,00 (intermediação) + Boleto 3x R$ 1.530,00 (intermediação W Palmerston) + Boleto 3x R$ 50,00 (cota, 1º venc. 15/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-04",
+    telefone: "(21) 96577-4220",
+    email: "maurocesarfernandescomibra@gmail.com",
+    conjuge: {
+      nome: "Celia Regina Moraes da Fonseca Barcelos",
+      cpf: "939.523.417-20",
+      rg: "93952341720 DIC/RJ"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/262-mauro-cesar-fernandes-coimbra--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 314257 — Ondas Praia Resort, Bloco B / UH B112 / Cota 26.\n" +
+      "Semanas de uso: 2 por ano. Habite-se nº 00046/2021 a 00611/2021 (02/03/2021).\n" +
+      "Preço da cota (sem intermediação): R$ 62.663,17. Intermediação WAM: R$ 5.100,00.\n" +
+      "Pagamento cota: 3x R$ 50 boleto (1º venc. 15/10/2026) + 96x R$ 651,18 boleto (1º venc. 15/01/2027).\n" +
+      "Intermediação: Depósito R$ 250 + Depósito R$ 260 + 3x R$ 1.530 boleto W Palmerston (datas não especificadas).\n" +
+      "Regime de bens: Comunhão Parcial. Cônjuge: Celia Regina Moraes da Fonseca Barcelos, CPF 939.523.417-20, RG 93952341720 DIC/RJ, nasc 29/12/1966, Autônoma.\n" +
+      "E-mail cônjuge: celiabarcelos@gmail.com. Tel cônjuge: (21) 99855-4724.\n" +
+      "NÃO CONHECEU o empreendimento.\n" +
+      "FORA DO PRAZO — assinado 04/09/2026, prazo arrependimento venceu 11/09/2026.\n" +
+      "GSign doc 3JU80T96TC-2HEQVC2-73GA7TLOAFEF33-OLNQX."
   }
 ];
