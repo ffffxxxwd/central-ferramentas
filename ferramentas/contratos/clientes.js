@@ -13526,5 +13526,57 @@ window.CLIENTES = [
       "Vendedora: GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda, CNPJ 45.298.124/0001-33, Rua Eurides Cesar de Araújo, 24, Centro, Barra de São Miguel/AL, CEP 57180-000.\n" +
       "Contrato via ZapSign (referência no rodapé das páginas).\n" +
       "Faltam: valorTotal, valorPago, forma de pagamento, corretagem, PDF do contrato."
+  },
+
+  // ── Ficha 266 ─────────────────────────────────────────
+  {
+    id: 266,
+    empresa: "GAV",
+    nContrato: "241575",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    localizacao: "Barra de São Miguel/AL",
+    nome: "Elizandro Luiz Adamski Pauczinski",
+    cpf: "024.034.970-96",
+    rg: "7089175652 SSP/RS",
+    dataNascimento: "1994-04-18",
+    estadoCivil: "União Estável",
+    profissao: "Professor",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Angélica Diehl, 617, Humaitá, Tramandaí/RS, CEP 95590-000",
+    bloco: "01",
+    apartamento: "314",
+    andar: "3",
+    cota: "07",
+    fracao: "1/52",
+    valorTotal: 41760.16,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem — PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX 1x R$ 1.000,00 + Boleto 4x R$ 747,50",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-01-26",
+    telefone: "(55) 99624-0402",
+    email: "elizandro.lap@hotmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/266-elizandro-luiz-adamski-pauczinski--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 241575 — Areya Barra Resort, Bloco 01 / Apto 314 / 3º andar / Cota 07.\n" +
+      "VALOR PAGO = R$ 1.000,00 (corretagem) — PIX em 26/01/2025. Nº Documento: RESV1126440094845425EH96UV3D3BE2D61.\n" +
+      "ATENÇÃO — VALOR PROVISÓRIO: contrato de jan/2025, os boletos já venceram há muito tempo e podem ter sido pagos.\n" +
+      "Corretagem total R$ 3.990,00: 1x R$ 1.000 PIX + 4x R$ 747,50 boleto (1º venc. 26/02/2025) — status dos boletos NÃO consta no contrato.\n" +
+      "Sinal de Negócio: R$ 2.088,01 (5x R$ 417,60, 1º venc. 05/06/2025) — status desconhecido.\n" +
+      "Saldo: R$ 35.682,15 (85x R$ 419,79, 1º venc. 05/11/2025) — status desconhecido.\n" +
+      "PEDIR EXTRATO SIENGE para fechar o valor efetivamente pago.\n" +
+      "União estável, mas companheiro(a) consta \'Não informado\' no contrato e não assinou.\n" +
+      "FORA DO PRAZO — assinado 26/01/2025, prazo de arrependimento venceu 02/02/2025.\n" +
+      "Assinatura PRESENCIAL via D4Sign em 26/01/2025 20:26 (doc 740ef71e-8e4f-44bc-94d7-07d6256ca87e), geolocalização Ipojuca/PE.\n" +
+      "Testemunhas: Rafael Valadares Pinto e Fabiana Bezerra da Silva. Aprovador: José Clebson da Silva Pereira (GAV).\n" +
+      "Arquivo original do contrato: R0001-BLOCO 01-314-07-ELIZANDRO LUIZ ADAMSKI PAUCZINSKI.pdf"
   }
 ];
