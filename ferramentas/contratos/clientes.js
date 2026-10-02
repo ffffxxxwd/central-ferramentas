@@ -13402,7 +13402,7 @@ window.CLIENTES = [
     cota: "02",
     fracao: "1/52",
     valorTotal: 42198.53,
-    valorPago: 3669.44,
+    valorPago: 15000.02,
     entradas: [
       { descricao: "Depósito/transferência R$ 1.223,14 (intermediação)", valor: 1223.14 },
       { descricao: "Crédito recorrente 2x R$ 1.223,15 (intermediação)", valor: 2446.30 }
@@ -13422,7 +13422,8 @@ window.CLIENTES = [
       "Preço da cota (sem intermediação): R$ 42.198,53. Intermediação (corretagem): R$ 3.669,44.\n" +
       "Pagamento intermediação: Depósito/transferência R$ 1.223,14 + Crédito recorrente 2x R$ 1.223,15.\n" +
       "Pagamento cota: 2x R$ 50,00 iniciais (WAM Brasil, a partir 15/10/2023) + 84x R$ 501,17 mensais (a partir 05/12/2023).\n" +
-      "valorPago = R$ 3.669,44 (somente intermediação confirmada — parcelas mensais são boleto, status desconhecido).\n" +
+      "valorPago = R$ 15.000,02 — valor efetivamente pago, informado pelo usuário em 01/10/2026.\n" +
+      "Valor anterior da ficha era R$ 3.669,44 (só a intermediação); a diferença de R$ 11.330,58 corresponde às parcelas da cota já quitadas.\n" +
       "Solteiro. NÃO CONHECEU o empreendimento (mora em Paulínia/SP, resort em Barra de Santo Antônio/AL).\n" +
       "FORA DO PRAZO — contrato assinado 13/09/2023, prazo arrependimento venceu 20/09/2023.\n" +
       "GSign doc NXV9AYZI8H-L9XHNQC-TEPCUL8OVT8VVT-SQGTC.\n" +
@@ -13480,5 +13481,50 @@ window.CLIENTES = [
       "D4Sign 9e0f56f6-908c-4a2f-bd2a-d51003934ffd. Assinatura presencial pela compradora em 14/06/2024 17:58.\n" +
       "Corretores/beneficiários: Matheus Henrique Gomes Castro (CPF 51118197000107), Everton Sandy Alves de Oliveira (CPF 43711580000138), P.C. De Araujo Corretagem de Imoveis (CNPJ 20363146000109).\n" +
       "Inclui Select Club (GAV Resorts)."
+  },
+
+  // ── Ficha 265 ─────────────────────────────────────────
+  {
+    id: 265,
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    localizacao: "Barra de São Miguel/AL",
+    nome: "Alanderson Soares Zacarias",
+    cpf: "008.136.344-31",
+    rg: "00813634431 SSDS/PE",
+    dataNascimento: "1982-01-08",
+    estadoCivil: "União Estável",
+    profissao: "Autônomo",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua Aracagi, 204, Casa, Barro, Recife/PE, CEP 50900360",
+    bloco: "01",
+    apartamento: "601",
+    andar: "",
+    cota: "16",
+    fracao: "1/52",
+    valorTotal: 0,
+    valorPago: 2260.00,
+    entradas: [
+      { descricao: "Pagamentos efetuados (informado pelo cliente)", valor: 2260.00 }
+    ],
+    formaPagamentoEntrada: "",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-20",
+    telefone: "(81) 98514-3031",
+    email: "Alandersonsoares149@gmail.com",
+    conjuge: "",
+    arquivos: [],
+    pix: "",
+    observacoes:
+      "FICHA INCOMPLETA — cadastrada a partir de fotos do contrato (sem PDF digital).\n" +
+      "Areya Barra Resort, Bloco 01 / Apto 601 / Cota 16.\n" +
+      "Assinado em Maragogi/AL, 20/07/2026.\n" +
+      "União estável, cônjuge NÃO INFORMADO no contrato.\n" +
+      "FORA DO PRAZO — assinado 20/07/2026, prazo arrependimento venceu 27/07/2026.\n" +
+      "Vendedora: GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda, CNPJ 45.298.124/0001-33, Rua Eurides Cesar de Araújo, 24, Centro, Barra de São Miguel/AL, CEP 57180-000.\n" +
+      "Contrato via ZapSign (referência no rodapé das páginas).\n" +
+      "Faltam: valorTotal, valorPago, forma de pagamento, corretagem, PDF do contrato."
   }
 ];
