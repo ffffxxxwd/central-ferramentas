@@ -13578,5 +13578,425 @@ window.CLIENTES = [
       "Assinatura PRESENCIAL via D4Sign em 26/01/2025 20:26 (doc 740ef71e-8e4f-44bc-94d7-07d6256ca87e), geolocalização Ipojuca/PE.\n" +
       "Testemunhas: Rafael Valadares Pinto e Fabiana Bezerra da Silva. Aprovador: José Clebson da Silva Pereira (GAV).\n" +
       "Arquivo original do contrato: R0001-BLOCO 01-314-07-ELIZANDRO LUIZ ADAMSKI PAUCZINSKI.pdf"
+  },
+
+  // ── Ficha 267 ─────────────────────────────────────────
+  {
+    id: 267,
+    empresa: "GAV",
+    nContrato: "127293",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Wisley Santos Antunes",
+    cpf: "118.607.466-32",
+    rg: "MG18952107 SSP/MG",
+    dataNascimento: "",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua H, 114, Reserva Real, Montes Claros/MG, CEP 39403-834",
+    bloco: "04",
+    apartamento: "0321",
+    andar: "2",
+    cota: "02",
+    fracao: "1/52",
+    valorTotal: 59356.50,
+    valorPago: 34327.20,
+    entradas: [
+      { descricao: "Corretagem 5x R$798,00 cartão crédito parcelado (Master)", valor: 3990.00 },
+      { descricao: "Parcelas pagas (sinal + saldo)", valor: 30337.20 }
+    ],
+    formaPagamentoEntrada: "Cartão crédito parcelado 5x R$798,00 (Master) + parcelas",
+    formaReembolso: "Estorno TED",
+    dataAssinatura: "2023-08-12",
+    telefone: "(38) 99189-4146",
+    email: "wsawisley@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/267-wisley-santos-antunes--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 127293 — Porto 2 Life Resort, Bloco 04 / Apto 0321 / 2º andar / Cota 02.\n" +
+      "MESMO CLIENTE — 3 contratos (fichas 267, 268, 269), mesma pessoa, mesma data.\n" +
+      "VALOR PAGO = R$ 34.327,20 (corretagem R$3.990 + parcelas R$30.337,20).\n" +
+      "Totais dos 3 contratos: entrada R$11.970,00 + parcelas R$91.011,60 = R$102.981,60.\n" +
+      "Corretagem via cartão crédito parcelado Master, Nº Doc 254372, POS Getnet, 1º venc. 11/09/2023.\n" +
+      "ATENÇÃO — Nº Documento 254372 é IDÊNTICO nos 3 contratos — conferir se foi 1 transação rateada ou 3 separadas.\n" +
+      "Casado(a), cônjuge NÃO INFORMADO no contrato.\n" +
+      "FORA DO PRAZO — assinado 12/08/2023, prazo de arrependimento venceu 19/08/2023.\n" +
+      "Assinatura PRESENCIAL via D4Sign em 12/08/2023 15:11 (doc b20949b5-f10c-4999-9349-b23a34f7da0b).\n" +
+      "Corretor: Marcel Aguileira (CPF 462.916.970-00106). Testemunhas: Ana Larissa Mendes de Lima, Marcel Aguileira. Aprovador: Ingrid Ferreira da Silva."
+  },
+
+  // ── Ficha 268 ─────────────────────────────────────────
+  {
+    id: 268,
+    empresa: "GAV",
+    nContrato: "127294",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Wisley Santos Antunes",
+    cpf: "118.607.466-32",
+    rg: "MG18952107 SSP/MG",
+    dataNascimento: "",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua H, 114, Reserva Real, Montes Claros/MG, CEP 39403-834",
+    bloco: "04",
+    apartamento: "0319",
+    andar: "2",
+    cota: "17",
+    fracao: "1/52",
+    valorTotal: 59356.50,
+    valorPago: 34327.20,
+    entradas: [
+      { descricao: "Corretagem 5x R$798,00 cartão crédito parcelado (Master)", valor: 3990.00 },
+      { descricao: "Parcelas pagas (sinal + saldo)", valor: 30337.20 }
+    ],
+    formaPagamentoEntrada: "Cartão crédito parcelado 5x R$798,00 (Master) + parcelas",
+    formaReembolso: "Estorno TED",
+    dataAssinatura: "2023-08-12",
+    telefone: "(38) 99189-4146",
+    email: "wsawisley@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/268-wisley-santos-antunes--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 127294 — Porto 2 Life Resort, Bloco 04 / Apto 0319 / 2º andar / Cota 17.\n" +
+      "MESMO CLIENTE — 3 contratos (fichas 267, 268, 269), mesma pessoa, mesma data.\n" +
+      "VALOR PAGO = R$ 34.327,20 (corretagem R$3.990 + parcelas R$30.337,20).\n" +
+      "Totais dos 3 contratos: entrada R$11.970,00 + parcelas R$91.011,60 = R$102.981,60.\n" +
+      "Corretagem via cartão crédito parcelado Master, Nº Doc 254372, POS Getnet, 1º venc. 11/09/2023.\n" +
+      "ATENÇÃO — Nº Documento 254372 é IDÊNTICO nos 3 contratos — conferir se foi 1 transação rateada ou 3 separadas.\n" +
+      "Casado(a), cônjuge NÃO INFORMADO no contrato.\n" +
+      "FORA DO PRAZO — assinado 12/08/2023, prazo de arrependimento venceu 19/08/2023.\n" +
+      "Assinatura PRESENCIAL via D4Sign em 12/08/2023 15:12 (doc 540b0be2-4b66-4a87-99c7-0d48dc6c29a2).\n" +
+      "Corretor: Marcel Aguileira (CPF 462.916.970-00106). Testemunhas: Ana Larissa Mendes de Lima, Marcel Aguileira. Aprovador: Ingrid Ferreira da Silva."
+  },
+
+  // ── Ficha 269 ─────────────────────────────────────────
+  {
+    id: 269,
+    empresa: "GAV",
+    nContrato: "127296",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Wisley Santos Antunes",
+    cpf: "118.607.466-32",
+    rg: "MG18952107 SSP/MG",
+    dataNascimento: "",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro",
+    endereco: "Rua H, 114, Reserva Real, Montes Claros/MG, CEP 39403-834",
+    bloco: "04",
+    apartamento: "0326",
+    andar: "2",
+    cota: "18",
+    fracao: "1/52",
+    valorTotal: 59356.50,
+    valorPago: 34327.20,
+    entradas: [
+      { descricao: "Corretagem 5x R$798,00 cartão crédito parcelado (Master)", valor: 3990.00 },
+      { descricao: "Parcelas pagas (sinal + saldo)", valor: 30337.20 }
+    ],
+    formaPagamentoEntrada: "Cartão crédito parcelado 5x R$798,00 (Master) + parcelas",
+    formaReembolso: "Estorno TED",
+    dataAssinatura: "2023-08-12",
+    telefone: "(38) 99189-4146",
+    email: "wsawisley@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/269-wisley-santos-antunes--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 127296 — Porto 2 Life Resort, Bloco 04 / Apto 0326 / 2º andar / Cota 18.\n" +
+      "MESMO CLIENTE — 3 contratos (fichas 267, 268, 269), mesma pessoa, mesma data.\n" +
+      "VALOR PAGO = R$ 34.327,20 (corretagem R$3.990 + parcelas R$30.337,20).\n" +
+      "Totais dos 3 contratos: entrada R$11.970,00 + parcelas R$91.011,60 = R$102.981,60.\n" +
+      "Corretagem via cartão crédito parcelado Master, Nº Doc 254372, POS Getnet, 1º venc. 11/09/2023.\n" +
+      "ATENÇÃO — Nº Documento 254372 é IDÊNTICO nos 3 contratos — conferir se foi 1 transação rateada ou 3 separadas.\n" +
+      "Casado(a), cônjuge NÃO INFORMADO no contrato.\n" +
+      "FORA DO PRAZO — assinado 12/08/2023, prazo de arrependimento venceu 19/08/2023.\n" +
+      "Assinatura PRESENCIAL via D4Sign em 12/08/2023 15:12 (doc 74e50edc-c12c-44d4-a030-bee7f4e91d9f).\n" +
+      "Corretor: Marcel Aguileira (CPF 462.916.970-00106). Testemunhas: Ana Larissa Mendes de Lima, Marcel Aguileira. Aprovador: Ingrid Ferreira da Silva."
+  },
+
+  // ── Ficha 270 ─────────────────────────────────────────
+  {
+    id: 270,
+    empresa: "GAV",
+    nContrato: "362015",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Matheus Victor de Moura Costa",
+    cpf: "119.526.744-41",
+    rg: "9604541 SDS/PE",
+    dataNascimento: "30/05/2002",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Professora Eudoxia Ferreira, 280, Santana, Vitória de Santo Antão/PE, CEP 55611-437",
+    bloco: "03",
+    apartamento: "0117",
+    andar: "1",
+    cota: "25",
+    fracao: "1/52",
+    valorTotal: 67647.13,
+    valorPago: 1330.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.330,00 PIX", valor: 1330.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.330,00 + 4x R$665,00 boleto (corretagem restante)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-27",
+    telefone: "(81) 99186-4074",
+    email: "matheus123theusvictor@gmail.com",
+    conjuge: {
+      nome: "Nathalia da Silva Guedes",
+      cpf: "140.287.314-02",
+      rg: "14028731402 SDS/PE"
+    },
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/270-matheus-victor-de-moura-costa--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 362015 — Porto Alto Resort, Bloco 03 / Apto 0117 / 1º andar / Cota 25.\n" +
+      "Corretagem total R$3.990,00: 1x R$1.330,00 PIX (pago 27/09/2026) + 4x R$665,00 boleto (1º venc. 27/10/2026).\n" +
+      "Sinal de Negócio R$3.382,37: 5x R$676,47 boleto (1º venc. 10/02/2027).\n" +
+      "Saldo R$60.274,76: 91x R$662,36 boleto (1º venc. 10/07/2027).\n" +
+      "VALOR PAGO = R$ 1.330,00 (só o PIX da corretagem — boletos ainda não venceram).\n" +
+      "Cônjuge Nathalia da Silva Guedes (CPF 140.287.314-02, nasc. 27/06/2001) assinou como parte.\n" +
+      "DENTRO DO PRAZO — assinado 27/09/2026, prazo de arrependimento vence 04/10/2026.\n" +
+      "Recibo PIX: R$1.330,00, Laranjinha Itaú, CV 176566812, ID RESN3751530095158146A4RZ8ZGV1763A0D.\n" +
+      "Assinatura via ZapSign em 27/09/2026 12:46:54 (doc bd133471-2020-46d0-abe3-d4fcdb6e6b17).\n" +
+      "Partes: Atila Domiciano Gratão, Matheus Victor de Moura Costa, Nathalia da Silva Guedes. Testemunhas: Jeferson A Ferreira, Krislany Silva."
+  },
+
+  // ── Ficha 271 ─────────────────────────────────────────
+  {
+    id: 271,
+    empresa: "GAV",
+    nContrato: "313945",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    localizacao: "Gramado/RS",
+    nome: "Marilei Tatiane Fagundes",
+    cpf: "026.060.720-73",
+    rg: "02606072073 IGP/RS",
+    dataNascimento: "06/03/1991",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Professora",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Roque Gonzales, 761, Casa, Cruzeiro, Santa Rosa/RS, CEP 98789-206",
+    bloco: "A",
+    apartamento: "A 318",
+    andar: "0",
+    cota: "02",
+    fracao: "1/52",
+    valorTotal: 89546.51,
+    valorPago: 8011.18,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 cartão VISA crédito à vista (Rede)", valor: 1000.00 },
+      { descricao: "Corretagem 4x R$872,50 boleto (quitados)", valor: 3490.00 },
+      { descricao: "Sinal de Negócio 3x boleto (quitados, com correção/juros)", valor: 3521.18 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito à vista R$1.000,00 (Rede) + 4x R$872,50 boleto (corretagem) + 3x boleto sinal (quitados)",
+    formaReembolso: "Estorno PIX",
+    dataAssinatura: "2026-01-06",
+    telefone: "(55) 99696-3488",
+    email: "marileifagundes03@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/271-marilei-tatiane-fagundes--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 313945 — Gran Valley Resort, Bloco A / Apto A 318 / Térreo / Cota 02.\n" +
+      "Corretagem total R$4.490,00: 1x R$1.000,00 cartão VISA à vista (Rede, Nº Doc 41755110, 06/02/2026) + 4x R$872,50 boleto (quitados 05/03 a 05/06/2026).\n" +
+      "Sinal de Negócio R$4.477,31: 4x R$1.119,33 boleto (1º venc. 05/07/2026).\n" +
+      "  → SI/1 quitado 06/07/2026: R$1.160,55 (principal R$1.119,33 + correção R$41,22).\n" +
+      "  → SI/2 quitado 05/08/2026: R$1.174,03 (principal R$1.119,33 + juros R$11,19 + correção R$43,51).\n" +
+      "  → SI/3 quitado 03/09/2026: R$1.186,60 (principal R$1.119,33 + juros R$22,50 + correção R$44,77).\n" +
+      "  → SI/4 venc. 05/10/2026: R$1.194,63 — NÃO PAGO (sem data de recebimento no demonstrativo).\n" +
+      "Saldo R$80.579,20: 80x R$1.007,24 boleto (1º venc. 05/11/2026) — nenhum pago.\n" +
+      "VALOR PAGO = R$ 8.011,18 (demonstrativo GAV 05/10/2026: 8 parcelas recebidas de 89 totais, 8,99%).\n" +
+      "Solteiro(a), sem cônjuge.\n" +
+      "FORA DO PRAZO — assinado 06/01/2026, prazo de arrependimento venceu 13/01/2026.\n" +
+      "Tipo do apto: Cama Queen com Duas Camas Auxiliares Acopladas mais Sofá-Cama, capacidade 6 pessoas.\n" +
+      "Assinatura PRESENCIAL via D4Sign em 07/01/2026 00:28 (doc 29a7b2f5-676d-4ba7-babd-034d069c95de).\n" +
+      "Aprovadora: Gabrielly Rodrigues Souza. Testemunhas: Michelle Thaís de Jesus Menezes, Stephanie da Cunha Lopes. Parte: Paulo Henrique Gonzaga de Queiroz."
+  },
+
+  // ── Ficha 272 ─────────────────────────────────────────
+  {
+    id: 272,
+    empresa: "GAV",
+    nContrato: "362895",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Leidiana da Silva Ribeiro de Santana",
+    cpf: "141.237.697-13",
+    rg: "588330280 SSP/SP",
+    dataNascimento: "22/10/1992",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Santa Cruz, SN, Pirauira, Limoeiro/PE, CEP 55702-103",
+    bloco: "02",
+    apartamento: "0310",
+    andar: "2",
+    cota: "01",
+    fracao: "1/52",
+    valorTotal: 85246.52,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$3.990,00 PIX", valor: 3990.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$3.990,00 (corretagem integral)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-03",
+    telefone: "(81) 99757-3791",
+    email: "leidianaa.santana@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/272-leidiana-da-silva-ribeiro-de-santana--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 362895 — Porto 2 Life Resort, Bloco 02 / Apto 0310 / 2º andar / Cota 01.\n" +
+      "Corretagem total R$3.990,00: 1x R$3.990,00 PIX (pago 03/10/2026, Laranjinha Itaú, CV 198218044).\n" +
+      "ID transação PIX: RESN17941500951580737LM31809AA043C9.\n" +
+      "Dados pagador PIX: CNPJ 39.395.087/0001-89 (possível empresa da cliente, que é Empresária).\n" +
+      "Sinal de Negócio R$4.262,33: 5x R$852,47 boleto (1º venc. 05/11/2026).\n" +
+      "Saldo R$76.994,19: 91x R$846,09 boleto (1º venc. 05/04/2027).\n" +
+      "VALOR PAGO = R$ 3.990,00 (só o PIX da corretagem — boletos ainda não venceram).\n" +
+      "Casado(a), cônjuge NÃO informado no contrato.\n" +
+      "DENTRO DO PRAZO — assinado 03/10/2026, prazo de arrependimento vence 10/10/2026.\n" +
+      "Consultora: Gabriella de Lima Vitor.\n" +
+      "Assinatura via ZapSign em 03/10/2026 20:43:42 (doc dd484314-bdb9-40aa-a3b9-e38757f58d2).\n" +
+      "Partes: Atila Domiciano Gratão, Leidiana da Silva Ribeiro de Santana. Testemunhas: Jeferson A Ferreira, Krislany Silva.\n" +
+      "Local de assinatura do contrato: Maragogi/AL."
+  },
+
+  // ── Ficha 273 ─────────────────────────────────────────
+  {
+    id: 273,
+    empresa: "GAV",
+    nContrato: "350821",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    localizacao: "Gramado/RS",
+    nome: "Rodrigo Costa",
+    cpf: "064.363.179-88",
+    rg: "5446429 SESPDC/SC",
+    dataNascimento: "10/11/1990",
+    estadoCivil: "Casado(a)",
+    profissao: "Serralheiro(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Paulo Andre Guesser, 1550, Nossa Senhora de Fátima, Braço do Norte/SC, CEP 88750-000",
+    bloco: "A",
+    apartamento: "A 602",
+    andar: "3",
+    cota: "24",
+    fracao: "1/52",
+    valorTotal: 90301.04,
+    valorPago: 4409.02,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 dinheiro", valor: 1000.00 },
+      { descricao: "Corretagem 2x R$1.163,33 + 1x R$1.163,34 boleto (quitados, total R$3.409,02 efetivo)", valor: 3409.02 }
+    ],
+    formaPagamentoEntrada: "Dinheiro R$1.000,00 + 2x R$1.163,33 boleto + 1x R$1.163,34 boleto (corretagem restante)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-25",
+    telefone: "(48) 99845-0983",
+    email: "costabnsc@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/273-rodrigo-costa--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 350821 — Gran Valley Resort, Bloco A / Apto A 602 / 3º andar / Cota 24.\n" +
+      "Corretagem total R$4.490,00: 1x R$1.000,00 dinheiro (28/07/2026) + 2x R$1.163,33 boleto (1º venc. 10/08/2026) + 1x R$1.163,34 boleto (10/10/2026).\n" +
+      "Sinal de Negócio R$4.515,04: 4x R$1.128,76 boleto (1º venc. 10/11/2026).\n" +
+      "Saldo R$81.296,00: 80x R$1.016,20 boleto (1º venc. 10/03/2027).\n" +
+      "VALOR PAGO = R$ 4.409,02 (dinheiro R$1.000,00 + boletos corretagem R$3.409,02 quitados).\n" +
+      "Casado(a), cônjuge NÃO informado no contrato.\n" +
+      "FORA DO PRAZO — assinado 25/07/2026, prazo de arrependimento venceu 01/08/2026.\n" +
+      "Tipo do apto: Cama Queen com Duas Camas Auxiliares Acopladas mais Sofá-Cama, capacidade 6 pessoas.\n" +
+      "Consultor: Wanderson Oliveira Araujo. Sala: Canela - NASA.\n" +
+      "Observação do cliente: 'Adquirir uma cota de 14 dias Podendo usar 7 depois 7 Alugando quando nao usar'.\n" +
+      "Assinatura via ZapSign em 25/07/2026 11:34:12 (doc c5d39752-1d1d-4ae0-9d72-3470155f2707).\n" +
+      "Partes: Atila (gavresorts), Rodrigo Costa. Testemunhas: Jeferson A Ferreira, Krislany Silva.\n" +
+      "Local de assinatura do contrato: Canela/RS."
+  },
+
+  {
+    id: 274,
+    empresa: "GAV",
+    nContrato: "358872",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Giseli Lindemann Buerger",
+    cpf: "000.887.230-97",
+    rg: "9088051074 SSP/RS",
+    dataNascimento: "16/12/1981",
+    estadoCivil: "Casado(a)",
+    profissao: "Professor Municipal",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Boa Vista, 228, Jardim, Ivoti/RS, CEP 93900-000",
+    bloco: "01",
+    apartamento: "0103",
+    andar: "1",
+    cota: "12",
+    fracao: "1/52",
+    valorTotal: 67647.89,
+    valorPago: 1990.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.990,00 cartão Master crédito à vista (Rede)", valor: 1990.00 }
+    ],
+    formaPagamentoEntrada: "Cartão Master crédito à vista R$1.990,00 (Rede) + 2x R$666,67 boleto + 1x R$666,66 boleto (corretagem restante)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-07",
+    telefone: "(51) 99181-3518",
+    email: "gilindemann@gmail.com",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/274-giseli-lindemann-buerger--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 358872 — Porto Alto Resort, Bloco 01 / Apto 0103 / 1º andar / Cota 12.\n" +
+      "Corretagem total R$3.990,00: 1x R$1.990,00 cartão Master crédito à vista (Rede, CV 18947168, 07/09/2026, Mastercard ****2566) + 2x R$666,67 boleto (1º venc. 07/11/2026) + 1x R$666,66 boleto (07/01/2027).\n" +
+      "Sinal de Negócio R$3.382,37: 4x R$845,59 boleto (1º venc. 10/02/2027).\n" +
+      "Saldo R$60.275,52: 72x R$837,16 boleto (1º venc. 10/06/2027).\n" +
+      "VALOR PAGO = R$ 1.990,00 (cartão Master crédito confirmado pelo comprovante Rede — boletos ainda não venceram).\n" +
+      "Casado(a), cônjuge NÃO informado no contrato.\n" +
+      "FORA DO PRAZO — assinado 07/09/2026, prazo de arrependimento venceu 14/09/2026.\n" +
+      "Consultor: Marcel Rossi Abbes.\n" +
+      "Assinatura via ZapSign em 07/09/2026 12:48:35 (doc 9aa44321-842c-44cb-95a9-1622b24457a1).\n" +
+      "Partes: Atila Domiciano Gratão, Giseli Lindemann Buerger. Testemunhas: Jeferson A Ferreira, Krislany Silva.\n" +
+      "Local de assinatura do contrato: Gramado/RS."
   }
 ];

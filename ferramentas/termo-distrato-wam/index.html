@@ -2,9 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Termo de Distrato | WAM</title>
-  <link rel="stylesheet" href="style.css?v=17" />
+  <link rel="stylesheet" href="style.css?v=18" />
 </head>
 <body>
 
@@ -176,6 +179,7 @@
               <span>Forma de devolução</span>
               <select id="f_forma">
                 <option value="Reembolso">Reembolso</option>
+                <option value="Estorno TED">Estorno TED</option>
                 <option value="Estorno Cartão">Estorno Cartão</option>
                 <option value="Reembolso + Estorno">Reembolso + Estorno</option>
                 <option value="Cheque">Cheque</option>
@@ -329,6 +333,15 @@
           <strong>Chave PIX para reembolso:</strong> <span id="pv_pix" class="pix-valor"></span>
         </p>
 
+        <div id="linhaBanco" class="doc-banco" hidden>
+          <p class="doc-p"><strong>Dados bancários para reembolso via TED:</strong></p>
+          <p class="doc-p">Banco: ______________________________</p>
+          <p class="doc-p">Agência: _____________________________</p>
+          <p class="doc-p">Conta: _______________________________</p>
+          <p class="doc-p">Titular: ______________________________</p>
+          <p class="doc-p">CPF/CNPJ: ____________________________</p>
+        </div>
+
         <div class="doc-assinaturas" id="docAssinaturas">
           <div class="doc-assinatura">
             <div class="doc-assinatura__linha"></div>
@@ -356,6 +369,6 @@
   <script src="../../assets/lib/pdf.min.js"></script>
   <script src="../../assets/js/ler-contrato.js?v=6"></script>
   <script src="logo-data.js"></script>
-  <script src="app.js?v=22"></script>
+  <script src="app.js?v=26"></script>
 </body>
 </html>

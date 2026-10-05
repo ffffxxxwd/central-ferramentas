@@ -297,7 +297,8 @@
 
     // Mostra/esconde campos extras no formulário
     if ($("blocoMisto")) $("blocoMisto").hidden = !misto;
-    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cartão");
+    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cartão" || forma === "Estorno TED");
+    if ($("linhaBanco")) $("linhaBanco").hidden = (forma !== "Estorno TED");
 
     // Busca ou cria o container de reembolso no documento
     var area = $("areaReembolso");
@@ -318,9 +319,7 @@
     }
 
     if (area) {
-      var temCheckboxes = $("op_estorno");
-      if (!temCheckboxes) {
-        area.innerHTML =
+      area.innerHTML =
           '<div class="doc-opcoes">' +
             '<div class="doc-opcao" id="op_estorno"><span>( <b class="mark" id="ck_estorno">\u00a0</b> ) Estorno Cartão</span><span>R$ <span id="val_estorno">XXXX,00</span></span></div>' +
             '<div class="doc-opcao" id="op_reemb"><span>( <b class="mark" id="ck_reemb">\u00a0</b> ) Reembolso</span><span>R$ <span id="val_reemb">XXXX,00</span></span></div>' +
@@ -331,12 +330,12 @@
             '(<span id="pv_extenso">zero real</span>) referente ao sinal de proposta.</p>' +
           '<p class="doc-p doc-p--bold">Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras ' +
             'referente as parcelas firmadas em contrato.</p>';
-        area.id = "areaReembolso";
-      }
+      area.id = "areaReembolso";
       setTxt("pv_valor", valorStr || "0,00");
       setTxt("pv_extenso", texto($("f_extenso").value, "\u2014"));
       var MEIOS = {
         "Reembolso": "a devolução por transferência bancária",
+        "Estorno TED": "a devolução por transferência bancária (TED)",
         "Estorno Cartão": "o estorno no cartão de crédito",
         "Cheque": "a devolução por cheque"
       };
@@ -721,7 +720,8 @@
   }
 
   /* ---------- Persistência (cache local no navegador) ---------- */
-  var CHAVE = "termo-distrato-wam-v6";
+  var CHAVE = "termo-distrato-wam-v7";
+  try { localStorage.removeItem("termo-distrato-wam-v6"); } catch(e) {}
   var CAMPOS = ["f_nome", "f_nac", "f_ec", "f_rg", "f_cpf", "f_fracao", "f_unidade", "f_cota",
     "f_local", "f_edificio", "f_empresa", "f_cnpj", "f_forma", "f_valor", "f_extenso", "f_pix",
     "f_conj_nome", "f_conj_nac", "f_conj_rg", "f_conj_cpf",

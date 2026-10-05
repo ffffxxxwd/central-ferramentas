@@ -1038,6 +1038,7 @@
 
   var TEXTO_FORMA = {
     "Estorno Cartão": "estorno no cartão utilizado na compra",
+    "Estorno PIX": "estorno via PIX na chave informada no termo",
     "Reembolso": "reembolso na chave PIX informada no termo",
     "Reembolso + Estorno": "reembolso via TED/PIX + cancelamento do parcelamento no cartão",
     "Cheque": "cheque"
@@ -1083,7 +1084,7 @@
   function montarEmail(cs) {
     var um = cs.length === 1;
     var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
-    var precisaPix = cs.some(function (c) { var f = formaReembolso(c); return f === "Reembolso" || f === "Reembolso + Estorno"; });
+    var precisaPix = cs.some(function (c) { var f = formaReembolso(c); return f === "Reembolso" || f === "Reembolso + Estorno" || f === "Estorno PIX"; });
 
     // o e-mail vai para todos que assinam — inclusive o cônjuge, quando houver
     var quemAssina = signatarios(cs);
@@ -1157,7 +1158,7 @@
   function montarWhats(cs) {
     var um = cs.length === 1;
     var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
-    var precisaPix = cs.some(function (c) { var f = formaReembolso(c); return f === "Reembolso" || f === "Reembolso + Estorno"; });
+    var precisaPix = cs.some(function (c) { var f = formaReembolso(c); return f === "Reembolso" || f === "Reembolso + Estorno" || f === "Estorno PIX"; });
 
     var quem = (um || mesmaPessoa)
       ? primeiroNome(cs[0].nome)
@@ -1467,6 +1468,7 @@
   var FORMA_COMPROVANTE = {
     "Reembolso": "PIX",
     "Estorno Cartão": "Estorno no cartão",
+    "Estorno PIX": "Estorno via PIX",
     "Cheque": "Transferência bancária"
   };
 
@@ -1513,7 +1515,7 @@
     var imovel = lista.map(imovelCurto).join("  +  ");
     var soma = lista.reduce(function (s, x) { return s + (num(x.valorPago) || 0); }, 0);
 
-    var formas = ["Reembolso", "Estorno Cartão", "Cheque"];
+    var formas = ["Reembolso", "Estorno Cartão", "Estorno PIX", "Cheque"];
     var atual = formaReembolso(c);
 
     abrirModal(lista.length > 1 ? "Criar reembolso (" + lista.length + " cotas)" : "Criar reembolso", c.empresa,
@@ -1639,6 +1641,14 @@
 '<p class="doc-p">Sendo essa a expressão final de minha vontade assino o presente distrato em 02 (duas) vias de igual teor, em conjunto, e com a concordância da empresa, razão pela qual as partes conferem entre si ampla, plena e irrevogável quitação, declarando-se livres e desimpedidas de qualquer obrigação em razão do aqui acordado.</p>' +
 '<p class="doc-p" id="pv_data">__/__/____.</p>' +
 '<p class="doc-p doc-pix" id="linhaPix"><strong>Chave PIX para reembolso:</strong> <span id="pv_pix" class="pix-valor"></span></p>' +
+'<div id="linhaBanco" class="doc-banco">' +
+'<p class="doc-p"><strong>Dados bancários para reembolso via TED:</strong></p>' +
+'<p class="doc-p">Banco: ______________________________</p>' +
+'<p class="doc-p">Agência: _____________________________</p>' +
+'<p class="doc-p">Conta: _______________________________</p>' +
+'<p class="doc-p">Titular: ______________________________</p>' +
+'<p class="doc-p">CPF/CNPJ: ____________________________</p>' +
+'</div>' +
 '<div class="doc-assinaturas" id="docAssinaturas">' +
 '<div class="doc-assinatura"><div class="doc-assinatura__linha"></div><div class="doc-assinatura__nome up" id="pv_nome_ass">NOME DO CLIENTE</div></div>' +
 '<div class="doc-assinatura" id="assConjuge" hidden><div class="doc-assinatura__linha"></div><div class="doc-assinatura__nome up" id="pv_nome_conj_ass">CÔNJUGE</div></div>' +
@@ -1659,6 +1669,8 @@
   function formaReembolso(c) {
     var manual = txt(c.formaReembolso);
     if (/reembolso/i.test(manual) && /estorno/i.test(manual)) return "Reembolso + Estorno";
+    if (/estorno.*ted/i.test(manual)) return "Estorno TED";
+    if (/estorno.*pix/i.test(manual)) return "Estorno PIX";
     if (/estorno/i.test(manual)) return "Estorno Cartão";
     if (/cheque/i.test(manual)) return "Cheque";
     if (/reembolso/i.test(manual)) return "Reembolso";
@@ -1731,7 +1743,7 @@
     var c = acharCliente(id);
     if (!c) return;
 
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v6" : "termo-distrato-v8";
+    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v7" : "termo-distrato-v8";
     var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
 
     var valorNum = num(c.valorPago);
@@ -1857,7 +1869,7 @@
 
     // usa o primeiro contrato como base para dados pessoais
     var c = clientes[0];
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v6" : "termo-distrato-v8";
+    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v7" : "termo-distrato-v8";
     var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
 
     // soma valorPago de todos
@@ -2041,6 +2053,7 @@
 
     var MEIOS = {
       "Reembolso": "a devolução por transferência bancária",
+      "Estorno TED": "a devolução por transferência bancária (TED)",
       "Estorno Cartão": "o estorno no cartão de crédito",
       "Cheque": "a devolução por cheque"
     };
@@ -2056,9 +2069,14 @@
     }
 
     var linhaPix = box.querySelector("#linhaPix");
+    var linhaBanco = box.querySelector("#linhaBanco");
     if (linhaPix) {
-      if (f.f_forma === "Estorno Cartão") linhaPix.setAttribute("hidden", "");
-      else linhaPix.removeAttribute("hidden");
+      if (f.f_forma === "Estorno Cartão" || f.f_forma === "Estorno TED") { linhaPix.style.display = "none"; linhaPix.setAttribute("hidden", ""); }
+      else { linhaPix.style.display = ""; linhaPix.removeAttribute("hidden"); }
+    }
+    if (linhaBanco) {
+      if (f.f_forma === "Estorno TED") { linhaBanco.style.display = ""; linhaBanco.removeAttribute("hidden"); }
+      else { linhaBanco.style.display = "none"; linhaBanco.setAttribute("hidden", ""); }
     }
 
     ["estorno", "reemb", "cheque"].forEach(function (k) {
@@ -2084,6 +2102,15 @@
       set("val_" + k, valorStr);
       var op = box.querySelector("#op_" + k);
       if (op) op.classList.add("ativa");
+    }
+
+    if (f.f_forma === "Estorno TED") {
+      var opReemb = box.querySelector("#op_reemb");
+      if (opReemb) opReemb.innerHTML = opReemb.innerHTML.replace("Reembolso", "Reembolso TED");
+    }
+    if (f.f_forma === "Estorno PIX") {
+      var opReembP = box.querySelector("#op_reemb");
+      if (opReembP) opReembP.innerHTML = opReembP.innerHTML.replace("Reembolso", "Estorno PIX");
     }
 
     aplicarClausula(box, doc, clausula);
