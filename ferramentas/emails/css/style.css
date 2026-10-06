@@ -73,6 +73,24 @@ body {
 .campo input:focus { outline: none; border-color: #111827; }
 .campo.largo { grid-column: 1 / -1; }
 
+.numeros-preset { margin-bottom: 16px; }
+.numeros-preset > label { font-size: 12px; color: #6b7280; font-weight: 500; display: block; margin-bottom: 6px; }
+.chips-numeros { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip-numero {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #1f2937;
+  transition: all 0.15s;
+}
+.chip-numero:hover { background: #f3f4f6; border-color: #9ca3af; }
+.chip-numero.ativo { background: #111827; color: #fff; border-color: #111827; }
+
 .preview {
   background: #f9fafb;
   border: 1px solid #e5e7eb;

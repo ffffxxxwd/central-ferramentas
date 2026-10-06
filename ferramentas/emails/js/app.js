@@ -28,7 +28,17 @@
     if (!modeloAtivo) return;
     var m = modeloAtivo;
 
+    var numerosHTML = "";
+    if (m.numeros && m.numeros.length) {
+      var chips = m.numeros.map(function(n) {
+        var ativo = valoresAtivos.whatsapp === n.whatsapp ? " ativo" : "";
+        return '<button type="button" class="chip-numero' + ativo + '" data-wa="' + n.whatsapp + '" data-ex="' + escapeAttr(n.exibicao) + '">' + n.exibicao + '</button>';
+      }).join("");
+      numerosHTML = '<div class="numeros-preset"><label>Número</label><div class="chips-numeros">' + chips + '</div></div>';
+    }
+
     var camposHTML = m.campos.map(function(c) {
+      if (c.chave === "whatsapp" || c.chave === "exibicao") return "";
       var largo = c.chave === "mensagemPre" || c.chave === "textoBotao" ? " largo" : "";
       return '<div class="campo' + largo + '">' +
              '<label>' + c.rotulo + '</label>' +
@@ -39,6 +49,7 @@
     editorEl.innerHTML =
       '<h2>' + m.nome + '</h2>' +
       '<div class="assunto-info">Assunto: <strong>' + m.assunto + '</strong></div>' +
+      numerosHTML +
       '<div class="campos">' + camposHTML + '</div>' +
       '<div class="preview" id="preview"></div>' +
       '<div class="acoes">' +
@@ -50,6 +61,16 @@
     editorEl.querySelectorAll("input[data-chave]").forEach(function(inp) {
       inp.addEventListener("input", function() {
         valoresAtivos[inp.dataset.chave] = inp.value;
+        atualizarPreview();
+      });
+    });
+
+    editorEl.querySelectorAll(".chip-numero").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        valoresAtivos.whatsapp = btn.dataset.wa;
+        valoresAtivos.exibicao = btn.dataset.ex;
+        editorEl.querySelectorAll(".chip-numero").forEach(function(b) { b.classList.remove("ativo"); });
+        btn.classList.add("ativo");
         atualizarPreview();
       });
     });

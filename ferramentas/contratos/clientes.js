@@ -14180,9 +14180,10 @@ window.CLIENTES = [
     cota: "10",
     fracao: "1/52",
     valorTotal: 65287.27,
-    valorPago: 1330.00,
+    valorPago: 1995.00,
     entradas: [
-      { descricao: "Corretagem 1x R$1.330,00 Cartão Master Crédito à Vista", valor: 1330.00 }
+      { descricao: "Corretagem 1x R$1.330,00 Cartão Master Crédito à Vista", valor: 1330.00 },
+      { descricao: "Corretagem 1x R$665,00 Boleto (E/2, recebido 16/09/2026)", valor: 665.00 }
     ],
     formaPagamentoEntrada: "Cartão R$1.330,00 (Master crédito à vista, Nº Doc 183758078) + Boleto 4x R$665,00 (R$2.660,00, venc. 16/09/2026)",
     formaReembolso: "Estorno Cartão",
@@ -14194,10 +14195,10 @@ window.CLIENTES = [
     pix: "",
     observacoes:
       "Contrato nº 355221 — Premium GAV Resorts, Bloco 02 / Apto 0916 / 9º andar / Cota 10.\n" +
-      "Corretagem total R$3.990,00: 1x R$1.330,00 cartão Master crédito à vista (Rede, Nº Doc 183758078, venc. 16/09/2026) + 4x R$665,00 boleto (R$2.660,00, venc. 16/09/2026).\n" +
+      "Corretagem total R$3.990,00: 1x R$1.330,00 cartão Master crédito à vista (Rede, Nº Doc 183758078) + 4x R$665,00 boleto (R$2.660,00, venc. 16/09/2026).\n" +
       "Sinal de Negócio R$3.264,37: 5 parcelas.\n" +
       "Saldo R$58.032,90: 85 parcelas (1ª venc. 10/06/2027).\n" +
-      "VALOR PAGO = R$ 1.330,00 (cartão crédito Master à vista confirmado no recibo — boletos corretagem sem confirmação de quitação).\n" +
+      "VALOR PAGO = R$ 1.995,00 (R$1.330 cartão + R$665 boleto E/2 — ambos recebidos 16/09/2026, conforme demonstrativo GAV).\n" +
       "Cônjuge: José Valdemir Sousa Santos (CPF 610.104.805-53, RG 1234361 SSP/SE, nasc. 02/09/1974, tel. (79) 99828-9512, email jvsousa2016@hotmail.com).\n" +
       "FORA DO PRAZO — assinado 16/08/2026, prazo de arrependimento venceu 23/08/2026.\n" +
       "Beneficiários corretagem: Rafael Jose Borgato (485.594.370-00196), Anderson Andrade Mendes (395.520.990-00170), Sheidon Francele de Melo (497.743.560-00171), Sulamita Leal (393.634.260-00145).\n" +

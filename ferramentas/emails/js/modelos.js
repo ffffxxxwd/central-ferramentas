@@ -1,39 +1,25 @@
-/* ============================================================
-   MODELOS DE EMAIL
-   ------------------------------------------------------------
-   Para adicionar um modelo novo, acrescente um objeto na lista abaixo.
-
-   Campos:
-     id       -> identificador único
-     nome     -> nome que aparece na lista
-     assunto  -> assunto do email (pode usar {{variavel}})
-     campos   -> lista de campos a preencher: { chave, rotulo, padrao }
-     corpo    -> função que recebe os valores dos campos e retorna
-                 { html, texto } — o html vai pro clipboard rico, o texto
-                 vai pro clipboard puro.
-   ============================================================ */
-
 window.MODELOS_EMAIL = [
   {
     id: "continuidade-reembolso",
     nome: "Continuidade do processo de reembolso",
     assunto: "Continuidade do processo de reembolso",
+    numeros: [
+      { whatsapp: "556296625714", exibicao: "(62) 9662-5714" },
+      { whatsapp: "556276025529", exibicao: "(62) 7602-5529" },
+      { whatsapp: "556284817629", exibicao: "(62) 8481-7629" }
+    ],
     campos: [
-      { chave: "saudacao",  rotulo: "Saudação",        padrao: "boa noite" },
-      { chave: "nome",      rotulo: "Nome do cliente", padrao: "Bruno" },
-      { chave: "whatsapp",  rotulo: "Número WhatsApp (só dígitos, com DDD e DDI)", padrao: "5562976025529" },
-      { chave: "exibicao",  rotulo: "Número para exibir", padrao: "(62) 97602-5529" },
+      { chave: "nome",      rotulo: "Nome do cliente", padrao: "" },
+      { chave: "whatsapp",  rotulo: "Número WhatsApp (só dígitos, com DDD e DDI)", padrao: "556296625714" },
+      { chave: "exibicao",  rotulo: "Número para exibir", padrao: "(62) 9662-5714" },
       { chave: "textoBotao", rotulo: "Texto do botão", padrao: "CLIQUE AQUI PARA DAR CONTINUIDADE" },
       { chave: "mensagemPre", rotulo: "Mensagem pré-preenchida no WhatsApp", padrao: "Olá! Gostaria de dar continuidade ao meu processo de reembolso." }
     ],
     corpo: function(v) {
       var link = "https://wa.me/" + v.whatsapp + "?text=" + encodeURIComponent(v.mensagemPre);
 
-      // saudação: "Olá Bruno, boa tarde." OU "Olá, boa tarde." (sem nome)
       var nome = (v.nome || "").trim();
-      var abertura = nome
-        ? "Olá " + nome + ", " + v.saudacao + "."
-        : "Olá, " + v.saudacao + ".";
+      var abertura = nome ? "Prezado(a) " + nome + "," : "Prezado(a),";
 
       var html =
         '<p>' + abertura + '</p>' +
