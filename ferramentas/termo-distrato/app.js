@@ -297,7 +297,11 @@
 
     // Mostra/esconde campos extras no formulário
     if ($("blocoMisto")) $("blocoMisto").hidden = !misto;
-    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cart\u00e3o");
+    if ($("linhaPix")) {
+      var esconderPix = (forma === "Estorno Cart\u00e3o");
+      $("linhaPix").hidden = esconderPix;
+      $("linhaPix").style.display = esconderPix ? "none" : "";
+    }
 
     // Busca ou cria o container de reembolso no documento
     var area = $("areaReembolso");

@@ -297,8 +297,16 @@
 
     // Mostra/esconde campos extras no formulário
     if ($("blocoMisto")) $("blocoMisto").hidden = !misto;
-    if ($("linhaPix")) $("linhaPix").hidden = (forma === "Estorno Cartão" || forma === "Estorno TED");
-    if ($("linhaBanco")) $("linhaBanco").hidden = (forma !== "Estorno TED");
+    if ($("linhaPix")) {
+      var esconderPix = (forma === "Estorno Cartão" || forma === "Estorno TED");
+      $("linhaPix").hidden = esconderPix;
+      $("linhaPix").style.display = esconderPix ? "none" : "";
+    }
+    if ($("linhaBanco")) {
+      var mostrarBanco = (forma === "Estorno TED");
+      $("linhaBanco").hidden = !mostrarBanco;
+      $("linhaBanco").style.display = mostrarBanco ? "" : "none";
+    }
 
     // Busca ou cria o container de reembolso no documento
     var area = $("areaReembolso");

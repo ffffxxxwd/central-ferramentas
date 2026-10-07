@@ -139,10 +139,10 @@
   function lerStore() {
     try {
       var raw = localStorage.getItem(STORE);
-      if (!raw) return { edits: {}, novos: [], arquivados: {}, pagos: {}, reembolsos: [] };
+      if (!raw) return { edits: {}, novos: [], arquivados: {}, pagos: {}, assinados: {}, enviados: {}, confirmados: {}, reembolsos: [] };
       var d = JSON.parse(raw);
-      return { edits: d.edits || {}, novos: d.novos || [], arquivados: d.arquivados || {}, pagos: d.pagos || {}, reembolsos: d.reembolsos || [] };
-    } catch (e) { return { edits: {}, novos: [], arquivados: {}, pagos: {}, reembolsos: [] }; }
+      return { edits: d.edits || {}, novos: d.novos || [], arquivados: d.arquivados || {}, pagos: d.pagos || {}, assinados: d.assinados || {}, enviados: d.enviados || {}, confirmados: d.confirmados || {}, reembolsos: d.reembolsos || [] };
+    } catch (e) { return { edits: {}, novos: [], arquivados: {}, pagos: {}, assinados: {}, enviados: {}, confirmados: {}, reembolsos: [] }; }
   }
   function gravarStore(d) {
     try { localStorage.setItem(STORE, JSON.stringify(d)); } catch (e) {}
@@ -203,6 +203,27 @@
   function marcarPago(id, pago) {
     if (pago) store.pagos[id] = true;
     else delete store.pagos[id];
+    gravarStore(store);
+  }
+
+  function ehAssinado(id) { return !!store.assinados[id]; }
+  function marcarAssinado(id, v) {
+    if (v) store.assinados[id] = true;
+    else delete store.assinados[id];
+    gravarStore(store);
+  }
+
+  function ehEnviado(id) { return !!store.enviados[id]; }
+  function marcarEnviado(id, v) {
+    if (v) store.enviados[id] = true;
+    else delete store.enviados[id];
+    gravarStore(store);
+  }
+
+  function ehConfirmado(id) { return !!store.confirmados[id]; }
+  function marcarConfirmado(id, v) {
+    if (v) store.confirmados[id] = true;
+    else delete store.confirmados[id];
     gravarStore(store);
   }
 
@@ -400,12 +421,18 @@
     var p = prazo7(c);
     var arq = ehArquivado(c.id);
     var pago = ehPago(c.id);
+    var assinado = ehAssinado(c.id);
+    var enviado = ehEnviado(c.id);
+    var confirmado = ehConfirmado(c.id);
     return (
       '<div role="button" tabindex="0" class="ficha' + (c.empresa === "WAM" ? " wam" : "") + (arq ? " arquivada" : "") + (pago ? " pago" : "") + '" data-id="' + esc(c.id) + '">' +
         (pago ? '<div class="ficha__carimbo">PAGO</div>' : "") +
         '<div class="ficha__topo">' +
           '<span class="tag' + (c.empresa === "WAM" ? " wam" : "") + '">' + esc(c.empresa) + "</span>" +
           (arq ? '<span class="tag arq">arquivado</span>' : "") +
+          (confirmado ? '<span class="tag confirmado-tag">confirmar valor pago</span>' : "") +
+          (enviado ? '<span class="tag enviado-tag">email enviado</span>' : "") +
+          (assinado ? '<span class="tag assinado-tag">assinado</span>' : "") +
           (pago ? '<span class="tag pago-tag">pago</span>' : "") +
           (ehPendente(c.id) ? '<span class="tag pend">aguardando contrato</span>' : "") +
           (/policial/i.test(c.profissao) ? '<span class="tag policial">POLICIAL</span>' : "") +
@@ -428,8 +455,19 @@
           '<button type="button" class="ficha__btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia">Nova guia ↗</button>' +
           '<button type="button" class="ficha__btn reembolso" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Reembolso</button>' +
           '<button type="button" class="ficha__btn" data-acao="email" data-id="' + esc(c.id) + '">Mensagem</button>' +
+        "</div>" +
+        '<div class="ficha__toggles">' +
+          '<button type="button" class="ficha__btn' + (confirmado ? " confirmado-ativo" : "") + '" data-confirmado="' + esc(c.id) + '" data-conf="' + (confirmado ? "1" : "0") + '">' +
+            (confirmado ? "Desmarcar confirmado" : "Confirmar valor pago") +
+          "</button>" +
           '<button type="button" class="ficha__btn' + (pago ? " pago-ativo" : "") + '" data-pago="' + esc(c.id) + '" data-pg="' + (pago ? "1" : "0") + '">' +
             (pago ? "Desmarcar pago" : "Marcar pago") +
+          "</button>" +
+          '<button type="button" class="ficha__btn' + (assinado ? " assinado-ativo" : "") + '" data-assinado="' + esc(c.id) + '" data-asg="' + (assinado ? "1" : "0") + '">' +
+            (assinado ? "Desmarcar assinado" : "Marcar assinado") +
+          "</button>" +
+          '<button type="button" class="ficha__btn' + (enviado ? " enviado-ativo" : "") + '" data-enviado="' + esc(c.id) + '" data-env="' + (enviado ? "1" : "0") + '">' +
+            (enviado ? "Desmarcar enviado" : "Marcar enviado") +
           "</button>" +
         "</div>" +
       "</div>"
@@ -2186,11 +2224,35 @@
       renderTudo();
       return;
     }
+    // confirmar/desmarcar valor
+    var cfBt = e.target.closest("[data-confirmado]");
+    if (cfBt) {
+      e.stopPropagation();
+      marcarConfirmado(cfBt.getAttribute("data-confirmado"), cfBt.getAttribute("data-conf") === "0");
+      renderTudo();
+      return;
+    }
     // marcar/desmarcar pago
     var pgBt = e.target.closest("[data-pago]");
     if (pgBt) {
       e.stopPropagation();
       marcarPago(pgBt.getAttribute("data-pago"), pgBt.getAttribute("data-pg") === "0");
+      renderTudo();
+      return;
+    }
+    // marcar/desmarcar assinado
+    var asBt = e.target.closest("[data-assinado]");
+    if (asBt) {
+      e.stopPropagation();
+      marcarAssinado(asBt.getAttribute("data-assinado"), asBt.getAttribute("data-asg") === "0");
+      renderTudo();
+      return;
+    }
+    // marcar/desmarcar enviado
+    var evBt = e.target.closest("[data-enviado]");
+    if (evBt) {
+      e.stopPropagation();
+      marcarEnviado(evBt.getAttribute("data-enviado"), evBt.getAttribute("data-env") === "0");
       renderTudo();
       return;
     }

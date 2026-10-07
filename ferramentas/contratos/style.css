@@ -129,6 +129,10 @@ body {
   display: flex; gap: 6px; flex-wrap: wrap;
   margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border);
 }
+.ficha__toggles {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--border);
+}
 .ficha__btn {
   border: 1px solid var(--border); background: var(--surface); color: var(--text);
   padding: 7px 11px; border-radius: 8px;
@@ -167,8 +171,14 @@ body {
   pointer-events: none; z-index: 1;
   text-transform: uppercase; white-space: nowrap;
 }
+.tag.confirmado-tag { background: #f0e6ff; color: #7c3aed; }
+.ficha__btn.confirmado-ativo { background: #f0e6ff; border-color: #7c3aed; color: #7c3aed; }
 .tag.pago-tag { background: #e6f4ea; color: #1a7f37; }
 .ficha__btn.pago-ativo { background: #e6f4ea; border-color: #1a7f37; color: #1a7f37; }
+.tag.assinado-tag { background: #e8f0fe; color: #1a56db; }
+.ficha__btn.assinado-ativo { background: #e8f0fe; border-color: #1a56db; color: #1a56db; }
+.tag.enviado-tag { background: #fef3e2; color: #b45309; }
+.ficha__btn.enviado-ativo { background: #fef3e2; border-color: #b45309; color: #b45309; }
 .ficha__btn.reembolso { background: var(--brand); border-color: var(--brand); color: #fff; }
 .ficha__btn.reembolso:hover { background: var(--brand-600); border-color: var(--brand-600); }
 .ficha.wam .ficha__btn.reembolso { background: var(--wam); border-color: var(--wam); }
