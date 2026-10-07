@@ -117,7 +117,7 @@ tr:last-child td{border-bottom:none}
   <select id="tipo"><option value="gasto">Gasto</option><option value="receita">Receita</option></select>
   <select id="categoria">
     <option value="">Categoria</option>
-    <option>Trabalho</option><option>Campanha</option><option>Outros</option>
+    <option>Trabalho</option><option>Auto Peças</option><option>Campanha</option><option>Outros</option>
   </select>
   <input type="date" id="data">
   <button class="btn btn-add" onclick="adicionar()">Adicionar</button>
@@ -248,6 +248,8 @@ const FIXOS = [
   { id: 101, desc: 'Custo quadragésima sexta entrada', valor: 880, tipo: 'gasto', cat: 'Trabalho', data: '2026-10-06' },
   { id: 102, desc: 'Quadragésima sétima entrada (bruto)', valor: 3930, tipo: 'receita', cat: 'Trabalho', data: '2026-10-06' },
   { id: 103, desc: 'Custo quadragésima sétima entrada', valor: 830, tipo: 'gasto', cat: 'Trabalho', data: '2026-10-06' },
+  { id: 104, desc: 'Auto Peças — primeira entrada (bruto)', valor: 620, tipo: 'receita', cat: 'Auto Peças', data: '2026-10-07' },
+  { id: 105, desc: 'Auto Peças — custo primeira entrada', valor: 120, tipo: 'gasto', cat: 'Auto Peças', data: '2026-10-07' },
 ];
 
 let periodoAtual = 'tudo';
