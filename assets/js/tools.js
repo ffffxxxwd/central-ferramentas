@@ -81,6 +81,15 @@ window.FERRAMENTAS = [
     pronta: true
   },
   {
+    id: "auto-pecas",
+    nome: "Auto Peças",
+    descricao: "Dashboard do trampo de auto peças: gastos, receitas e lucro com os mesmos filtros. Números totalmente separados do Gastos e Receitas.",
+    icone: "🔧",
+    categoria: "Financeiro",
+    url: "ferramentas/auto-pecas/index.html",
+    pronta: true
+  },
+  {
     id: "emails",
     nome: "Modelos de Email",
     descricao: "Modelos prontos de email para o cliente (continuidade do reembolso, etc). Preenche os campos e copia o email já formatado com botão de WhatsApp.",
