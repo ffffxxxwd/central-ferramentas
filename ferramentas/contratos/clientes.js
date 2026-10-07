@@ -14230,9 +14230,11 @@ window.CLIENTES = [
     cota: "06",
     fracao: "1/52",
     valorTotal: 64344.48,
-    valorPago: 1000.00,
+    valorPago: 1865.82,
     entradas: [
-      { descricao: "Corretagem 1x R$1.000,00 PIX", valor: 1000.00 }
+      { descricao: "Corretagem 1x R$1.000,00 PIX", valor: 1000.00 },
+      { descricao: "Corretagem 1x R$598,00 Boleto (quitado)", valor: 598.00 },
+      { descricao: "Taxa condomínio R$267,82 Boleto (05/10/2026)", valor: 267.82 }
     ],
     formaPagamentoEntrada: "PIX R$1.000,00 (corretagem 1ª parcela, 08/08/2026) + Boleto 5x R$598,00 (R$2.990,00, 1º venc. 10/09/2026)",
     formaReembolso: "Reembolso",
@@ -14249,7 +14251,8 @@ window.CLIENTES = [
       "Dados pagador PIX: CPF @@@.814.281-@@ (compatível com cônjuge Aline, CPF 044.814.281-39).\n" +
       "Sinal de Negócio R$3.217,23: 5 parcelas (1ª venc. 10/02/2027).\n" +
       "Saldo R$57.137,25: 75 parcelas (1ª venc. 10/07/2027).\n" +
-      "VALOR PAGO = R$ 1.000,00 (PIX confirmado pelo comprovante Laranjinha — boletos corretagem sem confirmação de quitação).\n" +
+      "VALOR PAGO = R$ 1.865,82 (PIX R$1.000 + boleto corretagem R$598 + taxa condomínio R$267,82 — confirmado pelo cliente via WhatsApp 07/10/2026).\n" +
+      "Taxa condomínio: R$267,82 boleto pago 05/10/2026 20h35 via Inter (Banco 033), beneficiário Condomínio Pyrenéus Residence (CNPJ 61.940.816/0001-90).\n" +
       "Cônjuge: Aline de Sousa Lessa (CPF 044.814.281-39, RG 2914431 SESPDS/DF, nasc. 31/07/1993, tel. (61) 99685-1279, email sousa.lessa22@gmail.com).\n" +
       "FORA DO PRAZO — assinado 08/08/2026, prazo de arrependimento venceu 15/08/2026.\n" +
       "Beneficiários corretagem: Kaliton dos Santos Amorim (667.879.400-00180), Josilene Rodrigues Freire Dama (444.642.720-00118), Wirlen da Silva Alves (267.083.560-00178).\n" +
@@ -14594,6 +14597,7 @@ window.CLIENTES = [
     email: "julianag_limas@hotmail.com",
     conjuge: "",
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/286-juliana-grasiele-limas--contrato.pdf" }],
+    clausulaExtra: "O reembolso será efetuado imediatamente após a assinatura do presente Termo de Distrato.",
     pix: "",
     observacoes:
       "Contrato nº 352220 — Gran Garden Resort, Bloco C1 / Apto 205A / 2º andar / Cota 39.\n" +
@@ -14645,6 +14649,7 @@ window.CLIENTES = [
     email: "julianag_limas@hotmail.com",
     conjuge: "",
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/287-juliana-grasiele-limas--contrato-c2.pdf" }],
+    clausulaExtra: "O reembolso será efetuado imediatamente após a assinatura do presente Termo de Distrato.",
     pix: "",
     observacoes:
       "Contrato nº 352221 — Gran Garden Resort, Bloco C1 / Apto 05B / Andar T / Cota 43.\n" +
@@ -14678,19 +14683,21 @@ window.CLIENTES = [
     cnpj: "38.083.842/0001-27",
     empreendimento: "Pyrenéus Residence",
     localizacao: "Pirenópolis/GO",
-    bloco: "C",
-    unidade: "0037",
-    andar: "T",
-    cota: "06",
+    bloco: "A / C",
+    unidade: "",
+    andar: "",
+    cota: "6 cotas",
     contrato: "299623",
     fracao: "1/52",
-    valorTotal: 66713.47,
-    valorPago: 3990.00,
+    valorTotal: 400280.34,
+    valorPago: 57073.98,
     entradas: [
-      { descricao: "Corretagem 3x R$1.330,00 Cartão VISA crédito parcelado", valor: 3990.00 }
+      { descricao: "Corretagem cartão VISA 3x R$7.600 (6 cotas)", valor: 22800.00 },
+      { descricao: "Sinal 5 parcelas por cota (6 cotas, quitadas)", valor: 21766.74 },
+      { descricao: "Parcelas P/1 e P/2 por cota (6 cotas, quitadas)", valor: 12507.24 }
     ],
-    formaPagamentoEntrada: "Cartão VISA crédito parcelado 3x R$1.330,00 (CV 172688536, 14/11/2025 13h37, Laranjinha Itaú, VISA final 8141)",
-    formaReembolso: "Estorno Cartão",
+    formaPagamentoEntrada: "Cartão VISA crédito parcelado 3x R$7.600,00 (6 cotas, CV 172688536, 14/11/2025)",
+    formaReembolso: "Reembolso",
     dataAssinatura: "2025-11-14",
     telefone: "(38) 98855-9336",
     email: "rafarbrsantos@gmail.com",
@@ -14704,7 +14711,8 @@ window.CLIENTES = [
       "CLIENTE TEM 6 CONTRATOS (mesma pessoa): BL C Apt 49/Cota 09, Apt 46/Cota 11, Apt 54/Cota 25, Apt 37(=0037)/Cota 06 (ESTE), Apt 29/Cota 15; BL A Apt 31/Cota 20. Todos R$66.713,39 cada.\n" +
       "Sinal de Negócio R$3.335,67: 5x R$667,13 boleto (1ª venc. 15/03/2026).\n" +
       "Saldo R$59.387,80: 75x R$791,84 boleto (1ª venc. 15/08/2026).\n" +
-      "VALOR PAGO = R$ 3.990,00 (corretagem cartão — valor cheio. Sinal e saldo sem confirmação de pagamento).\n" +
+      "VALOR PAGO = R$ 57.073,98 (R$9.512,33 por cota × 6 cotas — confirmado pelo demonstrativo de 07/10/2026).\n" +
+      "Por cota: Corretagem R$3.990 (3x R$1.330 cartão) + Sinal R$3.627,79 (5 parcelas) + 2 parcelas saldo R$1.894,54 = R$9.512,33.\n" +
       "Cônjuge: Carolina Maia Santos, CPF 057.674.131-00, Fisioterapeuta, nasc. 12/03/1997, RG 05767413100 SESP/MT, tel (66) 99211-1160.\n" +
       "FORA DO PRAZO — assinado 14/11/2025, prazo de arrependimento venceu 21/11/2025.\n" +
       "Proposta datada de Pirenópolis/GO, 14 de novembro de 2025.\n" +
@@ -14835,9 +14843,9 @@ window.CLIENTES = [
     cota: "05",
     fracao: "1/52",
     valorTotal: 35172.00,
-    valorPago: 450.00,
+    valorPago: 27151.47,
     entradas: [
-      { descricao: "Corretagem 1x R$450,00 PIX", valor: 450.00 }
+      { descricao: "Total informado pelo cliente", valor: 27151.47 }
     ],
     formaPagamentoEntrada: "PIX R$450,00 (corretagem, 09/05/2022) + Boleto 9x R$438,50 (R$3.946,50, 1º venc. 05/06/2022)",
     formaReembolso: "Reembolso",
@@ -14850,7 +14858,7 @@ window.CLIENTES = [
     observacoes:
       "Contrato nº 42640 — Salinas Beach Resort, Bloco 01 / Apto 1601 / Andar 16 / Cota 05.\n" +
       "Corretagem total R$4.396,50: PIX R$450,00 (09/05/2022, doc E0036030520220/5091435b99c2b5/7b54) + Boleto 9x R$438,50 (R$3.946,50, 1º venc. 05/06/2022).\n" +
-      "VALOR PAGO = R$ 450,00 (PIX corretagem confirmado — boletos sem confirmação de quitação).\n" +
+      "VALOR PAGO = R$ 27.151,47 (valor informado pelo cliente).\n" +
       "Sinal de Negócio R$1.758,60: 4x R$439,65 (1ª venc. 05/03/2023) — sem confirmação.\n" +
       "Saldo R$29.016,90: 66x R$439,65 (1ª venc. 05/07/2023) — sem confirmação.\n" +
       "Cônjuge: Anete Cristina Silva Gonçalves (CPF 575.758.512-91, RG 2704134 PC/PA, nasc. 21/01/1978, Contadora, tel (91) 99212-6016, email gutolopes7@gmail.com).\n" +
@@ -14859,5 +14867,159 @@ window.CLIENTES = [
       "Assinatura presencial via D4Sign em 09/05/2022 (Fernando 18:44:09, Anete 18:47:09, doc aa44fdd3-368f-4b4f-8d7a-96cd2ecd34c5).\n" +
       "Testemunhas: Glendha Negrão Pinheiro, Beatriz da Cunha Beckman. Parte: Antonio Márcio Gomes da Silva.\n" +
       "Local de assinatura: Salinópolis/PA, 09 de maio de 2022."
+  },
+
+  // ── Ficha 292 ── Haroldo Miller Borbas dos Santos — Gran Valley Resort Bl B/B620/Cota 05 ──
+  {
+    id: 292,
+    empresa: "GAV",
+    nContrato: "96323",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    localizacao: "Gramado/RS",
+    nome: "Haroldo Miller Borbas dos Santos",
+    cpf: "004.967.119-70",
+    rg: "6791017-6 IIPR/PR",
+    dataNascimento: "16/02/1979",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua João dias Nascimento, 329, Casa, Centro, Jandaia do Sul/PR, CEP 86900-000",
+    bloco: "B",
+    apartamento: "B620",
+    andar: "3",
+    cota: "05",
+    fracao: "1/52",
+    valorTotal: 75019.38,
+    valorPago: 1995.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, 06/03/2023) + Boleto 1x R$250,00 + 2x R$872,50 (R$1.995,00, venc. 05/04 e 05/05/2023)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2023-03-06",
+    telefone: "(43) 99621-8390",
+    email: "millerborba@hotmail.com",
+    conjuge: "Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, nasc. 04/05/1975, Professora, tel (43) 99911-2540, email m_leandro_costa@hotmail.com)",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/292-haroldo-miller-borbas-dos-santos--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 96323 — Gran Valley Resort, Bloco B / Apto B 620 / Andar 3 / Cota 05.\n" +
+      "Corretagem total R$3.990,00: PIX R$1.995,00 (06/03/2023, doc E000000020230/30615411159704/5794) + Boleto 1x R$250,00 (venc. 05/04/2023) + Boleto 2x R$872,50 (R$1.745,00, venc. 05/05/2023).\n" +
+      "VALOR PAGO = R$ 1.995,00 (PIX corretagem confirmado — boletos sem confirmação de quitação).\n" +
+      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc. 05/07/2023) — sem confirmação.\n" +
+      "Saldo R$67.278,40: 80x R$840,98 (1ª venc. 05/11/2023) — sem confirmação.\n" +
+      "Cônjuge: Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, nasc. 04/05/1975, Professora, tel (43) 99911-2540, email m_leandro_costa@hotmail.com).\n" +
+      "FORA DO PRAZO — assinado 06/03/2023, prazo de arrependimento venceu 13/03/2023.\n" +
+      "Beneficiários corretagem: Andre Valença Carnevale (28.493.304/0001-57), Francisco Marques da Silva Junior (31.766.052/0001-05), Paulo Henrique Gonzaga de Queiroz Me (24.774.129/0001-15).\n" +
+      "Assinatura presencial via D4Sign em 06/03/2023 (Haroldo 13:48:44, Michele 13:52:22, doc 089285af-98a2-4a28-a23a-9a996fd33c1e).\n" +
+      "Testemunhas: Andre Valença Carnevale, Vilma Vitória Benetti Casagrande. Parte: Paulo Henrique Gonzaga de Queiroz.\n" +
+      "Mesma pessoa da ficha 290 (Cota 20, mesmo empreendimento). Mesmo Nº Documento PIX nos 2 contratos.\n" +
+      "Local de assinatura: Gramado/RS, 06 de março de 2023."
+  },
+
+  // ── Ficha 293 ── Victor Hugo Maruti Freitas — Porto Alto Resort Bl 01/0229/Cota 18 ──
+  {
+    id: 293,
+    empresa: "GAV",
+    nContrato: "333163",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Victor Hugo Maruti Freitas",
+    cpf: "059.126.549-40",
+    rg: "85316044 SESP/PR",
+    dataNascimento: "01/08/1986",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rod PR 317, KM 124, 00, Casa, Zona Rural, Floresta/PR, CEP 87120-000",
+    bloco: "01",
+    apartamento: "0229",
+    andar: "2",
+    cota: "18",
+    fracao: "1/52",
+    valorTotal: 65662.70,
+    valorPago: 6702.45,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.330,00 PIX", valor: 1330.00 },
+      { descricao: "Corretagem 2x R$1.330,00 Boleto (quitados)", valor: 2660.00 },
+      { descricao: "Sinal 3x R$820,78 + juros/correção/multa", valor: 2712.45 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.330,00 (corretagem, 10/04/2026) + Boleto 2x R$1.330,00 (R$2.660,00, quitados) + Sinal 3x R$820,78 (R$2.462,34, quitados)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-04-10",
+    telefone: "(44) 99175-4160",
+    email: "victorhugo23@hotmail.com",
+    conjuge: "Casado(a), dados do cônjuge não informados no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/293-victor-hugo-maruti-freitas--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 333163 — Porto Alto Resort, Bloco 01 / Apto 0229 / Andar 2 / Cota 18.\n" +
+      "Corretagem total R$3.990,00: PIX R$1.330,00 (10/04/2026, doc RESN3751530095/158146MEY95RW/NA2B5774) + Boleto 2x R$1.330,00 (R$2.660,00, quitados 06/05 e 26/05/2026).\n" +
+      "VALOR PAGO = R$ 6.702,45 (confirmado pelo demonstrativo de 07/10/2026) — corretagem R$3.990 + sinal 3 parcelas + juros/correção/multa.\n" +
+      "Sinal de Negócio R$3.283,14: 4x R$820,78 — 3 pagas (SI.1 16/07, SI.2 26/08, SI.3 14/09/2026), SI.4 pendente (venc. 15/10/2026).\n" +
+      "Saldo R$58.389,56: 80x R$729,87 (1ª venc. 15/11/2026) — sem confirmação.\n" +
+      "Cônjuge: Casado(a), dados do cônjuge não informados no contrato.\n" +
+      "FORA DO PRAZO — assinado 10/04/2026, prazo de arrependimento venceu 17/04/2026.\n" +
+      "Corretor: Lucas Marins Pereira (CPF/CNPJ 41.055.840/0001-39).\n" +
+      "Assinatura presencial via D4Sign em 10/04/2026 (Victor Hugo 13:50:12, doc e8a54571-3905-400e-941f-affc752174ec).\n" +
+      "Testemunhas: Lucas Marins Pereira, Regina Ferreira da Silva. Parte: Patricia Cardoso de Araujo.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Livro nº 02, CRI de Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 10 de abril de 2026."
+  },
+
+  // ── Ficha 294 ─────────────────────────────────────────────
+  {
+    id: 294,
+    visivel: true,
+    empresa: "WAM",
+    nome: "Guilherme Gustavo da Silva",
+    cpf: "753.697.701-82",
+    rg: "5750188 SSPGO",
+    nascimento: "29/11/1994",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Empresário",
+    endereco: "Rua das laranjeiras, 28, Centro",
+    cidade: "Bela Vista de Goiás",
+    uf: "GO",
+    cep: "75240000",
+    telefone: "(62) 98128-8877",
+    email: "GUIGUSSILVA@HOTMAIL.COM",
+    empreendimento: "Encontro das Águas Thermas Resort",
+    bloco: "CAA",
+    apartamento: "106",
+    cota: "10C",
+    fracao: "1/52",
+    contrato: "04-CAA106/10C",
+    dataContrato: "2026-06-06",
+    razaoSocial: "RMEX Construtora e Incorporadora SPE LTDA",
+    cnpj: "10.623.013/0001-70",
+    localizacao: "Caldas Novas/GO",
+    valorTotal: 13588.00,
+    valorPago: 2530.00,
+    entradas: [
+      { descricao: "Corretagem 10x R$253,00 Elo Crédito", valor: 2530.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito Elo (10 x R$253,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-06-06",
+    telefone: "(62) 98128-8877",
+    email: "GUIGUSSILVA@HOTMAIL.COM",
+    conjuge: "Casado(a), cônjuge não assinou o contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/294-guilherme-gustavo-da-silva--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 04-CAA106/10C — Encontro das Águas Thermas Resort, Bloco CAA / 106 / Cota 10C, 1 Quarto.\n" +
+      "Cedente: RMEX Construtora e Incorporadora SPE LTDA (CNPJ 10.623.013/0001-70).\n" +
+      "Corretagem R$2.530,00: 10x R$253,00 Elo Crédito — beneficiária WAM Caldas Novas LTDA.\n" +
+      "Fidelização: 3x R$50,00 (1ª venc. 15/07/2026). Saldo devedor: 72x R$186,64 (1ª venc. 15/10/2026).\n" +
+      "Taxa serviços/manutenção: R$62,66/mês.\n" +
+      "FORA DO PRAZO — assinado 06/06/2026, prazo de arrependimento venceu 13/06/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não assinou o contrato (contrato tipo solteiro).\n" +
+      "Local de assinatura: Caldas Novas-GO, 06 de junho de 2026."
   }
 ];
