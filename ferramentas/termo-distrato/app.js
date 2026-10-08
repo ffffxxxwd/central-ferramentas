@@ -298,12 +298,12 @@
     // Mostra/esconde campos extras no formulário
     if ($("blocoMisto")) $("blocoMisto").hidden = !misto;
     if ($("linhaPix")) {
-      var esconderPix = (forma === "Estorno Cart\u00e3o" || forma === "Estorno TED" || forma === "Reembolso");
+      var esconderPix = (forma === "Estorno Cart\u00e3o" || forma === "Estorno TED");
       $("linhaPix").hidden = esconderPix;
       $("linhaPix").style.display = esconderPix ? "none" : "";
     }
     if ($("linhaBanco")) {
-      var mostrarBanco = (forma === "Estorno TED" || forma === "Reembolso");
+      var mostrarBanco = (forma === "Estorno TED");
       $("linhaBanco").hidden = !mostrarBanco;
       $("linhaBanco").style.display = mostrarBanco ? "" : "none";
     }

@@ -2109,11 +2109,11 @@
     var linhaPix = box.querySelector("#linhaPix");
     var linhaBanco = box.querySelector("#linhaBanco");
     if (linhaPix) {
-      if (f.f_forma === "Estorno Cartão" || f.f_forma === "Estorno TED" || f.f_forma === "Reembolso") { linhaPix.style.display = "none"; linhaPix.setAttribute("hidden", ""); }
+      if (f.f_forma === "Estorno Cartão" || f.f_forma === "Estorno TED") { linhaPix.style.display = "none"; linhaPix.setAttribute("hidden", ""); }
       else { linhaPix.style.display = ""; linhaPix.removeAttribute("hidden"); }
     }
     if (linhaBanco) {
-      if (f.f_forma === "Estorno TED" || f.f_forma === "Reembolso") { linhaBanco.style.display = ""; linhaBanco.removeAttribute("hidden"); }
+      if (f.f_forma === "Estorno TED") { linhaBanco.style.display = ""; linhaBanco.removeAttribute("hidden"); }
       else { linhaBanco.style.display = "none"; linhaBanco.setAttribute("hidden", ""); }
     }
 

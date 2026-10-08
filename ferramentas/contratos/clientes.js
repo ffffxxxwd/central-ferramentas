@@ -14697,7 +14697,7 @@ window.CLIENTES = [
       { descricao: "Parcelas P/1 e P/2 por cota (6 cotas, quitadas)", valor: 12507.24 }
     ],
     formaPagamentoEntrada: "Cartão VISA crédito parcelado 3x R$7.600,00 (6 cotas, CV 172688536, 14/11/2025)",
-    formaReembolso: "Reembolso",
+    formaReembolso: "Estorno TED",
     dataAssinatura: "2025-11-14",
     telefone: "(38) 98855-9336",
     email: "rafarbrsantos@gmail.com",
@@ -15021,5 +15021,450 @@ window.CLIENTES = [
       "FORA DO PRAZO — assinado 06/06/2026, prazo de arrependimento venceu 13/06/2026.\n" +
       "Cônjuge: Casado(a), cônjuge não assinou o contrato (contrato tipo solteiro).\n" +
       "Local de assinatura: Caldas Novas-GO, 06 de junho de 2026."
+  },
+
+  // ── Ficha 295 ─────────────────────────────────────────────
+  {
+    id: 295,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Rosangela de Jesus Damasceno",
+    cpf: "058.134.129-56",
+    rg: "97155631 SESP PR",
+    nascimento: "22/12/1986",
+    estadoCivil: "União estável",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Atendente(a)",
+    endereco: "Rua maximo Martins, 158, Vila shalom",
+    cidade: "Foz do Iguaçu",
+    uf: "PR",
+    cep: "85855596",
+    telefone: "(45) 99958-2627",
+    email: "Rosangela.damasceno86@gmail.com",
+    empreendimento: "Porto Alto Resort",
+    bloco: "03",
+    apartamento: "0105",
+    cota: "24",
+    fracao: "1/52",
+    contrato: "362107",
+    dataContrato: "2026-09-27",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE LTDA",
+    cnpj: "34.832.326/0001-05",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 67647.13,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem, 27/09/2026) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 27/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-27",
+    telefone: "(45) 99958-2627",
+    email: "Rosangela.damasceno86@gmail.com",
+    conjuge: "União estável, cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/295-rosangela-de-jesus-damasceno--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 362107 — Porto Alto Resort, Bloco 03 / Apto 0105 / Andar 1 / Cota 24, 1 Quarto.\n" +
+      "Cedente: GAV Muro Alto Empreendimento Imobiliário SPE LTDA (CNPJ 34.832.326/0001-05).\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (27/09/2026, ID RESN37515300951581465GP40NCVA760B79) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 27/10/2026).\n" +
+      "Sinal de Negócio R$3.382,37: 5x R$676,47 (1ª venc. 10/02/2027).\n" +
+      "Saldo R$60.274,76: 91x R$662,36 (1ª venc. 10/07/2027).\n" +
+      "FORA DO PRAZO — assinado 27/09/2026, prazo de arrependimento venceu 04/10/2026.\n" +
+      "Cônjuge: União estável, cônjuge não informado no contrato.\n" +
+      "Consultor: Kelvny Ribeiro de Souza.\n" +
+      "Assinatura eletrônica via ZapSign em 27/09/2026 (Rosangela 14:54:23, doc b946a990-a42a-4809-bfee-1367394279c9).\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Livro nº 02, CRI de Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 27 de setembro de 2026."
+  },
+
+  // ── Ficha 296 ─────────────────────────────────────────────
+  {
+    id: 296,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Tiago Pereira Polo",
+    cpf: "223.961.908-22",
+    rg: "25270761 SSP SP",
+    nascimento: "18/08/1982",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Engenheiro eletricista(a)",
+    endereco: "Estrada Sao Judas, 190, Grupo 16 ap 213B, Parque Esplanada",
+    cidade: "Embu das Artes",
+    uf: "SP",
+    cep: "06817170",
+    telefone: "(11) 95207-7386",
+    email: "tiagopereirapolo@gmail.com",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "512",
+    cota: "14",
+    fracao: "1/52",
+    contrato: "362531",
+    dataContrato: "2026-10-01",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE LTDA",
+    cnpj: "45.298.124/0001-33",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: 50909.57,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem, 01/10/2026) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 01/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-01",
+    telefone: "(11) 95207-7386",
+    email: "tiagopereirapolo@gmail.com",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/296-tiago-pereira-polo--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 362531 — Areya Barra Resort, Bloco 01 / Apto 512 / Andar 5 / Cota 14, 1 Quarto.\n" +
+      "Cedente: GAV Barra de São Miguel Empreendimento Imobiliário SPE LTDA (CNPJ 45.298.124/0001-33).\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (01/10/2026, ID RESV104667009484542513​3MCKYP5F0FFF8) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 01/11/2026).\n" +
+      "Sinal de Negócio R$2.545,47: 4x R$636,37 (1ª venc. 05/03/2027).\n" +
+      "Saldo R$44.374,10: 74x R$599,65 (1ª venc. 05/07/2027).\n" +
+      "DENTRO DO PRAZO — assinado 01/10/2026, prazo de arrependimento vence 08/10/2026 (ÚLTIMO DIA HOJE).\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultor: Ytuane Honorio Batista.\n" +
+      "Assinatura eletrônica via ZapSign em 01/10/2026 (Tiago 13:22:23, doc 8fefb063-a50f-4231-96f5-d333d19d3778).\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Barra de São Miguel/AL. Matrícula nº 25.065, Livro nº 02, 1º SN e Registral de São Miguel dos Campos/AL.\n" +
+      "Local de assinatura: Ipojuca/PE, 01 de outubro de 2026."
+  },
+
+  // ── Ficha 297 ─────────────────────────────────────────────
+  {
+    id: 297,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Geovana Carvalho Mesquita",
+    cpf: "045.151.503-08",
+    rg: "0372562020094 CFO PA",
+    nascimento: "13/08/2003",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Analista Administrativo(a)",
+    endereco: "Rua manoel pedro dos santos, 24, Vila dos Cabanos",
+    cidade: "Barcarena",
+    uf: "PA",
+    cep: "68447000",
+    telefone: "(91) 98609-9555",
+    email: "geovanamesq@gmail.com",
+    empreendimento: "Premium GAV Resorts",
+    bloco: "02",
+    apartamento: "0223",
+    cota: "12",
+    fracao: "1/52",
+    contrato: "353845",
+    dataContrato: "2026-08-08",
+    razaoSocial: "Salinas Premium Resort Empreendimento Imobiliario SPE LTDA",
+    cnpj: "28.883.561/0001-03",
+    localizacao: "Salinópolis/PA",
+    valorTotal: 63613.22,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 Cartão VISA crédito à vista", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito à vista R$1.000,00 (corretagem, 08/08/2026, CV 33389858) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 08/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-08",
+    telefone: "(91) 98609-9555",
+    email: "geovanamesq@gmail.com",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/297-geovana-carvalho-mesquita--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 353845 — Premium GAV Resorts, Bloco 02 / Apto 0223 / Andar 2 / Cota 12, 1 Quarto.\n" +
+      "Cedente: Salinas Premium Resort Empreendimento Imobiliario SPE LTDA (CNPJ 28.883.561/0001-03).\n" +
+      "Corretagem R$3.990,00: Cartão VISA crédito à vista R$1.000,00 (08/08/2026, CV 33389858, VISA ****4236) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 08/10/2026).\n" +
+      "Beneficiários corretagem: Jonatas Amaral dos Santos (58244733000151), Joao Victor de Castro Acioly (28135042000159), Renata Pimenta Duarte (21192671000171).\n" +
+      "Sinal de Negócio R$3.180,67: 5x R$636,13 (1ª venc. 10/02/2027).\n" +
+      "Saldo R$56.442,55: 85x R$664,03 (1ª venc. 10/07/2027).\n" +
+      "FORA DO PRAZO — assinado 08/08/2026, prazo de arrependimento venceu 15/08/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultor: Joao Victor de Castro Acioly.\n" +
+      "Assinatura eletrônica via ZapSign em 08/08/2026 (Geovana 16:06:12, doc 4ad24b52-39b1-4fbe-9a1d-6ec049457313).\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: atila@gavresorts.com.br.\n" +
+      "Empreendimento em Salinópolis/PA. Matrícula nº 7.815 (Torres) e 7.814 (Estacionamento), CRI de Salinópolis/PA.\n" +
+      "Local de assinatura: Salinópolis/PA, 08 de agosto de 2026."
+  },
+
+  // ── Ficha 298 ─────────────────────────────────────────────
+  {
+    id: 298,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Eder Jose Brandao",
+    cpf: "045.562.039-37",
+    rg: "87338002 SESP PR",
+    nascimento: "19/09/1983",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Agricultor(a)",
+    endereco: "Santo Izidoro Interior, SN, Casa, Zona Rural",
+    cidade: "Dois Vizinhos",
+    uf: "PR",
+    cep: "85660000",
+    telefone: "(46) 999726896",
+    email: "kmy.parodi@gmail.com",
+    empreendimento: "Porto Alto Resort",
+    bloco: "04",
+    apartamento: "0204",
+    cota: "12",
+    fracao: "1/52",
+    contrato: "363231",
+    dataContrato: "2026-10-07",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE LTDA",
+    cnpj: "34.832.326/0001-05",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 67647.13,
+    valorPago: 1330.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.330,00 Cartão VISA Débito à vista", valor: 1330.00 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA Débito à vista R$1.330,00 (corretagem, 07/10/2026, CV 29752908, VISA Electron ****2323) + Boleto 2x R$1.330,00 (R$2.660,00, 1º venc. 08/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-07",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/298--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 363231 — Porto Alto Resort, Bloco 04 / Apto 0204 / Andar 2 / Cota 12, 1 Quarto.\n" +
+      "Cedente: GAV Muro Alto Empreendimento Imobiliário SPE LTDA (CNPJ 34.832.326/0001-05).\n" +
+      "Corretagem R$3.990,00: Cartão VISA Débito à vista R$1.330,00 (07/10/2026, CV 29752908, VISA Electron ****2323, máquina Rede Laranjinha Itaú SN369095) + Boleto 2x R$1.330,00 (R$2.660,00, 1º venc. 08/11/2026).\n" +
+      "Sinal de Negócio R$3.382,37: 5x R$676,47 (1ª venc. 10/01/2027).\n" +
+      "Saldo R$60.274,76: 91x R$662,36 (1ª venc. 10/06/2027).\n" +
+      "DENTRO DO PRAZO — assinado 07/10/2026, prazo de arrependimento vence 14/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultor: Gabriel Augusto Alves Viana.\n" +
+      "Assinatura eletrônica via ZapSign em 07/10/2026 (Eder 12:40:21, doc f875b63c-9fdf-413d-9cd2-e3109c50bbac).\n" +
+      "Ficha de Negociação aceita via Flow em 07/10/2026 12:16:14.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Ficha 01, Livro 02, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 07 de outubro de 2026."
+  },
+
+  // ── Ficha 299 ─────────────────────────────────────────────
+  {
+    id: 299,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Eliel Silva de Jesus",
+    cpf: "128.323.777-69",
+    rg: "209506138 DETRAN RJ",
+    nascimento: "10/02/1990",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Eletrotécnico",
+    endereco: "Rua Maripa, 25, Bom Retiro",
+    cidade: "Duque de Caxias",
+    uf: "RJ",
+    cep: "25223600",
+    telefone: "(21) 964750470",
+    email: "eliel_carioca@hotmail.com",
+    empreendimento: "Gran Valley Resort",
+    bloco: "A",
+    apartamento: "A 420",
+    cota: "01",
+    fracao: "1/52",
+    contrato: "91796",
+    dataContrato: "2023-02-12",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE LTDA",
+    cnpj: "45.042.537/0001-52",
+    localizacao: "Gramado/RS",
+    valorTotal: 78113.26,
+    valorPago: 40371.30,
+    entradas: [
+      { descricao: "Total pago informado pelo cliente", valor: 40371.30 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.330,00 (corretagem, 12/02/2023, Nº Doc E0856170120230 2121505MR2ZGR QP3ET) + Boleto 2x R$1.330,00 (R$2.660,00, 1º venc. 15/03/2023)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2023-02-12",
+    conjuge: "Rafaella Iecker L S Reinoso de Jesus (CPF 058.180.227-65, RG 281659714 DETRAN RJ, Empresária, nasc. 13/03/1994, tel. (21) 973438885)",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/299--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 91796 — Gran Valley Resort, Bloco A / Apto A 420 / Andar 1 / Cota 01, 1 Quarto.\n" +
+      "Cedente: GAV Gramado Empreendimento Imobiliário SPE LTDA (CNPJ 45.042.537/0001-52).\n" +
+      "Corretagem R$3.990,00: PIX R$1.330,00 (12/02/2023, Nº Doc E0856170120230 2121505MR2ZGR QP3ET) + Boleto 2x R$1.330,00 (R$2.660,00, 1º venc. 15/03/2023).\n" +
+      "Beneficiários corretagem: Rogerio Augusto Cyriaco (34470903000158), Cleber Magno da Silva - Promocao de Vendas (24005922000150), Paulo Henrique Gonzaga de Queiroz Me (24774129000115).\n" +
+      "Sinal de Negócio R$3.905,66: 4x R$976,41 (1ª venc. 15/05/2023).\n" +
+      "Saldo R$70.217,60: 80x R$877,72 (1ª venc. 15/09/2023).\n" +
+      "FORA DO PRAZO — assinado 12/02/2023, prazo de arrependimento venceu 19/02/2023.\n" +
+      "Cônjuge: Rafaella Iecker L S Reinoso de Jesus (CPF 058.180.227-65, RG 281659714 DETRAN RJ, Empresária, nasc. 13/03/1994).\n" +
+      "Assinatura presencial via D4Sign em 12/02/2023 (Eliel 12:33:50, Rafaella 12:34:31, doc 0627e274-1dc4-461f-ae13-2960b72742ef).\n" +
+      "Testemunhas: Rogerio A Cyriaco, Thaina Barberena. Parte: Paulo Henrique Gonzaga de Queiroz. Aprovação: Jenifer Caroline Alves Mengue.\n" +
+      "Empreendimento em Gramado/RS (Carazal). Matrícula nº 38.025, Livro 02, CRI Gramado/RS.\n" +
+      "Local de assinatura: Gramado/RS, 12 de fevereiro de 2023."
+  },
+
+  // ── Ficha 300 ─────────────────────────────────────────────
+  {
+    id: 300,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Roberto Luiz Rochemback",
+    cpf: "023.018.729-39",
+    rg: "60446482 SESP PR",
+    nascimento: "06/01/1978",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Publicitário(a)",
+    endereco: "Avenida das Torres, 844, Sigma3, Santa Luzia",
+    cidade: "Dois Vizinhos",
+    uf: "PR",
+    cep: "85661400",
+    telefone: "(46) 999728172",
+    email: "roberto@sigma3.com.br",
+    empreendimento: "Porto Alto Resort",
+    bloco: "02",
+    apartamento: "0114",
+    cota: "09",
+    fracao: "1/52",
+    contrato: "363236",
+    dataContrato: "2026-10-07",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE LTDA",
+    cnpj: "34.832.326/0001-05",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 67647.13,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$3.990,00 Cartão MASTER Crédito à vista", valor: 3990.00 }
+    ],
+    formaPagamentoEntrada: "Cartão MASTER Crédito à vista R$3.990,00 (corretagem, 07/10/2026, CV 30752882, Mastercard ****8973)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-07",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/300--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 363236 — Porto Alto Resort, Bloco 02 / Apto 0114 / Andar 1 / Cota 09, 1 Quarto.\n" +
+      "Cedente: GAV Muro Alto Empreendimento Imobiliário SPE LTDA (CNPJ 34.832.326/0001-05).\n" +
+      "Corretagem R$3.990,00: Cartão MASTER Crédito à vista R$3.990,00 (07/10/2026, CV 30752882, Mastercard ****8973, máquina Rede Laranjinha Itaú SN375153).\n" +
+      "ATENÇÃO: Recibo mostra transação ÚNICA de R$7.980,00 (CV 30752882) cobrindo 2 contratos (este + contrato 363237). Cada contrato = R$3.990,00.\n" +
+      "Sinal de Negócio R$3.382,37: 5x R$676,47 (1ª venc. 10/12/2026).\n" +
+      "Saldo R$60.274,76: 91x R$662,36 (1ª venc. 10/05/2027).\n" +
+      "DENTRO DO PRAZO — assinado 07/10/2026, prazo de arrependimento vence 14/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultor: Rodrigo Amaro de Mendonça.\n" +
+      "Assinatura eletrônica via ZapSign em 07/10/2026 (Roberto 12:53:42, doc bf4c26af-9045-4752-be91-869eb8301683).\n" +
+      "Ficha de Negociação aceita via Flow em 07/10/2026 12:31:44.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Ficha 01, Livro 02, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 07 de outubro de 2026."
+  },
+
+  // ── Ficha 301 ─────────────────────────────────────────────
+  {
+    id: 301,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Roberto Luiz Rochemback",
+    cpf: "023.018.729-39",
+    rg: "60446482 SESP PR",
+    nascimento: "06/01/1978",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Publicitário(a)",
+    endereco: "Avenida das Torres, 844, Sigma3, Santa Luzia",
+    cidade: "Dois Vizinhos",
+    uf: "PR",
+    cep: "85661400",
+    telefone: "(46) 999728172",
+    email: "roberto@sigma3.com.br",
+    empreendimento: "Porto Alto Resort",
+    bloco: "03",
+    apartamento: "0215",
+    cota: "22",
+    fracao: "1/52",
+    contrato: "363237",
+    dataContrato: "2026-10-07",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE LTDA",
+    cnpj: "34.832.326/0001-05",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 67647.13,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$3.990,00 Cartão MASTER Crédito à vista", valor: 3990.00 }
+    ],
+    formaPagamentoEntrada: "Cartão MASTER Crédito à vista R$3.990,00 (corretagem, 07/10/2026, CV 30752882, Mastercard ****8973)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-07",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/301--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 363237 — Porto Alto Resort, Bloco 03 / Apto 0215 / Andar 2 / Cota 22, 1 Quarto.\n" +
+      "Cedente: GAV Muro Alto Empreendimento Imobiliário SPE LTDA (CNPJ 34.832.326/0001-05).\n" +
+      "Corretagem R$3.990,00: Cartão MASTER Crédito à vista R$3.990,00 (07/10/2026, CV 30752882, Mastercard ****8973, máquina Rede Laranjinha Itaú SN375153).\n" +
+      "ATENÇÃO: Recibo mostra transação ÚNICA de R$7.980,00 (CV 30752882) cobrindo 2 contratos (este + contrato 363236). Cada contrato = R$3.990,00.\n" +
+      "Sinal de Negócio R$3.382,37: 5x R$676,47 (1ª venc. 10/12/2026).\n" +
+      "Saldo R$60.274,76: 91x R$662,36 (1ª venc. 10/05/2027).\n" +
+      "DENTRO DO PRAZO — assinado 07/10/2026, prazo de arrependimento vence 14/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultor: Rodrigo Amaro de Mendonça.\n" +
+      "Assinatura eletrônica via ZapSign em 07/10/2026 (Roberto 12:52:17, doc 3c4a4001-56f4-4675-a6f0-f97855d238fe).\n" +
+      "Ficha de Negociação aceita via Flow em 07/10/2026 12:31:44.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Ficha 01, Livro 02, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 07 de outubro de 2026."
+  },
+
+  // ── Ficha 302 ─────────────────────────────────────────────
+  {
+    id: 302,
+    visivel: true,
+    empresa: "GAV",
+    nome: "Jenifer de Mello",
+    cpf: "080.363.199-50",
+    rg: "123681061 SESP PR",
+    nascimento: "21/03/1994",
+    estadoCivil: "Casado(a)",
+    nacionalidade: "brasileiro(a)",
+    profissao: "Empresário(a)",
+    endereco: "Rua Armelindo Daros Copetti, 18, Vila Adriana II, Porto Meira",
+    cidade: "Foz do Iguaçu",
+    uf: "PR",
+    cep: "85854080",
+    telefone: "(45) 999537846",
+    email: "Jhenifersm@hotmail.com",
+    empreendimento: "Porto Alto Resort",
+    bloco: "03",
+    apartamento: "0111",
+    cota: "12",
+    fracao: "1/52",
+    contrato: "362106",
+    dataContrato: "2026-09-27",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE LTDA",
+    cnpj: "34.832.326/0001-05",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 67647.13,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 PIX", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem, 27/09/2026, CV 24266386, ID RESN37515300951581460064ADSC8504B50D) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 27/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-27",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/302--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 362106 — Porto Alto Resort, Bloco 03 / Apto 0111 / Andar 1 / Cota 12, 1 Quarto.\n" +
+      "Cedente: GAV Muro Alto Empreendimento Imobiliário SPE LTDA (CNPJ 34.832.326/0001-05).\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (27/09/2026, CV 24266386, máquina Rede Laranjinha Itaú SN375153, Aute 670138) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 27/10/2026).\n" +
+      "Sinal de Negócio R$3.382,37: 5x R$676,47 (1ª venc. 10/02/2027).\n" +
+      "Saldo R$60.274,76: 91x R$662,36 (1ª venc. 10/07/2027).\n" +
+      "FORA DO PRAZO — assinado 27/09/2026, prazo de arrependimento venceu 04/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultor: Kelvny Ribeiro de Souza.\n" +
+      "Assinatura eletrônica via ZapSign em 27/09/2026 (Jenifer 14:53:31, doc b103825a-22c0-4217-b91b-f239c97390c0).\n" +
+      "Ficha de Negociação aceita via Flow em 27/09/2026 14:22:11.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Ficha 01, Livro 02, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 27 de setembro de 2026."
   }
 ];
