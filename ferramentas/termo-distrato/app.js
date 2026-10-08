@@ -342,8 +342,8 @@
           '<p class="doc-p doc-p--bold">GAV Resorts Gest\u00e3o de Neg\u00f3cios e Participa\u00e7\u00e3o LTDA compromete-se ainda a efetuar ' +
             '<span id="pv_meio">a devolu\u00e7\u00e3o por transfer\u00eancia banc\u00e1ria</span> no valor de R$ <span id="pv_valor">0,00</span> ' +
             '(<span id="pv_extenso">zero real</span>) referente ao sinal de proposta.</p>' +
-          '<p class="doc-p doc-p--bold">Comprometemos tamb\u00e9m em efetuar o cancelamento de quaisquer cobran\u00e7as futuras ' +
-            'referente as parcelas firmadas em contrato.</p>';
+          '<p class="doc-p" id="linhaCobrancas" hidden><strong>Comprometemos tamb\u00e9m em efetuar o cancelamento de quaisquer cobran\u00e7as futuras ' +
+            'referente as parcelas firmadas em contrato.</strong></p>';
         area.id = "areaReembolso";
       }
       // Preenche os valores do modo simples

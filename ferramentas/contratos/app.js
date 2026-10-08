@@ -1675,7 +1675,7 @@
 '<div class="doc-opcao" id="op_cheque"><span>( <b class="mark" id="ck_cheque">&nbsp;</b> ) Cheque</span><span>R$ <span id="val_cheque">XXXX,00</span></span></div>' +
 '</div>' +
 '<p class="doc-p doc-p--bold">' + pagadora + ' compromete-se ainda a efetuar <span id="pv_meio">a devolução por transferência bancária</span> no valor de R$ <span id="pv_valor">1.000,00</span> (<span id="pv_extenso">mil reais</span>) referente ao sinal de proposta.</p>' +
-'<p class="doc-p doc-p--bold">Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras referente as parcelas firmadas em contrato.</p>' +
+'<p class="doc-p" id="linhaCobrancas" hidden><strong>Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras referente as parcelas firmadas em contrato.</strong></p>' +
 '<p class="doc-p">Sendo essa a expressão final de minha vontade assino o presente distrato em 02 (duas) vias de igual teor, em conjunto, e com a concordância da empresa, razão pela qual as partes conferem entre si ampla, plena e irrevogável quitação, declarando-se livres e desimpedidas de qualquer obrigação em razão do aqui acordado.</p>' +
 '<p class="doc-p" id="pv_data">__/__/____.</p>' +
 '<p class="doc-p doc-pix" id="linhaPix"><strong>Chave PIX para reembolso:</strong> <span id="pv_pix" class="pix-valor"></span></p>' +

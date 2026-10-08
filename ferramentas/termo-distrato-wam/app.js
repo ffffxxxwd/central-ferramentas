@@ -336,8 +336,8 @@
           '<p class="doc-p doc-p--bold">Wam Hoteis e Resorts S/A compromete-se ainda a efetuar ' +
             '<span id="pv_meio">a devolução por transferência bancária</span> no valor de R$ <span id="pv_valor">0,00</span> ' +
             '(<span id="pv_extenso">zero real</span>) referente ao sinal de proposta.</p>' +
-          '<p class="doc-p doc-p--bold">Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras ' +
-            'referente as parcelas firmadas em contrato.</p>';
+          '<p class="doc-p" id="linhaCobrancas" hidden><strong>Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras ' +
+            'referente as parcelas firmadas em contrato.</strong></p>';
       area.id = "areaReembolso";
       setTxt("pv_valor", valorStr || "0,00");
       setTxt("pv_extenso", texto($("f_extenso").value, "\u2014"));

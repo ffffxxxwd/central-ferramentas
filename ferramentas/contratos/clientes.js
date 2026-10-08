@@ -15281,7 +15281,7 @@ window.CLIENTES = [
       { descricao: "Total pago informado pelo cliente", valor: 40371.30 }
     ],
     formaPagamentoEntrada: "PIX R$1.330,00 (corretagem, 12/02/2023, Nº Doc E0856170120230 2121505MR2ZGR QP3ET) + Boleto 2x R$1.330,00 (R$2.660,00, 1º venc. 15/03/2023)",
-    formaReembolso: "Reembolso",
+    formaReembolso: "Estorno TED",
     dataAssinatura: "2023-02-12",
     conjuge: "Rafaella Iecker L S Reinoso de Jesus (CPF 058.180.227-65, RG 281659714 DETRAN RJ, Empresária, nasc. 13/03/1994, tel. (21) 973438885)",
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/299--contrato.pdf" }],
