@@ -15466,5 +15466,756 @@ window.CLIENTES = [
       "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
       "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula nº 9.500, Ficha 01, Livro 02, CRI Ipojuca/PE.\n" +
       "Local de assinatura: Ipojuca/PE, 27 de setembro de 2026."
+  },
+
+  // ── Ficha 303 ──────────────────────────────────────────────
+  {
+    id: 303,
+    nome: "Patricia Camila Rodrigues Leite",
+    cpf: "296.059.178-07",
+    rg: "57.371.654-7",
+    orgaoExpedidor: "SSP/SP",
+    dataNascimento: "12/03/1981",
+    estadoCivil: "Casado(a)",
+    profissao: "Farmacêutica",
+    endereco: "Rua Egidio Gazolla, SN, Vila Guarani, Mauá/SP, CEP 09310-140",
+    email: "cesarantonioleite@hotmail.com",
+    telefone: "(11) 98636-3454",
+    empresa: "GAV",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "04",
+    apartamento: "0234",
+    andar: "1",
+    cota: "43",
+    fracao: "1/52",
+    contrato: "363093",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 88739.97,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 PIX (metade do PIX R$2.000 compartilhado c/ contrato 363092)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem, 05/10/2026, CV 37890250 — 1 PIX de R$2.000 dividido entre 2 contratos: 363093 + 363092) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 05/11/2026, não pago)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-05",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/303--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 363093 — Porto 2 Life Resort, Torre BLOCO 04 / Apto 0234 / Andar 1 / Cota 43, 2 Quartos.\n" +
+      "Cedente: GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 39.673.888/0001-69).\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (contrato) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 05/11/2026).\n" +
+      "PIX R$2.000,00 compartilhado com contrato 363092 (ficha 304): R$1.000 cada. Recibo Itaú CV 37890250, 05/10/2026 19h21, Laranjinha SN765814, Aute 591725.\n" +
+      "Sinal de Negócio R$4.437,01: 5x R$887,40 (1ª venc. 10/03/2027).\n" +
+      "Saldo R$80.312,96: 91x R$882,56 (1ª venc. 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 05/10/2026, prazo de arrependimento vence 12/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultora: Vanessa Marques de Freitas.\n" +
+      "Assinatura eletrônica via ZapSign em 05/10/2026 (Patricia 20:39:51, doc 33fb6eab-440a-4ba2-b338-fadd1b386c9b).\n" +
+      "Ficha de Negociação aceita via Flow em 05/10/2026 20:27:24.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula R.9-2.929, Livro nº 02-E, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 05 de outubro de 2026."
+  },
+
+  // ── Ficha 304 ──────────────────────────────────────────────
+  {
+    id: 304,
+    nome: "Patricia Camila Rodrigues Leite",
+    cpf: "296.059.178-07",
+    rg: "57.371.654-7",
+    orgaoExpedidor: "SSP/SP",
+    dataNascimento: "12/03/1981",
+    estadoCivil: "Casado(a)",
+    profissao: "Farmacêutica",
+    endereco: "Rua Egidio Gazolla, SN, Vila Guarani, Mauá/SP, CEP 09310-140",
+    email: "cesarantonioleite@hotmail.com",
+    telefone: "(11) 98636-3454",
+    empresa: "GAV",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "04",
+    apartamento: "0233",
+    andar: "1",
+    cota: "11",
+    fracao: "1/52",
+    contrato: "363092",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 88739.97,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 PIX (metade do PIX R$2.000 compartilhado c/ contrato 363093)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem, 05/10/2026, CV 37890250 — 1 PIX de R$2.000 dividido entre 2 contratos: 363092 + 363093) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 05/11/2026, não pago)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-05",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/304--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 363092 — Porto 2 Life Resort, Torre BLOCO 04 / Apto 0233 / Andar 1 / Cota 11, 2 Quartos.\n" +
+      "Cedente: GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 39.673.888/0001-69).\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (contrato) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 05/11/2026).\n" +
+      "PIX R$2.000,00 compartilhado com contrato 363093 (ficha 303): R$1.000 cada. Recibo Itaú CV 37890250, 05/10/2026 19h21, Laranjinha SN765814, Aute 591725.\n" +
+      "Sinal de Negócio R$4.437,01: 5x R$887,40 (1ª venc. 10/03/2027).\n" +
+      "Saldo R$80.312,96: 91x R$882,56 (1ª venc. 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 05/10/2026, prazo de arrependimento vence 12/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultora: Vanessa Marques de Freitas.\n" +
+      "Assinatura eletrônica via ZapSign em 05/10/2026 (Patricia 20:37:52, doc c30d4893-e92a-41b5-99bb-81bcdc838536).\n" +
+      "Ficha de Negociação aceita via Flow em 05/10/2026 20:27:24.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula R.9-2.929, Livro nº 02-E, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 05 de outubro de 2026."
+  },
+
+  // ── Ficha 305 ──────────────────────────────────────────────
+  {
+    id: 305,
+    nome: "Caroline Rodrigues Araujo",
+    cpf: "026.061.671-04",
+    rg: "16108540",
+    orgaoExpedidor: "SSP/MT",
+    dataNascimento: "09/12/1987",
+    estadoCivil: "Casado(a)",
+    profissao: "Fonoaudióloga",
+    endereco: "Rua Leon Nicolas, SN, Capão Raso, Curitiba/PR, CEP 81150-140",
+    email: "carolramater@gmail.com",
+    telefone: "(66) 99962-4395",
+    empresa: "GAV",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "04",
+    apartamento: "0234",
+    andar: "1",
+    cota: "11",
+    fracao: "1/52",
+    contrato: "363095",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 88739.97,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.000,00 Cartão VISA Crédito à vista (Rede)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito à vista R$1.000,00 (corretagem, 05/10/2026, Rede, CV 193808518 — recibo Itaú R$2.000, possível 2º contrato compartilhando comprovante) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 05/12/2026, não pago)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-05",
+    conjuge: "Casado(a), cônjuge não informado no contrato",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/305--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 363095 — Porto 2 Life Resort, Torre BLOCO 04 / Apto 0234 / Andar 1 / Cota 11, 2 Quartos.\n" +
+      "Cedente: GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 39.673.888/0001-69).\n" +
+      "Corretagem R$3.990,00: Cartão VISA crédito à vista R$1.000,00 (Rede, CV 193808518) + Boleto 4x R$747,50 (R$2.990,00, 1º venc. 05/12/2026).\n" +
+      "ATENÇÃO: recibo Itaú VISA R$2.000,00 (CV 193808518, 05/10/2026 19h29, VISA ****1633, Laranjinha SN765814, Aute 591729). Contrato credita apenas R$1.000 corretagem — possível 2º contrato compartilhando comprovante (padrão idêntico à Patricia, fichas 303-304).\n" +
+      "Sinal de Negócio R$4.437,01: 5x R$887,40 (1ª venc. 10/04/2027).\n" +
+      "Saldo R$80.312,96: 91x R$882,56 (1ª venc. 10/09/2027).\n" +
+      "DENTRO DO PRAZO — assinado 05/10/2026, prazo de arrependimento vence 12/10/2026.\n" +
+      "Cônjuge: Casado(a), cônjuge não informado no contrato.\n" +
+      "Consultora: Vanessa Marques de Freitas.\n" +
+      "Assinatura eletrônica via ZapSign em 05/10/2026 (Caroline 20:48:10, doc 32793eb7-654d-43cb-b29a-b0536751ec06).\n" +
+      "Ficha de Negociação aceita via Flow em 05/10/2026 20:16:27.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Empreendimento em Ipojuca/PE (Muro Alto). Matrícula R.9-2.929, Livro nº 02-E, CRI Ipojuca/PE.\n" +
+      "Local de assinatura: Ipojuca/PE, 05 de outubro de 2026."
+  },
+
+  // === FICHA 306 === Keilane Pereira dos Santos ===
+  {
+    id: 306,
+    nome: "Keilane Pereira dos Santos",
+    cpf: "073.674.394-48",
+    rg: "7151243 SDS/PE",
+    dataNascimento: "04/02/1989",
+    estadoCivil: "União estável",
+    profissao: "Empresária",
+    email: "keilanedh.0203@gmail.com",
+    telefone: "(81) 983144508",
+    endereco: "R Joao Rio Branco de Lima, 468, Casa, Ibura, Recife/PE, CEP 51320540",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "03",
+    apartamento: "013",
+    andar: "0",
+    cota: "22",
+    fracao: "1/52",
+    razaoSocial: "JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "33.578.977/0001-40",
+    localizacao: "Cruz/CE",
+    valorTotal: 47949.95,
+    valorPago: 9615.73,
+    entradas: [
+      { descricao: "Total pago R$9.615,73 (informado pelo cliente)", valor: 9615.73 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem, 28/07/2025, Nº Doc RESN7395170091 / 786770ZQ1LRVN / N51B3FF5) + Boleto 4x R$747,50 (R$2.990,00, 1ª venc. 28/08/2025) + Sinal 5x R$479,50 = R$2.397,50 (1ª venc 05/12/2025) + Saldo parcelas quitadas — total pago R$9.615,73",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-07-28",
+    conjuge: "União estável, cônjuge não informado",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/306--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Ref. 278153 — Jeriquiá Lagoa Resort, Bloco 03 / Apto 013 / Andar 0 / Cota 22, 1 Quarto.\n" +
+      "Vendedora: JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 33.578.977/0001-40), Cruz/CE.\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (RESN7395170091 / 786770ZQ1LRVN / N51B3FF5, 28/07/2025) + Boleto 4x R$747,50 (R$2.990,00, 1ª venc. 28/08/2025).\n" +
+      "Sinal de Negócio R$2.397,50: 5x R$479,50 (1ª venc. 05/12/2025).\n" +
+      "Saldo R$41.562,45: 85x R$488,97 (1ª venc. 05/05/2026).\n" +
+      "FORA DO PRAZO — assinado 28/07/2025, prazo de arrependimento venceu 04/08/2025.\n" +
+      "valorPago = R$9.615,73 (total pago informado pelo cliente, incluindo corretagem, sinal e parcelas do saldo).\n" +
+      "Cônjuge: União estável, cônjuge não informado no contrato.\n" +
+      "Área privativa 35,29 m², área comum 62,78 m², área total 98,07 m².\n" +
+      "Beneficiários corretagem: Stefany Vitória da Silva (50205522000106), Kluiwert Ribeiro Souza (44300320000132), Helen C. S. Archanjo LTDA (58340203000107).\n" +
+      "Assinatura D4Sign 28/07/2025 22:59:59 (Keilane), doc 3b224b66-2eaa-457d-ad72-97c283d1de94.\n" +
+      "Testemunhas: Stefany Vitória da Silva, Arthur Henrique de Santana. Parte vendedora: Victor Luis Porpino de Lima.\n" +
+      "Local de assinatura: Ipojuca/PE, 28 de julho de 2025."
+  },
+
+  // === FICHA 307 === Joselma Monteiro Barbosa ===
+  {
+    id: 307,
+    nome: "Joselma Monteiro Barbosa",
+    cpf: "005.088.042-05",
+    rg: "307978213 DETRAN/RJ",
+    dataNascimento: "30/04/1991",
+    estadoCivil: "União estável",
+    profissao: "Técnico Segurança do Trabalho",
+    email: "coordumsc@gmail.com",
+    telefone: "(91) 991062681",
+    endereco: "Avenida J K, 3, Barcelona, Santo Antonio do Taua/PA, CEP 68786000",
+    empresa: "GAV",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "1119",
+    andar: "11",
+    cota: "01",
+    fracao: "1/26",
+    razaoSocial: "BEACH GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+    cnpj: "33.531.685/0001-51",
+    localizacao: "Salinópolis/PA",
+    valorTotal: 44554.77,
+    valorPago: 1706.37,
+    entradas: [
+      { descricao: "Cartão VISA crédito à vista R$1.000,00 (corretagem)", valor: 1000.00 },
+      { descricao: "1 parcela + taxa de condomínio", valor: 706.37 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito à vista R$1.000,00 (corretagem, 09/08/2026, Rede, CV 22125098, Laranjinha Itaú SN015761, VISA ****5444, Aute 988531) + Boleto 5x R$598,00 (R$2.990,00, 1ª venc. 10/10/2026) + 1 parcela + taxa de condomínio — total pago R$1.706,37",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-08-09",
+    conjuge: "União estável, cônjuge não informado",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/307--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 353990 — Beach GAV Resorts, Bloco 01 / Apto 1119 / Andar 11 / Cota 01, 1 Quarto.\n" +
+      "Vendedora: BEACH GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA (CNPJ 33.531.685/0001-51), Salinópolis/PA.\n" +
+      "Fração 1/26 (2 semanas por fração, 26 frações por unidade).\n" +
+      "Corretagem R$3.990,00: Cartão VISA crédito à vista R$1.000,00 (Rede, CV 22125098, 09/08/2026 12h18, Laranjinha Itaú SN015761, VISA ****5444, Aute 988531, ESTAB 95158243 Goiânia/GO) + Boleto 5x R$598,00 (R$2.990,00, 1ª venc. 10/10/2026).\n" +
+      "Sinal de Negócio R$2.227,73: 4x R$556,93 (1ª venc. 10/03/2027).\n" +
+      "Saldo R$38.337,04: 68x R$563,78 (1ª venc. 10/07/2027).\n" +
+      "FORA DO PRAZO — assinado 09/08/2026, prazo de arrependimento venceu 16/08/2026.\n" +
+      "valorPago = R$1.706,37 (entrada R$1.000 cartão + 1 parcela + taxa de condomínio, informado pelo cliente).\n" +
+      "Cônjuge: União estável, cônjuge não informado no contrato.\n" +
+      "Área privativa 30 m², área comum 31,268 m², área total 61,268 m².\n" +
+      "Beneficiários corretagem: Rafael Henrique Bendinelli Camargo (37787590000154), Sabrina Dias Chaves (33822338000188), Simara Silva Rachid (53245160000167).\n" +
+      "Ficha de Negociação aceita via Flow em 09/08/2026 12:36:52 (token 2H7AMSLYQ054C98C23E6).\n" +
+      "Assinatura ZapSign em 09/08/2026 12:48:23 (Joselma), doc 1409c23f-2681-4d49-9d3e-d4cfb5d06a6d.\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila@gavresorts.com.br.\n" +
+      "Matrícula 11.764, Livro 2, Cartório Único Ofício Salinópolis/PA.\n" +
+      "Local de assinatura: Salinópolis/PA, 09 de agosto de 2026."
+  },
+
+  // ─── 308 ─────────────────────────────────────────────
+  {
+    id: 308,
+    nome: "Haroldo Miller Borbas dos Santos",
+    cpf: "00496711970",
+    rg: "6791017-6 IIPR/PR",
+    profissao: "Autônomo",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1979-02-16",
+    estadoCivil: "Casado(a)",
+    endereco: "Rua João dias Nascimento, 329, Casa, Centro, Jandaia do Sul/PR, CEP 86900000",
+    email: "millerborba@hotmail.com",
+    telefone: "(43) 996218390",
+    empresa: "GAV",
+    empreendimento: "Gran Valley Resort",
+    bloco: "B",
+    apartamento: "620",
+    andar: "3",
+    cota: "05",
+    fracao: "1/26",
+    razaoSocial: "GAV GRAMADO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "45.042.537/0001-52",
+    localizacao: "Gramado/RS",
+    valorTotal: 75019.38,
+    valorPago: 1995.00,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, Nº Doc E0000000020230/30615411159704/5794, 06/03/2023) + Boleto 1x R$250,00 (corretagem, venc 05/04/2023) + Boleto 2x R$872,50 = R$1.745,00 (corretagem, venc 05/05/2023) + Sinal 4x R$937,75 = R$3.750,98 (1ª venc 05/07/2023) + Saldo 80x R$840,98 = R$67.278,40 (1ª venc 05/11/2023)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2023-03-06",
+    conjuge: "Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, Professora, nasc 04/05/1975)",
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/308--contrato.pdf" }],
+    pix: "",
+    observacoes:
+      "Contrato nº 96323 — Gran Valley Resort, Bloco B / Apto 620 / Andar 3 / Cota 05, 1 Quarto (Cama Queen com Duas Camas Auxiliares Acopladas mais Sofá-Cama, cap. max 6).\n" +
+      "Vendedora: GAV GRAMADO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 45.042.537/0001-52), Gramado/RS.\n" +
+      "Fração 1/26 (2 semanas por fração, 26 frações por unidade).\n" +
+      "Corretagem R$3.990,00: PIX R$1.995,00 (Nº Doc E0000000020230/30615411159704/5794, 06/03/2023) + Boleto 1x R$250,00 (venc 05/04/2023) + Boleto 2x R$872,50 = R$1.745,00 (venc 05/05/2023).\n" +
+      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc 05/07/2023).\n" +
+      "Saldo R$67.278,40: 80x R$840,98 (1ª venc 05/11/2023).\n" +
+      "FORA DO PRAZO — assinado 06/03/2023, prazo de arrependimento venceu 13/03/2023.\n" +
+      "valorPago = R$1.995 (PIX confirmado por Nº Doc). Boletos corretagem (R$250 + R$1.745) e parcelas de sinal/saldo — contrato de março/2023, conferir quitados.\n" +
+      "Cônjuge: Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, Professora, nasc 04/05/1975, tel (43) 999112540, e-mail m_leandro_costa@hotmail.com).\n" +
+      "Área privativa 35,05 m², área comum 47,91 m², área total 82,96 m².\n" +
+      "ATENÇÃO: Nome no D4Sign registrado como 'Harold9' (typo) em vez de 'Haroldo'.\n" +
+      "Assinatura D4Sign PRESENCIAL em 06/03/2023 (doc 089285af-98a2-4a28-a23a-9a996fd33c1e).\n" +
+      "Assinaturas: Haroldo (13:48:44), Michele (13:52:22), Andre Valença Carnevale (testemunha, 13:58:02), Vilma Vitória Benetti Casagrande (testemunha, 14:00:14), Paulo Henrique Gonzaga de Queiroz (parte, 14:01:19).\n" +
+      "Local de assinatura: Gramado/RS, 06 de março de 2023."
+  },
+
+  // ─── 309 ─────────────────────────────────────────────
+  {
+    id: 309,
+    nome: "Valeriano Ferreira de Barros Filho",
+    cpf: "27374025149",
+    rg: "1553766 SSP/TO",
+    profissao: "Empresário",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1963-01-22",
+    estadoCivil: "União estável",
+    endereco: "Avenida Francisco Leobas, 03, Quadra 29, Centro, São Félix do Tocantins/TO, CEP 77605-000",
+    email: "valeriano-45@hotmail.com",
+    telefone: "(63) 992323588",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "102",
+    andar: "1",
+    cota: "09",
+    fracao: "1/52",
+    razaoSocial: "JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "33.578.977/0001-40",
+    localizacao: "Cruz/CE",
+    valorTotal: 68377.65,
+    valorPago: 5528.41,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 },
+      { descricao: "Sinal 6 parcelas (boleto, todas quitadas per extrato GAV 07/10/2026)", valor: 3533.41 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025) + Sinal 6x R$569,82 = R$3.418,90 (1ª venc 15/11/2025, todas quitadas, total pago c/ juros/multa R$3.533,41) + Saldo 114x R$552,31 = R$62.963,75 (1ª venc 15/05/2026 — nenhuma paga)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-10-28",
+    conjuge: "União estável, cônjuge não informado no contrato",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/309--contrato.pdf" },
+      { titulo: "Extrato de pagamentos", arquivo: "contratos-pdf/309--extrato.pdf" },
+      { titulo: "Notificação extrajudicial", arquivo: "contratos-pdf/309--notificacao.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 296131 (Venda 19192) — Jeriquiá Lagoa Resort, Bloco 02 / Apto 102 / Andar 1 / Cota 09, 2 Quartos.\n" +
+      "Vendedora: JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 33.578.977/0001-40), Cruz/CE.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$1.995,00: PIX (Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025).\n" +
+      "Sinal de Negócio R$3.418,90: 6x R$569,82 (1ª venc 15/11/2025, todas quitadas).\n" +
+      "Saldo R$62.963,75: 114x R$552,31 (1ª venc 15/05/2026 — NENHUMA PAGA).\n" +
+      "FORA DO PRAZO — assinado 28/10/2025, prazo de arrependimento venceu 04/11/2025.\n" +
+      "valorPago = R$5.528,41 (PIX R$1.995 + sinal R$3.533,41 c/ juros/multa, confirmado por extrato GAV de 07/10/2026 e notificação extrajudicial de 07/10/2026).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (Cotas 09, 16, 19, 20) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "Notificação extrajudicial via advogada Tarquiane Cunha Santana Ferreira (OAB/MG 159.015), assinada digitalmente gov.br em 09/10/2026. Alega vício de consentimento e prática comercial abusiva.\n" +
+      "Cônjuge: União estável, cônjuge não informado.\n" +
+      "Área privativa 93,46 m², área comum 166,26 m², área total 259,72 m².\n" +
+      "Beneficiários corretagem: Jose Fernandes de Medeiros Neto (53127539000172), Anthony Ferreira Marques (61579420000169).\n" +
+      "D4Sign doc e1e1d245-9f53-487f-9359-c327a7ad337b.\n" +
+      "Local de assinatura: Jijoca de Jericoacoara/CE, 28 de outubro de 2025."
+  },
+
+  // ─── 310 ─────────────────────────────────────────────
+  {
+    id: 310,
+    nome: "Valeriano Ferreira de Barros Filho",
+    cpf: "27374025149",
+    rg: "1553766 SSP/TO",
+    profissao: "Empresário",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1963-01-22",
+    estadoCivil: "União estável",
+    endereco: "Avenida Francisco Leobas, 03, Quadra 29, Centro, São Félix do Tocantins/TO, CEP 77605-000",
+    email: "valeriano-45@hotmail.com",
+    telefone: "(63) 992323588",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "01",
+    apartamento: "102",
+    andar: "1",
+    cota: "16",
+    fracao: "1/52",
+    razaoSocial: "JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "33.578.977/0001-40",
+    localizacao: "Cruz/CE",
+    valorTotal: 68377.65,
+    valorPago: 5528.41,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 },
+      { descricao: "Sinal 6 parcelas (boleto, todas quitadas per extrato GAV 07/10/2026)", valor: 3533.41 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025) + Sinal 6x R$569,82 = R$3.418,90 (1ª venc 15/11/2025, todas quitadas, total pago c/ juros/multa R$3.533,41) + Saldo 114x R$552,31 = R$62.963,75 (1ª venc 15/05/2026 — nenhuma paga)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-10-28",
+    conjuge: "União estável, cônjuge não informado no contrato",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/310--contrato.pdf" },
+      { titulo: "Extrato de pagamentos", arquivo: "contratos-pdf/309--extrato.pdf" },
+      { titulo: "Notificação extrajudicial", arquivo: "contratos-pdf/309--notificacao.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 296128 (Venda 19191) — Jeriquiá Lagoa Resort, Bloco 01 / Apto 102 / Andar 1 / Cota 16, 2 Quartos.\n" +
+      "Vendedora: JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 33.578.977/0001-40), Cruz/CE.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$1.995,00: PIX (Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025).\n" +
+      "Sinal de Negócio R$3.418,90: 6x R$569,82 (1ª venc 15/11/2025, todas quitadas).\n" +
+      "Saldo R$62.963,75: 114x R$552,31 (1ª venc 15/05/2026 — NENHUMA PAGA).\n" +
+      "FORA DO PRAZO — assinado 28/10/2025, prazo de arrependimento venceu 04/11/2025.\n" +
+      "valorPago = R$5.528,41 (PIX R$1.995 + sinal R$3.533,41, confirmado por extrato GAV 07/10/2026).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (Cotas 09, 16, 19, 20) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "Mesma pessoa que fichas 309, 311, 312 (4 contratos simultâneos).\n" +
+      "D4Sign doc 2e5b4c70-6b5e-40a9-b8d0-131db31e53fb.\n" +
+      "Local de assinatura: Jijoca de Jericoacoara/CE, 28 de outubro de 2025."
+  },
+
+  // ─── 311 ─────────────────────────────────────────────
+  {
+    id: 311,
+    nome: "Valeriano Ferreira de Barros Filho",
+    cpf: "27374025149",
+    rg: "1553766 SSP/TO",
+    profissao: "Empresário",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1963-01-22",
+    estadoCivil: "União estável",
+    endereco: "Avenida Francisco Leobas, 03, Quadra 29, Centro, São Félix do Tocantins/TO, CEP 77605-000",
+    email: "valeriano-45@hotmail.com",
+    telefone: "(63) 992323588",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "01",
+    apartamento: "102",
+    andar: "1",
+    cota: "19",
+    fracao: "1/52",
+    razaoSocial: "JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "33.578.977/0001-40",
+    localizacao: "Cruz/CE",
+    valorTotal: 68377.65,
+    valorPago: 5554.42,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 },
+      { descricao: "Sinal 6 parcelas (boleto, todas quitadas per extrato GAV 07/10/2026)", valor: 3559.42 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025) + Sinal 6x R$569,82 = R$3.418,90 (1ª venc 15/11/2025, todas quitadas, total pago c/ juros/multa R$3.559,42) + Saldo 114x R$552,31 = R$62.963,75 (1ª venc 15/05/2026 — nenhuma paga)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-10-28",
+    conjuge: "União estável, cônjuge não informado no contrato",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/311--contrato.pdf" },
+      { titulo: "Extrato de pagamentos", arquivo: "contratos-pdf/309--extrato.pdf" },
+      { titulo: "Notificação extrajudicial", arquivo: "contratos-pdf/309--notificacao.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 296129 (Venda 19193) — Jeriquiá Lagoa Resort, Bloco 01 / Apto 102 / Andar 1 / Cota 19, 2 Quartos.\n" +
+      "Vendedora: JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 33.578.977/0001-40), Cruz/CE.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$1.995,00: PIX (Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025).\n" +
+      "Sinal de Negócio R$3.418,90: 6x R$569,82 (1ª venc 15/11/2025, todas quitadas).\n" +
+      "Saldo R$62.963,75: 114x R$552,31 (1ª venc 15/05/2026 — NENHUMA PAGA).\n" +
+      "FORA DO PRAZO — assinado 28/10/2025, prazo de arrependimento venceu 04/11/2025.\n" +
+      "valorPago = R$5.554,42 (PIX R$1.995 + sinal R$3.559,42 c/ juros/multa, confirmado por extrato GAV 07/10/2026). Diferença de R$26,01 em relação às outras cotas (juros/multa diferentes).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (Cotas 09, 16, 19, 20) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "Mesma pessoa que fichas 309, 310, 312 (4 contratos simultâneos).\n" +
+      "D4Sign doc 416863ea-1dac-4a7e-9ffd-8e59b5e64380.\n" +
+      "Local de assinatura: Jijoca de Jericoacoara/CE, 28 de outubro de 2025."
+  },
+
+  // ─── 312 ─────────────────────────────────────────────
+  {
+    id: 312,
+    nome: "Valeriano Ferreira de Barros Filho",
+    cpf: "27374025149",
+    rg: "1553766 SSP/TO",
+    profissao: "Empresário",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1963-01-22",
+    estadoCivil: "União estável",
+    endereco: "Avenida Francisco Leobas, 03, Quadra 29, Centro, São Félix do Tocantins/TO, CEP 77605-000",
+    email: "valeriano-45@hotmail.com",
+    telefone: "(63) 992323588",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "03",
+    apartamento: "102",
+    andar: "1",
+    cota: "20",
+    fracao: "1/52",
+    razaoSocial: "JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "33.578.977/0001-40",
+    localizacao: "Cruz/CE",
+    valorTotal: 68377.65,
+    valorPago: 5528.41,
+    entradas: [
+      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 },
+      { descricao: "Sinal 6 parcelas (boleto, todas quitadas per extrato GAV 07/10/2026)", valor: 3533.41 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025) + Sinal 6x R$569,82 = R$3.418,90 (1ª venc 15/11/2025, todas quitadas, total pago c/ juros/multa R$3.533,41) + Saldo 114x R$552,31 = R$62.963,75 (1ª venc 15/05/2026 — nenhuma paga)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2025-10-28",
+    conjuge: "União estável, cônjuge não informado no contrato",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/312--contrato.pdf" },
+      { titulo: "Extrato de pagamentos", arquivo: "contratos-pdf/309--extrato.pdf" },
+      { titulo: "Notificação extrajudicial", arquivo: "contratos-pdf/309--notificacao.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 296125 (Venda 19190) — Jeriquiá Lagoa Resort, Bloco 03 / Apto 102 / Andar 1 / Cota 20, 2 Quartos.\n" +
+      "Vendedora: JERI 1 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 33.578.977/0001-40), Cruz/CE.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$1.995,00: PIX (Nº Doc RESN1674540091/786770VIO7OZXJ7/AD6F18, 28/10/2025).\n" +
+      "Sinal de Negócio R$3.418,90: 6x R$569,82 (1ª venc 15/11/2025, todas quitadas).\n" +
+      "Saldo R$62.963,75: 114x R$552,31 (1ª venc 15/05/2026 — NENHUMA PAGA).\n" +
+      "FORA DO PRAZO — assinado 28/10/2025, prazo de arrependimento venceu 04/11/2025.\n" +
+      "valorPago = R$5.528,41 (PIX R$1.995 + sinal R$3.533,41, confirmado por extrato GAV 07/10/2026).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (Cotas 09, 16, 19, 20) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "Mesma pessoa que fichas 309, 310, 311 (4 contratos simultâneos).\n" +
+      "D4Sign doc 3619e24d-ae6d-43d2-a6b1-db70cecc98d1.\n" +
+      "Local de assinatura: Jijoca de Jericoacoara/CE, 28 de outubro de 2025."
+  },
+
+  // ─── 313 ─────────────────────────────────────────────
+  {
+    id: 313,
+    nome: "Israel Nascimento de Oliveira",
+    cpf: "48218499172",
+    rg: "866684 SSP/MT",
+    profissao: "Advogado(a)",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1969-03-15",
+    estadoCivil: "Solteiro(a)",
+    endereco: "Rua Bela, 510, Jardim Lucena, Primavera do Leste/MT, CEP 78850000",
+    email: "israel.advo@gmail.com",
+    telefone: "(66) 996305517",
+    empresa: "GAV",
+    empreendimento: "Jeriquiá Dunas Resort",
+    bloco: "01",
+    apartamento: "010",
+    andar: "0",
+    cota: "10",
+    fracao: "1/26",
+    razaoSocial: "JERI-2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "33.598.849/0001-68",
+    localizacao: "Cruz/CE",
+    valorTotal: 47161.00,
+    valorPago: 471.67,
+    entradas: [
+      { descricao: "Corretagem 1x R$471,67 Cartão VISA crédito à vista (Rede)", valor: 471.67 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito à vista R$471,67 (corretagem, Rede, CV 24050148, 22/05/2026 12h32, Laranjinha Itaú SV312870, VISA ****8751, Aute 810536, ESTAB 95158332 Ipojuca/PE) + Boleto 1x R$471,55 (corretagem, venc 22/07/2026) + Boleto 7x R$471,61 = R$3.301,27 (corretagem, 1ª venc 22/08/2026) + Sinal 5x R$471,61 = R$2.358,05 (1ª venc 15/03/2027) + Saldo 86x R$471,61 = R$40.558,46 (1ª venc 15/08/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-05-22",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/313--contrato.pdf" },
+      { titulo: "Termo de Ciência", arquivo: "contratos-pdf/313--termo-ciencia.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 339705 — Jeriquiá Dunas Resort, Bloco 01 / Apto 010 / Andar 0 (Térreo) / Cota 10, 1 Quarto.\n" +
+      "Vendedora: JERI-2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 33.598.849/0001-68), Cruz/CE.\n" +
+      "Fração 1/26 (2 semanas por fração, 26 frações por unidade).\n" +
+      "Corretagem R$4.244,49: Cartão VISA crédito à vista R$471,67 (Rede, CV 24050148, 22/05/2026 12h32, Laranjinha Itaú SV312870, VISA ****8751, Aute 810536, ESTAB 95158332 Ipojuca/PE) + Boleto 1x R$471,55 (venc 22/07/2026) + Boleto 7x R$471,61 = R$3.301,27 (1ª venc 22/08/2026).\n" +
+      "Sinal de Negócio R$2.358,05: 5x R$471,61 (1ª venc 15/03/2027).\n" +
+      "Saldo R$40.558,46: 86x R$471,61 (1ª venc 15/08/2027).\n" +
+      "FORA DO PRAZO — assinado 22/05/2026, prazo de arrependimento venceu 29/05/2026.\n" +
+      "valorPago = R$471,67 (cartão crédito confirmado por recibo Rede). Boletos corretagem (R$471,55 venc 22/07 + 7x R$471,61 1ª venc 22/08) — conferir quitados. Sinal e saldo ainda não venceram.\n" +
+      "Solteiro, sem cônjuge.\n" +
+      "Área privativa 35,29 m², área comum 62,78 m², área total 98,07 m².\n" +
+      "Beneficiários corretagem: Anderson Lopes Correia Lima (47847636000137), Daniel Grotkowski Nascimento (43789226000126), Cristiano Wallace Geraldo (47794943000105), Nubia Magalhaes de Lima (39259640000156).\n" +
+      "Consultor: Daniel Grotkowski Nascimento.\n" +
+      "Termo de Ciência Flow assinado em 22/05/2026 14:20:14 (validação facial).\n" +
+      "Assinatura D4Sign PRESENCIAL em 22/05/2026 14:39:01 (doc ca5e04be-7ada-4427-a85f-7fdca24950b3).\n" +
+      "Testemunhas: Anderson Lopes Correia Lima, Tatiane Cristina Paixão de Arruda. Parte: Irley Belo da Silva.\n" +
+      "Local de assinatura: Ipojuca/PE, 22 de maio de 2026."
+  },
+
+  // ─── 314 ─────────────────────────────────────────────
+  {
+    id: 314,
+    nome: "Caroline Rodrigues Araujo",
+    cpf: "02606167104",
+    rg: "16108540 SSP/MT",
+    profissao: "Fonoaudióloga",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1987-12-09",
+    estadoCivil: "Casado(a)",
+    endereco: "Rua Leon Nicolas, SN, Capão Raso, Curitiba/PR, CEP 81150-140",
+    email: "carolramater@gmail.com",
+    telefone: "(66) 99962-4395",
+    empresa: "GAV",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "04",
+    apartamento: "0233",
+    andar: "1",
+    cota: "48",
+    fracao: "1/52",
+    razaoSocial: "GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
+    cnpj: "39.673.888/0001-69",
+    localizacao: "Ipojuca/PE",
+    valorTotal: 88739.97,
+    valorPago: 1000.00,
+    entradas: [
+      { descricao: "Cartão VISA crédito à vista R$1.000,00 (corretagem, comprovante Laranjinha Itaú R$2.000 ÷ 2 contratos)", valor: 1000.00 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito à vista R$1.000,00 (Laranjinha Itaú SN765814, 05/10/26 19h29, VISA ****1633, CV 193808518, Aute 591729/Auto 038470, ESTAB 95158073 Goiânia/GO — comprovante R$2.000 cobre 2 contratos, R$1.000 cada) + Boleto 4x R$747,50 = R$2.990,00 (corretagem, 1ª venc 05/12/2026, nenhum quitado) + Sinal 5x R$887,40 = R$4.437,01 (1ª venc 10/04/2027) + Saldo 91x R$882,56 = R$80.312,96 (1ª venc 10/09/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-05",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/314--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 363094 — Porto 2 Life Resort, Bloco 04 / Apto 0233 / Andar 1 / Cota 48, 2 Quartos.\n" +
+      "Vendedora: GAV MURO ALTO 2 EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 39.673.888/0001-69), Ipojuca/PE.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$3.990,00: Cartão VISA crédito à vista R$1.000,00 (CV 193808518, comprovante R$2.000 cobre 2 contratos) + Boleto 4x R$747,50 = R$2.990,00 (1ª venc 05/12/2026, nenhum quitado).\n" +
+      "Sinal R$4.437,01: 5x R$887,40 (1ª venc 10/04/2027, nenhum pago).\n" +
+      "Saldo R$80.312,96: 91x R$882,56 (1ª venc 10/09/2027).\n" +
+      "DENTRO DO PRAZO — assinado 05/10/2026, prazo de arrependimento vence 12/10/2026.\n" +
+      "valorPago = R$1.000,00 (cartão VISA crédito à vista, comprovante Laranjinha Itaú R$2.000 ÷ 2 contratos).\n" +
+      "Casada, cônjuge não informado no contrato.\n" +
+      "Área privativa 62,82 m², área comum 72,11 m², área total 134,93 m².\n" +
+      "Beneficiários corretagem: Thiago Moraes Barbosa (59010448000139), Vanessa Marques de Freitas (34281103000199), Washington Luiz Pereira de Sou (62078505000126), Nubia Magalhaes de Lima (39259640000156).\n" +
+      "Consultor: Vanessa Marques de Freitas.\n" +
+      "Termo de Ciência Flow assinado em 05/10/2026 20:41:23 (validação facial).\n" +
+      "Assinatura ZapSign em 05/10/2026 20:47:24 (doc 4eb753ce-acbf-4b1d-808a-d20b6d8eb783).\n" +
+      "Testemunhas: Jeferson A Ferreira, Krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Local de assinatura: Ipojuca/PE, 05 de outubro de 2026."
+  },
+
+  // ─── 315 ─────────────────────────────────────────────
+  {
+    id: 315,
+    nome: "Adriana de Avila Janjopi",
+    cpf: "07066117808",
+    rg: "19578880 SSP/SP",
+    profissao: "Médica Cirurgiã",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1971-01-18",
+    estadoCivil: "Divorciado(a)",
+    endereco: "Quadra ALC-SO 141 - Mirante do Lago, Av. NS 15, SN, Plano Diretor Sul, Palmas/TO, CEP 77019-870",
+    email: "adrianajanjopi@gmail.com",
+    telefone: "(63) 99999-3504",
+    empresa: "GAV",
+    empreendimento: "Gran Haus Resort",
+    bloco: "08",
+    apartamento: "108",
+    andar: "0",
+    cota: "10",
+    fracao: "1/52",
+    razaoSocial: "GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+    cnpj: "62.986.874/0001-17",
+    localizacao: "Gramado/RS",
+    valorTotal: 60115.70,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Cartão VISA crédito parcelado 4x R$997,50 (corretagem, Rede)", valor: 3990.00 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito parcelado 4x R$997,50 = R$3.990,00 (Rede, Laranjinha Itaú SV081256, 07/10/26 16h21, VISA ****1529, CV 50004286, Aute 640636/Auto 695727, ESTAB 000000106108450 Gramado — comprovante R$11.970 cobre 3 contratos, R$3.990 cada) + Sinal 5x R$601,16 = R$3.005,80 (1ª venc 10/03/2027) + Saldo 85x R$624,94 = R$53.119,90 (1ª venc 10/08/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-07",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/315--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 363295 — Gran Haus Resort, Bloco 08 / Apto 108 / Andar 0 (Térreo) / Cota 10, 2 Quartos.\n" +
+      "Vendedora: GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA (CNPJ 62.986.874/0001-17), Gramado/RS.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$3.990,00: Cartão VISA crédito parcelado 4x R$997,50 (Rede, CV 50004286, comprovante R$11.970 cobre 3 contratos, R$3.990 cada).\n" +
+      "Sinal R$3.005,80: 5x R$601,16 (1ª venc 10/03/2027, nenhum pago).\n" +
+      "Saldo R$53.119,90: 85x R$624,94 (1ª venc 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 07/10/2026, prazo de arrependimento vence 14/10/2026.\n" +
+      "valorPago = R$3.990,00 (cartão VISA crédito parcelado, valor cheio).\n" +
+      "Divorciada, sem cônjuge.\n" +
+      "Área privativa 73,8 m², área comum 57,843 m², área total 131,64 m².\n" +
+      "Beneficiários corretagem: Kesley Martins Costa (21639394000100), Samara Mauro Vieira (50438113000141), Allan Wendel R Simoes Ltda (59385554000105).\n" +
+      "Consultor: Kesley Martins Costa.\n" +
+      "Termo de Ciência Flow assinado em 07/10/2026 16:57:45 (validação facial).\n" +
+      "Assinatura ZapSign em 07/10/2026 17:14:16 (doc 571ac7aa-5df9-4a48-88d2-9b0c6b84c90a).\n" +
+      "Testemunhas: Jeferson A Ferreira, Krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Mesma pessoa que ficha 316 (2 contratos simultâneos, Cotas 10 e 11).\n" +
+      "Local de assinatura: Ipojuca/PE, 07 de outubro de 2026."
+  },
+
+  // ─── 316 ─────────────────────────────────────────────
+  {
+    id: 316,
+    nome: "Adriana de Avila Janjopi",
+    cpf: "07066117808",
+    rg: "19578880 SSP/SP",
+    profissao: "Médica Cirurgiã",
+    nacionalidade: "Brasileira",
+    dataNascimento: "1971-01-18",
+    estadoCivil: "Divorciado(a)",
+    endereco: "Quadra ALC-SO 141 - Mirante do Lago, Av. NS 15, SN, Plano Diretor Sul, Palmas/TO, CEP 77019-870",
+    email: "adrianajanjopi@gmail.com",
+    telefone: "(63) 99999-3504",
+    empresa: "GAV",
+    empreendimento: "Gran Haus Resort",
+    bloco: "08",
+    apartamento: "108",
+    andar: "0",
+    cota: "11",
+    fracao: "1/52",
+    razaoSocial: "GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+    cnpj: "62.986.874/0001-17",
+    localizacao: "Gramado/RS",
+    valorTotal: 60115.70,
+    valorPago: 3990.00,
+    entradas: [
+      { descricao: "Cartão VISA crédito parcelado 4x R$997,50 (corretagem, Rede)", valor: 3990.00 }
+    ],
+    formaPagamentoEntrada: "Cartão VISA crédito parcelado 4x R$997,50 = R$3.990,00 (Rede, Laranjinha Itaú SV081256, 07/10/26 16h21, VISA ****1529, CV 50004286, Aute 640636/Auto 695727, ESTAB 000000106108450 Gramado — comprovante R$11.970 cobre 3 contratos, R$3.990 cada) + Sinal 5x R$601,16 = R$3.005,80 (1ª venc 10/03/2027) + Saldo 85x R$624,94 = R$53.119,90 (1ª venc 10/08/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-07",
+    conjuge: "",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/316--contrato.pdf" }
+    ],
+    pix: "",
+    observacoes:
+      "Contrato nº 363296 — Gran Haus Resort, Bloco 08 / Apto 108 / Andar 0 (Térreo) / Cota 11, 2 Quartos.\n" +
+      "Vendedora: GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA (CNPJ 62.986.874/0001-17), Gramado/RS.\n" +
+      "Fração 1/52 (1 semana por fração, 52 frações por unidade).\n" +
+      "Corretagem R$3.990,00: Cartão VISA crédito parcelado 4x R$997,50 (Rede, CV 50004286, comprovante R$11.970 cobre 3 contratos, R$3.990 cada).\n" +
+      "Sinal R$3.005,80: 5x R$601,16 (1ª venc 10/03/2027, nenhum pago).\n" +
+      "Saldo R$53.119,90: 85x R$624,94 (1ª venc 10/08/2027).\n" +
+      "DENTRO DO PRAZO — assinado 07/10/2026, prazo de arrependimento vence 14/10/2026.\n" +
+      "valorPago = R$3.990,00 (cartão VISA crédito parcelado, valor cheio).\n" +
+      "Divorciada, sem cônjuge.\n" +
+      "Área privativa 73,8 m², área comum 57,843 m², área total 131,64 m².\n" +
+      "Beneficiários corretagem: Kesley Martins Costa (21639394000100), Samara Mauro Vieira (50438113000141), Allan Wendel R Simoes Ltda (59385554000105).\n" +
+      "Consultor: Kesley Martins Costa.\n" +
+      "Termo de Ciência Flow assinado em 07/10/2026 16:57:45 (validação facial).\n" +
+      "Assinatura ZapSign em 07/10/2026 17:13:38 (doc 0d09ec01-0de7-40f6-85e6-cbc73fbca58a).\n" +
+      "Testemunhas: Jeferson A Ferreira, Krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Mesma pessoa que ficha 315 (2 contratos simultâneos, Cotas 10 e 11).\n" +
+      "Local de assinatura: Ipojuca/PE, 07 de outubro de 2026."
   }
 ];
