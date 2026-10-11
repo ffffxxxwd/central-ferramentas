@@ -135,20 +135,72 @@
     return s || "zero real";
   }
 
-  /* ---------- Persistência (edições locais) ---------- */
+  /* ---------- Persistência (edições locais + servidor) ---------- */
+  var STORE_VAZIO = { edits: {}, novos: [], arquivados: {}, pagos: {}, assinados: {}, enviados: {}, confirmados: {}, reembolsos: [] };
+  var _servidorOk = false;
+
+  function parseStore(d) {
+    if (!d) return Object.assign({}, STORE_VAZIO);
+    return {
+      edits: d.edits || {}, novos: d.novos || [], arquivados: d.arquivados || {},
+      pagos: d.pagos || {}, assinados: d.assinados || {}, enviados: d.enviados || {},
+      confirmados: d.confirmados || {}, reembolsos: d.reembolsos || []
+    };
+  }
+
   function lerStore() {
     try {
       var raw = localStorage.getItem(STORE);
-      if (!raw) return { edits: {}, novos: [], arquivados: {}, pagos: {}, assinados: {}, enviados: {}, confirmados: {}, reembolsos: [] };
-      var d = JSON.parse(raw);
-      return { edits: d.edits || {}, novos: d.novos || [], arquivados: d.arquivados || {}, pagos: d.pagos || {}, assinados: d.assinados || {}, enviados: d.enviados || {}, confirmados: d.confirmados || {}, reembolsos: d.reembolsos || [] };
-    } catch (e) { return { edits: {}, novos: [], arquivados: {}, pagos: {}, assinados: {}, enviados: {}, confirmados: {}, reembolsos: [] }; }
+      if (!raw) return Object.assign({}, STORE_VAZIO);
+      return parseStore(JSON.parse(raw));
+    } catch (e) { return Object.assign({}, STORE_VAZIO); }
   }
+
   function gravarStore(d) {
     try { localStorage.setItem(STORE, JSON.stringify(d)); } catch (e) {}
+    if (_servidorOk) {
+      try {
+        fetch("/api/store", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(d)
+        }).catch(function () {});
+      } catch (e) {}
+    }
   }
 
   var store = lerStore();
+
+  // ao carregar, tenta buscar o store do servidor (mais atual que localStorage)
+  (function sincronizarServidor() {
+    fetch("/api/store").then(function (r) {
+      if (!r.ok) throw new Error();
+      return r.json();
+    }).then(function (serverData) {
+      _servidorOk = true;
+      if (serverData && Object.keys(serverData).length > 0) {
+        var merged = parseStore(serverData);
+        // mescla: localStorage pode ter dados novos se o servidor estava parado
+        var localStore = lerStore();
+        Object.keys(localStore.arquivados).forEach(function (k) { merged.arquivados[k] = true; });
+        Object.keys(localStore.pagos).forEach(function (k) { merged.pagos[k] = true; });
+        Object.keys(localStore.assinados).forEach(function (k) { merged.assinados[k] = true; });
+        Object.keys(localStore.enviados).forEach(function (k) { merged.enviados[k] = true; });
+        Object.keys(localStore.confirmados).forEach(function (k) { merged.confirmados[k] = true; });
+        Object.keys(localStore.edits).forEach(function (k) {
+          if (!merged.edits[k]) merged.edits[k] = localStore.edits[k];
+        });
+        store = merged;
+        gravarStore(store);
+        renderTudo();
+      } else {
+        // servidor vazio, envia o localStorage pro servidor
+        gravarStore(store);
+      }
+    }).catch(function () {
+      _servidorOk = false;
+    });
+  })();
 
   function normalizar(c) {
     var o = {};

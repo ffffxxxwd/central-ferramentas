@@ -18,4 +18,6 @@ echo "Servidor rodando em http://localhost:$PORTA"
 echo "Pasta: $DIR"
 echo ""
 echo "Ctrl+C para parar."
-python3 -m http.server "$PORTA"
+export NVM_DIR="$HOME/.nvm"
+. "$NVM_DIR/nvm.sh"
+node servidor.js
