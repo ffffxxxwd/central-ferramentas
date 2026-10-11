@@ -171,34 +171,42 @@
 
   var store = lerStore();
 
-  // ao carregar, tenta buscar o store do servidor (mais atual que localStorage)
+  function aplicarDadosServidor(serverData, comEscrita) {
+    if (serverData && Object.keys(serverData).length > 0) {
+      var merged = parseStore(serverData);
+      var localStore = lerStore();
+      Object.keys(localStore.arquivados).forEach(function (k) { merged.arquivados[k] = true; });
+      Object.keys(localStore.pagos).forEach(function (k) { merged.pagos[k] = true; });
+      Object.keys(localStore.assinados).forEach(function (k) { merged.assinados[k] = true; });
+      Object.keys(localStore.enviados).forEach(function (k) { merged.enviados[k] = true; });
+      Object.keys(localStore.confirmados).forEach(function (k) { merged.confirmados[k] = true; });
+      Object.keys(localStore.edits).forEach(function (k) {
+        if (!merged.edits[k]) merged.edits[k] = localStore.edits[k];
+      });
+      store = merged;
+      if (comEscrita) gravarStore(store);
+      else try { localStorage.setItem(STORE, JSON.stringify(store)); } catch (e) {}
+      renderTudo();
+    } else if (comEscrita) {
+      gravarStore(store);
+    }
+  }
+
   (function sincronizarServidor() {
     fetch("/api/store").then(function (r) {
       if (!r.ok) throw new Error();
       return r.json();
     }).then(function (serverData) {
       _servidorOk = true;
-      if (serverData && Object.keys(serverData).length > 0) {
-        var merged = parseStore(serverData);
-        // mescla: localStorage pode ter dados novos se o servidor estava parado
-        var localStore = lerStore();
-        Object.keys(localStore.arquivados).forEach(function (k) { merged.arquivados[k] = true; });
-        Object.keys(localStore.pagos).forEach(function (k) { merged.pagos[k] = true; });
-        Object.keys(localStore.assinados).forEach(function (k) { merged.assinados[k] = true; });
-        Object.keys(localStore.enviados).forEach(function (k) { merged.enviados[k] = true; });
-        Object.keys(localStore.confirmados).forEach(function (k) { merged.confirmados[k] = true; });
-        Object.keys(localStore.edits).forEach(function (k) {
-          if (!merged.edits[k]) merged.edits[k] = localStore.edits[k];
-        });
-        store = merged;
-        gravarStore(store);
-        renderTudo();
-      } else {
-        // servidor vazio, envia o localStorage pro servidor
-        gravarStore(store);
-      }
+      aplicarDadosServidor(serverData, true);
     }).catch(function () {
       _servidorOk = false;
+      fetch("store.json").then(function (r) {
+        if (!r.ok) throw new Error();
+        return r.json();
+      }).then(function (data) {
+        aplicarDadosServidor(data, false);
+      }).catch(function () {});
     });
   })();
 
