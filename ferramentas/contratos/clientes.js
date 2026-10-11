@@ -16603,5 +16603,203 @@ window.CLIENTES = [
       "Signatários DocuSign: Giullia Ágatha de Andrade Schweig (adm10), Matheus Henrique Pereira Fernandes, Romulo Klippel, Luis Rufino (adm4), Josy Roberta Souza De Lima (adm13).\n" +
       "PIX recebido por GVP PARTICIPACOES (CNPJ 17.991.041/0001-90, chave Pix CNPJ, Itaú Unibanco).\n" +
       "ATENÇÃO: empresa Laghetto (não GAV/WAM). RG no contrato = mesmo número do CPF."
+  },
+
+  // ── Ficha 324 ──────────────────────────────────────────────
+  {
+    id: 324,
+    visivel: true,
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    bloco: "C4",
+    apartamento: "01A",
+    andar: "T",
+    cota: "32",
+    fracao: "1/52",
+    nome: "Vanessa Soares Nobrega Souto",
+    cpf: "086.433.254-81",
+    rg: "3510704 SSDS/PB",
+    dataNascimento: "02/01/1995",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Médico(a)",
+    email: "vanessasoutomedicina@gmail.com",
+    telefone: "(83) 99914-2541",
+    endereco: "Rua Francisco Carneiro de Araujo, 100, Cabo Branco, João Pessoa/PB, CEP 58045-190",
+    conjuge: "",
+    contrato: "363799",
+    valorTotal: 52735.57,
+    comissaoCorretagem: 4490.00,
+    sinalNegocio: 2636.77,
+    saldoDevedor: 45608.80,
+    valorPago: 4490.00,
+    formaPagamento: "Cartão de Débito VISA Electron ****5930 (CV 193361224)",
+    formaReembolso: "Estorno Cartão",
+    dataContrato: "10/10/2026",
+    prazoArrependimento: "17/10/2026",
+    statusPrazo: "DENTRO",
+    assinaturaPlataforma: "ZapSign",
+    assinaturaId: "4828b454-e0f2-44b5-8d95-6534e9d36ac7",
+    dataAssinatura: "10/10/2026",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/324--contrato.pdf" }
+    ],
+    observacoes:
+      "Corretagem paga via cartão de débito VISA Electron ****5930 (Itaú Laranjinha), CV 193361224.\n" +
+      "Comprovante CV 193361224 totaliza R$8.980,00 (2 contratos: R$4.490 cada — ficha 324 + ficha 327).\n" +
+      "Cartão em nome de GIUSEPPE SARTO S. BEZERRA (terceiro, não a compradora).\n" +
+      "Sinal de negócio R$2.636,77 em 4 parcelas de R$659,19 (1ª em 10/11/2026) — não pago ainda.\n" +
+      "Saldo R$45.608,80 em 80 parcelas de R$570,11 (1ª em 10/03/2027) — não pago ainda."
+  },
+
+  // ── Ficha 325 ──────────────────────────────────────────────
+  {
+    id: 325,
+    visivel: true,
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    bloco: "A1",
+    apartamento: "101",
+    andar: "1",
+    cota: "26",
+    fracao: "1/52",
+    nome: "Rodrigo Castro Jacociunas",
+    cpf: "020.180.450-67",
+    rg: "2097243808 SJS/RS",
+    dataNascimento: "07/10/1989",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Supervisor de Segurança",
+    email: "jacociunas352@gmail.com",
+    telefone: "(51) 98283-4253",
+    endereco: "Rua Alecrim, 30, Jardim do Bosque, Cachoeirinha/RS, CEP 94960-552",
+    conjuge: "",
+    contrato: "282742",
+    valorTotal: 72833.67,
+    comissaoCorretagem: 4490.00,
+    sinalNegocio: 3641.67,
+    saldoDevedor: 64702.00,
+    valorPago: 10583.97,
+    formaPagamento: "Cartão MASTER Crédito à Vista R$1.000 (Nº Doc 23848616) + Boleto 4x R$872,50 (R$3.490)",
+    formaReembolso: "Reembolso",
+    dataContrato: "20/08/2025",
+    prazoArrependimento: "27/08/2025",
+    statusPrazo: "FORA",
+    assinaturaPlataforma: "D4Sign",
+    assinaturaId: "829ede5f-eb8c-4fd2-aa36-3dabf395fb49",
+    dataAssinatura: "20/08/2025",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/325--contrato.pdf" }
+    ],
+    observacoes:
+      "Corretagem: cartão MASTER crédito à vista R$1.000 (Nº Doc 23848616, venc. 20/09/2025) + boleto 4x R$872,50 = R$3.490 (1ª em 15/10/2025).\n" +
+      "valorPago considera apenas o cartão (R$1.000) — boletos pendentes de confirmação de quitação.\n" +
+      "Sinal de negócio R$3.641,67 em 5 parcelas de R$728,33 (1ª em 15/02/2026) — status desconhecido.\n" +
+      "Saldo R$64.702,00 em 91 parcelas de R$711,01 (1ª em 15/07/2026) — status desconhecido.\n" +
+      "Assinatura presencial em Gramado em 20/08/2025 (D4Sign). FORA do prazo de arrependimento."
+  },
+
+  // ── Ficha 326 ──────────────────────────────────────────────
+  {
+    id: 326,
+    visivel: true,
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO 4 EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    localizacao: "Gramado/RS",
+    bloco: "04",
+    apartamento: "212",
+    andar: "1",
+    cota: "45",
+    fracao: "1/52",
+    nome: "Ana Verenice da Silva Pedroso",
+    cpf: "766.312.900-82",
+    rg: "76631290082 IGP/RS",
+    dataNascimento: "22/04/1975",
+    estadoCivil: "Casado(a)",
+    profissao: "Professor(a)",
+    email: "verep.bage@gmail.com",
+    telefone: "(53) 99165-9430",
+    endereco: "Rua Domingos de Souza Nocchi, 150, Torre E Apto 204, Industrial I, Bagé/RS, CEP 96413-210",
+    conjuge: "Não informado",
+    contrato: "363904",
+    valorTotal: 37562.38,
+    comissaoCorretagem: 4490.00,
+    sinalNegocio: 1878.14,
+    saldoDevedor: 31194.24,
+    valorPago: 1000.00,
+    formaPagamento: "Cartão ELO Crédito à Vista ****8958 R$1.000 (CV 21173804) + Boleto 5x R$698 (R$3.490)",
+    formaReembolso: "Estorno Cartão",
+    dataContrato: "11/10/2026",
+    prazoArrependimento: "18/10/2026",
+    statusPrazo: "DENTRO",
+    assinaturaPlataforma: "ZapSign",
+    assinaturaId: "e9a497c3-ee6e-44eb-ba26-7dbcb320bf58",
+    dataAssinatura: "11/10/2026",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/326--contrato.pdf" }
+    ],
+    observacoes:
+      "Corretagem: cartão ELO crédito à vista ****8958 R$1.000 (CV 21173804, Itaú Laranjinha, 11/10/2026 12h20) + boleto 5x R$698 = R$3.490 (1ª em 05/12/2026).\n" +
+      "valorPago considera apenas o cartão (R$1.000) — boletos ainda não venceram.\n" +
+      "Sinal de negócio R$1.878,14 em 4 parcelas de R$469,54 (1ª em 05/05/2027) — não pago.\n" +
+      "Saldo R$31.194,24 em 66 parcelas de R$472,64 (1ª em 05/09/2027) — não pago.\n" +
+      "Estado civil Casado(a) mas cônjuge não informado no contrato.\n" +
+      "ATENÇÃO: RG no contrato = mesmo número do CPF (76631290082)."
+  },
+
+  // ── Ficha 327 ──────────────────────────────────────────────
+  {
+    id: 327,
+    visivel: true,
+    empresa: "GAV",
+    razaoSocial: "GAV GRAMADO TRÊS EMPREENDIMENTO IMOBILIÁRIO SPE LTDA.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    localizacao: "Gramado/RS",
+    bloco: "C3",
+    apartamento: "104B",
+    andar: "1",
+    cota: "20",
+    fracao: "1/52",
+    nome: "Vanessa Soares Nobrega Souto",
+    cpf: "086.433.254-81",
+    rg: "3510704 SSDS/PB",
+    dataNascimento: "02/01/1995",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Médico(a)",
+    email: "vanessasoutomedicina@gmail.com",
+    telefone: "(83) 99914-2541",
+    endereco: "Rua Francisco Carneiro de Araujo, 100, Cabo Branco, João Pessoa/PB, CEP 58045-190",
+    conjuge: "",
+    contrato: "363800",
+    valorTotal: 51759.59,
+    comissaoCorretagem: 4490.00,
+    sinalNegocio: 2587.99,
+    saldoDevedor: 44681.60,
+    valorPago: 4490.00,
+    formaPagamento: "Cartão de Débito VISA Electron ****5930 (CV 193361224)",
+    formaReembolso: "Estorno Cartão",
+    dataContrato: "10/10/2026",
+    prazoArrependimento: "17/10/2026",
+    statusPrazo: "DENTRO",
+    assinaturaPlataforma: "ZapSign",
+    assinaturaId: "0eb0dc82-14e1-4417-a3ed-aa59b84475c2",
+    dataAssinatura: "10/10/2026",
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/327--contrato.pdf" }
+    ],
+    observacoes:
+      "Segundo contrato da mesma compradora — ver também ficha 324 (Bloco C4/01A/Cota 32).\n" +
+      "Corretagem paga via cartão de débito VISA Electron ****5930 (Itaú Laranjinha), CV 193361224.\n" +
+      "Comprovante CV 193361224 totaliza R$8.980,00 (2 contratos: R$4.490 cada — ficha 324 + ficha 327).\n" +
+      "Cartão em nome de GIUSEPPE SARTO S. BEZERRA (terceiro, não a compradora).\n" +
+      "Sinal de negócio R$2.587,99 em 4 parcelas de R$647,00 (1ª em 10/11/2026) — não pago ainda.\n" +
+      "Saldo R$44.681,60 em 80 parcelas de R$558,52 (1ª em 10/03/2027) — não pago ainda."
   }
 ];
