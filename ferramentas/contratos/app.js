@@ -201,7 +201,7 @@
       aplicarDadosServidor(serverData, true);
     }).catch(function () {
       _servidorOk = false;
-      fetch("store.json").then(function (r) {
+      fetch("store.json?t=" + Date.now()).then(function (r) {
         if (!r.ok) throw new Error();
         return r.json();
       }).then(function (data) {
