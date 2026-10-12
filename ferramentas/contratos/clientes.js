@@ -16801,5 +16801,247 @@ window.CLIENTES = [
       "Cartão em nome de GIUSEPPE SARTO S. BEZERRA (terceiro, não a compradora).\n" +
       "Sinal de negócio R$2.587,99 em 4 parcelas de R$647,00 (1ª em 10/11/2026) — não pago ainda.\n" +
       "Saldo R$44.681,60 em 80 parcelas de R$558,52 (1ª em 10/03/2027) — não pago ainda."
+  },
+
+  // ── Ficha 328 — Marcio Alves da Cruz (Beach GAV, Bloco 01 / 0915 / Cota 23) ──
+  {
+    id: "363660-marcio-alves-sbr-bl01-0915-cota-23",
+    vispiId: "",
+    vispiLink: "",
+    empresa: "GAV",
+    nome: "Marcio Alves da Cruz",
+    cpf: "785.891.341-72",
+    rg: "3685642 DGPC/GO",
+    nacionalidade: "Brasileiro",
+    estadoCivil: "União estável",
+    profissao: "Empresário",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "0915",
+    andar: "9",
+    cota: "23",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "363660",
+    valorTotal: 43627.83,
+    valorPago: 1000,
+    formaPagamentoEntrada: "PIX R$1.000,00 (Nº Doc RESN1219350095 1582430ZSNKWW 0258E0E4) + 2x boleto corretagem R$1.993,34 (futuro) + sinal 4x R$545,35 (futuro)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-10",
+    telefone: "(62) 991230460",
+    email: "alvescr@hotmail.com",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363660 — Beach GAV Resorts, Bloco 01 / Apto 0915 / 9º andar / Cota 23.\n" +
+      "Corretagem total R$3.990,00: 1x R$1.000,00 PIX (Nº Doc RESN1219350095 1582430ZSNKWW 0258E0E4, 10/10/2026) + 2x boleto (R$996,66 venc 10/11/2026 + R$996,68 venc 01/01/2027).\n" +
+      "Sinal R$2.181,39 em 4x R$545,35 (1ª venc 10/02/2027).\n" +
+      "Saldo R$37.456,44 em 68x R$550,83 (1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX confirmado — boletos corretagem/sinal/saldo futuros).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 3 contratos (fichas 328-330) — conferir se foi 1 PIX rateado (R$3.000 total) ou 3 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 10/10/2026, prazo arrependimento vence 17/10/2026.\n" +
+      "ZapSign: 734acfc5-4d36-41bc-a1b4-96e4d198c3ee.\n" +
+      "Corretores: CB Imobiliaria Ltda (CNPJ 61193972000134), Andressa Hayane Souza da Silva (CPF 33230625000107), Simara Silva Rachid (CNPJ 53245160000167).\n" +
+      "Endereço: Colinas do Tocantins, 54, Bairro Santo Antonio, Goiatins/TO, CEP 77770000.\n" +
+      "Ver também fichas 329 e 330 (mesma pessoa).",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/328--contrato.pdf" }]
+  },
+
+  // ── Ficha 329 — Marcio Alves da Cruz (Beach GAV, Bloco 01 / 0917 / Cota 22) ──
+  {
+    id: "363659-marcio-alves-sbr-bl01-0917-cota-22",
+    vispiId: "",
+    vispiLink: "",
+    empresa: "GAV",
+    nome: "Marcio Alves da Cruz",
+    cpf: "785.891.341-72",
+    rg: "3685642 DGPC/GO",
+    nacionalidade: "Brasileiro",
+    estadoCivil: "União estável",
+    profissao: "Empresário",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "0917",
+    andar: "9",
+    cota: "22",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "363659",
+    valorTotal: 43627.83,
+    valorPago: 1000,
+    formaPagamentoEntrada: "PIX R$1.000,00 (Nº Doc RESN1219350095 1582430ZSNKWW 0258E0E4) + 2x boleto corretagem R$1.993,34 (futuro) + sinal 4x R$545,35 (futuro)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-10",
+    telefone: "(62) 991230460",
+    email: "alvescr@hotmail.com",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363659 — Beach GAV Resorts, Bloco 01 / Apto 0917 / 9º andar / Cota 22.\n" +
+      "Corretagem total R$3.990,00: 1x R$1.000,00 PIX (Nº Doc RESN1219350095 1582430ZSNKWW 0258E0E4, 10/10/2026) + 2x boleto (R$996,66 venc 10/11/2026 + R$996,68 venc 01/01/2027).\n" +
+      "Sinal R$2.181,39 em 4x R$545,35 (1ª venc 10/02/2027).\n" +
+      "Saldo R$37.456,44 em 68x R$550,83 (1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX confirmado — boletos corretagem/sinal/saldo futuros).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 3 contratos (fichas 328-330) — conferir se foi 1 PIX rateado (R$3.000 total) ou 3 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 10/10/2026, prazo arrependimento vence 17/10/2026.\n" +
+      "ZapSign: 11ebf408-0e5d-4681-b84a-07ffcea62ff5.\n" +
+      "Corretores: CB Imobiliaria Ltda (CNPJ 61193972000134), Andressa Hayane Souza da Silva (CPF 33230625000107), Simara Silva Rachid (CNPJ 53245160000167).\n" +
+      "Ver também fichas 328 e 330 (mesma pessoa).",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/329--contrato.pdf" }]
+  },
+
+  // ── Ficha 330 — Marcio Alves da Cruz (Beach GAV, Bloco 01 / 0903 / Cota 22) ──
+  {
+    id: "363658-marcio-alves-sbr-bl01-0903-cota-22",
+    vispiId: "",
+    vispiLink: "",
+    empresa: "GAV",
+    nome: "Marcio Alves da Cruz",
+    cpf: "785.891.341-72",
+    rg: "3685642 DGPC/GO",
+    nacionalidade: "Brasileiro",
+    estadoCivil: "União estável",
+    profissao: "Empresário",
+    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "0903",
+    andar: "9",
+    cota: "22",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "363658",
+    valorTotal: 43627.83,
+    valorPago: 1000,
+    formaPagamentoEntrada: "PIX R$1.000,00 (Nº Doc RESN1219350095 1582430ZSNKWW 0258E0E4) + 2x boleto corretagem R$1.993,34 (futuro) + sinal 4x R$545,35 (futuro)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-10",
+    telefone: "(62) 991230460",
+    email: "alvescr@hotmail.com",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363658 — Beach GAV Resorts, Bloco 01 / Apto 0903 / 9º andar / Cota 22.\n" +
+      "Corretagem total R$3.990,00: 1x R$1.000,00 PIX (Nº Doc RESN1219350095 1582430ZSNKWW 0258E0E4, 10/10/2026) + 2x boleto (R$996,66 venc 10/11/2026 + R$996,68 venc 01/01/2027).\n" +
+      "Sinal R$2.181,39 em 4x R$545,35 (1ª venc 10/02/2027).\n" +
+      "Saldo R$37.456,44 em 68x R$550,83 (1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX confirmado — boletos corretagem/sinal/saldo futuros).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 3 contratos (fichas 328-330) — conferir se foi 1 PIX rateado (R$3.000 total) ou 3 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 10/10/2026, prazo arrependimento vence 17/10/2026.\n" +
+      "ZapSign: 2e5f9829-8c20-4dfb-b3c7-79b041bef37a.\n" +
+      "Corretores: CB Imobiliaria Ltda (CNPJ 61193972000134), Andressa Hayane Souza da Silva (CPF 33230625000107), Simara Silva Rachid (CNPJ 53245160000167).\n" +
+      "Ver também fichas 328 e 329 (mesma pessoa).",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/330--contrato.pdf" }]
+  },
+
+  // ── Ficha 331 — Suelen Thais do Nascimento Maciel — Porto 2 Life Resort (BL03/0325/Cota 04) ──
+  {
+    id: 331,
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Suelen Thais do Nascimento Maciel",
+    cpf: "115.108.006-38",
+    rg: "MG17985168 SSP/MG",
+    dataNascimento: "1994-01-03",
+    estadoCivil: "Casado(a)",
+    profissao: "Servidor Público(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Monsenhor Silvestre de Castro, 1003, Ap 501, Vila do Carmo Colônia do Marcal, São João Del Rei/MG, CEP 36302022",
+    bloco: "Bloco 03",
+    apartamento: "0325",
+    andar: "2",
+    cota: "04",
+    fracao: "1/52",
+    nContrato: "363571",
+    valorTotal: 79185.91,
+    valorPago: 3990,
+    entradas: [
+      { descricao: "Cartão Mastercard crédito parcelado final 0469 — 2x R$1.995,00 (NSU 14069923)", valor: 3990 }
+    ],
+    formaPagamentoEntrada: "Cartão Mastercard crédito parcelado final 0469 — 2x R$1.995,00 sem juros (NSU 14069923, 09/10/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-09",
+    telefone: "(32) 988546346",
+    email: "suelentnmaciell@gmail.com",
+    conjuge: "Não informado",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363571 — Porto 2 Life Resort, Bloco 03 / Apto 0325 / 2º andar / Cota 04.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "Corretagem R$3.990,00: Cartão Mastercard crédito parcelado final 0469, 2x R$1.995,00 sem juros (NSU 14069923, 09/10/2026 16:55).\n" +
+      "Sinal R$3.959,29 em 5x R$791,86 (1ª venc 10/01/2027). Parcelas R$791,86 x 7 (venc 10/01/2027). Saldo R$71.236,62 em 91x R$782,82 (1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (corretagem via cartão — sinal/saldo futuros).\n" +
+      "ATENÇÃO: NSU 14069923 idêntico nos 2 contratos (fichas 331-332) — comprovante Rede mostra R$7.980 total (2x R$3.990) em 1 transação cobrindo ambas as corretagens.\n" +
+      "DENTRO DO PRAZO — contrato 09/10/2026, prazo arrependimento vence 16/10/2026.\n" +
+      "ZapSign: 783e541e-c505-4772-ab2f-61a40cc6180d.\n" +
+      "Corretores/beneficiários corretagem: LM Representações (41055840000139), Kelvny Ribeiro de Souza (28427804000190), Thiago Nascimento de Oliveira (47158921000140), Patricia Cardoso de Araujo (20363146000109).\n" +
+      "Ver também ficha 332 (mesma pessoa).",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/331--contrato.pdf" }]
+  },
+
+  // ── Ficha 332 — Suelen Thais do Nascimento Maciel — Porto 2 Life Resort (BL03/0221/Cota 25) ──
+  {
+    id: 332,
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    localizacao: "Ipojuca/PE",
+    nome: "Suelen Thais do Nascimento Maciel",
+    cpf: "115.108.006-38",
+    rg: "MG17985168 SSP/MG",
+    dataNascimento: "1994-01-03",
+    estadoCivil: "Casado(a)",
+    profissao: "Servidor Público(a)",
+    nacionalidade: "Brasileiro(a)",
+    endereco: "Rua Monsenhor Silvestre de Castro, 1003, Ap 501, Vila do Carmo Colônia do Marcal, São João Del Rei/MG, CEP 36302022",
+    bloco: "Bloco 03",
+    apartamento: "0221",
+    andar: "1",
+    cota: "25",
+    fracao: "1/52",
+    nContrato: "363570",
+    valorTotal: 79185.91,
+    valorPago: 3990,
+    entradas: [
+      { descricao: "Cartão Mastercard crédito parcelado final 0469 — 2x R$1.995,00 (NSU 14069923)", valor: 3990 }
+    ],
+    formaPagamentoEntrada: "Cartão Mastercard crédito parcelado final 0469 — 2x R$1.995,00 sem juros (NSU 14069923, 09/10/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-09",
+    telefone: "(32) 988546346",
+    email: "suelentnmaciell@gmail.com",
+    conjuge: "Não informado",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363570 — Porto 2 Life Resort, Bloco 03 / Apto 0221 / 1º andar / Cota 25.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "Corretagem R$3.990,00: Cartão Mastercard crédito parcelado final 0469, 2x R$1.995,00 sem juros (NSU 14069923, 09/10/2026 16:55).\n" +
+      "Sinal R$3.959,29 em 5x R$791,86 (1ª venc 10/01/2027). Parcelas R$791,86 x 7 (venc 10/01/2027). Saldo R$71.236,62 em 91x R$782,82 (1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (corretagem via cartão — sinal/saldo futuros).\n" +
+      "ATENÇÃO: NSU 14069923 idêntico nos 2 contratos (fichas 331-332) — comprovante Rede mostra R$7.980 total (2x R$3.990) em 1 transação cobrindo ambas as corretagens.\n" +
+      "DENTRO DO PRAZO — contrato 09/10/2026, prazo arrependimento vence 16/10/2026.\n" +
+      "ZapSign: bf83e3dc-e111-47e5-9d2e-ff45b8899075.\n" +
+      "Corretores/beneficiários corretagem: LM Representações (41055840000139), Kelvny Ribeiro de Souza (28427804000190), Thiago Nascimento de Oliveira (47158921000140), Patricia Cardoso de Araujo (20363146000109).\n" +
+      "Ver também ficha 331 (mesma pessoa).",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/332--contrato.pdf" }]
   }
 ];
