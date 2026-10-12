@@ -16805,9 +16805,7 @@ window.CLIENTES = [
 
   // ── Ficha 328 — Marcio Alves da Cruz (Beach GAV, Bloco 01 / 0915 / Cota 23) ──
   {
-    id: "363660-marcio-alves-sbr-bl01-0915-cota-23",
-    vispiId: "",
-    vispiLink: "",
+    id: 328,
     empresa: "GAV",
     nome: "Marcio Alves da Cruz",
     cpf: "785.891.341-72",
@@ -16815,7 +16813,7 @@ window.CLIENTES = [
     nacionalidade: "Brasileiro",
     estadoCivil: "União estável",
     profissao: "Empresário",
-    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+    conjuge: "",
     empreendimento: "Beach GAV Resorts",
     bloco: "01",
     apartamento: "0915",
@@ -16853,9 +16851,7 @@ window.CLIENTES = [
 
   // ── Ficha 329 — Marcio Alves da Cruz (Beach GAV, Bloco 01 / 0917 / Cota 22) ──
   {
-    id: "363659-marcio-alves-sbr-bl01-0917-cota-22",
-    vispiId: "",
-    vispiLink: "",
+    id: 329,
     empresa: "GAV",
     nome: "Marcio Alves da Cruz",
     cpf: "785.891.341-72",
@@ -16863,7 +16859,7 @@ window.CLIENTES = [
     nacionalidade: "Brasileiro",
     estadoCivil: "União estável",
     profissao: "Empresário",
-    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+    conjuge: "",
     empreendimento: "Beach GAV Resorts",
     bloco: "01",
     apartamento: "0917",
@@ -16900,9 +16896,7 @@ window.CLIENTES = [
 
   // ── Ficha 330 — Marcio Alves da Cruz (Beach GAV, Bloco 01 / 0903 / Cota 22) ──
   {
-    id: "363658-marcio-alves-sbr-bl01-0903-cota-22",
-    vispiId: "",
-    vispiLink: "",
+    id: 330,
     empresa: "GAV",
     nome: "Marcio Alves da Cruz",
     cpf: "785.891.341-72",
@@ -16910,7 +16904,7 @@ window.CLIENTES = [
     nacionalidade: "Brasileiro",
     estadoCivil: "União estável",
     profissao: "Empresário",
-    conjuge: { nome: "", cpf: "", rg: "", email: "" },
+    conjuge: "",
     empreendimento: "Beach GAV Resorts",
     bloco: "01",
     apartamento: "0903",
