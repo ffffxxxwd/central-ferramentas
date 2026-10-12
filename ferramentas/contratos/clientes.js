@@ -17037,5 +17037,101 @@ window.CLIENTES = [
       "Ver também ficha 331 (mesma pessoa).",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/332--contrato.pdf" }]
+  },
+
+  /* ---------- 333 — GAV — AREYA BARRA RESORT, Bl 01 / 307 / Cota 20 ---------- */
+  {
+    id: 333,
+    nome: "SANDRA MICHELE MARINHO DE SOUZA DIAS",
+    cpf: "730.616.970-04",
+    rg: "73061697004 SSP/RS",
+    nacionalidade: "brasileira",
+    estadoCivil: "Viúva",
+    profissao: "Empresária",
+    endereco: "Rua General Marcos Kruchin, 266, Farrapos, Porto Alegre/RS, CEP 90245-250",
+    empreendimento: "AREYA BARRA RESORT",
+    bloco: "01",
+    apartamento: "307",
+    andar: "3",
+    cota: "20",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda",
+    cnpj: "45.298.124/0001-33",
+    nContrato: "363920",
+    valorTotal: 51743.84,
+    valorPago: 1990,
+    entradas: [
+      { descricao: "PIX R$1.990,00 — corretagem (CV 178674872, ID RESV09811900948454251NZGBD4X773D41A, 11/10/2026)", valor: 1990 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.990,00 (corretagem) + Boleto 2x ~R$666,67 (não pagos, venc 11/2026 e 01/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-11",
+    telefone: "(51) 985404027",
+    email: "t_wachholz@hotmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363920 — Areya Barra Resort, Bloco 01 / Apto 307 / 3º andar / Cota 20.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/52).\n" +
+      "Corretagem R$3.990,00: PIX R$1.990,00 (11/10/2026, CV 178674872) + Boleto R$666,67 (venc 11/11/2026) + Boleto R$666,66 (venc 11/01/2027).\n" +
+      "Sinal R$2.587,20 em 4x R$646,80 (1ª venc 10/02/2027). Saldo R$45.166,64 em 74x R$610,36 (1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$1.990,00 (PIX corretagem — boletos e sinal/saldo futuros, não pagos).\n" +
+      "DENTRO DO PRAZO — contrato 11/10/2026, prazo arrependimento vence 18/10/2026.\n" +
+      "ZapSign: 2cb5291c-20b1-4d8d-bc9c-0e604a19c896. Sandra assinou 11/10/2026 13:09:03.\n" +
+      "3 PDFs enviados com mesmo conteúdo — usado apenas 1.\n" +
+      "Nasc: 14/05/1973. End: Rua General Marcos Kruchin, 266, Farrapos, Porto Alegre/RS, CEP 90245-250.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/333--contrato.pdf" }]
+  },
+
+  /* ---------- 334 — GAV — JERIQUIÁ DUNAS RESORT, Bl 02 / 213 / Cota 25 ---------- */
+  {
+    id: 334,
+    nome: "RUBIA BEZERRA DA SILVA",
+    cpf: "062.480.403-89",
+    rg: "2007875053-3 SSPDS/CE",
+    nacionalidade: "brasileira",
+    estadoCivil: "União estável",
+    profissao: "Dentista",
+    endereco: "Rua Joao Gentil, 173, Benfica, Fortaleza/CE, CEP 60020-100",
+    empreendimento: "JERIQUIÁ DUNAS RESORT",
+    bloco: "02",
+    apartamento: "213",
+    andar: "2",
+    cota: "25",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    empresa: "GAV",
+    razaoSocial: "Jeri-2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "33.598.849/0001-68",
+    nContrato: "364081",
+    valorTotal: 52581.46,
+    valorPago: 1000,
+    entradas: [
+      { descricao: "PIX R$1.000,00 — corretagem (CV 187713110, ID RESV1881860095158332HTBFSFCTFE8E035, 11/10/2026)", valor: 1000 }
+    ],
+    formaPagamentoEntrada: "PIX R$1.000,00 (corretagem) + Boleto 5x R$598,00 (não pagos, venc 11/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-11",
+    telefone: "(85) 999052957",
+    email: "rubia_odt@hotmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364081 — Jeriquiá Dunas Resort, Bloco 02 / Apto 213 / 2º andar / Cota 25.\n" +
+      "Período de utilização: 2 semanas por ano (fração 1/52).\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (11/10/2026, CV 187713110) + Boleto 5x R$598,00 (1ª venc 11/11/2026).\n" +
+      "Sinal R$2.629,06 em 4x R$657,26 (1ª venc 10/04/2027). Saldo R$45.962,40 em 80x R$574,53 (1ª venc 10/08/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX corretagem — boletos e sinal/saldo futuros, não pagos).\n" +
+      "DENTRO DO PRAZO — contrato 11/10/2026, prazo arrependimento vence 18/10/2026.\n" +
+      "ZapSign: 642e2e13-f894-4de0-ba1e-5317baef8299. Rubia assinou 11/10/2026 20:42:53.\n" +
+      "Proposta assinada em Jericoacoara/CE, 11/10/2026.\n" +
+      "Nasc: 19/11/1993. End: Rua Joao Gentil, 173, Benfica, Fortaleza/CE, CEP 60020-100.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/334--contrato.pdf" }]
   }
 ];
