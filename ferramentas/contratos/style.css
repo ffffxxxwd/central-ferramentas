@@ -177,8 +177,8 @@ body {
 .ficha__btn.pago-ativo { background: #e6f4ea; border-color: #1a7f37; color: #1a7f37; }
 .tag.assinado-tag { background: #e8f0fe; color: #1a56db; }
 .ficha__btn.assinado-ativo { background: #e8f0fe; border-color: #1a56db; color: #1a56db; }
-.tag.enviado-tag { background: #fef3e2; color: #b45309; }
-.ficha__btn.enviado-ativo { background: #fef3e2; border-color: #b45309; color: #b45309; }
+.tag.enviado-tag { background: #5b21b6; color: #fff; }
+.ficha__btn.enviado-ativo { background: #5b21b6; border-color: #5b21b6; color: #fff; }
 .ficha__btn.reembolso { background: var(--brand); border-color: var(--brand); color: #fff; }
 .ficha__btn.reembolso:hover { background: var(--brand-600); border-color: var(--brand-600); }
 .ficha.wam .ficha__btn.reembolso { background: var(--wam); border-color: var(--wam); }

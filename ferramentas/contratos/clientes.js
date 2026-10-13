@@ -17669,5 +17669,87 @@ window.CLIENTES = [
       "Nasc: 13/11/1991. CEP: 52041335. End: Rua Couto Magalhaes, 176, Rosarinho, Recife/PE.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/345--contrato.pdf" }]
+  },
+
+  // ── Ficha 346 ──────────────────────────────────────────────
+  {
+    id: 346,
+    nome: "Cícero Inácio Pereira",
+    cpf: "027.918.093-41",
+    rg: "0306604920067 SESP/MA",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante(a)",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "1105",
+    andar: "11",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 45.445,92",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX R$ 3.990,00 corretagem (Nº Doc RESN0131560095158243DUTRI7XW8EE2923, 12/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "12/10/2026",
+    telefone: "(99) 98175-3639",
+    email: "ciceroinaciopereira100@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364310 — Beach GAV Resorts, Bloco 01 / Apto 1105 / Andar 11 / Cota 12.\n" +
+      "Corretagem R$3.990,00: PIX R$3.990 (Nº Doc RESN0131560095158243DUTRI7XW8EE2923, 12/10/2026).\n" +
+      "Sinal R$2.272,28 em 4x R$568,07 (1ª venc 10/11/2026). Saldo R$39.183,64 em 68x R$576,23 (1ª venc 10/03/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (PIX corretagem). Recibo PIX mostra R$23.940 (= 6 × R$3.990 — cobre fichas 339-342 + 346-347).\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: e9b7376c-47a1-47ae-a28d-6e2904befaf0. Salinópolis/PA, 12/10/2026. Cícero assinou 13/10/2026 09:13:37.\n" +
+      "ATENÇÃO: Mesmo Nº Doc PIX nas fichas 339-342 e 346-347 — 1 PIX de R$23.940 rateado em 6 contratos.\n" +
+      "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/346--contrato.pdf" }]
+  },
+
+  // ── Ficha 347 ──────────────────────────────────────────────
+  {
+    id: 347,
+    nome: "Cícero Inácio Pereira",
+    cpf: "027.918.093-41",
+    rg: "0306604920067 SESP/MA",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante(a)",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "1307",
+    andar: "13",
+    cota: "14",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 45.445,92",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX R$ 3.990,00 corretagem (Nº Doc RESN0131560095158243DUTRI7XW8EE2923, 12/10/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "12/10/2026",
+    telefone: "(99) 98175-3639",
+    email: "ciceroinaciopereira100@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364315 — Beach GAV Resorts, Bloco 01 / Apto 1307 / Andar 13 / Cota 14.\n" +
+      "Corretagem R$3.990,00: PIX R$3.990 (Nº Doc RESN0131560095158243DUTRI7XW8EE2923, 12/10/2026).\n" +
+      "Sinal R$2.272,28 em 4x R$568,07 (1ª venc 10/11/2026). Saldo R$39.183,64 em 68x R$576,23 (1ª venc 10/03/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (PIX corretagem). Recibo PIX mostra R$23.940 (= 6 × R$3.990 — cobre fichas 339-342 + 346-347).\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: cfcbeff7-a40e-4b11-ba47-b9475e709997. Salinópolis/PA, 12/10/2026. Cícero assinou 13/10/2026 09:11:09.\n" +
+      "ATENÇÃO: Mesmo Nº Doc PIX nas fichas 339-342 e 346-347 — 1 PIX de R$23.940 rateado em 6 contratos.\n" +
+      "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/347--contrato.pdf" }]
   }
 ];
