@@ -17206,12 +17206,15 @@ window.CLIENTES = [
     cnpj: "39.757.445/0001-56",
     nContrato: "140974",
     valorTotal: 27609.18,
-    valorPago: 1000,
+    valorPago: 15216.69,
     entradas: [
-      { descricao: "Cartão Mastercard crédito à vista R$1.000,00 — corretagem (Nº Doc 065281, 22/11/2023)", valor: 1000 }
+      { descricao: "Cartão Mastercard crédito à vista R$1.000,00 — corretagem (Nº Doc 065281, 22/11/2023)", valor: 1000 },
+      { descricao: "Boleto corretagem 4x R$747,50 (quitados dez/2023 a mar/2024)", valor: 2990 },
+      { descricao: "Boleto sinal 4x ~R$350 (quitados mar a jun/2024, com correção)", valor: 1402.11 },
+      { descricao: "Boleto saldo 27x ~R$360 (P/1 a P/27, quitados jul/2024 a set/2026, com correção)", valor: 9824.58 }
     ],
-    formaPagamentoEntrada: "Cartão Master crédito R$1.000,00 (corretagem) + Boleto 4x R$747,50 (corretagem) + 4x R$345,12 sinal + 68x R$327,04 saldo",
-    formaReembolso: "Estorno Cartão",
+    formaPagamentoEntrada: "Cartão Master crédito R$1.000,00 (corretagem) + Boleto 4x R$747,50 (corretagem) + 4x R$345,12 sinal + 68x R$327,04 saldo. EXTRATO CONFIRMADO: 36 de 77 parcelas pagas, total R$15.216,69",
+    formaReembolso: "Estorno PIX",
     dataAssinatura: "2023-10-23",
     telefone: "(35) 999323273",
     email: "samuel.estiva@hotmail.com",
@@ -17223,12 +17226,448 @@ window.CLIENTES = [
       "Período de utilização: 1 semana por ano (fração 1/52).\n" +
       "Corretagem R$3.990,00: Cartão Master crédito R$1.000,00 (Nº Doc 065281, venc 22/11/2023) + Boleto 4x R$747,50 (1ª venc 15/12/2023).\n" +
       "Sinal R$1.380,46 em 4x R$345,12 (1ª venc 15/03/2024). Saldo R$22.238,72 em 68x R$327,04 (1ª venc 15/07/2024).\n" +
-      "VALOR PAGO = R$1.000,00 (cartão crédito corretagem CONFIRMADO). Boletos corretagem, sinal e saldo — contrato de out/2023, parcelas já vencidas — TOTAL PAGO PRECISA CONFIRMAÇÃO.\n" +
+      "EXTRATO CONFIRMADO (12/10/2026): 36 de 77 parcelas pagas. Total recebido R$15.216,69 (principal R$14.200,54 + correção R$999,23 + multa R$14,09 + juros atraso R$2,83).\n" +
+      "Parcelas pagas: E/1 cartão R$1.000 + E/2-E/5 boleto 4x R$747,50 + SI/1-SI/4 sinal + P/1-P/27 saldo (até set/2026). Parcelas P/28 a P/68 em aberto (out/2026 a fev/2030).\n" +
       "FORA DO PRAZO — contrato 23/10/2023, prazo arrependimento venceu 30/10/2023.\n" +
       "D4Sign: 76017f98-853e-45ea-a271-9bd163ef1630. Samuel assinou 23/10/2023 21:23:39, Leticia 21:24:22.\n" +
       "Cônjuge: Leticia Silverio Pascoal, CPF 100.473.836-66, RG MG17364152 PC/MG, nasc 19/09/1993, Advogada.\n" +
       "Nasc: 13/05/1999. End: Rua Cinco, 97, Jardim Bela Vista, Estiva/MG, CEP 37542-000.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/336--contrato.pdf" }]
+  },
+
+  /* ---------- 337 — GAV — GRAN HAUS RESORT, Bl 03 / 201 / Cota 52 ---------- */
+  {
+    id: 337,
+    nome: "MARCOS HELENO FERNANDES",
+    cpf: "814.162.370-20",
+    rg: "4080944814 SJS II RS",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    endereco: "Rua Osvino Emilio Kempfer, 37, Bairro Portao Velho, Portão/RS, CEP 93180-000",
+    empreendimento: "GRAN HAUS RESORT",
+    bloco: "03",
+    apartamento: "201",
+    andar: "1",
+    cota: "52",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "62.986.874/0001-17",
+    nContrato: "364176",
+    valorTotal: 37562.67,
+    valorPago: 1000,
+    entradas: [
+      { descricao: "PIX R$1.000,00 — corretagem (Nº Doc RESV0948540106 10845071SPT258 9AC3A02, 12/10/2026)", valor: 1000 }
+    ],
+    formaPagamentoEntrada: "Corretagem: PIX R$1.000,00 + Boleto 5x R$698,00 (1ª 12/11/2026) = R$4.490,00 | Sinal: 4x R$469,54 (1ª 10/04/2027) | Saldo: 67x R$465,59 (1ª 10/08/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-12",
+    telefone: "(51) 99505-7100",
+    email: "agrosaojorge.portao@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364176 — Gran Haus Resort, Torre Bloco 3 / Apto 201 / Andar 1 / Cota 52.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). Nº de Quartos: 1.\n" +
+      "Corretagem R$4.490,00: PIX R$1.000,00 (Nº Doc RESV0948540106 10845071SPT258 9AC3A02, venc 12/10/2026) + Boleto 5x R$698,00 (1ª venc 12/11/2026).\n" +
+      "Sinal R$1.878,14 em 4x R$469,54 (1ª venc 10/04/2027). Saldo R$31.194,53 em 67x R$465,59 (1ª venc 10/08/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX corretagem). Boletos corretagem ainda não vencidos.\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: df5a32d2-5e40-4085-9aa5-a617c995095a. Assinado 12/10/2026.\n" +
+      "Cônjuge: Não informado.\n" +
+      "Nasc: 18/06/1983. End: Rua Osvino Emilio Kempfer, 37, Portao Velho, Portão/RS, CEP 93180-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/337--contrato.pdf" }]
+  },
+
+  /* ---------- 338 — GAV — GRAN GARDEN RESORT, Bl C3 / 204A / Cota 16 ---------- */
+  {
+    id: 338,
+    nome: "BRUNA IRMA LUDTKE KUMMER",
+    cpf: "036.577.470-79",
+    rg: "1106378035 SSP DI RS",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Agricultor(a)",
+    endereco: "Nova Boemia, 3815, Bairro Interior, Agudo/RS, CEP 96540-000",
+    empreendimento: "GRAN GARDEN RESORT",
+    bloco: "C3",
+    apartamento: "204A",
+    andar: "2",
+    cota: "16",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    nContrato: "363964",
+    valorTotal: 52735.57,
+    valorPago: 1000,
+    entradas: [
+      { descricao: "Cartão Master Débito R$1.000,00 — corretagem (Nº Doc 24542134, 13/10/2026)", valor: 1000 }
+    ],
+    formaPagamentoEntrada: "Corretagem: Cartão Master Débito R$1.000,00 + Boleto 5x R$698,00 (1ª 10/11/2026) = R$4.490,00 | Sinal: 4x R$659,19 (1ª 10/04/2027) | Saldo: 80x R$570,11 (1ª 10/08/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-11",
+    telefone: "(55) 99115-7840",
+    email: "ludtkebruna251@gmail.com",
+    conjuge: {
+      nome: "Samuel Kummer",
+      cpf: "021.351.680-25",
+      rg: "7100089197 SSP RS"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363964 — Gran Garden Resort, Torre Bloco C3 / Apto 204A / Andar 2 / Cota 16.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). Nº de Quartos: 1.\n" +
+      "Corretagem R$4.490,00: Cartão Master Débito R$1.000,00 (Nº Doc 24542134, venc 13/10/2026) + Boleto 5x R$698,00 (1ª venc 10/11/2026).\n" +
+      "Sinal R$2.636,77 em 4x R$659,19 (1ª venc 10/04/2027). Saldo R$45.608,80 em 80x R$570,11 (1ª venc 10/08/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (cartão débito corretagem). Boletos corretagem ainda não vencidos.\n" +
+      "DENTRO DO PRAZO — contrato 11/10/2026, prazo até 18/10/2026.\n" +
+      "ZapSign: dead9663-a94e-4c9e-b903-534f87051d3a. Assinado 11/10/2026.\n" +
+      "Cônjuge: Samuel Kummer (CPF 021.351.680-25, RG 7100089197 SSP RS, nasc 25/08/1989, Agricultor(a), tel (55) 996770468, email samuelkummer@hotmail.com).\n" +
+      "Nasc: 09/06/1995. End: Nova Boemia, 3815, Interior, Agudo/RS, CEP 96540-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/338--contrato.pdf" }]
+  },
+
+  /* ---------- 339 — GAV — BEACH GAV RESORTS, Bl 01 / 1305 / Cota 17 ---------- */
+  {
+    id: 339,
+    nome: "CICERO INACIO PEREIRA",
+    cpf: "027.918.093-41",
+    rg: "0306604920067 SESP MA",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante(a)",
+    endereco: "Rua Joaquim Figueiredo, SN, Bairro Corina, Porto Franco/MA, CEP 65970-000",
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "01",
+    apartamento: "1305",
+    andar: "13",
+    cota: "17",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "364312",
+    valorTotal: 45445.92,
+    valorPago: 3990,
+    entradas: [
+      { descricao: "PIX R$3.990,00 — corretagem (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, 12/10/2026)", valor: 3990 }
+    ],
+    formaPagamentoEntrada: "Corretagem: PIX R$3.990,00 (integral) | Sinal: 4x R$568,07 (1ª 10/11/2026) | Saldo: 68x R$576,23 (1ª 10/03/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-12",
+    telefone: "(99) 98175-3639",
+    email: "ciceroinaciopereira100@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364312 — Beach GAV Resorts, Bloco 01 / Apto 1305 / Andar 13 / Cota 17.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). 1 Quarto.\n" +
+      "Corretagem R$3.990,00: PIX R$3.990,00 integral (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, venc 12/10/2026).\n" +
+      "Sinal R$2.272,28 em 4x R$568,07 (1ª venc 10/11/2026). Saldo R$39.183,64 em 68x R$576,23 (1ª venc 10/03/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (PIX corretagem).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (fichas 339-342) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: 1a78dbbf-4181-410c-991b-ac2045dd447c. Assinado 12/10/2026.\n" +
+      "Cônjuge: Não informado.\n" +
+      "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/339--contrato.pdf" }]
+  },
+
+  /* ---------- 340 — GAV — BEACH GAV RESORTS, Bl 01 / 1007 / Cota 06 ---------- */
+  {
+    id: 340,
+    nome: "CICERO INACIO PEREIRA",
+    cpf: "027.918.093-41",
+    rg: "0306604920067 SESP MA",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante(a)",
+    endereco: "Rua Joaquim Figueiredo, SN, Bairro Corina, Porto Franco/MA, CEP 65970-000",
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "01",
+    apartamento: "1007",
+    andar: "10",
+    cota: "06",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "364313",
+    valorTotal: 45445.92,
+    valorPago: 3990,
+    entradas: [
+      { descricao: "PIX R$3.990,00 — corretagem (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, 12/10/2026)", valor: 3990 }
+    ],
+    formaPagamentoEntrada: "Corretagem: PIX R$3.990,00 (integral) | Sinal: 4x R$568,07 (1ª 10/11/2026) | Saldo: 68x R$576,23 (1ª 10/03/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-12",
+    telefone: "(99) 98175-3639",
+    email: "ciceroinaciopereira100@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364313 — Beach GAV Resorts, Bloco 01 / Apto 1007 / Andar 10 / Cota 06.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). 1 Quarto.\n" +
+      "Corretagem R$3.990,00: PIX R$3.990,00 integral (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, venc 12/10/2026).\n" +
+      "Sinal R$2.272,28 em 4x R$568,07 (1ª venc 10/11/2026). Saldo R$39.183,64 em 68x R$576,23 (1ª venc 10/03/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (PIX corretagem).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (fichas 339-342) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: be01eb18-b608-4ab5-9b0c-cbc675d4602e. Assinado 12/10/2026.\n" +
+      "Cônjuge: Não informado.\n" +
+      "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/340--contrato.pdf" }]
+  },
+
+  /* ---------- 341 — GAV — BEACH GAV RESORTS, Bl 01 / 1417 / Cota 02 ---------- */
+  {
+    id: 341,
+    nome: "CICERO INACIO PEREIRA",
+    cpf: "027.918.093-41",
+    rg: "0306604920067 SESP MA",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante(a)",
+    endereco: "Rua Joaquim Figueiredo, SN, Bairro Corina, Porto Franco/MA, CEP 65970-000",
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "01",
+    apartamento: "1417",
+    andar: "14",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "364314",
+    valorTotal: 45445.92,
+    valorPago: 3990,
+    entradas: [
+      { descricao: "PIX R$3.990,00 — corretagem (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, 12/10/2026)", valor: 3990 }
+    ],
+    formaPagamentoEntrada: "Corretagem: PIX R$3.990,00 (integral) | Sinal: 4x R$568,07 (1ª 10/11/2026) | Saldo: 68x R$576,23 (1ª 10/03/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-12",
+    telefone: "(99) 98175-3639",
+    email: "ciceroinaciopereira100@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364314 — Beach GAV Resorts, Bloco 01 / Apto 1417 / Andar 14 / Cota 02.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). 1 Quarto.\n" +
+      "Corretagem R$3.990,00: PIX R$3.990,00 integral (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, venc 12/10/2026).\n" +
+      "Sinal R$2.272,28 em 4x R$568,07 (1ª venc 10/11/2026). Saldo R$39.183,64 em 68x R$576,23 (1ª venc 10/03/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (PIX corretagem).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (fichas 339-342) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: 86665094-b55f-4730-a29d-89d58f386d20. Assinado 12/10/2026.\n" +
+      "Cônjuge: Não informado.\n" +
+      "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/341--contrato.pdf" }]
+  },
+
+  /* ---------- 342 — GAV — BEACH GAV RESORTS, Bl 01 / 1107 / Cota 15 ---------- */
+  {
+    id: 342,
+    nome: "CICERO INACIO PEREIRA",
+    cpf: "027.918.093-41",
+    rg: "0306604920067 SESP MA",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante(a)",
+    endereco: "Rua Joaquim Figueiredo, SN, Bairro Corina, Porto Franco/MA, CEP 65970-000",
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "01",
+    apartamento: "1107",
+    andar: "11",
+    cota: "15",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "364311",
+    valorTotal: 45445.92,
+    valorPago: 3990,
+    entradas: [
+      { descricao: "PIX R$3.990,00 — corretagem (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, 12/10/2026)", valor: 3990 }
+    ],
+    formaPagamentoEntrada: "Corretagem: PIX R$3.990,00 (integral) | Sinal: 4x R$568,07 (1ª 10/11/2026) | Saldo: 68x R$576,23 (1ª 10/03/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-12",
+    telefone: "(99) 98175-3639",
+    email: "ciceroinaciopereira100@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 364311 — Beach GAV Resorts, Bloco 01 / Apto 1107 / Andar 11 / Cota 15.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). 1 Quarto.\n" +
+      "Corretagem R$3.990,00: PIX R$3.990,00 integral (Nº Doc RESN0131560095 158243DUTRI7XW 8EE2923, venc 12/10/2026).\n" +
+      "Sinal R$2.272,28 em 4x R$568,07 (1ª venc 10/11/2026). Saldo R$39.183,64 em 68x R$576,23 (1ª venc 10/03/2027).\n" +
+      "VALOR PAGO = R$3.990,00 (PIX corretagem).\n" +
+      "ATENÇÃO: Nº Documento PIX idêntico nos 4 contratos (fichas 339-342) — conferir se foi 1 PIX rateado ou 4 PIX separados.\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "ZapSign: 2d9a19d6-47d3-43dd-8c26-ab6fdc8786bf. Assinado 12/10/2026.\n" +
+      "Cônjuge: Não informado.\n" +
+      "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/342--contrato.pdf" }]
+  },
+
+  /* ---------- 343 — GAV — BEACH GAV RESORTS, Bl 01 / 1314 / Cota 19 ---------- */
+  {
+    id: 343,
+    nome: "EDUARDO JOAO LEANDRO BURCAOS",
+    cpf: "302.005.802-30",
+    rg: "1599397 SSP PA",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado(a)",
+    profissao: "Professor Municipal",
+    endereco: "Rua Oriximina, SN, Bairro Marambaia, Belém/PA, CEP 66620-040",
+    empreendimento: "BEACH GAV RESORTS",
+    bloco: "01",
+    apartamento: "1314",
+    andar: "13",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    nContrato: "363993",
+    valorTotal: 48172.38,
+    valorPago: 1500,
+    entradas: [
+      { descricao: "Cartão Visa Crédito à Vista R$1.000,00 — corretagem (Nº Doc 180359486, 10/11/2026)", valor: 1000 },
+      { descricao: "Cartão Master Crédito à Vista R$500,00 — corretagem (Nº Doc 24677512, 10/11/2026)", valor: 500 }
+    ],
+    formaPagamentoEntrada: "Corretagem: Cartão Visa crédito R$1.000 + Cartão Master crédito R$500 + Boleto 3x R$830 (1ª 11/12/2026) = R$3.990 | Sinal: 4x R$602,16 (1ª 05/03/2027) | Saldo: 68x R$614,32 (1ª 05/07/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "",
+    telefone: "(91) 98249-1647",
+    email: "edu_burcaos@hotmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363993 — Beach GAV Resorts, Bloco 01 / Apto 1314 / Andar 13 / Cota 19.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52). 1 Quarto.\n" +
+      "Corretagem R$3.990,00: Cartão Visa crédito R$1.000 (Nº Doc 180359486, venc 10/11/2026) + Cartão Master crédito R$500 (Nº Doc 24677512, venc 10/11/2026) + Boleto 3x R$830 (1ª venc 11/12/2026).\n" +
+      "Sinal R$2.408,62 em 4x R$602,16 (1ª venc 05/03/2027). Saldo R$41.773,76 em 68x R$614,32 (1ª venc 05/07/2027).\n" +
+      "VALOR PAGO = R$1.500,00 (cartão Visa R$1.000 + cartão Master R$500). Boletos corretagem ainda não vencidos.\n" +
+      "ATENÇÃO: Somente proposta disponível (1 página) — DATA DE ASSINATURA NÃO CONFIRMADA, prazo arrependimento não calculado.\n" +
+      "Cônjuge: Não informado.\n" +
+      "Nasc: 18/09/1969. End: Rua Oriximina, SN, Marambaia, Belém/PA, CEP 66620-040.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/343--contrato.pdf" }]
+  },
+
+  /* ---------- 344 — WAM — REFÚGIO DAS LONTRAS POUSADA, Barra de Santo Antonio/AL ---------- */
+  {
+    id: 344,
+    nome: "FLAVIO JUNIOR DA SILVA",
+    cpf: "053.801.539-09",
+    rg: "102479904 SESP PR",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro",
+    profissao: "Serralheiro",
+    endereco: "",
+    empreendimento: "REFÚGIO DAS LONTRAS POUSADA",
+    bloco: "",
+    apartamento: "",
+    andar: "",
+    cota: "",
+    fracao: "1/52",
+    localizacao: "Barra de Santo Antonio/AL",
+    empresa: "WAM",
+    razaoSocial: "Refúgio das Lontras Pousada Empreendimentos Imobiliários Ltda",
+    cnpj: "41.402.028/0001-32",
+    nContrato: "",
+    valorTotal: 0,
+    valorPago: 455,
+    entradas: [
+      { descricao: "Cartão Crédito Cielo R$455,00 — intermediação (12/10/2026)", valor: 455 }
+    ],
+    formaPagamentoEntrada: "Intermediação: Cartão crédito Cielo R$455,00 + Crédito Recorrente 11x R$372,27 = R$4.550,00 | Cota: Boleto 5x R$50 (1ª 15/11/2026) + 84x R$409,59 (1ª 15/04/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-12",
+    telefone: "(44) 99893-7695",
+    email: "flavioobob@hotmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Refúgio das Lontras Pousada — Barra de Santo Antonio/AL.\n" +
+      "Intermediadora: WAM Comercialização SA (CNPJ 17.919.649/0001-03). Intermediação R$4.550,00.\n" +
+      "Intermediação: 1x R$455 cartão crédito Cielo + 11x R$372,27 crédito recorrente.\n" +
+      "Cota: Boleto 5x R$50 (1ª venc 15/11/2026) + 84x R$409,59 (1ª venc 15/04/2027).\n" +
+      "VALOR PAGO = R$455,00 (cartão crédito intermediação). Recorrente ainda não cobrado (contrato de ontem).\n" +
+      "DENTRO DO PRAZO — contrato 12/10/2026, prazo até 19/10/2026.\n" +
+      "GSign: L7JBRLXSH5-GPI9I7F-5MD62RROVW8Z05-KZG7F. Maceió, 12/10/2026.\n" +
+      "Testemunhas: Nelson Augusto da Costa; Alan Guilherme Guimarães (CPF 416.740.568-77).\n" +
+      "ATENÇÃO: Contrato recebido como SCREENSHOTS (5 imagens) — bloco, apartamento, cota, endereço do cliente e valor total da cota NÃO VISÍVEIS. Solicitar contrato completo em PDF.\n" +
+      "Nasc: 16/09/1990.",
+    parcelas: [],
+    arquivos: [{ titulo: "Screenshots do Contrato", arquivo: "contratos-pdf/344--contrato-screenshots.zip" }]
+  },
+
+  // ── Ficha 345 ──────────────────────────────────────────────
+  {
+    id: 345,
+    nome: "Otavio Keven Freitas Buarque de Souza",
+    cpf: "085.954.044-88",
+    rg: "08595404488 IITB/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "06",
+    apartamento: "0218",
+    andar: "1",
+    cota: "18",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.186,09",
+    valorPago: "R$ 1.500,00",
+    formaPagamentoEntrada: "Cartão de crédito Visa (02x R$ 750,00 = R$ 1.500,00) + Boleto (04x R$ 622,50 = R$ 2.490,00)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "02/08/2026",
+    telefone: "(81) 99847-8087",
+    email: "contatoproducoesnova@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE.\n" +
+      "Contrato nº 353039. Matrícula R.9-2.929, Livro nº 02-E.\n" +
+      "Corretagem R$ 3.990,00: Cartão Visa crédito parcelado 02x R$750 = R$1.500 (Nº Doc 186068610, cartão final 1126) + Boleto 04x R$622,50 = R$2.490 (venc 02/10/2026).\n" +
+      "Sinal de negócio: R$3.959,29 em 04 parcelas de R$989,82 (venc a partir de 10/02/2027).\n" +
+      "Saldo devedor: R$71.236,80 em 80 parcelas de R$890,46 (venc a partir de 10/06/2027).\n" +
+      "VALOR PAGO = R$1.500,00 (cartão crédito Visa — comprovante no PDF). Boletos sem comprovante de quitação.\n" +
+      "FORA DO PRAZO — contrato 02/08/2026, prazo expirou 09/08/2026.\n" +
+      "ZapSign: 4503963a-8847-40e2-84b5-ad395624d3a3. Ipojuca/PE, 02/08/2026.\n" +
+      "Nasc: 13/11/1991. CEP: 52041335. End: Rua Couto Magalhaes, 176, Rosarinho, Recife/PE.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/345--contrato.pdf" }]
   }
 ];
