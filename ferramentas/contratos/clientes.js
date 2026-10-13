@@ -17133,5 +17133,102 @@ window.CLIENTES = [
       "Nasc: 19/11/1993. End: Rua Joao Gentil, 173, Benfica, Fortaleza/CE, CEP 60020-100.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/334--contrato.pdf" }]
+  },
+
+  /* ---------- 335 — WAM — BÚZIOS FRACTIONAL RESORT, Bl 03 / 3108 / Cota 51 ---------- */
+  {
+    id: 335,
+    nome: "MARLON HENRIQUE VICENTE BASTOS",
+    cpf: "107.121.287-78",
+    rg: "03111687 MB/RJ",
+    nacionalidade: "brasileira",
+    estadoCivil: "Solteiro",
+    profissao: "Militar",
+    endereco: "",
+    empreendimento: "BÚZIOS FRACTIONAL RESORT",
+    bloco: "03",
+    apartamento: "3108",
+    andar: "",
+    cota: "51",
+    fracao: "1/52",
+    localizacao: "Armação dos Búzios/RJ",
+    empresa: "WAM",
+    razaoSocial: "W50 Empreendimentos Imobiliarios Ltda",
+    cnpj: "33.770.634/0001-82",
+    nContrato: "317490",
+    valorTotal: 39333.79,
+    valorPago: 280,
+    entradas: [
+      { descricao: "Cartão de débito R$280,00 — intermediação WAM Comercialização (CNPJ 17.919.649/0001-03)", valor: 280 }
+    ],
+    formaPagamentoEntrada: "Cartão débito R$280,00 (intermediação) + Boleto 3x R$840,00 (intermediação, futuros) + 5x R$50 cota + 96x R$377,96 saldo",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-10",
+    telefone: "(21) 99579-2947",
+    email: "Marlonbastos.vicente@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 317490 — Búzios Fractional Resort (Búzios Beach Resort), Bloco 03 / Apto 3108 / Cota 51.\n" +
+      "Semanas de uso: 1 por ano. Habite-se nº 002/2010.\n" +
+      "Preço cota: R$36.533,79. Intermediação: R$2.800,00 (WAM Comercialização S.A., CNPJ 17.919.649/0001-03).\n" +
+      "Intermediação: 1x R$280,00 cartão débito + 3x R$840,00 boleto W Palmerston.\n" +
+      "Cota: 5x R$50,00 boleto (1ª 05/11/2026) + 96x R$377,96 boleto (1ª 20/04/2027).\n" +
+      "VALOR PAGO = R$280,00 (cartão débito intermediação — boletos e parcelas futuros).\n" +
+      "DENTRO DO PRAZO — contrato 10/10/2026, prazo arrependimento vence 17/10/2026.\n" +
+      "GSign: GV19NSEE76-VE08W1F-BEKE2HO1TSB1EU-WO74W. Marlon assinou 10/10/2026 14:54:24.\n" +
+      "Empreendimento em retrofit (cláusula 7 do contrato).\n" +
+      "Nasc: 13/05/1984. Tel: (21) 99579-2947.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/335--contrato.pdf" }]
+  },
+
+  /* ---------- 336 — GAV — OIKOS MARAGOGI RESORT, Bl 01 / 015 / Cota 12 ---------- */
+  {
+    id: 336,
+    nome: "SAMUEL GONCALVES LIMA NETO",
+    cpf: "100.069.716-95",
+    rg: "MG19225402 SSP/MG",
+    nacionalidade: "brasileira",
+    estadoCivil: "Casado",
+    profissao: "Engenheiro de Redes",
+    endereco: "Rua Cinco, 97, Jardim Bela Vista, Estiva/MG, CEP 37542-000",
+    empreendimento: "OIKOS MARAGOGI RESORT",
+    bloco: "01",
+    apartamento: "015",
+    andar: "T",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Maragogi/AL",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.757.445/0001-56",
+    nContrato: "140974",
+    valorTotal: 27609.18,
+    valorPago: 1000,
+    entradas: [
+      { descricao: "Cartão Mastercard crédito à vista R$1.000,00 — corretagem (Nº Doc 065281, 22/11/2023)", valor: 1000 }
+    ],
+    formaPagamentoEntrada: "Cartão Master crédito R$1.000,00 (corretagem) + Boleto 4x R$747,50 (corretagem) + 4x R$345,12 sinal + 68x R$327,04 saldo",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2023-10-23",
+    telefone: "(35) 999323273",
+    email: "samuel.estiva@hotmail.com",
+    conjuge: "Leticia Silverio Pascoal, CPF 100.473.836-66, RG MG17364152 PC/MG, nasc 19/09/1993, Advogada, tel (35) 999491461, email leh_pascoal@hotmail.com",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 140974 — Oikos Maragogi Resort, Bloco 01 / UH 015 / Térreo / Cota 12.\n" +
+      "Período de utilização: 1 semana por ano (fração 1/52).\n" +
+      "Corretagem R$3.990,00: Cartão Master crédito R$1.000,00 (Nº Doc 065281, venc 22/11/2023) + Boleto 4x R$747,50 (1ª venc 15/12/2023).\n" +
+      "Sinal R$1.380,46 em 4x R$345,12 (1ª venc 15/03/2024). Saldo R$22.238,72 em 68x R$327,04 (1ª venc 15/07/2024).\n" +
+      "VALOR PAGO = R$1.000,00 (cartão crédito corretagem CONFIRMADO). Boletos corretagem, sinal e saldo — contrato de out/2023, parcelas já vencidas — TOTAL PAGO PRECISA CONFIRMAÇÃO.\n" +
+      "FORA DO PRAZO — contrato 23/10/2023, prazo arrependimento venceu 30/10/2023.\n" +
+      "D4Sign: 76017f98-853e-45ea-a271-9bd163ef1630. Samuel assinou 23/10/2023 21:23:39, Leticia 21:24:22.\n" +
+      "Cônjuge: Leticia Silverio Pascoal, CPF 100.473.836-66, RG MG17364152 PC/MG, nasc 19/09/1993, Advogada.\n" +
+      "Nasc: 13/05/1999. End: Rua Cinco, 97, Jardim Bela Vista, Estiva/MG, CEP 37542-000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/336--contrato.pdf" }]
   }
 ];
