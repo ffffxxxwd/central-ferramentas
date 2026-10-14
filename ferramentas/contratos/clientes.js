@@ -17772,8 +17772,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Ipojuca/PE",
     valorTotal: "R$ 79.186,13",
-    valorPago: "R$ 4.117,55",
-    formaPagamentoEntrada: "Cartão crédito parcelado (5x R$ 798,00 = R$ 3.990,00, 1ª venc 22/08/2026) + Condomínio R$ 127,55 (pago 09/09/2026) + Boleto sinal (3x R$ 989,82 + 1x R$ 989,83 = R$ 2.969,46 + R$ 989,83)",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão crédito parcelado (5x R$ 798,00 = R$ 3.990,00, 1ª venc 22/08/2026) + Boleto sinal (3x R$ 989,82 + 1x R$ 989,83 = R$ 2.969,46 + R$ 989,83)",
     formaReembolso: "Estorno Cartão",
     dataAssinatura: "",
     telefone: "(67) 99979-0183",
@@ -17786,7 +17786,7 @@ window.CLIENTES = [
       "Entrada R$3.990 (5x R$798 cartão crédito parcelado, 1ª venc 22/08/2026).\n" +
       "Sinal R$2.969,46 (3x R$989,82 boleto, 1ª venc 10/01/2027) + R$989,83 (1x boleto, venc 10/04/2027).\n" +
       "Saldo R$71.236,84 (80x R$890,46 boleto, 1ª venc 10/05/2027).\n" +
-      "VALOR PAGO = R$4.117,55 (corretagem R$3.990 cartão 5x R$798 + condomínio R$127,55 pago 09/09/2026).\n" +
+      "VALOR PAGO = R$3.990,00 (cartão crédito parcelado 5x R$798 — valor cheio).\n" +
       "Sala: Porto de Galinhas - DIA. Consultora: Taynara Cristina de Amorim Urzeda.\n" +
       "Ficha de negociação validada em 23/07/2026 16:30:10. Checklist em 12/10/2026.\n" +
       "SIENGE (14/10/2026): RECEBIDO R$1.596 (E/1 R$798 em 24/08 + E/2 R$798 em 21/09).\n" +
@@ -17999,5 +17999,134 @@ window.CLIENTES = [
       "Nasc: 17/10/1984. End: Rua Marechal Deodoro da Fonseca, 639, Boa Esperança, Santa Luzia/MG, CEP 33035300.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/353--contrato.pdf" }]
+  },
+
+  // ── Ficha 354 ──────────────────────────────────────────────
+  {
+    id: 354,
+    nome: "Joao Antonio da Costa",
+    cpf: "161.185.706-63",
+    rg: "52487112 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    bloco: "C1",
+    apartamento: "204B",
+    andar: "2",
+    cota: "17",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 51.189,64",
+    valorPago: "R$ 4.490,00",
+    formaPagamentoEntrada: "Cartão débito Mastercard (1x R$ 4.490,00, Nº Doc 25938640, 06/04/2026) + Boleto sinal (4x R$ 639,87, 1ª venc 15/05/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "06/04/2026",
+    telefone: "(19) 98812-7427",
+    email: "jota439@hotmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Garden Resort — Gramado/RS. Torre Bloco C1 / Apto 204B / 2º andar / Cota 17.\n" +
+      "Área privativa 43,1 m², área comum 20,01 m², área total 63,11 m².\n" +
+      "Corretagem R$4.490 (1x cartão débito Mastercard ****5144, Nº Doc 25938640, aprovado com senha 06/04/2026 13:59).\n" +
+      "Sinal R$2.559,48 (4x R$639,87 boleto, 1ª venc 15/05/2026).\n" +
+      "Saldo R$44.140,16 (68x R$649,12 boleto, 1ª venc 15/09/2026).\n" +
+      "VALOR PAGO = R$4.490,00 (cartão débito Mastercard — valor cheio). Sinal e saldo são boleto, sem comprovação de pagamento.\n" +
+      "FORA do prazo de arrependimento (contrato 06/04/2026, venceu 13/04/2026 — 192 dias).\n" +
+      "Consultor: Leonardo Vidal Agostini. Sala: Gramado.\n" +
+      "D4Sign: 78a31ed7-887c-47a4-9920-e8e8ad0b78c9. Assinado 06/04/2026 14:34:35.\n" +
+      "Nasc: 11/12/1952. End: Rua Joao Bottene, 538, Apto 123, Vila Monteiro, Piracicaba/SP, CEP 13418555.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/354--contrato.pdf" }]
+  },
+
+  // ── Ficha 355 ──────────────────────────────────────────────
+  {
+    id: 355,
+    nome: "Jameson Franca da Silva Santos",
+    cpf: "054.359.804-70",
+    rg: "1859700083 MT/PE",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Construtor(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "420",
+    andar: "4",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 54.664,89",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão crédito VISA à vista (1x R$ 1.330,00, Nº Doc 20131170, 12/10/2026) + Boleto corretagem (2x R$ 1.330,00 = R$ 2.660,00, venc 12/12/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "12/10/2026",
+    telefone: "(81) 99263-5397",
+    email: "jamesonfssantos@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01 / Apto 420 / 4º andar / Cota 19.\n" +
+      "Área privativa 34,01 m², área comum 39,71 m², área total 73,72 m². Período de utilização: 2 semanas/ano.\n" +
+      "Corretagem R$3.990 (1x R$1.330 cartão VISA ****5484 crédito à vista, Nº Doc 20131170, 12/10/2026 12:21 + 2x R$1.330 boleto, venc 12/12/2026).\n" +
+      "Sinal R$2.733,25 (4x R$683,31 boleto, 1ª venc 10/02/2027).\n" +
+      "Saldo R$47.941,64 (74x R$647,86 boleto, 1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$1.330,00 (cartão crédito VISA à vista — valor cheio). Boleto corretagem R$2.660 ainda não venceu (12/12/2026).\n" +
+      "DENTRO do prazo de arrependimento (contrato 12/10/2026, vence 19/10/2026).\n" +
+      "Consultora: Vanessa Marques de Freitas. Sala: Ipojuca/PE.\n" +
+      "ZapSign: 82200d00-e4ee-4d43-a0ad-36ec62f05052. Assinado 12/10/2026 12:44:39.\n" +
+      "Nasc: 16/11/1985. End: Rua Doutor Henrique Lins, 250, Brasilia Teimosa, Recife/PE, CEP 51010380.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/355--contrato.pdf" }]
+  },
+
+  // ── Ficha 356 ──────────────────────────────────────────────
+  {
+    id: 356,
+    nome: "Renata Araujo Santos Munhoz",
+    cpf: "065.670.694-57",
+    rg: "06567069457 IITB/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Supervisor(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "02",
+    apartamento: "0317",
+    andar: "2",
+    cota: "24",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.185,91",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão crédito Mastercard à vista (1x R$ 1.000,00, Nº Doc 23447946, 11/10/2026) + Boleto corretagem (4x R$ 747,50 = R$ 2.990,00, venc 11/12/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "11/10/2026",
+    telefone: "(81) 99637-5948",
+    email: "nata.araujo14@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE. Bloco 02 / Apto 0317 / 2º andar / Cota 24.\n" +
+      "Área privativa 32,54 m², área comum 37,35 m², área total 69,89 m². Período de utilização: 2 semanas/ano.\n" +
+      "Corretagem R$3.990 (1x R$1.000 cartão Mastercard ****3236 crédito à vista, Nº Doc 23447946, 11/10/2026 13:34 + 4x R$747,50 boleto = R$2.990, venc 11/12/2026).\n" +
+      "Sinal R$3.959,29 (5x R$791,86 boleto, 1ª venc 10/03/2027).\n" +
+      "Saldo R$71.236,62 (91x R$782,82 boleto, 1ª venc 10/08/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (cartão crédito Mastercard à vista — valor cheio). Boleto corretagem R$2.990 ainda não venceu (11/12/2026).\n" +
+      "DENTRO do prazo de arrependimento (contrato 11/10/2026, vence 18/10/2026).\n" +
+      "Consultor: Cleberson do Nascimento Coelho. Sala: Ipojuca/PE.\n" +
+      "ZapSign: 107135a6-5a43-4fc8-b0d3-8987a07ef546. Assinado 11/10/2026 14:20:48.\n" +
+      "Nasc: 14/03/1987. End: Rua Gerson de Barros Pinange, 73, APT 201, Ponto de Parada, Recife/PE, CEP 52041370.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/356--contrato.pdf" }]
   }
 ];
