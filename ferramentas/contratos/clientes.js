@@ -17751,5 +17751,253 @@ window.CLIENTES = [
       "Nasc: 20/10/1988. End: Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/347--contrato.pdf" }]
+  },
+
+  // ── Ficha 348 ──────────────────────────────────────────────
+  {
+    id: 348,
+    nome: "Josilene do Nascimento Sobrinho",
+    cpf: "008.299.211-84",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "07",
+    apartamento: "0226",
+    andar: "",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.186,13",
+    valorPago: "R$ 4.117,55",
+    formaPagamentoEntrada: "Cartão crédito parcelado (5x R$ 798,00 = R$ 3.990,00, 1ª venc 22/08/2026) + Condomínio R$ 127,55 (pago 09/09/2026) + Boleto sinal (3x R$ 989,82 + 1x R$ 989,83 = R$ 2.969,46 + R$ 989,83)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "",
+    telefone: "(67) 99979-0183",
+    email: "",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE. Bloco 07 / Apto 0226 / Cota 19. Vista Lateral.\n" +
+      "Entrada R$3.990 (5x R$798 cartão crédito parcelado, 1ª venc 22/08/2026).\n" +
+      "Sinal R$2.969,46 (3x R$989,82 boleto, 1ª venc 10/01/2027) + R$989,83 (1x boleto, venc 10/04/2027).\n" +
+      "Saldo R$71.236,84 (80x R$890,46 boleto, 1ª venc 10/05/2027).\n" +
+      "VALOR PAGO = R$4.117,55 (corretagem R$3.990 cartão 5x R$798 + condomínio R$127,55 pago 09/09/2026).\n" +
+      "Sala: Porto de Galinhas - DIA. Consultora: Taynara Cristina de Amorim Urzeda.\n" +
+      "Ficha de negociação validada em 23/07/2026 16:30:10. Checklist em 12/10/2026.\n" +
+      "SIENGE (14/10/2026): RECEBIDO R$1.596 (E/1 R$798 em 24/08 + E/2 R$798 em 21/09).\n" +
+      "ATENÇÃO: Cadastrada a partir da FICHA DE NEGOCIAÇÃO — faltam RG, estado civil, data de assinatura do contrato. Solicitar contrato completo.\n" +
+      "End: Rua Projetada 04, 40, Chácaras Trevo, Dourados/MS, CEP 79815305.",
+    parcelas: [],
+    arquivos: [{ titulo: "Ficha de Negociação", arquivo: "contratos-pdf/348--ficha-negociacao.pdf" }]
+  },
+
+  // ── Ficha 349 ──────────────────────────────────────────────
+  {
+    id: 349,
+    nome: "Josilene do Nascimento Sobrinho",
+    cpf: "008.299.211-84",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "311",
+    andar: "",
+    cota: "21",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 51.232,05",
+    valorPago: "R$ 3.500,00",
+    formaPagamentoEntrada: "Cartão crédito parcelado (5x R$ 1.400,00 = R$ 7.000,00 para 2 cotas, R$ 3.500,00 por cota, 1ª venc 23/08/2026) + Boleto entrada restante (1x R$ 490,00, venc 10/01/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "",
+    telefone: "(67) 99979-0183",
+    email: "",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01 / Apto 311 / Cota 21. Vista Rua.\n" +
+      "Entrada R$3.500 (5x R$700 cartão crédito parcelado, 1ª venc 23/08/2026) + R$490 boleto (venc 10/01/2027).\n" +
+      "Sinal R$1.921,20 (3x R$640,40 boleto, 1ª venc 10/02/2027) + R$640,39 (1x boleto, venc 10/05/2027).\n" +
+      "Saldo R$44.680,46 (74x R$603,79 boleto, 1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$3.500,00 (cartão crédito parcelado 5x R$1.400 = R$7.000 para 2 cotas, R$3.500/cota — valor cheio).\n" +
+      "Sala: Porto de Galinhas - DIA. Consultora: Taynara Cristina de Amorim Urzeda.\n" +
+      "Ficha de negociação validada em 23/07/2026 16:30:10. Checklist em 12/10/2026.\n" +
+      "SIENGE (14/10/2026): RECEBIDO R$1.400 (E/1 R$700 em 24/08 + E/2 R$700 em 21/09). 2/5 entradas liquidadas.\n" +
+      "ATENÇÃO: Cadastrada a partir da FICHA DE NEGOCIAÇÃO — faltam RG, estado civil, data de assinatura do contrato. Solicitar contrato completo.\n" +
+      "End: Rua Projetada 04, 40, Chácaras Trevo, Dourados/MS, CEP 79815305.",
+    parcelas: [],
+    arquivos: [{ titulo: "Ficha de Negociação", arquivo: "contratos-pdf/348--ficha-negociacao.pdf" }]
+  },
+
+  // ── Ficha 350 ──────────────────────────────────────────────
+  {
+    id: 350,
+    nome: "Josilene do Nascimento Sobrinho",
+    cpf: "008.299.211-84",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "307",
+    andar: "",
+    cota: "06",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 51.232,05",
+    valorPago: "R$ 3.500,00",
+    formaPagamentoEntrada: "Cartão crédito parcelado (5x R$ 1.400,00 = R$ 7.000,00 para 2 cotas, R$ 3.500,00 por cota, 1ª venc 23/08/2026) + Boleto entrada restante (1x R$ 490,00, venc 10/01/2027)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "",
+    telefone: "(67) 99979-0183",
+    email: "",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01 / Apto 307 / Cota 06. Vista Rua.\n" +
+      "Entrada R$3.500 (5x R$700 cartão crédito parcelado, 1ª venc 23/08/2026) + R$490 boleto (venc 10/01/2027).\n" +
+      "Sinal R$1.921,20 (3x R$640,40 boleto, 1ª venc 10/02/2027) + R$640,39 (1x boleto, venc 10/05/2027).\n" +
+      "Saldo R$44.680,46 (74x R$603,79 boleto, 1ª venc 10/06/2027).\n" +
+      "VALOR PAGO = R$3.500,00 (cartão crédito parcelado 5x R$1.400 = R$7.000 para 2 cotas, R$3.500/cota — valor cheio).\n" +
+      "Sala: Porto de Galinhas - DIA. Consultora: Taynara Cristina de Amorim Urzeda.\n" +
+      "Ficha de negociação validada em 23/07/2026 16:30:10. Checklist em 12/10/2026.\n" +
+      "SIENGE (14/10/2026): RECEBIDO R$1.400 (E/1 R$700 em 24/08 + E/2 R$700 em 21/09). 2/5 entradas liquidadas.\n" +
+      "ATENÇÃO: Cadastrada a partir da FICHA DE NEGOCIAÇÃO — faltam RG, estado civil, data de assinatura do contrato. Solicitar contrato completo.\n" +
+      "End: Rua Projetada 04, 40, Chácaras Trevo, Dourados/MS, CEP 79815305.",
+    parcelas: [],
+    arquivos: [{ titulo: "Ficha de Negociação", arquivo: "contratos-pdf/348--ficha-negociacao.pdf" }]
+  },
+
+  // ── Ficha 351 ──────────────────────────────────────────────
+  {
+    id: 351,
+    nome: "Mocilay Rodrigues da Silva",
+    cpf: "803.044.782-53",
+    rg: "5015870 PC/PA",
+    estadoCivil: "Casado(a)",
+    profissao: "Corretor de seguros",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    bloco: "B4",
+    apartamento: "003",
+    andar: "T",
+    cota: "18",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 76.731,84",
+    valorPago: "R$ 799,29",
+    formaPagamentoEntrada: "Cartão Visa crédito à vista R$ 799,29 (Nº Doc 17788638, cartão final 7484) + Boleto corretagem (05x R$ 799,29 = R$ 3.996,45, 1ª venc 10/09/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "19/07/2026",
+    telefone: "(91) 99133-7575",
+    email: "mocysilva@hotmail.com",
+    conjuge: "Nayara Araujo Vieira (CPF 010.563.852-86, RG 5543490 PC/PA)",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 349276 — Gran Garden Resort, Bloco B4 / Apto 003 / Andar T / Cota 18. 2 Quartos.\n" +
+      "Corretagem R$4.795,74: Cartão Visa crédito à vista R$799,29 (Nº Doc 17788638, 18/08/2026) + Boleto 05x R$799,29 = R$3.996,45 (1ª venc 10/09/2026).\n" +
+      "Sinal R$3.996,45 em 05x R$799,29 (1ª venc 10/02/2027). Saldo R$67.939,65 em 85x R$799,29 (1ª venc 10/07/2027).\n" +
+      "VALOR PAGO = R$799,29 (cartão Visa crédito à vista — comprovante no PDF). Boletos sem comprovante.\n" +
+      "FORA DO PRAZO — contrato 19/07/2026, prazo expirou 26/07/2026.\n" +
+      "ZapSign: 7f765dd0-0c4e-4de8-a232-358192828d8e. Salinópolis/PA, 19/07/2026.\n" +
+      "Cônjuge: Nayara Araujo Vieira, CPF 010.563.852-86, RG 5543490 PC/PA, nasc 18/10/1990, servidora pública, tel (91) 99326-3533, email nayaravieira415@gmail.com.\n" +
+      "Nasc: 29/09/1984. End: Rua Marechal Rondon, 412, Centro, Santa Luzia do Pará/PA, CEP 68644000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/351--contrato.pdf" }]
+  },
+  {
+    id: 352,
+    nome: "Filipe Maciel Silva Ferreira",
+    cpf: "121.551.506-52",
+    rg: "MG16620071 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Profissional de logística",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "08",
+    apartamento: "0204",
+    andar: "1",
+    cota: "14",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.185,91",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (Nº Doc RESV09036300951580730AOH14MRE88AA2A, 09/10/2026) + Boleto corretagem (05x R$ 598,00 = R$ 2.990,00, 1ª venc 09/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "09/10/2026",
+    telefone: "(31) 98745-3193",
+    email: "biancatrindaderapallo@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 363557 — Porto 2 Life Resort, Bloco 08 / Apto 0204 / Andar 1 / Cota 14. 1 Quarto.\n" +
+      "Corretagem R$3.990,00: PIX R$1.000,00 (Nº Doc RESV09036300951580730AOH14MRE88AA2A, 09/10/2026) + Boleto 05x R$598,00 = R$2.990,00 (1ª venc 09/11/2026).\n" +
+      "Sinal R$3.959,29 em 05x R$791,86 (1ª venc 10/04/2027). Saldo R$71.236,62 em 91x R$782,82 (1ª venc 10/09/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX — comprovante Itaú no PDF, CV 188712710). Boletos sem comprovante.\n" +
+      "DENTRO DO PRAZO — contrato 09/10/2026, prazo vence 16/10/2026.\n" +
+      "ZapSign: fa9587a7-9f6d-4271-bc14-2030f70a9795. Ipojuca/PE, 09/10/2026.\n" +
+      "Cônjuge: Não informado no contrato.\n" +
+      "Nasc: 30/03/1993. End: Rua Caminho Novo, 520, Casa, Passagem de Mariana, Mariana/MG, CEP 35421156.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/352--contrato.pdf" }]
+  },
+  {
+    id: 353,
+    nome: "Fabricio Sales Ubaldo Pereira",
+    cpf: "062.732.426-66",
+    rg: "MG12103843 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Funcionário público",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "06",
+    apartamento: "0410",
+    andar: "3",
+    cota: "24",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 60.328,60",
+    valorPago: "R$ 14.534,26",
+    formaPagamentoEntrada: "Cartão Visa crédito parcelado 05x R$ 798,00 (Nº Doc 24422088) — R$ 3.990,00 corretagem + Sinal 05x R$ 603,28 + Saldo 12x R$ 627,32",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "04/11/2024",
+    telefone: "(31) 99365-8184",
+    email: "fabricioubaldo@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Contrato nº 218265 — Porto 2 Life Resort, Bloco 06 / Apto 0410 / Andar 3 / Cota 24. 1 Quarto.\n" +
+      "Corretagem R$3.990,00: Cartão Visa crédito parcelado 05x R$798,00 (Nº Doc 24422088, venc 04/12/2024).\n" +
+      "Sinal R$3.016,42 em 05x R$603,28 (1ª venc 15/05/2025). Saldo R$53.322,18 em 85x R$627,32 (1ª venc 15/10/2025).\n" +
+      "VALOR PAGO = R$14.534,26 (corretagem R$3.990 cartão + sinal 5x R$603,28 = R$3.016,42 + saldo 12x R$627,32 = R$7.527,84).\n" +
+      "FORA DO PRAZO — contrato 04/11/2024, prazo expirou 11/11/2024.\n" +
+      "D4Sign: 675b1015-2989-41d2-8e8d-75957bb124c5. Ipojuca/PE, 04/11/2024.\n" +
+      "Cônjuge: Não informado no contrato.\n" +
+      "Nasc: 17/10/1984. End: Rua Marechal Deodoro da Fonseca, 639, Boa Esperança, Santa Luzia/MG, CEP 33035300.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/353--contrato.pdf" }]
   }
 ];
