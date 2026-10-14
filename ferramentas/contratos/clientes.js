@@ -17901,7 +17901,7 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Gramado/RS",
     valorTotal: "R$ 76.731,84",
-    valorPago: "R$ 799,29",
+    valorPago: "R$ 1.598,58",
     formaPagamentoEntrada: "Cartão Visa crédito à vista R$ 799,29 (Nº Doc 17788638, cartão final 7484) + Boleto corretagem (05x R$ 799,29 = R$ 3.996,45, 1ª venc 10/09/2026)",
     formaReembolso: "Estorno Cartão",
     dataAssinatura: "19/07/2026",
@@ -17914,7 +17914,7 @@ window.CLIENTES = [
       "Contrato nº 349276 — Gran Garden Resort, Bloco B4 / Apto 003 / Andar T / Cota 18. 2 Quartos.\n" +
       "Corretagem R$4.795,74: Cartão Visa crédito à vista R$799,29 (Nº Doc 17788638, 18/08/2026) + Boleto 05x R$799,29 = R$3.996,45 (1ª venc 10/09/2026).\n" +
       "Sinal R$3.996,45 em 05x R$799,29 (1ª venc 10/02/2027). Saldo R$67.939,65 em 85x R$799,29 (1ª venc 10/07/2027).\n" +
-      "VALOR PAGO = R$799,29 (cartão Visa crédito à vista — comprovante no PDF). Boletos sem comprovante.\n" +
+      "VALOR PAGO = R$1.598,58 (cartão R$799,29 + 1 boleto R$799,29 recebido 11/09/2026). Confirmado por extrato SIENGE.\n" +
       "FORA DO PRAZO — contrato 19/07/2026, prazo expirou 26/07/2026.\n" +
       "ZapSign: 7f765dd0-0c4e-4de8-a232-358192828d8e. Salinópolis/PA, 19/07/2026.\n" +
       "Cônjuge: Nayara Araujo Vieira, CPF 010.563.852-86, RG 5543490 PC/PA, nasc 18/10/1990, servidora pública, tel (91) 99326-3533, email nayaravieira415@gmail.com.\n" +
@@ -18128,5 +18128,54 @@ window.CLIENTES = [
       "Nasc: 14/03/1987. End: Rua Gerson de Barros Pinange, 73, APT 201, Ponto de Parada, Recife/PE, CEP 52041370.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/356--contrato.pdf" }]
+  },
+
+  // ── Ficha 357 ──────────────────────────────────────────────
+  {
+    id: 357,
+    nome: "Maria do Socorro Farias Santos",
+    cpf: "226.168.612-91",
+    rg: "1482571 PC PA",
+    nascimento: "1964-06-16",
+    estadoCivil: "União estável",
+    profissao: "Professora",
+    empresa: "GAV",
+    razaoSocial: "Atalaia Resort Empreendimento Imobiliário SPE Ltda",
+    cnpj: "26.504.364/0001-00",
+    empreendimento: "Salinas Exclusive Resort",
+    bloco: "02",
+    apartamento: "510",
+    andar: "5",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 71.595,00",
+    valorPago: "R$ 17.726,99",
+    formaPagamentoEntrada: "Cartão crédito VISA parcelado (4x R$ 997,50 = R$ 3.990,00, Nº Doc 21668892) + Sinal 5 parcelas quitadas (R$ 3.913,55) + Saldo 7 parcelas quitadas P/1-P/7 (R$ 5.634,31) + P/93 adiantada (R$ 722,55)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "01/06/2025",
+    telefone: "(96) 99129-5316",
+    email: "socorrosantos1964@bol.com.br",
+    conjuge: {
+      nome: "Francisco de Assis Oliveira de Sousa",
+      cpf: "060.061.753-04",
+      rg: "329964 PTC AP"
+    },
+    pix: "22616861291",
+    clausulaExtra: "",
+    observacoes:
+      "Salinas Exclusive Resort — Salinópolis/PA. Bloco 02 / Apto 510 / 5º andar / Cota 07.\n" +
+      "Contrato nº 265708. Área privativa 37 m², área comum 49,33 m², área total 86,33 m². Tipo: 1 Quarto(s).\n" +
+      "Corretagem R$ 3.990,00 (4x R$ 997,50 cartão VISA/CréditoParcelado, Nº Doc 21668892, 1º venc 01/07/2025).\n" +
+      "Sinal R$ 3.579,75 (5x R$ 715,95, 1ª venc 05/11/2025).\n" +
+      "Saldo R$ 64.025,25 (95x R$ 673,95, 1ª venc 05/04/2026).\n" +
+      "VALOR PAGO = R$ 17.726,99 (SIENGE 14/10/2026): cota R$ 14.260,41 (corretagem R$ 3.990 cartão + sinal 5x R$ 3.913,55 + saldo P/1-P/7 R$ 5.634,31 + P/93 adiantada R$ 722,55) + condomínio R$ 3.466,58.\n" +
+      "Condomínio pago: R$ 3.466,58 (6x R$ 200,43 jul-dez/2025 + 10x R$ 226,40 jan-out/2026). SIENGE 14/10/2026.\n" +
+      "FORA do prazo de arrependimento (contrato 01/06/2025, venceu 08/06/2025 — 500 dias).\n" +
+      "Cônjuge: Francisco de Assis Oliveira de Sousa, CPF 060.061.753-04, RG 329964 PTC AP, Aposentado, nasc 06/12/1955.\n" +
+      "Contrato físico assinado em Salinópolis/PA, 01/06/2025. Sem assinatura digital (D4Sign/ZapSign).\n" +
+      "End: Rua Castro Alves, 978, Casa, Agreste, Laranjal do Jari/AP, CEP 68920000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/357--contrato.pdf" }]
   }
 ];
