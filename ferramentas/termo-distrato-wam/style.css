@@ -289,7 +289,7 @@ body.modo-edicao #docLogo:hover { outline: 2px dashed var(--accent); outline-off
   gap: 46px;
 }
 .doc-assinatura { text-align: center; width: 100%; }
-.doc-assinatura__linha { width: 62%; margin: 0 auto 6px; border-top: 1px solid #000; }
+.doc-assinatura__linha { width: 62%; margin: 0 auto 6px; border: none; border-bottom: 1px solid #000; font-size: 1px; line-height: 1px; color: transparent; }
 .doc-assinatura__nome { font-weight: 700; font-size: 11pt; }
 
 .doc-rodape { margin-top: 40px; text-align: center; font-size: 8.5pt; color: #222; }
@@ -338,4 +338,5 @@ body.modo-edicao #docLogo:hover { outline: 2px dashed var(--accent); outline-off
   .doc-opcao { cursor: default; background: none !important; box-shadow: none !important; }
   .linha-ativa { outline: none !important; }
   .marca-pagina { display: none !important; }
+  .doc-assinatura__linha { width: 62% !important; border-bottom: 1px solid #000 !important; }
 }

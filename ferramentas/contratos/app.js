@@ -1748,8 +1748,8 @@
 '<p class="doc-p">CPF/CNPJ: ____________________________</p>' +
 '</div>' +
 '<div class="doc-assinaturas" id="docAssinaturas">' +
-'<div class="doc-assinatura"><div class="doc-assinatura__linha"></div><div class="doc-assinatura__nome up" id="pv_nome_ass">NOME DO CLIENTE</div></div>' +
-'<div class="doc-assinatura" id="assConjuge" hidden><div class="doc-assinatura__linha"></div><div class="doc-assinatura__nome up" id="pv_nome_conj_ass">CÔNJUGE</div></div>' +
+'<div class="doc-assinatura"><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_ass">NOME DO CLIENTE</div></div>' +
+'<div class="doc-assinatura" id="assConjuge" hidden><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_conj_ass">CÔNJUGE</div></div>' +
 '</div>' +
 '<p class="doc-rodape">Este Quadro-Resumo obedece ao artigo 35-A da Lei Federal nº 4.591/1964 e integra o presente Contrato para todos os fins e efeitos.</p>';
   }
@@ -1871,7 +1871,7 @@
       f_forma: forma,
       f_valor: valorStr,
       f_extenso: extenso,
-      f_pix: c.pix,
+      f_pix: "",
       f_conj_nome: c.conjuge.nome,
       f_conj_nac: "brasileiro(a)",
       f_conj_rg: c.conjuge.rg,
@@ -2007,7 +2007,7 @@
       f_forma: forma,
       f_valor: valorStr,
       f_extenso: extenso,
-      f_pix: c.pix,
+      f_pix: "",
       f_conj_nome: c.conjuge.nome,
       f_conj_nac: "brasileiro(a)",
       f_conj_rg: c.conjuge.rg,
