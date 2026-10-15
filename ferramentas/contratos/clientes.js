@@ -18260,5 +18260,284 @@ window.CLIENTES = [
       "End: Rua Caboclo Bernardo, 07, Casa, Santo Antonio, Pinheiros/ES, CEP 29980000.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/360--contrato.pdf" }]
+  },
+
+  // ── Ficha 361 ──────────────────────────────────────────────
+  {
+    id: 361,
+    nome: "Leonardo Pereira Palmieri",
+    cpf: "153.244.297-16",
+    rg: "262976160 SSP/RJ",
+    estadoCivil: "União estável",
+    profissao: "Administrador de Banco de Dados",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "221",
+    andar: "2",
+    cota: "03",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 51.638,00",
+    valorPago: "R$ 9.656,06",
+    formaPagamentoEntrada: "Cartão (1x R$ 516,38 MASTER/CreditoAVista, Nº Doc 182150486, 18/05/2025) + Boleto (7x R$ 516,38 corretagem) + Boleto (5x sinal) + Boleto (5x parcelas saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/04/2025",
+    telefone: "(47) 98909-0949",
+    email: "leonardopalmieri.lp@gmail.com",
+    conjuge: {
+      nome: "Amanda Eliza Holz",
+      cpf: "092.574.129-97",
+      rg: "6031680 SSP/SC"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02 / Apt 221 / 2º andar / Cota 03.\n" +
+      "Área privativa 35,29 m², área comum 62,78 m², área total 98,07 m².\n" +
+      "Valor total da venda: R$ 51.638,00. Fração ideal 0,0108897892843%.\n" +
+      "Corretagem R$ 4.131,04 (1x R$ 516,38 cartão MASTER + 7x R$ 516,38 boleto).\n" +
+      "Sinal de Negócio R$ 2.581,90 (5x boleto).\n" +
+      "Saldo R$ 44.925,06 (87x boleto, 1ª venc 15/05/2026).\n" +
+      "SIENGE Venda 15776. 17 parcelas pagas no extrato (R$ 9.085,39) + P/5 R$ 570,67 boleto pago hoje (Santander R$ 3.424,02 / 6 cotas).\n" +
+      "VALOR PAGO = R$ 9.656,06 (R$ 9.085,39 extrato + R$ 570,67 boleto 15/10/2026).\n" +
+      "FORA do prazo de arrependimento (contrato 18/04/2025, venceu 25/04/2025 — 540 dias).\n" +
+      "Assinatura D4Sign 18/04/2025. Doc 3522103e-95ac-4774-ab69-b63c412753ea.\n" +
+      "Cônjuge: Amanda Eliza Holz, CPF 092.574.129-97, RG 6031680 SSP/SC, nasc 20/03/1995, Consultora Tributária, tel (47) 99908-8427.\n" +
+      "6 contratos mesma pessoa: fichas 361-366 (cotas 03/09/13/14/22/24).\n" +
+      "End: Rua Papa Joao XXIII, 138, Apt 202, Iririu, Joinville/SC, CEP 89227300.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/361--contrato.pdf" },
+      { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-03.pdf" },
+      { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
+    ]
+  },
+
+  // ── Ficha 362 ──────────────────────────────────────────────
+  {
+    id: 362,
+    nome: "Leonardo Pereira Palmieri",
+    cpf: "153.244.297-16",
+    rg: "262976160 SSP/RJ",
+    estadoCivil: "União estável",
+    profissao: "Administrador de Banco de Dados",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "219",
+    andar: "2",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 51.638,00",
+    valorPago: "R$ 9.656,06",
+    formaPagamentoEntrada: "Cartão (1x R$ 516,38 MASTER/CreditoAVista) + Boleto (7x R$ 516,38 corretagem) + Boleto (5x sinal) + Boleto (5x parcelas saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/04/2025",
+    telefone: "(47) 98909-0949",
+    email: "leonardopalmieri.lp@gmail.com",
+    conjuge: {
+      nome: "Amanda Eliza Holz",
+      cpf: "092.574.129-97",
+      rg: "6031680 SSP/SC"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02 / Apt 219 / 2º andar / Cota 09.\n" +
+      "SIENGE Venda 15779. 17 parcelas pagas (R$ 9.085,39) + P/5 R$ 570,67 boleto 15/10/2026.\n" +
+      "VALOR PAGO = R$ 9.656,06. FORA do prazo (540 dias).\n" +
+      "6 contratos mesma pessoa: fichas 361-366 (cotas 03/09/13/14/22/24).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/362--contrato.pdf" },
+      { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-09.pdf" },
+      { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
+    ]
+  },
+
+  // ── Ficha 363 ──────────────────────────────────────────────
+  {
+    id: 363,
+    nome: "Leonardo Pereira Palmieri",
+    cpf: "153.244.297-16",
+    rg: "262976160 SSP/RJ",
+    estadoCivil: "União estável",
+    profissao: "Administrador de Banco de Dados",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "218",
+    andar: "2",
+    cota: "13",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 51.638,00",
+    valorPago: "R$ 9.656,06",
+    formaPagamentoEntrada: "Cartão (1x R$ 516,38 MASTER/CreditoAVista) + Boleto (7x R$ 516,38 corretagem) + Boleto (5x sinal) + Boleto (5x parcelas saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/04/2025",
+    telefone: "(47) 98909-0949",
+    email: "leonardopalmieri.lp@gmail.com",
+    conjuge: {
+      nome: "Amanda Eliza Holz",
+      cpf: "092.574.129-97",
+      rg: "6031680 SSP/SC"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02 / Apt 218 / 2º andar / Cota 13.\n" +
+      "SIENGE Venda 15781. 17 parcelas pagas (R$ 9.085,39) + P/5 R$ 570,67 boleto 15/10/2026.\n" +
+      "VALOR PAGO = R$ 9.656,06. FORA do prazo (540 dias).\n" +
+      "6 contratos mesma pessoa: fichas 361-366 (cotas 03/09/13/14/22/24).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/363--contrato.pdf" },
+      { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-13.pdf" },
+      { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
+    ]
+  },
+
+  // ── Ficha 364 ──────────────────────────────────────────────
+  {
+    id: 364,
+    nome: "Leonardo Pereira Palmieri",
+    cpf: "153.244.297-16",
+    rg: "262976160 SSP/RJ",
+    estadoCivil: "União estável",
+    profissao: "Administrador de Banco de Dados",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "214",
+    andar: "2",
+    cota: "14",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 51.638,00",
+    valorPago: "R$ 9.656,06",
+    formaPagamentoEntrada: "Cartão (1x R$ 516,38 MASTER/CreditoAVista) + Boleto (7x R$ 516,38 corretagem) + Boleto (5x sinal) + Boleto (5x parcelas saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/04/2025",
+    telefone: "(47) 98909-0949",
+    email: "leonardopalmieri.lp@gmail.com",
+    conjuge: {
+      nome: "Amanda Eliza Holz",
+      cpf: "092.574.129-97",
+      rg: "6031680 SSP/SC"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02 / Apt 214 / 2º andar / Cota 14.\n" +
+      "SIENGE Venda 15777. 17 parcelas pagas (R$ 9.085,39) + P/5 R$ 570,67 boleto 15/10/2026.\n" +
+      "VALOR PAGO = R$ 9.656,06. FORA do prazo (540 dias).\n" +
+      "6 contratos mesma pessoa: fichas 361-366 (cotas 03/09/13/14/22/24).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/364--contrato.pdf" },
+      { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-14.pdf" },
+      { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
+    ]
+  },
+
+  // ── Ficha 365 ──────────────────────────────────────────────
+  {
+    id: 365,
+    nome: "Leonardo Pereira Palmieri",
+    cpf: "153.244.297-16",
+    rg: "262976160 SSP/RJ",
+    estadoCivil: "União estável",
+    profissao: "Administrador de Banco de Dados",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "223",
+    andar: "2",
+    cota: "22",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 51.638,00",
+    valorPago: "R$ 9.656,06",
+    formaPagamentoEntrada: "Cartão (1x R$ 516,38 MASTER/CreditoAVista) + Boleto (7x R$ 516,38 corretagem) + Boleto (5x sinal) + Boleto (5x parcelas saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/04/2025",
+    telefone: "(47) 98909-0949",
+    email: "leonardopalmieri.lp@gmail.com",
+    conjuge: {
+      nome: "Amanda Eliza Holz",
+      cpf: "092.574.129-97",
+      rg: "6031680 SSP/SC"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02 / Apt 223 / 2º andar / Cota 22.\n" +
+      "SIENGE Venda 15780. 17 parcelas pagas (R$ 9.085,39) + P/5 R$ 570,67 boleto 15/10/2026.\n" +
+      "VALOR PAGO = R$ 9.656,06. FORA do prazo (540 dias).\n" +
+      "6 contratos mesma pessoa: fichas 361-366 (cotas 03/09/13/14/22/24).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/365--contrato.pdf" },
+      { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-22.pdf" },
+      { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
+    ]
+  },
+
+  // ── Ficha 366 ──────────────────────────────────────────────
+  {
+    id: 366,
+    nome: "Leonardo Pereira Palmieri",
+    cpf: "153.244.297-16",
+    rg: "262976160 SSP/RJ",
+    estadoCivil: "União estável",
+    profissao: "Administrador de Banco de Dados",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "219",
+    andar: "2",
+    cota: "24",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 51.638,00",
+    valorPago: "R$ 9.656,06",
+    formaPagamentoEntrada: "Cartão (1x R$ 516,38 MASTER/CreditoAVista) + Boleto (7x R$ 516,38 corretagem) + Boleto (5x sinal) + Boleto (5x parcelas saldo)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/04/2025",
+    telefone: "(47) 98909-0949",
+    email: "leonardopalmieri.lp@gmail.com",
+    conjuge: {
+      nome: "Amanda Eliza Holz",
+      cpf: "092.574.129-97",
+      rg: "6031680 SSP/SC"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02 / Apt 219 / 2º andar / Cota 24.\n" +
+      "SIENGE Venda 15778. 17 parcelas pagas (R$ 9.085,39) + P/5 R$ 570,67 boleto 15/10/2026.\n" +
+      "VALOR PAGO = R$ 9.656,06. FORA do prazo (540 dias).\n" +
+      "6 contratos mesma pessoa: fichas 361-366 (cotas 03/09/13/14/22/24).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/366--contrato.pdf" },
+      { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-24.pdf" },
+      { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
+    ]
   }
 ];
