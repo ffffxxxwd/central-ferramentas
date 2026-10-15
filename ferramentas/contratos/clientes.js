@@ -14794,7 +14794,7 @@ window.CLIENTES = [
     cota: "20",
     fracao: "1/52",
     valorTotal: 75019.38,
-    valorPago: 1995.00,
+    valorPago: 41545.21,
     entradas: [
       { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 }
     ],
@@ -14809,9 +14809,9 @@ window.CLIENTES = [
     observacoes:
       "Contrato nº 96322 — Gran Valley Resort, Bloco B / Apto B 620 / Andar 3 / Cota 20.\n" +
       "Corretagem total R$3.990,00: PIX R$1.995,00 (06/03/2023, doc E000000020230/306154111597O4/5794) + Boleto 1x R$250,00 (venc. 05/04/2023) + Boleto 2x R$872,50 (R$1.745,00, venc. 05/05/2023).\n" +
-      "VALOR PAGO = R$ 1.995,00 (PIX corretagem confirmado — boletos sem confirmação de quitação).\n" +
-      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc. 05/07/2023) — sem confirmação.\n" +
-      "Saldo R$67.278,40: 80x R$840,98 (1ª venc. 05/11/2023) — sem confirmação.\n" +
+      "VALOR PAGO = R$ 41.545,21 (SIENGE 14/10/2026): 44 de 88 parcelas pagas (50%). Corretagem + sinal + saldo P/1-P/36 quitados.\n" +
+      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc. 05/07/2023) — QUITADO.\n" +
+      "Saldo R$67.278,40: 80x R$840,98 (1ª venc. 05/11/2023) — 36 parcelas quitadas.\n" +
       "Cônjuge: Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, nasc. 04/05/1975, Professora, tel (43) 99911-2540, email m_leandro_costa@hotmail.com).\n" +
       "FORA DO PRAZO — assinado 06/03/2023, prazo de arrependimento venceu 13/03/2023.\n" +
       "Beneficiários corretagem: Andre Valença Carnevale (28.493.304/0001-57), Francisco Marques da Silva Junior (31.766.052/0001-05), Paulo Henrique Gonzaga de Queiroz Me (24.774.129/0001-15).\n" +
@@ -14892,7 +14892,7 @@ window.CLIENTES = [
     cota: "05",
     fracao: "1/52",
     valorTotal: 75019.38,
-    valorPago: 1995.00,
+    valorPago: 41545.21,
     entradas: [
       { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 }
     ],
@@ -14907,9 +14907,9 @@ window.CLIENTES = [
     observacoes:
       "Contrato nº 96323 — Gran Valley Resort, Bloco B / Apto B 620 / Andar 3 / Cota 05.\n" +
       "Corretagem total R$3.990,00: PIX R$1.995,00 (06/03/2023, doc E000000020230/30615411159704/5794) + Boleto 1x R$250,00 (venc. 05/04/2023) + Boleto 2x R$872,50 (R$1.745,00, venc. 05/05/2023).\n" +
-      "VALOR PAGO = R$ 1.995,00 (PIX corretagem confirmado — boletos sem confirmação de quitação).\n" +
-      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc. 05/07/2023) — sem confirmação.\n" +
-      "Saldo R$67.278,40: 80x R$840,98 (1ª venc. 05/11/2023) — sem confirmação.\n" +
+      "VALOR PAGO = R$ 41.545,21 (SIENGE 14/10/2026): 44 de 88 parcelas pagas (50%). Corretagem + sinal + saldo P/1-P/36 quitados.\n" +
+      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc. 05/07/2023) — QUITADO.\n" +
+      "Saldo R$67.278,40: 80x R$840,98 (1ª venc. 05/11/2023) — 36 parcelas quitadas.\n" +
       "Cônjuge: Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, nasc. 04/05/1975, Professora, tel (43) 99911-2540, email m_leandro_costa@hotmail.com).\n" +
       "FORA DO PRAZO — assinado 06/03/2023, prazo de arrependimento venceu 13/03/2023.\n" +
       "Beneficiários corretagem: Andre Valença Carnevale (28.493.304/0001-57), Francisco Marques da Silva Junior (31.766.052/0001-05), Paulo Henrique Gonzaga de Queiroz Me (24.774.129/0001-15).\n" +
@@ -15724,57 +15724,6 @@ window.CLIENTES = [
       "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila@gavresorts.com.br.\n" +
       "Matrícula 11.764, Livro 2, Cartório Único Ofício Salinópolis/PA.\n" +
       "Local de assinatura: Salinópolis/PA, 09 de agosto de 2026."
-  },
-
-  // ─── 308 ─────────────────────────────────────────────
-  {
-    id: 308,
-    nome: "Haroldo Miller Borbas dos Santos",
-    cpf: "00496711970",
-    rg: "6791017-6 IIPR/PR",
-    profissao: "Autônomo",
-    nacionalidade: "Brasileira",
-    dataNascimento: "1979-02-16",
-    estadoCivil: "Casado(a)",
-    endereco: "Rua João dias Nascimento, 329, Casa, Centro, Jandaia do Sul/PR, CEP 86900000",
-    email: "millerborba@hotmail.com",
-    telefone: "(43) 996218390",
-    empresa: "GAV",
-    empreendimento: "Gran Valley Resort",
-    bloco: "B",
-    apartamento: "620",
-    andar: "3",
-    cota: "05",
-    fracao: "1/26",
-    razaoSocial: "GAV GRAMADO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA",
-    cnpj: "45.042.537/0001-52",
-    localizacao: "Gramado/RS",
-    valorTotal: 75019.38,
-    valorPago: 1995.00,
-    entradas: [
-      { descricao: "Corretagem 1x R$1.995,00 PIX", valor: 1995.00 }
-    ],
-    formaPagamentoEntrada: "PIX R$1.995,00 (corretagem, Nº Doc E0000000020230/30615411159704/5794, 06/03/2023) + Boleto 1x R$250,00 (corretagem, venc 05/04/2023) + Boleto 2x R$872,50 = R$1.745,00 (corretagem, venc 05/05/2023) + Sinal 4x R$937,75 = R$3.750,98 (1ª venc 05/07/2023) + Saldo 80x R$840,98 = R$67.278,40 (1ª venc 05/11/2023)",
-    formaReembolso: "Reembolso",
-    dataAssinatura: "2023-03-06",
-    conjuge: "Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, Professora, nasc 04/05/1975)",
-    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/308--contrato.pdf" }],
-    pix: "",
-    observacoes:
-      "Contrato nº 96323 — Gran Valley Resort, Bloco B / Apto 620 / Andar 3 / Cota 05, 1 Quarto (Cama Queen com Duas Camas Auxiliares Acopladas mais Sofá-Cama, cap. max 6).\n" +
-      "Vendedora: GAV GRAMADO EMPREENDIMENTO IMOBILIÁRIO SPE LTDA (CNPJ 45.042.537/0001-52), Gramado/RS.\n" +
-      "Fração 1/26 (2 semanas por fração, 26 frações por unidade).\n" +
-      "Corretagem R$3.990,00: PIX R$1.995,00 (Nº Doc E0000000020230/30615411159704/5794, 06/03/2023) + Boleto 1x R$250,00 (venc 05/04/2023) + Boleto 2x R$872,50 = R$1.745,00 (venc 05/05/2023).\n" +
-      "Sinal de Negócio R$3.750,98: 4x R$937,75 (1ª venc 05/07/2023).\n" +
-      "Saldo R$67.278,40: 80x R$840,98 (1ª venc 05/11/2023).\n" +
-      "FORA DO PRAZO — assinado 06/03/2023, prazo de arrependimento venceu 13/03/2023.\n" +
-      "valorPago = R$1.995 (PIX confirmado por Nº Doc). Boletos corretagem (R$250 + R$1.745) e parcelas de sinal/saldo — contrato de março/2023, conferir quitados.\n" +
-      "Cônjuge: Michele Leandro da Costa (CPF 004.985.319-88, RG 97994579 SESP/PR, Professora, nasc 04/05/1975, tel (43) 999112540, e-mail m_leandro_costa@hotmail.com).\n" +
-      "Área privativa 35,05 m², área comum 47,91 m², área total 82,96 m².\n" +
-      "ATENÇÃO: Nome no D4Sign registrado como 'Harold9' (typo) em vez de 'Haroldo'.\n" +
-      "Assinatura D4Sign PRESENCIAL em 06/03/2023 (doc 089285af-98a2-4a28-a23a-9a996fd33c1e).\n" +
-      "Assinaturas: Haroldo (13:48:44), Michele (13:52:22), Andre Valença Carnevale (testemunha, 13:58:02), Vilma Vitória Benetti Casagrande (testemunha, 14:00:14), Paulo Henrique Gonzaga de Queiroz (parte, 14:01:19).\n" +
-      "Local de assinatura: Gramado/RS, 06 de março de 2023."
   },
 
   // ─── 309 ─────────────────────────────────────────────
@@ -18020,9 +17969,9 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Gramado/RS",
     valorTotal: "R$ 51.189,64",
-    valorPago: "R$ 4.490,00",
+    valorPago: "R$ 8.440,99",
     formaPagamentoEntrada: "Cartão débito Mastercard (1x R$ 4.490,00, Nº Doc 25938640, 06/04/2026) + Boleto sinal (4x R$ 639,87, 1ª venc 15/05/2026)",
-    formaReembolso: "Estorno Cartão",
+    formaReembolso: "Reembolso",
     dataAssinatura: "06/04/2026",
     telefone: "(19) 98812-7427",
     email: "jota439@hotmail.com",
@@ -18177,5 +18126,139 @@ window.CLIENTES = [
       "End: Rua Castro Alves, 978, Casa, Agreste, Laranjal do Jari/AP, CEP 68920000.",
     parcelas: [],
     arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/357--contrato.pdf" }]
+  },
+
+  // ── Ficha 358 ──────────────────────────────────────────────
+  {
+    id: 358,
+    nome: "Laura Regina Simoes Soares",
+    cpf: "452.380.698-55",
+    rg: "550165113 SSP/SP",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Servidor Publico(a)",
+    empresa: "GAV",
+    razaoSocial: "E.T.R. Construtora e Incorporadora Ltda.",
+    cnpj: "14.194.873/0001-97",
+    empreendimento: "Park GAV Resorts",
+    bloco: "Atalaia",
+    apartamento: "906",
+    andar: "9",
+    cota: "11F",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 25.470,40",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.000,00, Nº Doc RESN3464320050918060SK6PAOTL3225ABA, 14/10/2026) + Boleto corretagem (5x R$ 598,00, 1ª venc 14/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "14/10/2026",
+    telefone: "(19) 98275-5175",
+    email: "laurarssoares@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Park GAV Resorts — Salinópolis/PA. Torre Atalaia / Apto 906 / 9º andar / Cota 11F.\n" +
+      "Área privativa 54,8 m², área comum 44,57 m², área total 99,37 m².\n" +
+      "Corretagem R$3.990 (1x R$1.000 PIX + 5x R$598 boleto, 1ª venc 14/11/2026).\n" +
+      "Sinal R$1.273,52 (4x R$318,38 boleto, 1ª venc 05/04/2027).\n" +
+      "Saldo R$20.206,88 (68x R$297,16 boleto, 1ª venc 05/08/2027).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX corretagem — comprovante presente). Boletos corretagem e sinal sem comprovação de pagamento.\n" +
+      "DENTRO do prazo de arrependimento (contrato 14/10/2026, vence 21/10/2026 — 1 dia).\n" +
+      "Assinatura ZapSign 14/10/2026 15:11:26. Doc ef86e02e-881c-43bd-9b7f-ac3903114e29.\n" +
+      "Consultora: Hosana Ferreira da Silva Alves.\n" +
+      "End: Rua Jaime Bitto, 109, Parque Residencial Sabias, Indaiatuba/SP, CEP 13349229.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/358--contrato.pdf" }]
+  },
+
+  // ── Ficha 359 ──────────────────────────────────────────────
+  {
+    id: 359,
+    nome: "Diego Fernandes Dourado",
+    cpf: "064.090.184-01",
+    rg: "8521101 SDS/PE",
+    estadoCivil: "União estável",
+    profissao: "Autônomo(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "03",
+    apartamento: "0209",
+    andar: "2",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,13",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.330,00, Nº Doc RESN3690950095158146270INP3I69BB615, 11/10/2026) + Boleto corretagem (2x R$ 886,67 venc 11/11/2026 + 1x R$ 886,66 venc 11/01/2027)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "11/10/2026",
+    telefone: "(81) 99805-3136",
+    email: "diegofernandesdourado@gmail.com",
+    conjuge: "",
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto Alto Resort — Ipojuca/PE. Bloco 03 / Apto 0209 / 2º andar / Cota 02.\n" +
+      "Área privativa 32,54 m², área comum 32 m², área total 64,54 m².\n" +
+      "Corretagem R$3.990 (1x R$1.330 PIX + 2x R$886,67 boleto venc 11/11/2026 + 1x R$886,66 boleto venc 11/01/2027).\n" +
+      "Sinal R$3.382,37 (5x R$676,47 boleto, 1ª venc 10/02/2027).\n" +
+      "Saldo R$60.274,76 (91x R$662,36 boleto, 1ª venc 10/07/2027).\n" +
+      "VALOR PAGO = R$1.330,00 (PIX corretagem — comprovante presente). Boletos corretagem e sinal sem comprovação de pagamento.\n" +
+      "DENTRO do prazo de arrependimento (contrato 11/10/2026, vence 18/10/2026 — 3 dias).\n" +
+      "Assinatura ZapSign 11/10/2026 15:54:22. Doc db3c2272-31e5-4182-af06-ef6e1e153171.\n" +
+      "Consultora: Helen Cristina Souza Archanjo.\n" +
+      "End: Rua Conselheiro Nabuco, 444, Apt 106, Casa Amarela, Recife/PE, CEP 52070010.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/359--contrato.pdf" }]
+  },
+
+  // ── Ficha 360 ──────────────────────────────────────────────
+  {
+    id: 360,
+    nome: "Edvaldo Santos Silva",
+    cpf: "094.759.227-09",
+    rg: "1796202 SSP/ES",
+    estadoCivil: "Casado(a)",
+    profissao: "Gari",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "449",
+    andar: "4",
+    cota: "46",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 27.784,37",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.000,00, Nº Doc RESV112779009484542521VZLBKQ20DF618, 24/09/2025) + Boleto corretagem (5x R$ 598,00, 1ª venc 15/10/2025)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "24/09/2025",
+    telefone: "(27) 99994-2904",
+    email: "edvaldosanto35@gmail.com",
+    conjuge: {
+      nome: "Gidalva de Oliveira Araujo Silva",
+      cpf: "073.792.477-27",
+      rg: "1328242 SPTC/ES"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01 / Apto 449 / 4º andar / Cota 46.\n" +
+      "Área privativa 35,37 m², área comum 41,29 m², área total 76,66 m².\n" +
+      "Corretagem R$3.990 (1x R$1.000 PIX + 5x R$598 boleto, 1ª venc 15/10/2025).\n" +
+      "Sinal R$1.389,22 (5x R$277,84 boleto, 1ª venc 15/03/2026).\n" +
+      "Saldo R$22.405,15 (79x R$283,61 boleto, 1ª venc 15/08/2026).\n" +
+      "VALOR PAGO = R$1.000,00 (PIX corretagem — Nº Doc presente no contrato). Boletos sem comprovação de pagamento.\n" +
+      "FORA do prazo de arrependimento (contrato 24/09/2025, venceu 01/10/2025 — 380 dias).\n" +
+      "Assinatura D4Sign 24/09/2025 18:29:32 (presencial). Doc 71bc4b9f-10a3-4a95-93be-a48ec02071c9.\n" +
+      "Cônjuge: Gidalva de Oliveira Araujo Silva, CPF 073.792.477-27, RG 1328242 SPTC/ES, email gidalvaaraujo@hotmail.com, tel (27) 98803-9032.\n" +
+      "Corretor: Igor Antunes Borges (36.496.772).\n" +
+      "End: Rua Caboclo Bernardo, 07, Casa, Santo Antonio, Pinheiros/ES, CEP 29980000.",
+    parcelas: [],
+    arquivos: [{ titulo: "Contrato", arquivo: "contratos-pdf/360--contrato.pdf" }]
   }
 ];
