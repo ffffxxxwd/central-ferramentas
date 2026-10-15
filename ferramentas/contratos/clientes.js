@@ -18539,5 +18539,47 @@ window.CLIENTES = [
       { titulo: "Extrato SIENGE", arquivo: "contratos-pdf/361-366--extrato-cota-24.pdf" },
       { titulo: "Comprovante Santander", arquivo: "contratos-pdf/361-366--comprovante-santander.pdf" }
     ]
+  },
+
+  {
+    id: 367,
+    nome: "Marcio Antonio Santos Alves",
+    cpf: "821.181.163-49",
+    rg: "380344947 SESP/MA",
+    estadoCivil: "União estável",
+    profissao: "Fun. Publico (a)",
+    empresa: "GAV",
+    razaoSocial: "Salinas Premium Resort Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "28.883.561/0001-03",
+    empreendimento: "Premium GAV Resorts",
+    bloco: "02",
+    apartamento: "0412",
+    andar: "4",
+    cota: "11",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 64.249,38",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão (3x R$ 1.330,00 MASTER/CreditoParcelado, Nº Doc 21824362, final *1662, 09/10/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "09/10/2026",
+    telefone: "(99) 99125-1386",
+    email: "marcioadmr@hotmail.com",
+    conjuge: {
+      nome: "Keliene da Costa Alcantara",
+      cpf: "003.952.193-10",
+      rg: "0742226320218 SSP/MA"
+    },
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Premium GAV Resorts — Salinópolis/PA. Bloco 02 / Apt 0412 / 4º andar / Cota 11.\n" +
+      "Corretagem R$ 3.990,00 (3x R$ 1.330,00 cartão MASTER crédito parcelado, final *1662, CV 21824362).\n" +
+      "Sinal R$ 3.212,48 (5x R$ 642,50 boleto, venc. 10/02/2027) + Saldo R$ 57.046,90 (85x R$ 671,14 boleto, venc. 10/07/2027) — nada pago ainda.\n" +
+      "VALOR PAGO = R$ 3.990,00 (apenas corretagem cartão). DENTRO do prazo (contrato 09/10, vence 16/10).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/367--contrato.pdf" }
+    ]
   }
 ];
