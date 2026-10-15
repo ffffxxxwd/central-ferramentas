@@ -18233,7 +18233,7 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Barra de São Miguel/AL",
     valorTotal: "R$ 27.784,37",
-    valorPago: "R$ 1.000,00",
+    valorPago: "R$ 9.094,00",
     formaPagamentoEntrada: "PIX (1x R$ 1.000,00, Nº Doc RESV112779009484542521VZLBKQ20DF618, 24/09/2025) + Boleto corretagem (5x R$ 598,00, 1ª venc 15/10/2025)",
     formaReembolso: "Reembolso",
     dataAssinatura: "24/09/2025",
@@ -18252,7 +18252,7 @@ window.CLIENTES = [
       "Corretagem R$3.990 (1x R$1.000 PIX + 5x R$598 boleto, 1ª venc 15/10/2025).\n" +
       "Sinal R$1.389,22 (5x R$277,84 boleto, 1ª venc 15/03/2026).\n" +
       "Saldo R$22.405,15 (79x R$283,61 boleto, 1ª venc 15/08/2026).\n" +
-      "VALOR PAGO = R$1.000,00 (PIX corretagem — Nº Doc presente no contrato). Boletos sem comprovação de pagamento.\n" +
+      "VALOR PAGO = R$9.094,00 (valor confirmado).\n" +
       "FORA do prazo de arrependimento (contrato 24/09/2025, venceu 01/10/2025 — 380 dias).\n" +
       "Assinatura D4Sign 24/09/2025 18:29:32 (presencial). Doc 71bc4b9f-10a3-4a95-93be-a48ec02071c9.\n" +
       "Cônjuge: Gidalva de Oliveira Araujo Silva, CPF 073.792.477-27, RG 1328242 SPTC/ES, email gidalvaaraujo@hotmail.com, tel (27) 98803-9032.\n" +
@@ -18580,6 +18580,45 @@ window.CLIENTES = [
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/367--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 368,
+    nome: "Danilo Ricardo Bezerra de Oliveira",
+    cpf: "039.636.734-86",
+    rg: "6236248 SSP/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Contador(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    bloco: "05",
+    apartamento: "205",
+    andar: "1",
+    cota: "43",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 57.817,97",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.000,00 VISA/CreditoAVista, Nº Doc 30942684, final *2434, 18/07/2026) + Boleto (4x R$ 747,50 corretagem, 1ª venc 18/09/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "18/07/2026",
+    telefone: "(81) 99776-2161",
+    email: "cassianamlopes@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Haus Resort — Gramado/RS. Bloco 05 / Apt 205 / 1º andar / Cota 43.\n" +
+      "Corretagem R$ 3.990,00: cartão R$ 1.000,00 (VISA crédito à vista, final *2434, CV 30942684, 18/07/2026) + boleto R$ 2.990,00 (4x R$ 747,50, 1ª venc 18/09/2026).\n" +
+      "Sinal R$ 2.890,87 (5x R$ 578,17 boleto, venc. 10/01/2027) + Saldo R$ 50.937,10 (85x R$ 599,26 boleto, venc. 10/06/2027) — nada pago.\n" +
+      "VALOR PAGO = R$ 1.000,00 (cartão confirmado pelo recibo). Boletos corretagem sem comprovação.\n" +
+      "FORA do prazo (contrato 18/07, venceu 25/07 — 89 dias). Proposta nº 349103.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/368--contrato.pdf" }
     ]
   }
 ];
