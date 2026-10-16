@@ -272,16 +272,46 @@ const FIXOS = [
   { id: 125, desc: 'Custo quinquagésima oitava entrada', valor: 1249, tipo: 'gasto', cat: 'Trabalho', data: '2026-10-14' },
   { id: 126, desc: 'Quadragésima quarta entrada (bruto) — lançada à mão', valor: 3990, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
   { id: 127, desc: 'Custo quadragésima quarta entrada — lançado à mão', valor: 1090, tipo: 'gasto', cat: 'Outros', data: '2026-10-05' },
-  { id: 128, desc: 'ccc2', valor: 4500, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
-  { id: 129, desc: '22', valor: 1000, tipo: 'gasto', cat: 'Outros', data: '2026-10-05' },
-  { id: 130, desc: 'Casa de apostas', valor: 8976, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
-  { id: 131, desc: 'aposta ganha', valor: 1824, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
+  { id: 128, desc: 'Entrada avulsa (bruto)', valor: 4500, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
+  { id: 129, desc: 'Custo entrada avulsa', valor: 1000, tipo: 'gasto', cat: 'Outros', data: '2026-10-05' },
+  { id: 130, desc: 'Casa de apostas (bruto)', valor: 8976, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
+  { id: 131, desc: 'Aposta ganha', valor: 1824, tipo: 'receita', cat: 'Outros', data: '2026-10-05' },
   { id: 132, desc: 'Quinquagésima nona entrada (bruto)', valor: 3910, tipo: 'receita', cat: 'Trabalho', data: '2026-10-15' },
   { id: 133, desc: 'Custo quinquagésima nona entrada', valor: 410, tipo: 'gasto', cat: 'Trabalho', data: '2026-10-15' },
 ];
 
 let periodoAtual = 'tudo';
 let offsetPeriodo = 0;
+
+// Limpeza única: os 6 lançamentos de 05/10 foram digitados no formulário e
+// depois passaram para o FIXOS. Sem isso eles aparecem em dobro em quem já
+// tinha as cópias no localStorage. Roda uma vez por navegador.
+(function limparDuplicatas0510() {
+  const MARCA = CHAVE + '_migr_0510';
+  if (localStorage.getItem(MARCA)) return;
+  const alvos = [
+    ['2026-10-05', 1824, 'receita'], ['2026-10-05', 8976, 'receita'],
+    ['2026-10-05', 4500, 'receita'], ['2026-10-05', 1000, 'gasto'],
+    ['2026-10-05', 3990, 'receita'], ['2026-10-05', 1090, 'gasto']
+  ];
+  let locais;
+  try { locais = JSON.parse(localStorage.getItem(CHAVE)) || []; } catch { locais = []; }
+  const restantes = locais.filter(e =>
+    !alvos.some(([d, v, t]) => e.data === d && Number(e.valor) === v && e.tipo === t));
+  if (restantes.length !== locais.length) localStorage.setItem(CHAVE, JSON.stringify(restantes));
+  localStorage.setItem(MARCA, '1');
+})();
+
+// Rede de segurança: tira do localStorage qualquer cópia congelada do FIXOS.
+// Os manuais usam Date.now() como id, então um id de FIXOS ali só pode ter
+// vindo do bug antigo do adicionar(). O código é a fonte da verdade.
+(function tirarCopiasDoFixos() {
+  const idsFixos = new Set(FIXOS.map(e => e.id));
+  let locais;
+  try { locais = JSON.parse(localStorage.getItem(CHAVE)) || []; } catch { return; }
+  const restantes = locais.filter(e => !idsFixos.has(e.id));
+  if (restantes.length !== locais.length) localStorage.setItem(CHAVE, JSON.stringify(restantes));
+})();
 
 function carregarLocal() {
   try { return JSON.parse(localStorage.getItem(CHAVE)) || []; }
@@ -408,9 +438,11 @@ function adicionar() {
 
   if (!desc || isNaN(valor) || valor <= 0) { alert('Preencha descrição e valor.'); return; }
 
-  const lista = carregar();
-  lista.push({ id: Date.now(), desc, valor, tipo, cat, data });
-  salvar(lista);
+  // só os lançamentos manuais vão pro localStorage — usar carregar() aqui
+  // congelava uma cópia do FIXOS e o navegador parava de acompanhar o código
+  const locais = carregarLocal();
+  locais.push({ id: Date.now(), desc, valor, tipo, cat, data });
+  salvar(locais);
 
   document.getElementById('descricao').value = '';
   document.getElementById('valor').value = '';
