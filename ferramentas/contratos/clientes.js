@@ -18620,5 +18620,128 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/368--contrato.pdf" }
     ]
+  },
+
+  {
+    id: 369,
+    nome: "Elma Bom Jardim dos Santos",
+    cpf: "801.132.225-72",
+    rg: "748636650 SSP/BA",
+    estadoCivil: "União estável",
+    profissao: "Eletricista(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "519",
+    andar: "5",
+    cota: "03",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 55.499,90",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.000,00, Nº Doc RESV1046660094845425CPYOI501895D476, 13/10/2026) + Boleto (1x R$ 996,70 + 2x R$ 996,65 corretagem, 1ª venc 13/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "13/10/2026",
+    telefone: "(71) 98225-9993",
+    email: "elmajardim@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01 / Apt 519 / 5º andar / Cota 03.\n" +
+      "Corretagem R$ 3.990,00: PIX R$ 1.000,00 (ID RESV1046660094845425CPYOI501895D476, 13/10/2026) + boleto R$ 2.990,00 (1x R$ 996,70 venc 13/11 + 2x R$ 996,65 venc 13/12).\n" +
+      "Sinal R$ 2.774,98 (4x R$ 693,74 boleto, venc. 10/02/2027) + Saldo R$ 48.734,92 (74x R$ 658,58 boleto, venc. 10/06/2027) — nada pago.\n" +
+      "VALOR PAGO = R$ 1.000,00 (PIX confirmado pelo recibo). Boletos corretagem não vencidos.\n" +
+      "DENTRO do prazo (contrato 13/10, vence 20/10). Proposta nº 364421.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/369--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 370,
+    nome: "Marcelo Correa Ramos",
+    cpf: "764.163.990-91",
+    rg: "7062200981 SJS/DI/RS",
+    estadoCivil: "União estável",
+    profissao: "Analista de RH",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    bloco: "A3",
+    apartamento: "002",
+    andar: "T",
+    cota: "29",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 79.233,26",
+    valorPago: "R$ 2.200,00",
+    formaPagamentoEntrada: "PIX (1x R$ 2.200,00, Nº Doc RESV0820700093814895K0UNFOAL6F6FC77, 12/10/2026) + Boleto (1x R$ 2.290,00 corretagem, venc 05/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "12/10/2026",
+    telefone: "(51) 98135-1150",
+    email: "mc.ramos1977@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Garden Resort — Gramado/RS (Mato Queimado). Bloco A3 / Apt 002 / Andar T / Cota 29, 2 Quartos.\n" +
+      "Corretagem R$ 4.490,00: PIX R$ 2.200,00 (ID RESV0820700093814895K0UNFOAL6F6FC77, 12/10/2026, Laranjinha Itaú, CV 185316466) + boleto R$ 2.290,00 (venc 05/11/2026).\n" +
+      "Sinal R$ 3.961,64 (5x R$ 792,33, 1ª venc 05/12/2026) + Saldo R$ 70.781,62 (91x R$ 777,82, 1ª venc 05/05/2027) — nada pago.\n" +
+      "VALOR PAGO = R$ 2.200,00 (PIX confirmado pelo recibo). Boleto corretagem não vencido.\n" +
+      "DENTRO do prazo (contrato 12/10, vence 19/10). Proposta nº 364308.\n" +
+      "Assinatura eletrônica via ZapSign em 12/10/2026 (Marcelo 21:38:11, doc e7644c74-c5f1-491a-a974-3423b88834db).\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/370--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 371,
+    nome: "João Vinicio Ribeiro Vieira",
+    cpf: "042.505.840-97",
+    rg: "2114594449 SSP/DI/RS",
+    estadoCivil: "União estável",
+    profissao: "Engenheiro de Software",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    bloco: "A",
+    apartamento: "A 211",
+    andar: "-1",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 72.141,07",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.000,00 MASTER/CreditoAVista, CV 181153640, final *6912, 16/10/2026) + Boleto (5x R$ 698,00 corretagem, R$ 3.490,00, 1ª venc 16/12/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "16/10/2026",
+    telefone: "(48) 99131-6095",
+    email: "joaovribeirov@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Valley Resort — Gramado/RS (Carazal). Bloco A / Apt A 211 / Andar -1 / Cota 07, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 4.490,00: cartão R$ 1.000,00 (MASTER crédito à vista, final *6912, CV 181153640, 16/10/2026, Laranjinha Itaú SN886439) + boleto R$ 3.490,00 (5x R$ 698,00, 1ª venc 16/12/2026).\n" +
+      "Sinal R$ 3.607,07 (4x R$ 901,77, 1ª venc 10/05/2027) + Saldo R$ 64.044,00 (80x R$ 800,55, 1ª venc 10/09/2027) — nada pago.\n" +
+      "VALOR PAGO = R$ 1.000,00 (cartão confirmado pelo recibo). Boletos corretagem não vencidos.\n" +
+      "DENTRO do prazo (contrato 16/10, vence 23/10). Proposta nº 364960.\n" +
+      "Assinatura eletrônica via ZapSign em 16/10/2026 (João 15:04:06, doc 84ce51f1-6ddc-4ef8-9090-cd2a2d3bd9fa).\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Local de assinatura: Canela/RS, 16 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/371--contrato.pdf" }
+    ]
   }
 ];
