@@ -18743,5 +18743,49 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/371--contrato.pdf" }
     ]
+  },
+
+  {
+    id: 372,
+    nome: "Cristopher Willian Carvalho Lima",
+    cpf: "105.335.826-10",
+    rg: "MG16840668 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "04",
+    apartamento: "0118",
+    andar: "1",
+    cota: "25",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,13",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 3.990,00 MASTER/CreditoAVista, CV 175025916, final *2658, 15/10/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "15/10/2026",
+    telefone: "(31) 99232-8851",
+    email: "lima-2011@live.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto Alto Resort — Ipojuca/PE (Muro Alto). Bloco 04 / Apt 0118 / 1º andar / Cota 25, 1 Quarto.\n" +
+      "Período de utilização: 2 por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: cartão R$ 3.990,00 (MASTER crédito à vista, final *2658, CV 175025916, 15/10/2026, Laranjinha Itaú SN369095, Estab 95158146).\n" +
+      "Sinal R$ 3.382,37 (5x R$ 676,47, 1ª venc 10/12/2026) + Saldo R$ 60.274,76 (91x R$ 662,36, 1ª venc 10/05/2027) — nada pago.\n" +
+      "VALOR PAGO = R$ 3.990,00 (cartão confirmado pelo recibo).\n" +
+      "DENTRO do prazo (contrato 15/10, vence 22/10). Proposta nº 364740.\n" +
+      "Cônjuge: Suzana Lanna Vieira Lima (CPF 018.630.036-06, RG MG19397460 PC/MG, nasc. 16/06/1998, Empresária, tel (31) 97501-0780, email suzanalannalima@gmail.com).\n" +
+      "Assinatura eletrônica via ZapSign em 15/10/2026 (Cristopher 12:17:09, Suzana 14:06:43, doc 309c4778-4965-42cf-8a58-2cb59d075b57).\n" +
+      "Testemunhas: Jeferson A Ferreira, krislanysilva@gavresorts.com.br. Parte: Atila Domiciano Gratão.\n" +
+      "Local de assinatura: Ipojuca/PE, 15 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/372--contrato.pdf" }
+    ]
   }
 ];
