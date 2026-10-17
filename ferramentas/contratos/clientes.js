@@ -18787,5 +18787,95 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/372--contrato.pdf" }
     ]
+  },
+
+  {
+    id: 373,
+    nome: "Fernando Crisostomo Oliveira",
+    cpf: "054.857.156-21",
+    rg: "M8812834 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Supervisor de Telecomunicação",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    bloco: "01",
+    apartamento: "UH 344",
+    andar: "3",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "Maragogi/AL",
+    valorTotal: "R$ 58.524,85",
+    valorPago: "R$ 13.432,51",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.330,00 VISA Electron/Débito, CV 179504378, final *5043, 12/05/2025) + Boleto (2x R$ 1.330,00 corretagem, R$ 2.660,00, pago 05/06 e 04/07/2025) + Sinal (4x ~R$ 744-757, pago 08-11/2025) + Parcelas (8x ~R$ 787-819, pago 12/2025 a 07/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "12/05/2025",
+    telefone: "(31) 99983-6989",
+    email: "fernandocrisostomooliveira@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Oikos Maragogi Resort — Maragogi/AL. Bloco 01 / UH 344 / 3º andar / Cota 10, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: cartão R$ 1.330,00 (VISA Electron débito, final *5043, CV 179504378, 12/05/2025) + boleto R$ 2.660,00 (2x R$ 1.330,00, pago 05/06 e 04/07/2025).\n" +
+      "Sinal R$ 3.008,37 (4x ~R$ 744-757 c/ correção INCC, pago 08-11/2025).\n" +
+      "Saldo parcelas 1-8: R$ 6.434,14 (8x ~R$ 787-819 c/ correção, pago 12/2025 a 07/2026).\n" +
+      "TOTAL PAGO = R$ 13.432,51 (demonstrativo GAV: 15 parcelas, 100% recebido, venda 17824, status Cancelada).\n" +
+      "Principal R$ 12.987,85 + Correção R$ 408,01 + Multa R$ 15,98 + Juros atraso R$ 20,78 = R$ 13.432,51.\n" +
+      "FORA do prazo (contrato 12/05/2025, venceu 19/05/2025).\n" +
+      "Cônjuge: Radmila Santana Santos Oliveira (CPF 091.887.086-08, RG MG15880833 PC/MG, nasc. 27/09/1988, Gerente Administrativo, tel (31) 97113-6105, email radmilasantana@hotmail.com).\n" +
+      "Sala de vendas: CUPE. Proposta nº 262531.\n" +
+      "Assinatura eletrônica via ZapSign em 12/05/2025 (doc sem relatório de assinaturas no PDF).\n" +
+      "Local de assinatura: Ipojuca/PE, 12 de maio de 2025.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/373--contrato.pdf" },
+      { titulo: "Demonstrativo de Pagamentos", arquivo: "contratos-pdf/373--demonstrativo.pdf" }
+    ]
+  },
+
+  {
+    id: 374,
+    nome: "Katia Cristina Thomaz Correa",
+    cpf: "360.679.608-00",
+    rg: "36067960800 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Técnico(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "08",
+    apartamento: "0228",
+    andar: "1",
+    cota: "03",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.185,91",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.330,00 corretagem, Nº Doc RESN6536670095 1580735ABGZU32DA53E02, Laranjinha Itaú, Estab 000000095158073, Aute 819595, 16/10/2026) + Boleto (4x R$ 665,00 corretagem, R$ 2.660,00, 1ª venc 10/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "16/10/2026",
+    telefone: "(15) 98824-0984",
+    email: "katia.moria@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE. Bloco 08 / Apt 0228 / 1º andar / Cota 03, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: PIX R$ 1.330,00 (Nº Doc RESN6536670095 1580735ABGZU32DA53E02, Laranjinha Itaú, Estab 000000095158073, Goiânia, Aute 819595, 16/10/2026 13h32) + Boleto R$ 2.660,00 (4x R$ 665,00, 1ª venc 10/11/2026 — sem comprovação).\n" +
+      "Sinal R$ 3.959,29 (5x R$ 791,86, 1ª venc 05/03/2027) + Saldo R$ 71.236,62 (91x R$ 782,82, 1ª venc 05/08/2027) — sem confirmação de pagamento.\n" +
+      "VALOR PAGO = R$ 1.330,00 (PIX corretagem confirmado pelo recibo). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 16/10/2026, vence 23/10/2026).\n" +
+      "Cônjuge: Leticia Rodrigues Thomaz Correa (CPF 425.918.038-03, RG 42591803803 SSP/SP, nasc. 18/06/1996, Analista de Sistemas, cel (11) 94533-6156, email leethicia.correa0@gmail.com).\n" +
+      "Proposta nº 364950. Valor total da venda R$ 79.185,91.\n" +
+      "Assinatura eletrônica via ZapSign em 16/10/2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/374--contrato.pdf" }
+    ]
   }
 ];
