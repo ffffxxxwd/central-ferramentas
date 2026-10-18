@@ -18877,5 +18877,181 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/374--contrato.pdf" }
     ]
+  },
+
+  {
+    id: 375,
+    nome: "Adenildo Nogueira da Silva",
+    cpf: "905.888.194-68",
+    rg: "27942716 SDS/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Militar Corpo de Bombeiros",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "139",
+    andar: "1",
+    cota: "26",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 53.710,67",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.000,00 MASTER/Crédito à vista, CV 205733708, final *7759, 04/09/2026) + Boleto (5x R$ 598,00 corretagem, R$ 2.990,00, 1ª venc 04/11/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "04/09/2026",
+    telefone: "(81) 99808-2118",
+    email: "adenildo.nogueira@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01 / Apt 139 / 1º andar / Cota 26, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: cartão R$ 1.000,00 (MASTER crédito à vista, final *7759, CV 205733708, 04/09/2026 22h58, Laranjinha Itaú SV201394, Estab 94845425, Goiânia/GO, AUTE 340312) + boleto R$ 2.990,00 (5x R$ 598,00, 1ª venc 04/11/2026 — sem comprovação).\n" +
+      "Sinal R$ 2.685,53 (4x R$ 671,38, 1ª venc 05/04/2027) + Saldo R$ 47.035,14 (74x R$ 635,61, 1ª venc 05/08/2027) — sem confirmação de pagamento.\n" +
+      "VALOR PAGO = R$ 1.000,00 (cartão crédito confirmado pelo recibo). Boletos e parcelas sem comprovação.\n" +
+      "FORA do prazo (contrato 04/09/2026, venceu 11/09/2026).\n" +
+      "Cônjuge: não informado.\n" +
+      "Proposta nº 358222. Valor total da venda R$ 53.710,67.\n" +
+      "Assinatura eletrônica via ZapSign em 04/09/2026. Certificado GAV Flow com validação facial em 04/09/2026 23:32.\n" +
+      "Proposta indica local: Maragogi/AL, 05 de setembro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/375--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 376,
+    nome: "Jurandy Julio de Oliveira",
+    cpf: "118.627.484-03",
+    rg: "3783792 SSP/PB",
+    estadoCivil: "União estável",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "01",
+    apartamento: "0207",
+    andar: "2",
+    cota: "25",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,13",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão (3x R$ 1.330,00 MASTER/Crédito parcelado, CV 179353186, final *2311, 17/10/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "17/10/2026",
+    telefone: "(83) 99655-2135",
+    email: "jhurandytecnico@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto Alto Resort — Ipojuca/PE. Bloco 01 / Apt 0207 / 2º andar / Cota 25, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: cartão R$ 3.990,00 (3x R$ 1.330,00 MASTER crédito parcelado estabelecimento, final *2311, CV 179353186, 17/10/2026 12h18, Laranjinha Itaú SN602875, Estab 000000095158146, Gramado, AUTE 972928).\n" +
+      "Sinal R$ 3.382,37 (5x R$ 676,47, 1ª venc 10/02/2027) + Saldo R$ 60.274,76 (91x R$ 662,36, 1ª venc 10/07/2027) — sem confirmação de pagamento.\n" +
+      "VALOR PAGO = R$ 3.990,00 (cartão crédito parcelado confirmado pelo recibo).\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Cônjuge: não informado (estado civil: união estável).\n" +
+      "Proposta nº 365105. Valor total da venda R$ 67.647,13.\n" +
+      "Assinatura eletrônica via ZapSign em 17/10/2026. Certificado GAV Flow com validação facial em 17/10/2026 12:46.\n" +
+      "Local de assinatura: Pipa/RN, 17 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/376--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 377,
+    nome: "Juliana Nayara Teixeira Soares",
+    cpf: "111.336.674-57",
+    rg: "9225484 SDS/PE",
+    estadoCivil: "União estável",
+    profissao: "Engenheiro Eletricista",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "08",
+    apartamento: "0214",
+    andar: "1",
+    cota: "25",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.185,91",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.000,00 corretagem, Nº Doc RESV0890210095 1580732EQRU6OW81EB5BE, 17/10/2026) + Boleto (5x R$ 598,00 corretagem, R$ 2.990,00, 1ª venc 17/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "17/10/2026",
+    telefone: "(81) 98689-6470",
+    email: "nayaraj365@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE. Bloco 08 / Apt 0214 / 1º andar / Cota 25, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: PIX R$ 1.000,00 (Nº Doc RESV0890210095 1580732EQRU6OW81EB5BE, Laranjinha Itaú, Estab 000000095158073, Goiânia, CV 23684302, Aute 177548, 17/10/2026 11h40, pagador CNPJ 69.412.240/0001-08) + boleto R$ 2.990,00 (5x R$ 598,00, 1ª venc 17/11/2026 — sem comprovação).\n" +
+      "Sinal R$ 3.959,29 (5x R$ 791,86, 1ª venc 05/04/2027) + Saldo R$ 71.236,62 (91x R$ 782,82, 1ª venc 05/09/2027) — sem confirmação de pagamento.\n" +
+      "VALOR PAGO = R$ 1.000,00 (PIX corretagem confirmado pelo recibo). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Cônjuge: não informado (estado civil: união estável).\n" +
+      "Proposta nº 365098. Valor total da venda R$ 79.185,91.\n" +
+      "Assinatura eletrônica via ZapSign em 17/10/2026. Certificado GAV Flow com validação facial em 17/10/2026 12:47.\n" +
+      "Local de assinatura: Ipojuca/PE, 17 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/377--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 378,
+    nome: "Edson Moreira Cezar",
+    cpf: "099.929.338-95",
+    rg: "18679786 SSP/SP",
+    estadoCivil: "União estável",
+    profissao: "Servidor Público(a)",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "209",
+    andar: "2",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 58.109,91",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.000,00 MASTER/Crédito à vista, CV 177419618, final *1261, 16/10/2026) + Boleto (5x R$ 598,00 corretagem, R$ 2.990,00, 1ª venc 16/12/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "16/10/2026",
+    telefone: "(18) 99169-7001",
+    email: "moreiracezar13@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE (Caiçara). Bloco 02 / Apt 209 / 2º andar / Cota 10, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00: cartão R$ 1.000,00 (MASTER crédito à vista, final *1261, CV 177419618, 16/10/2026 12h09, Laranjinha Itaú SN167454, Estab 91786770, Gramado/RS, AUTE 948187) + boleto R$ 2.990,00 (5x R$ 598,00, 1ª venc 16/12/2026 — sem comprovação).\n" +
+      "Sinal R$ 2.905,51 (4x R$ 726,38, 1ª venc 10/05/2027) + Saldo R$ 51.214,40 (80x R$ 640,18, 1ª venc 10/09/2027) — sem confirmação de pagamento.\n" +
+      "VALOR PAGO = R$ 1.000,00 (cartão crédito confirmado pelo recibo). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 16/10/2026, vence 23/10/2026).\n" +
+      "Cônjuge: Silvana Cristina Peracoli Ragassi Mendes (CPF 204.575.348-42, RG 290474620 SSP/SP, nasc. 19/02/1975, Do lar, cel (18) 99163-1245, email silvanaragassimendes@hotmail.com).\n" +
+      "Proposta nº 364925. Valor total da venda R$ 58.109,91.\n" +
+      "Assinatura eletrônica via ZapSign em 16/10/2026. Certificado GAV Flow com validação facial em 16/10/2026 12:51.\n" +
+      "Local de assinatura: Jijoca de Jericoacoara/CE, 16 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/378--contrato.pdf" }
+    ]
   }
 ];
