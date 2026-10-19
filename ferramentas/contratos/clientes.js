@@ -19053,5 +19053,599 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/378--contrato.pdf" }
     ]
+  },
+
+  // 379 ---------------------------------------------------------------
+  {
+    id: 379,
+    nome: "Mario Vinicius Cruvinel Gomes",
+    cpf: "172.521.046-05",
+    rg: "21221009 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    bloco: "04",
+    apartamento: "402",
+    andar: "3",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 67.233,60",
+    valorPago: "R$ 1.500,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.500,00, rateio do PIX R$ 6.000,00 entre 4 contratos, pagador CNPJ 53.264.227/0001-00, CV 36720956, 17/10/2026) + Boleto (2x R$ 996,67 + 1x R$ 996,66 corretagem, R$ 2.990,00, 1ª venc 17/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "17/10/2026",
+    telefone: "(35) 98897-1910",
+    email: "mariocruvinel861@icloud.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Haus Resort — Gramado/RS. Torre BLOCO 4 / Apt 402 / 3º andar / Cota 19, 2 Quartos.\n" +
+      "Período de utilização: 1 semana por ano-calendário.\n" +
+      "Corretagem R$ 4.490,00 (4 parcelas): PIX R$ 1.500,00 (17/10/2026, CV 36720956, Laranjinha Itaú, Estab 000000106108450, Gramado, AUTE 204643, ID RESV88142801061084500JWIGWHHNA928FS8) + boleto R$ 2.990,00 (2x R$ 996,67 venc 17/11/2026 e 17/12/2026 + 1x R$ 996,66 venc 17/01/2027 — sem comprovação).\n" +
+      "Sinal R$ 3.361,67 (5x R$ 672,33, 1ª venc 10/02/2027) + Saldo R$ 59.381,93 (79x R$ 751,67, 1ª venc 10/07/2027) — sem confirmação de pagamento.\n" +
+      "PIX total no recibo: R$ 6.000,00 rateado entre 4 contratos (Cotas 08, 09, 19, 20) = R$ 1.500,00 cada (corretagem).\n" +
+      "VALOR PAGO = R$ 1.500,00 (1/4 do PIX R$ 6.000,00). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Cônjuge: não informado no contrato.\n" +
+      "Nasc. 15/09/2003. Endereço: Av. Conde Ribeiro do Valle, 255, Sala 09, 2º andar, Centro, Guaxupé/MG, CEP 37830-024.\n" +
+      "Proposta nº 365282. Valor total da venda R$ 67.233,60.\n" +
+      "Assinatura eletrônica via ZapSign em 17/10/2026. Certificado GAV Flow com validação facial em 17/10/2026 17:53.\n" +
+      "Local de assinatura: Gramado/RS, 17 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/379--contrato.pdf" }
+    ]
+  },
+
+  // 380 ---------------------------------------------------------------
+  {
+    id: 380,
+    nome: "Mario Vinicius Cruvinel Gomes",
+    cpf: "172.521.046-05",
+    rg: "21221009 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    bloco: "04",
+    apartamento: "402",
+    andar: "3",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 67.233,60",
+    valorPago: "R$ 1.500,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.500,00, rateio do PIX R$ 6.000,00 entre 4 contratos, pagador CNPJ 53.264.227/0001-00, CV 36720956, 17/10/2026) + Boleto (2x R$ 996,67 + 1x R$ 996,66 corretagem, R$ 2.990,00, 1ª venc 17/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "17/10/2026",
+    telefone: "(35) 98897-1910",
+    email: "mariocruvinel861@icloud.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Haus Resort — Gramado/RS. Torre BLOCO 4 / Apt 402 / 3º andar / Cota 09, 2 Quartos.\n" +
+      "Período de utilização: 1 semana por ano-calendário.\n" +
+      "Corretagem R$ 4.490,00 (4 parcelas): PIX R$ 1.500,00 (17/10/2026, CV 36720956, Laranjinha Itaú, Estab 000000106108450, Gramado, AUTE 204643, ID RESV88142801061084500JWIGWHHNA928FS8) + boleto R$ 2.990,00 (2x R$ 996,67 venc 17/11/2026 e 17/12/2026 + 1x R$ 996,66 venc 17/01/2027 — sem comprovação).\n" +
+      "Sinal R$ 3.361,67 (5x R$ 672,33, 1ª venc 10/02/2027) + Saldo R$ 59.381,93 (79x R$ 751,67, 1ª venc 10/07/2027) — sem confirmação de pagamento.\n" +
+      "PIX total no recibo: R$ 6.000,00 rateado entre 4 contratos (Cotas 08, 09, 19, 20) = R$ 1.500,00 cada (corretagem).\n" +
+      "VALOR PAGO = R$ 1.500,00 (1/4 do PIX R$ 6.000,00). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Cônjuge: não informado no contrato.\n" +
+      "Nasc. 15/09/2003. Endereço: Av. Conde Ribeiro do Valle, 255, Sala 09, 2º andar, Centro, Guaxupé/MG, CEP 37830-024.\n" +
+      "Proposta nº 365283. Valor total da venda R$ 67.233,60.\n" +
+      "Assinatura eletrônica via ZapSign em 17/10/2026. Certificado GAV Flow com validação facial em 17/10/2026 17:53.\n" +
+      "Local de assinatura: Gramado/RS, 17 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/380--contrato.pdf" }
+    ]
+  },
+
+  // 381 ---------------------------------------------------------------
+  {
+    id: 381,
+    nome: "Mario Vinicius Cruvinel Gomes",
+    cpf: "172.521.046-05",
+    rg: "21221009 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    bloco: "04",
+    apartamento: "402",
+    andar: "3",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 67.233,60",
+    valorPago: "R$ 1.500,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.500,00, rateio do PIX R$ 6.000,00 entre 4 contratos, pagador CNPJ 53.264.227/0001-00, CV 36720956, 17/10/2026) + Boleto (2x R$ 996,67 + 1x R$ 996,66 corretagem, R$ 2.990,00, 1ª venc 17/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "17/10/2026",
+    telefone: "(35) 98897-1910",
+    email: "mariocruvinel861@icloud.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Haus Resort — Gramado/RS. Torre BLOCO 4 / Apt 402 / 3º andar / Cota 08, 2 Quartos.\n" +
+      "Período de utilização: 1 semana por ano-calendário.\n" +
+      "Corretagem R$ 4.490,00 (4 parcelas): PIX R$ 1.500,00 (17/10/2026, CV 36720956, Laranjinha Itaú, Estab 000000106108450, Gramado, AUTE 204643, ID RESV88142801061084500JWIGWHHNA928FS8) + boleto R$ 2.990,00 (2x R$ 996,67 + 1x R$ 996,66 — sem comprovação).\n" +
+      "Sinal R$ 3.361,67 (5x R$ 672,33, 1ª venc 10/02/2027) + Saldo R$ 59.381,93 (79x R$ 751,67, 1ª venc 10/07/2027) — sem confirmação de pagamento.\n" +
+      "PIX total no recibo: R$ 6.000,00 rateado entre 4 contratos (Cotas 08, 09, 19, 20) = R$ 1.500,00 cada (corretagem).\n" +
+      "VALOR PAGO = R$ 1.500,00 (1/4 do PIX R$ 6.000,00). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Cônjuge: não informado no contrato.\n" +
+      "Nasc. 15/09/2003. Endereço: Av. Conde Ribeiro do Valle, 255, Sala 09, 2º andar, Centro, Guaxupé/MG, CEP 37830-024.\n" +
+      "Proposta nº 365284. Valor total da venda R$ 67.233,60.\n" +
+      "Assinatura eletrônica via ZapSign em 17/10/2026. Certificado GAV Flow com validação facial em 17/10/2026 17:53.\n" +
+      "Local de assinatura: Gramado/RS, 17 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/381--contrato.pdf" }
+    ]
+  },
+
+  // 382 ---------------------------------------------------------------
+  {
+    id: 382,
+    nome: "Mario Vinicius Cruvinel Gomes",
+    cpf: "172.521.046-05",
+    rg: "21221009 SSP/MG",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado 4 Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "62.986.874/0001-17",
+    empreendimento: "Gran Haus Resort",
+    bloco: "04",
+    apartamento: "402",
+    andar: "3",
+    cota: "20",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 67.233,60",
+    valorPago: "R$ 1.500,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.500,00, rateio do PIX R$ 6.000,00 entre 4 contratos, pagador CNPJ 53.264.227/0001-00, CV 36720956, 17/10/2026) + Boleto (2x R$ 996,67 + 1x R$ 996,66 corretagem, R$ 2.990,00, 1ª venc 17/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "17/10/2026",
+    telefone: "(35) 98897-1910",
+    email: "mariocruvinel861@icloud.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Haus Resort — Gramado/RS. Torre BLOCO 4 / Apt 402 / 3º andar / Cota 20, 2 Quartos.\n" +
+      "Período de utilização: 1 semana por ano-calendário.\n" +
+      "Corretagem R$ 4.490,00 (4 parcelas): PIX R$ 1.500,00 (17/10/2026, CV 36720956, Laranjinha Itaú, Estab 000000106108450, Gramado, AUTE 204643, ID RESV88142801061084500JWIGWHHNA928FS8) + boleto R$ 2.990,00 (2x R$ 996,67 + 1x R$ 996,66 — sem comprovação).\n" +
+      "Sinal R$ 3.361,67 (5x R$ 672,33, 1ª venc 10/02/2027) + Saldo R$ 59.381,93 (79x R$ 751,67, 1ª venc 10/07/2027) — sem confirmação de pagamento.\n" +
+      "PIX total no recibo: R$ 6.000,00 rateado entre 4 contratos (Cotas 08, 09, 19, 20) = R$ 1.500,00 cada (corretagem).\n" +
+      "VALOR PAGO = R$ 1.500,00 (1/4 do PIX R$ 6.000,00). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Cônjuge: não informado no contrato.\n" +
+      "Nasc. 15/09/2003. Endereço: Av. Conde Ribeiro do Valle, 255, Sala 09, 2º andar, Centro, Guaxupé/MG, CEP 37830-024.\n" +
+      "Proposta nº 365281. Valor total da venda R$ 67.233,60.\n" +
+      "Assinatura eletrônica via ZapSign em 17/10/2026. Certificado GAV Flow com validação facial em 17/10/2026 17:53.\n" +
+      "Local de assinatura: Gramado/RS, 17 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/382--contrato.pdf" }
+    ]
+  },
+
+  // 383 ---------------------------------------------------------------
+  {
+    id: 383,
+    nome: "Edequias de Sousa Reis",
+    cpf: "057.212.313-27",
+    rg: "057.212.313-27 SSP/PI",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo(a)",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "120",
+    andar: "1",
+    cota: "05",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 56.450,10",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.330,00 MASTER/Crédito à vista, CV 18467670, final *2173, 13/10/2026, rateio do cartão R$ 2.660,00 entre 2 contratos) + Boleto (2x R$ 1.330,00 corretagem, R$ 2.660,00, 1ª venc 13/12/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "13/10/2026",
+    telefone: "(86) 99498-5876",
+    email: "edequiassousa6@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE (Caiçara). Bloco 02 / Apt 120 / 1º andar / Cota 05, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00 (3 parcelas): cartão R$ 1.330,00 (MASTER crédito à vista, final *2173, CV 18467670, 13/10/2026 10h53, Laranjinha Itaú SN266869, Estab 91786770, JERI1 BEACH, Gramado/RS, AUTE 227410/AUTO:L13SUW) + boleto R$ 2.660,00 (2x R$ 1.330,00, 1ª venc 13/12/2026 — sem comprovação).\n" +
+      "Sinal R$ 2.822,50 (4x R$ 705,62, 1ª venc 10/02/2027) + Saldo R$ 49.637,60 (80x R$ 620,47, 1ª venc 10/06/2027) — sem confirmação de pagamento.\n" +
+      "Cartão total no recibo: R$ 2.660,00 rateado entre 2 contratos (Cota 05 e Cota 21) = R$ 1.330,00 cada (corretagem).\n" +
+      "VALOR PAGO = R$ 1.330,00 (1/2 do cartão R$ 2.660,00). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 13/10/2026, vence 20/10/2026).\n" +
+      "Cônjuge: não informado no contrato.\n" +
+      "Nasc. 16/12/1992. Endereço: Av. Geovanir Moreira, 29, Casa, Acentamento Euxadai, Teresina/PI, CEP 64000-000.\n" +
+      "Proposta nº 364361. Valor total da venda R$ 56.450,10.\n" +
+      "Assinatura eletrônica via ZapSign em 13/10/2026. Certificado GAV Flow com validação facial em 13/10/2026 11:20.\n" +
+      "Local de assinatura: Ipojuca/PE, 13 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/383--contrato.pdf" }
+    ]
+  },
+
+  // 384 ---------------------------------------------------------------
+  {
+    id: 384,
+    nome: "Edequias de Sousa Reis",
+    cpf: "057.212.313-27",
+    rg: "057.212.313-27 SSP/PI",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo(a)",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "03",
+    apartamento: "106",
+    andar: "1",
+    cota: "21",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 56.450,10",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão (1x R$ 1.330,00 MASTER/Crédito à vista, CV 18467670, final *2173, 13/10/2026, rateio do cartão R$ 2.660,00 entre 2 contratos) + Boleto (2x R$ 1.330,00 corretagem, R$ 2.660,00, 1ª venc 13/12/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "13/10/2026",
+    telefone: "(86) 99498-5876",
+    email: "edequiassousa6@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Jeriquiá Lagoa Resort — Cruz/CE (Caiçara). Bloco 03 / Apt 106 / 1º andar / Cota 21, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00 (3 parcelas): cartão R$ 1.330,00 (MASTER crédito à vista, final *2173, CV 18467670, 13/10/2026 10h53, Laranjinha Itaú SN266869, Estab 91786770, JERI1 BEACH, Gramado/RS, AUTE 227410/AUTO:L13SUW) + boleto R$ 2.660,00 (2x R$ 1.330,00, 1ª venc 13/12/2026 — sem comprovação).\n" +
+      "Sinal R$ 2.822,50 (4x R$ 705,62, 1ª venc 10/02/2027) + Saldo R$ 49.637,60 (80x R$ 620,47, 1ª venc 10/06/2027) — sem confirmação de pagamento.\n" +
+      "Cartão total no recibo: R$ 2.660,00 rateado entre 2 contratos (Cota 05 e Cota 21) = R$ 1.330,00 cada (corretagem).\n" +
+      "VALOR PAGO = R$ 1.330,00 (1/2 do cartão R$ 2.660,00). Boletos e parcelas sem comprovação.\n" +
+      "DENTRO do prazo (contrato 13/10/2026, vence 20/10/2026).\n" +
+      "Cônjuge: não informado no contrato.\n" +
+      "Nasc. 16/12/1992. Endereço: Av. Geovanir Moreira, 29, Casa, Acentamento Euxadai, Teresina/PI, CEP 64000-000.\n" +
+      "Proposta nº 364362. Valor total da venda R$ 56.450,10.\n" +
+      "Assinatura eletrônica via ZapSign em 13/10/2026. Certificado GAV Flow com validação facial em 13/10/2026 11:20.\n" +
+      "Local de assinatura: Ipojuca/PE, 13 de outubro de 2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/384--contrato.pdf" }
+    ]
+  },
+
+  // 385 ---------------------------------------------------------------
+  {
+    id: 385,
+    nome: "Mariane Azevedo Costa",
+    cpf: "029.534.992-10",
+    rg: "11743255 SEPC/AC",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Arquiteta",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "02",
+    apartamento: "0302",
+    andar: "2",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 62.376,70",
+    valorPago: "R$ 17.872,44",
+    formaPagamentoEntrada: "PIX (1x R$ 1.330,00, Nº Doc RESN4235190095 158073KN1C5YJI2 BCC599, 15/02/2025, rateio do PIX entre 3 contratos) + Boleto corretagem (2x R$ 886,66 + 1x R$ 886,68, R$ 2.660,00) + Sinal (4x, SI/1 a SI/4, jun-set/2025) + Parcelas saldo (P/1 a P/12, out/2025 a set/2026) — 20 parcelas pagas conforme demonstrativo GAV de 19/10/2026",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "15/02/2025",
+    telefone: "(68) 99923-5184",
+    email: "marianecosta.arq@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE (Muro Alto). Bloco 02 / Apt 0302 / 2º andar / Cota 02, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00 (4 parcelas): PIX R$ 1.330,00 (15/02/2025) + boleto R$ 2.660,00 (3x ~R$ 886,67, mar-mai/2025).\n" +
+      "Sinal 4 parcelas (SI/1 a SI/4, jun-set/2025) + Parcelas saldo 12 pagas (P/1 a P/12, out/2025 a set/2026).\n" +
+      "Total 20 parcelas pagas, 62 a pagar. RECEBIDO conforme demonstrativo GAV (19/10/2026): R$ 17.872,44.\n" +
+      "PIX com mesmo Nº Documento nos 3 contratos (Cotas 02, 08, 13) — R$ 1.330,00 atribuído a cada.\n" +
+      "VALOR PAGO = R$ 17.872,44 (demonstrativo Venda 51519, Person 12808).\n" +
+      "FORA do prazo (contrato 15/02/2025, venceu 22/02/2025).\n" +
+      "Cônjuge: não informado (solteira).\n" +
+      "Nasc. 18/07/1997. Endereço: Rua Sargento Lira, 72, Bela Vista, Rio Branco/AC, CEP 69911-286.\n" +
+      "Proposta nº 245384. Valor total da venda R$ 62.376,70.\n" +
+      "Assinatura eletrônica via D4Sign em 15/02/2025 12:16 (presencial).\n" +
+      "Local de assinatura: Ipojuca/PE, 15 de fevereiro de 2025.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/385--contrato.pdf" }
+    ]
+  },
+
+  // 386 ---------------------------------------------------------------
+  {
+    id: 386,
+    nome: "Mariane Azevedo Costa",
+    cpf: "029.534.992-10",
+    rg: "11743255 SEPC/AC",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Arquiteta",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "02",
+    apartamento: "0316",
+    andar: "2",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 62.376,70",
+    valorPago: "R$ 17.872,47",
+    formaPagamentoEntrada: "PIX (1x R$ 1.330,00, Nº Doc RESN4235190095 158073KN1C5YJI2 BCC599, 15/02/2025, rateio do PIX entre 3 contratos) + Boleto corretagem (2x R$ 886,66 + 1x R$ 886,68, R$ 2.660,00) + Sinal (4x, SI/1 a SI/4, jun-set/2025) + Parcelas saldo (P/1 a P/12, out/2025 a set/2026) — 20 parcelas pagas conforme demonstrativo GAV de 19/10/2026",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "15/02/2025",
+    telefone: "(68) 99923-5184",
+    email: "marianecosta.arq@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE (Muro Alto). Bloco 02 / Apt 0316 / 2º andar / Cota 08, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00 (4 parcelas): PIX R$ 1.330,00 (15/02/2025) + boleto R$ 2.660,00 (3x ~R$ 886,67, mar-mai/2025).\n" +
+      "Sinal 4 parcelas (SI/1 a SI/4, jun-set/2025) + Parcelas saldo 12 pagas (P/1 a P/12, out/2025 a set/2026).\n" +
+      "Total 20 parcelas pagas, 62 a pagar. RECEBIDO conforme demonstrativo GAV (19/10/2026): R$ 17.872,47.\n" +
+      "PIX com mesmo Nº Documento nos 3 contratos (Cotas 02, 08, 13) — R$ 1.330,00 atribuído a cada.\n" +
+      "VALOR PAGO = R$ 17.872,47 (demonstrativo Venda 51520, Person 12878).\n" +
+      "FORA do prazo (contrato 15/02/2025, venceu 22/02/2025).\n" +
+      "Proposta nº 245385. Valor total da venda R$ 62.376,70.\n" +
+      "Assinatura eletrônica via D4Sign em 15/02/2025.\n" +
+      "Local de assinatura: Ipojuca/PE, 15 de fevereiro de 2025.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/386--contrato.pdf" }
+    ]
+  },
+
+  // 387 ---------------------------------------------------------------
+  {
+    id: 387,
+    nome: "Mariane Azevedo Costa",
+    cpf: "029.534.992-10",
+    rg: "11743255 SEPC/AC",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Arquiteta",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "06",
+    apartamento: "0325",
+    andar: "2",
+    cota: "13",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 62.376,70",
+    valorPago: "R$ 17.872,44",
+    formaPagamentoEntrada: "PIX (1x R$ 1.330,00, Nº Doc RESN4235190095 158073KN1C5YJI2 BCC599, 15/02/2025, rateio do PIX entre 3 contratos) + Boleto corretagem (2x R$ 886,66 + 1x R$ 886,68, R$ 2.660,00) + Sinal (4x, SI/1 a SI/4, jun-set/2025) + Parcelas saldo (P/1 a P/12, out/2025 a set/2026) — 20 parcelas pagas conforme demonstrativo GAV de 19/10/2026",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "15/02/2025",
+    telefone: "(68) 99923-5184",
+    email: "marianecosta.arq@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE (Muro Alto). Bloco 06 / Apt 0325 / 2º andar / Cota 13, 1 Quarto.\n" +
+      "Período de utilização: 2 semanas por ano-calendário.\n" +
+      "Corretagem R$ 3.990,00 (4 parcelas): PIX R$ 1.330,00 (15/02/2025) + boleto R$ 2.660,00 (3x ~R$ 886,67, mar-mai/2025).\n" +
+      "Sinal 4 parcelas (SI/1 a SI/4, jun-set/2025) + Parcelas saldo 12 pagas (P/1 a P/12, out/2025 a set/2026).\n" +
+      "Total 20 parcelas pagas, 62 a pagar. RECEBIDO conforme demonstrativo GAV (19/10/2026): R$ 17.872,44.\n" +
+      "PIX com mesmo Nº Documento nos 3 contratos (Cotas 02, 08, 13) — R$ 1.330,00 atribuído a cada.\n" +
+      "VALOR PAGO = R$ 17.872,44 (demonstrativo Venda 51518, Person 16653).\n" +
+      "FORA do prazo (contrato 15/02/2025, venceu 22/02/2025).\n" +
+      "Proposta nº 245381. Valor total da venda R$ 62.376,70.\n" +
+      "Assinatura eletrônica via D4Sign em 15/02/2025.\n" +
+      "Local de assinatura: Ipojuca/PE, 15 de fevereiro de 2025.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/387--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 388,
+    nome: "Carlito Santana",
+    cpf: "681.944.717-53",
+    rg: "1056692 SPTC/ES",
+    estadoCivil: "Casado(a)",
+    profissao: "Aposentado(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "02",
+    apartamento: "0222",
+    andar: "2",
+    cota: "21",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,13",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.000,00, Nº Doc RESN3751530095 158146KOLAY1HZ 9B7E5AA, 18/10/2026, rateio do PIX de R$ 2.000,00 entre 2 contratos) + Boleto (4x R$ 747,50 corretagem, R$ 2.990,00, 1ª venc 18/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/10/2026",
+    telefone: "(28) 99972-2558",
+    email: "Keelly.lacerda@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto Alto Resort — Ipojuca/PE (Muro Alto). Bloco 02 / Apt 0222 / 2º andar / Cota 21, 1 Quarto.\n" +
+      "Corretagem R$ 3.990,00: PIX R$ 1.000,00 (18/10/2026, Nº Doc RESN3751530095 158146KOLAY1HZ 9B7E5AA) + boleto R$ 2.990,00 (4x R$ 747,50, 1ª venc 18/11/2026 — não vencido).\n" +
+      "Sinal R$ 3.382,37 (5x R$ 676,47, 1ª venc 10/03/2027) + Saldo R$ 60.274,76 (91x R$ 662,36, 1ª venc 10/08/2027) — sem pagamento.\n" +
+      "PIX de R$ 2.000,00 com mesmo Nº Documento nos 2 contratos (Cotas 21 e 23) — R$ 1.000,00 atribuído a cada.\n" +
+      "VALOR PAGO = R$ 1.000,00 (PIX corretagem). Boletos não vencidos.\n" +
+      "DENTRO do prazo (contrato 18/10/2026, vence 25/10/2026).\n" +
+      "Proposta nº 365368. Valor total da venda R$ 67.647,13.\n" +
+      "Assinatura eletrônica via ZapSign em 18/10/2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/388--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 389,
+    nome: "Carlito Santana",
+    cpf: "681.944.717-53",
+    rg: "1056692 SPTC/ES",
+    estadoCivil: "Casado(a)",
+    profissao: "Aposentado(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "02",
+    apartamento: "0220",
+    andar: "2",
+    cota: "23",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,13",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX (1x R$ 1.000,00, Nº Doc RESN3751530095 158146KOLAY1HZ 9B7E5AA, 18/10/2026, rateio do PIX de R$ 2.000,00 entre 2 contratos) + Boleto (4x R$ 747,50 corretagem, R$ 2.990,00, 1ª venc 18/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/10/2026",
+    telefone: "(28) 99972-2558",
+    email: "Keelly.lacerda@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto Alto Resort — Ipojuca/PE (Muro Alto). Bloco 02 / Apt 0220 / 2º andar / Cota 23, 1 Quarto.\n" +
+      "Corretagem R$ 3.990,00: PIX R$ 1.000,00 (18/10/2026, Nº Doc RESN3751530095 158146KOLAY1HZ 9B7E5AA) + boleto R$ 2.990,00 (4x R$ 747,50, 1ª venc 18/11/2026 — não vencido).\n" +
+      "Sinal R$ 3.382,37 (5x R$ 676,47, 1ª venc 10/03/2027) + Saldo R$ 60.274,76 (91x R$ 662,36, 1ª venc 10/08/2027) — sem pagamento.\n" +
+      "PIX de R$ 2.000,00 com mesmo Nº Documento nos 2 contratos (Cotas 21 e 23) — R$ 1.000,00 atribuído a cada.\n" +
+      "VALOR PAGO = R$ 1.000,00 (PIX corretagem). Boletos não vencidos.\n" +
+      "DENTRO do prazo (contrato 18/10/2026, vence 25/10/2026).\n" +
+      "Proposta nº 365367. Valor total da venda R$ 67.647,13.\n" +
+      "Assinatura eletrônica via ZapSign em 18/10/2026.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/389--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 390,
+    nome: "Claudete Scariot Porazzi",
+    cpf: "720.165.820-49",
+    rg: "2075275897 SJS/RS",
+    estadoCivil: "Casado(a)",
+    profissao: "Comerciante",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    bloco: "A",
+    apartamento: "A304",
+    andar: "0",
+    cota: "16",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 90.799,86",
+    valorPago: "R$ 4.490,00",
+    formaPagamentoEntrada: "Cartão MASTER *1166 (crédito parcelado 2x R$ 2.245,00, Rede, Nº Doc 35119290, 17/10/2026) + Sinal R$ 4.539,99 (5x R$ 908,00, 1ª venc 10/01/2027, não pago)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "17/10/2026",
+    telefone: "(51) 98525-7612",
+    email: "casadascadeirasnh@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Valley Resort — Gramado/RS (Carazal). Bloco A / Apt A304 / Andar 0 / Cota 16, 1 Quarto.\n" +
+      "Tipo: Cama Queen com Duas Camas Auxiliares Acopladas mais Sofá-Cama. Capacidade máx.: 6.\n" +
+      "Corretagem R$ 4.490,00: Cartão MASTER *1166 crédito parcelado 2x R$ 2.245,00 (Rede, 17/10/2026 16h35, Auto 748311, Term SV070565).\n" +
+      "Sinal R$ 4.539,99 (5x R$ 908,00, 1ª venc 10/01/2027) + Saldo R$ 81.769,87 (91x R$ 898,57, 1ª venc 10/06/2027) — sem pagamento.\n" +
+      "VALOR PAGO = R$ 4.490,00 (cartão crédito, valor cheio).\n" +
+      "Arrependimento exercido via carta em 18/10/2026 (Dois Irmãos/RS).\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Proposta nº 365262. Valor total da venda R$ 90.799,86.\n" +
+      "Nasc. 10/01/1978. Endereço: Rua das Rosas, 45, Travessão, Dois Irmãos/RS, CEP 93950-000.\n" +
+      "Assinatura eletrônica via ZapSign (doc 634da6e9-a3a...).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/390--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 391,
+    nome: "Altair Cristovao dos Santos",
+    cpf: "758.794.500-82",
+    rg: "1064315375 SSP/RS",
+    estadoCivil: "União Estável",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    bloco: "A",
+    apartamento: "A302",
+    andar: "0",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 90.799,86",
+    valorPago: "R$ 4.490,00",
+    formaPagamentoEntrada: "Cartão VISA *2231 (crédito parcelado 2x R$ 2.245,00, Rede, Nº Doc 35512868, 17/10/2026) + Sinal R$ 4.539,99 (5x R$ 908,00, 1ª venc 10/01/2027, não pago)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "17/10/2026",
+    telefone: "(51) 98467-7742",
+    email: "marcia.scariot@yahoo.com.br",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Gran Valley Resort — Gramado/RS (Carazal). Bloco A / Apt A302 / Andar 0 / Cota 07, 1 Quarto.\n" +
+      "Tipo: Cama Queen com Duas Camas Auxiliares Acopladas mais Sofá-Cama. Capacidade máx.: 6.\n" +
+      "Corretagem R$ 4.490,00: Cartão VISA *2231 crédito parcelado 2x R$ 2.245,00 (Rede, 17/10/2026 16h34, Auto D4ERJB, Term SV070565).\n" +
+      "Sinal R$ 4.539,99 (5x R$ 908,00, 1ª venc 10/01/2027) + Saldo R$ 81.769,87 (91x R$ 898,57, 1ª venc 10/06/2027) — sem pagamento.\n" +
+      "VALOR PAGO = R$ 4.490,00 (cartão crédito, valor cheio).\n" +
+      "DENTRO do prazo (contrato 17/10/2026, vence 24/10/2026).\n" +
+      "Proposta nº 365263. Valor total da venda R$ 90.799,86.\n" +
+      "Endereço: Rua das Rosas, 45, Travessão, Dois Irmãos/RS, CEP 93950-000.\n" +
+      "Beneficiários corretagem: Jyan Muniz de Lima (30602766000107), Natalia Goncalves da Silva Col (63791977000194).\n" +
+      "Assinatura eletrônica via ZapSign (doc 0109de4a-2452-48cd-aa76-239cd9ce10cc, 17/10/2026 17:35:46).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/391--contrato.pdf" }
+    ]
   }
 ];
