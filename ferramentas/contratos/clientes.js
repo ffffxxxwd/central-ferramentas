@@ -19647,5 +19647,180 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/391--contrato.pdf" }
     ]
+  },
+
+  {
+    id: 392,
+    nome: "Barbara Elizabeth do Rego Barros",
+    cpf: "053.421.134-82",
+    rg: "6371988 SDS/PE",
+    estadoCivil: "União Estável",
+    profissao: "Empreendedor(a)",
+    empresa: "GAV",
+    razaoSocial: "E.T.R. Construtora e Incorporadora Ltda.",
+    cnpj: "14.194.873/0001-97",
+    empreendimento: "Park GAV Resorts",
+    bloco: "ATALAIA",
+    apartamento: "104",
+    andar: "1",
+    cota: "3E",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 25.470,40",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (Construtora ETR, Nº Doc RESN495568005091806ORLNOHHXW066598F, CV 23964993, 18/10/2026 12h51) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 18/11/2026, não pago)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "18/10/2026",
+    telefone: "(81) 98842-2497",
+    email: "babybarros30@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Park GAV Resorts — Salinópolis/PA (Ilha do Atalaia, Etapa II). Torre ATALAIA / Apt 104 / Andar 1 / Cota 3E, 1 Quarto.\n" +
+      "Área privativa 54,8 m², área comum 44,57 m², área total 99,37 m². Utilização: 1 semana/ano.\n" +
+      "Corretagem R$ 3.990,00 (5 parcelas): PIX R$ 1.000,00 (18/10/2026) + Boleto 4x R$ 747,50 (1º venc 18/11/2026).\n" +
+      "Sinal R$ 1.273,52 (4x R$ 318,38, 1º venc 10/03/2027) + Saldo R$ 20.206,88 (68x, 1ª venc 10/07/2027) — sem pagamento.\n" +
+      "VALOR PAGO = R$ 1.000,00 (PIX, o que passou).\n" +
+      "DENTRO do prazo (contrato 18/10/2026, vence 25/10/2026).\n" +
+      "Proposta nº 365449. Valor total da venda R$ 25.470,40.\n" +
+      "Nasc. 28/07/1983. Endereço: Av. Norte Miguel Arraes de Alencar, SN, Casa Amarela, Recife/PE, CEP 52070-660.\n" +
+      "Beneficiários corretagem: Sandro Alex Brandao Manta Junior (67885562000130), Eduardo de Oliveira Telles (52364501000150), Joelson Joaquim da Silva (52247912000166), Jesyca L de Oliveira Ltda (61304315000117).\n" +
+      "Assinatura eletrônica via ZapSign (doc 109dfbbf-0f69-441a-b315-ee1c263b8c19, 18/10/2026 13:44:43).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/392--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 393,
+    nome: "Marciano da Silveira",
+    cpf: "042.072.889-96",
+    rg: "4396171 SSP/SC",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário(a)",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "07",
+    apartamento: "0218",
+    andar: "1",
+    cota: "16",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.185,91",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão VISA ELECTRON *6472 (débito R$ 3.990,00, Rede, CV 175436306, 16/10/2026 10h54)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "16/10/2026",
+    telefone: "(47) 99609-2525",
+    email: "ciannosilveira@hotmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Porto 2 Life Resort — Ipojuca/PE (Muro Alto). Bloco 07 / Apt 0218 / Andar 1 / Cota 16, 1 Quarto.\n" +
+      "Área privativa 32,54 m², área comum 37,35 m², área total 69,89 m². Utilização: 2 semanas/ano.\n" +
+      "Corretagem R$ 3.990,00: Cartão VISA ELECTRON *6472 débito R$ 3.990,00 (Rede, 16/10/2026 10h54, Auto 543259, Term SV089021).\n" +
+      "Sinal R$ 3.959,29 (5x R$ 791,86, 1ª venc 10/11/2026) + Saldo R$ 71.236,62 (91x R$ 782,82, 1ª venc 10/04/2027) — sem pagamento.\n" +
+      "VALOR PAGO = R$ 3.990,00 (cartão débito, valor cheio).\n" +
+      "DENTRO do prazo (contrato 16/10/2026, vence 23/10/2026).\n" +
+      "Proposta nº 364901. Valor total da venda R$ 79.185,91.\n" +
+      "Nasc. 03/05/1984. Endereço: Rua Henok Bernardino, 200, Lidia Duarte, Camboriú/SC, CEP 88341-067.\n" +
+      "Beneficiários corretagem: Rodrigo Amaro de Mendonca (11562939000166), Thiago Nascimento de Oliveira (47158921000140), Patricia Cardoso de Araujo (20363146000109).\n" +
+      "Assinatura eletrônica via ZapSign (doc cb8c924c-b5aa-4a18-88d1-c90a1e86abf5, 16/10/2026 12:37:53).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/393--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 394,
+    nome: "Beatriz Rocha Soares",
+    cpf: "091.819.865-80",
+    rg: "1642428647 SSP/BA",
+    estadoCivil: "Casado(a)",
+    profissao: "Caixa",
+    empresa: "GAV",
+    razaoSocial: "GAV TS Administração Unipessoal Ltda.",
+    cnpj: "47.008.570/0001-91",
+    empreendimento: "GAV Vacation Club (Pontos)",
+    bloco: "Contrato 63501",
+    apartamento: "100.000 pontos",
+    andar: "",
+    cota: "005602",
+    fracao: "100.000 pontos / 5 anos",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 12.900,00",
+    valorPago: "R$ 215,00",
+    formaPagamentoEntrada: "Cartão de débito R$ 215,00 (Nº Doc 24038414, 16/10/2026)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "15/10/2026",
+    telefone: "(77) 99927-6497",
+    email: "beatrizrochasoares131@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "CONTRATO DE PONTOS — diferente dos contratos de multipropriedade (fração). Cessão de direito de uso de unidade hoteleira via sistema de tempo compartilhado por pontos (GAV Vacation Club).\n" +
+      "Nº Contrato: 100.000-005602. Contrato nº 63501. 100.000 Pontos, prazo 5 anos.\n" +
+      "Valor do contrato R$ 12.900,00. Sinal R$ 215,00 (cartão débito, Nº Doc 24038414, 16/10/2026). Saldo R$ 12.685,00 (59x R$ 215,00 boleto, 1º venc 10/11/2026).\n" +
+      "VALOR PAGO = R$ 215,00 (cartão débito, valor cheio).\n" +
+      "DENTRO do prazo (contrato 15/10/2026, vence 22/10/2026).\n" +
+      "Escritório de vendas: Praia do Francês.\n" +
+      "Nasc. 29/01/2002. Endereço: Rua Caminho Seis, 19, URBIS, Zabolê, Vitória da Conquista/BA, CEP 45077-108.\n" +
+      "ZapSign status: Em-Curso (só Beatriz assinou em 15/10/2026 13:52:33, faltam 3 assinaturas).\n" +
+      "Assinatura eletrônica via ZapSign (doc 2a47190a-12a6-4850-94e6-99401673d10b).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/394--contrato.pdf" }
+    ]
+  },
+
+  {
+    id: 395,
+    nome: "Bruna Gabriella Santos da Silva",
+    cpf: "003.815.892-26",
+    rg: "00381589226 SSP/AM",
+    estadoCivil: "União Estável",
+    profissao: "Analista de RH",
+    empresa: "GAV",
+    razaoSocial: "Salinas Premium Resort Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "28.883.561/0001-03",
+    empreendimento: "Premium GAV Resorts",
+    bloco: "02",
+    apartamento: "0321",
+    andar: "3",
+    cota: "03",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 64.249,38",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (Salinas Premium, Nº Doc RESN7719930095233326L1PB8J65F8782B1, CV 178780728, 19/10/2026 12h21) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 19/11/2026, não pago)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "19/10/2026",
+    telefone: "(92) 98487-9610",
+    email: "brunagabriellasantos@icloud.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes:
+      "Premium GAV Resorts — Salinópolis/PA (Ilha do Atalaia, Etapa II). Bloco 02 / Apt 0321 / Andar 3 / Cota 03, 1 Quarto.\n" +
+      "Área privativa 30 m², área comum 42,22 m², área total 72,22 m². Utilização: 4 semanas/ano.\n" +
+      "Corretagem R$ 3.990,00 (5 parcelas): PIX R$ 1.000,00 (19/10/2026) + Boleto 4x R$ 747,50 (1º venc 19/11/2026).\n" +
+      "Sinal R$ 3.212,48 (5x R$ 642,50, 1ª venc 10/03/2027) + Saldo R$ 57.046,90 (85x R$ 671,14, 1ª venc 10/08/2027) — sem pagamento.\n" +
+      "VALOR PAGO = R$ 1.000,00 (PIX, o que passou).\n" +
+      "DENTRO do prazo (contrato 19/10/2026, vence 26/10/2026).\n" +
+      "Proposta nº 365593. Valor total da venda R$ 64.249,38.\n" +
+      "Nasc. 20/10/1990. Endereço: Rua Parapiranga, 131, Lirio do Vale, Manaus/AM, CEP 69038-255.\n" +
+      "Beneficiários corretagem: Thayse Sena (63843575000196), Andressa Hayane Souza da Silva (33230625000107), Simara Silva Rachid (53245160000167).\n" +
+      "Assinatura eletrônica via ZapSign (doc 6e8f57a6-6840-4e25-9188-b6d267697a73, 19/10/2026 12:59:19).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/395--contrato.pdf" }
+    ]
   }
 ];
