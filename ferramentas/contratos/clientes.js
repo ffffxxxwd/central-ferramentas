@@ -19822,5 +19822,38 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/395--contrato.pdf" }
     ]
+  },
+  {
+    id: 396,
+    nome: "Gabriel Coitinho Vaz",
+    cpf: "036.340.960-20",
+    rg: "6084313763 SSPDI/RS",
+    estadoCivil: "Casado(a)",
+    profissao: "Militar",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "439",
+    andar: "4",
+    cota: "03",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 52.943,48",
+    valorPago: "R$ 10.176,83",
+    formaPagamentoEntrada: "PIX R$ 1.330,00 (corretagem, Nº Doc RESV1126330094 84542501M4UBCX 726868, 13/09/2025) + Boleto 2x R$ 1.330,00 = R$ 2.660,00 (corretagem, pago) + Sinal 5 parcelas pagas R$ 2.647,18 (SI.1/4 a SI.5/1, 05/12/2025 a 05/04/2026) + Parcelas do saldo P.1/85 a P.6/85 pagas R$ 3.499,65 (05/05/2026 a 05/10/2026) — Total recebido conforme demonstrativo UAU: R$ 10.176,83",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "13/09/2025",
+    telefone: "(92) 98413-9314",
+    email: "gabrielcoitinhovaz@gmail.com",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 439, Andar 4, Cota 03. Proposta 287265. FORA do prazo de arrependimento (contrato 13/09/2025, venceu 20/09/2025). Cônjuge: Karoline Pereira Fagundes Vaz (CPF 028.386.470-24). Demonstrativo UAU de 20/10/2026: RECEBIDO R$ 10.176,83 (principal R$ 9.905,86 + correção R$ 216,62 + multa R$ 37,32 + juros atr. R$ 17,03). Parcelas P.7/85 em diante não pagas.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/396--contrato.pdf" }
+    ]
   }
 ];
