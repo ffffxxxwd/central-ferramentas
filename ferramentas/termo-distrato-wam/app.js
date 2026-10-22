@@ -776,7 +776,9 @@
     var palco = folha && folha.parentElement;
     if (!btn || !folha || !palco) return;
 
-    var ligado = localStorage.getItem("distrato-caber") === "1";
+    // Ligado por padrao: o documento inteiro na tela e o que se quer ao abrir.
+    // Quem preferir tamanho real desliga, e a escolha fica guardada.
+    var ligado = localStorage.getItem("distrato-caber") !== "0";
 
     function aplicar() {
       if (!ligado) { folha.style.zoom = ""; return; }
