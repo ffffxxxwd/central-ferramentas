@@ -20011,5 +20011,73 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/396--contrato.pdf" }
     ]
+  },
+  {
+    id: 397,
+    nome: "Poliana Cavalcante de Oliveira",
+    cpf: "108.210.134-67",
+    rg: "36823066 SEDS/AL",
+    estadoCivil: "União Estável",
+    profissao: "Enfermeira",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "403",
+    andar: "4",
+    cota: "17",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 52.578,85",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX R$ 1.500,00 (Nº Doc RESV1937540094 845425GIMLDCZ8 B962CF1, 20/10/2026) + Cartão de Crédito VISA parcelado 5x R$ 498,00 = R$ 2.490,00 (Rede, CV 43798128, 1º venc 20/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-20",
+    telefone: "(82) 99824-0730",
+    email: "polyhcavalcante@gmail.com",
+    endereco: "Avenida Tancredo Neves, SN, Cidade Universitaria, Maceio/AL, CEP 57073-383",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 403, Andar 4, Cota 17. Proposta 365851. DENTRO do prazo de arrependimento (contrato 20/10/2026, vence 27/10/2026). ATENÇÃO: são 2 contratos da mesma pessoa (fichas 397 e 398) e os PAGAMENTOS FORAM ÚNICOS, rateados entre os dois. O comprovante Rede anexo mostra UMA transação de R$ 4.980,00 em 5x R$ 996,00 (VISA crédito parcelado, CV 43798128, 20/10/2026 22h39), que corresponde aos R$ 2.490,00 de cada contrato somados. O Nº do documento PIX é o mesmo nos dois contratos, então o PIX provavelmente também foi único (R$ 3.000,00 no total). Conferir os comprovantes antes de devolver, pra não reembolsar duas vezes a mesma transação. ATENÇÃO 2: a maior parte foi paga no cartão (R$ 2.490,00 de R$ 3.990,00); a forma ficou como Reembolso porque o PIX é o primeiro instrumento, mas cabe trocar para Estorno Cartão se a devolução for pela operadora.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/397--contrato.pdf" }
+    ]
+  },
+  {
+    id: 398,
+    nome: "Poliana Cavalcante de Oliveira",
+    cpf: "108.210.134-67",
+    rg: "36823066 SEDS/AL",
+    estadoCivil: "União Estável",
+    profissao: "Enfermeira",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "405",
+    andar: "4",
+    cota: "19",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 52.578,85",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX R$ 1.500,00 (Nº Doc RESV1937540094 845425GIMLDCZ8 B962CF1, 20/10/2026) + Cartão de Crédito VISA parcelado 5x R$ 498,00 = R$ 2.490,00 (Rede, CV 43798128, 1º venc 20/11/2026)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-20",
+    telefone: "(82) 99824-0730",
+    email: "polyhcavalcante@gmail.com",
+    endereco: "Avenida Tancredo Neves, SN, Cidade Universitaria, Maceio/AL, CEP 57073-383",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 405, Andar 4, Cota 19. Proposta 365850. DENTRO do prazo de arrependimento (contrato 20/10/2026, vence 27/10/2026). ATENÇÃO: são 2 contratos da mesma pessoa (fichas 397 e 398) e os PAGAMENTOS FORAM ÚNICOS, rateados entre os dois. O comprovante Rede anexo mostra UMA transação de R$ 4.980,00 em 5x R$ 996,00 (VISA crédito parcelado, CV 43798128, 20/10/2026 22h39), que corresponde aos R$ 2.490,00 de cada contrato somados. O Nº do documento PIX é o mesmo nos dois contratos, então o PIX provavelmente também foi único (R$ 3.000,00 no total). Conferir os comprovantes antes de devolver, pra não reembolsar duas vezes a mesma transação. ATENÇÃO 2: a maior parte foi paga no cartão (R$ 2.490,00 de R$ 3.990,00); a forma ficou como Reembolso porque o PIX é o primeiro instrumento, mas cabe trocar para Estorno Cartão se a devolução for pela operadora.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/398--contrato.pdf" }
+    ]
   }
 ];
