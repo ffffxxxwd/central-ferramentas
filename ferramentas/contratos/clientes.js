@@ -70,6 +70,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-31",
     telefone: "(81) 98301-8368",
     email: "bruna_macela@hotmail.com",
+    endereco: "Rua Getulio Vargas, 269, Barra de Jangada, Jaboatao dos Guararapes/PE, CEP 54495-320",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/r0001-bruna-marcela-nascimento--contrato.pdf" }
@@ -316,6 +317,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-05",
     telefone: "(11) 94175-3266",
     email: "bredoff.bruno@gmail.com",
+    endereco: "Rua Rio Paraitinga, 19, Jardim Varginha, Sao Paulo/SP, CEP 04856-437",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/353339-willian-bruno-410-cota-05--contrato.pdf" }
@@ -459,6 +461,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-03-09",
     telefone: "(84) 99640-6010",
     email: "luziaeroster0503@gmail.com",
+    endereco: "R Presidente Cafe Filho, 98, Casa, Rocas, Natal/RN, CEP 59010-810",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/328373-luzia-alves-de-farias--contrato.pdf" }
@@ -514,6 +517,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-01",
     telefone: "(51) 99541-8381",
     email: "jo_bonafe@hotmail.com",
+    endereco: "Rua Hermes Pereira de Souza, 253, Casa, Parque Santa Fe, Porto Alegre/RS, CEP 91180-600",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/352793-jocemara-c4-04b-cota-07--contrato.pdf" }
@@ -567,6 +571,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-01",
     telefone: "(51) 99541-8381",
     email: "jo_bonafe@hotmail.com",
+    endereco: "Rua Hermes Pereira de Souza, 253, Casa, Parque Santa Fe, Porto Alegre/RS, CEP 91180-600",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/352793-jocemara-c3-05a-cota-16--contrato.pdf" }
@@ -734,6 +739,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-28",
     telefone: "(47) 99671-0198",
     email: "joao.mari@hotmail.com",
+    endereco: "Rua dos Alfaiates, 62, Petropolis, Joinville/SC, CEP 89208-733",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/351740-joao-paulo-da-silva-caetano--contrato.pdf" }
@@ -866,6 +872,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-11",
     telefone: "(81) 98959-5212",
     email: "Nathielyraylla123@gmail.com",
+    endereco: "Heitor de holanda calado, 11, Casa, Joaquim coutinho, Agua Preta/PE, CEP 55550-000",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/347228-nathiely-raylla-de-barros-silva--contrato.pdf" },
@@ -922,6 +929,7 @@ window.CLIENTES = [
     dataAssinatura: "2025-12-23",
     telefone: "(11) 94780-6600",
     email: "marcela.cerencio@gmail.com",
+    endereco: "Rua Piraquara, 549, Apt 32 Bl 02, Jd Nordeste, Sao Paulo/SP, CEP 03688-000",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/308758-marcela-cerencio-ogassawara--contrato.pdf" },
@@ -1036,6 +1044,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-09",
     telefone: "(69) 98482-9481",
     email: "thaysilva.ub@gmail.com",
+    endereco: "Rua planalto , SN, Extrema, Porto Velho/RO, CEP 76847-000",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/354051-thais-uh034-cota-29--contrato.pdf" },
@@ -1093,6 +1102,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-09",
     telefone: "(69) 98482-9481",
     email: "thaysilva.ub@gmail.com",
+    endereco: "Rua planalto , SN, Extrema, Porto Velho/RO, CEP 76847-000",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/354051-thais-uh028-cota-05--contrato.pdf" }
@@ -1152,6 +1162,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-02",
     telefone: "(91) 98428-8096",
     email: "margaretebeli4@gmail.com",
+    endereco: "Rua Manoel Silvino, 563, Vila nova, Inhangapi/PA, CEP 68770-000",
     pix: "91984288096",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/353035-margarete-de-souza-barata--contrato.pdf" }
@@ -1209,6 +1220,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-08",
     telefone: "(48) 99185-3522",
     email: "andressacoelho820@gmail.com",
+    endereco: "Rua Augusto Fraga, 111, Santo Onofre, Viamao/RS, CEP 94445-675",
     pix: "",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/353859-andressa-c4-105a-cota-06--contrato.pdf" },
@@ -1473,6 +1485,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-04-04",
     telefone: "(51) 99730-9528",
     email: "larissaborba2201@gmail.com",
+    endereco: "Rua Albano Rucket, 162, Cristo Rei, Estrela/RS, CEP 95880-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/332353-larissa-aine-de-borba--contrato.pdf" }
     ],
@@ -1534,6 +1547,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-02-21",
     telefone: "(91) 98280-4799",
     email: "andremoraesfoto@gmail.com",
+    endereco: "Travessa Angustura, 2983, Marco, Belem/PA, CEP 66093-040",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/beach-gav-1519-cota-09-andre-luiz--contrato.pdf" }
     ],
@@ -1595,6 +1609,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-02-21",
     telefone: "(91) 98280-4799",
     email: "andremoraesfoto@gmail.com",
+    endereco: "Travessa Angustura, 2983, Marco, Belem/PA, CEP 66093-040",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/beach-gav-1509-cota-03-andre-luiz--contrato.pdf" }
     ],
@@ -1649,6 +1664,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-31",
     telefone: "(54) 99201-7852",
     email: "mau_n1992@hotmail.com",
+    endereco: "Rua Luiz Lavratti, 318, Fundos, Sao Caetano, Caxias do Sul/RS, CEP 95095-570",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/352433-mauricio-noronha-laner--contrato.pdf" }
     ],
@@ -1760,6 +1776,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-10-31",
     telefone: "(53) 99936-3065",
     email: "alissonbettervide@gmail.com",
+    endereco: "Rua dos Bancarios, 271, CASA, PASSO DAS PEDRAS, Bage/RS, CEP 96420-500",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/217183-alisson-bettervide-pereira--contrato.pdf" },
       { titulo: "Extrato de cota (SIENGE)", arquivo: "contratos-pdf/217183-alisson-bettervide-pereira--extrato.pdf" }
@@ -1813,6 +1830,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-10",
     telefone: "(15) 99851-6044",
     email: "alessandra_santos020@hotmail.com",
+    endereco: "Rua Professor Francisco Fernandes Ruivo, 553, Jardim Domingos Orsi, Angatuba/SP, CEP 18240-302",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/354139-alessandra-dos-santos-paula-fernandes--contrato.pdf" }
     ],
@@ -2101,6 +2119,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-11",
     telefone: "(82) 99822-3601",
     email: "alineagbo@hotmail.com",
+    endereco: "Lindalvo Alves da Silva , 07, Centro, Craibas/AL, CEP 57320-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/areya-253-cota-07-aline-gomes--contrato.pdf" }
     ],
@@ -2513,6 +2532,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-01-13",
     telefone: "(73) 98846-0914",
     email: "marlams68@hotmail.com",
+    endereco: "Rua das Tamaras, 50, Senhorinha Cairo Zabele, Vitoria da Conquista/BA, CEP 45078-458",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/ggr-marluce-monteiro-b3-203-08--contrato.pdf" }
     ],
@@ -2646,6 +2666,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-03",
     telefone: "(19) 99355-4992",
     email: "e.spolaricki@gmail.com",
+    endereco: "Rua Santa Catarina, 269, Jardim Santa Cecilia, Santa Barbara D'Oeste/SP, CEP 13451-068",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/ghr-elisa-spolaricki-bloco7-106-cota-40--contrato.pdf" }
     ],
@@ -2697,6 +2718,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-03",
     telefone: "(19) 99355-4992",
     email: "e.spolaricki@gmail.com",
+    endereco: "Rua Santa Catarina, 269, Jardim Santa Cecilia, Santa Barbara D'Oeste/SP, CEP 13451-068",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/jlr-elisa-spolaricki-bloco02-117-cota-03--contrato.pdf" }
     ],
@@ -2750,6 +2772,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-08",
     telefone: "(85) 98895-9053",
     email: "edialafreitas@gmail.com",
+    endereco: "Rua Raimundo Ribeiro, 52, Casa, Autran Nunes, Fortaleza/CE, CEP 60526-500",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/ggr-ediala-freitas-bloco-a2-104-cota-51--contrato.pdf" }
     ],
@@ -2803,6 +2826,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-16",
     telefone: "(81) 97906-8876",
     email: "augusto.carlos001996@gmail.com",
+    endereco: "Rua Conselheiro Barros Barreto, 457, Porto da Madeira, Recife/PE, CEP 52130-170",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/omr-augusto-silva-bloco01-uh219-cota-26--contrato.pdf" }
     ],
@@ -2857,6 +2881,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-18",
     telefone: "(51) 98108-3308",
     email: "katherinecbittencourt@gmail.com",
+    endereco: "Rua Carlos Estevao, 740, Jardim Leopoldina, Porto Alegre/RS, CEP 91240-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/katherine-omr-213-10--contrato.pdf" }
     ],
@@ -2911,6 +2936,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-18",
     telefone: "(51) 98108-3308",
     email: "katherinecbittencourt@gmail.com",
+    endereco: "Rua Carlos Estevao, 740, Jardim Leopoldina, Porto Alegre/RS, CEP 91240-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/katherine-abr-435-07--contrato.pdf" }
     ],
@@ -2965,6 +2991,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-18",
     telefone: "(51) 98108-3308",
     email: "katherinecbittencourt@gmail.com",
+    endereco: "Rua Carlos Estevao, 740, Jardim Leopoldina, Porto Alegre/RS, CEP 91240-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/katherine-abr-441-16--contrato.pdf" }
     ],
@@ -3019,6 +3046,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-17",
     telefone: "(27) 99838-0810",
     email: "karlaaparecida346@gmail.com",
+    endereco: "Avenida Oceanica, 1694, Apartamento 305, Praia do Morro, Guarapari/ES, CEP 29216-080",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/karla-abr-427-25--contrato.pdf" }
     ],
@@ -3071,6 +3099,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-21",
     telefone: "(67) 99110-0541",
     email: "lhyan0605@gmail.com",
+    endereco: "Outros RUA FRANCISCO AMARAL MILITAO 965 CASA ( ), Jardim Monumento ( ), Campo Grande ( ), CEP 79071-240",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/gavts-hyan-rodrigues-pontos-005354--contrato.pdf" }
     ],
@@ -3124,6 +3153,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-19",
     telefone: "(83) 99613-6747",
     email: "souzalimaconstrutora.1@gmail.com",
+    endereco: "Avenida Barreiras, SN, Alphaville paraiba casa w1-10, Comercial Norte, Joao Pessoa/PB, CEP 58112-595",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/355486-karla-bianca-gvr-a210-cota-14--contrato.pdf" },
       { titulo: "Carta Arrependimento", arquivo: "contratos-pdf/355486-karla-bianca-gvr-a210-cota-14--carta-arrependimento.pdf" }
@@ -3178,6 +3208,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-22",
     telefone: "(79) 99839-2523",
     email: "lheilinha_rosana@hotmail.com",
+    endereco: "Rua Coronel Manoel Ramos dos Santos, 06, Farolandia, Aracaju/SE, CEP 49030-190",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356107-leila-rosana-abr-bloco01-350-cota-30--contrato.pdf" }
     ],
@@ -3614,6 +3645,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-23",
     telefone: "(51) 991107345",
     email: "lucianoramiresbugalho@yahoo.com.br",
+    endereco: "Rua Bem Te Vi, 159, Tres Marias, Esteio/RS, CEP 93295-607",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/ggr-luciano-ramires-b4-003-cota-17--contrato.pdf" }
     ],
@@ -3957,6 +3989,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-05-24",
     telefone: "(19) 981690478",
     email: "angelo_sallasar@hotmail.com",
+    endereco: "Rua Celia Aparecida de Souza Bouffier , 8, Bosque de Barao Geraldo, Campinas/SP, CEP 13082-753",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/340024-angelo-ghr-b1-0208-cota-21--contrato.pdf" }
     ],
@@ -4016,6 +4049,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-05-24",
     telefone: "(19) 981690478",
     email: "angelo_sallasar@hotmail.com",
+    endereco: "Rua Celia Aparecida de Souza Bouffier , 8, Bosque de Barao Geraldo, Campinas/SP, CEP 13082-753",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/340025-angelo-ghr-b2-0208-cota-08--contrato.pdf" }
     ],
@@ -4070,6 +4104,7 @@ window.CLIENTES = [
     dataAssinatura: "2025-10-19",
     telefone: "(51) 999048785",
     email: "deisefurlan2010@gmail.com",
+    endereco: "Rua Leopoldo Suchow, 167, Linha Cafe, Tres Coroas/RS, CEP 95660-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/294256-deise-ggr-c1-03b-cota-26--contrato.pdf" }
     ],
@@ -4130,6 +4165,7 @@ window.CLIENTES = [
     dataAssinatura: "2023-12-13",
     telefone: "(19) 991929371",
     email: "rafa.parede@gmail.com",
+    endereco: "Rua João Batista Campos Pinto, 216, Bloco 05, Apto 53, Jardim Abaeté, Piracicaba/SP, CEP 13420-264",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/151009-rafael-p2l-b07-0318-cota-02--contrato.pdf" }
     ],
@@ -4187,6 +4223,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-24",
     telefone: "(51) 99228-0926",
     email: "barthcleyce@gmail.com",
+    endereco: "Rua Assis Brasil, 81, Vila Vista Alegre, Cachoeirinha/RS, CEP 94945-570",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356521-cleyce-ggr-a1-103-cota-46--contrato.pdf" }
     ],
@@ -4243,6 +4280,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-24",
     telefone: "(51) 98922-3844",
     email: "edsonrs.59@gmail.com",
+    endereco: "Rua Assis Brasil, 81, Vila Vista Alegre, Cachoeirinha/RS, CEP 94945-570",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356518-edson-ggr-a3-203-cota-09--contrato.pdf" }
     ],
@@ -4351,6 +4389,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-06-19",
     telefone: "(51) 98950-9373",
     email: "jaisonlgpinheiro@gmail.com",
+    endereco: "Rua Flor de Gazanias, 79, Sao Luiz, Gravatai/RS, CEP 94065-464",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/343753-jaison-p2l-bl01-0208-cota-23--contrato.pdf" }
     ],
@@ -4408,6 +4447,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-06-19",
     telefone: "(51) 98950-9373",
     email: "jaisonlgpinheiro@gmail.com",
+    endereco: "Rua Flor de Gazanias, 79, Sao Luiz, Gravatai/RS, CEP 94065-464",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/343752-jaison-p2l-bl06-0328-cota-09--contrato.pdf" }
     ],
@@ -4465,6 +4505,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-06-19",
     telefone: "(51) 98950-9373",
     email: "jaisonlgpinheiro@gmail.com",
+    endereco: "Rua Flor de Gazanias, 79, Sao Luiz, Gravatai/RS, CEP 94065-464",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/343754-jaison-p2l-bl01-0226-cota-19--contrato.pdf" }
     ],
@@ -4577,6 +4618,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-22",
     telefone: "(87) 98876-2863",
     email: "junior-arara@hotmail.com",
+    endereco: "Rua Santana, 713, Mercadinho santo antonio, Alto da Boa Vista, Araripina/PE, CEP 56287-020",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356096-antonio-areya-bl01-247-cota-09--contrato.pdf" }
     ],
@@ -4633,6 +4675,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-22",
     telefone: "(87) 98876-2863",
     email: "junior-arara@hotmail.com",
+    endereco: "Rua Santana, 713, Mercadinho santo antonio, Alto da Boa Vista, Araripina/PE, CEP 56287-020",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356095-antonio-areya-bl01-247-cota-31--contrato.pdf" }
     ],
@@ -4690,6 +4733,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-22",
     telefone: "(87) 98876-2863",
     email: "junior-arara@hotmail.com",
+    endereco: "Rua Santana, 713, Mercadinho santo antonio, Alto da Boa Vista, Araripina/PE, CEP 56287-020",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356097-antonio-areya-bl01-312-cota-13--contrato.pdf" }
     ],
@@ -4748,6 +4792,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-25",
     telefone: "(44) 99998-8089",
     email: "wellington.debla@gmail.com",
+    endereco: "Rua jose cividanes, SN, Casa, Jardim yamanaka, Marialva/PR, CEP 86990-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356601-wellington-areya-bl01-213-cota-14--contrato.pdf" }
     ],
@@ -4804,6 +4849,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-28",
     telefone: "(11) 94962-1897",
     email: "le3linhares@gmail.com",
+    endereco: "Rua Elvis Presley, 15, Centreville, Santo Andre/SP, CEP 09120-100",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/357136-leandro-p2l-bl05-321-cota-19--contrato.pdf" }
     ],
@@ -4985,6 +5031,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-29",
     telefone: "(82) 99361-0437",
     email: "carlarodrigueslima1@gmail.com",
+    endereco: "Avenida Maceio, 397, Bloco 5 apto 403, Tabuleiro do Martins, Maceio/AL, CEP 57061-110",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/357323-carla-areya-bl01-548-cota-47--contrato.pdf" }
     ],
@@ -5096,6 +5143,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-29",
     telefone: "(87) 99600-0182",
     email: "MARIALUANA20166@OUTLOOK.COM",
+    endereco: "Avenida Martinho Furtado de lacerda, 410, Nossa senhora de fatima, Conceicao/PB, CEP 58970-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/313385-maria-luana-dpl-bl01-107-cota-10--contrato.pdf" }
     ],
@@ -5322,6 +5370,7 @@ window.CLIENTES = [
     dataAssinatura: "2022-11-15",
     telefone: "31985472954 / 31987595939",
     email: "PR_ALFREDO_SILVA@HOTMAIL.COM",
+    endereco: "Rua Cruzeiro do Sul , 405, CEP 35183-116",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/105348-alfredo-opr-c-c136-cota-09--contrato.pdf" }
     ],
@@ -5376,6 +5425,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-26",
     telefone: "(61) 99258-3054",
     email: "davidmaklin89@gmail.com",
+    endereco: "Residencial Itaipu Quadra 80, SN, Setor Habitacional Jardim Botanico, Brasilia/DF, CEP 71680-528",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356721-david-areya-bl01-219-cota-25--contrato.pdf" }
     ],
@@ -5432,6 +5482,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-26",
     telefone: "(61) 99258-3054",
     email: "davidmaklin89@gmail.com",
+    endereco: "Residencial Itaipu Quadra 80, SN, Setor Habitacional Jardim Botanico, Brasilia/DF, CEP 71680-528",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356720-david-areya-bl01-222-cota-02--contrato.pdf" }
     ],
@@ -5482,6 +5533,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-26",
     telefone: "(61) 99258-3054",
     email: "davidmaklin89@gmail.com",
+    endereco: "Residencial Itaipu Quadra 80, SN, Setor Habitacional Jardim Botanico, Brasilia/DF, CEP 71680-528",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/356719-david-areya-bl01-220-cota-15--contrato.pdf" }
     ],
@@ -5587,6 +5639,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-29",
     telefone: "(31) 999483428",
     email: "eng.vanessasampaio@gmail.com",
+    endereco: "Rua Edmon de Sousa Melo, 33, C43 Ap14, Joao Paulo II Barreiro, Belo Horizonte/MG, CEP 30660-585",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/357404-vanessa-areya-bl01-512-cota-10--contrato.pdf" }
     ],
@@ -5639,6 +5692,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-31",
     telefone: "(61) 983523197",
     email: "nelsonraiado77@gmail.com",
+    endereco: "Quadra SQ 15 Quadra 8, 16, Centro, Cidade Ocidental/GO, CEP 72880-568",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/357650-nelson-par-bl01-0106-cota-04--contrato.pdf" }
     ],
@@ -5695,6 +5749,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-31",
     telefone: "(61) 983523197",
     email: "nelsonraiado77@gmail.com",
+    endereco: "Quadra SQ 15 Quadra 8, 16, Centro, Cidade Ocidental/GO, CEP 72880-568",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/357651-nelson-areya-bl01-630-cota-23--contrato.pdf" }
     ],
@@ -5749,6 +5804,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-28",
     telefone: "(65) 996975582",
     email: "claudiosimionatto@hotmail.com",
+    endereco: "Rodovia MT 199, SN, Casa, Zona Rural, Vila Bela da Santissima Trindade/MT, CEP 78245-000",
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/357003-julia-p2l-bl05-0332-cota-07--contrato.pdf" },
       { titulo: "Distrato", arquivo: "contratos-pdf/106-julia-poggere-porto2-life-bl05-0332-cota07--distrato.pdf" }
@@ -5942,6 +5998,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-01-27",
     telefone: "(82) 982106558",
     email: "walkyriaf92@gmail.com",
+    endereco: "RUA SÃO FRANCISCO, 297, CASA, CENTRO, DOIS RIACHOS/AL, CEP 57500-000",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/110-walkyria-oikos-maragogi-bl01-uh035-cota21--contrato.pdf" },
@@ -5988,6 +6045,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-01-27",
     telefone: "(82) 982106558",
     email: "walkyriaf92@gmail.com",
+    endereco: "RUA SÃO FRANCISCO, 297, CASA, CENTRO, DOIS RIACHOS/AL, CEP 57500-000",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/111-walkyria-oikos-maragogi-bl01-uh025-cota09--contrato.pdf" },
@@ -6027,6 +6085,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-01-27",
     telefone: "(82) 982106558",
     email: "walkyriaf92@gmail.com",
+    endereco: "RUA SÃO FRANCISCO, 297, CASA, CENTRO, DOIS RIACHOS/AL, CEP 57500-000",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/112-walkyria-oikos-maragogi-bl01-uh048-cota07--contrato.pdf" },
@@ -6066,6 +6125,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-01-27",
     telefone: "(82) 982106558",
     email: "walkyriaf92@gmail.com",
+    endereco: "RUA SÃO FRANCISCO, 297, CASA, CENTRO, DOIS RIACHOS/AL, CEP 57500-000",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/113-walkyria-oikos-maragogi-bl01-uh004-cota08--contrato.pdf" },
@@ -6105,6 +6165,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-10",
     telefone: "(51) 984528578",
     email: "marymsalau@gmail.com",
+    endereco: "Rua Santa Cecilia, 1630, Ap 101, Rio Branco, Porto Alegre/RS, CEP 90420-040",
     conjuge: { nome: "Paulo Rogerio Salau Machado", cpf: "438.771.500-63", rg: "1034047314 SSP RS", email: "paulorsalau@gmail.com" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/114-marines-gran-garden-bl-a4-103-cota28--contrato.pdf" }
@@ -6190,6 +6251,7 @@ window.CLIENTES = [
     dataAssinatura: "2022-07-08",
     telefone: "(41) 988974533",
     email: "vanessacecconsantos.vcs@gmail.com",
+    endereco: "EROS RUPPEL ABDALA, 39, CENTRO, Tunas do Paraná/PR, CEP 83480-000",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/116-vanessa-ceccon-santos-gran-valley-resort-bl-a-310-cota03--contrato.pdf" }
@@ -6326,6 +6388,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-07",
     telefone: "(41) 996335914",
     email: "andreiavasconcelossilva@hotmail.com",
+    endereco: "Rua Jose Bassa, 1373, Sitio Cercado, Curitiba/PR, CEP 81920-500",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/119-andreia-vasconcelos-oikos-maragogi-bl01-uh212-cota02--contrato.pdf" }
@@ -6370,6 +6433,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-28",
     telefone: "(65) 996975582",
     email: "claudiosimionatto@hotmail.com",
+    endereco: "Rodovia MT 199, SN, Casa, Zona Rural, Vila Bela da Santissima Trindade/MT, CEP 78245-000",
     conjuge: { nome: "", cpf: "", rg: "", email: "" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/120-julia-poggere-porto2-life-bl05-0326-cota26--contrato.pdf" }
@@ -6505,6 +6569,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-02-21",
     telefone: "(91) 982804799",
     email: "andremoraesfoto@gmail.com",
+    endereco: "Travessa Angustura, 2983, Marco, Belem/PA, CEP 66093-040",
     conjuge: { nome: "Deusangela Bentes Guimaraes", cpf: "016.175.282-93", rg: "6356683 6VIA PC PA", email: "deuzaguimaraes@hotmail.com" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/123-andre-luiz-beach-gav-resorts-bl02-1509-cota03--contrato.pdf" }
@@ -6550,6 +6615,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-02-21",
     telefone: "(91) 982804799",
     email: "andremoraesfoto@gmail.com",
+    endereco: "Travessa Angustura, 2983, Marco, Belem/PA, CEP 66093-040",
     conjuge: { nome: "Deusangela Bentes Guimaraes", cpf: "016.175.282-93", rg: "6356683 6VIA PC PA", email: "deuzaguimaraes@hotmail.com" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/124-andre-luiz-beach-gav-resorts-bl02-1519-cota09--contrato.pdf" }
@@ -6595,6 +6661,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-06-16",
     telefone: "(96) 991421845",
     email: "elielsongalmeida@gmail.com",
+    endereco: "Rua Luis Azarias, 1132, UNIVERSIDADE, Macapa/AP, CEP 68903-350",
     conjuge: { nome: "Josiane Monteiro Gama", cpf: "805.402.012-00", rg: "190920 PTC AP", email: "josianegama84@gmail.com" },
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/125-elielson-gama-salinas-beach-resort-bl02-1124-cota03--contrato.pdf" }
@@ -6641,6 +6708,7 @@ window.CLIENTES = [
     dataAssinatura: "2025-03-06",
     telefone: "(81) 995730234",
     email: "ceica.agostinho@gmail.com",
+    endereco: "Rua Silveira de Carvalho, 71, Apt 402, Tamarineira, Recife/PE, CEP 52110-060",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/126-conceicao-agostinho-porto2-life-bl04-0412-cota11--contrato.pdf" }
@@ -6686,6 +6754,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-04",
     telefone: "(41) 99727-2777",
     email: "carladahmer@gmail.com",
+    endereco: "Rua Paulo Setubal , SN, Boqueirao, Curitiba/PR, CEP 81670-130",
     conjuge: {
       nome: "Douglas Fernandez Sambudio",
       cpf: "353.824.988-14",
@@ -6736,6 +6805,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-04",
     telefone: "(41) 99727-2777",
     email: "carladahmer@gmail.com",
+    endereco: "Rua Paulo Setubal , SN, Boqueirao, Curitiba/PR, CEP 81670-130",
     conjuge: {
       nome: "Douglas Fernandez Sambudio",
       cpf: "353.824.988-14",
@@ -6984,6 +7054,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-01",
     telefone: "(11) 98655-8409",
     email: "jdaucca@gmail.com",
+    endereco: "Rua Coronel Mendonca, 87, Chacara Santo Antonio (Zona Leste), Sao Paulo/SP, CEP 03409-000",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/133-jorge-daniel-oikos-maragogi-bl02-uh256-cota18--contrato.pdf" }
@@ -7029,6 +7100,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-05",
     telefone: "(81) 99824-1239",
     email: "lucianosjunior96@gmail.com",
+    endereco: "Rua Quarenta e Oito, 117, Apto, Espinheiro, Recife/PE, CEP 52020-060",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/134-jose-luciano-porto2-life-bl02-0206-cota26--contrato.pdf" }
@@ -7075,6 +7147,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-16",
     telefone: "(11) 95865-8374",
     email: "jessica.jsasilva88@gmail.com",
+    endereco: "Rua Jose Soeiro de Vaz, 515, Jardim Marisa, Sao Paulo/SP, CEP 05108-130",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/135-jessica-silva-santos-oikos-maragogi-bl02-uh031-cota22--contrato.pdf" }
@@ -7120,6 +7193,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-16",
     telefone: "(11) 95865-8374",
     email: "jessica.jsasilva88@gmail.com",
+    endereco: "Rua Jose Soeiro de Vaz, 515, Jardim Marisa, Sao Paulo/SP, CEP 05108-130",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/136-jessica-silva-santos-oikos-maragogi-bl02-uh119-cota51--contrato.pdf" }
@@ -7260,6 +7334,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-05-02",
     telefone: "(71) 99666-6246",
     email: "luiz.flavios@yahoo.com",
+    endereco: "Rua Ministro Antônio Carlos Magalhães , 447, Buraquinho, Lauro de Freitas, CEP 42710-400",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/139-luiz-flavio-tree-bies-share-14-cotama-j--contrato.pdf" }
@@ -7356,6 +7431,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-02-24",
     telefone: "(61) 99313-4877",
     email: "antoniohccrangel@gmail.com",
+    endereco: "Módulo Módulo 1, 401, Condomínio Mestre D'Armas (Planaltina), Brasilia/DF, CEP 73403-303",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/141-antonio-henrique-encontro-das-aguas-pia-304-cota09a--contrato.pdf" }
@@ -7401,6 +7477,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-06-08",
     telefone: "(61) 999068873",
     email: "assessoria.academiadf@gmail.com",
+    endereco: "COND RESIDENCIAL PARQUE DO GAMA, 5, CONJUNTO G, PONTE ALTA NORTE, GAMA/DF, CEP 72426-250",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/142-amanda-oliveira-martins-porto2-life-bl04-0217-cota18--contrato.pdf" }
@@ -7447,6 +7524,7 @@ window.CLIENTES = [
     dataAssinatura: "2022-04-28",
     telefone: "(062) 982500416",
     email: "sarajrosa15@hotmail.com",
+    endereco: "Rua Luiz de Matos, Quadra 194, Lote 09, CEP 74303-010",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/143-sara-julia-rosa-praias-do-lago-bld-201-cota04--contrato.pdf" },
@@ -7544,6 +7622,7 @@ window.CLIENTES = [
     dataAssinatura: "2025-10-05",
     telefone: "(43) 99123-1904",
     email: "pri_oliveira19@hotmail.com",
+    endereco: "Rua Jose Leite de Carvalho, 102, Jardim Lilian, Londrina/PR, CEP 86015-290",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/145-priscila-oliveira-gran-valley-resort-blb-b415-cota10--contrato.pdf" }
@@ -7588,6 +7667,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-05",
     telefone: "(31) 98314-1453",
     email: "lopes.brunocs@gmail.com",
+    endereco: "Rua Osvaldo Cruz APT 1101, 188, Meireles, Fortaleza/CE, CEP 60125-150",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/146-bruno-cunha-lopes-dom-pedro-laguna-bl01204-cota09--contrato.pdf" }
@@ -7636,6 +7716,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-07",
     telefone: "(71) 991682925",
     email: "acson.bezerra@gmail.com",
+    endereco: "Rua Pedro Ivo, 12, Caixa D Agua, Salvador/BA, CEP 40320-010",
     conjuge: {},
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/147-acson-santos-bezerra-areya-barra-resort-bl01-313-cota04--contrato.pdf" }
@@ -7902,6 +7983,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-07",
     telefone: "(71) 99168-2925",
     email: "acson.bezerra@gmail.com",
+    endereco: "Rua Pedro Ivo, 12, Caixa D Agua, Salvador/BA, CEP 40320-010",
     conjuge: {
       nome: "",
       cpf: "",
@@ -7954,6 +8036,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-07",
     telefone: "(71) 99168-2925",
     email: "acson.bezerra@gmail.com",
+    endereco: "Rua Pedro Ivo, 12, Caixa D Agua, Salvador/BA, CEP 40320-010",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8061,6 +8144,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-06",
     telefone: "(61) 99294-6494",
     email: "aline_moraesg@hotmail.com",
+    endereco: "Quadra SQN 316 Bloco C, 209, Asa Norte, Brasilia/DF, CEP 70775-030",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8115,6 +8199,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-06",
     telefone: "(51) 98966-9140",
     email: "desadosul@gmail.com",
+    endereco: "Outros PELOTAS 178 CASA ( ), Aparecida ( ), Alvorada ( ), CEP 94853-030",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8170,6 +8255,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-06",
     telefone: "(81) 99314-4187",
     email: "jamersonmonteiro68@gmail.com",
+    endereco: "Rua do Borges, 160, Matriz, Vitoria de Santo Antao/PE, CEP 55602-030",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8226,6 +8312,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-16",
     telefone: "(83) 98641-7128",
     email: "sthefanny-kelly@live.com",
+    endereco: "Rua Manoel Martins de Oliveira, 93, Serrotao, Campina Grande/PB, CEP 58434-073",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8504,6 +8591,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-06-08",
     telefone: "(41) 99156-1938",
     email: "raguibor@gmail.com",
+    endereco: "Rua Manoel de Souza Dias Negrao, S/N, Boa Vista, Curitiba/PR, CEP 82540-070",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8558,6 +8646,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-06-08",
     telefone: "(41) 99156-1938",
     email: "raguibor@gmail.com",
+    endereco: "Rua Manoel de Souza Dias Negrao, S/N, Boa Vista, Curitiba/PR, CEP 82540-070",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8823,6 +8912,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-26",
     telefone: "(91) 99299-4995",
     email: "adryellevianaa@gmail.com",
+    endereco: "Av Conselheiro Furtado, 2693, Cremacao, Belem/PA, CEP 66063-060",
     conjuge: {
       nome: "",
       cpf: "",
@@ -8878,6 +8968,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-06",
     telefone: "(91) 98815-3680",
     email: "marcenariamonte1sinai@gmail.com",
+    endereco: "Rodovia do Mario Covas, 18, Cond. Porto Esmaralda - BL12 - Apto: 406, Coqueiro, Ananindeua/PA, CEP 67115-000",
     conjuge: {
       nome: "Ana Celia Silva Moreira",
       cpf: "454.239.892-72",
@@ -9047,6 +9138,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-07-24",
     telefone: "(64) 99297-4541",
     email: "neriasmatias2@gmail.com",
+    endereco: "Jacinto ferreira de souza, SN, Casa, Centro, Santa Helena de Goias/GO, CEP 75920-000",
     conjuge: {
       nome: "",
       cpf: "",
@@ -9098,6 +9190,7 @@ window.CLIENTES = [
     dataAssinatura: "2025-04-26",
     telefone: "(91) 99246-8492",
     email: "mariajanyelem@gmail.com",
+    endereco: "RUA SANTO ANTONIO, 330, CENTRO, Aurora do Para/PA, CEP 68658-000",
     conjuge: {
       nome: "",
       cpf: "",
@@ -9146,6 +9239,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-08-13",
     telefone: "(66) 99612-4135",
     email: "geovanasomotos@hotmail.com",
+    endereco: "Rua Cefet, SN, Santa Luzia, Confresa/MT, CEP 78652-000",
     conjuge: {
       nome: "",
       cpf: "",
@@ -9193,6 +9287,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-13",
     telefone: "(81) 99426-2680",
     email: "rtorres@informa.com.br",
+    endereco: "Rua Medusa, 584, Brasilia Teimosa, Recife/PE, CEP 51010-030",
     conjuge: {
       nome: "Edmilson Manoel da Silva",
       cpf: "060.619.174-73",
@@ -9241,6 +9336,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-12",
     telefone: "(55) 99638-1459",
     email: "eliezersantos838@gmail.com",
+    endereco: "Rua Laguna, 313, Casa, Centro, Tres Passos/RS, CEP 98600-000",
     conjuge: {
       nome: "Elisiane Vargas da Silveira",
       cpf: "012.191.940-42",
@@ -9288,6 +9384,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-12",
     telefone: "(55) 99638-1459",
     email: "eliezersantos838@gmail.com",
+    endereco: "Rua Laguna, 313, Casa, Centro, Tres Passos/RS, CEP 98600-000",
     conjuge: {
       nome: "Elisiane Vargas da Silveira",
       cpf: "012.191.940-42",
@@ -9335,6 +9432,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-08",
     telefone: "(99) 98423-8973",
     email: "lusivaniosousa@gmail.com",
+    endereco: "Chacara Vale do Santana, SN, Zona Rural, Lajeado Novo/MA, CEP 65937-000",
     conjuge: {
       nome: "Teresa Lucia Bandeira dos Reis Pereira",
       cpf: "576.688.683-72",
@@ -9428,6 +9526,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-08",
     telefone: "(99) 98423-8973",
     email: "lusivaniosousa@gmail.com",
+    endereco: "Chacara Vale do Santana, SN, Zona Rural, Lajeado Novo/MA, CEP 65937-000",
     conjuge: {
       nome: "Teresa Lucia Bandeira dos Reis Pereira",
       cpf: "576.688.683-72",
@@ -9474,6 +9573,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-16",
     telefone: "(82) 99174-7125",
     email: "urieladonias12345@gmail.com",
+    endereco: "Outros RUA MARECHAL CASTELO BRANCO 120 ( ), CENTRO ( ), Tanque d'Arca ( ), CEP 57635-000",
     conjuge: {
       nome: "",
       cpf: "",
@@ -9521,6 +9621,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-12",
     telefone: "(61) 99551-0797",
     email: "sarahmkiihn@outlook.com",
+    endereco: "Quadra QR 47, Itapuã I, Planaltina/GO, CEP 73754-047",
     conjuge: {
       nome: "",
       cpf: "",
@@ -9608,6 +9709,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-14",
     telefone: "(63) 98428-5464",
     email: "vanilsonalencar@yahoo.com.br",
+    endereco: "Quadra ARNE 51 Alameda 2, SN, Lote 2, Plano Diretor Norte, Palmas/TO, CEP 77006-426",
     conjuge: {
       nome: "Silvia Rodrigues Lima Alencar",
       cpf: "014.405.731-07",
@@ -9876,6 +9978,7 @@ window.CLIENTES = [
     dataAssinatura: "2024-11-10",
     telefone: "(91) 98137-1061",
     email: "anapaula680@hotmail.com",
+    endereco: "Passagem Ana Cristina, 84 , RESIDENCIA CASA 02, Aguas Brancas, Ananindeua/PA, CEP 67033-680",
     conjuge: {
       nome: "Gilmar Barros da Silva",
       cpf: "671.080.832-72",
@@ -9929,6 +10032,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-20",
     telefone: "(31) 98874-6647",
     email: "marilizasilva@yahoo.com.br",
+    endereco: "Rua Pouso Alegre, 2495, Ap 403, Horto, Belo Horizonte/MG, CEP 31015-025",
     conjuge: {
       nome: "",
       cpf: "",
@@ -9985,6 +10089,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-09-11",
     telefone: "(31) 99909-5460",
     email: "bethaniafisiotavares@yahoo.com.br",
+    endereco: "Rua Minas Gerais, 637, Apto 401, Celvia, Vespasiano/MG, CEP 33200-606",
     conjuge: {
       nome: "",
       cpf: "",
@@ -16780,6 +16885,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-10-10",
     telefone: "(62) 991230460",
     email: "alvescr@hotmail.com",
+    endereco: "Colinas do tocantins , 54, Santo antonio, Goiatins/TO, CEP 77770-000",
     pix: "",
     clausulaExtra: "",
     observacoes:
@@ -16826,6 +16932,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-10-10",
     telefone: "(62) 991230460",
     email: "alvescr@hotmail.com",
+    endereco: "Colinas do tocantins , 54, Santo antonio, Goiatins/TO, CEP 77770-000",
     pix: "",
     clausulaExtra: "",
     observacoes:
@@ -16871,6 +16978,7 @@ window.CLIENTES = [
     dataAssinatura: "2026-10-10",
     telefone: "(62) 991230460",
     email: "alvescr@hotmail.com",
+    endereco: "Colinas do tocantins , 54, Santo antonio, Goiatins/TO, CEP 77770-000",
     pix: "",
     clausulaExtra: "",
     observacoes:
@@ -17603,6 +17711,7 @@ window.CLIENTES = [
     dataAssinatura: "02/08/2026",
     telefone: "(81) 99847-8087",
     email: "contatoproducoesnova@gmail.com",
+    endereco: "Rua Couto Magalhaes, 176, Rosarinho, Recife/PE, CEP 52041-335",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -17645,6 +17754,7 @@ window.CLIENTES = [
     dataAssinatura: "12/10/2026",
     telefone: "(99) 98175-3639",
     email: "ciceroinaciopereira100@gmail.com",
+    endereco: "Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -17686,6 +17796,7 @@ window.CLIENTES = [
     dataAssinatura: "12/10/2026",
     telefone: "(99) 98175-3639",
     email: "ciceroinaciopereira100@gmail.com",
+    endereco: "Rua Joaquim Figueiredo, SN, Corina, Porto Franco/MA, CEP 65970-000",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -17856,6 +17967,7 @@ window.CLIENTES = [
     dataAssinatura: "19/07/2026",
     telefone: "(91) 99133-7575",
     email: "mocysilva@hotmail.com",
+    endereco: "Rua Marechal Rondon , 412, Centro, Santa Luzia do Para/PA, CEP 68644-000",
     conjuge: "Nayara Araujo Vieira (CPF 010.563.852-86, RG 5543490 PC/PA)",
     pix: "",
     clausulaExtra: "",
@@ -17895,6 +18007,7 @@ window.CLIENTES = [
     dataAssinatura: "09/10/2026",
     telefone: "(31) 98745-3193",
     email: "biancatrindaderapallo@gmail.com",
+    endereco: "Rua Caminho Novo, 520, Casa, Passagem de Mariana, Mariana/MG, CEP 35421-156",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -17934,6 +18047,7 @@ window.CLIENTES = [
     dataAssinatura: "04/11/2024",
     telefone: "(31) 99365-8184",
     email: "fabricioubaldo@gmail.com",
+    endereco: "Rua Marechal Deodoro da Fonseca, 639, Boa Esperanca, Santa Luzia/MG, CEP 33035-300",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -17975,6 +18089,7 @@ window.CLIENTES = [
     dataAssinatura: "06/04/2026",
     telefone: "(19) 98812-7427",
     email: "jota439@hotmail.com",
+    endereco: "Rua Joao Bottene, 538, Apto 123, Vila Monteiro, Piracicaba/SP, CEP 13418-555",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -18018,6 +18133,7 @@ window.CLIENTES = [
     dataAssinatura: "12/10/2026",
     telefone: "(81) 99263-5397",
     email: "jamesonfssantos@gmail.com",
+    endereco: "Rua Doutor Henrique Lins, 250, Brasilia Teimosa, Recife/PE, CEP 51010-380",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -18061,6 +18177,7 @@ window.CLIENTES = [
     dataAssinatura: "11/10/2026",
     telefone: "(81) 99637-5948",
     email: "nata.araujo14@gmail.com",
+    endereco: "Rua Gerson de Barros Pinange, 73, APT 201, Ponto de Parada, Recife/PE, CEP 52041-370",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -18105,6 +18222,7 @@ window.CLIENTES = [
     dataAssinatura: "01/06/2025",
     telefone: "(96) 99129-5316",
     email: "socorrosantos1964@bol.com.br",
+    endereco: "RUA CASTRO ALVES, 978, CASA, AGRESTE, Laranjal do Jari/AP, CEP 68920-000",
     conjuge: {
       nome: "Francisco de Assis Oliveira de Sousa",
       cpf: "060.061.753-04",
@@ -18153,6 +18271,7 @@ window.CLIENTES = [
     dataAssinatura: "14/10/2026",
     telefone: "(19) 98275-5175",
     email: "laurarssoares@gmail.com",
+    endereco: "Rua Jaime Bitto, 109, Parque Residencial Sabias, Indaiatuba/SP, CEP 13349-229",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -18196,6 +18315,7 @@ window.CLIENTES = [
     dataAssinatura: "11/10/2026",
     telefone: "(81) 99805-3136",
     email: "diegofernandesdourado@gmail.com",
+    endereco: "Rua Conselheiro Nabuco, 444, Apt 106, Casa Amarela, Recife/PE, CEP 52070-010",
     conjuge: "",
     pix: "",
     clausulaExtra: "",
@@ -18239,6 +18359,7 @@ window.CLIENTES = [
     dataAssinatura: "24/09/2025",
     telefone: "(27) 99994-2904",
     email: "edvaldosanto35@gmail.com",
+    endereco: "Rua Caboclo Bernardo, 07, Casa, Santo Antonio, Pinheiros/ES, CEP 29980-000",
     conjuge: {
       nome: "Gidalva de Oliveira Araujo Silva",
       cpf: "073.792.477-27",
@@ -18287,6 +18408,7 @@ window.CLIENTES = [
     dataAssinatura: "18/04/2025",
     telefone: "(47) 98909-0949",
     email: "leonardopalmieri.lp@gmail.com",
+    endereco: "Rua Papa Joao XXIII, 138, Apartamento 202, Iririu, Joinville/SC, CEP 89227-300",
     conjuge: {
       nome: "Amanda Eliza Holz",
       cpf: "092.574.129-97",
@@ -18341,6 +18463,7 @@ window.CLIENTES = [
     dataAssinatura: "18/04/2025",
     telefone: "(47) 98909-0949",
     email: "leonardopalmieri.lp@gmail.com",
+    endereco: "Rua Papa Joao XXIII, 138, Apartamento 202, Iririu, Joinville/SC, CEP 89227-300",
     conjuge: {
       nome: "Amanda Eliza Holz",
       cpf: "092.574.129-97",
@@ -18386,6 +18509,7 @@ window.CLIENTES = [
     dataAssinatura: "18/04/2025",
     telefone: "(47) 98909-0949",
     email: "leonardopalmieri.lp@gmail.com",
+    endereco: "Rua Papa Joao XXIII, 138, Apartamento 202, Iririu, Joinville/SC, CEP 89227-300",
     conjuge: {
       nome: "Amanda Eliza Holz",
       cpf: "092.574.129-97",
@@ -18431,6 +18555,7 @@ window.CLIENTES = [
     dataAssinatura: "18/04/2025",
     telefone: "(47) 98909-0949",
     email: "leonardopalmieri.lp@gmail.com",
+    endereco: "Rua Papa Joao XXIII, 138, Apartamento 202, Iririu, Joinville/SC, CEP 89227-300",
     conjuge: {
       nome: "Amanda Eliza Holz",
       cpf: "092.574.129-97",
@@ -18476,6 +18601,7 @@ window.CLIENTES = [
     dataAssinatura: "18/04/2025",
     telefone: "(47) 98909-0949",
     email: "leonardopalmieri.lp@gmail.com",
+    endereco: "Rua Papa Joao XXIII, 138, Apartamento 202, Iririu, Joinville/SC, CEP 89227-300",
     conjuge: {
       nome: "Amanda Eliza Holz",
       cpf: "092.574.129-97",
@@ -18521,6 +18647,7 @@ window.CLIENTES = [
     dataAssinatura: "18/04/2025",
     telefone: "(47) 98909-0949",
     email: "leonardopalmieri.lp@gmail.com",
+    endereco: "Rua Papa Joao XXIII, 138, Apartamento 202, Iririu, Joinville/SC, CEP 89227-300",
     conjuge: {
       nome: "Amanda Eliza Holz",
       cpf: "092.574.129-97",
@@ -18565,6 +18692,7 @@ window.CLIENTES = [
     dataAssinatura: "09/10/2026",
     telefone: "(99) 99125-1386",
     email: "marcioadmr@hotmail.com",
+    endereco: "Rua Goncalves Dias, 639, Centro, Coroata/MA, CEP 65415-000",
     conjuge: {
       nome: "Keliene da Costa Alcantara",
       cpf: "003.952.193-10",
@@ -18607,6 +18735,7 @@ window.CLIENTES = [
     dataAssinatura: "18/07/2026",
     telefone: "(81) 99776-2161",
     email: "cassianamlopes@gmail.com",
+    endereco: "Rua Professor Severino Tolentino, 491, Piedade, Jaboatao dos Guararapes/PE, CEP 54400-140",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18646,6 +18775,7 @@ window.CLIENTES = [
     dataAssinatura: "13/10/2026",
     telefone: "(71) 98225-9993",
     email: "elmajardim@hotmail.com",
+    endereco: "Rua Marcos Pinheiro, 70, Piata, Salvador/BA, CEP 41650-472",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18685,6 +18815,7 @@ window.CLIENTES = [
     dataAssinatura: "12/10/2026",
     telefone: "(51) 98135-1150",
     email: "mc.ramos1977@gmail.com",
+    endereco: "Rua Coronel Massot, 520, Ap 607, Cristal, Porto Alegre/RS, CEP 91910-530",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18726,6 +18857,7 @@ window.CLIENTES = [
     dataAssinatura: "16/10/2026",
     telefone: "(48) 99131-6095",
     email: "joaovribeirov@gmail.com",
+    endereco: "Rua Carlos Alberto dos Santos, 16, Casa 03, Forquilhas, Sao Jose/SC, CEP 88107-468",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18769,6 +18901,7 @@ window.CLIENTES = [
     dataAssinatura: "15/10/2026",
     telefone: "(31) 99232-8851",
     email: "lima-2011@live.com",
+    endereco: "Rua Edvaldo Martins, SN, Atalaia Justinopolis, Ribeirao das Neves/MG, CEP 33933-010",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18813,6 +18946,7 @@ window.CLIENTES = [
     dataAssinatura: "12/05/2025",
     telefone: "(31) 99983-6989",
     email: "fernandocrisostomooliveira@hotmail.com",
+    endereco: "Rua Marcos Coelho Neto, 351, Casa, Estrela Dalva, Belo Horizonte/MG, CEP 30570-610",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18860,6 +18994,7 @@ window.CLIENTES = [
     dataAssinatura: "16/10/2026",
     telefone: "(15) 98824-0984",
     email: "katia.moria@hotmail.com",
+    endereco: "Rua Sergio Sajo, 250, Bloco 3 , Apto 105, Boa Vista, Sorocaba/SP, CEP 18085-846",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18903,6 +19038,7 @@ window.CLIENTES = [
     dataAssinatura: "04/09/2026",
     telefone: "(81) 99808-2118",
     email: "adenildo.nogueira@hotmail.com",
+    endereco: "Rua Sao Mateus, 401, Apto E, Iputinga, Recife/PE, CEP 50680-000",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18947,6 +19083,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(83) 99655-2135",
     email: "jhurandytecnico@gmail.com",
+    endereco: "Avenida Nossa Senhora de Copacabana, 701, Copacabana, Rio de Janeiro/RJ, CEP 22060-002",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -18991,6 +19128,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(81) 98689-6470",
     email: "nayaraj365@gmail.com",
+    endereco: "Rua Boa Ventura, SN, Curado, Jaboatao dos Guararapes/PE, CEP 54270-751",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19035,6 +19173,7 @@ window.CLIENTES = [
     dataAssinatura: "16/10/2026",
     telefone: "(18) 99169-7001",
     email: "moreiracezar13@gmail.com",
+    endereco: "Rua Mirandopolis, 136, Casa, Novo Umuarama, Aracatuba/SP, CEP 16011-190",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19080,6 +19219,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(35) 98897-1910",
     email: "mariocruvinel861@icloud.com",
+    endereco: "Avenida Conde Ribeiro do Valle, 255, Sala 09 2 andar, Centro, Guaxupe/MG, CEP 37830-024",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19127,6 +19267,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(35) 98897-1910",
     email: "mariocruvinel861@icloud.com",
+    endereco: "Avenida Conde Ribeiro do Valle, 255, Sala 09 2 andar, Centro, Guaxupe/MG, CEP 37830-024",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19174,6 +19315,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(35) 98897-1910",
     email: "mariocruvinel861@icloud.com",
+    endereco: "Avenida Conde Ribeiro do Valle, 255, Sala 09 2 andar, Centro, Guaxupe/MG, CEP 37830-024",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19221,6 +19363,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(35) 98897-1910",
     email: "mariocruvinel861@icloud.com",
+    endereco: "Avenida Conde Ribeiro do Valle, 255, Sala 09 2 andar, Centro, Guaxupe/MG, CEP 37830-024",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19268,6 +19411,7 @@ window.CLIENTES = [
     dataAssinatura: "13/10/2026",
     telefone: "(86) 99498-5876",
     email: "edequiassousa6@gmail.com",
+    endereco: "Avenida geovanir moreira , 29, Casa, Acentamento euxadai, Teresina/PI, CEP 64000-000",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19315,6 +19459,7 @@ window.CLIENTES = [
     dataAssinatura: "13/10/2026",
     telefone: "(86) 99498-5876",
     email: "edequiassousa6@gmail.com",
+    endereco: "Avenida geovanir moreira , 29, Casa, Acentamento euxadai, Teresina/PI, CEP 64000-000",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19362,6 +19507,7 @@ window.CLIENTES = [
     dataAssinatura: "15/02/2025",
     telefone: "(68) 99923-5184",
     email: "marianecosta.arq@gmail.com",
+    endereco: "Rua Sargento Lira, 72, Bela Vista, Rio Branco/AC, CEP 69911-286",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19410,6 +19556,7 @@ window.CLIENTES = [
     dataAssinatura: "15/02/2025",
     telefone: "(68) 99923-5184",
     email: "marianecosta.arq@gmail.com",
+    endereco: "Rua Sargento Lira, 72, Bela Vista, Rio Branco/AC, CEP 69911-286",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19456,6 +19603,7 @@ window.CLIENTES = [
     dataAssinatura: "15/02/2025",
     telefone: "(68) 99923-5184",
     email: "marianecosta.arq@gmail.com",
+    endereco: "Rua Sargento Lira, 72, Bela Vista, Rio Branco/AC, CEP 69911-286",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19501,6 +19649,7 @@ window.CLIENTES = [
     dataAssinatura: "18/10/2026",
     telefone: "(28) 99972-2558",
     email: "Keelly.lacerda@hotmail.com",
+    endereco: "Rua Wilian Manhaes, 91, Casa, Agostinho Simonato, Cachoeiro de Itapemirim/ES, CEP 29311-787",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19543,6 +19692,7 @@ window.CLIENTES = [
     dataAssinatura: "18/10/2026",
     telefone: "(28) 99972-2558",
     email: "Keelly.lacerda@hotmail.com",
+    endereco: "Rua Wilian Manhaes, 91, Casa, Agostinho Simonato, Cachoeiro de Itapemirim/ES, CEP 29311-787",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19629,6 +19779,7 @@ window.CLIENTES = [
     dataAssinatura: "17/10/2026",
     telefone: "(51) 98467-7742",
     email: "marcia.scariot@yahoo.com.br",
+    endereco: "Rua Jose Carlos Braga, 25, Mario Quintana, Porto Alegre/RS, CEP 91270-830",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19673,6 +19824,7 @@ window.CLIENTES = [
     dataAssinatura: "18/10/2026",
     telefone: "(81) 98842-2497",
     email: "babybarros30@gmail.com",
+    endereco: "Avenida Norte Miguel Arraes de Alencar, SN, Casa Amarela, Recife/PE, CEP 52070-660",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19717,6 +19869,7 @@ window.CLIENTES = [
     dataAssinatura: "16/10/2026",
     telefone: "(47) 99609-2525",
     email: "ciannosilveira@hotmail.com",
+    endereco: "Rua Henok Bernardino, 200, Lidia Duarte, Camboriu/SC, CEP 88341-067",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19761,6 +19914,7 @@ window.CLIENTES = [
     dataAssinatura: "15/10/2026",
     telefone: "(77) 99927-6497",
     email: "beatrizrochasoares131@gmail.com",
+    endereco: "Rua Caminho Seis 19 URBIS ( ), ZABOLE ( ), Vitória da Conquista ( ), CEP 45077-108",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19804,6 +19958,7 @@ window.CLIENTES = [
     dataAssinatura: "19/10/2026",
     telefone: "(92) 98487-9610",
     email: "brunagabriellasantos@icloud.com",
+    endereco: "Rua Parapiranga, 131, Lirio do Vale, Manaus/AM, CEP 69038-255",
     conjuge: {},
     pix: "",
     clausulaExtra: "",
@@ -19847,6 +20002,7 @@ window.CLIENTES = [
     dataAssinatura: "13/09/2025",
     telefone: "(92) 98413-9314",
     email: "gabrielcoitinhovaz@gmail.com",
+    endereco: "Rua Doutor Malheiros, 101, Apto 203, Santo Antonio, Porto Alegre/RS, CEP 90640-050",
     conjuge: {},
     pix: "",
     clausulaExtra: "",

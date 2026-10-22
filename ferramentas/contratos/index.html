@@ -7,14 +7,21 @@
   <meta http-equiv="Expires" content="0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contratos | Fichas dos clientes</title>
-  <link rel="stylesheet" href="style.css?v=25" />
+  <link rel="stylesheet" href="style.css?v=39" />
 </head>
 <body>
 
   <!-- Barra superior -->
   <header class="toolbar">
     <div class="toolbar__title">
-      <span class="toolbar__icon">📋</span>
+      <span class="toolbar__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 3h6a1 1 0 0 1 1 1v1H8V4a1 1 0 0 1 1-1z"/>
+          <path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+          <path d="M9 11h6M9 15h4"/>
+        </svg>
+      </span>
       <div>
         <strong>Contratos</strong>
         <small>Ficha de cada cliente — dados do contrato e valor pago</small>
@@ -48,6 +55,10 @@
       <button type="button" class="chip" data-empresa="GAV">GAV</button>
       <button type="button" class="chip" data-empresa="WAM">WAM</button>
     </div>
+    <label class="filtro-data">
+      <span>Dia</span>
+      <select id="filtroData"><option value="">Todos os dias</option></select>
+    </label>
     <span class="contagem" id="contagem"></span>
     <button type="button" class="btn" id="btnReabrirTodos" hidden>Reabrir todos</button>
   </section>
@@ -72,8 +83,8 @@
   </div>
 
   <script src="../../assets/lib/pdf.min.js"></script>
-  <script src="../../assets/js/ler-contrato.js?v=6"></script>
-  <script src="clientes.js?v=396"></script>
-  <script src="app.js?v=78"></script>
+  <script src="../../assets/js/ler-contrato.js?v=13"></script>
+  <script src="clientes.js?v=397"></script>
+  <script src="app.js?v=88"></script>
 </body>
 </html>
