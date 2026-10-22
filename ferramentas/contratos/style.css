@@ -326,12 +326,15 @@ body {
 /* margin-top:auto gruda a linha de ações no rodapé: com os cards todos da
    mesma altura, os botões ficam alinhados de um card pro outro */
 .ficha__botoes {
-  display: flex; gap: 5px; flex-wrap: wrap;
-  /* sem border-top: o quadro do VALOR PAGO logo acima já tem borda, e as
-     duas encostadas viravam um risco solto embaixo do valor */
-  margin: 12px 14px 0; padding-top: 2px;
+  display: flex; gap: 6px; flex-wrap: wrap;
+  /* Sem border-top: o quadro do VALOR PAGO logo acima já tem borda, e as
+     duas encostadas viravam um risco solto embaixo do valor.
+     O respiro fica no padding, não na margem: "margin-top: auto" (que
+     empurra a barra pro rodapé) anula qualquer margin-top e deixava os
+     botões colados no quadro do valor. */
+  margin: 0 14px; padding-top: 15px;
   margin-top: auto;
-  min-height: 70px;   /* 2 fileiras de botões, com ou sem PDF anexado */
+  min-height: 83px;   /* 2 fileiras de botões, com ou sem PDF anexado */
   align-content: flex-start;
 }
 .ficha__btn[disabled] {
