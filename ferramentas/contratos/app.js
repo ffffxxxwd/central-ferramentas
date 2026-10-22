@@ -10,6 +10,18 @@
   var $ = function (id) { return document.getElementById(id); };
   var STORE = "contratos-v1";
 
+  /* ---------- Ícones (SVG inline, sem emoji) ----------
+     Herdam currentColor, então acompanham a cor do botão em qualquer estado. */
+  var SVG = {
+    pdf: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/>',
+    novaGuia: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
+    seta: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>'
+  };
+  function ico(nome) {
+    return '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+      'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[nome] + "</svg>";
+  }
+
   /* ---------- Utilidades ---------- */
   function esc(s) {
     return String(s == null ? "" : s)
@@ -214,7 +226,8 @@
     var o = {};
     ["id", "nome", "cpf", "rg", "nacionalidade", "estadoCivil", "empreendimento", "bloco",
      "apartamento", "andar", "cota", "fracao", "localizacao", "empresa", "razaoSocial", "cnpj",
-     "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "pix", "clausulaExtra", "observacoes", "notaEnvio", "profissao"].forEach(function (k) {
+     "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "endereco",
+     "pix", "clausulaExtra", "observacoes", "notaEnvio", "profissao"].forEach(function (k) {
       o[k] = txt(c[k]);
     });
     ["valorPago", "valorTotal", "corretagem", "sinal"].forEach(function (k) { o[k] = c[k]; });
@@ -355,7 +368,16 @@
   /* ---------- Estado da tela ---------- */
   var filtroEmpresa = "";
   var filtroStatus = "ativos";   // "ativos" | "arquivados" | "todos"
+  var filtroData = "";           // "" = todos os dias | "AAAA-MM-DD"
   var termo = "";
+
+  // dia da ficha = data de assinatura do contrato, normalizada em AAAA-MM-DD
+  function diaDaFicha(c) {
+    var d = dataObj(c.dataAssinatura);
+    if (!d) return "";
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") +
+      "-" + String(d.getDate()).padStart(2, "0");
+  }
 
   // lista da aba atual (sem busca nem filtro de empresa) — base dos totais do topo
   function listaPorStatus() {
@@ -370,10 +392,36 @@
     var t = semAcento(termo);
     return listaPorStatus().filter(function (c) {
       if (filtroEmpresa && c.empresa !== filtroEmpresa) return false;
+      if (filtroData && diaDaFicha(c) !== filtroData) return false;
       if (!t) return true;
       var alvo = semAcento([c.nome, c.empreendimento, c.cpf, c.razaoSocial, c.apartamento, c.cota].join(" "));
       return alvo.indexOf(t) > -1;
     });
+  }
+
+  /* Preenche o seletor de dia com as datas que realmente existem na aba
+     atual, da mais recente pra mais antiga, com a contagem de cada uma.
+     Se o dia escolhido sumir da lista (troca de aba/empresa), volta pra
+     "Todos os dias" em vez de deixar a tela vazia sem explicação. */
+  function renderFiltroData() {
+    var sel = $("filtroData");
+    if (!sel) return;
+    var contagem = {};
+    listaPorStatus().forEach(function (c) {
+      if (filtroEmpresa && c.empresa !== filtroEmpresa) return;
+      var dia = diaDaFicha(c);
+      if (dia) contagem[dia] = (contagem[dia] || 0) + 1;
+    });
+    var dias = Object.keys(contagem).sort().reverse();
+    if (filtroData && dias.indexOf(filtroData) === -1) filtroData = "";
+
+    var total = dias.reduce(function (s, d) { return s + contagem[d]; }, 0);
+    sel.innerHTML =
+      '<option value="">Todos os dias (' + total + ")</option>" +
+      dias.map(function (d) {
+        return '<option value="' + esc(d) + '">' + esc(dataBR(d)) + " (" + contagem[d] + ")</option>";
+      }).join("");
+    sel.value = filtroData;
   }
 
   /* ---------- Banner de duplicatas ----------
@@ -471,12 +519,37 @@
     return lista.length ? lista[0].arquivo : "";
   }
 
+  /* Chips da unidade — é o que identifica o contrato de relance.
+     Só o que varia de contrato pra contrato vira chip. A fração é 1/52 em
+     praticamente todos, então fica na linha da localização: não ajuda a
+     distinguir nada e só empurrava os chips pra uma segunda linha. */
+  function chipsUnidade(c) {
+    var itens = [
+      ["Bloco", txt(c.bloco).replace(/^(bloco|torre)\s+/i, "")],
+      ["Unidade", txt(c.apartamento).replace(/^(apto|apartamento|unidade|uh)\s*\.?\s*/i, "")],
+      ["Andar", txt(c.andar)],
+      ["Cota", txt(c.cota).replace(/^cota\s+/i, "")]
+    ].filter(function (p) { return p[1]; });
+    if (!itens.length) return "";
+    return '<div class="ficha__unidade">' + itens.map(function (p) {
+      return '<span class="uni"><i>' + esc(p[0]) + "</i><b>" + esc(p[1]) + "</b></span>";
+    }).join("") + "</div>";
+  }
+  function localEFracao(c) {
+    var p = [txt(c.localizacao), txt(c.fracao) ? "Fração " + txt(c.fracao) : ""].filter(Boolean);
+    return p.length ? '<div class="ficha__local">' + esc(p.join(" · ")) + "</div>" : "";
+  }
+  // uma linha só, pra distinguir contratos da mesma pessoa dentro de um grupo
+  function unidadeCurtaCompleta(c) {
+    var p = [
+      txt(c.bloco) ? "Bloco " + txt(c.bloco).replace(/^(bloco|torre)\s+/i, "") : "",
+      unidadeCurta(c),
+      txt(c.cota) ? "Cota " + txt(c.cota).replace(/^cota\s+/i, "") : ""
+    ].filter(Boolean);
+    return p.join(" · ") || "(sem unidade)";
+  }
+
   function cardFicha(c, dentroDeGrupo) {
-    var imovel = [blocoRotulado(c), unidadeCurta(c), c.cota ? "Cota " + c.cota : ""].filter(Boolean).join(" · ");
-    var titulo = dentroDeGrupo ? (imovel || "—") : (c.nome || "(sem nome)");
-    var sub = dentroDeGrupo
-      ? (c.empreendimento || "—")
-      : ([c.empreendimento, imovel].filter(Boolean).join(" · ") || "—");
     var marca = ehPendente(c.id) ? "aguardando contrato" : (ehNovo(c.id) ? "adicionado aqui" : (ehEditado(c.id) ? "editado" : ""));
     var p = prazo7(c);
     var arq = ehArquivado(c.id);
@@ -484,59 +557,113 @@
     var assinado = ehAssinado(c.id);
     var enviado = ehEnviado(c.id);
     var confirmado = ehConfirmado(c.id);
+    var forma = formaReembolso(c);
+    var ehEstorno = /estorno/i.test(forma);
+    var vPago = rs(c.valorPago);
+
+    /* Carimbo só no PAGO: é o único estado que encerra o caso, então o card
+       pode parar de ser lido e virar aviso. Enviado e assinado são meio do
+       caminho — ainda preciso ler os dados, logo não esmaecem nada: ganham
+       destaque pela cor do cabeçalho e pelo selo. */
+    var carimbo = pago ? { classe: "pago", texto: "Pago" } : null;
     return (
-      '<div role="button" tabindex="0" class="ficha' + (c.empresa === "WAM" ? " wam" : "") + (arq ? " arquivada" : "") + (pago ? " pago" : "") + '" data-id="' + esc(c.id) + '">' +
-        (pago ? '<div class="ficha__carimbo">PAGO</div>' : "") +
+      '<div role="button" tabindex="0" class="ficha' + (c.empresa === "WAM" ? " wam" : "") + (arq ? " arquivada" : "") + (pago ? " pago" : "") + (carimbo ? " carimbada" : "") +
+        (enviado && !pago ? " enviada" : "") + (assinado && !pago && !enviado ? " assinada" : "") +
+        (ehPendente(c.id) ? " pendente" : "") + '" data-id="' + esc(c.id) + '">' +
+        (carimbo
+          ? '<div class="ficha__carimbo ' + carimbo.classe + '"><b>' + esc(carimbo.texto) + "</b></div>"
+          : "") +
         '<div class="ficha__topo">' +
-          '<span class="tag' + (c.empresa === "WAM" ? " wam" : "") + '">' + esc(c.empresa) + "</span>" +
-          (arq ? '<span class="tag arq">arquivado</span>' : "") +
-          (confirmado ? '<span class="tag confirmado-tag">confirmar valor pago</span>' : "") +
-          (enviado ? '<span class="tag enviado-tag">email enviado</span>' : "") +
-          (assinado ? '<span class="tag assinado-tag">assinado</span>' : "") +
-          (pago ? '<span class="tag pago-tag">pago</span>' : "") +
-          (ehPendente(c.id) ? '<span class="tag pend">aguardando contrato</span>' : "") +
-          (/policial/i.test(c.profissao) ? '<span class="tag policial">POLICIAL</span>' : "") +
-          '<span class="ficha__data">' + esc(dataBR(c.dataAssinatura)) + "</span>" +
-          '<button type="button" class="ficha__acao" data-arquivar="' + esc(c.id) + '" data-arq="' + (arq ? "1" : "0") + '">' +
-            (arq ? "Reabrir" : "Arquivar") +
-          "</button>" +
+          '<span class="tag empresa' + (c.empresa === "WAM" ? " wam" : "") + '">' + esc(c.empresa) + "</span>" +
+          '<span class="tag id" title="Código da ficha">#' + esc(c.id) + "</span>" +
+          '<span class="tag forma ' + (ehEstorno ? "estorno" : "pix") + '">' + esc(forma) + "</span>" +
+          // os estados (pago/assinado/enviado/confirmado) NÃO viram selo aqui:
+          // já aparecem nas pastilhas do rodapé, e repetir só enchia o
+          // cabeçalho e empurrava o card pra três linhas
+          (ehPendente(c.id) ? '<span class="tag pend">sem contrato</span>' : "") +
+          // "editado"/"adicionado aqui" vira selo: como linha solta, aparecia
+          // só em algumas fichas e deixava esses cards mais altos
+          (marca ? '<span class="tag marca">' + esc(marca) + "</span>" : "") +
+          (/policial/i.test(c.profissao) ? '<span class="tag policial">policial</span>' : "") +
+          // data e botão andam juntos, encostados à direita: soltos, o botão
+          // caía sozinho pra uma segunda linha e engordava o cabeçalho
+          '<div class="ficha__topo-dir">' +
+            '<span class="ficha__data" title="Data da assinatura">' + esc(dataBR(c.dataAssinatura) || "sem data") + "</span>" +
+            '<button type="button" class="ficha__acao" data-arquivar="' + esc(c.id) + '" data-arq="' + (arq ? "1" : "0") + '">' +
+              (arq ? "Reabrir" : "Arquivar") +
+            "</button>" +
+          "</div>" +
         "</div>" +
-        '<div class="ficha__nome">' + esc(titulo) + "</div>" +
-        '<div class="ficha__sub">' + esc(sub) + "</div>" +
-        (c.telefone ? '<div class="ficha__tel">' + esc(c.telefone) + '</div>' : "") +
-        (p ? '<div class="prazo-tag ' + (p.aberto ? "aberto" : "vencido") + '">' + esc(prazoCurto(p)) + "</div>" : "") +
-        '<div class="ficha__valor"><span>Valor pago</span><b>' + esc(rs(c.valorPago) || "—") + "</b></div>" +
-        (marca ? '<div class="ficha__marca">' + esc(marca) + "</div>" : "") +
+        /* Bloco de identificação. Muda só o TÍTULO conforme o contexto:
+             - card solto  -> nome e CPF da pessoa
+             - dentro de um grupo -> a unidade, porque o nome já está no
+               cabeçalho da faixa e o que diferencia os cards é o imóvel
+           Telefone, e-mail e endereço aparecem nos DOIS casos: antes eles
+           só existiam no card solto, e os 180 cards agrupados ficavam sem
+           contato nenhum. */
+        '<div class="ficha__corpo">' +
+          (dentroDeGrupo
+            ? '<div class="ficha__nome">' + esc(unidadeCurtaCompleta(c)) + "</div>" +
+              '<div class="ficha__sub">' + esc(c.empreendimento || "—") + "</div>"
+            : '<div class="ficha__nome">' + esc(c.nome || "(sem nome)") + "</div>" +
+              (c.cpf ? '<div class="ficha__cpf">CPF ' + esc(c.cpf) + "</div>" : "")) +
+          (c.telefone || c.email
+            ? '<div class="ficha__tel" title="' + esc([c.telefone, c.email].filter(Boolean).join(" · ")) + '">' +
+                esc([c.telefone, c.email].filter(Boolean).join(" · ")) + "</div>"
+            : "") +
+          (c.endereco ? '<div class="ficha__end" title="' + esc(c.endereco) + '">' + esc(c.endereco) + "</div>" : "") +
+        "</div>" +
+        '<div class="prazo-tag ' + (p ? (p.aberto ? "aberto" : "vencido") : "sem-data") + '">' +
+          esc(p ? prazoCurto(p) : "Sem data de assinatura") + "</div>" +
+        // só o que o cliente pagou até agora — é sobre isso que o reembolso é
+        // calculado. O valor cheio do contrato fica no painel de detalhe.
+        '<div class="ficha__valor' + (vPago ? "" : " sem") + '">' +
+          "<span>Valor pago</span>" +
+          "<b>" + esc(vPago || "—") + "</b>" +
+        "</div>" +
         '<div class="ficha__botoes">' +
           (contratoDe(c)
-            ? '<button type="button" class="ficha__btn" data-acao="ver-contrato" data-id="' + esc(c.id) + '">Ver contrato</button>'
-            : "") +
-          '<button type="button" class="ficha__btn destaque" data-acao="distrato" data-id="' + esc(c.id) + '">Distrato ' + esc(c.empresa) + "</button>" +
-          '<button type="button" class="ficha__btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia">Nova guia ↗</button>' +
+            ? '<button type="button" class="ficha__btn" data-acao="ver-contrato" data-id="' + esc(c.id) + '">Contrato</button>'
+            : '<button type="button" class="ficha__btn" disabled title="Nenhum PDF anexado nesta ficha">Contrato</button>') +
+          '<button type="button" class="ficha__btn destaque" data-acao="distrato" data-id="' + esc(c.id) + '">Distrato</button>' +
+          '<button type="button" class="ficha__btn so-ico" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abrir o distrato em outra guia" aria-label="Abrir o distrato em outra guia">' + ico("novaGuia") + "</button>" +
           '<button type="button" class="ficha__btn reembolso" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Reembolso</button>' +
           '<button type="button" class="ficha__btn" data-acao="email" data-id="' + esc(c.id) + '">Mensagem</button>' +
         "</div>" +
-        '<div class="ficha__toggles">' +
-          '<button type="button" class="ficha__btn' + (confirmado ? " confirmado-ativo" : "") + '" data-confirmado="' + esc(c.id) + '" data-conf="' + (confirmado ? "1" : "0") + '">' +
-            (confirmado ? "Desmarcar confirmado" : "Confirmar valor pago") +
-          "</button>" +
-          '<button type="button" class="ficha__btn' + (pago ? " pago-ativo" : "") + '" data-pago="' + esc(c.id) + '" data-pg="' + (pago ? "1" : "0") + '">' +
-            (pago ? "Desmarcar pago" : "Marcar pago") +
-          "</button>" +
-          '<button type="button" class="ficha__btn' + (assinado ? " assinado-ativo" : "") + '" data-assinado="' + esc(c.id) + '" data-asg="' + (assinado ? "1" : "0") + '">' +
-            (assinado ? "Desmarcar assinado" : "Marcar assinado") +
-          "</button>" +
-          '<button type="button" class="ficha__btn' + (enviado ? " enviado-ativo" : "") + '" data-enviado="' + esc(c.id) + '" data-env="' + (enviado ? "1" : "0") + '">' +
-            (enviado ? "Desmarcar enviado" : "Marcar enviado") +
-          "</button>" +
-        "</div>" +
+        pastilhasEstado(c, { confirmado: confirmado, pago: pago, assinado: assinado, enviado: enviado }) +
       "</div>"
     );
   }
 
+  /* Pastilhas de estado — substituem os quatro botões "Marcar X / Desmarcar X".
+     Cada uma mostra E muda o estado: apagada = não aconteceu, acesa (cor sólida
+     + ✓) = aconteceu. O rótulo é sempre o mesmo, só o preenchimento muda, então
+     dá pra bater o olho e ler a situação sem precisar interpretar o verbo.
+     Os data-attributes são os mesmos de antes, então os cliques já tratados
+     continuam funcionando sem mexer nos listeners. */
+  function pastilhasEstado(c, e) {
+    var itens = [
+      { rot: "Valor OK", lig: e.confirmado, attr: "data-confirmado", par: "data-conf", cls: "conf" },
+      { rot: "Assinado", lig: e.assinado, attr: "data-assinado", par: "data-asg", cls: "asg" },
+      { rot: "Enviado", lig: e.enviado, attr: "data-enviado", par: "data-env", cls: "env" },
+      { rot: "Pago", lig: e.pago, attr: "data-pago", par: "data-pg", cls: "pg" }
+    ];
+    return '<div class="ficha__estados">' + itens.map(function (i) {
+      return '<button type="button" class="pastilha ' + i.cls + (i.lig ? " on" : "") + '" ' +
+        i.attr + '="' + esc(c.id) + '" ' + i.par + '="' + (i.lig ? "1" : "0") + '" ' +
+        'aria-pressed="' + (i.lig ? "true" : "false") + '" ' +
+        'title="' + (i.lig ? "Desmarcar" : "Marcar") + " " + esc(i.rot) + '">' +
+        (i.lig ? '<span class="pastilha__ok" aria-hidden="true">✓</span>' : "") + esc(i.rot) +
+        "</button>";
+    }).join("") + "</div>";
+  }
+
   function renderGrid() {
+    var selData = $("filtroData");
+    if (selData) selData.parentElement.hidden = (filtroStatus === "reembolsos");
     if (filtroStatus === "reembolsos") { renderReembolsos(); return; }
 
+    renderFiltroData();
     var l = filtrados();
     var grupos = agruparPorPessoa(l);
     var pessoas = grupos.length;
@@ -558,9 +685,11 @@
 
     if (!l.length) {
       $("grid").innerHTML = '<div class="vazio">' +
-        (filtroStatus === "arquivados"
-          ? "Nenhum contrato arquivado ainda. Abra uma ficha e clique em <b>Arquivar</b> quando terminar a análise."
-          : "Nenhum contrato encontrado.") + "</div>";
+        (filtroData
+          ? "Nenhum contrato em <b>" + esc(dataBR(filtroData)) + "</b> com os filtros atuais."
+          : filtroStatus === "arquivados"
+            ? "Nenhum contrato arquivado ainda. Abra uma ficha e clique em <b>Arquivar</b> quando terminar a análise."
+            : "Nenhum contrato encontrado.") + "</div>";
       return;
     }
 
@@ -625,16 +754,18 @@
       return (
         '<div class="ficha' + (r.empresa === "WAM" ? " wam" : "") + '">' +
           '<div class="ficha__topo">' +
-            '<span class="tag' + (r.empresa === "WAM" ? " wam" : "") + '">' + esc(r.empresa || "GAV") + "</span>" +
+            '<span class="tag empresa' + (r.empresa === "WAM" ? " wam" : "") + '">' + esc(r.empresa || "GAV") + "</span>" +
+            '<span class="tag forma ' + (/estorno/i.test(r.forma || "") ? "estorno" : "pix") + '">' + esc(r.forma || "Reembolso") + "</span>" +
             '<span class="ficha__data">' + esc(dataBR(r.data)) + "</span>" +
             '<button type="button" class="ficha__acao" data-acao="abrir-comprovante" data-reemb="' + esc(r.id) + '" data-empresa="' + esc(r.empresa || "GAV") + '">Comprovante</button>' +
             '<button type="button" class="ficha__acao perigo" data-excluir-reemb="' + esc(r.id) + '">Excluir</button>' +
           "</div>" +
-          '<div class="ficha__nome">' + esc(r.cliente || "—") + "</div>" +
-          '<div class="ficha__sub">' + esc(r.imovel || "—") + "</div>" +
-          '<div class="prazo-tag">' + esc(r.forma || "Reembolso") + "</div>" +
-          (r.pix ? '<div class="ficha__sub">PIX: ' + esc(r.pix) + "</div>" : "") +
-          (r.obs ? '<div class="ficha__sub">' + esc(r.obs) + "</div>" : "") +
+          '<div class="ficha__corpo">' +
+            '<div class="ficha__nome">' + esc(r.cliente || "—") + "</div>" +
+            '<div class="ficha__sub">' + esc(r.imovel || "—") + "</div>" +
+            (r.pix ? '<div class="ficha__cpf">PIX ' + esc(r.pix) + "</div>" : "") +
+            (r.obs ? '<div class="ficha__tel">' + esc(r.obs) + "</div>" : "") +
+          "</div>" +
           '<div class="ficha__valor"><span>Valor reembolsado</span><b>' + esc(rs(r.valor) || "—") + "</b></div>" +
         "</div>"
       );
@@ -660,12 +791,35 @@
     var v = txt(val);
     return "<div><dt>" + esc(rot) + "</dt><dd" + (v ? "" : ' class="vazia"') + ">" + esc(v || "não consta") + "</dd></div>";
   }
+  // documentos e números: fonte monoespaçada, bem mais fácil de conferir contra o PDF
+  function linhaDoc(rot, val) {
+    var v = txt(val);
+    return "<div><dt>" + esc(rot) + "</dt><dd class=\"" + (v ? "mono" : "vazia") + "\">" + esc(v || "não consta") + "</dd></div>";
+  }
+  // conta quantos campos do bloco ficaram em branco, pra aparecer no título
+  function faltando(vals) {
+    var n = vals.filter(function (v) { return !txt(v); }).length;
+    return n ? "<em>" + n + (n === 1 ? " campo em branco" : " campos em branco") + "</em>" : "";
+  }
 
   function verCliente(id) {
     var c = acharCliente(id);
     if (!c) return;
 
     var html = "";
+
+    // faixa de identificação: qual contrato é este, de relance
+    html += '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">' +
+      '<span class="tag id">#' + esc(c.id) + "</span>" +
+      '<span class="tag forma ' + (/estorno/i.test(formaReembolso(c)) ? "estorno" : "pix") + '">' + esc(formaReembolso(c)) + "</span>" +
+      (c.dataAssinatura ? '<span class="tag arq">assinado ' + esc(dataBR(c.dataAssinatura)) + "</span>" : "") +
+      "</div>";
+
+    html += '<div class="ficha__imovel caixa" style="margin:0 0 14px">' +
+      '<div class="ficha__emp">' + esc(c.empreendimento || "Empreendimento não informado") + "</div>" +
+      localEFracao(c) +
+      chipsUnidade(c) +
+      "</div>";
 
     html += '<div class="pago"><span>Valor efetivamente pago<small>É sobre este valor que o reembolso é calculado.</small></span>' +
       "<b>" + esc(rs(c.valorPago) || "—") + "</b></div>";
@@ -679,9 +833,11 @@
         "</div>";
     }
 
-    html += '<div class="bloco"><h3>Identificação</h3><dl class="dl">' +
-      linha("Nome", c.nome) + linha("CPF", c.cpf) + linha("RG / órgão", c.rg) +
+    html += '<div class="bloco"><h3><span>Identificação</span>' +
+      faltando([c.nome, c.cpf, c.rg, c.estadoCivil, c.profissao]) + "</h3><dl class=\"dl\">" +
+      linha("Nome", c.nome) + linhaDoc("CPF", c.cpf) + linhaDoc("RG / órgão", c.rg) +
       linha("Nacionalidade", c.nacionalidade) + linha("Estado civil", c.estadoCivil) +
+      linha("Profissão", c.profissao) + linha("Endereço", c.endereco) +
       "</dl></div>";
 
     if (c.conjuge.nome || c.conjuge.cpf || c.conjuge.rg) {
@@ -691,17 +847,20 @@
         "</dl></div>";
     }
 
-    html += '<div class="bloco"><h3>Imóvel</h3><dl class="dl">' +
+    html += '<div class="bloco"><h3><span>Imóvel</span>' +
+      faltando([c.empreendimento, c.bloco, c.apartamento, c.cota, c.fracao, c.localizacao]) + "</h3><dl class=\"dl\">" +
       linha("Empreendimento", c.empreendimento) + linha("Bloco / torre", c.bloco) +
       linha("Apartamento / unidade", c.apartamento) + linha("Andar", andarRotulado(c)) + linha("Cota", c.cota) +
-      linha("Fração", c.fracao) + linha("Localização (estado)", c.localizacao) +
+      linha("Fração", c.fracao) + linha("Localização (cidade/UF)", c.localizacao) +
       "</dl></div>";
 
-    html += '<div class="bloco"><h3>Empresa</h3><dl class="dl">' +
-      linha("Grupo", c.empresa) + linha("Razão social", c.razaoSocial) + linha("CNPJ", c.cnpj) +
+    html += '<div class="bloco"><h3><span>Empresa vendedora</span>' +
+      faltando([c.razaoSocial, c.cnpj]) + "</h3><dl class=\"dl\">" +
+      linha("Grupo", c.empresa) + linha("Razão social", c.razaoSocial) + linhaDoc("CNPJ", c.cnpj) +
       "</dl></div>";
 
-    html += '<div class="bloco"><h3>Financeiro</h3><dl class="dl">' +
+    html += '<div class="bloco"><h3><span>Financeiro</span>' +
+      faltando([c.valorPago, c.valorTotal, c.formaPagamentoEntrada, c.dataAssinatura]) + "</h3><dl class=\"dl\">" +
       linha("Valor pago", rs(c.valorPago)) + linha("Valor total do contrato", rs(c.valorTotal)) +
       linha("Comissão de corretagem", rs(c.corretagem)) + linha("Sinal", rs(c.sinal)) +
       linha("Forma de pagamento da entrada", c.formaPagamentoEntrada) +
@@ -737,7 +896,7 @@
           return '<a class="anexo" href="' + esc(a.arquivo) + '" target="_blank" rel="noopener">' +
             '<span class="anexo__icone">PDF</span>' +
             '<span class="anexo__nome">' + esc(a.titulo) + "</span>" +
-            '<span class="anexo__seta">↗</span></a>';
+            '<span class="anexo__seta">' + ico("novaGuia") + '</span></a>';
         }).join("") +
         "</div></div>";
     }
@@ -776,7 +935,7 @@
       '<button type="button" class="btn" data-acao="email" data-id="' + esc(c.id) + '">Gerar mensagem</button>' +
       '<button type="button" class="btn" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Criar reembolso</button>' +
       '<button type="button" class="btn ' + (c.empresa === "WAM" ? "btn-wam" : "btn-primary") + '" data-acao="distrato" data-id="' + esc(c.id) + '">Gerar distrato ' + esc(c.empresa) + "</button>" +
-      '<button type="button" class="btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia, sem sair daqui">Nova guia ↗</button>';
+      '<button type="button" class="btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia, sem sair daqui">Nova guia' + ico("novaGuia") + '</button>';
 
     abrirModal(c.nome || "(sem nome)", c.empresa, html, rodape);
   }
@@ -794,6 +953,7 @@
     ["formaPagamentoEntrada", "Forma de pagamento da entrada"],
     ["formaReembolso", "Forma do reembolso (Reembolso / Estorno Cartão / Cheque)"], ["dataAssinatura", "Data da assinatura (AAAA-MM-DD)"],
     ["telefone", "Telefone / WhatsApp"], ["email", "E-mail"],
+    ["endereco", "Endereço do cliente (rua, nº, bairro, cidade/UF, CEP)", "full"],
     ["pix", "Chave PIX para reembolso", "full"], ["clausulaExtra", "Cláusula extra — entra no distrato logo abaixo do valor", "full"]
   ];
 
@@ -808,6 +968,31 @@
   }
 
   /* ---------- Preencher formulário automaticamente a partir do PDF ---------- */
+  /* Mostra, campo a campo, o que a leitura conseguiu tirar do PDF e o que
+     ficou faltando — é o que evita salvar ficha com buraco sem perceber. */
+  function mostrarRelatorioLeitura(d) {
+    var box = $("lerContratoRelatorio");
+    if (!box) return;
+    var linhas = [];
+    linhas.push('<div><span class="achou">Leu ' + (d.achou || []).length + "</span> · " +
+      ((d.faltou || []).length
+        ? '<span class="falta">faltou ' + d.faltou.length + ": " + esc(d.faltou.join(", ")) + "</span>"
+        : '<span class="achou">nada faltando</span>') + "</div>");
+    if (d.dataAssinatura) {
+      linhas.push("<div>Data de assinatura <b>" + esc(dataBR(d.dataAssinatura)) + "</b> — " +
+        esc(d.origemDataAssinatura || "origem não identificada") + "</div>");
+    }
+    if (d.valorPagoSugerido) {
+      linhas.push("<div>Valor pago sugerido <b>" + esc(rs(d.valorPagoSugerido)) + "</b>" +
+        (d.temBoletoNaoQuitado ? ' — <span class="falta">tem boleto fora da conta, confira o que foi quitado</span>' : "") +
+        "</div>");
+    }
+    if (d.formaReembolso) linhas.push("<div>Forma de devolução <b>" + esc(d.formaReembolso) + "</b></div>");
+    if (d.conjugeNome) linhas.push("<div>Cônjuge encontrado: <b>" + esc(d.conjugeNome) + "</b> (vai nas observações, não assina)</div>");
+    box.innerHTML = linhas.join("");
+    box.hidden = false;
+  }
+
   function preencherComPDF(file) {
     var st = $("lerContratoStatus");
     var form = $("formEdit");
@@ -832,22 +1017,30 @@
         rg: "rg",
         nacionalidade: "nacionalidade",
         estadoCivil: "estadoCivil",
+        profissao: "profissao",
         empreendimento: "empreendimento",
         bloco: "bloco",
         unidade: "apartamento",
         andar: "andar",
         cota: "cota",
         fracao: "fracao",
-        local: "localizacao",
+        // "cidade" vem como "Barra de São Miguel/AL"; "local" vem só "ALAGOAS".
+        // A ficha usa cidade/UF, então a cidade é que manda.
+        cidade: "localizacao",
         razaoSocial: "razaoSocial",
         cnpj: "cnpj",
-        precoCota: null, // valorPago é decisão humana, não vem do contrato
+        precoCota: null, // o preço da cota sozinho não é o valor pago
         precoIntermediacao: "corretagem",
         precoTotal: "valorTotal",
+        // sugestão calculada pelas regras (cartão cheio, PIX/TED o que passou,
+        // boleto fora); continua sendo conferida a olho antes de salvar
+        valorPagoSugerido: "valorPago",
         formaPagamentoEntrada: "formaPagamentoEntrada",
+        formaReembolso: "formaReembolso",
         dataAssinatura: "dataAssinatura",
         telefone: "telefone",
         email: "email",
+        endereco: "endereco",
         conjugeNome: "conjuge.nome",
         conjugeCpf: "conjuge.cpf",
         conjugeRg: "conjuge.rg"
@@ -863,7 +1056,7 @@
         if (!input) return;
 
         // formata número como moeda se for campo de valor
-        if (["valorTotal", "corretagem"].indexOf(nomeCampo) > -1 && typeof valor === "number") {
+        if (["valorTotal", "corretagem", "valorPago", "sinal"].indexOf(nomeCampo) > -1 && typeof valor === "number") {
           valor = moeda(valor);
         }
 
@@ -886,6 +1079,14 @@
         inpId.value = slug + (unid ? "-" + unid : "");
       }
 
+      // observações montadas no mesmo padrão das fichas escritas à mão
+      var inpObs = form.querySelector('[name="observacoes"]');
+      if (inpObs && !inpObs.value.trim()) {
+        inpObs.value = observacoesDaExtracao(d, normalizar({
+          dataAssinatura: d.dataAssinatura, empresa: d.empresa
+        }));
+      }
+
       if (st) {
         var msg = preenchidos.length + " campos preenchidos";
         if (sobrescritos.length) msg += " · " + sobrescritos.length + " sobrescritos";
@@ -893,6 +1094,7 @@
         st.textContent = msg;
         st.className = "ler-pdf__status " + ((!d.nome && !d.cpf) ? "erro" : "ok");
       }
+      mostrarRelatorioLeitura(d);
     }).catch(function (err) {
       if (st) { st.textContent = "Erro: " + (err.message || err); st.className = "ler-pdf__status erro"; }
     });
@@ -959,7 +1161,55 @@
     });
   }
 
-  /* Converte a saída do extrator numa ficha pronta pra store.novos */
+  /* Observações no mesmo formato das fichas escritas à mão:
+     "Empreendimento — Cidade/UF. Bloco X, Apt Y, Andar Z, Cota W. Proposta NNN.
+      DENTRO do prazo de arrependimento (contrato 13/09/2025, vence 20/09/2025).
+      Cônjuge: Fulana (CPF ...). ATENÇÃO: ..."                                */
+  function observacoesDaExtracao(d, f) {
+    var partes = [];
+
+    var cabeca = [d.empreendimento, d.cidade].filter(Boolean).join(" — ");
+    if (cabeca) partes.push(cabeca + ".");
+
+    var unidade = [
+      d.bloco ? "Bloco " + d.bloco : "",
+      d.unidade ? "Apt " + d.unidade : "",
+      d.andar ? "Andar " + d.andar : "",
+      d.cota ? "Cota " + d.cota : ""
+    ].filter(Boolean).join(", ");
+    if (unidade) partes.push(unidade + ".");
+
+    if (d.proposta) partes.push("Proposta " + d.proposta + ".");
+
+    var p = prazo7(f);
+    if (p) {
+      partes.push(
+        (p.aberto ? "DENTRO" : "FORA") + " do prazo de arrependimento (contrato " +
+        dataBR(f.dataAssinatura) + ", " + (p.aberto ? "vence " : "venceu ") + fmtData(p.limite) + ")."
+      );
+      if (d.origemDataAssinatura === "corpo do contrato") {
+        partes.push("ATENÇÃO: data tirada do corpo do contrato, não do certificado de assinatura — conferir.");
+      }
+    }
+
+    // o cônjuge não entra como signatário da ficha, mas fica registrado aqui
+    if (d.conjugeNome) {
+      partes.push("Cônjuge: " + d.conjugeNome + (d.conjugeCpf ? " (CPF " + d.conjugeCpf + ")" : "") + ".");
+    }
+
+    if (d.temBoletoNaoQuitado) {
+      partes.push("ATENÇÃO: há boleto na forma de pagamento — só entra no valor pago o que estiver quitado. Conferir comprovantes.");
+    }
+    if (d.faltou && d.faltou.length) {
+      partes.push("Não saiu do PDF: " + d.faltou.join(", ") + ".");
+    }
+
+    return partes.join(" ");
+  }
+
+  /* Converte a saída do extrator numa ficha pronta pra store.novos.
+     Sai no mesmo formato das fichas do clientes.js: valores como "R$ 1.234,56",
+     fração 1/52, cônjuge vazio (só o titular assina) e observações montadas. */
   function fichaAPartirDeExtracao(d, id) {
     var f = {
       id: id,
@@ -969,29 +1219,33 @@
       rg: d.rg || "",
       nacionalidade: d.nacionalidade || "brasileiro(a)",
       estadoCivil: d.estadoCivil || "",
+      profissao: d.profissao || "",
       empreendimento: d.empreendimento || "",
       bloco: d.bloco || "",
       apartamento: d.unidade || "",
       andar: d.andar || "",
       cota: d.cota || "",
-      fracao: d.fracao || "",
-      localizacao: d.local || "",
+      fracao: d.fracao || "1/52",
+      localizacao: d.cidade || "",
       razaoSocial: d.razaoSocial || "",
       cnpj: d.cnpj || "",
-      valorTotal: d.precoTotal || "",
-      corretagem: d.precoIntermediacao || "",
+      valorTotal: rs(d.precoTotal || d.precoCota) || "",
+      corretagem: rs(d.precoIntermediacao) || "",
+      valorPago: rs(d.valorPagoSugerido) || "",
       formaPagamentoEntrada: d.formaPagamentoEntrada || "",
+      formaReembolso: d.formaReembolso || "",
       dataAssinatura: d.dataAssinatura || "",
       telefone: d.telefone || "",
       email: d.email || "",
-      conjuge: {
-        nome: d.conjugeNome || "",
-        cpf: d.conjugeCpf || "",
-        rg: d.conjugeRg || ""
-      },
+      endereco: d.endereco || "",
+      // só o titular do contrato assina o distrato — cônjuge vai nas observações
+      conjuge: {},
+      pix: "",
+      clausulaExtra: "",
       parcelas: d.parcelas || [],
       observacoes: ""
     };
+    f.observacoes = observacoesDaExtracao(d, f);
     return normalizar(f);
   }
 
@@ -1011,10 +1265,11 @@
           '<span class="aviso">Selecione um PDF pra pré-preencher esta ficha, ou vários PDFs de uma vez pra criar N fichas (uma por contrato).</span>' +
         '</div>' +
         '<div class="ler-pdf__acoes">' +
-          '<label class="btn btn-primary" for="fileLerContrato">📄 Ler contrato(s) (PDF)</label>' +
+          '<label class="btn btn-primary" for="fileLerContrato">' + ico("pdf") + ' Ler contrato(s) (PDF)</label>' +
           '<input type="file" id="fileLerContrato" accept="application/pdf,.pdf" multiple hidden />' +
           '<span id="lerContratoStatus" class="ler-pdf__status"></span>' +
         '</div>' +
+        '<div id="lerContratoRelatorio" class="ler-pdf__relatorio" hidden></div>' +
       '</div>';
     }
 
@@ -1439,7 +1694,7 @@
   /* ---------- Protocolo e link de WhatsApp do atendimento ----------
      O número muda conforme a empresa da ficha. Troque aqui se mudar. */
   var WHATSAPP_EMPRESA = {
-    GAV: "5562976029439",
+    GAV: "5562976025529",
     WAM: ""   // <<< preencher com o número da WAM (só dígitos, com 55 na frente)
   };
 
@@ -1779,8 +2034,10 @@
     // não o "recorrente" que vem depois. Cartão principal -> estorno;
     // depósito/TED/PIX/débito principal -> devolução por transferência.
     var principal = s.split("+")[0];
+    // cartão vem ANTES de "debito": "cartão de débito" é cartão, logo estorno.
+    // "débito em conta"/"débito automático" não é cartão — esse sim vira reembolso.
+    if (/cartao|credito|visa|master|elo|amex|hiper/.test(principal)) return "Estorno Cartão";
     if (/deposit|transfer|ted|doc|pix|boleto|debito/.test(principal)) return "Reembolso";
-    if (/cartao|credito/.test(principal)) return "Estorno Cartão";
     // sem instrumento claro no início: cai para o que houver
     if (/cartao|credito/.test(s)) return "Estorno Cartão";
     return "Reembolso";
@@ -2353,6 +2610,8 @@
   });
 
   $("busca").addEventListener("input", function () { termo = this.value; renderGrid(); });
+
+  $("filtroData").addEventListener("change", function () { filtroData = this.value; renderGrid(); });
 
   $("chipsEmpresa").addEventListener("click", function (e) {
     var chip = e.target.closest(".chip");

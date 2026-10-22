@@ -113,7 +113,9 @@
   // "Alagoas" -> "AL", "Bahia" -> "BA", já em sigla retorna igual
   function ufSigla(nome) {
     if (!nome) return "";
+    // a sigla às vezes sai partida pelo pdf.js: "G O" -> "GO"
     var n = String(nome).trim();
+    if (/^[A-Z]\s+[A-Z]$/.test(n)) n = n.replace(/\s+/g, "");
     if (/^[A-Z]{2}$/.test(n)) return n;
     var map = {
       acre: "AC", alagoas: "AL", amapa: "AP", amazonas: "AM", bahia: "BA",
@@ -157,8 +159,26 @@
     return linhas.join("\n");
   }
 
-  /* ---------- lê o PDF e devolve o texto ---------- */
-  var MAX_PAGINAS = 15;
+  /* ---------- lê o PDF e devolve o texto ----------
+     Os dados do cliente ficam nas primeiras páginas, mas a DATA DE ASSINATURA
+     de verdade está no certificado (D4Sign / ZapSign / GSign), que fica nas
+     ÚLTIMAS. Por isso lemos as N primeiras E as M últimas — ler o contrato
+     inteiro (55+ páginas de cláusulas padrão) só deixaria lento sem ganho. */
+  var PAG_INICIO = 16;   // quadro-resumo, proposta, recibo de corretagem
+  var PAG_FIM = 10;      // certificado de assinaturas e anexos finais
+
+  function paginasQueImportam(total) {
+    if (total <= PAG_INICIO + PAG_FIM) {
+      var todas = [];
+      for (var i = 1; i <= total; i++) todas.push(i);
+      return todas;
+    }
+    var lista = [];
+    for (var a = 1; a <= PAG_INICIO; a++) lista.push(a);
+    for (var b = total - PAG_FIM + 1; b <= total; b++) lista.push(b);
+    return lista;
+  }
+
   function lerPDF(file) {
     return new Promise(function (resolve, reject) {
       if (!window.pdfjsLib) { reject(new Error("biblioteca de PDF não carregou")); return; }
@@ -168,18 +188,16 @@
         var dados = new Uint8Array(fr.result);
         window.pdfjsLib.getDocument({ data: dados }).promise.then(function (pdf) {
           var partes = [], seq = Promise.resolve();
-          var total = Math.min(pdf.numPages, MAX_PAGINAS);
-          for (var p = 1; p <= total; p++) {
-            (function (n) {
-              seq = seq.then(function () {
-                return pdf.getPage(n).then(function (page) {
-                  return page.getTextContent().then(function (tc) {
-                    partes.push(itensParaLinhas(tc.items));
-                  });
+          var paginas = paginasQueImportam(pdf.numPages);
+          paginas.forEach(function (n) {
+            seq = seq.then(function () {
+              return pdf.getPage(n).then(function (page) {
+                return page.getTextContent().then(function (tc) {
+                  partes.push(itensParaLinhas(tc.items));
                 });
               });
-            })(p);
-          }
+            });
+          });
           seq.then(function () { resolve(partes.join("\n")); }).catch(reject);
         }).catch(reject);
       };
@@ -206,9 +224,53 @@
     return "";
   }
 
+  /* O pdf.js remonta o texto a partir de pedaços posicionados, e volta e meia
+     parte um rótulo no meio: "Na cionalidade", "Primeiro Vencim ento". Isso
+     quebrava as buscas por rótulo. Aqui a gente remenda os rótulos conhecidos
+     aceitando UM espaço solto entre letras — que é o defeito que acontece. */
+  var ROTULOS = [
+    "Nacionalidade", "Profissão", "Identidade", "Nascimento", "Endereço",
+    "Telefone", "Celular", "Vencimento", "Documento", "Empreendimento",
+    "Apartamento", "Localização", "Pagamento", "Corretagem", "Comissão",
+    "Intermediação", "Proponente", "Comprador", "Adquirente", "Bandeira",
+    "Cidade", "Bairro", "Estado", "Município", "Residencial"
+  ];
+  function repararRotulos(t) {
+    ROTULOS.forEach(function (p) {
+      var re = new RegExp("\\b" + p.split("").join("\\s?"), "gi");
+      t = t.replace(re, function (achado) {
+        // só mexe no que está realmente quebrado — e mantém a caixa original,
+        // senão "EMPREENDIMENTO" em caixa alta virava "Empreendimento" e
+        // estragava a razão social copiada do documento
+        if (achado.indexOf(" ") === -1) return achado;
+        var limpo = achado.replace(/\s+/g, "");
+        return limpo === limpo.toUpperCase() ? p.toUpperCase() : p;
+      });
+    });
+    return t;
+  }
+
+  /* Alguns contratos (principalmente os da WAM) saem do pdf.js com espaço
+     solto dentro dos números: "753.697.701 - 82", "(62) 98128 - 8877",
+     "45.298.124/0001 - 33". Grudar separador entre dígitos conserta CPF,
+     CNPJ, RG e telefone de uma vez só, sem risco pros outros campos. */
+  function repararNumeros(t) {
+    return t
+      .replace(/(\d)\s*([-.\/])\s*(\d)/g, "$1$2$3")
+      .replace(/(\d)\s*([-.\/])\s*(\d)/g, "$1$2$3");  // 2ª passada: "1 . 2 . 3"
+  }
+
+  /* "GUIGUSSILVA@HOT MAIL.COM" — o endereço vem partido no meio do domínio */
+  function repararEmails(t) {
+    return t.replace(/([A-Za-z0-9._%+\-]+)\s*@\s*([A-Za-z0-9.\- ]{3,40}\.[A-Za-z]{2,})/g,
+      function (todo, usuario, dominio) {
+        return usuario + "@" + dominio.replace(/\s+/g, "");
+      });
+  }
+
   /* ---------- extrai os campos do texto ---------- */
   function extrair(texto) {
-    var t = String(texto || "").replace(/\r/g, "");
+    var t = repararEmails(repararNumeros(repararRotulos(String(texto || "").replace(/\r/g, ""))));
     var d = {};
 
     d.empresa = detectarEmpresa(t);
@@ -233,13 +295,63 @@
     if (nasc) d.nascimento = paraISO(nasc);
 
     /* PROFISSÃO — terminadores precisam ser palavras inteiras ou rótulo com ":" */
-    var prof = primeiro(/Profiss[ãa]o\s*:\s*([^\n]+?)(?:\s{2,}|(?:Data|CPF|RG|Identidade|Nacional|Estado|Nasc|E-mail|Endere[çc]o|End\.|$)\s*:)/i, t);
+    // os terminadores aceitam sufixo (Nacional -> Nacionalidade:, Nasc -> Nascimento:),
+    // senão "MILITAR Nacionalidade: brasileiro(a)" não era cortado no lugar certo
+    var prof = primeiro(/Profiss[ãa]o\s*:\s*([^\n]+?)(?:\s{2,}|\s+(?:Data|CPF|RG|Identidade|Nacional|Estado|Nasc|E-mail|Endere[çc]o|End)\w*\.?\s*:)/i, t);
     if (!prof) prof = primeiro(/Profiss[ãa]o\s*:\s*([^\n]+?)(?:\s{2,}|$)/i, t);
     if (!ehNaoInformado(prof)) d.profissao = prof;
 
     /* TELEFONE / CELULAR */
     var tel = primeiro(/(?:Tel(?:efone)?|Cel\.?|Celular|Contato)\s*(?:com\.|res\.)?\s*:?\s*(?:\+?\d{1,3}\s*)?(\(?\d{2}\)?\s*\d{4,5}[\s-]?\d{4})/i, t);
     if (tel) d.telefone = normalizarTelefone(tel);
+
+    /* ENDEREÇO DO CLIENTE — vem espalhado em rótulos separados:
+       "Endereço Residencial: Rua X, 101, Apto 203 | Bairro: Y | Cidade: Z |
+        UF: RS | CEP: 90640050". Junta tudo numa linha só.
+
+       IMPORTANTE: a busca é feita numa JANELA logo depois do rótulo de
+       endereço do cliente, nunca no documento inteiro. O contrato descreve
+       o endereço do EMPREENDIMENTO em vários pontos ("Bairro Mato Queimado,
+       Gramado"), e procurar "Bairro:" solto trazia o endereço do resort no
+       lugar do endereço de quem comprou. */
+    var iEnd = t.search(/Endere[çc]o(?:\s+Residencial)?\s*:/i);
+    if (iEnd > -1) {
+      var janela = t.slice(iEnd, iEnd + 420);
+
+      var rua = primeiro(/Endere[çc]o(?:\s+Residencial)?\s*:\s*([^\n]+?)(?:\s{2,}|\s*(?:Bairro|Cidade|Munic[íi]pio|UF|CEP|Tel)\s*:|$)/i, janela);
+      // rótulos de formulário em branco ("Endereço do 01º comprador") não contam
+      if (/^(?:n[ãa]o\s+informad|endere[çc]o\s+d)/i.test(rua)) rua = "";
+
+      var bairro = primeiro(/\bBairro\s*:\s*([^\n]+?)(?:\s{2,}|\s*(?:Cidade|Munic[íi]pio|UF|CEP|Tel)\s*:|$)/i, janela);
+      if (/^(?:bairro\s+d|n[ãa]o\s+informad)/i.test(bairro)) bairro = "";
+
+      var cidadeCli = primeiro(/(?:Cidade|Munic[íi]pio)\s*:\s*([^\n]+?)(?:\s{2,}|\s*(?:UF|CEP|Estado|Tel)\s*:|$)/i, janela);
+      if (/^(?:cidade\s+d|munic[íi]pio\s+d|n[ãa]o\s+informad)/i.test(cidadeCli)) cidadeCli = "";
+
+      var ufCli = primeiro(/\bUF\s*:\s*([A-Z]{2})\b/, janela);
+      if (/^(?:UF\s+d)/i.test(ufCli)) ufCli = "";
+
+      // alguns layouts emendam tudo numa linha só:
+      // "Rua X, 39, CENTRO Cidade: Tunas do Paraná, PR" — corta o rótulo
+      // de dentro da rua/bairro e aproveita o que vinha depois dele
+      var vazou = (bairro || rua).match(/^([\s\S]*?)\s*(?:Cidade|Munic[íi]pio)\s*:\s*([^,\n]+?)\s*,\s*([A-Z]{2})\b/i);
+      if (vazou) {
+        if (bairro) bairro = vazou[1].trim(); else rua = vazou[1].trim();
+        if (!cidadeCli) cidadeCli = vazou[2].trim();
+        if (!ufCli) ufCli = vazou[3];
+      }
+
+      var cep = primeiro(/\bCEP\s*:?\s*(\d{5}-?\d{3})\b/i, janela);
+      if (cep && cep.indexOf("-") === -1) cep = cep.slice(0, 5) + "-" + cep.slice(5);
+
+      var partesEnd = [
+        rua, bairro,
+        [cidadeCli, ufCli].filter(Boolean).join("/"),
+        cep ? "CEP " + cep : ""
+      ].filter(Boolean);
+      // sem rua o resto não identifica ninguém ("UF/MG, CEP 75690-000" é lixo)
+      if (rua && partesEnd.length >= 2) d.endereco = partesEnd.join(", ");
+    }
 
     /* E-MAIL */
     var email = primeiro(/([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,})/, t);
@@ -248,6 +360,9 @@
     /* RG */
     var rgNum = primeiro(/Identidade\s*:?\s*([0-9Xx][0-9Xx.\-\/]{2,})\s*Org/i, t);
     var rgOrg = primeiro(/Org(?:[ãa]o)?\.?\s*(?:Exp\.?|Emissor)?\s*:?\s*([A-Za-zÀ-ú]{2,}\s*[-\/]?\s*[A-Za-zÀ-ú]{2})\b/i, t);
+    // "Identidade: 5750188 Órgão expedidor:" — sem valor depois, o próprio rótulo
+    // vinha parar no campo; aqui ele é descartado
+    if (/^(?:[óo]rg[ãa]o|expedidor|emissor)/i.test(rgOrg)) rgOrg = "";
     if (!rgNum) {
       // GAV proposta: "Identidade: 1313086967   Org Exp: SSP - BA"
       var mgav = t.match(/Identidade:?\s*(\d{4,})\s+Org\s+Exp:?\s*([A-Z]{2,4})\s*[-–]\s*([A-Z]{2})/i);
@@ -265,7 +380,8 @@
       if (mrg) { rgNum = mrg[1]; if (mrg[2] && !rgOrg) rgOrg = mrg[2]; }
     }
     if (!ehNaoInformado(rgNum)) {
-      var org = (!ehNaoInformado(rgOrg)) ? " - " + rgOrg.replace(/\s*[-–]\s*/g, "/") : "";
+      // formato das fichas: "6084313763 SSPDI/RS" (sem traço separando o órgão)
+      var org = (!ehNaoInformado(rgOrg)) ? " " + rgOrg.replace(/\s*[-–]\s*/g, "/").replace(/\s+/g, "") : "";
       d.rg = norm(/[A-Za-z]/.test(rgNum) ? rgNum : rgNum + org);
     }
 
@@ -279,7 +395,10 @@
     /* EMPREENDIMENTO */
     var emp = primeiro(/EMPREENDIMENTO\s*:\s*([^\n(]+)/i, t);
     if (!emp) emp = primeiro(/empreendimento\s+denominad[oa]\s+["'”“]?([A-ZÀ-Ú][^\n"'”“]+?)["'”“]?(?:\s*\(|,|\n)/i, t);
-    emp = emp.replace(/\s*\(.*$/, "").trim();
+    emp = emp.replace(/\s*\(.*$/, "").trim()
+      // "Encontro d as Águas" — o pdf.js parte os artigos; remenda das/dos/da/do/de
+      .replace(/\bd\s+(as|os|a|o|e)\b/gi, "d$1")
+      .replace(/\s{2,}/g, " ");
     if (emp) d.empreendimento = emp;
 
     /* CIDADE / UF do empreendimento — várias estratégias, do mais confiável ao menos.
@@ -312,8 +431,9 @@
       var mRod = t.match(/([A-ZÀ-Ú][^,\n]{2,60}?)\s*,\s*\d{1,2}\s+de\s+[A-Za-zç]+\s+de\s+\d{4}/);
       if (mRod) {
         var linha = mRod[1].trim();
-        var mSplit = linha.match(/^(.+?)\s*[-–\/]\s*([A-ZÀ-Úa-zà-ú]{2,20})$/);
-        cid = mSplit ? mSplit[1].trim() + "/" + ufSigla(mSplit[2]) : linha;
+        // a UF pode vir partida ("Caldas Novas - G O"), por isso aceita espaço
+        var mSplit = linha.match(/^(.+?)\s*[-–\/]\s*([A-ZÀ-Úa-zà-ú][A-ZÀ-Úa-zà-ú\s]{1,20})$/);
+        cid = mSplit ? mSplit[1].trim() + "/" + ufSigla(mSplit[2].trim()) : linha;
       }
     }
     if (cid) d.cidade = cid;
@@ -326,13 +446,26 @@
     var andar = primeiro(/\bAndar\s*:\s*(\d{1,2}|t[ée]rreo|T)\b/i, t);
     if (andar) d.andar = andar;
 
-    /* APARTAMENTO / UNIDADE */
-    var apto = primeiro(/(?:Apartamento|Apto|Unidade\s+Aut[ôo]noma)\s*:?\s*n?º?\.?\s*([0-9]{1,5}[A-Za-z]?)\b/i, t);
+    /* APARTAMENTO / UNIDADE — cuidado: o endereço RESIDENCIAL do comprador vem
+       antes no documento e costuma trazer "Apto 203". A unidade do contrato é
+       escrita por extenso ("Apartamento: 439" / "Apartamento nº 439"), então a
+       palavra inteira tem prioridade e "Apto" só entra se não houver outra. */
+    var apto = primeiro(/\bApartamento\s*:?\s*n?[º°]?\.?\s*([0-9]{1,5}[A-Za-z]?)\b/i, t) ||
+               primeiro(/\bUnidade\s+Aut[ôo]noma\s*(?:n[º°]?\.?)?\s*:?\s*([0-9]{1,5}[A-Za-z]?)\b/i, t) ||
+               primeiro(/\bApto\.?\s*:?\s*n?[º°]?\.?\s*([0-9]{1,5}[A-Za-z]?)\b/i, t);
     if (apto) d.unidade = apto;
 
     /* COTA */
     var cota = primeiro(/Cota\s*(?:n[º°o]?\.?)?\s*:?\s*([0-9]{1,4}[A-Za-z]?)\b/i, t);
     if (cota) d.cota = cota;
+
+    /* WAM/pousada: linha solta "Bloco CAA , 106 , Cota 10C" */
+    var mBUC = t.match(/\bBloco\s+([A-Za-z0-9-]{1,6})\s*,\s*([0-9]{1,5}[A-Za-z]?)\s*,\s*Cota\s+([0-9A-Za-z]{1,5})/i);
+    if (mBUC) {
+      if (!d.bloco) d.bloco = mBUC[1];
+      if (!d.unidade) d.unidade = mBUC[2];
+      if (!d.cota) d.cota = mBUC[3];
+    }
 
     /* WAM: campo combinado "Bloco, Unidade Imobiliária e Cota adquirida: L , 401 , 03" */
     var comb = t.match(/Bloco,?\s*Unidade\s*Imobili[áa]ria\s*e\s*Cota\s*adquirida\s*:?\s*([^\n]+)/i);
@@ -355,9 +488,16 @@
 
     /* PREÇOS */
     // Preço da cota / Preço total / VALOR TOTAL DA VENDA
+    var jaEhTotal = false;
     var pCota = primeiro(/Pre[çc]o\s+da\s+Cota\s*\(?[^)]*\)?\s*:?\s*R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t);
-    if (!pCota) pCota = primeiro(/VALOR\s+TOTAL\s+DA\s+VENDA\s*:?\s*R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t);
-    if (!pCota) pCota = primeiro(/Pre[çc]o\s+total[^\n]{0,50}?R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t);
+    if (!pCota) {
+      // "VALOR TOTAL DA VENDA" já é o total do contrato: não soma corretagem em cima
+      pCota = primeiro(/VALOR\s+TOTAL\s+DA\s+VENDA\s*:?\s*R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t);
+      if (pCota) jaEhTotal = true;
+    }
+    // "Preço total Cota de Direito de Uso (CDU) sem a parcela de intermediação
+    //  (corretagem) : R$\n13.588,00" — rótulo longo e o valor na linha de baixo
+    if (!pCota) { pCota = primeiro(/Pre[çc]o\s+total[\s\S]{0,140}?R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t); if (pCota) jaEhTotal = true; }
     if (!pCota) pCota = primeiro(/\(i\.1\)\s*R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t);
     if (pCota) d.precoCota = paraNumero(pCota);
 
@@ -365,10 +505,10 @@
     var pInt = primeiro(/(?:Valor\s+dos\s+Servi[çc]os\s+de\s+Intermedia[çc][ãa]o|Comiss[ãa]o\s+de\s+Corretagem)\s*:?\s*R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})/i, t);
     if (pInt) d.precoIntermediacao = paraNumero(pInt);
 
-    // Total
-    if (d.precoCota && d.precoIntermediacao) {
-      d.precoTotal = d.precoCota + d.precoIntermediacao;
-    }
+    // Total do contrato
+    if (jaEhTotal) d.precoTotal = d.precoCota;
+    else if (d.precoCota && d.precoIntermediacao) d.precoTotal = d.precoCota + d.precoIntermediacao;
+    else if (d.precoCota) d.precoTotal = d.precoCota;
 
     /* FORMA DE PAGAMENTO — intermediação (linha única) + preço (tabela de parcelas) */
     var fpInt = primeiro(/Forma\s+de\s+Pagamento\s+dos\s+Servi[çc]os\s+de\s+Intermedia[çc][ãa]o\s*:?\s*([^\n]+)/i, t);
@@ -415,61 +555,136 @@
     // GAV: tabela do RECIBO DE COMISSÃO DE CORRETAGEM
     var mGavRec = t.match(/RECIBO\s+DA\s+COMISS[ÃA]O\s+DE\s+CORRETAGEM[\s\S]*?Primeiro\s+Vencimento([\s\S]*?)(?=DESCRI[ÇC][ÃA]O|NOTA\s+EXPLICATIVA)/i);
     if (mGavRec) {
-      var linhasG = mGavRec[1].split(/\n/);
-      linhasG.forEach(function (ln) {
-        // "01 R$ 1,275.00 Rede Cartao 178626954 MASTER/CreditoAVista R$ 1,275.00 07/10/2026"
-        // "04 R$ 138.75 -- Boleto -- -- R$ 555.00 07/10/2026"
-        // "01 R$ 1,440.00 -- PIX RESV098...E8B9 -- R$ 1,440.00 07/09/2026"
-        var m = ln.match(/^\s*(\d{1,3})\s+R\$\s*(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})\s+\S+\s+(PIX|Boleto|Cart[ãa]o|D[éeE]bito|TED|Dep[óoO]sito|Transfer[eê]ncia)\s+.*?(\d{1,2}\/\d{1,2}\/\d{2,4})/i);
-        if (m) {
-          parcelas.push({
-            tipo: "Intermediação",
-            qtd: parseInt(m[1], 10),
-            valor: paraNumero(m[2]),
-            forma: m[3].trim(),
-            vencimento: paraISO(m[4])
-          });
-        }
-      });
+      // Uma linha da tabela pode ocupar VÁRIAS linhas do texto, porque o código
+      // do PIX é longo e o pdf.js o parte em pedaços:
+      //   "01 R$ 1,330.00 -- PIX\nRESV112 6330094\n8454250IM4UBCX\n726865B\n-- R$ 1,330.00 13/09/2025"
+      // Então a varredura é no bloco inteiro, deixando o miolo atravessar quebras.
+      //   grupos: qtd, valor unit., forma, miolo (nº doc + bandeira), total, 1º venc.
+      var reLinha = new RegExp(
+        "(\\d{1,3})\\s+R\\$\\s*(\\d{1,3}(?:[.,]\\d{3})*[.,]\\d{2})\\s+\\S+\\s+" +
+        "(PIX|Boleto|Cart[ãa]o|D[éeE]bito|TED|Dep[óoO]sito|Transfer[eê]ncia)" +
+        "([\\s\\S]{0,160}?)R\\$\\s*(\\d{1,3}(?:[.,]\\d{3})*[.,]\\d{2})\\s+(\\d{1,2}/\\d{1,2}/\\d{2,4})", "gi");
+      var m;
+      while ((m = reLinha.exec(mGavRec[1])) !== null) {
+        var miolo = norm(m[4] || "").replace(/(^|\s)--(\s|$)/g, " ").trim();
+        // bandeira/operação: "MASTER/CreditoAVista", "VISA ELECTRON/Debito"
+        var bandeira = (miolo.match(/\b(VISA(?:\s+ELECTRON)?|MASTER(?:CARD)?|ELO|AMEX|HIPER\w*)\b\s*\/?\s*(Cr[ée]dito\w*|D[ée]bito\w*)?/i) || [])[0] || "";
+        // nº do documento: código longo do PIX ou NSU/CV do cartão
+        var doc = (miolo.match(/\b[A-Z0-9]{8,}\b/) || [])[0] || "";
+        var forma = m[3].trim();
+        // "Cartão" sozinho não diz crédito ou débito — a bandeira diz. Junta os dois,
+        // senão o distrato sai falando "crédito" num pagamento que foi no débito.
+        if (/cart[ãa]o/i.test(forma) && /d[ée]bito/i.test(bandeira)) forma = "Cartão de Débito";
+        else if (/cart[ãa]o/i.test(forma) && /cr[ée]dito/i.test(bandeira)) forma = "Cartão de Crédito";
+        parcelas.push({
+          tipo: "Intermediação",
+          qtd: parseInt(m[1], 10),
+          valor: paraNumero(m[2]),
+          forma: forma,
+          vencimento: paraISO(m[6]),
+          doc: doc,
+          bandeira: bandeira,
+          total: paraNumero(m[5])
+        });
+      }
     }
 
     if (parcelas.length) d.parcelas = parcelas;
 
     // texto humano da forma de pagamento (o campo formaPagamentoEntrada da ficha)
+    // Formato: "PIX R$ 1.330,00 (Nº Doc ABC123, 13/09/2025) + Boleto 2x R$ 1.330,00
+    //           = R$ 2.660,00 (1º venc 05/10/2025)"
+    function moedaBR(n) {
+      if (n === null || n === undefined) return "?";
+      return "R$ " + n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+    function dataBRde(iso) {
+      var m = String(iso || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      return m ? m[3] + "/" + m[2] + "/" + m[1] : "";
+    }
+    function descreverParcela(p) {
+      var base = (p.forma || "Pagamento");
+      // 1 parcela: "PIX R$ 1.330,00"; várias: "Boleto 2x R$ 1.330,00 = R$ 2.660,00"
+      base += p.qtd > 1
+        ? " " + p.qtd + "x " + moedaBR(p.valor) + " = " + moedaBR(p.total != null ? p.total : p.qtd * p.valor)
+        : " " + moedaBR(p.valor);
+      var detalhe = [];
+      if (p.doc) detalhe.push("Nº Doc " + p.doc);
+      if (p.bandeira && !/^cart/i.test(p.forma)) detalhe.push(p.bandeira);
+      else if (p.bandeira) detalhe.push(p.bandeira);
+      var dv = dataBRde(p.vencimento);
+      if (dv) detalhe.push((p.qtd > 1 ? "1º venc " : "") + dv);
+      return base + (detalhe.length ? " (" + detalhe.join(", ") + ")" : "");
+    }
+
     if (fpInt || parcelas.length) {
-      var fp = [];
-      // Intermediação: usa a linha original do WAM se tiver; senão monta a partir das parcelas
-      if (fpInt) {
-        fp.push("Intermediação: " + fpInt);
-      } else {
-        var parcInt = parcelas.filter(function (p) { return p.tipo === "Intermediação"; });
-        if (parcInt.length) {
-          var resInt = parcInt.map(function (p) {
-            return p.qtd + "x R$ " + (p.valor ? p.valor.toFixed(2).replace(".", ",") : "?") + " " + (p.forma || "");
-          }).join(" + ");
-          fp.push("Intermediação: " + resInt);
-        }
-      }
-      // Preço: sempre do resumo das parcelas
+      var parcInt = parcelas.filter(function (p) { return p.tipo === "Intermediação"; });
       var parcPreco = parcelas.filter(function (p) { return p.tipo === "Preço"; });
+      var fp = [];
+      if (parcInt.length) {
+        fp.push(parcInt.map(descreverParcela).join(" + "));
+      } else if (fpInt) {
+        fp.push("Intermediação: " + fpInt);
+      }
       if (parcPreco.length) {
-        var resPreco = parcPreco.map(function (p) {
-          return p.qtd + "x R$ " + (p.valor ? p.valor.toFixed(2).replace(".", ",") : "?") + " " + (p.forma || "");
-        }).join(" + ");
-        fp.push("Preço: " + resPreco);
+        fp.push("Preço da cota: " + parcPreco.map(descreverParcela).join(" + "));
       }
       d.formaPagamentoEntrada = fp.join(" | ");
     }
 
-    /* DATA DE ASSINATURA — última linha "CIDADE - UF, 07 de setembro de 2026" ou "Caldas Novas, 15 de Agosto de 2026" */
-    var dataAss = primeiro(/(?:[A-ZÀ-Ú][A-Za-zà-ú ]+(?:\s*[-–]\s*[A-Za-z]{2,})?)\s*,\s*(\d{1,2}\s+de\s+[A-Za-zç]+\s+de\s+\d{4})/, t);
-    if (dataAss) d.dataAssinatura = paraISO(dataAss);
+    /* Último recurso: alguns contratos descrevem o pagamento em texto corrido
+       ("Forma de pagamento: I. 3 parcelas mensais de fidelização..."), sem
+       tabela nenhuma. Melhor trazer o trecho cru pra conferência do que deixar
+       o campo vazio — é o tipo de coisa que passa batido e vira erro no valor. */
+    if (!d.formaPagamentoEntrada) {
+      var bruto = primeiro(/Forma\s+de\s+pagamento\s*:?\s*([\s\S]{20,500}?)(?=\n\s*[A-Z]\.\d|\n\s*Reajuste|\n\s*Cl[áa]usula|$)/i, t);
+      if (bruto) d.formaPagamentoEntrada = norm(bruto).slice(0, 400);
+    }
 
-    /* CNPJ da empresa vendedora (primeiro do documento) */
-    var cnpj = primeiro(/CNPJ[^0-9]{0,18}?([0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}-?[0-9]{2})\b/i, t);
+    /* DATA DE ASSINATURA ----------------------------------------------
+       A data do corpo do contrato ("IPOJUCA - PE, 13 de setembro de 2025")
+       é a data de EMISSÃO, que nem sempre bate com a da assinatura — e é
+       a da assinatura que faz o prazo de 7 dias correr. Então a ordem é:
+         1) certificado D4Sign: "DATE_ATOM: 2025-09-13T14:47:35-03:00"
+         2) certificado ZapSign/GSign: "Assinado em 13/09/2025"
+         3) data por extenso no rodapé do contrato (último recurso)
+       Entre várias assinaturas vale a ÚLTIMA — o contrato só fica fechado
+       quando todo mundo assinou.                                        */
+    var assinaturas = [];
+    var reAtom = /DATE_ATOM:\s*(\d{4})-(\d{2})-(\d{2})T/gi, mAtom;
+    while ((mAtom = reAtom.exec(t)) !== null) {
+      assinaturas.push(mAtom[1] + "-" + mAtom[2] + "-" + mAtom[3]);
+    }
+    if (!assinaturas.length) {
+      var reAss = /Assin(?:ou|ado|atura)[^\n]{0,60}?(\d{1,2}\/\d{1,2}\/\d{4})/gi, mAss;
+      while ((mAss = reAss.exec(t)) !== null) assinaturas.push(paraISO(mAss[1]));
+    }
+    if (assinaturas.length) {
+      assinaturas.sort();
+      d.dataAssinatura = assinaturas[assinaturas.length - 1];
+      d.origemDataAssinatura = "certificado";
+    } else {
+      var dataAss = primeiro(/(?:[A-ZÀ-Ú][A-Za-zà-ú ]+(?:\s*[-–]\s*[A-Za-z]{2,})?)\s*,\s*(\d{1,2}\s+de\s+[A-Za-zç]+\s+de\s+\d{4})/, t);
+      if (dataAss) { d.dataAssinatura = paraISO(dataAss); d.origemDataAssinatura = "corpo do contrato"; }
+    }
+
+    /* Nº DA PROPOSTA / VENDA — ajuda a casar a ficha com o PDF */
+    // os parênteses vêm com espaço dentro: "AREYA BARRA RESORT ( 287265 )"
+    var prop = primeiro(/EMPREENDIMENTO[^\n(]{0,120}\(\s*(\d{5,8})\s*\)/i, t) ||
+               primeiro(/Proposta\s*:?\s*n?[º°o]?\.?\s*(\d{5,8})\b/i, t) ||
+               primeiro(/Venda\s*:?\s*(\d{4,8})\s+Dt\.?\s*Venda/i, t);
+    if (prop) d.proposta = prop;
+
+    /* CNPJ da empresa vendedora (primeiro do documento).
+       Vem quebrado em duas linhas e com espaço antes do traço do dígito:
+       "CNPJ sob o n.º\n45.298.124/0001 - 33" — por isso os \s* no meio. */
+    var cnpj = primeiro(
+      /CNPJ[^0-9]{0,24}?([0-9]{2}\s*\.?\s*[0-9]{3}\s*\.?\s*[0-9]{3}\s*\/?\s*[0-9]{4}\s*-?\s*[0-9]{2})(?!\d)/i, t);
     if (cnpj) {
       var cd = cnpj.replace(/\D/g, "");
-      d.cnpj = cd.slice(0, 2) + "." + cd.slice(2, 5) + "." + cd.slice(5, 8) + "/" + cd.slice(8, 12) + "-" + cd.slice(12);
+      if (cd.length === 14) {
+        d.cnpj = cd.slice(0, 2) + "." + cd.slice(2, 5) + "." + cd.slice(5, 8) + "/" + cd.slice(8, 12) + "-" + cd.slice(12);
+      }
     }
 
     /* EMPRESA vendedora (razão social) */
@@ -482,11 +697,15 @@
     var empresaVend = "";
     for (var i = 0; i < padroes.length && !empresaVend; i++) empresaVend = primeiro(padroes[i], t);
     empresaVend = empresaVend.replace(/^(Proponho\s+[aà]\s+Empresa\s+|[aà]\s+Empresa\s+|Empresa\s+|[aà]\s+["'”“][^"'”“]*["'”“]\)\s*,?\s*)/i, "").trim();
+    // o PDF deixa um ponto solto no fim ("... SPE LTDA ."): junta ao LTDA
+    empresaVend = empresaVend.replace(/\s+\.\s*$/, ".").replace(/\s{2,}/g, " ").trim();
     if (empresaVend) d.razaoSocial = empresaVend;
 
     /* LOCAL / ESTADO do empreendimento */
     var uf = primeiro(/Estado\s+d[eo]\s+([A-Za-zÀ-ú]{4,})/i, t);
     if (uf) d.local = uf.toUpperCase();
+    // sem cidade identificada, pelo menos a sigla do estado entra na ficha
+    if (!d.cidade && uf) d.cidade = ufSigla(uf);
 
     /* CÔNJUGE — 2 caminhos:
        (a) WAM: quadro-resumo com 2 colunas (ADQUIRENTE | Cônjuge anuente).
@@ -514,6 +733,48 @@
         }
       }
     }
+
+    /* VALOR PAGO (sugestão) --------------------------------------------
+       Regra do projeto, aplicada sobre as parcelas encontradas:
+         · cartão (crédito OU débito) → entra o valor cheio
+         · PIX / TED / depósito / transferência → entra o que passou
+         · boleto → NÃO entra: só conta o que já foi quitado, e o contrato
+           não diz o que o cliente pagou. Esse ajuste é do humano.
+       Por isso é "sugerido": o valor final sempre passa pela conferência. */
+    var pagoSugerido = 0, temBoleto = false, instrumentos = [];
+    (d.parcelas || []).forEach(function (p) {
+      var f = String(p.forma || "").toLowerCase()
+        .normalize("NFD").replace(/[̀-ͯ]/g, "");
+      var total = (p.qtd || 1) * (p.valor || 0);
+      if (/boleto/.test(f)) { temBoleto = true; instrumentos.push("boleto"); return; }
+      if (/cartao|credito|debito|visa|master|elo|amex|hiper|rede/.test(f)) {
+        pagoSugerido += total; instrumentos.push("cartao");
+      } else if (/pix|ted|doc|deposito|transfer/.test(f)) {
+        pagoSugerido += total; instrumentos.push(/pix/.test(f) ? "pix" : "transferencia");
+      }
+    });
+    if (pagoSugerido > 0) d.valorPagoSugerido = Math.round(pagoSugerido * 100) / 100;
+    d.temBoletoNaoQuitado = temBoleto;
+
+    /* FORMA DO REEMBOLSO — decide o instrumento PRINCIPAL (o primeiro).
+       Cartão de débito É cartão: vira estorno, não reembolso.
+       Débito em conta / boleto / PIX / TED → reembolso por transferência. */
+    var principal = instrumentos[0] || "";
+    if (principal === "cartao") d.formaReembolso = "Estorno Cartão";
+    else if (principal) d.formaReembolso = "Reembolso";
+
+    /* O QUE FALTOU — alimenta o relatório de leitura na tela */
+    var obrigatorios = {
+      nome: "nome", cpf: "CPF", rg: "RG", estadoCivil: "estado civil", profissao: "profissão",
+      empreendimento: "empreendimento", cidade: "cidade/UF", bloco: "bloco", unidade: "unidade",
+      cota: "cota", razaoSocial: "razão social", cnpj: "CNPJ", precoCota: "valor do contrato",
+      formaPagamentoEntrada: "forma de pagamento", dataAssinatura: "data de assinatura",
+      telefone: "telefone", email: "e-mail", endereco: "endereço"
+    };
+    d.achou = []; d.faltou = [];
+    Object.keys(obrigatorios).forEach(function (k) {
+      (d[k] === undefined || d[k] === null || d[k] === "" ? d.faltou : d.achou).push(obrigatorios[k]);
+    });
 
     return d;
   }

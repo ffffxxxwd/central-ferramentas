@@ -30,7 +30,11 @@
     ov.innerHTML =
       '<div style="background:#16213e;padding:40px 36px;border-radius:12px;' +
       'box-shadow:0 8px 32px rgba(0,0,0,.4);text-align:center;max-width:360px;width:90%">' +
-        '<div style="font-size:42px;margin-bottom:12px">🔒</div>' +
+        // SVG direto: este arquivo não carrega o icones.js
+        '<div class="auth-icone"><svg viewBox="0 0 24 24" width="42" height="42" fill="none" ' +
+          'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+          '<rect x="4.5" y="10.5" width="15" height="10" rx="2"/>' +
+          '<path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7"/><path d="M12 14.5v2"/></svg></div>' +
         '<h2 style="color:#e0e0e0;margin:0 0 6px;font-size:20px">Central de Ferramentas</h2>' +
         '<p style="color:#888;margin:0 0 24px;font-size:13px">Acesso restrito. Digite a senha.</p>' +
         '<input id="authPw" type="password" placeholder="Senha" autocomplete="off" ' +

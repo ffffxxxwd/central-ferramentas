@@ -326,6 +326,7 @@ body.modo-edicao #docLogo:hover { outline: 2px dashed var(--accent); outline-off
   .layout { display: block; }
   .preview-col { display: block; padding: 0; overflow: visible; }
   .folha {
+    zoom: 1 !important;      /* o "Caber na tela" é só pra visualizar */
     width: 210mm;
     height: 297mm;
     min-height: 297mm;

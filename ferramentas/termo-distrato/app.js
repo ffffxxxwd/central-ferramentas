@@ -767,6 +767,67 @@
     return true;
   }
 
+  /* ---------- "Caber na tela" ----------
+     A folha é um A4 de verdade (210x297mm), que numa tela comum dá uns
+     1120px de altura — por isso não cabe e obriga a rolar. Aqui ela é
+     encolhida com `zoom` até caber inteira na área de preview.
+
+     É `zoom` e não `transform: scale` de propósito: o zoom refaz o layout,
+     então o espaço ocupado encolhe junto e o scroll some. Com transform a
+     folha ficaria menor mas o espaço reservado continuaria o mesmo.
+
+     Impressão e PDF não são afetados: o CSS de print força zoom 1. */
+  function ligarCaberNaTela() {
+    var btn = $("btnCaber");
+    var folha = $("folha");
+    var palco = folha && folha.parentElement;
+    if (!btn || !folha || !palco) return;
+
+    var ligado = localStorage.getItem("distrato-caber") === "1";
+
+    function aplicar() {
+      if (!ligado) { folha.style.zoom = ""; return; }
+      folha.style.zoom = "";                       // mede sem zoom antes de calcular
+      var estilo = getComputedStyle(palco);
+      var alturaUtil = palco.clientHeight - parseFloat(estilo.paddingTop) - parseFloat(estilo.paddingBottom);
+      var larguraUtil = palco.clientWidth - parseFloat(estilo.paddingLeft) - parseFloat(estilo.paddingRight);
+      var alturaFolha = folha.scrollHeight;
+      var larguraFolha = folha.offsetWidth;
+      if (alturaUtil <= 0 || alturaFolha <= 0) return;
+      // o menor dos dois: tem que caber na altura E na largura
+      var escala = Math.min(alturaUtil / alturaFolha, larguraUtil / larguraFolha, 1);
+      folha.style.zoom = escala < 1 ? escala.toFixed(4) : "";
+    }
+
+    function pintarBotao() {
+      btn.classList.toggle("ativo", ligado);
+      btn.setAttribute("aria-pressed", ligado ? "true" : "false");
+      btn.textContent = ligado ? "Tamanho real" : "Caber na tela";
+    }
+
+    btn.addEventListener("click", function () {
+      ligado = !ligado;
+      localStorage.setItem("distrato-caber", ligado ? "1" : "0");
+      pintarBotao();
+      aplicar();
+    });
+
+    // o documento muda de altura ao editar/preencher: recalcula quando isso acontece
+    if (window.ResizeObserver) {
+      var pendente = null;
+      new ResizeObserver(function () {
+        if (!ligado || pendente) return;
+        pendente = requestAnimationFrame(function () { pendente = null; aplicar(); });
+      }).observe(folha);
+    }
+    window.addEventListener("resize", aplicar);
+    window.addEventListener("beforeprint", function () { folha.style.zoom = ""; });
+    window.addEventListener("afterprint", aplicar);
+
+    pintarBotao();
+    aplicar();
+  }
+
   /* ---------- Início ---------- */
   var DOC_BASE = $("docInner").innerHTML;   // guarda o documento BASE (modelo limpo) antes de restaurar
   var restaurou = carregar();               // restaura o que estava salvo (se houver)
@@ -778,6 +839,7 @@
     if (_src.indexOf("data:") !== 0) $("docLogoImg").src = window.LOGO_PADRAO;
   }
   ligar();
+  ligarCaberNaTela();
   renderExtraImoveis();
   atualizarVisibilidadeConjuge();
   aplicarLogo();

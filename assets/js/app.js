@@ -15,26 +15,15 @@
   var sidebar = document.getElementById("sidebar");
   var overlay = document.getElementById("overlay");
   var menuToggle = document.getElementById("menuToggle");
-  var themeToggle = document.getElementById("themeToggle");
 
-  /* ---------- Tema claro/escuro ---------- */
-  aplicarTema(localStorage.getItem("tema") || "claro");
-  themeToggle.addEventListener("click", function () {
-    var atual = document.documentElement.getAttribute("data-tema");
-    aplicarTema(atual === "claro" ? "escuro" : "claro");
-  });
-  function aplicarTema(tema) {
-    document.documentElement.setAttribute("data-tema", tema);
-    localStorage.setItem("tema", tema);
-    var icon = themeToggle.querySelector(".theme-icon");
-    var label = themeToggle.querySelector(".theme-label");
-    if (tema === "escuro") { icon.textContent = "☀️"; label.textContent = "Tema claro"; }
-    else { icon.textContent = "🌙"; label.textContent = "Tema escuro"; }
-  }
+  /* O site tem um tema só (claro). A chave antiga do localStorage é apagada
+     pra ninguém ficar preso no tema escuro de antes. */
+  document.documentElement.setAttribute("data-tema", "claro");
+  try { localStorage.removeItem("tema"); } catch (e) {}
 
   /* ---------- Menu lateral ---------- */
   function renderMenu() {
-    var html = itemMenu("home", "🏠", "Início", "#home");
+    var html = itemMenu("home", "casa", "Início", "#home");
 
     var categorias = {};
     var ordem = [];
@@ -49,7 +38,7 @@
       categorias[cat].forEach(function (f) {
         html += itemMenu(
           "tool/" + f.id,
-          f.icone || "🔧",
+          f.icone || "chave",
           f.nome,
           "#tool/" + f.id,
           !f.pronta
@@ -63,7 +52,7 @@
   function itemMenu(rota, icone, nome, href, badge) {
     return (
       '<a class="menu-item" data-rota="' + rota + '" href="' + href + '">' +
-        '<span class="menu-icon">' + icone + "</span>" +
+        '<span class="menu-icon">' + Icone(icone) + "</span>" +
         '<span class="menu-text">' + escapeHtml(nome) + "</span>" +
         (badge ? '<span class="menu-badge">em breve</span>' : "") +
       "</a>"
@@ -101,12 +90,12 @@
     var cards = ferramentas.map(function (f) {
       return (
         '<a class="card' + (f.pronta ? "" : " soon") + '" href="#tool/' + f.id + '">' +
-          '<div class="card-icon">' + (f.icone || "🔧") + "</div>" +
+          '<div class="card-icon">' + Icone(f.icone || "chave") + "</div>" +
           '<div class="card-title">' + escapeHtml(f.nome) + "</div>" +
           '<div class="card-desc">' + escapeHtml(f.descricao || "") + "</div>" +
           '<div class="card-foot">' +
             '<span class="card-tag">' + (f.pronta ? escapeHtml(f.categoria || "Ferramenta") : "em breve") + "</span>" +
-            '<span class="card-arrow">→</span>' +
+            '<span class="card-arrow">' + Icone("seta") + '</span>' +
           "</div>" +
         "</a>"
       );
@@ -120,7 +109,7 @@
     viewEl.innerHTML =
       '<div class="home">' +
         '<div class="hero">' +
-          "<h1>Bem-vindo 👋</h1>" +
+          "<h1>Bem-vindo</h1>" +
           "<p>Todas as suas ferramentas de trabalho reunidas em um só lugar. " +
           "Escolha uma ferramenta abaixo ou use o menu ao lado.</p>" +
         "</div>" +
@@ -133,12 +122,12 @@
   function abrirFerramenta(f) {
     topbarTitle.textContent = f.nome;
     topbarActions.innerHTML =
-      '<a class="btn" href="' + f.url + '" target="_blank" rel="noopener">Abrir em nova aba ↗</a>';
+      '<a class="btn" href="' + f.url + '" target="_blank" rel="noopener">Abrir em nova aba' + Icone("novaAba") + '</a>';
 
     if (!f.pronta) {
       viewEl.innerHTML =
         '<div class="state"><div class="state-inner">' +
-          '<div class="state-emoji">🚧</div>' +
+          '<div class="state-emoji">' + Icone("obras") + '</div>' +
           "<h2>" + escapeHtml(f.nome) + "</h2>" +
           "<p>Esta ferramenta ainda não foi integrada. Assim que a pasta dela for " +
           "adicionada em <b>ferramentas/" + escapeHtml(f.id) + "/</b>, ela aparece aqui.</p>" +
@@ -155,7 +144,7 @@
     topbarActions.innerHTML = "";
     viewEl.innerHTML =
       '<div class="state"><div class="state-inner">' +
-        '<div class="state-emoji">🔍</div>' +
+        '<div class="state-emoji">' + Icone("lupa") + '</div>' +
         "<h2>Ferramenta não encontrada</h2>" +
         '<p>O link acessado não existe. <a href="#home">Voltar ao início</a>.</p>' +
       "</div></div>";

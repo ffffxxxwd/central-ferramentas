@@ -5,7 +5,7 @@ window.MODELOS_EMAIL = [
     assunto: "Continuidade do processo de reembolso",
     numeros: [
       { whatsapp: "556296625714", exibicao: "(62) 9662-5714" },
-      { whatsapp: "556276025529", exibicao: "(62) 7602-5529" },
+      { whatsapp: "5562976025529", exibicao: "(62) 97602-5529" },
       { whatsapp: "556284817629", exibicao: "(62) 8481-7629" }
     ],
     campos: [

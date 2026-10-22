@@ -28,22 +28,6 @@
   --sidebar-w: 268px;
 }
 
-html[data-tema="escuro"] {
-  --bg: #0b1120;
-  --surface: #131c30;
-  --surface-2: #0f172a;
-  --text: #eef2fb;
-  --text-muted: #93a0bd;
-  --border: #22304d;
-  --brand: #5b83ff;
-  --brand-600: #3160f5;
-  --brand-soft: #1b2947;
-  --sidebar-bg: #0a1020;
-  --sidebar-bg-2: #070c18;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.5);
-}
 
 * { box-sizing: border-box; }
 
@@ -163,26 +147,9 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: flex-end;
 }
 
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--sidebar-text);
-  border: none;
-  padding: 9px 12px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  font-family: inherit;
-  transition: background 0.15s ease;
-}
-.theme-toggle:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
 .version { font-size: 11px; color: var(--sidebar-text); opacity: 0.5; }
 
 /* ---------- Conteúdo ---------- */
@@ -387,3 +354,22 @@ body {
   .home { padding: 22px 18px 40px; }
   .hero { padding: 26px 22px; }
 }
+
+/* ============================================================
+   Ícones SVG (assets/js/icones.js)
+   Substituem os emojis antigos. Herdam currentColor, então
+   acompanham o tema e o estado (hover, item ativo) sozinhos.
+   ============================================================ */
+.ico { display: block; flex-shrink: 0; }
+
+.brand-logo .ico     { width: 22px; height: 22px; color: #fff; }
+.menu-icon           { display: grid; place-items: center; }
+.menu-icon .ico      { width: 19px; height: 19px; }
+.card-icon .ico      { width: 26px; height: 26px; color: var(--brand); }
+.card-arrow          { display: inline-flex; align-items: center; color: var(--brand); }
+.card-arrow .ico     { width: 17px; height: 17px; }
+.menu-toggle .ico    { width: 21px; height: 21px; }
+.state-emoji         { display: grid; place-items: center; margin-bottom: 14px; }
+.state-emoji .ico    { width: 48px; height: 48px; color: var(--text-muted); stroke-width: 1.4; }
+.topbar-actions .btn { display: inline-flex; align-items: center; gap: 6px; }
+.topbar-actions .ico { width: 15px; height: 15px; }
