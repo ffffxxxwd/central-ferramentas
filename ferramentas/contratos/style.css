@@ -327,9 +327,11 @@ body {
    mesma altura, os botões ficam alinhados de um card pro outro */
 .ficha__botoes {
   display: flex; gap: 5px; flex-wrap: wrap;
-  margin: 12px 14px 0; padding-top: 11px; border-top: 1px solid var(--border);
+  /* sem border-top: o quadro do VALOR PAGO logo acima já tem borda, e as
+     duas encostadas viravam um risco solto embaixo do valor */
+  margin: 12px 14px 0; padding-top: 2px;
   margin-top: auto;
-  min-height: 79px;   /* 2 fileiras de botões, com ou sem PDF anexado */
+  min-height: 70px;   /* 2 fileiras de botões, com ou sem PDF anexado */
   align-content: flex-start;
 }
 .ficha__btn[disabled] {

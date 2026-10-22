@@ -699,6 +699,8 @@
       var p = g.itens[0];
       var total = g.itens.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
       var ids = g.itens.map(function (c) { return c.id; }).join("|");
+      // grupo todo arquivado -> o botão passa a oferecer "Reabrir"
+      var todosArq = g.itens.every(function (c) { return ehArquivado(c.id); });
       var resumo = [
         g.itens.length + " contratos",
         p.cpf ? "CPF " + p.cpf : "",
@@ -718,6 +720,11 @@
               "</button>" +
               '<button type="button" class="btn" data-acao="distrato-grupo" data-ids="' + esc(ids) + '">' +
                 "Distrato dos " + g.itens.length +
+              "</button>" +
+              // arquiva (ou reabre) os contratos da pessoa de uma vez — um por
+              // um dava trabalho em quem tem 5, 6 contratos
+              '<button type="button" class="btn" data-arquivar-grupo="' + esc(ids) + '" data-arq="' + (todosArq ? "1" : "0") + '">' +
+                (todosArq ? "Reabrir os " + g.itens.length : "Arquivar os " + g.itens.length) +
               "</button>" +
             "</div>" +
           "</header>" +
@@ -2532,6 +2539,16 @@
         if (cl) enfileirarComprovante(cl, alvo);
       }
       abrirComprovante(compBt.getAttribute("data-empresa"));
+      return;
+    }
+    // arquivar/reabrir todos os contratos de uma pessoa de uma vez
+    var arqGr = e.target.closest("[data-arquivar-grupo]");
+    if (arqGr) {
+      var arquivaGr = arqGr.getAttribute("data-arq") === "0";
+      arqGr.getAttribute("data-arquivar-grupo").split("|").forEach(function (id) {
+        arquivar(id, arquivaGr);
+      });
+      renderTudo();
       return;
     }
     // arquivar/reabrir direto no card, sem abrir a ficha
