@@ -20098,8 +20098,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Salinópolis/PA",
     valorTotal: "R$ 43.663,61",
-    valorPago: "R$ 1.330,00",
-    formaPagamentoEntrada: "Cartão de Crédito MASTER à vista R$ 1.330,00 (Rede, Nº Doc 24873438, 31/07/2026) + Boleto 2x R$ 1.330,00 = R$ 2.660,00 (1º venc 01/08/2026, quitação não confirmada)",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTER à vista R$ 1.330,00 (Rede, Nº Doc 24873438, 31/07/2026) + Boleto 2x R$ 1.330,00 = R$ 2.660,00 (1º venc 01/08/2026, QUITADOS) — corretagem integral do contrato",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-07-31",
     telefone: "(96) 99172-0574",
@@ -20108,7 +20108,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apt 0306, Andar 3, Cota 14. Proposta 345270. FORA do prazo de arrependimento. ATENÇÃO: a data de assinatura NÃO consta no documento — o PDF é um escaneado de 1 página só (a proposta), sem certificado de assinatura. A data usada na ficha (31/07/2026) é a da transação do cartão, que é a única data de pagamento no documento; o 1º boleto vence 01/08/2026. Confirmar a data real antes de usar o prazo em qualquer argumento. ATENÇÃO 2: são 2 contratos da mesma pessoa (fichas 399 e 400) e o Nº do documento do cartão é IDÊNTICO nos dois (24873438), igual ao caso da Poliana (397/398) — provavelmente foi UMA transação de R$ 2.660,00 rateada entre os dois contratos. Não há comprovante anexo pra confirmar. Pedir o comprovante da Rede antes de estornar, pra não estornar duas vezes a mesma cobrança. ATENÇÃO 3: valor pago conta só o cartão (R$ 1.330,00). Os 2 boletos de R$ 1.330,00 (1º venc 01/08/2026, total R$ 2.660,00) não entram até que se confirme o que foi quitado. Devolução definida como PIX/Reembolso a pedido, embora o pagamento tenha sido no cartão de crédito — a regra padrão levaria a Estorno Cartão.",
+    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apt 0306, Andar 3, Cota 14. Proposta 345270. FORA do prazo de arrependimento. ATENÇÃO: a data de assinatura NÃO consta no documento — o PDF é um escaneado de 1 página só (a proposta), sem certificado de assinatura. A data usada na ficha (31/07/2026) é a da transação do cartão, que é a única data de pagamento no documento; o 1º boleto vence 01/08/2026. Confirmar a data real antes de usar o prazo em qualquer argumento. ATENÇÃO 2: são 2 contratos da mesma pessoa (fichas 399 e 400) e o Nº do documento do cartão é IDÊNTICO nos dois (24873438), igual ao caso da Poliana (397/398) — provavelmente foi UMA transação de R$ 2.660,00 rateada entre os dois contratos. Não há comprovante anexo pra confirmar. Pedir o comprovante da Rede antes de estornar, pra não estornar duas vezes a mesma cobrança. VALOR PAGO CONFIRMADO PELA CLIENTE em 02/11/2026: ela informou ter pago R$ 2.660,00 no ato da assinatura mais 2 parcelas de R$ 2.660,00, totalizando R$ 7.980,00 nos dois contratos. A conta fecha com o contrato: o cartão foi 1 transação de R$ 2.660,00 (R$ 1.330,00 por contrato) e cada vencimento de boleto cobre os 2 contratos (2 x R$ 1.330,00 = R$ 2.660,00). Logo os boletos FORAM quitados e a corretagem de cada contrato (R$ 3.990,00) está integral. Isso veio da palavra dela, sem comprovante anexo — pedir os comprovantes do cartão e dos 2 boletos antes de devolver. Devolução definida como PIX/Reembolso a pedido, embora o pagamento tenha sido no cartão de crédito — a regra padrão levaria a Estorno Cartão.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/399--contrato.pdf" }
@@ -20132,8 +20132,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Salinópolis/PA",
     valorTotal: "R$ 43.663,61",
-    valorPago: "R$ 1.330,00",
-    formaPagamentoEntrada: "Cartão de Crédito MASTER à vista R$ 1.330,00 (Rede, Nº Doc 24873438, 31/07/2026) + Boleto 2x R$ 1.330,00 = R$ 2.660,00 (1º venc 01/08/2026, quitação não confirmada)",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTER à vista R$ 1.330,00 (Rede, Nº Doc 24873438, 31/07/2026) + Boleto 2x R$ 1.330,00 = R$ 2.660,00 (1º venc 01/08/2026, QUITADOS) — corretagem integral do contrato",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-07-31",
     telefone: "(96) 99172-0574",
@@ -20142,7 +20142,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apt 0320, Andar 3, Cota 08. Proposta 345271. FORA do prazo de arrependimento. ATENÇÃO: a data de assinatura NÃO consta no documento — o PDF é um escaneado de 1 página só (a proposta), sem certificado de assinatura. A data usada na ficha (31/07/2026) é a da transação do cartão, que é a única data de pagamento no documento; o 1º boleto vence 01/08/2026. Confirmar a data real antes de usar o prazo em qualquer argumento. ATENÇÃO 2: são 2 contratos da mesma pessoa (fichas 399 e 400) e o Nº do documento do cartão é IDÊNTICO nos dois (24873438), igual ao caso da Poliana (397/398) — provavelmente foi UMA transação de R$ 2.660,00 rateada entre os dois contratos. Não há comprovante anexo pra confirmar. Pedir o comprovante da Rede antes de estornar, pra não estornar duas vezes a mesma cobrança. ATENÇÃO 3: valor pago conta só o cartão (R$ 1.330,00). Os 2 boletos de R$ 1.330,00 (1º venc 01/08/2026, total R$ 2.660,00) não entram até que se confirme o que foi quitado. Devolução definida como PIX/Reembolso a pedido, embora o pagamento tenha sido no cartão de crédito — a regra padrão levaria a Estorno Cartão.",
+    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apt 0320, Andar 3, Cota 08. Proposta 345271. FORA do prazo de arrependimento. ATENÇÃO: a data de assinatura NÃO consta no documento — o PDF é um escaneado de 1 página só (a proposta), sem certificado de assinatura. A data usada na ficha (31/07/2026) é a da transação do cartão, que é a única data de pagamento no documento; o 1º boleto vence 01/08/2026. Confirmar a data real antes de usar o prazo em qualquer argumento. ATENÇÃO 2: são 2 contratos da mesma pessoa (fichas 399 e 400) e o Nº do documento do cartão é IDÊNTICO nos dois (24873438), igual ao caso da Poliana (397/398) — provavelmente foi UMA transação de R$ 2.660,00 rateada entre os dois contratos. Não há comprovante anexo pra confirmar. Pedir o comprovante da Rede antes de estornar, pra não estornar duas vezes a mesma cobrança. VALOR PAGO CONFIRMADO PELA CLIENTE em 02/11/2026: ela informou ter pago R$ 2.660,00 no ato da assinatura mais 2 parcelas de R$ 2.660,00, totalizando R$ 7.980,00 nos dois contratos. A conta fecha com o contrato: o cartão foi 1 transação de R$ 2.660,00 (R$ 1.330,00 por contrato) e cada vencimento de boleto cobre os 2 contratos (2 x R$ 1.330,00 = R$ 2.660,00). Logo os boletos FORAM quitados e a corretagem de cada contrato (R$ 3.990,00) está integral. Isso veio da palavra dela, sem comprovante anexo — pedir os comprovantes do cartão e dos 2 boletos antes de devolver. Devolução definida como PIX/Reembolso a pedido, embora o pagamento tenha sido no cartão de crédito — a regra padrão levaria a Estorno Cartão.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/400--contrato.pdf" }
