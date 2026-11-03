@@ -20386,5 +20386,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/407--contrato.pdf" }
     ]
+  },
+  {
+    id: 408,
+    nome: "Luandra Batista Bergamo",
+    cpf: "034.401.600-50",
+    rg: "5115768862 SJSII/RS",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônoma",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    bloco: "01",
+    apartamento: "UH 002",
+    andar: "Térreo",
+    cota: "03",
+    fracao: "1/52",
+    localizacao: "Maragogi/AL",
+    valorTotal: "R$ 36.457,76",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTERCARD final 1634 à vista R$ 1.000,00 (Rede, CV 184355052, 31/10/2026 13h18) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 10/12/2026, não vencido)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-31",
+    telefone: "(55) 99629-9815",
+    email: "luandra.b.bergamo@gmail.com",
+    endereco: "Rua Vergilio Silva, 233, 3 de Outubro, Sao Gabriel/RS, CEP 97314-152",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Oikos Maragogi Resort — Maragogi/AL. Bloco 01, Apt UH 002, térreo, Cota 03. Proposta 367315. DENTRO do prazo de arrependimento (assinado 31/10/2026 14h07, vence 07/11/2026). Comprovante do cartão anexo: R$ 1.000,00, MASTERCARD final 1634, crédito à vista, CV 184355052, 31/10/2026 13h18, aprovado pelo emissor. Contrato único, sem rateio. ZapSign ASSINADO, 5 de 5 assinaturas — contrato fechado. ATENÇÃO: os 5 boletos de R$ 598,00 (total R$ 2.990,00, 1º venc 10/12/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 3.990,00. Devolução por Estorno Cartão porque o cartão é o único instrumento efetivamente pago. Cônjuge RAFAELA DE SIQUEIRA (CPF 014.446.150-17, RG 5092103001 SJS/RS, siqueirarafaela.0189@gmail.com, (55) 99668-3455) também assinou, mas não entra na ficha como signatária do distrato.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/408--contrato.pdf" }
+    ]
   }
 ];
