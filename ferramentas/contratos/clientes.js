@@ -20352,5 +20352,39 @@ window.CLIENTES = [
       { titulo: "Contrato", arquivo: "contratos-pdf/406--contrato.pdf" },
       { titulo: "Ficha de Negociação", arquivo: "contratos-pdf/406--ficha-negociacao.pdf" }
     ]
+  },
+  {
+    id: 407,
+    nome: "Celio Marques",
+    cpf: "122.558.088-97",
+    rg: "14361941 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "03",
+    apartamento: "0222",
+    andar: "2",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 72.824,86",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão de Crédito VISA parcelado final 7372, 4x R$ 997,50 = R$ 3.990,00 (Rede, CV 26700430, 02/11/2026 17h31) — corretagem integral, sem boleto nem PIX",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-02",
+    telefone: "(11) 97166-3449",
+    email: "marquesville.celio@gmail.com",
+    endereco: "Rua Capitao Jose Vicente de Moraes, 234, Esplanada Mendes Moraes, Sao Roque/SP, CEP 18130-780",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Porto Alto Resort — Ipojuca/PE. Bloco 03, Apt 0222, 2º andar, Cota 12. Proposta 367946. Consultor Kelvny Ribeiro de Souza. DENTRO do prazo de arrependimento (assinado 02/11/2026 18h20, vence 09/11/2026). CORRETAGEM INTEGRALMENTE PAGA NO CARTÃO: o comprovante anexo mostra R$ 3.990,00 em 4x R$ 997,50, VISA crédito parcelado final 7372, CV 26700430, 02/11/2026 17h31, aprovado com senha. Não há boleto nem PIX neste contrato — por isso a devolução é Estorno Cartão. A tabela do contrato mostra 1º vencimento 02/12/2026, mas isso é quando a parcela cai na fatura dele; a transação foi autorizada em 02/11. ATENÇÃO: o ZapSign está EM-CURSO, com 4 de 5 assinaturas. Falta a da cônjuge CARLA VALERIA DE ARAUJO LIMA (CPF 249.800.088-79, RG 279566682 SSP/SP, nascida 15/06/1976, gerente, (11) 99738-3449), que consta como ASSINATURA PENDENTE. O contrato ainda não está fechado — conferir se ela assinou depois antes de tratar o distrato.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/407--contrato.pdf" }
+    ]
   }
 ];
