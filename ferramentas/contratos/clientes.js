@@ -20283,5 +20283,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/404--contrato.pdf" }
     ]
+  },
+  {
+    id: 405,
+    nome: "Daniel da Costa Ferreira",
+    cpf: "006.166.595-98",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "03",
+    apartamento: "0303",
+    andar: "",
+    cota: "24",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 71.137,77",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão de DÉBITO R$ 1.330,00 (1º venc 03/11/2026, sem comprovante) + Boleto 2x R$ 886,66 = R$ 1.773,32 (1º venc 01/12/2026) + Boleto 1x R$ 886,68 (01/02/2027) — entrada total R$ 3.990,00",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-01",
+    telefone: "(79) 99915-5349",
+    email: "danielgeo29@gmail.com",
+    endereco: "",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Porto Alto Resort — Ipojuca/PE. Bloco 03, Apt 0303, Cota 24 (BL03-AP0303-COTA24). Vista lateral. Sala MARAGOGI - DIA, consultora Priscila Lorrany Monteiro Nascimento. DENTRO do prazo de arrependimento (assinado 01/11/2026 17h38, vence 08/11/2026). FICHA INCOMPLETA: cadastrada a partir da FICHA DE NEGOCIAÇÃO e do Termo de Ciência, não do contrato. Faltam RG, estado civil, profissão, nacionalidade e endereço — nenhum desses dados aparece nos documentos recebidos. Pedir o contrato assinado pra completar. ATENÇÃO: o valor pago (R$ 1.330,00, cartão de DÉBITO) está SEM COMPROVANTE e com 1º vencimento em 03/11/2026, que é hoje — confirmar se a cobrança passou antes de devolver qualquer coisa. Plano de pagamento da ficha: Entrada R$ 1.330,00 cartão débito (03/11/2026) + Entrada 2x R$ 886,66 boleto (1º venc 01/12/2026) + Entrada restante R$ 886,68 boleto (01/02/2027), somando R$ 3.990,00 de entrada; Sinal 3x R$ 889,22 (05/03/2027) + 1x R$ 889,23 (05/06/2027) = R$ 3.556,89; Saldo 80x R$ 794,89 (05/07/2027) = R$ 63.590,88. Total R$ 71.137,77.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Ficha de Negociação + Termo de Ciência", arquivo: "contratos-pdf/405--ficha-negociacao.pdf" }
+    ]
   }
 ];
