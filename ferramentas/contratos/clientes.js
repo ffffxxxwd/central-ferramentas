@@ -20522,5 +20522,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/411--contrato.pdf" }
     ]
+  },
+  {
+    id: 412,
+    nome: "Rosangela Keila de Souza",
+    cpf: "058.374.864-37",
+    rg: "3068298 SESDS/PB",
+    estadoCivil: "Casado(a)",
+    profissao: "Do lar",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliario SPE Ltda.",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    bloco: "A",
+    apartamento: "A 515",
+    andar: "2",
+    cota: "05",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 95.798,33",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 500,00 (CV 34792192, 31/10/2026 15h48) + Cartão de Crédito MASTERCARD final 5800 à vista R$ 500,00 (Rede, CV 189739712, 31/10/2026 15h49) + Boleto 4x R$ 872,50 = R$ 3.490,00 (1º venc 31/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-31",
+    telefone: "(83) 99808-6816",
+    email: "ayshafernandes107@gmail.com",
+    endereco: "Rua Magali Correia de Freitas, 354, Casa dos fundos, Praia da Araca, Capao da Canoa/RS, CEP 94691-634",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Gran Valley Resort — Gramado/RS. Bloco A, Apt A 515, 2º andar, Cota 05. Proposta 367380. Unidade com cama queen, duas camas auxiliares e sofá-cama, capacidade 6. DENTRO do prazo de arrependimento (assinado 31/10/2026 16h25, vence 07/11/2026). Os DOIS comprovantes estão no PDF: PIX de R$ 500,00 (CV 34792192, ID RESV37394700917862 74VL8167UV2014F6D, 31/10/2026 15h48) e cartão MASTERCARD final 5800 crédito à vista de R$ 500,00 (CV 189739712, 31/10/2026 15h49). Contrato único, sem rateio. ZapSign ASSINADO, 4 de 4 — contrato fechado. ATENÇÃO: os 4 boletos de R$ 872,50 (total R$ 3.490,00, 1º venc 31/12/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 4.490,00. Devolução como Reembolso porque o PIX é o primeiro instrumento; metade do valor (R$ 500,00) está no cartão e pode ser estornada pela operadora, se preferirem. ATENÇÃO 2: o e-mail cadastrado (ayshafernandes107@gmail.com) não corresponde ao nome da titular — conferir antes de enviar o distrato por e-mail.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/412--contrato.pdf" }
+    ]
   }
 ];
