@@ -20590,5 +20590,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/413--contrato.pdf" }
     ]
+  },
+  {
+    id: 414,
+    nome: "Maria Aparecida de Jesus Silva Oliveira",
+    cpf: "253.632.868-66",
+    rg: "22246113 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Técnica em Enfermagem",
+    empresa: "GAV",
+    razaoSocial: "GAV TS Administração Unipessoal Ltda.",
+    cnpj: "47.008.570/0001-91",
+    empreendimento: "GAV Vacation Club (Pontos)",
+    bloco: "Contrato 63467",
+    apartamento: "100.000 pontos",
+    andar: "",
+    cota: "005569",
+    fracao: "100.000 pontos / 5 anos",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 12.900,00",
+    valorPago: "R$ 215,00",
+    formaPagamentoEntrada: "Transferência R$ 215,00 (Documento RELG695272009327739381IWUBH641, 09/10/2026) — princípio e sinal + Boleto 59x R$ 215,00 = R$ 12.685,00 (1º venc 10/11/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-09",
+    telefone: "(11) 97237-7071",
+    email: "cidinha2755jesus@gmail.com",
+    endereco: "Rua Sampaio Correa, 520, BL 01 AP 3 A, Limao, Sao Paulo/SP, CEP 02710-080",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "CONTRATO DE PONTOS (GAV Vacation Club / Timeshare), não é multipropriedade — não tem resort, unidade nem cota de imóvel. Contrato nº 63467, referência 100.000-005569, 100.000 pontos por 5 anos. Mesmo formato das fichas 58 (Hyan) e 394 (Beatriz). Escritório de vendas MURO ALTO; o check list de cadastro foi assinado em Salinópolis/PA. FORA do prazo de arrependimento (assinado 09/10/2026 14h52, venceu 16/10/2026). ZapSign ASSINADO, 4 de 4. Pagamento: princípio e sinal de R$ 215,00 por TRANSFERÊNCIA em 09/10/2026 (Documento RELG695272009327739381IWUBH641). O saldo de R$ 12.685,00 vai em 59 boletos de R$ 215,00, 1º vencimento 10/11/2026 — ainda não venceu nenhum, por isso o valor pago é só os R$ 215,00. Os boletos chegam por e-mail, de cobranca@salinasparkresort.com.br. O check list de cadastro declara as informações à ETR Construtora e Incorporadora Ltda., que é a vendedora do Park GAV (ficha 392), mas a cedente do contrato é a GAV TS Administração Unipessoal Ltda. — usar a GAV TS no distrato.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/414--contrato.pdf" }
+    ]
   }
 ];
