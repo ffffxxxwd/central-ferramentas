@@ -20575,8 +20575,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Barra de São Miguel/AL",
     valorTotal: "R$ 29.487,75",
-    valorPago: "R$ 1.000,00",
-    formaPagamentoEntrada: "PIX R$ 1.000,00 (CV 179850826, ID RESV104666009484 5425K9EPFV1E5477654, 04/07/2026 12h22) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 04/08/2026, quitação não confirmada)",
+    valorPago: "R$ 2.392,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (CV 179850826, ID RESV104666009484 5425K9EPFV1E5477654, 04/07/2026 12h22) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 04/08/2026) — total efetivamente pago informado: R$ 2.392,00",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-07-04",
     telefone: "(11) 95920-2775",
@@ -20585,7 +20585,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 457, 4º andar, Cota 02. Proposta 345797. FORA do prazo de arrependimento (contrato 04/07/2026, venceu 11/07/2026). Comprovante do PIX anexo: R$ 1.000,00, CV 179850826, 04/07/2026 12h22, ID RESV104666009484 5425K9EPFV1E5477654 — bate com o Nº de documento do recibo de corretagem. Contrato único, sem rateio. D4Sign ASSINADO, 5 assinaturas. ATENÇÃO: o contrato é de JULHO e 3 dos 5 boletos de R$ 598,00 JÁ VENCERAM (04/08, 04/09 e 04/10/2026); o 4º vence 04/11/2026 e o 5º em 04/12/2026. O valor pago na ficha conta só o PIX confirmado — levantar com a cliente ou no sistema quantos boletos foram quitados, porque isso muda o valor a devolver. Se todos os 5 forem pagos, a corretagem fecha em R$ 3.990,00.",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 457, 4º andar, Cota 02. Proposta 345797. FORA do prazo de arrependimento (contrato 04/07/2026, venceu 11/07/2026). Comprovante do PIX anexo: R$ 1.000,00, CV 179850826, 04/07/2026 12h22, ID RESV104666009484 5425K9EPFV1E5477654 — bate com o Nº de documento do recibo de corretagem. Contrato único, sem rateio. D4Sign ASSINADO, 5 assinaturas. VALOR PAGO CONFIRMADO em 03/11/2026: R$ 2.392,00 no total, informado como o que ela efetivamente pagou. Esse número equivale exatamente a 4 boletos de R$ 598,00 (4 x 598 = 2.392). O contrato é de julho e 3 dos 5 boletos já venceram (04/08, 04/09 e 04/10/2026); o 4º vence 04/11/2026 e o 5º em 04/12/2026. ATENÇÃO: o PIX de R$ 1.000,00 tem comprovante anexo no PDF (CV 179850826, 04/07/2026), mas foi informado que o total pago é R$ 2.392,00 — ou seja, o PIX está dentro desse valor. Sobram R$ 1.392,00, que não é múltiplo de R$ 598,00, então pode ter havido desconto, acréscimo ou boleto parcial. Conferir o extrato antes de devolver.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/413--contrato.pdf" }
