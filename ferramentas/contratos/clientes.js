@@ -20439,8 +20439,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Cruz/CE",
     valorTotal: "R$ 28.449,09",
-    valorPago: "R$ 1.995,00",
-    formaPagamentoEntrada: "PIX R$ 1.995,00 (Nº Doc RESV14816900951583325WDFIK4L89F5B7B, 17/12/2025) — corretagem integral do contrato, sem boleto nem cartão",
+    valorPago: "R$ 3.056,33",
+    formaPagamentoEntrada: "PIX R$ 1.995,00 (Nº Doc RESV14816900951583325WDFIK4L89F5B7B, 17/12/2025) — corretagem integral + R$ 1.061,33 em parcelas posteriores (sinal 4x R$ 355,61 a partir de 15/01/2026), totalizando R$ 3.056,33 por contrato",
     formaReembolso: "Reembolso",
     dataAssinatura: "2025-12-17",
     telefone: "(15) 99606-9789",
@@ -20449,7 +20449,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Jeriquiá Dunas Resort — Cruz/CE. Bloco 02, Apt 005, térreo (andar 0 no documento), Cota 33. Proposta 307226. Corretor Alexsandro Nascimento da Silva (CNPJ 40.814.073/0001-31). FORA do prazo de arrependimento (contrato 17/12/2025, venceu 24/12/2025). ATENÇÃO: são 3 contratos da mesma pessoa (fichas 409, 410 e 411) e o Nº do documento PIX é IDÊNTICO nos três (RESV14816900951583325WDFIK4L89F5B7B), o que indica UMA transação de R$ 5.985,00 rateada em R$ 1.995,00 por contrato — mesmo padrão da Poliana (397/398) e da Patricia (401-403). NÃO há comprovante anexo nestes PDFs pra confirmar o valor da transação. Pedir o comprovante do PIX antes de devolver, pra não reembolsar três vezes a mesma transação. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00 das outras fichas — confere com o valor do contrato, que também é mais baixo (R$ 28.449,09). D4Sign ASSINADO, 6 assinaturas. Cônjuge RENATO CAMARGO DIAS (CPF 450.736.758-19, RG 562257494 SSP/SP, renatocdias29@gmail.com, (15) 99781-3789) também assinou como parte, mas não entra na ficha como signatário do distrato.",
+    observacoes: "Jeriquiá Dunas Resort — Cruz/CE. Bloco 02, Apt 005, térreo (andar 0 no documento), Cota 33. Proposta 307226. Corretor Alexsandro Nascimento da Silva (CNPJ 40.814.073/0001-31). FORA do prazo de arrependimento (contrato 17/12/2025, venceu 24/12/2025). ATENÇÃO: são 3 contratos da mesma pessoa (fichas 409, 410 e 411) e o Nº do documento PIX é IDÊNTICO nos três (RESV14816900951583325WDFIK4L89F5B7B), o que indica UMA transação de R$ 5.985,00 rateada em R$ 1.995,00 por contrato — mesmo padrão da Poliana (397/398) e da Patricia (401-403). NÃO há comprovante anexo nestes PDFs pra confirmar o valor da transação. Pedir o comprovante do PIX antes de devolver, pra não reembolsar três vezes a mesma transação. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00 das outras fichas — confere com o valor do contrato, que também é mais baixo (R$ 28.449,09). VALOR PAGO ATUALIZADO em 03/11/2026: informado que o cliente pagou R$ 9.168,99 no total dos 3 contratos, ou R$ 3.056,33 por contrato (divide exato). Isso vai ALÉM da corretagem: R$ 1.995,00 do PIX + R$ 1.061,33 de parcelas posteriores, o equivalente a cerca de 3 parcelas de sinal (4x R$ 355,61, 1º venc 15/01/2026) já com reajuste do INCC. Faz sentido, já que o contrato é de dezembro de 2025. A divisão igual entre os 3 é suposição baseada em os contratos serem idênticos — se os pagamentos foram desiguais, ajustar ficha a ficha. Levantar o extrato do sistema pra saber exatamente quais parcelas entraram. D4Sign ASSINADO, 6 assinaturas. Cônjuge RENATO CAMARGO DIAS (CPF 450.736.758-19, RG 562257494 SSP/SP, renatocdias29@gmail.com, (15) 99781-3789) também assinou como parte, mas não entra na ficha como signatário do distrato.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/409--contrato.pdf" }
@@ -20473,8 +20473,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Cruz/CE",
     valorTotal: "R$ 28.449,09",
-    valorPago: "R$ 1.995,00",
-    formaPagamentoEntrada: "PIX R$ 1.995,00 (Nº Doc RESV14816900951583325WDFIK4L89F5B7B, 17/12/2025) — corretagem integral do contrato, sem boleto nem cartão",
+    valorPago: "R$ 3.056,33",
+    formaPagamentoEntrada: "PIX R$ 1.995,00 (Nº Doc RESV14816900951583325WDFIK4L89F5B7B, 17/12/2025) — corretagem integral + R$ 1.061,33 em parcelas posteriores (sinal 4x R$ 355,61 a partir de 15/01/2026), totalizando R$ 3.056,33 por contrato",
     formaReembolso: "Reembolso",
     dataAssinatura: "2025-12-17",
     telefone: "(15) 99606-9789",
@@ -20483,7 +20483,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Jeriquiá Dunas Resort — Cruz/CE. Bloco 02, Apt 006, térreo (andar 0 no documento), Cota 42. Proposta 307221. Corretor Alexsandro Nascimento da Silva (CNPJ 40.814.073/0001-31). FORA do prazo de arrependimento (contrato 17/12/2025, venceu 24/12/2025). ATENÇÃO: são 3 contratos da mesma pessoa (fichas 409, 410 e 411) e o Nº do documento PIX é IDÊNTICO nos três (RESV14816900951583325WDFIK4L89F5B7B), o que indica UMA transação de R$ 5.985,00 rateada em R$ 1.995,00 por contrato — mesmo padrão da Poliana (397/398) e da Patricia (401-403). NÃO há comprovante anexo nestes PDFs pra confirmar o valor da transação. Pedir o comprovante do PIX antes de devolver, pra não reembolsar três vezes a mesma transação. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00 das outras fichas — confere com o valor do contrato, que também é mais baixo (R$ 28.449,09). D4Sign ASSINADO, 6 assinaturas. Cônjuge RENATO CAMARGO DIAS (CPF 450.736.758-19, RG 562257494 SSP/SP, renatocdias29@gmail.com, (15) 99781-3789) também assinou como parte, mas não entra na ficha como signatário do distrato.",
+    observacoes: "Jeriquiá Dunas Resort — Cruz/CE. Bloco 02, Apt 006, térreo (andar 0 no documento), Cota 42. Proposta 307221. Corretor Alexsandro Nascimento da Silva (CNPJ 40.814.073/0001-31). FORA do prazo de arrependimento (contrato 17/12/2025, venceu 24/12/2025). ATENÇÃO: são 3 contratos da mesma pessoa (fichas 409, 410 e 411) e o Nº do documento PIX é IDÊNTICO nos três (RESV14816900951583325WDFIK4L89F5B7B), o que indica UMA transação de R$ 5.985,00 rateada em R$ 1.995,00 por contrato — mesmo padrão da Poliana (397/398) e da Patricia (401-403). NÃO há comprovante anexo nestes PDFs pra confirmar o valor da transação. Pedir o comprovante do PIX antes de devolver, pra não reembolsar três vezes a mesma transação. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00 das outras fichas — confere com o valor do contrato, que também é mais baixo (R$ 28.449,09). VALOR PAGO ATUALIZADO em 03/11/2026: informado que o cliente pagou R$ 9.168,99 no total dos 3 contratos, ou R$ 3.056,33 por contrato (divide exato). Isso vai ALÉM da corretagem: R$ 1.995,00 do PIX + R$ 1.061,33 de parcelas posteriores, o equivalente a cerca de 3 parcelas de sinal (4x R$ 355,61, 1º venc 15/01/2026) já com reajuste do INCC. Faz sentido, já que o contrato é de dezembro de 2025. A divisão igual entre os 3 é suposição baseada em os contratos serem idênticos — se os pagamentos foram desiguais, ajustar ficha a ficha. Levantar o extrato do sistema pra saber exatamente quais parcelas entraram. D4Sign ASSINADO, 6 assinaturas. Cônjuge RENATO CAMARGO DIAS (CPF 450.736.758-19, RG 562257494 SSP/SP, renatocdias29@gmail.com, (15) 99781-3789) também assinou como parte, mas não entra na ficha como signatário do distrato.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/410--contrato.pdf" }
@@ -20507,8 +20507,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Cruz/CE",
     valorTotal: "R$ 28.449,09",
-    valorPago: "R$ 1.995,00",
-    formaPagamentoEntrada: "PIX R$ 1.995,00 (Nº Doc RESV14816900951583325WDFIK4L89F5B7B, 17/12/2025) — corretagem integral do contrato, sem boleto nem cartão",
+    valorPago: "R$ 3.056,33",
+    formaPagamentoEntrada: "PIX R$ 1.995,00 (Nº Doc RESV14816900951583325WDFIK4L89F5B7B, 17/12/2025) — corretagem integral + R$ 1.061,33 em parcelas posteriores (sinal 4x R$ 355,61 a partir de 15/01/2026), totalizando R$ 3.056,33 por contrato",
     formaReembolso: "Reembolso",
     dataAssinatura: "2025-12-17",
     telefone: "(15) 99606-9789",
@@ -20517,7 +20517,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Jeriquiá Dunas Resort — Cruz/CE. Bloco 02, Apt 014, térreo (andar 0 no documento), Cota 36. Proposta 307215. Corretor Alexsandro Nascimento da Silva (CNPJ 40.814.073/0001-31). FORA do prazo de arrependimento (contrato 17/12/2025, venceu 24/12/2025). ATENÇÃO: são 3 contratos da mesma pessoa (fichas 409, 410 e 411) e o Nº do documento PIX é IDÊNTICO nos três (RESV14816900951583325WDFIK4L89F5B7B), o que indica UMA transação de R$ 5.985,00 rateada em R$ 1.995,00 por contrato — mesmo padrão da Poliana (397/398) e da Patricia (401-403). NÃO há comprovante anexo nestes PDFs pra confirmar o valor da transação. Pedir o comprovante do PIX antes de devolver, pra não reembolsar três vezes a mesma transação. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00 das outras fichas — confere com o valor do contrato, que também é mais baixo (R$ 28.449,09). D4Sign ASSINADO, 6 assinaturas. Cônjuge RENATO CAMARGO DIAS (CPF 450.736.758-19, RG 562257494 SSP/SP, renatocdias29@gmail.com, (15) 99781-3789) também assinou como parte, mas não entra na ficha como signatário do distrato.",
+    observacoes: "Jeriquiá Dunas Resort — Cruz/CE. Bloco 02, Apt 014, térreo (andar 0 no documento), Cota 36. Proposta 307215. Corretor Alexsandro Nascimento da Silva (CNPJ 40.814.073/0001-31). FORA do prazo de arrependimento (contrato 17/12/2025, venceu 24/12/2025). ATENÇÃO: são 3 contratos da mesma pessoa (fichas 409, 410 e 411) e o Nº do documento PIX é IDÊNTICO nos três (RESV14816900951583325WDFIK4L89F5B7B), o que indica UMA transação de R$ 5.985,00 rateada em R$ 1.995,00 por contrato — mesmo padrão da Poliana (397/398) e da Patricia (401-403). NÃO há comprovante anexo nestes PDFs pra confirmar o valor da transação. Pedir o comprovante do PIX antes de devolver, pra não reembolsar três vezes a mesma transação. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00 das outras fichas — confere com o valor do contrato, que também é mais baixo (R$ 28.449,09). VALOR PAGO ATUALIZADO em 03/11/2026: informado que o cliente pagou R$ 9.168,99 no total dos 3 contratos, ou R$ 3.056,33 por contrato (divide exato). Isso vai ALÉM da corretagem: R$ 1.995,00 do PIX + R$ 1.061,33 de parcelas posteriores, o equivalente a cerca de 3 parcelas de sinal (4x R$ 355,61, 1º venc 15/01/2026) já com reajuste do INCC. Faz sentido, já que o contrato é de dezembro de 2025. A divisão igual entre os 3 é suposição baseada em os contratos serem idênticos — se os pagamentos foram desiguais, ajustar ficha a ficha. Levantar o extrato do sistema pra saber exatamente quais parcelas entraram. D4Sign ASSINADO, 6 assinaturas. Cônjuge RENATO CAMARGO DIAS (CPF 450.736.758-19, RG 562257494 SSP/SP, renatocdias29@gmail.com, (15) 99781-3789) também assinou como parte, mas não entra na ficha como signatário do distrato.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/411--contrato.pdf" }
@@ -20555,6 +20555,40 @@ window.CLIENTES = [
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/412--contrato.pdf" }
+    ]
+  },
+  {
+    id: 413,
+    nome: "Juliana dos Reis Mesquita",
+    cpf: "093.050.944-73",
+    rg: "588968213 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresária",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "457",
+    andar: "4",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 29.487,75",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (CV 179850826, ID RESV104666009484 5425K9EPFV1E5477654, 04/07/2026 12h22) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 04/08/2026, quitação não confirmada)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-07-04",
+    telefone: "(11) 95920-2775",
+    email: "webtwok@gmail.com",
+    endereco: "Rua Central, 158, Casa, Povoado Quandu Zona Rural, Poco das Trincheiras/AL, CEP 57510-000",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 457, 4º andar, Cota 02. Proposta 345797. FORA do prazo de arrependimento (contrato 04/07/2026, venceu 11/07/2026). Comprovante do PIX anexo: R$ 1.000,00, CV 179850826, 04/07/2026 12h22, ID RESV104666009484 5425K9EPFV1E5477654 — bate com o Nº de documento do recibo de corretagem. Contrato único, sem rateio. D4Sign ASSINADO, 5 assinaturas. ATENÇÃO: o contrato é de JULHO e 3 dos 5 boletos de R$ 598,00 JÁ VENCERAM (04/08, 04/09 e 04/10/2026); o 4º vence 04/11/2026 e o 5º em 04/12/2026. O valor pago na ficha conta só o PIX confirmado — levantar com a cliente ou no sistema quantos boletos foram quitados, porque isso muda o valor a devolver. Se todos os 5 forem pagos, a corretagem fecha em R$ 3.990,00.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/413--contrato.pdf" }
     ]
   }
 ];
