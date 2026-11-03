@@ -20249,5 +20249,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/403--contrato.pdf" }
     ]
+  },
+  {
+    id: 404,
+    nome: "Raiane Soares Campelo",
+    cpf: "494.171.058-41",
+    rg: "534392830 SSP/SP",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Empreendedora",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Empreendimento Imobiliario SPE Ltda.",
+    cnpj: "45.042.537/0001-52",
+    empreendimento: "Gran Valley Resort",
+    bloco: "A",
+    apartamento: "A 502",
+    andar: "2",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 76.970,52",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 800,00 (CV 183171038, ID RESV08206600917862748L29BLTXC7EA5BA, 18/10/2026 17h01) + Cartão de Crédito MASTERCARD final 4269 à vista R$ 200,00 (Rede, CV 28953094, 18/10/2026 17h00) + Boleto 4x R$ 872,50 = R$ 3.490,00 (1º venc 18/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-18",
+    telefone: "(11) 91682-5422",
+    email: "raianesoares303@gmail.com",
+    endereco: "Avenida Custodio de Sa e Faria, 731, Vila Renato Zona Leste, Sao Paulo/SP, CEP 03979-000",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Gran Valley Resort — Gramado/RS. Bloco A, Apt A 502, 2º andar, Cota 08. Proposta 365530. FORA do prazo de arrependimento (contrato 18/10/2026, venceu 25/10/2026). Os DOIS comprovantes estão no PDF: PIX de R$ 800,00 (CV 183171038, ID RESV08206600917862748L29BLTXC7EA5BA, 18/10/2026 17h01) e cartão MASTERCARD final 4269 crédito à vista de R$ 200,00 (CV 28953094, 18/10/2026 17h00, aprovado pelo emissor). Contrato único, sem rateio — diferente dos casos de 2 ou 3 contratos da mesma pessoa. ATENÇÃO: os 4 boletos de R$ 872,50 (total R$ 3.490,00, 1º venc 18/12/2026) NÃO entram no valor pago porque ainda nem venceram. Pagos os 3.490 depois, a corretagem fecha em R$ 4.490,00. A devolução ficou como Reembolso porque o PIX é o instrumento principal (R$ 800,00 de R$ 1.000,00); os R$ 200,00 do cartão podem ser estornados pela operadora, se preferirem.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/404--contrato.pdf" }
+    ]
   }
 ];
