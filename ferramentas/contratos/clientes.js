@@ -20317,5 +20317,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Ficha de Negociação + Termo de Ciência", arquivo: "contratos-pdf/405--ficha-negociacao.pdf" }
     ]
+  },
+  {
+    id: 406,
+    nome: "Karla Gerllany Pacheco da Silva",
+    cpf: "110.242.924-44",
+    rg: "11024292444 SDS/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Professora Estadual",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    bloco: "01",
+    apartamento: "UH 110",
+    andar: "1",
+    cota: "26",
+    fracao: "1/52",
+    localizacao: "Maragogi/AL",
+    valorTotal: "R$ 61.796,71",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (CV 26238894, ID RESN9019400093761171PQIWO8ED61C2305, 02/11/2026 16h55) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 02/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-02",
+    telefone: "(81) 99209-5367",
+    email: "karlaeheder@gmail.com",
+    endereco: "Rua Egas Muniz, 32, Agua Fria, Recife/PE, CEP 52111-560",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Oikos Maragogi Resort — Maragogi/AL. Bloco 01, Apt UH 110, 1º andar, Cota 26, vista Mar. Proposta 367943. Sala PORTO DE GALINHAS - DIA. DENTRO do prazo de arrependimento (assinado 02/11/2026 17h41, vence 09/11/2026). Comprovante do PIX anexo no contrato: R$ 1.000,00, CV 26238894, 02/11/2026 16h55, ID RESN9019400093761171PQIWO8ED61C2305 — bate com o Nº de documento do recibo de corretagem. Contrato único, sem rateio. ATENÇÃO: os 4 boletos de R$ 747,50 (total R$ 2.990,00, 1º venc 02/12/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 3.990,00. Cônjuge HEDER KEYSSON DA CUNHA PACHECO (CPF 046.293.324-56, RG 6357195 SSP/PE, hederkeysson9@gmail.com, (81) 99386-1668) também assinou o contrato, mas não entra na ficha como signatário do distrato. ATENÇÃO 2: no contrato o campo Identidade traz os mesmos dígitos do CPF (11024292444). Pode ser erro de preenchimento da GAV — conferir o RG real antes de emitir o distrato.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/406--contrato.pdf" },
+      { titulo: "Ficha de Negociação", arquivo: "contratos-pdf/406--ficha-negociacao.pdf" }
+    ]
   }
 ];
