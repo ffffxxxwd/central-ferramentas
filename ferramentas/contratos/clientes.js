@@ -20643,8 +20643,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Gramado/RS",
     valorTotal: "R$ 75.972,60",
-    valorPago: "R$ 1.000,00",
-    formaPagamentoEntrada: "Dinheiro R$ 1.000,00 (recebido em 13/05/2026, sem Nº de documento) + Boleto 5x R$ 698,00 = R$ 3.490,00 (1º venc 15/06/2026, todos já vencidos, quitação não confirmada)",
+    valorPago: "R$ 4.490,00",
+    formaPagamentoEntrada: "Dinheiro R$ 1.000,00 (recebido em 13/05/2026, sem Nº de documento) + Boleto 5x R$ 698,00 = R$ 3.490,00 (1º venc 15/06/2026, TODOS QUITADOS) — corretagem integral de R$ 4.490,00",
     formaReembolso: "Reembolso",
     dataAssinatura: "2026-05-11",
     telefone: "(49) 99983-7646",
@@ -20653,7 +20653,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Gran Garden Resort — Gramado/RS. Bloco B2, Apt 001, térreo, Cota 38, 2 quartos. Proposta 338175. FORA do prazo de arrependimento (contrato 11/05/2026, venceu 18/05/2026 — há 170 dias). D4Sign ASSINADO, 5 assinaturas. PAGAMENTO EM DINHEIRO: a entrada de R$ 1.000,00 foi em DINHEIRO (recebido em 13/05/2026), não há Nº de documento nem comprovante possível — é a única ficha da base com essa forma. Por não ser cartão, a devolução é Reembolso por transferência. ATENÇÃO: o contrato é de MAIO e os 5 boletos de R$ 698,00 JÁ VENCERAM TODOS (15/06, 15/07, 15/08, 15/09 e 15/10/2026). O valor pago na ficha conta só os R$ 1.000,00 em dinheiro, porque o contrato não diz o que foi quitado. Levantar o extrato: se todos os 5 boletos entraram, o valor pago sobe para R$ 4.490,00 (a corretagem inteira) e muda bastante o que há a devolver.",
+    observacoes: "Gran Garden Resort — Gramado/RS. Bloco B2, Apt 001, térreo, Cota 38, 2 quartos. Proposta 338175. FORA do prazo de arrependimento (contrato 11/05/2026, venceu 18/05/2026 — há 170 dias). D4Sign ASSINADO, 5 assinaturas. PAGAMENTO EM DINHEIRO: a entrada de R$ 1.000,00 foi em DINHEIRO (recebido em 13/05/2026), não há Nº de documento nem comprovante possível — é a única ficha da base com essa forma. Por não ser cartão, a devolução é Reembolso por transferência. VALOR PAGO CONFIRMADO em 05/11/2026: R$ 4.490,00, a corretagem integral. Fecha exato com o contrato — R$ 1.000,00 em dinheiro mais os 5 boletos de R$ 698,00 (R$ 3.490,00), todos quitados. Os boletos venceram entre 15/06 e 15/10/2026. A corretagem está encerrada; o que resta do contrato é sinal e saldo, que ainda não começaram a vencer.",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/415--contrato.pdf" }
