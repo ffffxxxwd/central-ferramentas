@@ -20692,5 +20692,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/416--contrato.pdf" }
     ]
+  },
+  {
+    id: 417,
+    nome: "Ellan Moura de Souza",
+    cpf: "752.678.612-00",
+    rg: "199874 SSP/RR",
+    estadoCivil: "Casado(a)",
+    profissao: "Mecânico Aeronáutico",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "02",
+    apartamento: "324",
+    andar: "3",
+    cota: "08",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 49.564,08",
+    valorPago: "R$ 688,39",
+    formaPagamentoEntrada: "PIX R$ 688,39 (ID E60746948202401072145M3728iuqB9A, 07/01/2024) + Boleto 4x R$ 688,39 = R$ 2.753,56 (1º venc 15/02/2024) + Boleto 1x R$ 688,39 (15/06/2024) — corretagem total R$ 4.130,34, quitação dos boletos não confirmada",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2024-01-07",
+    telefone: "(62) 99612-9073",
+    email: "ellan32@hotmail.com",
+    endereco: "Rodovia GO-070, S/N, Fazenda São Domingos, Goiânia/GO, CEP 74477-600",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02, Apt 324, 3º andar, Cota 08. Proposta 158154. Mesma vendedora das fichas 401-403 (Patricia). Assinado em Jericoacoara/CE. FORA do prazo de arrependimento — contrato de 07/01/2024, venceu 14/01/2024, há cerca de 2 anos e 10 meses. É o contrato mais antigo da base até agora. D4Sign ASSINADO, 5 assinaturas, com assinatura PRESENCIAL (foto da CNH anexa no PDF). O PIX foi direto de banco, não pela Rede: o ID E60746948202401072145M3728iuqB9A é um end-to-end de PIX (ISPB 60746948 = Bradesco), diferente dos RESV/RESN das outras fichas. Não há comprovante anexo. ATENÇÃO — O VALOR PAGO AQUI ESTÁ QUASE CERTAMENTE DESATUALIZADO: a ficha conta só o PIX inicial de R$ 688,39, mas o contrato tem quase 3 anos e praticamente tudo já venceu — os 5 boletos da corretagem (R$ 3.441,95, fev a jun/2024), as 4 parcelas do sinal (R$ 2.753,53, jul a out/2024) e 24 das 62 parcelas do saldo (a partir de nov/2024). Se tudo foi pago, o acumulado passa de R$ 23 mil. LEVANTAR O EXTRATO antes de qualquer cálculo de devolução. Valores do contrato: corretagem R$ 4.130,34 + sinal R$ 2.753,53 + saldo R$ 42.680,18 = R$ 49.564,05 (o contrato arredonda para R$ 49.564,08).",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/417--contrato.pdf" }
+    ]
   }
 ];
