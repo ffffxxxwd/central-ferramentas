@@ -20658,5 +20658,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/415--contrato.pdf" }
     ]
+  },
+  {
+    id: 416,
+    nome: "Frederico Lima Teles",
+    cpf: "022.943.285-90",
+    rg: "30639069 SSP/SE",
+    estadoCivil: "Casado(a)",
+    profissao: "Professor Estadual",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    bloco: "B1",
+    apartamento: "204",
+    andar: "2",
+    cota: "11",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 78.266,77",
+    valorPago: "R$ 1.500,00",
+    formaPagamentoEntrada: "PIX R$ 1.500,00 (CV 182117088, ID RESV28263600938 1489521L24QD39414369, 30/10/2026 13h21) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 05/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-30",
+    telefone: "(79) 99995-3756",
+    email: "professorfredteleshistoriador@hotmail.com",
+    endereco: "Rua Senador Rollemberg, 793, Sao Jose, Aracaju/SE, CEP 49015-120",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Gran Garden Resort — Gramado/RS. Bloco B1, Apt 204, 2º andar, Cota 11, 2 quartos. Proposta 367104. DENTRO do prazo de arrependimento, MAS VENCE AMANHÃ: contrato assinado 30/10/2026 13h55, 7º dia em 06/11/2026. PRIORIDADE — se for exercer o arrependimento, tem que ser hoje ou amanhã. Comprovante do PIX anexo: R$ 1.500,00, CV 182117088, 30/10/2026 13h21, ID RESV28263600938 1489521L24QD39414369 — bate com o Nº de documento do recibo de corretagem. Contrato único, sem rateio. ZapSign ASSINADO, 4 de 4. ATENÇÃO: os 4 boletos de R$ 747,50 (total R$ 2.990,00, 1º venc 05/12/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 4.490,00.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/416--contrato.pdf" }
+    ]
   }
 ];
