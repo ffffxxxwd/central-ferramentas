@@ -20711,8 +20711,8 @@ window.CLIENTES = [
     fracao: "1/52",
     localizacao: "Cruz/CE",
     valorTotal: "R$ 49.564,08",
-    valorPago: "R$ 688,39",
-    formaPagamentoEntrada: "PIX R$ 688,39 (ID E60746948202401072145M3728iuqB9A, 07/01/2024) + Boleto 4x R$ 688,39 = R$ 2.753,56 (1º venc 15/02/2024) + Boleto 1x R$ 688,39 (15/06/2024) — corretagem total R$ 4.130,34, quitação dos boletos não confirmada",
+    valorPago: "R$ 25.545,84",
+    formaPagamentoEntrada: "PIX R$ 688,39 (ID E60746948202401072145M3728iuqB9A, 07/01/2024) + Boleto 4x R$ 688,39 = R$ 2.753,56 (1º venc 15/02/2024) + Boleto 1x R$ 688,39 (15/06/2024) — corretagem R$ 4.130,34 QUITADA, mais sinal e 24 parcelas do saldo: total pago R$ 25.545,84",
     formaReembolso: "Reembolso",
     dataAssinatura: "2024-01-07",
     telefone: "(62) 99612-9073",
@@ -20721,7 +20721,7 @@ window.CLIENTES = [
     conjuge: {},
     pix: "",
     clausulaExtra: "",
-    observacoes: "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02, Apt 324, 3º andar, Cota 08. Proposta 158154. Mesma vendedora das fichas 401-403 (Patricia). Assinado em Jericoacoara/CE. FORA do prazo de arrependimento — contrato de 07/01/2024, venceu 14/01/2024, há cerca de 2 anos e 10 meses. É o contrato mais antigo da base até agora. D4Sign ASSINADO, 5 assinaturas, com assinatura PRESENCIAL (foto da CNH anexa no PDF). O PIX foi direto de banco, não pela Rede: o ID E60746948202401072145M3728iuqB9A é um end-to-end de PIX (ISPB 60746948 = Bradesco), diferente dos RESV/RESN das outras fichas. Não há comprovante anexo. ATENÇÃO — O VALOR PAGO AQUI ESTÁ QUASE CERTAMENTE DESATUALIZADO: a ficha conta só o PIX inicial de R$ 688,39, mas o contrato tem quase 3 anos e praticamente tudo já venceu — os 5 boletos da corretagem (R$ 3.441,95, fev a jun/2024), as 4 parcelas do sinal (R$ 2.753,53, jul a out/2024) e 24 das 62 parcelas do saldo (a partir de nov/2024). Se tudo foi pago, o acumulado passa de R$ 23 mil. LEVANTAR O EXTRATO antes de qualquer cálculo de devolução. Valores do contrato: corretagem R$ 4.130,34 + sinal R$ 2.753,53 + saldo R$ 42.680,18 = R$ 49.564,05 (o contrato arredonda para R$ 49.564,08).",
+    observacoes: "Jeriquiá Lagoa Resort — Cruz/CE. Bloco 02, Apt 324, 3º andar, Cota 08. Proposta 158154. Mesma vendedora das fichas 401-403 (Patricia). Assinado em Jericoacoara/CE. FORA do prazo de arrependimento — contrato de 07/01/2024, venceu 14/01/2024, há cerca de 2 anos e 10 meses. É o contrato mais antigo da base até agora. D4Sign ASSINADO, 5 assinaturas, com assinatura PRESENCIAL (foto da CNH anexa no PDF). O PIX foi direto de banco, não pela Rede: o ID E60746948202401072145M3728iuqB9A é um end-to-end de PIX (ISPB 60746948 = Bradesco), diferente dos RESV/RESN das outras fichas. Não há comprovante anexo. VALOR PAGO CONFIRMADO em 05/11/2026: R$ 25.545,84. É de longe o maior valor pago da base. A conta reconcilia com o contrato: corretagem R$ 4.130,34 (6x R$ 688,39, quitada) + sinal R$ 2.753,56 (4x R$ 688,39, quitado) = R$ 6.883,90, sobrando R$ 18.661,94 para as 24 parcelas do saldo já vencidas (nov/2024 a out/2026). Isso dá R$ 777,58 por parcela contra os R$ 688,39 nominais — 13% acima, compatível com o reajuste do INCC em cerca de 2 anos, que o contrato prevê. Restam 38 das 62 parcelas do saldo. Valores do contrato: corretagem R$ 4.130,34 + sinal R$ 2.753,53 + saldo R$ 42.680,18 = R$ 49.564,05 (o contrato arredonda para R$ 49.564,08).",
     parcelas: [],
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/417--contrato.pdf" }
