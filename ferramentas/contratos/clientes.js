@@ -20834,5 +20834,39 @@ window.CLIENTES = [
       { titulo: "Notificação de Arrependimento (assinada gov.br)", arquivo: "contratos-pdf/420--notificacao-arrependimento.pdf" },
       { titulo: "Telegrama — comprovante de entrega na GAV", arquivo: "contratos-pdf/420--telegrama-entrega.pdf" }
     ]
+  },
+  {
+    id: 421,
+    nome: "Wesley Luiz Santos Oliveira",
+    cpf: "064.477.715-02",
+    rg: "1417440309 SSP/BA",
+    estadoCivil: "União Estável",
+    profissao: "Personal Trainer",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "110",
+    andar: "1",
+    cota: "20",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 47.571,02",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 pago por terceiro (CV 40523282, Aut 828024, ID RESV0981270094845425IBAI42QQC17EC4B, 31/10/2026 18h28) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 30/11/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-31",
+    telefone: "(71) 98154-3125",
+    email: "personalluiz9@outlook.com",
+    endereco: "Rua de Sao Goncalo, SN, Casa, Sao Goncalo, Salvador/BA, CEP 41185-055",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 110, 1º andar, Cota 20. Proposta 367421. DENTRO do prazo de arrependimento, VENCE AMANHÃ: contrato assinado 31/10/2026 20h08, 7º dia em 07/11/2026. PRIORIDADE. ATENÇÃO — O E-MAIL DELE NÃO ESTÁ RECEBENDO: personalluiz9@outlook.com devolveu erro permanente (550 5.7.1, AS9031519) em 06/11/2026, porque o domínio de envio atendimentogav.online está sem DKIM e sem DMARC. Enquanto o DNS não for corrigido, NENHUM e-mail chega nele nem em qualquer @outlook.com, @hotmail.com ou @live.com. Falar por WhatsApp (71) 98154-3125, ainda mais com o prazo vencendo amanhã. Comprovante do PIX anexo: R$ 1.000,00, CV 40523282, Aut 828024, 31/10/2026 18h28, ID RESV0981270094845425IBAI42QQC17EC4B. ZapSign ASSINADO, 5 de 5. ATENÇÃO 2: o PIX FOI PAGO POR TERCEIRO. O comprovante mostra o CPF do pagador mascarado como @@@.221.695-@@, que não é o do Wesley (064.477.715-02) nem o da cônjuge. Antes de devolver, confirmar para quem o valor deve voltar — devolver para quem não pagou gera problema. Os 5 boletos de R$ 598,00 (R$ 2.990,00, 1º venc 30/11/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 3.990,00. Cônjuge EMILE CAROLINE SANTOS DA SILVA (nutricionista, emilecssantos@gmail.com, (71) 98784-9606) também assinou, mas não entra na ficha como signatária do distrato. ATENÇÃO 3: no contrato, os campos Identidade e CPF da cônjuge trazem os mesmos dígitos (86165507557) — mesmo erro de preenchimento visto na ficha 406. Conferir se for usar.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/421--contrato.pdf" }
+    ]
   }
 ];
