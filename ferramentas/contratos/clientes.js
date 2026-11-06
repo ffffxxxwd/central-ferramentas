@@ -20798,5 +20798,41 @@ window.CLIENTES = [
       { titulo: "Notificação Extrajudicial", arquivo: "contratos-pdf/419--notificacao-extrajudicial.pdf" },
       { titulo: "Distrato com Retenção (não assinado por ela)", arquivo: "contratos-pdf/419--distrato-com-retencao.pdf" }
     ]
+  },
+  {
+    id: 420,
+    nome: "Lucas Ithamar Silva Santos",
+    cpf: "060.523.034-09",
+    rg: "7194220 SDS/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Fisioterapeuta",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "147",
+    andar: "1",
+    cota: "17",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 55.460,21",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (CV 177850486, Aut 408901, ID RESV3077290094845425CR0J5JE2DC60A85, 01/11/2026 12h18) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 01/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-01",
+    telefone: "(81) 99278-8221",
+    email: "lucas.ithamar@gmail.com",
+    endereco: "Rua Coelho Neto, 85, Casa, Campo Grande, Recife/PE, CEP 52040-310",
+    conjuge: {},
+    pix: "81992788221 (Nubank, Ag 0001, CC 71105981-0)",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 147, 1º andar, Cota 17, 2 quartos. Proposta/contrato 367540. Consultor Adriano Almeida da Silva. ARREPENDIMENTO JÁ EXERCIDO E PROVADO, DENTRO DO PRAZO — é o caso mais bem documentado da base. Linha do tempo: 01/11/2026 12h18 PIX de R$ 1.000,00; 01/11/2026 15h01 contrato assinado no ZapSign; 02/11/2026 10h12 notificação de arrependimento assinada digitalmente no gov.br (DIA 1 do prazo); 04/11/2026 14h34 TELEGRAMA DOS CORREIOS ENTREGUE na sede da GAV em Barra de São Miguel, recibo assinado por Juscelino Ferreira da Silva (DIA 3). O 7º dia é 08/11/2026. Ou seja, manifestou no dia seguinte à assinatura e tem prova de entrega dos Correios — a GAV não tem como alegar desconhecimento nem intempestividade. Telegrama MG123098442BR, confirmação de entrega MG123098456BR. FUNDAMENTO que ele invoca: art. 49 do CDC, art. 67-A § 10 da Lei 13.786/2018 e, expressamente, as CLÁUSULAS I.6 e I.6.1 DO PRÓPRIO QUADRO RESUMO (página 10 do contrato), já que a captação e a assinatura ocorreram em estande de vendas (Sala CUPE, Praia do Cupe, Ipojuca/PE), fora da sede da vendedora, que fica em Barra de São Miguel/AL. O argumento contratual é o mais forte: não depende de discussão sobre numeração de artigo de lei. ELE PEDE: cancelamento total da proposta e do contrato, cancelamento do Contrato de Associação ao SELECT CLUB (notificou também a GAV Intercambiadora, CNPJ 43.250.297/0001-56), restituição integral de R$ 1.000,00, cancelamento de todos os boletos futuros (5x R$ 598,00 a partir de 01/12/2026, 4 parcelas de sinal a partir de 10/05/2027 e 74 de saldo a partir de 10/09/2027) e revogação do consentimento de dados pessoais (LGPD). DADOS PARA ESTORNO informados por ele: Nubank (banco 0260), Agência 0001, Conta Corrente 71105981-0, chave PIX 81992788221, titular Lucas Ithamar Silva Santos. Pediu o protocolo, o termo de distrato e o comprovante de estorno por e-mail e WhatsApp. Comprovante do PIX anexo no contrato: R$ 1.000,00, CV 177850486, Aut 408901, 01/11/2026 12h18. ZapSign ASSINADO, 4 de 4. Nenhum boleto venceu (o 1º é 01/12/2026), então o valor pago é exatamente os R$ 1.000,00.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/420--contrato.pdf" },
+      { titulo: "Notificação de Arrependimento (assinada gov.br)", arquivo: "contratos-pdf/420--notificacao-arrependimento.pdf" },
+      { titulo: "Telegrama — comprovante de entrega na GAV", arquivo: "contratos-pdf/420--telegrama-entrega.pdf" }
+    ]
   }
 ];
