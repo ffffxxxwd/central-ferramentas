@@ -20868,5 +20868,73 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/421--contrato.pdf" }
     ]
+  },
+  {
+    id: 422,
+    nome: "Ismael Rodrigues da Silva Filho",
+    cpf: "966.647.895-15",
+    rg: "737027223 SSP/BA",
+    estadoCivil: "Casado(a)",
+    profissao: "Motorista",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "149",
+    andar: "1",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 28.622,38",
+    valorPago: "R$ 500,00",
+    formaPagamentoEntrada: "PIX pago por terceiro — 1 transação de R$ 1.000,00 rateada entre os 2 contratos, R$ 500,00 neste (CV 195584108, Aut 828013, ID RESV0981270094845425FFH71QUVE4E38FB, 31/10/2026 18h03) + Boleto 4x R$ 373,75 = R$ 1.495,00 (1º venc 10/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-31",
+    telefone: "(75) 98131-2376",
+    email: "ismaelrsilvafilho.77@gmail.com",
+    endereco: "Rua Prof Tania Maria Silva Lopes, 62, Casa, Centro, Aratuipe/BA, CEP 44490-000",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 149, 1º andar, Cota 12. Proposta 367438. DENTRO do prazo de arrependimento, VENCE AMANHÃ: contrato assinado 31/10/2026 20h34, 7º dia em 07/11/2026. PRIORIDADE. São 2 contratos da mesma pessoa (fichas 422 e 423) pagos por UMA ÚNICA transação: o comprovante anexo mostra um PIX de R$ 1.000,00 (CV 195584108, Aut 828013, 31/10/2026 18h03, ID RESV0981270094845425FFH71QUVE4E38FB), que é o mesmo Nº de documento citado nos dois contratos — R$ 500,00 por contrato. Ao devolver, lembrar que foi uma transação só rateada em duas. ATENÇÃO — O PIX FOI PAGO POR TERCEIRO, E O MESMO TERCEIRO PAGOU PELO WESLEY (ficha 421): os dois comprovantes mostram o pagador mascarado como @@@.221.695-@@, que não é o CPF do Ismael (966.647.895-15) nem o do Wesley (064.477.715-02). Foram duas transações de R$ 1.000,00 no mesmo terminal (SV098127) na noite de 31/10/2026: a do Ismael às 18h03 e a do Wesley às 18h28, somando R$ 2.000,00. Antes de devolver, confirmar para quem o valor deve voltar e quem é esse pagador — devolver para quem não pagou gera problema. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00, o que confere com o valor do contrato, também mais baixo (R$ 28.622,38). Os 4 boletos de R$ 373,75 (R$ 1.495,00 por contrato, 1º venc 10/12/2026) NÃO entram no valor pago porque ainda não venceram. ZapSign ASSINADO, 4 de 4.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/422--contrato.pdf" }
+    ]
+  },
+  {
+    id: 423,
+    nome: "Ismael Rodrigues da Silva Filho",
+    cpf: "966.647.895-15",
+    rg: "737027223 SSP/BA",
+    estadoCivil: "Casado(a)",
+    profissao: "Motorista",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "155",
+    andar: "1",
+    cota: "31",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 28.622,38",
+    valorPago: "R$ 500,00",
+    formaPagamentoEntrada: "PIX pago por terceiro — 1 transação de R$ 1.000,00 rateada entre os 2 contratos, R$ 500,00 neste (CV 195584108, Aut 828013, ID RESV0981270094845425FFH71QUVE4E38FB, 31/10/2026 18h03) + Boleto 4x R$ 373,75 = R$ 1.495,00 (1º venc 10/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-10-31",
+    telefone: "(75) 98131-2376",
+    email: "ismaelrsilvafilho.77@gmail.com",
+    endereco: "Rua Prof Tania Maria Silva Lopes, 62, Casa, Centro, Aratuipe/BA, CEP 44490-000",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 155, 1º andar, Cota 31. Proposta 367437. DENTRO do prazo de arrependimento, VENCE AMANHÃ: contrato assinado 31/10/2026 20h34, 7º dia em 07/11/2026. PRIORIDADE. São 2 contratos da mesma pessoa (fichas 422 e 423) pagos por UMA ÚNICA transação: o comprovante anexo mostra um PIX de R$ 1.000,00 (CV 195584108, Aut 828013, 31/10/2026 18h03, ID RESV0981270094845425FFH71QUVE4E38FB), que é o mesmo Nº de documento citado nos dois contratos — R$ 500,00 por contrato. Ao devolver, lembrar que foi uma transação só rateada em duas. ATENÇÃO — O PIX FOI PAGO POR TERCEIRO, E O MESMO TERCEIRO PAGOU PELO WESLEY (ficha 421): os dois comprovantes mostram o pagador mascarado como @@@.221.695-@@, que não é o CPF do Ismael (966.647.895-15) nem o do Wesley (064.477.715-02). Foram duas transações de R$ 1.000,00 no mesmo terminal (SV098127) na noite de 31/10/2026: a do Ismael às 18h03 e a do Wesley às 18h28, somando R$ 2.000,00. Antes de devolver, confirmar para quem o valor deve voltar e quem é esse pagador — devolver para quem não pagou gera problema. A corretagem aqui é R$ 1.995,00 por contrato, metade do padrão de R$ 3.990,00, o que confere com o valor do contrato, também mais baixo (R$ 28.622,38). Os 4 boletos de R$ 373,75 (R$ 1.495,00 por contrato, 1º venc 10/12/2026) NÃO entram no valor pago porque ainda não venceram. ZapSign ASSINADO, 4 de 4.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/423--contrato.pdf" }
+    ]
   }
 ];
