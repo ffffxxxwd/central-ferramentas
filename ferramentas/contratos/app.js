@@ -581,11 +581,11 @@
           // já aparecem nas pastilhas do rodapé, e repetir só enchia o
           // cabeçalho e empurrava o card pra três linhas
           (ehPendente(c.id) ? '<span class="tag pend">sem contrato</span>' : "") +
-          // Um selo só, do estágio mais avançado. Pago fica de fora porque o
-          // carimbo já diz. Sem isso, "assinado" só aparecia na pastilha do
-          // rodapé e passava despercebido.
-          (!pago && enviado ? '<span class="tag enviado-tag">enviado</span>'
-            : !pago && assinado ? '<span class="tag assinado-tag">assinado</span>' : "") +
+          // Um selo só, do estágio mais avançado, escrito por extenso: dizer
+          // "assinado" não esclarece o que foi assinado, nem "pago" quem pagou.
+          (pago ? '<span class="tag pago-tag">cliente pagou</span>'
+            : enviado ? '<span class="tag enviado-tag">email enviado</span>'
+            : assinado ? '<span class="tag assinado-tag">distrato assinado</span>' : "") +
           // "editado"/"adicionado aqui" vira selo: como linha solta, aparecia
           // só em algumas fichas e deixava esses cards mais altos
           (marca ? '<span class="tag marca">' + esc(marca) + "</span>" : "") +
