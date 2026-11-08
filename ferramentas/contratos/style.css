@@ -447,11 +447,13 @@ body {
    contraste do resto do site, e é intencional: o card vira um aviso.
    Passar o mouse devolve o card à leitura normal.
    ============================================================ */
-.ficha.carimbada > *:not(.ficha__carimbo) {
+.ficha.carimbada > *:not(.ficha__carimbo):not(.ficha__topo) {
   filter: grayscale(.85) opacity(.3);
   transition: filter .18s ease;
 }
-.ficha.carimbada:hover > *:not(.ficha__carimbo) { filter: none; }
+/* o cabeçalho verde fica de fora do esmaecimento: é ele que diz, de longe,
+   que o contrato está pago, junto com o carimbo */
+.ficha.carimbada:hover > *:not(.ficha__carimbo):not(.ficha__topo) { filter: none; }
 .ficha.carimbada:hover .ficha__carimbo { opacity: .22; }
 
 .ficha__carimbo {
@@ -476,23 +478,39 @@ body {
 /* O CABEÇALHO INTEIRO fica sólido na cor do estado. Tentei antes com um
    tom claro no fundo (#dde3ec) e uma faixa fina no topo: não funcionou,
    continuava passando batido. Pintar a barra toda é impossível de não
-   ver, não esconde nenhuma informação e não aumenta a altura do card. */
-.ficha.assinada .ficha__topo { background: #334155; border-bottom-color: #334155; }
-.ficha.enviada  .ficha__topo { background: #4c1d95; border-bottom-color: #4c1d95; }
+   ver, não esconde nenhuma informação e não aumenta a altura do card.
 
-/* dentro de um cabeçalho sólido, tudo passa a ser branco */
-.ficha.assinada .ficha__topo .tag,
-.ficha.enviada  .ficha__topo .tag {
+   Uma cor por estado:
+     assinado -> AMARELO   (texto escuro, que é o que contrasta no amarelo)
+     enviado  -> AZUL      (a cor que o olho associa a e-mail)
+     pago     -> VERDE     (junto com o carimbo)                          */
+.ficha.assinada .ficha__topo { background: #f2b705; border-bottom-color: #f2b705; }
+.ficha.enviada  .ficha__topo { background: #1a56db; border-bottom-color: #1a56db; }
+.ficha.pago     .ficha__topo { background: #117a42; border-bottom-color: #117a42; }
+
+/* --- cabeçalho ESCURO (azul/verde): tudo em branco --- */
+.ficha.enviada .ficha__topo .tag,
+.ficha.pago    .ficha__topo .tag {
   background: rgba(255,255,255,.16); color: #fff; border-color: rgba(255,255,255,.4);
 }
-.ficha.assinada .ficha__topo .ficha__data,
-.ficha.enviada  .ficha__topo .ficha__data { color: #fff; }
-.ficha.assinada .ficha__acao,
-.ficha.enviada  .ficha__acao {
+.ficha.enviada .ficha__topo .ficha__data,
+.ficha.pago    .ficha__topo .ficha__data { color: #fff; }
+.ficha.enviada .ficha__acao,
+.ficha.pago    .ficha__acao {
   background: rgba(255,255,255,.14); color: #fff; border-color: rgba(255,255,255,.45);
 }
-.ficha.assinada .ficha__acao:hover,
-.ficha.enviada  .ficha__acao:hover { background: #fff; color: var(--text); border-color: #fff; }
+.ficha.enviada .ficha__acao:hover,
+.ficha.pago    .ficha__acao:hover { background: #fff; color: var(--text); border-color: #fff; }
+
+/* --- cabeçalho AMARELO: texto escuro, senão não se lê --- */
+.ficha.assinada .ficha__topo .tag {
+  background: rgba(0,0,0,.10); color: #3d2c00; border-color: rgba(0,0,0,.3);
+}
+.ficha.assinada .ficha__topo .ficha__data { color: #3d2c00; }
+.ficha.assinada .ficha__acao {
+  background: rgba(0,0,0,.08); color: #3d2c00; border-color: rgba(0,0,0,.32);
+}
+.ficha.assinada .ficha__acao:hover { background: #3d2c00; color: #f2b705; border-color: #3d2c00; }
 
 /* ---------- Grupo: mesma pessoa, vários contratos ---------- */
 .grupo {
