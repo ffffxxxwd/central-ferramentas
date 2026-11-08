@@ -581,6 +581,11 @@
           // já aparecem nas pastilhas do rodapé, e repetir só enchia o
           // cabeçalho e empurrava o card pra três linhas
           (ehPendente(c.id) ? '<span class="tag pend">sem contrato</span>' : "") +
+          // Um selo só, do estágio mais avançado. Pago fica de fora porque o
+          // carimbo já diz. Sem isso, "assinado" só aparecia na pastilha do
+          // rodapé e passava despercebido.
+          (!pago && enviado ? '<span class="tag enviado-tag">enviado</span>'
+            : !pago && assinado ? '<span class="tag assinado-tag">assinado</span>' : "") +
           // "editado"/"adicionado aqui" vira selo: como linha solta, aparecia
           // só em algumas fichas e deixava esses cards mais altos
           (marca ? '<span class="tag marca">' + esc(marca) + "</span>" : "") +
@@ -701,6 +706,7 @@
       var ids = g.itens.map(function (c) { return c.id; }).join("|");
       // grupo todo arquivado -> o botão passa a oferecer "Reabrir"
       var todosArq = g.itens.every(function (c) { return ehArquivado(c.id); });
+      var todosAsg = g.itens.every(function (c) { return ehAssinado(c.id); });
       var resumo = [
         g.itens.length + " contratos",
         p.cpf ? "CPF " + p.cpf : "",
@@ -723,6 +729,9 @@
               "</button>" +
               // arquiva (ou reabre) os contratos da pessoa de uma vez — um por
               // um dava trabalho em quem tem 5, 6 contratos
+              '<button type="button" class="btn" data-assinado-grupo="' + esc(ids) + '" data-asg="' + (todosAsg ? "1" : "0") + '">' +
+                (todosAsg ? "Desmarcar assinados" : "Assinar os " + g.itens.length) +
+              "</button>" +
               '<button type="button" class="btn" data-arquivar-grupo="' + esc(ids) + '" data-arq="' + (todosArq ? "1" : "0") + '">' +
                 (todosArq ? "Reabrir os " + g.itens.length : "Arquivar os " + g.itens.length) +
               "</button>" +
@@ -2539,6 +2548,16 @@
         if (cl) enfileirarComprovante(cl, alvo);
       }
       abrirComprovante(compBt.getAttribute("data-empresa"));
+      return;
+    }
+    // marcar/desmarcar assinado em todos os contratos de uma pessoa
+    var asgGr = e.target.closest("[data-assinado-grupo]");
+    if (asgGr) {
+      var marcaAsg = asgGr.getAttribute("data-asg") === "0";
+      asgGr.getAttribute("data-assinado-grupo").split("|").forEach(function (id) {
+        marcarAssinado(id, marcaAsg);
+      });
+      renderTudo();
       return;
     }
     // arquivar/reabrir todos os contratos de uma pessoa de uma vez

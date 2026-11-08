@@ -475,12 +475,15 @@ body {
    perder nenhuma informação do card. */
 .ficha.enviada, .ficha.assinada { position: relative; }
 .ficha.enviada::before, .ficha.assinada::before {
-  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; z-index: 2;
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; z-index: 2;
 }
 .ficha.enviada::before  { background: #5b21b6; }
 .ficha.assinada::before { background: #334155; }
-.ficha.enviada  .ficha__topo { background: #f4eeff; border-bottom-color: #d8c6f7; }
-.ficha.assinada .ficha__topo { background: #eef1f6; border-bottom-color: #c3cdde; }
+/* O tom do cabeçalho tem que destoar DE VERDADE do padrão (#f2f5fa).
+   O cinza que eu tinha usado antes (#eef1f6) ficava a 4 pontos de
+   distância em cada canal — na prática, invisível. */
+.ficha.enviada  .ficha__topo { background: #ece2ff; border-bottom-color: #c3a7ef; }
+.ficha.assinada .ficha__topo { background: #dde3ec; border-bottom-color: #9aa7bd; }
 
 /* ---------- Grupo: mesma pessoa, vários contratos ---------- */
 .grupo {
