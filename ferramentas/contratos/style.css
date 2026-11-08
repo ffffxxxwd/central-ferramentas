@@ -473,17 +473,26 @@ body {
    Nada é escondido aqui: o cabeçalho muda de cor e uma faixa fina no topo
    marca o estágio. Dá pra varrer a tela e ver em que pé cada um está sem
    perder nenhuma informação do card. */
-.ficha.enviada, .ficha.assinada { position: relative; }
-.ficha.enviada::before, .ficha.assinada::before {
-  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; z-index: 2;
+/* O CABEÇALHO INTEIRO fica sólido na cor do estado. Tentei antes com um
+   tom claro no fundo (#dde3ec) e uma faixa fina no topo: não funcionou,
+   continuava passando batido. Pintar a barra toda é impossível de não
+   ver, não esconde nenhuma informação e não aumenta a altura do card. */
+.ficha.assinada .ficha__topo { background: #334155; border-bottom-color: #334155; }
+.ficha.enviada  .ficha__topo { background: #4c1d95; border-bottom-color: #4c1d95; }
+
+/* dentro de um cabeçalho sólido, tudo passa a ser branco */
+.ficha.assinada .ficha__topo .tag,
+.ficha.enviada  .ficha__topo .tag {
+  background: rgba(255,255,255,.16); color: #fff; border-color: rgba(255,255,255,.4);
 }
-.ficha.enviada::before  { background: #5b21b6; }
-.ficha.assinada::before { background: #334155; }
-/* O tom do cabeçalho tem que destoar DE VERDADE do padrão (#f2f5fa).
-   O cinza que eu tinha usado antes (#eef1f6) ficava a 4 pontos de
-   distância em cada canal — na prática, invisível. */
-.ficha.enviada  .ficha__topo { background: #ece2ff; border-bottom-color: #c3a7ef; }
-.ficha.assinada .ficha__topo { background: #dde3ec; border-bottom-color: #9aa7bd; }
+.ficha.assinada .ficha__topo .ficha__data,
+.ficha.enviada  .ficha__topo .ficha__data { color: #fff; }
+.ficha.assinada .ficha__acao,
+.ficha.enviada  .ficha__acao {
+  background: rgba(255,255,255,.14); color: #fff; border-color: rgba(255,255,255,.45);
+}
+.ficha.assinada .ficha__acao:hover,
+.ficha.enviada  .ficha__acao:hover { background: #fff; color: var(--text); border-color: #fff; }
 
 /* ---------- Grupo: mesma pessoa, vários contratos ---------- */
 .grupo {
