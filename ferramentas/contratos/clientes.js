@@ -21276,5 +21276,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/433--contrato.pdf" }
     ]
+  },
+  {
+    id: 434,
+    nome: "Joao Carlos da Silva Batista",
+    cpf: "257.214.878-10",
+    rg: "25608028 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Analista de Sistemas",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "308",
+    andar: "3",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 48.752,68",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTER à vista R$ 1.000,00 (Rede, Nº Doc 17345174, 1º venc 18/10/2026) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 18/11/2026, nenhum vencido)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-18",
+    telefone: "(11) 99420-2586",
+    email: "batista.jcgospel@gmail.com",
+    endereco: "Rua Lourenco Franco do Prado, 213, Bloco 04 AP 43, Jardim Nelia, Sao Paulo/SP, CEP 08142-230",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 308, 3º andar, Cota 07. Proposta 360517. FORA do prazo de arrependimento. ATENÇÃO — A DATA DE ASSINATURA É INFERIDA, não consta no documento: o PDF é um escaneado de 1 página só (a proposta), sem certificado de assinatura e com o rodapé cortado. A data da ficha (18/09/2026) foi deduzida pelos vencimentos, seguindo o padrão das outras fichas: o cartão vence 1 mês depois da assinatura (1º venc 18/10/2026) e o boleto, 2 meses (1º venc 18/11/2026). As duas contas batem em 18/09/2026. Mesmo que esteja errada por algumas semanas, o prazo de 7 dias venceu de qualquer forma — mas confirmar a data real antes de usar em qualquer argumento. Mesma situação das fichas 399 e 400 (Janaina). Não há comprovante de pagamento anexo. O valor pago conta só o cartão (MASTER crédito à vista, R$ 1.000,00, Nº Doc 17345174). Os 5 boletos de R$ 598,00 (R$ 2.990,00) têm 1º vencimento em 18/11/2026 e NENHUM venceu ainda. Quitados, a corretagem fecha em R$ 3.990,00. Conferência: corretagem R$ 3.990,00 + sinal R$ 2.437,64 + saldo R$ 42.325,04 = R$ 48.752,68, que confere com o total da venda. Sinal 4x R$ 609,41 a partir de 10/04/2027 e saldo 74x R$ 571,96 a partir de 10/08/2027 — nada disso começou a vencer.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/434--contrato.pdf" }
+    ]
   }
 ];
