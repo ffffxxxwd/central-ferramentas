@@ -634,10 +634,33 @@
           '<button type="button" class="ficha__btn so-ico" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abrir o distrato em outra guia" aria-label="Abrir o distrato em outra guia">' + ico("novaGuia") + "</button>" +
           '<button type="button" class="ficha__btn reembolso" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Reembolso</button>' +
           '<button type="button" class="ficha__btn" data-acao="email" data-id="' + esc(c.id) + '">Mensagem</button>' +
+          '<button type="button" class="ficha__btn" data-acao="print-card" data-id="' + esc(c.id) + '" title="Gera uma imagem do card para mandar por WhatsApp">Print</button>' +
         "</div>" +
         pastilhasEstado(c, { confirmado: confirmado, pago: pago, assinado: assinado, enviado: enviado }) +
       "</div>"
     );
+  }
+
+  /* Versão das pastilhas para a faixa do grupo: marca ou desmarca o estado em
+     TODOS os contratos da pessoa de uma vez. Acesa só quando todos já estão
+     marcados; clicar com algum faltando marca o restante. */
+  function pastilhasGrupo(itens, ids) {
+    var todos = function (fn) { return itens.every(fn); };
+    var defs = [
+      { rot: "Valor OK", cls: "conf", attr: "data-confirmado-grupo", par: "data-conf", on: todos(function (c) { return ehConfirmado(c.id); }) },
+      { rot: "Assinado", cls: "asg", attr: "data-assinado-grupo", par: "data-asg", on: todos(function (c) { return ehAssinado(c.id); }) },
+      { rot: "Enviado", cls: "env", attr: "data-enviado-grupo", par: "data-env", on: todos(function (c) { return ehEnviado(c.id); }) },
+      { rot: "Pago", cls: "pg", attr: "data-pago-grupo", par: "data-pg", on: todos(function (c) { return ehPago(c.id); }) }
+    ];
+    return '<div class="grupo__estados"><span class="grupo__estados-rot">Marcar nos ' + itens.length + "</span>" +
+      defs.map(function (d) {
+        return '<button type="button" class="pastilha ' + d.cls + (d.on ? " on" : "") + '" ' +
+          d.attr + '="' + esc(ids) + '" ' + d.par + '="' + (d.on ? "1" : "0") + '" ' +
+          'aria-pressed="' + (d.on ? "true" : "false") + '" ' +
+          'title="' + (d.on ? "Desmarcar" : "Marcar") + " " + esc(d.rot) + " em todos os " + itens.length + ' contratos">' +
+          (d.on ? '<span class="pastilha__ok" aria-hidden="true">\u2713</span>' : "") + esc(d.rot) +
+          "</button>";
+      }).join("") + "</div>";
   }
 
   /* Pastilhas de estado — substituem os quatro botões "Marcar X / Desmarcar X".
@@ -729,13 +752,13 @@
               "</button>" +
               // arquiva (ou reabre) os contratos da pessoa de uma vez — um por
               // um dava trabalho em quem tem 5, 6 contratos
-              '<button type="button" class="btn" data-assinado-grupo="' + esc(ids) + '" data-asg="' + (todosAsg ? "1" : "0") + '">' +
-                (todosAsg ? "Desmarcar assinados" : "Assinar os " + g.itens.length) +
-              "</button>" +
               '<button type="button" class="btn" data-arquivar-grupo="' + esc(ids) + '" data-arq="' + (todosArq ? "1" : "0") + '">' +
                 (todosArq ? "Reabrir os " + g.itens.length : "Arquivar os " + g.itens.length) +
               "</button>" +
             "</div>" +
+            // os 4 estados do rodape do card, aqui valendo para o grupo todo.
+            // Mesmas pastilhas, em vez de 4 botoes largos a mais no cabecalho.
+            pastilhasGrupo(g.itens, ids) +
           "</header>" +
           '<div class="grupo__itens">' +
             g.itens.map(function (c) { return cardFicha(c, true); }).join("") +
@@ -984,6 +1007,57 @@
   }
 
   /* ---------- Preencher formulário automaticamente a partir do PDF ---------- */
+  /* Gera uma imagem PNG do card para mandar por WhatsApp.
+     Copia para a area de transferencia quando o navegador deixa (ai e so
+     colar na conversa); quando nao deixa, baixa o arquivo. Os botoes e o
+     "Arquivar" saem da foto: quem recebe nao vai clicar neles, e sem eles
+     a imagem fica so com os dados e o estado, que e o que interessa. */
+  function printCard(id) {
+    var card = document.querySelector('.ficha[data-id="' + (window.CSS && CSS.escape ? CSS.escape(id) : id) + '"]');
+    if (!card) { alert("Não achei o card na tela. Tire o filtro e tente de novo."); return; }
+    if (!window.html2canvas) { alert("A biblioteca de imagem não carregou. Recarregue a página."); return; }
+
+    var c = acharCliente(id);
+    var nome = semAcento((c && c.nome) || String(id)).replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+    card.classList.add("printando");
+
+    html2canvas(card, { backgroundColor: "#ffffff", scale: 2, logging: false }).then(function (canvas) {
+      card.classList.remove("printando");
+      canvas.toBlob(function (blob) {
+        if (!blob) return;
+        var baixar = function () {
+          var a = document.createElement("a");
+          a.href = URL.createObjectURL(blob);
+          a.download = "card-" + nome + ".png";
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+        };
+        // copiar direto pra area de transferencia exige contexto seguro
+        // (https ou localhost); fora disso cai no download
+        if (navigator.clipboard && window.ClipboardItem && window.isSecureContext) {
+          navigator.clipboard.write([new ClipboardItem({ "image/png": blob })])
+            .then(function () { avisoRapido("Card copiado — é só colar no WhatsApp"); })
+            .catch(baixar);
+        } else {
+          baixar();
+        }
+      }, "image/png");
+    }).catch(function () {
+      card.classList.remove("printando");
+      alert("Não consegui gerar a imagem do card.");
+    });
+  }
+
+  /* avisinho que some sozinho, pra não usar alert() num fluxo rápido */
+  function avisoRapido(txt) {
+    var d = document.createElement("div");
+    d.className = "aviso-rapido";
+    d.textContent = txt;
+    document.body.appendChild(d);
+    setTimeout(function () { d.classList.add("saindo"); }, 1800);
+    setTimeout(function () { d.remove(); }, 2300);
+  }
+
   /* Mostra, campo a campo, o que a leitura conseguiu tirar do PDF e o que
      ficou faltando — é o que evita salvar ficha com buraco sem perceber. */
   function mostrarRelatorioLeitura(d) {
@@ -2550,13 +2624,19 @@
       abrirComprovante(compBt.getAttribute("data-empresa"));
       return;
     }
-    // marcar/desmarcar assinado em todos os contratos de uma pessoa
-    var asgGr = e.target.closest("[data-assinado-grupo]");
-    if (asgGr) {
-      var marcaAsg = asgGr.getAttribute("data-asg") === "0";
-      asgGr.getAttribute("data-assinado-grupo").split("|").forEach(function (id) {
-        marcarAssinado(id, marcaAsg);
-      });
+    // marcar/desmarcar um estado em todos os contratos de uma pessoa
+    var ESTADOS_GRUPO = [
+      ["data-confirmado-grupo", "data-conf", marcarConfirmado],
+      ["data-assinado-grupo", "data-asg", marcarAssinado],
+      ["data-enviado-grupo", "data-env", marcarEnviado],
+      ["data-pago-grupo", "data-pg", marcarPago]
+    ];
+    for (var ie = 0; ie < ESTADOS_GRUPO.length; ie++) {
+      var bt = e.target.closest("[" + ESTADOS_GRUPO[ie][0] + "]");
+      if (!bt) continue;
+      var liga = bt.getAttribute(ESTADOS_GRUPO[ie][1]) === "0";
+      var marcar = ESTADOS_GRUPO[ie][2];
+      bt.getAttribute(ESTADOS_GRUPO[ie][0]).split("|").forEach(function (id) { marcar(id, liga); });
       renderTudo();
       return;
     }
@@ -2622,6 +2702,7 @@
     var acaoBt = e.target.closest(".ficha__botoes [data-acao]");
     if (acaoBt) {
       var ac = acaoBt.getAttribute("data-acao"), idc = acaoBt.getAttribute("data-id");
+      if (ac === "print-card") { e.stopPropagation(); printCard(idc); return; }
       if (ac === "distrato") gerarDistrato(idc, acaoBt.getAttribute("data-nova") === "1");
       else if (ac === "email") abrirEmail([idc]);
       else if (ac === "novo-reembolso") formReembolso(idc);
