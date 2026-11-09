@@ -21106,5 +21106,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Ficha de Negociação + Termo de Ciência", arquivo: "contratos-pdf/428--ficha-negociacao.pdf" }
     ]
+  },
+  {
+    id: 429,
+    nome: "Patrick Duarte Salum",
+    cpf: "007.403.450-28",
+    rg: "00740345028 SJS/RS",
+    estadoCivil: "União Estável",
+    profissao: "Operador de Produção",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    bloco: "A2",
+    apartamento: "001",
+    andar: "Térreo",
+    cota: "46",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 78.266,77",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 pago por empresa, CNPJ 69.100.687/0001-33 (CV 25240424, Aut 706753, ID RESV2590250093814895DBU4G2EZE999B40, 01/11/2026 14h05) + Boleto 5x R$ 698,00 = R$ 3.490,00 (1º venc 10/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-01",
+    telefone: "(53) 99154-2424",
+    email: "larissasilveirasalum2018@gmail.com",
+    endereco: "Avenida Osvaldo Martensen, SN, Parque Residencial Sao Pedro, Rio Grande/RS, CEP 96216-240",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Gran Garden Resort — Gramado/RS. Bloco A2, Apt 001, térreo, Cota 46, 2 quartos. Proposta 367598. Mesma vendedora das fichas 415 (Cassiano) e 416 (Frederico). FORA do prazo de arrependimento POR 1 DIA: contrato assinado 01/11/2026 14h43, 7º dia em 08/11/2026, e hoje é 09/11/2026. O que conta é a data em que ELE manifestou o arrependimento, não a data em que a ficha é processada — confirmar se pediu até ontem. ATENÇÃO — O PIX FOI PAGO POR UMA EMPRESA: o comprovante mostra 'Dados pagador: 69.100.687/0001-33', que é um CNPJ, não o CPF do Patrick (007.403.450-28). É o primeiro caso na base em que o pagador é pessoa jurídica; nos outros (fichas 421, 422, 423 e 426) o pagador era pessoa física. Levantar de quem é esse CNPJ e para onde o valor deve voltar ANTES de devolver — reembolsar para uma empresa que não é a compradora é problema na certa. Comprovante anexo: PIX R$ 1.000,00, CV 25240424, Aut 706753, 01/11/2026 14h05, ID RESV2590250093814895DBU4G2EZE999B40. ZapSign ASSINADO, 4 de 4. Contrato único, sem rateio. Os 5 boletos de R$ 698,00 (R$ 3.490,00, 1º venc 10/12/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 4.490,00. ATENÇÃO 2: no contrato os campos Identidade e CPF trazem os mesmos dígitos (00740345028) — mesmo erro de preenchimento das fichas 406 e 421. Conferir o RG real antes de emitir o distrato. ATENÇÃO 3: o e-mail cadastrado (larissasilveirasalum2018@gmail.com) não corresponde ao nome dele e foi por ele que o contrato foi assinado no ZapSign. Provavelmente é da companheira. Conferir antes de mandar o distrato por e-mail.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/429--contrato.pdf" }
+    ]
   }
 ];
