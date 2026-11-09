@@ -20970,5 +20970,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/424--contrato.pdf" }
     ]
+  },
+  {
+    id: 425,
+    nome: "Luciano Luiz dos Anjos Santos",
+    cpf: "933.288.852-34",
+    rg: "975006 SESDC/RO",
+    estadoCivil: "Casado(a)",
+    profissao: "Engenheiro",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "03",
+    apartamento: "0208",
+    andar: "1",
+    cota: "14",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 85.246,52",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX R$ 3.990,00 em transação única (CV 19480724, Aut 177122, ID RESV0890210095158073EQHBMB493BDE31C, 25/09/2026 10h34) — corretagem integral, sem boleto nem cartão",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-09-25",
+    telefone: "(69) 98119-1078",
+    email: "luciano.luiz14@gmail.com",
+    endereco: "Rua Pioneiro Otacilio Ilario Barbosa, 1118, Vila Verde, Cacoal/RO, CEP 76960-402",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Porto 2 Life Resort — Ipojuca/PE. Bloco 03, Apt 0208, 1º andar, Cota 14. Proposta 361608. Mesma vendedora da ficha 393 (Marciano). FORA do prazo de arrependimento (contrato 25/09/2026, venceu 02/10/2026, há 38 dias). CORRETAGEM INTEGRAL NUM PIX SÓ: o comprovante anexo mostra R$ 3.990,00 em uma única transação (CV 19480724, Aut 177122, 25/09/2026 10h34, ID RESV0890210095158073EQHBMB493BDE31C). Não há boleto nem cartão na corretagem — é o primeiro caso assim na base. O CPF do pagador (@@@.288.852-@@) bate com o dele, então pagou ele mesmo. ZapSign ASSINADO, 4 de 4. Contrato único, sem rateio. ATENÇÃO: a corretagem está quitada, mas o SINAL já começou a vencer — são 5 parcelas de R$ 852,47 (total R$ 4.262,33) com 1º vencimento em 10/10/2026, e a primeira já venceu (a segunda vence amanhã, 10/11/2026). O valor pago da ficha conta só a corretagem; se ele pagou parcela de sinal, levantar no extrato e somar. O saldo (91x R$ 846,09, total R$ 76.994,19) só começa em 10/03/2027. Conferência do contrato: 3.990,00 + 4.262,33 + 76.994,19 = R$ 85.246,52, que é exatamente o valor total da venda.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/425--contrato.pdf" }
+    ]
   }
 ];
