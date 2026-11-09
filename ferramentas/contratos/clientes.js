@@ -21072,5 +21072,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Ficha de Negociação + Termo de Ciência", arquivo: "contratos-pdf/427--ficha-negociacao.pdf" }
     ]
+  },
+  {
+    id: 428,
+    nome: "Clenildo de Miranda Cardoso",
+    cpf: "041.330.102-80",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "Salinas Premium Resort Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "28.883.561/0001-03",
+    empreendimento: "Premium GAV Resorts",
+    bloco: "01",
+    apartamento: "1608",
+    andar: "",
+    cota: "11",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 80.008,38",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX R$ 3.990,00 em parcela única (venc 07/11/2026, mesmo dia da assinatura, sem comprovante anexo) — entrada integral, sem boleto nem cartão",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-07",
+    telefone: "(93) 99226-4583",
+    email: "clenildo.m.cardoso@gmail.com",
+    endereco: "",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Premium GAV Resorts — Salinópolis/PA. Bloco 01, Apt 1608, Cota 11. Vista MAR. Sala SALINÓPOLIS - PARK HOTEL, consultor Leandro Nunes. DENTRO do prazo de arrependimento: assinado 07/11/2026 12h19, 7º dia em 14/11/2026. FICHA INCOMPLETA: montada a partir da FICHA DE NEGOCIAÇÃO e do Termo de Ciência, não do contrato. Faltam RG, estado civil, profissão, nacionalidade, andar e endereço — nenhum desses dados aparece no documento recebido. Mesmo caso das fichas 405 (Daniel) e 427 (Ialdo). Pedir o contrato assinado para completar e para gerar o distrato. A razão social e o CNPJ foram reaproveitados da ficha 395 (Bruna Gabriella), que é do mesmo empreendimento, já que a ficha de negociação não traz a vendedora. ENTRADA INTEGRAL EM PIX: R$ 3.990,00 numa parcela só, com vencimento em 07/11/2026, o próprio dia da assinatura. Sem boleto nem cartão na entrada — segundo caso assim na base, depois da ficha 425 (Luciano). ATENÇÃO: não há comprovante do PIX anexo. Confirmar se a transferência entrou antes de devolver. Plano de pagamento: Entrada R$ 3.990,00 PIX (07/11/2026); Sinal 4x R$ 800,09 = R$ 3.200,36 (1º venc 10/12/2026) + 1x R$ 800,07 (10/04/2027); Saldo 85x R$ 847,27 = R$ 72.017,95 (1º venc 10/05/2027). Soma confere com o total de R$ 80.008,38. Nenhuma parcela de sinal ou saldo venceu ainda.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Ficha de Negociação + Termo de Ciência", arquivo: "contratos-pdf/428--ficha-negociacao.pdf" }
+    ]
   }
 ];
