@@ -21038,5 +21038,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/426--contrato.pdf" }
     ]
+  },
+  {
+    id: 427,
+    nome: "Ialdo Barbosa de Lima",
+    cpf: "070.081.924-01",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "126",
+    andar: "",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 52.578,85",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito à vista R$ 1.000,00 (1º venc 08/12/2026, sem comprovante anexo) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 08/01/2027, não vencido) — entrada total R$ 3.990,00",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-08",
+    telefone: "(82) 98828-8845",
+    email: "ialdo.lima.19@gmail.com",
+    endereco: "",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 126, Cota 07. Vista Telhado - Praia. Sala PRAIA DO FRANCÊS, consultora Dina Santos de Oliveira. DENTRO do prazo de arrependimento: assinado 08/11/2026 18h55, 7º dia em 15/11/2026. FICHA INCOMPLETA: montada a partir da FICHA DE NEGOCIAÇÃO e do Termo de Ciência, não do contrato. Faltam RG, estado civil, profissão, nacionalidade, andar e endereço — nenhum desses dados aparece no documento recebido. Mesmo caso da ficha 405 (Daniel). Pedir o contrato assinado para completar e para gerar o distrato. A razão social e o CNPJ foram reaproveitados das outras fichas do Areya Barra (396, 413, 420 a 423), já que a ficha de negociação não traz a vendedora. ATENÇÃO: o valor pago (R$ 1.000,00, cartão de crédito à vista) está SEM COMPROVANTE. A ficha mostra 1º vencimento 08/12/2026, que é quando cairia na fatura; a transação em si deve ser de 08/11, mas não há recibo da Rede anexo. Confirmar se a cobrança passou antes de devolver. Vendido fora da sede da vendedora: a venda foi na sala PRAIA DO FRANCÊS (Marechal Deodoro/AL) e a sede da GAV Barra de São Miguel fica em Barra de São Miguel/AL — municípios diferentes. Reforça o direito de arrependimento, mesmo argumento das fichas 420 e 426. Plano de pagamento: Entrada R$ 1.000,00 cartão crédito à vista (08/12/2026) + Entrada restante 5x R$ 598,00 = R$ 2.990,00 boleto (1º venc 08/01/2027); Sinal 3x R$ 657,23 (10/06/2027) + 1x R$ 657,24 (10/09/2027) = R$ 2.628,93; Saldo 74x R$ 621,08 (10/10/2027) = R$ 45.959,92. Soma confere com o total de R$ 52.578,85.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Ficha de Negociação + Termo de Ciência", arquivo: "contratos-pdf/427--ficha-negociacao.pdf" }
+    ]
   }
 ];
