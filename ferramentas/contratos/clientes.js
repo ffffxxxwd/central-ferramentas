@@ -21004,5 +21004,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/425--contrato.pdf" }
     ]
+  },
+  {
+    id: 426,
+    nome: "Simone Ferreira Carita",
+    cpf: "268.916.378-05",
+    rg: "29768299 SSP/SP",
+    estadoCivil: "Casado(a)",
+    profissao: "Administradora",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "01",
+    apartamento: "0227",
+    andar: "2",
+    cota: "26",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,79",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTERCARD final 3949 à vista R$ 1.000,00, em nome de CARITA/FERNANDO (Rede, CV 197109926, Aut 823616, 05/11/2026 21h45) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 05/01/2027, não vencido)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-05",
+    telefone: "(15) 99622-2001",
+    email: "simonecarita32@gmail.com",
+    endereco: "Rua Renato Chiazzotto, 150, Bloco A Apto 804, Parque Morumbi, Votorantim/SP, CEP 18110-382",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Porto Alto Resort — Ipojuca/PE. Bloco 01, Apt 0227, 2º andar, Cota 26. Proposta 368309. Mesma vendedora das fichas 405 (Daniel) e 407 (Celio). DENTRO do prazo de arrependimento: contrato assinado 05/11/2026 22h30, 7º dia em 12/11/2026. VENDIDO FORA DA SEDE DA VENDEDORA: a proposta foi assinada em GRAMADO/RS, mas o empreendimento e a sede da GAV Muro Alto ficam em Ipojuca/PE — o comprovante do cartão também é de Gramado/RS. Isso reforça o direito de arrependimento pelo art. 49 do CDC e pelas cláusulas do próprio quadro-resumo, mesmo argumento usado na ficha 420 (Lucas Ithamar). ATENÇÃO — O CARTÃO NÃO É DELA: o comprovante mostra MASTERCARD final 3949 no nome de CARITA/FERNANDO, não de Simone Ferreira Carita. O sobrenome é o mesmo, então provavelmente é o cônjuge. Como a devolução é Estorno Cartão, o valor volta para o cartão do Fernando — confirmar com ela antes, e considerar pedir autorização por escrito. Comprovante anexo: crédito à vista R$ 1.000,00, CV 197109926, Aut 823616, 05/11/2026 21h45, aprovado com senha. ZapSign ASSINADO, 4 de 4. Contrato único, sem rateio. Os 4 boletos de R$ 747,50 (R$ 2.990,00, 1º venc 05/01/2027) NÃO entram no valor pago — nem venceram. Quitados, a corretagem fecha em R$ 3.990,00. O contrato chegou em dois PDFs: o nomeado e uma cópia vinda pelo WhatsApp (DOC-20261108-WA0005GAV.pdf). Mesmo documento, mesmo token ZapSign e8df3794-38be-48e3-b17d-d7e28eb117af; a cópia do WhatsApp só foi reencodada. Arquivei uma.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/426--contrato.pdf" }
+    ]
   }
 ];
