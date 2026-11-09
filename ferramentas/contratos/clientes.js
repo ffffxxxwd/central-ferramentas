@@ -20936,5 +20936,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/423--contrato.pdf" }
     ]
+  },
+  {
+    id: 424,
+    nome: "Celine Paes de Oliveira Vieira",
+    cpf: "616.460.153-39",
+    rg: "030288282005-9 SSP/MA",
+    estadoCivil: "União Estável",
+    profissao: "Estudante",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliarios SPE Ltda.",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "1",
+    apartamento: "0207",
+    andar: "2",
+    cota: "02",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 41.809,74",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX R$ 1.000,00 (CV 30429274, Aut 989879, ID RESN01576100951582438RVV5645953EE30, 01/11/2026 18h20) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 01/12/2026, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-01",
+    telefone: "(99) 98445-5237",
+    email: "rafael_nadir@hotmail.com",
+    endereco: "Rua Marcelino Tavares, 354, Centro, Tasso Fragoso/MA, CEP 65820-000",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apt 0207, 2º andar, Cota 02. Proposta 367683. Consultor Nalbert Gabriel Lima Ferreira. FORA do prazo de arrependimento POR 1 DIA: contrato assinado 01/11/2026 18h59, 7º dia em 08/11/2026, e hoje é 09/11/2026. Vale confirmar se ela manifestou o arrependimento até ontem — o que conta é a data em que ela pediu, não a data em que a ficha é processada. ATENÇÃO — O E-MAIL DELA NÃO VAI RECEBER: rafael_nadir@hotmail.com é Hotmail, e o domínio de envio atendimentogav.online está sem DKIM e sem DMARC. Mesmo caso do Wesley (ficha 421), cujo e-mail voltou com erro permanente 550. Falar por WhatsApp (99) 98445-5237 até o DNS ser corrigido. O e-mail também não corresponde ao nome dela — conferir se é dela mesmo. Comprovante do PIX anexo: R$ 1.000,00, CV 30429274, Aut 989879, 01/11/2026 18h20, ID RESN01576100951582438RVV5645953EE30. O CPF do pagador no comprovante (@@@.460.153-@@) bate com o dela, então foi ela mesma quem pagou — diferente dos casos do Wesley e do Ismael. ZapSign ASSINADO, 4 de 4. Contrato único, sem rateio. Os 5 boletos de R$ 598,00 (R$ 2.990,00, 1º venc 01/12/2026) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 3.990,00. O PDF tem 121 páginas porque traz também o contrato do Select Club e os anexos, além da proposta e do certificado.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/424--contrato.pdf" }
+    ]
   }
 ];
