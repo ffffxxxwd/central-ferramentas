@@ -21242,5 +21242,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Extrato de Cota (Demonstrativo de Pagamentos)", arquivo: "contratos-pdf/432--extrato-cota.pdf" }
     ]
+  },
+  {
+    id: 433,
+    nome: "Ben Hur Guimaraes",
+    cpf: "157.585.907-62",
+    rg: "2172974 SPTC/ES",
+    estadoCivil: "União Estável",
+    profissao: "Analista de Redes",
+    empresa: "GAV",
+    razaoSocial: "GAV Gramado Três Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "50.094.155/0001-02",
+    empreendimento: "Gran Garden Resort",
+    bloco: "C4",
+    apartamento: "104B",
+    andar: "1",
+    cota: "15",
+    fracao: "1/52",
+    localizacao: "Gramado/RS",
+    valorTotal: "R$ 48.768,14",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTER parcelado 2x R$ 500,00 = R$ 1.000,00 (Rede, Nº Doc 177132712, 1º venc 14/10/2025) + Boleto 5x R$ 698,00 = R$ 3.490,00 (1º venc 15/11/2025, todos já vencidos, quitação não confirmada)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2025-09-14",
+    telefone: "(27) 99798-0779",
+    email: "ben-hur_guimaraes@outlook.com",
+    endereco: "Rua Jovino Segatto, 03, Fundos, Sao Torquato, Vila Velha/ES, CEP 29114-290",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Gran Garden Resort — Gramado/RS. Bloco C4, Apt 104B, 1º andar, Cota 15. Proposta 287542. Mesma vendedora das fichas 415 (Cassiano), 416 (Frederico) e 429 (Patrick). FORA do prazo de arrependimento (contrato 14/09/2025, venceu 21/09/2025, há 414 dias). D4Sign ASSINADO, 6 assinaturas, com ASSINATURA PRESENCIAL do Ben Hur e da cônjuge. ATENÇÃO — O VALOR PAGO ESTÁ QUASE CERTAMENTE DESATUALIZADO: a ficha conta só os R$ 1.000,00 do cartão, que é o único pagamento que o contrato confirma. Mas o contrato tem mais de um ano e muita coisa já venceu: os 5 boletos da corretagem (R$ 3.490,00, de 15/11/2025 a 15/03/2026), as 4 parcelas do sinal (R$ 2.438,44, de 15/03 a 15/06/2026) e 7 das 80 parcelas do saldo (R$ 3.661,00 nominais, a partir de 15/04/2026). Se tudo foi pago, o acumulado passa de R$ 10 mil, sem contar reajuste do INCC. LEVANTAR O EXTRATO DE COTA antes de qualquer cálculo de devolução — mesmo caso das fichas 417 (Ellan) e 415 (Cassiano), em que o valor real ficou muito acima do que o contrato sozinho mostrava. Não há comprovante de pagamento anexo neste PDF. ATENÇÃO 2 — O E-MAIL DELE NÃO VAI RECEBER: ben-hur_guimaraes@outlook.com é Outlook, e o domínio de envio atendimentogav.online está sem DKIM e sem DMARC. Mesmo caso das fichas 421 (Wesley) e 424 (Celine). Falar por WhatsApp (27) 99798-0779 até o DNS ser corrigido. O e-mail da cônjuge (renatap_santos@outlook.com) tem o mesmo problema. Cônjuge RENATA PINHEIRO SANTOS (CPF 162.485.677-27, RG 3602322 SPTC/ES, técnica em enfermagem, (27) 99730-5312) também assinou como parte, mas não entra na ficha como signatária do distrato. Valores do contrato: corretagem R$ 4.490,00 + sinal R$ 2.438,42 + saldo R$ 41.839,72 = R$ 48.768,14, que confere com o total da venda.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/433--contrato.pdf" }
+    ]
   }
 ];
