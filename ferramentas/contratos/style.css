@@ -804,6 +804,15 @@ textarea.codigo {
 .ficha.printando .ficha__acao { display: none !important; }
 .ficha.printando { box-shadow: none; transform: none; }
 
+/* o mesmo para a faixa inteira da pessoa: saem as ações do grupo e as de
+   cada card, fica o nome, o resumo e os N cards */
+.grupo.printando .grupo__acoes,
+.grupo.printando .grupo__estados,
+.grupo.printando .ficha__botoes,
+.grupo.printando .ficha__estados,
+.grupo.printando .ficha__acao { display: none !important; }
+.grupo.printando .ficha { box-shadow: none; transform: none; }
+
 /* avisinho que some sozinho */
 .aviso-rapido {
   position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);

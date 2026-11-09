@@ -752,6 +752,9 @@
               "</button>" +
               // arquiva (ou reabre) os contratos da pessoa de uma vez — um por
               // um dava trabalho em quem tem 5, 6 contratos
+              '<button type="button" class="btn" data-print-grupo="' + esc(ids) + '" title="Gera uma imagem com os ' + g.itens.length + ' cards juntos">' +
+                "Print dos " + g.itens.length +
+              "</button>" +
               '<button type="button" class="btn" data-arquivar-grupo="' + esc(ids) + '" data-arq="' + (todosArq ? "1" : "0") + '">' +
                 (todosArq ? "Reabrir os " + g.itens.length : "Arquivar os " + g.itens.length) +
               "</button>" +
@@ -1045,6 +1048,43 @@
     }).catch(function () {
       card.classList.remove("printando");
       alert("Não consegui gerar a imagem do card.");
+    });
+  }
+
+  /* Mesma ideia do print de um card, mas pegando a faixa inteira da pessoa:
+     sai o nome, o CPF, o total pago e os N cards numa imagem só. */
+  function printGrupo(el, ids) {
+    var grupo = el.closest(".grupo");
+    if (!grupo) { alert("Não achei o grupo na tela."); return; }
+    if (!window.html2canvas) { alert("A biblioteca de imagem não carregou. Recarregue a página."); return; }
+
+    var primeiro = acharCliente(ids.split("|")[0]);
+    var nome = semAcento((primeiro && primeiro.nome) || "grupo").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+    var qtd = grupo.querySelectorAll(".ficha").length;
+    grupo.classList.add("printando");
+
+    html2canvas(grupo, { backgroundColor: "#ffffff", scale: 2, logging: false }).then(function (canvas) {
+      grupo.classList.remove("printando");
+      canvas.toBlob(function (blob) {
+        if (!blob) return;
+        var baixar = function () {
+          var a = document.createElement("a");
+          a.href = URL.createObjectURL(blob);
+          a.download = "cards-" + nome + "-" + qtd + ".png";
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(function () { URL.revokeObjectURL(a.href); }, 5000);
+        };
+        if (navigator.clipboard && window.ClipboardItem && window.isSecureContext) {
+          navigator.clipboard.write([new ClipboardItem({ "image/png": blob })])
+            .then(function () { avisoRapido("Os " + qtd + " cards foram copiados — é só colar no WhatsApp"); })
+            .catch(baixar);
+        } else {
+          baixar();
+        }
+      }, "image/png");
+    }).catch(function () {
+      grupo.classList.remove("printando");
+      alert("Não consegui gerar a imagem dos cards.");
     });
   }
 
@@ -2694,6 +2734,9 @@
 
     var rb = e.target.closest("[data-acao='reembolso-grupo']");
     if (rb) { formReembolso(rb.getAttribute("data-ids").split("|")); return; }
+
+    var pg = e.target.closest("[data-print-grupo]");
+    if (pg) { printGrupo(pg, pg.getAttribute("data-print-grupo")); return; }
 
     var dg = e.target.closest("[data-acao='distrato-grupo']");
     if (dg) { gerarDistratoGrupo(dg.getAttribute("data-ids").split("|")); return; }
