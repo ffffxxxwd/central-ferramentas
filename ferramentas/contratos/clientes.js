@@ -21310,5 +21310,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/434--contrato.pdf" }
     ]
+  },
+  {
+    id: 435,
+    nome: "Karoline Martins Cardoso",
+    cpf: "020.653.761-12",
+    rg: "2607765-5 SEJUSP/MT",
+    estadoCivil: "Casado(a)",
+    profissao: "Do lar",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "518",
+    andar: "5",
+    cota: "13",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 55.499,90",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "PIX R$ 665,00 pago por terceiro (CV 21712500, Aut 577909, ID RESV1126440094845425HKKNS57R93D8E429, 09/11/2026 11h57) + Cartão de Crédito MASTERCARD final 8024 à vista R$ 665,00 (Rede, CV 176989402, Aut 577914, 09/11/2026 11h57) + Boleto 4x R$ 665,00 = R$ 2.660,00 (1º venc 09/01/2027, não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-09",
+    telefone: "(65) 99248-7600",
+    email: "karolinemartinscardoso2@gmail.com",
+    endereco: "Rua Carvalho, 2985, Jardim Primavera 2, Lucas do Rio Verde/MT, CEP 78455-000",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 518, 5º andar, Cota 13. Proposta 368962. ASSINADO HOJE, 09/11/2026 12h38 — DENTRO do prazo de arrependimento com a janela inteira pela frente: 7º dia em 16/11/2026. É o contrato mais recente da base. TRÊS FORMAS DE PAGAMENTO na corretagem, divididas em três de R$ 665,00: PIX + cartão de crédito à vista + 4 boletos. Os dois comprovantes estão anexos, as duas transações feitas às 11h57 no mesmo terminal (SV112644), com autorizações seguidas (577909 e 577914): PIX R$ 665,00 (CV 21712500) e MASTERCARD final 8024 crédito à vista R$ 665,00 (CV 176989402, aprovado com senha). ZapSign ASSINADO, 4 de 4. Contrato único, sem rateio. ATENÇÃO — O PIX FOI PAGO POR TERCEIRO: o comprovante mostra o pagador mascarado como @@@.486.901-@@, que não é o CPF da Karoline (020.653.761-12). Mesmo padrão das fichas 421 (Wesley), 422/423 (Ismael), 426 (Simone) e 429 (Patrick). Confirmar para quem o valor deve voltar antes de devolver. O comprovante do cartão não traz o nome do titular, então vale checar se o cartão também é de outra pessoa. Os 4 boletos de R$ 665,00 (R$ 2.660,00, 1º venc 09/01/2027) NÃO entram no valor pago porque ainda não venceram. Quitados, a corretagem fecha em R$ 3.990,00. A devolução ficou como Reembolso porque o PIX é o primeiro instrumento, mas o valor está dividido meio a meio (R$ 665,00 em PIX e R$ 665,00 em cartão) — cabe trocar para 'Reembolso + Estorno' se quiserem estornar a parte do cartão pela operadora. Conferência: corretagem R$ 3.990,00 + sinal R$ 2.774,98 + saldo R$ 48.734,92 = R$ 55.499,90, que confere com o total da venda. Sinal 4x R$ 693,74 a partir de 10/05/2027 e saldo 74x R$ 658,58 a partir de 10/09/2027 — nada disso começou a vencer.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/435--contrato.pdf" }
+    ]
   }
 ];
