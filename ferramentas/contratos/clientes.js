@@ -21549,5 +21549,39 @@ window.CLIENTES = [
       { titulo: "Contrato", arquivo: "contratos-pdf/441--contrato.pdf" },
       { titulo: "Extrato de Cota (Demonstrativo de Pagamentos)", arquivo: "contratos-pdf/441--extrato-cota.pdf" }
     ]
+  },
+  {
+    id: 442,
+    nome: "Camila Jeronimo Marra",
+    cpf: "101.076.036-08",
+    rg: "MG16597279 SSP/MG",
+    estadoCivil: "União Estável",
+    profissao: "Bancária",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    bloco: "01",
+    apartamento: "UH 243",
+    andar: "2",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Maragogi/AL",
+    valorTotal: "R$ 61.425,21",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTER à vista R$ 1.000,00 (Rede, Nº Doc 193504146, 1º venc 06/12/2026) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 06/01/2027, nenhum vencido)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-06",
+    telefone: "(34) 99918-0006",
+    email: "marracamila3@gmail.com",
+    endereco: "Rua Jose Nunes da Silva, 416, Ipanema, Patos de Minas/MG, CEP 38706-533",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Oikos Maragogi Resort — Maragogi/AL. Bloco 01, Apt UH 243, 2º andar, Cota 12. Proposta 368446. Mesma vendedora das fichas 406, 408, 439, 440 e 441. ATENÇÃO — A DATA DE ASSINATURA É INFERIDA E AQUI ELA MUDA A CONCLUSÃO DO PRAZO. O PDF é um escaneado de 1 página só (a proposta), amassado, sem certificado de assinatura. A data da ficha (06/11/2026) foi deduzida pelos vencimentos, seguindo o padrão das outras fichas: cartão vence 1 mês depois da assinatura (1º venc 06/12/2026) e boleto, 2 meses (1º venc 06/01/2027). As duas contas batem em 06/11/2026, o que colocaria o 7º dia em 13/11/2026 — ou seja, AINDA DENTRO DO PRAZO. Diferente da ficha 434 (Joao Carlos), onde a inferência não alterava o resultado, aqui ela decide se cabe arrependimento ou distrato com retenção. CONFIRMAR A DATA REAL COM URGÊNCIA, pedindo o contrato com certificado ou o extrato de cota. Não há comprovante de pagamento anexo. O valor pago conta só o cartão (MASTER crédito à vista, R$ 1.000,00, Nº Doc 193504146). Os 4 boletos de R$ 747,50 (R$ 2.990,00) têm 1º vencimento em 06/01/2027 e nenhum venceu. Quitados, a corretagem fecha em R$ 3.990,00. Conferência: corretagem R$ 3.990,00 + sinal R$ 3.071,25 + saldo R$ 54.363,96 = R$ 61.425,21, que confere com o total da venda. Sinal 4x R$ 767,81 a partir de 10/05/2027 e saldo 68x R$ 799,47 a partir de 10/09/2027 — nada disso começou a vencer.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/442--contrato.pdf" }
+    ]
   }
 ];
