@@ -21583,5 +21583,73 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/442--contrato.pdf" }
     ]
+  },
+  {
+    id: 443,
+    nome: "Carlos Andre Guimaraes da Silva",
+    cpf: "908.975.957-34",
+    rg: "075687376 IFP/RJ",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "223",
+    andar: "2",
+    cota: "26",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 54.537,13",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTERCARD final 2292 à vista — 1 transação de R$ 2.660,00 rateada entre as 2 cotas, R$ 1.330,00 nesta (Rede, CV 41274822, Aut 953385, 08/09/2026 20h23) + Boleto 4x R$ 665,00 = R$ 2.660,00 (1º venc 08/11/2026, já vencido, quitação não confirmada)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-08",
+    telefone: "(21) 97008-9739",
+    email: "andreproplaca@gmail.com",
+    endereco: "Rua Ary Parreiras, 00, Varzea, Teresopolis/RJ, CEP 25953-080",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 223, 2º andar, Cota 26. Proposta 359171. FORA do prazo de arrependimento (contrato 08/09/2026, venceu 15/09/2026, há 57 dias). São 2 cotas da mesma pessoa (fichas 443 e 444) pagas por UMA ÚNICA transação no cartão: o comprovante anexo mostra R$ 2.660,00 em crédito à vista, MASTERCARD final 2292, CV 41274822, 08/09/2026 20h23, aprovado com senha — mesmo Nº de documento citado nos dois contratos, R$ 1.330,00 por cota. Ao estornar, lembrar que foi UMA transação de R$ 2.660,00, não duas de R$ 1.330,00. ZapSign ASSINADO, 4 de 4; o Carlos assinou em 08/09/2026 22h13, cerca de 2 horas depois do pagamento. ATENÇÃO: dos 4 boletos de R$ 665,00 por cota (R$ 2.660,00), o 1º venceu em 08/11/2026 e os outros vencem em 08/12/2026, 08/01/2027 e 08/02/2027. O valor pago conta só o cartão — levantar se o primeiro boleto foi quitado, porque aí sobe para R$ 1.995,00 por cota. Quitados os 4, a corretagem fecha em R$ 3.990,00 por cota. Conferência: corretagem R$ 3.990,00 + sinal R$ 2.726,85 + saldo R$ 47.820,28 = R$ 54.537,13, que confere com o total da venda. Sinal 4x R$ 681,71 a partir de 10/03/2027 e saldo 74x R$ 646,22 a partir de 10/07/2027 — nada disso começou a vencer.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/443--contrato.pdf" }
+    ]
+  },
+  {
+    id: 444,
+    nome: "Carlos Andre Guimaraes da Silva",
+    cpf: "908.975.957-34",
+    rg: "075687376 IFP/RJ",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresário",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "224",
+    andar: "2",
+    cota: "20",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 54.537,13",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTERCARD final 2292 à vista — 1 transação de R$ 2.660,00 rateada entre as 2 cotas, R$ 1.330,00 nesta (Rede, CV 41274822, Aut 953385, 08/09/2026 20h23) + Boleto 4x R$ 665,00 = R$ 2.660,00 (1º venc 08/11/2026, já vencido, quitação não confirmada)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-08",
+    telefone: "(21) 97008-9739",
+    email: "andreproplaca@gmail.com",
+    endereco: "Rua Ary Parreiras, 00, Varzea, Teresopolis/RJ, CEP 25953-080",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apt 224, 2º andar, Cota 20. Proposta 359170. FORA do prazo de arrependimento (contrato 08/09/2026, venceu 15/09/2026, há 57 dias). São 2 cotas da mesma pessoa (fichas 443 e 444) pagas por UMA ÚNICA transação no cartão: o comprovante anexo mostra R$ 2.660,00 em crédito à vista, MASTERCARD final 2292, CV 41274822, 08/09/2026 20h23, aprovado com senha — mesmo Nº de documento citado nos dois contratos, R$ 1.330,00 por cota. Ao estornar, lembrar que foi UMA transação de R$ 2.660,00, não duas de R$ 1.330,00. ZapSign ASSINADO, 4 de 4; o Carlos assinou em 08/09/2026 22h13, cerca de 2 horas depois do pagamento. ATENÇÃO: dos 4 boletos de R$ 665,00 por cota (R$ 2.660,00), o 1º venceu em 08/11/2026 e os outros vencem em 08/12/2026, 08/01/2027 e 08/02/2027. O valor pago conta só o cartão — levantar se o primeiro boleto foi quitado, porque aí sobe para R$ 1.995,00 por cota. Quitados os 4, a corretagem fecha em R$ 3.990,00 por cota. Conferência: corretagem R$ 3.990,00 + sinal R$ 2.726,85 + saldo R$ 47.820,28 = R$ 54.537,13, que confere com o total da venda. Sinal 4x R$ 681,71 a partir de 10/03/2027 e saldo 74x R$ 646,22 a partir de 10/07/2027 — nada disso começou a vencer.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/444--contrato.pdf" }
+    ]
   }
 ];
