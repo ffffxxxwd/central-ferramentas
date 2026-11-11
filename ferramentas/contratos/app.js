@@ -1566,6 +1566,17 @@
     return notas.length ? "*Importante:* " + notas.join(" ") + "\n\n" : "";
   }
 
+  /* Quando alguma ficha do conjunto traz valorReembolso, o valor a devolver é do
+     conjunto inteiro e não de cada cota — parte do que foi pago fica retida. Aí as
+     linhas saem sem valor e só o total aparece, pra não prometer o valor errado. */
+  function reembolsoDoConjunto(cs) {
+    for (var i = 0; i < cs.length; i++) {
+      var v = num(cs[i].valorReembolso);
+      if (v) return v;
+    }
+    return 0;
+  }
+
   function montarEmail(cs) {
     var um = cs.length === 1;
     var mesmaPessoa = cs.every(function (c) { return c.cpf && c.cpf === cs[0].cpf; });
@@ -1583,15 +1594,17 @@
       ? "Prezado(a) " + nomeProprio(quemAssina[0].nome) + ","
       : "Prezados(as) " + juntarNomes(quemAssina.map(function (p) { return nomeProprio(p.nome); })) + ",";
 
+    var ovrEmail = reembolsoDoConjunto(cs);
+
     var itens = cs.map(function (c) {
       var cab = [];
       if (!um && !mesmaPessoa) cab.push(nomeProprio(c.nome));
       cab.push(c.empreendimento || "—");
       var imovel = [unidadeDistrato(c), cotaDistrato(c)].filter(Boolean).join(", ");
       if (imovel) cab.push(imovel);
-      return "- " + cab.join(" — ") + "\n" +
-        "  Valor a devolver: " + (rs(c.valorPago) || "—") + porExtensoDe(c.valorPago) +
-        " — " + (TEXTO_FORMA[formaReembolso(c)] || TEXTO_FORMA["Reembolso"]);
+      return "- " + cab.join(" — ") + (ovrEmail ? "" :
+        "\n  Valor a devolver: " + (rs(c.valorPago) || "—") + porExtensoDe(c.valorPago) +
+        " — " + (TEXTO_FORMA[formaReembolso(c)] || TEXTO_FORMA["Reembolso"]));
     }).join("\n");
 
     // Agora sempre é 1 Termo consolidado, mesmo com N contratos.
@@ -1601,14 +1614,15 @@
     }
     passos.push((passos.length + 1) + ". Assine o termo e devolva respondendo a este e-mail.");
 
-    var total = cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
+    var total = ovrEmail || cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
 
     var corpo =
       saudacao + "\n\n" +
       "Segue em anexo " + termoTexto(1, true) +
       (um ? " referente ao contrato" : " referente aos contratos") + " de multipropriedade abaixo, para assinatura:" +
       "\n\n" + itens + "\n\n" +
-      (um ? "" : "Total a devolver: " + rs(total) + porExtensoDe(total) + "\n\n") +
+      (um && !ovrEmail ? "" : "Total a devolver: " + rs(total) + porExtensoDe(total) +
+        (ovrEmail ? " — " + (TEXTO_FORMA[formaReembolso(cs[0])] || TEXTO_FORMA["Reembolso"]) : "") + "\n\n") +
       "Para darmos andamento ao cancelamento e à devolução dos valores, pedimos que:\n\n" +
       passos.join("\n") + "\n\n" +
       notasEnvio(cs) +
@@ -1649,25 +1663,28 @@
       ? primeiroNome(cs[0].nome)
       : cs.map(function (c) { return primeiroNome(c.nome); }).join(" e ");
 
+    var ovrWhats = reembolsoDoConjunto(cs);
+
     var itens = cs.map(function (c) {
       var imovel = [unidadeDistrato(c), cotaDistrato(c)].filter(Boolean).join(", ");
       var quemItem = (!um && !mesmaPessoa) ? nomeProprio(c.nome) + " — " : "";
-      return "*" + (c.empreendimento || "—") + "* — " + quemItem + imovel + "\n" +
-        "Valor a devolver: *" + (rs(c.valorPago) || "—") + "* — " + (TEXTO_FORMA[formaReembolso(c)] || TEXTO_FORMA["Reembolso"]);
+      return "*" + (c.empreendimento || "—") + "* — " + quemItem + imovel + (ovrWhats ? "" :
+        "\nValor a devolver: *" + (rs(c.valorPago) || "—") + "* — " + (TEXTO_FORMA[formaReembolso(c)] || TEXTO_FORMA["Reembolso"]));
     }).join("\n\n");
 
     var passos = ["1. Conferir os dados do termo;"];
     if (precisaPix) passos.push((passos.length + 1) + ". Preencher a chave PIX no campo indicado;");
     passos.push((passos.length + 1) + ". Assinar e me devolver o documento.");
 
-    var total = cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
+    var total = ovrWhats || cs.reduce(function (s, c) { return s + (num(c.valorPago) || 0); }, 0);
 
     var texto =
       "Olá, " + quem + "! Tudo bem?\n\n" +
       "Estou te enviando o *" + termoTexto(1) + "*" +
       (um ? " do seu contrato" : " dos seus contratos") + " de multipropriedade para assinatura:\n\n" +
       itens + "\n\n" +
-      (um ? "" : "*Total a devolver: " + rs(total) + "*\n\n") +
+      (um && !ovrWhats ? "" : "*Total a devolver: " + rs(total) + "*" +
+        (ovrWhats ? " — " + (TEXTO_FORMA[formaReembolso(cs[0])] || TEXTO_FORMA["Reembolso"]) : "") + "\n\n") +
       "Para dar andamento, é só:\n" +
       passos.join("\n") + "\n\n" +
       notasEnvio(cs) +
@@ -1999,6 +2016,8 @@
     var c = lista[0];
     var imovel = lista.map(imovelCurto).join("  +  ");
     var soma = lista.reduce(function (s, x) { return s + (num(x.valorPago) || 0); }, 0);
+    var somaOvr = reembolsoDoConjunto(lista);
+    if (somaOvr) soma = somaOvr;
 
     var formas = ["Reembolso", "Estorno Cartão", "Estorno PIX", "Cheque"];
     var atual = formaReembolso(c);
