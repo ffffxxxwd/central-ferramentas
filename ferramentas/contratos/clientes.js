@@ -21865,5 +21865,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/450--contrato.pdf" }
     ]
+  },
+  {
+    id: 451,
+    nome: "Francisco Madaleno dos Santos Neto",
+    cpf: "025.430.352-81",
+    rg: "6092726 SEGUP/PA",
+    estadoCivil: "União estável",
+    profissao: "Policial Militar",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "02",
+    apartamento: "1416",
+    andar: "14",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 47.263,33",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão de Débito MASTERCARD final 5039 — R$ 1.330,00 à vista (Rede/Itaú, CV 173131148, Aut 989998, 10/11/2026 10h15, aprovado com senha) + Boleto 2x R$ 886,66 (1º venc 05/12/2026) e 1x R$ 886,68 (venc 05/02/2027), nenhum vencido",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-10",
+    telefone: "(91) 98645-7521",
+    email: "netofamiliamada@gmail.com",
+    endereco: "Avenida Mangueirão, 27, Mangueirão, Belém/PA, CEP 66640-480",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 2, Apartamento 1416, 14º andar, Cota 07. Proposta 369090. Área privativa 30 m², comum 31,268 m², total 61,268 m².\nDENTRO DO PRAZO DE ARREPENDIMENTO — contrato assinado em 10/11/2026, o 7º dia cai em 17/11/2026. Faltam 6 dias contados de hoje (11/11/2026).\nPAGAMENTO: R$ 1.330,00 em CARTÃO DE DÉBITO, não crédito. Comprovante Rede/Itaú anexo: MASTERCARD DÉBITO final 5039, CV 173131148, Aut 989998, Auto 646191, terminal SN015761, 10/11/2026 10h15, aprovado com senha. O CV bate com o Nº de Documento 173131148 do quadro de corretagem. O quadro traz 11/11/2026 como primeiro vencimento dessa linha, que é a liquidação D+1; a transação em si é do dia 10.\nPor ser débito, o dinheiro já saiu da conta dele na hora — não é parcela futura de fatura. A devolução vai para a conta vinculada ao cartão, e operacionalmente costuma ser tratada como cancelamento/devolução pela adquirente, não como estorno de crédito. Vale confirmar com a Rede qual o procedimento, porque débito com mais de um dia já não aceita cancelamento simples.\nOs boletos ainda não começaram a vencer: 2x R$ 886,66 a partir de 05/12/2026 e 1x R$ 886,68 em 05/02/2027. Nada pago além do débito. Quitados todos, a corretagem fecharia em R$ 3.990,00 (1.330,00 + 1.773,32 + 886,68).\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc 958bf2e4-4ee7-427d-b9a2-4131d34ac4cd, criado em 10/11/2026 10h50). Francisco assinou às 10h55min43 (IP 200.190.221.142, Android). Antes disso, às 10h40, aceitou a Ficha de Negociação, o Termo de Ciência e o Guia do Multiproprietário na plataforma Flow, com validação facial. Consultor: Fadel Incorporações. Pagou às 10h15, 40 minutos antes de aceitar qualquer documento.\nConferência: corretagem R$ 3.990,00 + sinal R$ 2.363,17 + saldo R$ 40.910,16 = R$ 47.263,33, igual ao total da venda. Sinal 4x R$ 590,79 a partir de 05/03/2027 e saldo 68x R$ 601,62 a partir de 05/07/2027 — nada disso começou a vencer.\nContrato único, sem outras cotas. Ele mora em Belém/PA e o resort fica em Salinópolis/PA, mesmo estado.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/451--contrato.pdf" }
+    ]
   }
 ];
