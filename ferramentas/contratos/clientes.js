@@ -21900,5 +21900,44 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/451--contrato.pdf" }
     ]
+  },
+  {
+    id: 452,
+    nome: "Ana Flavia Silva Damasceno",
+    cpf: "047.795.862-16",
+    rg: "7621120 PC/PA",
+    estadoCivil: "União estável",
+    profissao: "Empreendedora",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "0212",
+    andar: "2",
+    cota: "01",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 44.536,88",
+    valorPago: "R$ 3.990,00",
+    entradas: [
+      { descricao: "Cartão de crédito ELO parcelado (6x R$ 613,33) — titular Jairo Farias", valor: 3680.00 },
+      { descricao: "PIX (R$ 310,00)", valor: 310.00 }
+    ],
+    formaPagamentoEntrada: "Cartão de Crédito ELO final 5175 parcelado em 6x R$ 613,33 = R$ 3.680,00, titular JAIRO FARIAS (Rede, CV 35654142, Aut 567754, 10/11/2026 17h04) + PIX R$ 310,00 pago pela própria Ana Flávia (CV 188769336, 10/11/2026 17h07)",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-11-10",
+    telefone: "(91) 99286-5101",
+    email: "flaviaufra@gmail.com",
+    endereco: "Rua da Liberdade, SN, Nazaré, São João de Pirabas/PA, CEP 68719-000",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apartamento 0212, 2º andar, Cota 01. Proposta 369178. Área privativa 30 m², comum 31,268 m², total 61,268 m².\nDENTRO DO PRAZO DE ARREPENDIMENTO — contrato assinado em 10/11/2026, o 7º dia cai em 17/11/2026. Faltam 6 dias contados de hoje (11/11/2026).\nATENÇÃO — O CARTÃO NÃO É DELA. O comprovante da corretagem está no nome de JAIRO FARIAS: ELO final 5175, crédito parcelado, R$ 3.680,00 em 6x R$ 613,33, CV 35654142, Aut 567754, Auto 644778, terminal SN521031, 10/11/2026 17h04, aprovado com senha. O estorno desse valor volta para o cartão do Jairo, não para a Ana Flávia. Antes de processar, descobrir quem é ele e se a devolução deve mesmo ir para ele — mesma situação do Patrick (ficha 429) e do Phelipe (fichas 436 a 438).\nO PIX de R$ 310,00 esse sim é dela: o comprovante traz o CPF do pagador 047.795.862-16, que é o dela. CV 188769336, Aut 567755, ID RESN5210310095158243XODSMRR73EA70EB, 10/11/2026 17h07.\nPor isso a devolução é dividida: R$ 310,00 por transferência para a Ana Flávia e R$ 3.680,00 estornados no cartão do Jairo, totalizando os R$ 3.990,00 da corretagem.\nA corretagem foi paga integralmente, não sobrou boleto nenhum. As 6 parcelas do cartão só começam a ser cobradas em 10/12/2026 (5 de R$ 613,33) e a última em 09/05/2027 (R$ 613,35) — ou seja, nada entrou em fatura ainda. Estorno antes de 10/12 cancela as parcelas sem que cheguem a ser debitadas.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc 7cd11e36-0033-4ec6-ae1b-ef98a06dd6fd, criado em 10/11/2026 17h35). Ana Flávia assinou às 17h38min53 (IP 206.84.48.254, Android Samsung). Antes disso aceitou a Ficha de Negociação às 17h30min24, o Termo de Ciência às 17h32min03 e o Guia do Multiproprietário às 17h32min14, na plataforma Flow, com validação facial. O cartão passou às 17h04 e o PIX às 17h07 — tudo pago antes de ela aceitar qualquer documento.\nConferência: corretagem R$ 3.990,00 + sinal R$ 2.226,84 + saldo R$ 38.320,04 = R$ 44.536,88, igual ao total da venda. O sinal são 4x R$ 556,71 a partir de 10/06/2027 e o saldo 68x R$ 563,53 a partir de 10/10/2027 — nada disso começou a vencer.\nEla tem 26 anos (nascida em 23/07/2000), mora em São João de Pirabas/PA e o resort fica em Salinópolis, mesmo estado. Contrato único, sem outras cotas.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/452--contrato.pdf" }
+    ]
   }
 ];

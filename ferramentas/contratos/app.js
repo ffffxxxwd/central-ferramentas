@@ -2141,7 +2141,7 @@
 '<div class="doc-opcao" id="op_reemb"><span>( <b class="mark" id="ck_reemb">X</b> ) Reembolso</span><span>R$ <span id="val_reemb">1.000,00</span></span></div>' +
 '<div class="doc-opcao" id="op_cheque"><span>( <b class="mark" id="ck_cheque">&nbsp;</b> ) Cheque</span><span>R$ <span id="val_cheque">XXXX,00</span></span></div>' +
 '</div>' +
-'<p class="doc-p doc-p--bold">' + pagadora + ' compromete-se ainda a efetuar <span id="pv_meio">a devolução por transferência bancária</span> no valor de R$ <span id="pv_valor">1.000,00</span> (<span id="pv_extenso">mil reais</span>) referente ao sinal de proposta.</p>' +
+'<p class="doc-p doc-p--bold">' + pagadora + ' compromete-se ainda a efetuar <span id="pv_meio">a devolução por transferência bancária</span><span id="pv_rotvalor"> no valor de R$ </span><span id="pv_valor">1.000,00</span> (<span id="pv_extenso">mil reais</span>) referente ao sinal de proposta.</p>' +
 '<p class="doc-p" id="linhaCobrancas" hidden><strong>Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras referente as parcelas firmadas em contrato.</strong></p>' +
 '<p class="doc-p">Sendo essa a expressão final de minha vontade assino o presente distrato em 02 (duas) vias de igual teor, em conjunto, e com a concordância da empresa, razão pela qual as partes conferem entre si ampla, plena e irrevogável quitação, declarando-se livres e desimpedidas de qualquer obrigação em razão do aqui acordado.</p>' +
 '<p class="doc-p" id="pv_data">__/__/____.</p>' +
@@ -2579,9 +2579,12 @@
       set("pv_meio",
         "a devolução por transferência bancária " + meioReembTxt + " no valor de R$ " + f.f_valor_reemb +
         ", bem como o cancelamento e estorno formal das operações lançadas nos cartões de crédito" +
-        " no valor de R$ " + estornoVal + ", totalizando o valor");
+        " no valor de R$ " + estornoVal + ", totalizando");
+      // sem o "no", senão o documento sai com "totalizando o valor no valor de"
+      set("pv_rotvalor", " o valor de R$ ");
     } else {
       set("pv_meio", txt(meio) || MEIOS[f.f_forma] || MEIOS["Reembolso"]);
+      set("pv_rotvalor", " no valor de R$ ");
     }
 
     var linhaPix = box.querySelector("#linhaPix");
@@ -2603,9 +2606,8 @@
     });
     if (f.f_forma === "Reembolso + Estorno" && f.f_valor_reemb) {
       set("ck_estorno", "X");
-      set("val_estorno", f.f_valor_parcela && f.f_qtd_parcelas
-        ? moeda((parseFloat(String(f.f_valor_parcela).replace(/\./g,"").replace(",",".")) || 0) * (parseInt(f.f_qtd_parcelas,10) || 0))
-        : moeda((parseFloat(String(valorStr).replace(/\./g,"").replace(",",".")) || 0) - (parseFloat(String(f.f_valor_reemb).replace(/\./g,"").replace(",",".")) || 0)));
+      set("val_estorno", moeda((parseFloat(String(valorStr).replace(/\./g,"").replace(",",".")) || 0) -
+        (parseFloat(String(f.f_valor_reemb).replace(/\./g,"").replace(",",".")) || 0)));
       var opE = box.querySelector("#op_estorno");
       if (opE) opE.classList.add("ativa");
       set("ck_reemb", "X");
