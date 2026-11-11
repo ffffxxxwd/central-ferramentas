@@ -230,7 +230,7 @@
      "pix", "clausulaExtra", "observacoes", "notaEnvio", "profissao"].forEach(function (k) {
       o[k] = txt(c[k]);
     });
-    ["valorPago", "valorTotal", "corretagem", "sinal"].forEach(function (k) { o[k] = c[k]; });
+    ["valorPago", "valorTotal", "corretagem", "sinal", "valorReembolso"].forEach(function (k) { o[k] = c[k]; });
     var cj = c.conjuge || {};
     o.conjuge = { nome: txt(cj.nome), cpf: txt(cj.cpf), rg: txt(cj.rg), email: txt(cj.email) };
     o.arquivos = (c.arquivos || []).map(function (a) {
@@ -996,6 +996,7 @@
     ["formaReembolso", "Forma do reembolso (Reembolso / Estorno Cartão / Cheque)"], ["dataAssinatura", "Data da assinatura (AAAA-MM-DD)"],
     ["telefone", "Telefone / WhatsApp"], ["email", "E-mail"],
     ["endereco", "Endereço do cliente (rua, nº, bairro, cidade/UF, CEP)", "full"],
+    ["valorReembolso", "Valor a devolver no distrato (só se for diferente do valor pago)", "full"],
     ["pix", "Chave PIX para reembolso", "full"], ["clausulaExtra", "Cláusula extra — entra no distrato logo abaixo do valor", "full"]
   ];
 
@@ -1371,6 +1372,7 @@
       // só o titular do contrato assina o distrato — cônjuge vai nas observações
       conjuge: {},
       pix: "",
+      valorReembolso: "",
       clausulaExtra: "",
       parcelas: d.parcelas || [],
       observacoes: ""
@@ -2086,6 +2088,7 @@
         valorPago: c.valorPago, valorTotal: c.valorTotal, corretagem: c.corretagem, sinal: c.sinal,
         parcelas: c.parcelas, arquivos: c.arquivos,
         formaPagamentoEntrada: c.formaPagamentoEntrada, formaReembolso: c.formaReembolso, dataAssinatura: c.dataAssinatura, telefone: c.telefone, email: c.email,
+        endereco: c.endereco, profissao: c.profissao, valorReembolso: c.valorReembolso,
         pix: c.pix, clausulaExtra: c.clausulaExtra, observacoes: c.observacoes
       };
     });
@@ -2232,6 +2235,10 @@
     var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
 
     var valorNum = num(c.valorPago);
+    // valorReembolso manda no distrato quando preenchido: serve pros casos em que
+    // parte do que foi pago não volta pro cliente (fica retida noutra cota, p.ex.).
+    var valorOvr = num(c.valorReembolso);
+    if (valorOvr) valorNum = valorOvr;
     var valorStr = valorNum === null ? "" : moeda(valorNum);
     var extenso = valorNum === null ? "" : valorPorExtenso(valorNum);
     var forma = formaReembolso(c);
@@ -2359,6 +2366,11 @@
 
     // soma valorPago de todos
     var valorTotal = clientes.reduce(function (s, cl) { return s + (num(cl.valorPago) || 0); }, 0);
+    // se alguma das fichas do grupo define valorReembolso, ele substitui a soma
+    for (var vi = 0; vi < clientes.length; vi++) {
+      var vOvr = num(clientes[vi].valorReembolso);
+      if (vOvr) { valorTotal = vOvr; break; }
+    }
     var valorStr = valorTotal === 0 ? "" : moeda(valorTotal);
     var extenso = valorTotal === 0 ? "" : valorPorExtenso(valorTotal);
     var forma = formaReembolso(c);
