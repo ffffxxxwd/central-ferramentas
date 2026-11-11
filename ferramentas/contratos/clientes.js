@@ -21939,5 +21939,38 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/452--contrato.pdf" }
     ]
+  },
+  {
+    id: 453,
+    nome: "Amanda Balasz",
+    cpf: "323.929.808-29",
+    rg: "",
+    estadoCivil: "",
+    profissao: "",
+    empresa: "GAV",
+    razaoSocial: "",
+    cnpj: "",
+    empreendimento: "",
+    bloco: "",
+    apartamento: "",
+    andar: "",
+    cota: "",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Cartão de Crédito — R$ 1.330,00 (bandeira, final do cartão e número de parcelas não informados; sem comprovante)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-10-31",
+    telefone: "",
+    email: "",
+    endereco: "",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "FICHA INCOMPLETA — montada sem o contrato, a partir dos dados passados à mão. Confirmar tudo quando o PDF aparecer.\nO que veio: nome, CPF 323.929.808-29 (dígitos verificadores conferem), data 31/10/2026, 1 cota, empreendimento em Jericoacoara, pagamento de R$ 1.330,00 no cartão de crédito.\nO QUE FALTA: RG, estado civil, profissão, telefone, e-mail, endereço, bloco, apartamento, andar, número da cota, valor total da venda e número da proposta. Sem e-mail, o botão de mensagem não monta o destinatário — o distrato até gera, mas tem que ser enviado na mão.\nEMPREENDIMENTO NÃO DEFINIDO: a base tem dois em Jericoacoara, os dois ativos em outubro de 2026 — Jeriquiá Lagoa Resort (Jeri 1 Empreendimento Imobiliário SPE Ltda, CNPJ 33.578.977/0001-40) e Jeriquiá Dunas Resort (Jeri-2 Empreendimento Imobiliário SPE Ltda, CNPJ 33.598.849/0001-68). Os dois ficam em Cruz/CE, por isso a localização está preenchida; o nome da vendedora e o CNPJ ficaram em branco de propósito, para não entrar um CNPJ errado no distrato. Enquanto não for definido, o termo sai com traço nesses dois campos.\nFORA DO PRAZO DE ARREPENDIMENTO — contrato de 31/10/2026, o 7º dia venceu em 07/11/2026, há 4 dias (hoje 11/11/2026). O pedido terá que ser tratado como distrato comum, não como arrependimento do art. 49 do CDC.\nVALOR PAGO A CONFERIR: R$ 1.330,00 é exatamente um terço de R$ 3.990,00, que é a corretagem padrão da GAV nesses contratos, e esse mesmo valor aparece em outras fichas do Jeriquiá (164, 383 e 384). É bem possível que o contrato traga mais parcelas no cartão ou boletos depois dessa primeira. Se houver, o valor pago sobe. Pedir o contrato e o comprovante do cartão antes de processar o estorno.\nFração 1/52 pela regra padrão, não confirmada em contrato.",
+    parcelas: [],
+    arquivos: []
   }
 ];
