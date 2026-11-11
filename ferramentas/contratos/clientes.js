@@ -21651,5 +21651,39 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/444--contrato.pdf" }
     ]
+  },
+  {
+    id: 445,
+    nome: "Amanda Jaqueline de Souza",
+    cpf: "062.258.924-51",
+    rg: "7074650 SDS/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Supervisora",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "01",
+    apartamento: "0103",
+    andar: "1",
+    cota: "12",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 67.647,13",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTERCARD final 6378, parcelado em 3x R$ 1.330,00 (Rede/Itaú, CV 27102660, Aut 424582, 08/11/2026 16h03, aprovado com senha) — 1º vencimento 08/12/2026, ainda não cobrado",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-08",
+    telefone: "(81) 99704-2327",
+    email: "amanda.jaquelines@gmail.com",
+    endereco: "Rua Rodrigues Ferreira, 45, Apartamento 1006 Bloco A, Varzea, Recife/PE, CEP 50810-020",
+    conjuge: {},
+    pix: "",
+    clausulaExtra: "",
+    observacoes: "Porto Alto Resort — Ipojuca/PE. Bloco 01, Apartamento 0103, 1º andar, Cota 12. Proposta 368867. Área privativa 32,54 m², comum 32 m², total 64,54 m². DENTRO DO PRAZO DE ARREPENDIMENTO — contrato assinado em 08/11/2026, o 7º dia cai em 15/11/2026. Faltam 4 dias contados de hoje (11/11/2026). É o caso mais urgente da base; enviar o distrato ainda hoje.\nPAGAMENTO: corretagem de R$ 3.990,00 em UMA transação no cartão de crédito, parcelada em 3x R$ 1.330,00. Comprovante Rede/Itaú anexo: MASTERCARD final 6378, CV 27102660, Aut 424582, terminal SV067687, 08/11/2026 16h03, aprovado com senha. O CV do comprovante bate com o Nº de Documento 27102660 do quadro de corretagem do contrato.\nO 1º vencimento das parcelas é 08/12/2026, ou seja, NADA foi cobrado na fatura dela ainda. Se o estorno sair antes dessa data, as 3 parcelas são canceladas sem nunca chegar a ser debitadas — motivo a mais para correr.\nO comprovante mostra o estabelecimento GAV MURO ALTO (CNPJ 34.832.326/0001-05) com terminal registrado em GRAMADO, embora o contrato seja de Ipojuca/PE e o empreendimento fique lá. Se a venda foi fechada num estande fora do estabelecimento, reforça ainda mais o art. 49 do CDC.\nAssinatura via ZapSign, status Assinado, 5 de 5 (doc 496c941a-f7fa-4336-bf6e-5c5bbb666049). Amanda assinou em 08/11/2026 16h51min52 (IP 191.244.249.55) e o cônjuge Julio Cesar às 16h59min35 (IP 181.77.116.44). Antes disso, às 16h39/16h40, ela aceitou a Ficha de Negociação, o Termo de Ciência e o Guia do Multiproprietário na plataforma Flow, com validação facial. Consultora: Julianna Aires.\nCônjuge: Julio Cesar R de Oliveira Farias de Aguiar, CPF 060.749.944-39, RG 7386228 SDS/PE, nasc 25/03/1987, Servidor Público, tel (81) 99271-1660, juliocrofa@gmail.com. Amanda nasceu em 11/08/1988.\nConferência dos valores: corretagem R$ 3.990,00 + sinal R$ 3.382,37 + saldo R$ 60.274,76 = R$ 67.647,13, igual ao total da venda. O sinal são 5x R$ 676,47 a partir de 10/03/2027 e o saldo 91x R$ 662,36 a partir de 10/08/2027 — nada disso começou a vencer, só a corretagem foi paga.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/445--contrato.pdf" }
+    ]
   }
 ];
