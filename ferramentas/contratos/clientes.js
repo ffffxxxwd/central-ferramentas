@@ -22187,5 +22187,44 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/459--contrato.pdf" }
     ]
+  },
+  {
+    id: 460,
+    nome: "Daiana Silva e Campos",
+    cpf: "098.810.896-89",
+    rg: "MG16967434 SSP/MG",
+    estadoCivil: "União estável",
+    profissao: "Servidora Pública",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "03",
+    apartamento: "0332",
+    andar: "2",
+    cota: "10",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 85.246,52",
+    valorPago: "R$ 3.990,00",
+    entradas: [
+      { descricao: "Cartão de crédito MASTERCARD parcelado (3x R$ 663,33)", valor: 1990.00 },
+      { descricao: "PIX (R$ 2.000,00)", valor: 2000.00 }
+    ],
+    formaPagamentoEntrada: "PIX de R$ 2.000,00 pago por EMPRESA, CNPJ do pagador 33.232.834/0001-81 (Rede/Itaú, CV 192858112, 11/11/2026 17h49) + Cartão de Crédito MASTERCARD final 4226 parcelado em 3x R$ 663,33 = R$ 1.990,00 (CV 36908258, Aut 973627, 11/11/2026 17h50, aprovado pelo emissor) — 1ª parcela só vence em 11/12/2026",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-11-11",
+    telefone: "(37) 99802-1758",
+    email: "daiana785@msn.com",
+    endereco: "Rua Olegário Maciel, 33, Casa, Centro, Pompeu/MG, CEP 35640-000",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Porto 2 Life Resort — Rua MA 01, Lote 03, Nossa Senhora do Ó, Muro Alto, Ipojuca/PE. Bloco 03, Apartamento 0332, 2º andar, Cota 10. Proposta 369296. Área privativa 32,54 m², comum 37,35 m², total 69,89 m².\nDENTRO DO PRAZO — contrato assinado em 11/11/2026, o 7º dia cai em 18/11/2026.\nATENÇÃO — O PIX FOI PAGO POR UMA EMPRESA. O comprovante mostra, sem máscara, o CNPJ do pagador: 33.232.834/0001-81. Não é a Daiana nem o companheiro dela, é pessoa jurídica. Descobrir que empresa é essa e qual a relação com a venda antes de devolver qualquer coisa — devolver para um CNPJ que não é parte do contrato cria problema fiscal e de titularidade. Mesma situação do Patrick (ficha 429) e do Phelipe (436 a 438), que também tiveram CNPJ como pagador. É o quarto caso de terceiro pagador em poucos dias, junto com Ana Flávia (452), Maria Luciana (454) e Elisangela (459).\nPAGAMENTO: a corretagem de R$ 3.990,00 foi quitada por inteiro em 11/11/2026, em duas transações, sem nenhum boleto.\n1) PIX de R$ 2.000,00 às 17h49 — pagador CNPJ 33.232.834/0001-81, estabelecimento GAV MURO ALTO 2, CNPJ 39.673.888/0001-69, CV 192858112, Aut 973619, terminal SN782950, ID RESN7829500095158073PHH946B8FD95B41, o mesmo do quadro de corretagem.\n2) Cartão de crédito MASTERCARD final 4226, R$ 1.990,00 em 3x R$ 663,33, às 17h50 — CV 36908258 (bate com as duas linhas de cartão do contrato, ou seja, foi UMA transação só), Aut 973627, Auto 090558. O comprovante diz APROVADO PELO EMISSOR, e não aprovado com senha como nos outros — não houve digitação de senha nessa compra. O comprovante também não traz nome de titular, então não dá para saber de quem é o cartão; vale conferir junto com a questão do CNPJ.\nPor isso a devolução está dividida: R$ 2.000,00 por transferência e R$ 1.990,00 estornados no cartão. Se preferir mandar tudo por PIX, como foi feito na ficha 455, lembrar de NÃO pedir o estorno do cartão também, senão são R$ 1.990,00 devolvidos duas vezes.\nAs 3 parcelas do cartão só começam a ser cobradas em 11/12/2026 (2 de R$ 663,33) e a última em 11/02/2027 (R$ 663,34) — nada entrou em fatura ainda. Estorno antes de 11/12 cancela tudo sem que chegue a ser debitado.\nAssinatura via ZapSign, status Assinado, 5 de 5 — assinaram ela e o companheiro (doc 458c3ad7-4eeb-46c6-9d0f-ef69cbfe45e6, criado em 11/11/2026 18h33). As assinaturas dos dois saíram às 18h44min08 e 18h45min33. Ela aceitou a Ficha de Negociação às 18h26min38 (IP 177.223.18.64), com validação facial. Os pagamentos saíram às 17h49 e 17h50, mais de meia hora antes de ela aceitar qualquer documento.\nSinal e saldo ainda não começaram a vencer: sinal 5x R$ 852,47 a partir de 10/03/2027 e saldo 91x R$ 846,09 a partir de 10/08/2027.\nConferência: corretagem R$ 3.990,00 + sinal R$ 4.262,33 + saldo R$ 76.994,19 = R$ 85.246,52, igual ao total da venda.\nCompanheiro: Rafael Soares de Castro Pereira, CPF 112.911.946-73, RG MG17832856 SSP/MG, nascido em 12/08/1993, Empresário, tel (37) 99840-1961. Estado civil União estável. Ela mora em Pompeu/MG e o resort fica em Ipojuca/PE.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/460--contrato.pdf" }
+    ]
   }
 ];
