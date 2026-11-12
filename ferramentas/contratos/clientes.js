@@ -21972,5 +21972,40 @@ window.CLIENTES = [
     observacoes: "FICHA INCOMPLETA — montada sem o contrato, a partir dos dados passados à mão. Confirmar tudo quando o PDF aparecer.\nO que veio: nome, CPF 323.929.808-29 (dígitos verificadores conferem), data 31/10/2026, 1 cota, empreendimento em Jericoacoara, pagamento de R$ 1.330,00 no cartão de crédito.\nO QUE FALTA: RG, estado civil, profissão, telefone, e-mail, endereço, bloco, apartamento, andar, número da cota, valor total da venda e número da proposta. Sem e-mail, o botão de mensagem não monta o destinatário — o distrato até gera, mas tem que ser enviado na mão.\nEMPREENDIMENTO NÃO DEFINIDO: a base tem dois em Jericoacoara, os dois ativos em outubro de 2026 — Jeriquiá Lagoa Resort (Jeri 1 Empreendimento Imobiliário SPE Ltda, CNPJ 33.578.977/0001-40) e Jeriquiá Dunas Resort (Jeri-2 Empreendimento Imobiliário SPE Ltda, CNPJ 33.598.849/0001-68). Os dois ficam em Cruz/CE, por isso a localização está preenchida; o nome da vendedora e o CNPJ ficaram em branco de propósito, para não entrar um CNPJ errado no distrato. Enquanto não for definido, o termo sai com traço nesses dois campos.\nFORA DO PRAZO DE ARREPENDIMENTO — contrato de 31/10/2026, o 7º dia venceu em 07/11/2026, há 4 dias (hoje 11/11/2026). O pedido terá que ser tratado como distrato comum, não como arrependimento do art. 49 do CDC.\nVALOR PAGO A CONFERIR: R$ 1.330,00 é exatamente um terço de R$ 3.990,00, que é a corretagem padrão da GAV nesses contratos, e esse mesmo valor aparece em outras fichas do Jeriquiá (164, 383 e 384). É bem possível que o contrato traga mais parcelas no cartão ou boletos depois dessa primeira. Se houver, o valor pago sobe. Pedir o contrato e o comprovante do cartão antes de processar o estorno.\nFração 1/52 pela regra padrão, não confirmada em contrato.",
     parcelas: [],
     arquivos: []
+  },
+  {
+    id: 454,
+    nome: "Maria Luciana dos Santos Batista",
+    cpf: "035.723.674-25",
+    rg: "1671318 SSP/AL",
+    estadoCivil: "Casado(a)",
+    profissao: "Pescadora",
+    empresa: "GAV",
+    razaoSocial: "GAV Barra de São Miguel Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "45.298.124/0001-33",
+    empreendimento: "Areya Barra Resort",
+    bloco: "01",
+    apartamento: "310",
+    andar: "3",
+    cota: "13",
+    fracao: "1/52",
+    localizacao: "Barra de São Miguel/AL",
+    valorTotal: "R$ 49.240,30",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX de R$ 1.000,00 pago por TERCEIRO (CPF do pagador ***.328.774-**, não é o dela) em 07/11/2026 13h19 (Rede/Itaú, CV 186063642, Aut 535287) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 07/12/2026, ainda não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-07",
+    telefone: "(82) 99323-7782",
+    email: "marialucianabatista@hotmail.com",
+    endereco: "Rua São Francisco, 288, Pontal do Peba, Piaçabuçu/AL, CEP 57210-000",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Areya Barra Resort — Barra de São Miguel/AL. Bloco 01, Apartamento 310, 3º andar, Cota 13. Proposta 368824. Área privativa 34,01 m², comum 39,71 m², total 73,72 m².\nDENTRO DO PRAZO DE ARREPENDIMENTO — contrato assinado em 07/11/2026, o 7º dia cai em 14/11/2026. Faltam 3 dias contados de hoje (11/11/2026). É o prazo mais curto da base agora; enviar o distrato hoje.\nATENÇÃO — O PIX NÃO SAIU DA CONTA DELA. O comprovante mostra o CPF do pagador mascarado como ***.328.774-**, e o CPF da Maria Luciana é 035.723.674-25, que mascarado daria ***.723.674-**. São pessoas diferentes. Alguém pagou por ela. Descobrir quem antes de devolver, senão o dinheiro volta para a conta errada — mesma situação da Ana Flávia (ficha 452, cartão do Jairo Farias), do Patrick (429) e do Phelipe (436 a 438).\nPAGAMENTO: PIX de R$ 1.000,00 em 07/11/2026 às 13h19. Comprovante Rede/Itaú anexo: estabelecimento GAV BARRA DE SÃO MIGUEL, CNPJ 45.298.124/0001-33, CV 186063642, Aut 535287, terminal SV098117, ID RESV0981170094845425G3809RZC5BBB4E4 — o mesmo ID que consta no quadro de corretagem do contrato. O terminal está registrado em Goiânia, o que confirma que a cidade do terminal é só o credenciamento da GAV na adquirente e não diz onde a venda foi feita (a Beach GAV usa terminal de Gramado).\nOs 5 boletos de R$ 598,00 (R$ 2.990,00) só começam a vencer em 07/12/2026. Nada pago além do PIX. Quitados todos, a corretagem fecharia em R$ 3.990,00.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc 4bfbd81c-b73f-4271-86b1-e200e71509a1, criado em 07/11/2026 14h03). A Maria Luciana assinou às 14h07min32 (IP 177.58.9.228, Android). Antes disso aceitou a Ficha de Negociação às 13h47min17, o Termo de Ciência às 14h00min18 e o Guia do Multiproprietário às 14h00min21, na plataforma Flow, com validação facial. O PIX saiu às 13h19, meia hora antes de ela aceitar qualquer documento. Consultora: Carolina de Azevedo Lira.\nO comprovante foi fotografado em cima de uma ficha preenchida à mão com os dados dela. Na parte visível dá para ler o fim do telefone como 7783, enquanto o contrato registra (82) 99323-7782. Pode ser só a letra, mas vale confirmar o número antes de ligar.\nEstado civil consta Casado(a), mas os dados do cônjuge estão todos em branco no contrato.\nConferência: corretagem R$ 3.990,00 + sinal R$ 2.462,02 + saldo R$ 42.788,28 = R$ 49.240,30, igual ao total da venda. O sinal são 4x R$ 615,50 a partir de 10/05/2027 e o saldo 74x R$ 578,22 a partir de 10/09/2027 — nada disso começou a vencer.\nO endereço no contrato está escrito 'Pobtal do peba'; o bairro é Pontal do Peba, em Piaçabuçu/AL, e foi gravado com a grafia correta.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/454--contrato.pdf" }
+    ]
   }
 ];
