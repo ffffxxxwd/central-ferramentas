@@ -22152,5 +22152,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/458--contrato.pdf" }
     ]
+  },
+  {
+    id: 459,
+    nome: "Elisangela da Silva Barbosa Andrade",
+    cpf: "026.178.872-86",
+    rg: "48218 PM/PA",
+    estadoCivil: "Casado(a)",
+    profissao: "Policial Militar",
+    empresa: "GAV",
+    razaoSocial: "Salinas Premium Resort Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "28.883.561/0001-03",
+    empreendimento: "Premium GAV Resorts",
+    bloco: "02",
+    apartamento: "1510",
+    andar: "15",
+    cota: "01",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 67.631,45",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "PIX único de R$ 3.990,00 pago por TERCEIRO (CPF do pagador ***.809.102-**, não é o dela) em 12/11/2026 10h47 (Rede/Itaú, CV 175843630, Aut 149093) — quita a corretagem inteira, sem boleto",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-12",
+    telefone: "(91) 99336-7049",
+    email: "elisangelamedvetufra@gmail.com",
+    endereco: "Rua Manaus, 28, Águas Lindas, Belém/PA, CEP 66690-720",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Premium GAV Resorts — Salinópolis/PA, Estacionamento e Torres no 11º andar do Loteamento Balneário Ilha do Atalaia, Etapa II. Bloco 02, Apartamento 1510, 15º andar, Cota 01. Proposta 369317. Área privativa 30 m², comum 42,22 m², total 72,22 m².\nCONTRATO ASSINADO HOJE, 12/11/2026, às 11h30min14. O prazo de arrependimento vai até 19/11/2026 — é o único da base com os 7 dias inteiros pela frente. Dá tempo de fazer tudo com calma, mas não deixar parado.\nATENÇÃO — O PIX NÃO SAIU DA CONTA DELA. O comprovante traz o CPF do pagador mascarado como ***.809.102-**, e o CPF da Elisangela é 026.178.872-86, que mascarado daria ***.178.872-**. São pessoas diferentes. É o terceiro caso de terceiro pagador em poucos dias, junto com a Ana Flávia (ficha 452, cartão de Jairo Farias) e a Maria Luciana (ficha 454). Descobrir quem pagou antes de devolver, senão o dinheiro cai na conta errada.\nPAGAMENTO: PIX único de R$ 3.990,00 em 12/11/2026 às 10h47, quitando a corretagem inteira. Não há boleto nenhum nesta cota. Comprovante Rede/Itaú anexo: estabelecimento SALINAS PREMIUM, CNPJ 28.883.561/0001-03, CV 175843630, Aut 149093, terminal SN771993, ID RESN7719930095233326Z5Q5UG8B481B66, o mesmo que consta no quadro de corretagem.\nDetalhe que fecha a dúvida sobre a cidade do terminal: este comprovante e o da Ana Caroline (ficha 455) têm o MESMO número de estabelecimento, 95233326, mas um imprime GRAMADO e o outro GOIÂNIA. Ou seja, a cidade do comprovante não diz nada sobre onde a venda foi feita.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc ae2b4352-be91-4769-aeb9-a77132076e97, criado em 12/11/2026 11h15). Elisangela assinou às 11h30min14 (IP 179.151.214.59, iPhone). Antes disso aceitou a Ficha de Negociação às 11h02min13, o Termo de Ciência às 11h11min06 e o Guia do Multiproprietário às 11h11min32, na plataforma Flow, com validação facial. O PIX saiu às 10h47, quinze minutos antes de ela aceitar qualquer documento. Consultor: Jeeffson Ricele Soares Barbosa.\nSinal e saldo ainda não começaram a vencer: sinal 5x R$ 676,31 a partir de 05/12/2026 e saldo 85x R$ 708,94 a partir de 05/05/2027.\nConferência: corretagem R$ 3.990,00 + sinal R$ 3.381,55 + saldo R$ 60.259,90 = R$ 67.631,45, igual ao total da venda.\nEla é policial militar, nascida em 27/01/1999, mora em Belém/PA e o resort fica em Salinópolis, mesmo estado. Estado civil consta Casado(a), com os dados do cônjuge em branco no contrato. Contrato único, sem outras cotas.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/459--contrato.pdf" }
+    ]
   }
 ];
