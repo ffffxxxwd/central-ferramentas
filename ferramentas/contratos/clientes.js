@@ -22007,5 +22007,44 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/454--contrato.pdf" }
     ]
+  },
+  {
+    id: 455,
+    nome: "Ana Caroline Muller Goncalves",
+    cpf: "002.520.532-30",
+    rg: "20867670 SSP/AM",
+    estadoCivil: "Casado(a)",
+    profissao: "Empresária",
+    empresa: "GAV",
+    razaoSocial: "Salinas Premium Resort Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "28.883.561/0001-03",
+    empreendimento: "Premium GAV Resorts",
+    bloco: "01",
+    apartamento: "0604",
+    andar: "6",
+    cota: "11",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 76.353,37",
+    valorPago: "R$ 3.990,00",
+    entradas: [
+      { descricao: "Cartão de crédito MASTERCARD parcelado (2x R$ 995,00)", valor: 1990.00 },
+      { descricao: "PIX (R$ 2.000,00)", valor: 2000.00 }
+    ],
+    formaPagamentoEntrada: "PIX de R$ 2.000,00 pago por ela mesma (Rede/Itaú, CV 178622836, 05/11/2026 12h20) + Cartão de Crédito MASTERCARD final 2882 parcelado em 2x R$ 995,00 = R$ 1.990,00 (CV 22895260, Aut 136676, 05/11/2026 12h31, aprovado com senha) — 1ª parcela só vence em 05/12/2026",
+    formaReembolso: "Reembolso + Estorno",
+    dataAssinatura: "2026-11-05",
+    telefone: "(92) 99145-0431",
+    email: "anacarolinemuller@hotmail.com",
+    endereco: "Rua Goiás, 28, Apto 202 Torre Sidnei, Flores, Manaus/AM, CEP 69058-411",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Premium GAV Resorts — Salinópolis/PA, Estacionamento e Torres no 11º andar do Loteamento Balneário Ilha do Atalaia, Etapa II. Bloco 01, Apartamento 0604, 6º andar, Cota 11. Proposta 368215. Área privativa 37 m², comum 52,07 m², total 89,07 m².\nPRAZO VENCE AMANHÃ — contrato assinado em 05/11/2026, o 7º dia cai em 12/11/2026 e hoje é 11/11/2026. É o último dia útil para exercer o arrependimento. Tem que sair hoje, sem exceção.\nPAGAMENTO: a corretagem de R$ 3.990,00 foi quitada por inteiro em 05/11/2026, em duas transações, e nenhuma delas é boleto.\n1) PIX de R$ 2.000,00 às 12h20 — comprovante com CPF do pagador ***.520.532-**, que confere com o dela (002.520.532-30). Foi ela mesma quem pagou. Estabelecimento SALINAS PREMIUM, CNPJ 28.883.561/0001-03, CV 178622836, Aut 136639, terminal SN733003, ID RESN7330030095233326DDXWS4HVBB35C7C, o mesmo do quadro de corretagem.\n2) Cartão de crédito MASTERCARD final 2882, R$ 1.990,00 em 2x R$ 995,00, às 12h31 — CV 22895260 (bate com o contrato), Aut 136676, Auto 288031, aprovado com senha. O comprovante não traz nome de titular impresso, então não há indício de terceiro pagador aqui, diferente da Ana Flávia (ficha 452) e da Maria Luciana (454).\nPor isso a devolução é dividida: R$ 2.000,00 por transferência e R$ 1.990,00 estornados no cartão.\nAs 2 parcelas do cartão só começam a ser cobradas em 05/12/2026 — nada entrou em fatura ainda. Estorno antes disso cancela as duas sem que cheguem a ser debitadas.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc 760a4e73-ad80-42cd-b258-1015e419dc5f, criado em 05/11/2026 13h06). Ana Caroline assinou às 13h20min33 (IP 177.173.225.252, iPhone). Antes disso aceitou a Ficha de Negociação às 12h53min28, o Termo de Ciência às 12h58min43 e o Guia do Multiproprietário às 12h58min47, na plataforma Flow, com validação facial. Pagou às 12h20 e 12h31, meia hora antes de aceitar qualquer documento.\nO arquivo chegou com o nome Gabe.pdf, mas o documento original registrado no ZapSign é PRE-BL01-AP0604-COTA11-ANA CAROLINE MULLER GONCALVES.pdf. Confirmar com quem enviou se o Gabe é outra pessoa envolvida ou só o nome que deram ao arquivo.\nEstado civil consta Casado(a), mas os dados do cônjuge estão todos em branco no contrato.\nConferência: corretagem R$ 3.990,00 + sinal R$ 3.817,67 + saldo R$ 68.545,70 = R$ 76.353,37, igual ao total da venda. O sinal são 5x R$ 763,53 a partir de 10/02/2027 e o saldo 85x R$ 806,42 a partir de 10/07/2027 — nada disso começou a vencer. É o contrato de maior valor entre os desta semana.\nEla mora em Manaus/AM e o resort fica em Salinópolis/PA.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/455--contrato.pdf" }
+    ]
   }
 ];
