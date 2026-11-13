@@ -139,9 +139,13 @@ $(document).ready(function() {
   }
 
   // --- Validação ---
+  // Conectivos de nome brasileiro (e, de, da, do, das, dos...) tem 1 ou 2 letras
+  // e nao sao sobrenome. Sem isso, "Daiana Silva e Campos" era recusado por causa do "e".
+  const LIGACOES = /^(e|y|d[aeiou]|d[ao]s|van|von|del|della|la|le|dell|degli)$/i;
   $.validator.addMethod('nomeCompleto', function(value) {
     const partes = value.trim().split(/\s+/);
-    return partes.length >= 2 && partes.every(p => p.length >= 2);
+    const nomes = partes.filter(p => !LIGACOES.test(p));
+    return nomes.length >= 2 && nomes.every(p => p.length >= 2);
   }, 'Informe o nome completo do cliente.');
 
   $.validator.addMethod('valorPositivo', function(value) {
