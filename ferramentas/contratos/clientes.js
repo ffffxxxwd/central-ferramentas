@@ -22296,5 +22296,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/462--contrato.pdf" }
     ]
+  },
+  {
+    id: 463,
+    nome: "Wagner Leite Arantes",
+    cpf: "577.736.371-72",
+    rg: "207822 SESP/TO",
+    estadoCivil: "Casado(a)",
+    profissao: "Funcionário Público",
+    empresa: "GAV",
+    razaoSocial: "GAV Maragogi Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "39.757.445/0001-56",
+    empreendimento: "Oikos Maragogi Resort",
+    bloco: "02",
+    apartamento: "UH 006",
+    andar: "T",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "Maragogi/AL",
+    valorTotal: "R$ 36.880,79",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Cartão de Crédito MASTERCARD final 2346 à vista — R$ 1.000,00 (Rede/Itaú, CV 194227530, Aut 438562, 12/09/2026 19h01, aprovado pelo emissor) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 12/11/2026, vencendo hoje, quitação não confirmada)",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-09-12",
+    telefone: "(62) 99296-5638",
+    email: "wknarantes98@gmail.com",
+    endereco: "Rua Agrônomo Joaquim Batista, SN, Lote 22, Residencial Solar Ville, Goiânia/GO, CEP 74470-535",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Oikos Maragogi Resort — Rodovia AL 101 Norte, km 124, nº 600, Bairro de Camacho, Maragogi/AL. Bloco 02, unidade UH 006, andar Térreo, Cota 09. Proposta 359803. Apartamento de 1 quarto: área privativa 32,72 m², comum 57,54 m², total 90,26 m².\nFORA DO PRAZO DE ARREPENDIMENTO — contrato assinado em 12/09/2026, o 7º dia venceu em 19/09/2026. Tem que entrar como distrato comum, não como arrependimento do art. 49 do CDC.\nPAGAMENTO: R$ 1.000,00 no CARTÃO DE CRÉDITO À VISTA, em 12/09/2026 às 19h01. Comprovante Rede/Itaú anexo: MASTERCARD final 2346, CV 194227530 (bate com o Nº de Documento do quadro de corretagem), Aut 438562, Auto 011658, terminal SN901940, estabelecimento GAV MARAGOGI, CNPJ 39.757.445/0001-56. O comprovante diz APROVADO PELO EMISSOR, sem digitação de senha, e não traz nome de titular impresso — não dá para confirmar de quem é o cartão.\nComo foi crédito à vista em setembro, esse valor já entrou e saiu da fatura dele há tempo; o estorno vem como crédito na fatura, não como cancelamento de parcelas futuras.\nATENÇÃO AOS BOLETOS: são 5 de R$ 598,00, somando R$ 2.990,00, e o PRIMEIRO VENCE HOJE, 12/11/2026. Se ele pagar, o valor pago sobe de R$ 1.000,00 para R$ 1.598,00. Conferir antes de fechar o número e, se possível, orientar a não pagar enquanto o distrato estiver em análise.\nDIVERGÊNCIA INTERNA NO CONTRATO: o quadro diz que o sinal é de R$ 1.843,43 em 4 parcelas de R$ 461,01, mas 4 x 461,01 dá R$ 1.844,04. Somando corretagem R$ 3.990,00 + sinal R$ 1.843,43 + saldo R$ 31.046,76 chega-se a R$ 36.880,19, enquanto o valor total da venda declarado é R$ 36.880,79 — 60 centavos de diferença. Usando as 4 parcelas reais (R$ 1.844,04) a soma dá R$ 36.880,80, que bate com o total a menos de 1 centavo. Ou seja, o erro está no total do sinal escrito no quadro. É o mesmo tipo de inconsistência que a Ana Paula Comacchio levantou na ficha 456 e que aparece nas fichas 457 e 458 da Lucelisy — vale juntar os três casos se for questionar a GAV sobre a memória de cálculo.\nO saldo (68x R$ 456,57 a partir de 10/08/2027) e o sinal (4x R$ 461,01 a partir de 10/04/2027) ainda não começaram a vencer.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc 1f228bbf-023b-44b4-8b82-aeaad89bec53, criado em 12/09/2026 19h58). Wagner assinou às 20h03min12. O cartão passou às 19h01, quase uma hora antes da assinatura.\nTrês lugares diferentes neste contrato: ele mora em Goiânia/GO, o resort fica em Maragogi/AL e a declaração de ciência do contrato está datada de IPOJUCA - PE, 12 de setembro de 2026. O terminal do cartão está registrado em Goiânia/GO, mas isso é só o credenciamento da GAV na adquirente e não indica onde a venda foi feita.\nEle é funcionário público, nascido em 13/01/1976. Estado civil consta Casado(a), com os dados do cônjuge em branco no contrato. Contrato único, sem outras cotas. O arquivo chegou por WhatsApp como DOC-20261112-WA0113.pdf; o documento original registrado no ZapSign é OMR-BLOCO 02-UH 006-09-WAGNER LEITE ARANTES.pdf.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/463--contrato.pdf" }
+    ]
   }
 ];
