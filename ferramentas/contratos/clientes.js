@@ -22226,5 +22226,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/460--contrato.pdf" }
     ]
+  },
+  {
+    id: 461,
+    nome: "Lucas Gabriel Oliveira Neves",
+    cpf: "038.866.131-35",
+    rg: "4008 CBM/GO",
+    estadoCivil: "Casado(a)",
+    profissao: "Militar do Corpo de Bombeiros",
+    empresa: "GAV",
+    razaoSocial: "Jeri 1 Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "33.578.977/0001-40",
+    empreendimento: "Jeriquiá Lagoa Resort",
+    bloco: "01",
+    apartamento: "203",
+    andar: "2",
+    cota: "09",
+    fracao: "1/52",
+    localizacao: "Cruz/CE",
+    valorTotal: "R$ 58.109,91",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "PIX de R$ 1.000,00 pago por ele mesmo em 10/11/2026 23h26 (Rede/Itaú, CV 197726842, Aut 703737) + Boleto 5x R$ 598,00 = R$ 2.990,00 (1º venc 10/12/2026, ainda não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-11",
+    telefone: "(62) 99419-0357",
+    email: "lucasneves.business@gmail.com",
+    endereco: "Rua Bela Vista, 103, Residencial Celeste, Fazenda São José, Goiânia/GO, CEP 74483-871",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Jeriquiá Lagoa Resort — Rodovia CE 182, S/N, Zona Urbana, Distrito de Caiçara, Cruz/CE. Bloco 01, Apartamento 203, 2º andar, Cota 09. Proposta 369198. Apartamento de 1 quarto: área privativa 35,29 m², comum 62,78 m², total 98,07 m².\nDENTRO DO PRAZO — contrato assinado em 11/11/2026, o 7º dia cai em 18/11/2026.\nDEVOLUÇÃO INTEIRA POR PIX, conforme combinado. Aqui isso já é o caminho natural: não houve cartão nenhum na operação, só PIX e boleto, então não existe estorno a pedir.\nPAGAMENTO: PIX de R$ 1.000,00 em 10/11/2026 às 23h26 — e esse saiu da conta dele mesmo: o comprovante traz o CPF do pagador ***.866.131-**, que confere com o dele (038.866.131-35). Estabelecimento JERI1 BEACH, CNPJ 33.578.977/0001-40, CV 197726842, Aut 703737, terminal SN516162, ID RESN5161620091786770R6Y3TPW09EB304A, o mesmo que consta no quadro de corretagem. Terminal registrado em Gramado, como nos demais — não diz nada sobre onde a venda foi feita.\nOs 5 boletos de R$ 598,00 (R$ 2.990,00) só começam a vencer em 10/12/2026. Nada pago além do PIX. Quitados todos, a corretagem fecharia em R$ 3.990,00.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc 4f94b7f7-a5cb-4d0f-a896-173eee8941e9, criado em 11/11/2026 00h23). Lucas assinou às 00h27min16 (IP 191.247.12.231, iPhone). Antes disso aceitou a Ficha de Negociação às 00h11min36, o Termo de Ciência às 00h17min36 e o Guia do Multiproprietário às 00h17min51, na plataforma Flow, com validação facial.\nA operação virou a meia-noite: ele pagou o PIX às 23h26 do dia 10/11 e assinou às 00h27 do dia 11/11. Para contagem do prazo vale a assinatura, 11/11/2026.\nSinal e saldo ainda não começaram a vencer: sinal 4x R$ 726,38 a partir de 10/05/2027 e saldo 80x R$ 640,18 a partir de 10/09/2027.\nConferência: corretagem R$ 3.990,00 + sinal R$ 2.905,51 + saldo R$ 51.214,40 = R$ 58.109,91, igual ao total da venda.\nEle é militar do Corpo de Bombeiros, nascido em 28/10/1993, mora em Goiânia/GO e o resort fica em Cruz/CE, na região de Jericoacoara. Estado civil consta Casado(a), com os dados do cônjuge em branco no contrato. Contrato único, sem outras cotas.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/461--contrato.pdf" }
+    ]
   }
 ];
