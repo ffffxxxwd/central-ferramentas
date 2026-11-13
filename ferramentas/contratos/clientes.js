@@ -22331,5 +22331,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/463--contrato.pdf" }
     ]
+  },
+  {
+    id: 464,
+    nome: "Barbara Tortorelli de Pinho",
+    cpf: "045.786.421-43",
+    rg: "1679735-3 SESP/MT",
+    estadoCivil: "Casado(a)",
+    profissao: "Radiologista",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto Empreendimento Imobiliário SPE Ltda.",
+    cnpj: "34.832.326/0001-05",
+    empreendimento: "Porto Alto Resort",
+    bloco: "01",
+    apartamento: "0007",
+    andar: "T",
+    cota: "26",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 55.724,67",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "DINHEIRO — R$ 1.000,00 recebidos no ato em 04/10/2022, conforme recibo do próprio contrato (sem comprovante bancário) + Boleto 4x R$ 747,50 = R$ 2.990,00 (1º venc 15/11/2022, todos vencidos há anos, quitação não confirmada)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2022-10-05",
+    telefone: "(65) 99306-6363",
+    email: "barbara.radiologiamt@gmail.com",
+    endereco: "Rua A-1, 05, Prolongamento do Parque, Parque Cuiabá, Cuiabá/MT, CEP 78095-250",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Porto Alto Resort — Rua MA 01, Lote 02-B, Muro Alto, Ipojuca/PE. Bloco 01, Apartamento 0007, térreo, Cota 26. Proposta 64504. Área privativa 32,54 m², comum 32 m², total 64,54 m².\nCONTRATO ANTIGO, DE OUTUBRO DE 2022 — tratar diferente dos recentes. Assinado em 05/10/2022 às 00h41, FORA do prazo de arrependimento desde 12/10/2022, há mais de quatro anos. Não cabe art. 49 do CDC; é distrato comum, com discussão de retenção e devolução proporcional.\nO VALOR PAGO DE R$ 1.000,00 É SÓ A PONTA DO ICEBERG — PEDIR O EXTRATO DE COTA ANTES DE QUALQUER PROPOSTA. Lancei apenas os R$ 1.000,00 em dinheiro que o próprio recibo do contrato reconhece como recebidos no ato. Mas o cronograma do contrato já venceu quase inteiro:\n  - corretagem em dinheiro: R$ 1.000,00, pago em 04/10/2022 (único com confirmação);\n  - corretagem em boleto: 4x R$ 747,50 = R$ 2.990,00, todas vencidas desde 15/02/2023;\n  - sinal: 4x R$ 696,56 = R$ 2.786,24, todas vencidas desde 15/06/2023;\n  - saldo: 68x R$ 719,83 a partir de 15/07/2023 — 40 das 68 parcelas já venceram, somando R$ 28.793,20. A 41ª vence em 15/11/2026.\nSomando tudo que já venceu até 13/11/2026: R$ 35.569,44, dos quais R$ 34.569,44 não têm comprovante nenhum nesta ficha. Se ela vinha pagando em dia, o valor real a devolver é cerca de 35 vezes o que está lançado. É o mesmo padrão do Genivaldo, que saltou de R$ 712,76 para R$ 11.883,93 quando o extrato chegou — e aqui a diferença é muito maior. Sem o extrato não dá para negociar nada.\nFORMA DE PAGAMENTO INCOMUM: a entrada da corretagem foi em DINHEIRO, não em PIX nem cartão. Não há comprovante bancário, só o recibo dentro do próprio contrato. A devolução vai por transferência.\nASSINATURA PRESENCIAL, não remota. D4Sign, documento 2ac87231-a276-47b4-845b-a194bb2823ed, criado em 05/10/2022 00h32 e assinado por ela às 00h41min12. O certificado registra ASSINATURA PRESENCIAL e traz a foto do RG dela anexada ao documento. A geolocalização (-15,585585 / -56,117483) cai em Cuiabá/MT, e todos os signatários aparecem com o mesmo IP 201.71.156.34 — ou seja, foi tudo assinado no mesmo balcão, de madrugada. A declaração de ciência do contrato está datada de CUIABÁ - MT, 04 de outubro de 2022.\nQuem mais assinou: Mauro de Melo Lopes aprovou; Jeferson Anesio Ferreira assinou como parte pela GAV; testemunhas Javier Alejandro Naya Alvarez (dinastyempreendimentos@gmail.com, um e-mail que não é da GAV) e Willian Pereira Matos (GAV).\nConferência: corretagem R$ 3.990,00 + sinal R$ 2.786,23 + saldo R$ 48.948,44 = R$ 55.724,67, igual ao total da venda.\nReajustes: este contrato usa INCC-DI até a entrega e IGPM + 1% depois, diferente dos contratos novos, que usam IPCA + 1%. Em quatro anos de IGPM isso faz diferença grande no saldo devedor — conferir no extrato se as parcelas foram reajustadas e em quanto.\nEla é radiologista, nascida em 13/01/1994, mora em Cuiabá/MT e o resort fica em Ipojuca/PE. Estado civil consta Casado(a), com os dados do cônjuge em branco no contrato. O arquivo chegou como contrato_PORTO ALTO RESORT_BLOCO 01_0007.pdf; no D4Sign o documento é PAR-BL01-AP0007-COTA26-BARBARA TORTORELLI DE PINHO.pdf.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/464--contrato.pdf" }
+    ]
   }
 ];
