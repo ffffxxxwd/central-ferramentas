@@ -22261,5 +22261,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/461--contrato.pdf" }
     ]
+  },
+  {
+    id: 462,
+    nome: "Antonio Ivan Alves Ferreira",
+    cpf: "022.055.252-55",
+    rg: "6426146 PC/PA",
+    estadoCivil: "União estável",
+    profissao: "Segurança",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda.",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "01",
+    apartamento: "0101",
+    andar: "1",
+    cota: "07",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 41.809,74",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "PIX de R$ 1.330,00 pago por ele mesmo em 08/11/2026 18h02 (Rede/Itaú, CV 29570078, Aut 840005) + Boleto 5x R$ 532,00 = R$ 2.660,00 (1º venc 08/12/2026, ainda não vencido)",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-08",
+    telefone: "(91) 98305-6914",
+    email: "ivan.milliel.antonioivan797@gmail.com",
+    endereco: "Bela Vista, SN, Zona Rural, São Miguel do Guamá/PA, CEP 68660-000",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Beach GAV Resorts — Salinópolis/PA. Bloco 1, Apartamento 0101, 1º andar, Cota 07. Proposta 368884. Área privativa 30 m², comum 31,268 m², total 61,268 m².\nDENTRO DO PRAZO — contrato assinado em 08/11/2026, o 7º dia cai em 15/11/2026. Mesmo prazo da Amanda Jaqueline (ficha 445) e das 5 cotas da Simone (446 a 450), todos de 08/11.\nPAGAMENTO: PIX de R$ 1.330,00 em 08/11/2026 às 18h02, e esse saiu da conta dele mesmo — o comprovante traz o CPF do pagador ***.055.252-**, que confere com o dele (022.055.252-55). Estabelecimento BEACH GAV RESORTS, CNPJ 33.531.685/0001-51, CV 29570078, Aut 840005, terminal SN013156, ID RESN013156009515824337R5K98WD88C098, o mesmo do quadro de corretagem.\nTerminal diferente do da Simone (SN521031), embora o número de estabelecimento seja o mesmo, 95158243 — são máquinas distintas do mesmo credenciamento.\nOs 5 boletos de R$ 532,00 (R$ 2.660,00) só começam a vencer em 08/12/2026. Nada pago além do PIX. Quitados todos, a corretagem fecharia em R$ 3.990,00.\nAssinatura via ZapSign, status Assinado, 4 de 4 (doc db394f23-2c73-4946-9376-9ce9ade3fdb6, criado em 08/11/2026 18h28). Antonio assinou às 18h33min54 (IP 179.249.80.22, Android). Antes disso aceitou a Ficha de Negociação às 18h24min03, o Termo de Ciência às 18h24min52 e o Guia do Multiproprietário às 18h25min00, na plataforma Flow, com validação facial. O PIX saiu às 18h02, vinte minutos antes de ele aceitar qualquer documento.\nSinal e saldo ainda não começaram a vencer: sinal 4x R$ 522,62 a partir de 10/05/2027 e saldo 68x R$ 525,43 a partir de 10/09/2027.\nConferência: corretagem R$ 3.990,00 + sinal R$ 2.090,50 + saldo R$ 35.729,24 = R$ 41.809,74, igual ao total da venda. É o contrato de menor valor entre os desta semana.\nEle trabalha como segurança, nasceu em 23/01/1989 e mora na zona rural de São Miguel do Guamá/PA; o resort fica em Salinópolis, mesmo estado. O endereço no contrato está incompleto, só 'Bela Vista, SN, Zona rural' — sem número nem referência. Se for preciso mandar algo por carta, pedir o endereço completo. Estado civil consta União estável, com os dados do companheiro(a) em branco no contrato. Contrato único, sem outras cotas.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/462--contrato.pdf" }
+    ]
   }
 ];
