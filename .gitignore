@@ -9,3 +9,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# senha local, nunca versionar
+SENHA.txt
