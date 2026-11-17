@@ -41,9 +41,14 @@
   }
   if (sessaoValida()) return;
 
-  // barra o resto da página: nada mais deveria ser baixado nem executado.
-  // Se o navegador ignorar, a camada abaixo cobre o que for renderizado.
-  try { window.stop(); } catch (e) {}
+  // Aqui ficava um window.stop() para interromper o carregamento da página.
+  // Funcionava no Linux, mas num Mac a tela saía inteiramente preta: abortar o
+  // parser deixa o documento num estado em que o Chrome monta o DOM e nunca
+  // chega a desenhar. Agora a página carrega normalmente e a tela de senha vem
+  // por cima, como camada fixa — o desenho passa a ser garantido.
+  // O preço é que os scripts do painel continuam sendo baixados por baixo da
+  // camada. Isso não muda o nível de proteção: com o repositório público, esses
+  // arquivos já eram acessíveis por URL direta de qualquer jeito.
 
   function sha256(texto) {
     if (!window.crypto || !crypto.subtle || !window.TextEncoder) {
@@ -76,7 +81,7 @@
       if (!doc.documentElement) return false;
 
       // pinta a raiz, para o caso de a camada demorar um quadro a aparecer
-      doc.documentElement.setAttribute("style", "background:" + FUNDO + ";");
+      doc.documentElement.setAttribute("style", "background:" + FUNDO + ";overflow:hidden;");
 
       if (!doc.body) {
         doc.documentElement.appendChild(doc.createElement("body"));
@@ -86,11 +91,20 @@
       var antigo = doc.getElementById(ID);
       if (antigo && antigo.parentNode) antigo.parentNode.removeChild(antigo);
 
-      var gate = el("div", "position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;" +
+      // top/left/right/bottom sem width/height: assim a camada mede exatamente
+      // a janela. Com width:100% ela ficava mais estreita que a tela quando a
+      // página de trás criava barra de rolagem, e vazava uma faixa na lateral.
+      var gate = el("div", "position:fixed;top:0;left:0;right:0;bottom:0;" +
         "z-index:2147483647;background:" + FUNDO + ";color:" + TINTA + ";font-family:" + FONTE + ";" +
         "display:flex;align-items:center;justify-content:center;padding:24px;" +
         "box-sizing:border-box;margin:0;overflow:auto;");
       gate.id = ID;
+
+      // trava a rolagem do painel que ficou carregado por baixo
+      try {
+        doc.documentElement.style.overflow = "hidden";
+        if (doc.body) doc.body.style.overflow = "hidden";
+      } catch (e) {}
 
       var caixa = el("form", "width:100%;max-width:360px;background:#fff;border:1px solid #c3cdde;" +
         "border-radius:10px;padding:28px 26px 24px;box-sizing:border-box;margin:0;");
@@ -195,12 +209,22 @@
 
   montar();
 
-  // Se o navegador tiver ignorado o window.stop() e continuado a carregar a
-  // página por baixo, estes dois momentos devolvem a tela para cima de tudo.
+  // A página carrega por baixo da camada. Se algum script do painel trocar o
+  // conteúdo do body, a tela some junto — por isso ela é remontada nos marcos
+  // do carregamento e vigiada por alguns segundos depois disso.
   function reforcar() {
     if (!document.getElementById(ID)) montar();
     document.title = "Acesso restrito";
   }
   document.addEventListener("DOMContentLoaded", reforcar);
   window.addEventListener("load", reforcar);
+
+  var vigia = setInterval(reforcar, 250);
+  setTimeout(function () { clearInterval(vigia); }, 15000);
+
+  if (window.MutationObserver && document.documentElement) {
+    new MutationObserver(function () {
+      if (!document.getElementById(ID)) montar();
+    }).observe(document.documentElement, { childList: true, subtree: true });
+  }
 })();
