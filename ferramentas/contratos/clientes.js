@@ -22755,5 +22755,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/475--contrato.pdf" }
     ]
+  },
+  {
+    id: 476,
+    nome: "Suzana Silva Rosa",
+    cpf: "008.196.941-42",
+    rg: "2451715 SSP/DF",
+    estadoCivil: "Solteiro(a)",
+    profissao: "Vendedora",
+    empresa: "WAM",
+    razaoSocial: "S.P.E. Mirante Investimento Imobiliários S/A",
+    cnpj: "18.622.215/0001-00",
+    empreendimento: "Kawana Residence",
+    bloco: "03",
+    apartamento: "504",
+    andar: "",
+    cota: "B/L1",
+    fracao: "1/52",
+    localizacao: "Caldas Novas/GO",
+    valorTotal: "R$ 27.824,92",
+    valorPago: "R$ 500,00",
+    formaPagamentoEntrada: "Serviços de Intermediação de R$ 3.100,00 à parte, devidos à WAM Comercialização S.A.: 1x R$ 500,00 por TED/DOC/depósito (sem data nem comprovante, a confirmar) + 5x R$ 520,00 em boleto Itaú. O preço da cota, R$ 27.824,92, é pago em 3x R$ 550,00 a partir de 15/12/2026 e 60x R$ 461,25 a partir de 20/03/2027 — nenhum vencido ainda",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "",
+    telefone: "(61) 99105-8906",
+    email: "suzana20rosa@gmail.com",
+    endereco: "Quadra 3 MR 1, S/N, Setor Sul, Planaltina/GO, CEP 72753-013",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "FALTA A DATA DE ASSINATURA — É O DADO MAIS IMPORTANTE QUE NÃO TEMOS. O arquivo recebido não é o contrato em PDF, é um print de tela do portal GSign fotografado com CamScanner, 20 páginas, sem camada de texto e sem a página de assinaturas. Sem a data não dá para saber se o prazo de arrependimento de 7 dias ainda está aberto, e isso decide toda a estratégia. PEDIR A ELA O PDF ORIGINAL baixado do GSign, com o certificado de assinatura. No print, o painel do GSign mostra 1 documento em Concluídos, então o contrato está assinado.\nO cronograma indica contrato recente: a primeira parcela do preço vence em 15/12/2026 e as do saldo em 20/03/2027. Provavelmente foi assinado em novembro de 2026, mas isso é dedução, não leitura.\nKawana Residence — Avenida Caminho do Lago, Gleba 2, Fazenda Santo Antônio das Lages, Caldas Novas/GO. Bloco 03, unidade 504, Cota B/L1. Matrícula 77.345 do Cartório de Registro de Imóveis Leandro Félix, 1º Tabelionato de Caldas Novas. 1 semana de uso por ano. Habite-se previsto para 31/12/2027, com tolerância de 180 dias.\nTRÊS EMPRESAS NO NEGÓCIO, o que complica o pedido de devolução:\n  1) Vendedora: S.P.E. Mirante Investimento Imobiliários S/A, CNPJ 18.622.215/0001-00, que recebe o preço da cota;\n  2) Intermediadora: WAM Comercialização S.A., CNPJ 17.919.640/0001-03, que recebe os R$ 3.100,00 de serviços de intermediação;\n  3) Tallin SPE Ltda, CNPJ 54.272.360/0001-71, de Barueri/SP, com um contrato SEPARADO de acesso ao Kawana Park por 3 anos, anexado ao mesmo arquivo. Esse segundo contrato tem cláusula própria dizendo que, cancelada a cota, ele se cancela automaticamente.\nVALORES: preço da cota R$ 27.824,92, SEM os serviços de intermediação, pago em 3 parcelas mensais de R$ 550,00 a partir de 15/12/2026 mais 60 parcelas de R$ 461,25 a partir de 20/03/2027. Os serviços de intermediação são R$ 3.100,00 à parte, em 1x R$ 500,00 por TED/DOC/depósito mais 5x R$ 520,00 em boleto Itaú (500 + 2.600 = 3.100, confere).\nVALOR PAGO A CONFIRMAR: lancei R$ 500,00, que é a primeira parcela da intermediação em TED/DOC/depósito, por ser a única sem data de vencimento futura e que normalmente se paga no ato. NÃO HÁ COMPROVANTE e o contrato não traz a data desse pagamento. Pedir o comprovante a ela: se nada foi pago, o valor é zero; se já pagou boletos, sobe. Nenhum boleto venceu ainda — os primeiros são de 15/12/2026.\nCLÁUSULA DE MULTA DE 50 POR CENTO. O item 5 do contrato, Consequências do Desfazimento, diz que em caso de rompimento serão deduzidas do que ela pagou, cumulativamente: a integralidade dos Serviços de Intermediação E multa de 50 por cento do preço total reajustado da cota. Somam-se ainda IPTU, taxas condominiais, fruição de 0,5 por cento ao mês após o habite-se e honorários advocatícios. É cláusula pesada e é o que vai ser oposto a ela.\nO PONTO QUE DESTRAVA TUDO: o próprio contrato abre exceção expressa dizendo que o valor da intermediação é retido pela empresa mesmo em cancelamento ou distrato, SALVO na hipótese de comprovado exercício do Direito de Arrependimento. Ou seja, o contrato reconhece por escrito que, dentro do prazo, os R$ 3.100,00 voltam. Fora do prazo, a multa de 50 por cento e a retenção integral da intermediação passam a valer. Por isso a data de assinatura é decisiva.\nDIVERGÊNCIA DE ENDEREÇO: no Quadro-Resumo do contrato principal o endereço dela não ficou legível no print; no contrato da Tallin consta Quadra 3 MR 1, S/N, Setor Sul, Planaltina/GO, CEP 72753-013. Gravei esse. Confirmar com ela.\nO print tem baixa qualidade, por ser foto de tela de celular. Todos os valores acima foram lidos do documento, mas conferir contra o PDF original quando ele chegar.\nEla é vendedora, solteira, nascida em 11/07/1986.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato (print do portal GSign)", arquivo: "contratos-pdf/476--contrato.pdf" }
+    ]
   }
 ];
