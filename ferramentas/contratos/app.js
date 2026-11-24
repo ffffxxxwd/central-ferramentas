@@ -560,6 +560,7 @@
     var forma = formaReembolso(c);
     var ehEstorno = /estorno/i.test(forma);
     var vPago = rs(c.valorPago);
+    var pagoEm = instrumentosPagamento(c);
 
     /* Carimbo só no PAGO: é o único estado que encerra o caso, então o card
        pode parar de ser lido e virar aviso. Enviado e assinado são meio do
@@ -622,8 +623,14 @@
           esc(p ? prazoCurto(p) : "Sem data de assinatura") + "</div>" +
         // só o que o cliente pagou até agora — é sobre isso que o reembolso é
         // calculado. O valor cheio do contrato fica no painel de detalhe.
-        '<div class="ficha__valor' + (vPago ? "" : " sem") + '">' +
-          "<span>Valor pago</span>" +
+        '<div class="ficha__valor' + (vPago ? "" : " sem") + '"' +
+          (c.formaPagamentoEntrada ? ' title="' + esc(c.formaPagamentoEntrada) + '"' : "") + ">" +
+          "<span>Valor pago" +
+            // a FORMA de pagamento é o que faltava no print: sem ela o card
+            // dizia quanto, mas não como — e "como" é o que decide se a
+            // devolução é estorno ou transferência
+            (pagoEm ? "<small>" + esc(pagoEm) + "</small>" : "") +
+          "</span>" +
           "<b>" + esc(vPago || "—") + "</b>" +
         "</div>" +
         '<div class="ficha__botoes">' +
@@ -2169,6 +2176,46 @@
     if (/viuv/.test(s)) return "Viúvo(a)";
     return "Solteiro(a)";
   }
+  /* Resume a forma de pagamento num rotulo curto. O campo
+     formaPagamentoEntrada e texto corrido e longo demais pro card, mas e
+     justamente o que falta ver no print que vai pro WhatsApp. Aqui sai so a
+     lista de instrumentos, na ordem em que aparecem no texto, de modo que o
+     PRINCIPAL vem primeiro - igual a regra do reembolso.
+     A ordem dos padroes importa: os especificos consomem o trecho antes que
+     um generico o reaproveite ("cartao VISA DEBITO" nao pode virar cartao de
+     credito tambem). O trecho casado vira espacos, nao e removido, pra nao
+     deslocar as posicoes ja encontradas. */
+  var INSTRUMENTOS = [
+    [/cartao(\s+(de|do|da|visa|master(card)?|elo|cielo|rede|hiper|amex))*\s+debito|(visa|master(card)?|elo)\s*debito|debito\s*(visa|master(card)?|elo|cielo|rede)|\b1x\s*debito/, "Cartão de débito"],
+    [/credito\s*recorrente|recorrente/, "Crédito recorrente"],
+    [/cartao|credito|visa|master(card)?|elo|amex|hiper/, "Cartão de crédito"],
+    [/debito\s*(em\s*conta|automatico|autorizado)/, "Débito em conta"],
+    [/pix/, "PIX"],
+    [/boleto/, "Boleto"],
+    [/deposito|transferencia|\bted\b|\bdoc\b/, "Depósito/TED"],
+    [/cheque/, "Cheque"],
+    [/dinheiro|especie/, "Dinheiro"],
+    // "debito" solto, sem dizer se e cartao ou conta: fica no rotulo neutro
+    [/\bdebito\b/, "Débito"]
+  ];
+  function instrumentosPagamento(c) {
+    var s = semAcento(c.formaPagamentoEntrada);
+    if (!s) return "";
+    var achados = [];
+    INSTRUMENTOS.forEach(function (par) {
+      var re = new RegExp(par[0].source, "g"), m;
+      while ((m = re.exec(s))) {
+        achados.push({ pos: m.index, rot: par[1] });
+        s = s.slice(0, m.index) + m[0].replace(/./g, " ") + s.slice(m.index + m[0].length);
+      }
+    });
+    achados.sort(function (a, b) { return a.pos - b.pos; });
+    var vistos = [];
+    achados.forEach(function (a) { if (vistos.indexOf(a.rot) < 0) vistos.push(a.rot); });
+    if (vistos.length > 3) return vistos.slice(0, 3).join(" + ") + " +…";
+    return vistos.join(" + ");
+  }
+
   // normalmente sai da forma de pagamento da entrada, mas o campo
   // formaReembolso da ficha manda quando estiver preenchido (pagamento misto)
   function formaReembolso(c) {
