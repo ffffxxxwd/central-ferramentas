@@ -23386,5 +23386,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/493--contrato.pdf" }
     ]
+  },
+  {
+    id: 494,
+    nome: "Giselle Maria da Silva Alves",
+    cpf: "073.876.684-42",
+    rg: "7577456 SDS/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Professora estadual",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "08",
+    apartamento: "0201",
+    andar: "1",
+    cota: "22",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 85.246,73",
+    valorPago: "R$ 1.000,00",
+    formaPagamentoEntrada: "Corretagem de R$ 3.990,00 de forma mista: 1x R$ 1.000,00 em PIX (Nº Documento RESN3982580095158073S3LHP2JU28906FA, 20/11/2026, pago) + 5x R$ 598,00 em boleto (1º em 10/12/2026, nenhum vencido). Sinal de negócio de R$ 4.262,33 em 4x R$ 1.065,58 a partir de 10/05/2027. Saldo de R$ 76.994,40 em 80x R$ 962,43 a partir de 10/09/2027.",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-20",
+    telefone: "(87) 99138-8623",
+    email: "Gisellealves17@hotmail.com",
+    endereco: "Rua das Flores, 12, Paratibe, Paulista/PE, CEP 53413-040",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Porto 2 Life Resort — Rua MA 01, Lote 03, s/n, Nossa Senhora do Ó / Muro Alto, Ipojuca/PE, CEP 55.900-000. Bloco 08, 1º andar, apartamento 0201, Cota 22. Matrícula R.9-2.929, Livro 02-E, Registro Geral de Imóveis de Ipojuca/PE. Área privativa 32,54 m², comum 37,35 m², total 69,89 m². Fração ideal 0,003439851570578%.\nDENTRO DO PRAZO DE ARREPENDIMENTO, MAS É O MAIS APERTADO DA BASE — assinado em 20/11/2026, o 7º dia cai em 27/11/2026. A carta tem que ser postada até lá.\nA CLÁUSULA I.6.1 DEVOLVE A CORRETAGEM. O contrato diz que quem exerce o arrependimento no prazo tem direito à devolução de todos os valores antecipados, \"inclusive a quantia já paga pela Corretagem\". Mesma cláusula das fichas 490, 491, 492 e 493. A I.6.2 exige carta registrada com AR e conta o prazo pela data da postagem — postar até 27/11/2026 e guardar o comprovante.\nVALOR PAGO = R$ 1.000,00, só o PIX. A corretagem de R$ 3.990,00 foi dividida de forma mista: 1x R$ 1.000,00 em PIX, vencimento 20/11/2026, o próprio dia da assinatura, e 5x R$ 598,00 em boleto, o primeiro em 10/12/2026. Pela regra, PIX entra pelo que passou e boleto só pelo que foi quitado — nenhum boleto venceu ainda. Nº Documento do PIX: RESN3982580095158073S3LHP2JU28906FA, que não aparece em nenhuma outra ficha da base, então é transação exclusiva dela (diferente da Gislaine, fichas 492 e 493).\nO INSTRUMENTO PRINCIPAL É O PIX, ENTÃO A DEVOLUÇÃO É POR REEMBOLSO, não estorno. Não há cartão nesse contrato.\nOS 5 BOLETOS NÃO VENCERAM: 5x R$ 598,00, somando R$ 2.990,00, a partir de 10/12/2026. Se o cancelamento sair agora ela simplesmente não paga. AVISAR PARA NÃO PAGAR.\nNADA MAIS VENCE ANTES DE MAIO DE 2027: o sinal de R$ 4.262,33 são 4x R$ 1.065,58 a partir de 10/05/2027, e o saldo de R$ 76.994,40 são 80x R$ 962,43 a partir de 10/09/2027. A exposição real dela hoje é de R$ 1.000,00.\nOBRA MUITO ATRASADA. O quadro-resumo traz obra iniciada em outubro de 2022 e término previsto para outubro de 2025, com 180 dias de tolerância a contar de 31/10/2025 e mais 120 dias de montagem. Somando tudo, o prazo estourou em meados de 2026. Ela comprou em novembro de 2026 uma cota de empreendimento cuja entrega já estava vencida, e isso não consta na proposta. Mesmo argumento do George (ficha 491) e das outras 45 fichas de Porto 2 Life da base.\nA CORRETAGEM FOI PAGA A TERCEIRO, não à vendedora: MARIA RITA VASCONCELOS, CNPJ 44.427.206/0001-78. Consultor responsável: WELLINGTON CAVALCANTE RODRIGUES. Importa para saber de quem cobrar a devolução da comissão.\nEstado civil casada, mas o contrato traz o cônjuge como Não informado em todos os campos — só ela assina. Nascida em 18/08/1988, professora estadual.\nReajuste pelo INCC-DI até o habite-se e pelo IPCA mais 1% depois.\nAssinado por ZapSign, status Assinado, 4 de 4 assinaturas, com validação facial pela plataforma Flow. Ela assinou em 20/11/2026 às 15:28:07 e confirmou o Guia do Multiproprietário às 15:29:49, IP 191.247.14.142. Código do empreendimento na proposta: 371285.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/494--contrato.pdf" }
+    ]
   }
 ];
