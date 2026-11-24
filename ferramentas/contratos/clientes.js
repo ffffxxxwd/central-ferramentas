@@ -23246,5 +23246,40 @@ window.CLIENTES = [
       { titulo: "Contrato", arquivo: "contratos-pdf/489--contrato.pdf" },
       { titulo: "Extrato de cota (23/11/2026)", arquivo: "contratos-pdf/489--extrato.pdf" }
     ]
+  },
+  {
+    id: 490,
+    nome: "Pamela Brandão Cardoso",
+    cpf: "950.787.202-78",
+    rg: "5389849 SSP/PA",
+    estadoCivil: "União estável",
+    profissao: "Corretora de imóveis",
+    empresa: "GAV",
+    razaoSocial: "Beach GAV Resorts Empreendimentos Imobiliários SPE Ltda",
+    cnpj: "33.531.685/0001-51",
+    empreendimento: "Beach GAV Resorts",
+    bloco: "1",
+    apartamento: "1419",
+    andar: "14",
+    cota: "16",
+    fracao: "1/52",
+    localizacao: "Salinópolis/PA",
+    valorTotal: "R$ 45.445,92",
+    valorPago: "R$ 3.990,00",
+    formaPagamentoEntrada: "Corretagem de R$ 3.990,00 em 3x R$ 1.330,00 no cartão de crédito Master parcelado (POS Rede, Nº Documento 27402924, 1ª em 22/12/2026 — ainda não cobrada). Sinal de negócio de R$ 2.272,28 em 4x R$ 568,07 a partir de 10/03/2027. Saldo de R$ 39.183,64 em 68x R$ 576,23 a partir de 10/07/2027.",
+    formaReembolso: "Estorno Cartão",
+    dataAssinatura: "2026-11-22",
+    telefone: "(91) 98489-4323",
+    email: "pamelabc1991@gmail.com",
+    endereco: "Passagem Dois Amigos, SN, Tapanã/Icoaraci, Belém/PA, CEP 66825-130",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Beach GAV Resorts — Rua 10A, s/nº, Quadra 152, Lote 01/20 e Quadra 131, Lote 02, Balneário Ilha do Atalaia, Salinópolis/PA, CEP 68.721-000. Bloco 1, 14º andar, apartamento 1419, Cota 16. Matrícula 11.764 e R-01-11.755, Livro 2, Cartório do Único Ofício de Salinópolis/PA. Área privativa 30 m², comum 31,268 m², total 61,268 m². Fração ideal 0,00437536271756923%.\nDENTRO DO PRAZO DE ARREPENDIMENTO — assinado em 22/11/2026, o 7º dia cai em 29/11/2026. Prioridade máxima.\nA CLÁUSULA I.6.1 DEVOLVE A CORRETAGEM. O contrato diz, com essas palavras, que quem exerce o arrependimento no prazo \"terá direito à devolução de todos os valores eventualmente antecipados, inclusive a quantia já paga pela Corretagem, aqui prevista no item E.2)\". Não é interpretação nossa, está escrito no instrumento. É o oposto do padrão WAM, onde a intermediação fica retida mesmo no distrato. A cláusula I.6.2 exige carta registrada com AR e manda contar o prazo pela data da postagem, então a carta precisa ser postada até 29/11/2026 e o comprovante de postagem guardado.\nA PRIMEIRA PARCELA DO CARTÃO AINDA NÃO FOI COBRADA: vence em 22/12/2026. Lancei os R$ 3.990,00 cheios pela regra do cartão, mas na prática nada saiu da conta dela ainda. Se o cancelamento sair antes do fechamento da fatura, a cobrança pode nem acontecer — é bem melhor do que pedir estorno depois. Vale ela acionar o banco em paralelo à carta.\nCorretagem R$ 3.990,00 em 3x R$ 1.330,00, cartão Master crédito parcelado, POS Rede, Nº Documento 27402924, 1ª em 22/12/2026. Beneficiário da corretagem: LUAN GOMES TEIXEIRA, CNPJ 49.428.611/0001-24 — a comissão foi paga a ele, não à vendedora, o que importa para saber de quem cobrar a devolução.\nNADA MAIS FOI PAGO E NADA VENCE LOGO: o sinal de R$ 2.272,28 são 4x R$ 568,07 com a primeira só em 10/03/2027, e o saldo de R$ 39.183,64 são 68x R$ 576,23 a partir de 10/07/2027. O cronograma inteiro começa no ano que vem, então o caso é limpo: a única exposição real dela são os R$ 3.990,00 da corretagem.\nOBRA ATRASADA. O quadro-resumo prometia conclusão das obras civis para julho de 2026, com 180 dias de tolerância a contar de 31/07/2026, mais 120 dias para montagem e decoração. Já é novembro de 2026 e ela comprou em novembro de 2026 uma cota de empreendimento cujo prazo original já tinha vencido. Checar se há habite-se; se não houver, isso reforça o pedido.\nA alínea D.2 exige que ela tenha quitado ao menos 15% do preço para receber a fração de tempo — R$ 6.816,89. Ela nem chegou perto, e o cronograma só começa em 2027, ou seja, nenhuma possibilidade de fruição. Isso derruba de saída qualquer tentativa de descontar valor por período disponibilizado.\nELA É CORRETORA DE IMÓVEIS (consta no quadro-resumo). A vendedora pode usar isso para alegar que ela sabia o que assinava e afastar a proteção do CDC. Vale ter resposta pronta: o arrependimento do artigo 49 não depende de a pessoa ser leiga, e a cláusula I.6.1 do próprio contrato é incondicional.\nEstado civil união estável, cônjuge não informado no contrato — só ela assina.\nReajuste pelo INCC-DI até o habite-se e pelo IPCA mais 1% depois. Cláusula penal de 50% da quantia paga em caso de resolução por inadimplência, mais retenção de 5% de sinal — nada disso se aplica se o arrependimento for exercido no prazo.\nAssinado por ZapSign (documento ec545614-e5f7-4e64-9f1e-18de226fb82d), status Assinado, 4 de 4 assinaturas, com validação facial. Ela assinou em 22/11/2026 às 16:27:16, IP 187.24.241.200, por iPhone. Token único 401QMWS878B988D1D780. Código do empreendimento na proposta: 371439.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/490--contrato.pdf" }
+    ]
   }
 ];
