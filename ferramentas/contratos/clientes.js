@@ -23281,5 +23281,40 @@ window.CLIENTES = [
     arquivos: [
       { titulo: "Contrato", arquivo: "contratos-pdf/490--contrato.pdf" }
     ]
+  },
+  {
+    id: 491,
+    nome: "George Araújo do Rego",
+    cpf: "054.209.514-95",
+    rg: "6183945 SSP/PE",
+    estadoCivil: "Casado(a)",
+    profissao: "Autônomo",
+    empresa: "GAV",
+    razaoSocial: "GAV Muro Alto 2 Empreendimento Imobiliário SPE Ltda",
+    cnpj: "39.673.888/0001-69",
+    empreendimento: "Porto 2 Life Resort",
+    bloco: "08",
+    apartamento: "0332",
+    andar: "2",
+    cota: "23",
+    fracao: "1/52",
+    localizacao: "Ipojuca/PE",
+    valorTotal: "R$ 79.185,91",
+    valorPago: "R$ 1.330,00",
+    formaPagamentoEntrada: "Corretagem de R$ 3.990,00 em 3x R$ 1.330,00, de forma mista: 1x R$ 1.330,00 em PIX (Nº Documento RESN78295000951580736XYEVKOID5781D8, 21/11/2026, pago) + 2x R$ 1.330,00 em boleto (vencimentos 21/12/2026 e 21/01/2027, ainda não vencidos). Sinal de negócio de R$ 3.959,29 em 5x R$ 791,86 a partir de 10/02/2027. Saldo de R$ 71.236,62 em 91x R$ 782,82 a partir de 10/07/2027.",
+    formaReembolso: "Reembolso",
+    dataAssinatura: "2026-11-21",
+    telefone: "(81) 98146-8051",
+    email: "georgearaujor@gmail.com",
+    endereco: "Rua Padre Nestor de Alencar, 2679, Candeias, Jaboatão dos Guararapes/PE, CEP 54440-410",
+    conjuge: {},
+    pix: "",
+    valorReembolso: "",
+    clausulaExtra: "",
+    observacoes: "Porto 2 Life Resort — Rua MA 01, Lote 03, s/n, Nossa Senhora do Ó / Muro Alto, Ipojuca/PE, CEP 55.900-000. Bloco 08, 2º andar, apartamento 0332, Cota 23. Matrícula R.9-2.929, Livro 02-E, Registro Geral de Imóveis de Ipojuca/PE. Área privativa 32,54 m², comum 37,35 m², total 69,89 m². Fração ideal 0,003439851570578%.\nDENTRO DO PRAZO DE ARREPENDIMENTO — assinado em 21/11/2026, o 7º dia cai em 28/11/2026. Prioridade máxima.\nA CLÁUSULA I.6.1 DEVOLVE A CORRETAGEM. O contrato diz, textualmente, que quem exerce o arrependimento no prazo \"terá direito à devolução de todos os valores eventualmente antecipados, inclusive a quantia já paga pela Corretagem, aqui prevista no item E.2)\". Está escrito no instrumento, não é interpretação nossa — mesma cláusula da Pamela na ficha 490. A I.6.2 exige carta registrada com AR e conta o prazo pela data da postagem, então postar até 28/11/2026 e guardar o comprovante.\nVALOR PAGO = R$ 1.330,00, só o PIX. A corretagem de R$ 3.990,00 foi dividida em 3x R$ 1.330,00, mas de forma mista: a primeira em PIX, com vencimento 21/11/2026, o próprio dia da assinatura, e as outras duas em boleto, vencendo em 21/12/2026 e 21/01/2027. Pela regra, PIX entra pelo que passou e boleto só pelo que foi quitado — nenhum dos dois boletos venceu ainda. Nº Documento do PIX: RESN78295000951580736XYEVKOID5781D8.\nO INSTRUMENTO PRINCIPAL É O PIX, ENTÃO A DEVOLUÇÃO É POR REEMBOLSO, não estorno. Não há cartão nenhum nesse contrato.\nOS DOIS BOLETOS AINDA NÃO VENCERAM: R$ 1.330,00 em 21/12/2026 e R$ 1.330,00 em 21/01/2027. Se o cancelamento sair agora, ele simplesmente não paga — economiza R$ 2.660,00 e só precisa correr atrás dos R$ 1.330,00 do PIX. Avisar que NÃO pague esses boletos.\nNADA MAIS VENCE EM 2026: o sinal de R$ 3.959,29 são 5x R$ 791,86 a partir de 10/02/2027, e o saldo de R$ 71.236,62 são 91x R$ 782,82 a partir de 10/07/2027. O cronograma todo começa no ano que vem, então a exposição real dele hoje é de R$ 1.330,00.\nOBRA MUITO ATRASADA. O quadro-resumo diz obra iniciada em outubro de 2022 e término previsto para outubro de 2025, com 180 dias de tolerância a contar de 31/10/2025 e mais 120 dias para montagem e decoração. Mesmo somando toda a tolerância, o prazo estourou em meados de 2026. Ele comprou em novembro de 2026 uma cota de empreendimento cuja entrega já estava vencida, e isso não consta em lugar nenhum da proposta. É argumento forte e vale para as outras 44 fichas de Porto 2 Life da base.\nA CORRETAGEM FOI PAGA A DOIS TERCEIROS, não à vendedora: FABRICIO SANTOS DA SILVA, CNPJ 60.799.347/0001-78, e CLAUDIO CESAR BARBOSA DA SILVA, CNPJ 68.620.077/0001-06. O Claudio Cesar é o consultor que assina o recibo do Guia do Multiproprietário e é o mesmo consultor da ficha 163 (José Alfredo Baccoli Vieira, Areya Barra Resort, assinado em 09/09/2026). Importa para saber de quem cobrar a devolução da comissão.\nEstado civil casado, mas o contrato traz o cônjuge como Não informado em todos os campos — só ele assina.\nReajuste pelo INCC-DI até o habite-se e pelo IPCA mais 1% depois.\nAssinado por ZapSign (documento 945ec89a-9255-4503-95d9-5f4a1aa2d0bb), status Assinado, 4 de 4 assinaturas, com validação facial pela plataforma Flow. Ele assinou em 21/11/2026 às 20:25:35 e confirmou o Guia do Multiproprietário às 20:26:09, IP 177.173.234.134. Token único 3ZHRMWR0GZSA110D1696. Código do empreendimento na proposta: 371285.",
+    parcelas: [],
+    arquivos: [
+      { titulo: "Contrato", arquivo: "contratos-pdf/491--contrato.pdf" }
+    ]
   }
 ];
