@@ -2166,7 +2166,7 @@
 '<div class="doc-assinaturas" id="docAssinaturas">' +
 '<div class="doc-assinatura"><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_ass">NOME DO CLIENTE</div></div>' +
 '<div class="doc-assinatura" id="assConjuge" hidden><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_conj_ass">CÔNJUGE</div></div>' +
-'<div class="doc-assinatura" id="assEmpresa" hidden><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_empresa_ass">EMPRESA</div></div>' +
+'<div class="doc-assinatura" id="assEmpresa" hidden><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_empresa_ass">EMPRESA</div><div style="font-size:9pt;font-weight:400;color:#222;margin-top:2px">Representante legal</div></div>' +
 '</div>' +
 '<p class="doc-rodape">Este Quadro-Resumo obedece ao artigo 35-A da Lei Federal nº 4.591/1964 e integra o presente Contrato para todos os fins e efeitos.</p>';
   }
