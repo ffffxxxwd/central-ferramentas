@@ -227,7 +227,7 @@
     ["id", "nome", "cpf", "rg", "nacionalidade", "estadoCivil", "empreendimento", "bloco",
      "apartamento", "andar", "cota", "fracao", "localizacao", "empresa", "razaoSocial", "cnpj",
      "formaPagamentoEntrada", "formaReembolso", "dataAssinatura", "telefone", "email", "endereco",
-     "pix", "clausulaExtra", "observacoes", "notaEnvio", "profissao"].forEach(function (k) {
+     "pix", "clausulaExtra", "assinaturaEmpresa", "observacoes", "notaEnvio", "profissao"].forEach(function (k) {
       o[k] = txt(c[k]);
     });
     ["valorPago", "valorTotal", "corretagem", "sinal", "valorReembolso"].forEach(function (k) { o[k] = c[k]; });
@@ -1004,7 +1004,8 @@
     ["telefone", "Telefone / WhatsApp"], ["email", "E-mail"],
     ["endereco", "Endereço do cliente (rua, nº, bairro, cidade/UF, CEP)", "full"],
     ["valorReembolso", "Valor a devolver no distrato (só se for diferente do valor pago)", "full"],
-    ["pix", "Chave PIX para reembolso", "full"], ["clausulaExtra", "Cláusula extra — entra no distrato logo abaixo do valor", "full"]
+    ["pix", "Chave PIX para reembolso", "full"], ["clausulaExtra", "Cláusula extra — entra no distrato logo abaixo do valor", "full"],
+    ["assinaturaEmpresa", "Assinatura da empresa no distrato — escreva a razão social de quem assina (vazio = só o cliente assina)", "full"]
   ];
 
   function pegar(o, caminho) {
@@ -1381,6 +1382,7 @@
       pix: "",
       valorReembolso: "",
       clausulaExtra: "",
+      assinaturaEmpresa: "",
       parcelas: d.parcelas || [],
       observacoes: ""
     };
@@ -2115,7 +2117,7 @@
         parcelas: c.parcelas, arquivos: c.arquivos,
         formaPagamentoEntrada: c.formaPagamentoEntrada, formaReembolso: c.formaReembolso, dataAssinatura: c.dataAssinatura, telefone: c.telefone, email: c.email,
         endereco: c.endereco, profissao: c.profissao, valorReembolso: c.valorReembolso,
-        pix: c.pix, clausulaExtra: c.clausulaExtra, observacoes: c.observacoes
+        pix: c.pix, clausulaExtra: c.clausulaExtra, assinaturaEmpresa: c.assinaturaEmpresa, observacoes: c.observacoes
       };
     });
     var codigo = "window.CLIENTES = " + JSON.stringify(l, null, 2) + ";\n";
@@ -2164,6 +2166,7 @@
 '<div class="doc-assinaturas" id="docAssinaturas">' +
 '<div class="doc-assinatura"><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_ass">NOME DO CLIENTE</div></div>' +
 '<div class="doc-assinatura" id="assConjuge" hidden><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_conj_ass">CÔNJUGE</div></div>' +
+'<div class="doc-assinatura" id="assEmpresa" hidden><div style="text-align:center;margin:0 0 4px;color:#000;font-size:11pt;line-height:1;letter-spacing:-1px">──────────────────────────────────────────</div><div class="doc-assinatura__nome up" id="pv_nome_empresa_ass">EMPRESA</div></div>' +
 '</div>' +
 '<p class="doc-rodape">Este Quadro-Resumo obedece ao artigo 35-A da Lei Federal nº 4.591/1964 e integra o presente Contrato para todos os fins e efeitos.</p>';
   }
@@ -2328,6 +2331,7 @@
       f_edificio: c.empreendimento,
       f_empresa: c.razaoSocial,
       f_cnpj: c.cnpj,
+      f_assEmpresa: c.assinaturaEmpresa || "",
       f_forma: forma,
       f_valor: valorStr,
       f_extenso: extenso,
@@ -2469,6 +2473,7 @@
       f_edificio: c.empreendimento,
       f_empresa: c.razaoSocial,
       f_cnpj: c.cnpj,
+      f_assEmpresa: c.assinaturaEmpresa || "",
       f_forma: forma,
       f_valor: valorStr,
       f_extenso: extenso,
@@ -2594,6 +2599,16 @@
     set("pv_data", dataBR(hojeISO()) + ".");
 
     var spanConj = box.querySelector("#pv_conjuge");
+    /* Assinatura da empresa: só sai quando a ficha diz QUEM assina.
+       Distrato é bilateral, mas o modelo nasceu só com o cliente — então
+       isso entra ficha a ficha, quando pedido, e não em todo documento. */
+    var assEmp = box.querySelector("#assEmpresa");
+    if (assEmp) {
+      var qEmp = txt(f.f_assEmpresa);
+      if (qEmp) { set("pv_nome_empresa_ass", qEmp); assEmp.removeAttribute("hidden"); }
+      else { assEmp.setAttribute("hidden", ""); }
+    }
+
     var assConj = box.querySelector("#assConjuge");
     if (temConj) {
       if (spanConj) {
