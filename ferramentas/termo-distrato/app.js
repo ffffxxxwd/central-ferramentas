@@ -318,18 +318,30 @@
         wrapper.id = "areaReembolso";
         // Pega opcoes + os 2 parágrafos seguintes (bold)
         var pai = opcoes.parentElement;
-        var proximo = opcoes.nextElementSibling;
-        var proximo2 = proximo ? proximo.nextElementSibling : null;
         pai.insertBefore(wrapper, opcoes);
         wrapper.appendChild(opcoes);
-        if (proximo) wrapper.appendChild(proximo);
-        if (proximo2) wrapper.appendChild(proximo2);
+        /* O wrapper tem que abraçar exatamente o que esta função remonta: o
+           parágrafo do valor, as cláusulas extras vindas da ficha e a linha
+           das cobranças futuras. Antes pegava "os 2 seguintes" — com uma
+           cláusula no meio, o linhaCobrancas ficava de fora e reaparecia
+           duplicado depois do innerHTML. */
+        var seg = wrapper.nextElementSibling, prox;
+        if (seg) { prox = seg.nextElementSibling; wrapper.appendChild(seg); seg = prox; }
+        while (seg && /^pv_clausula/.test(seg.id || "")) { prox = seg.nextElementSibling; wrapper.appendChild(seg); seg = prox; }
+        if (seg && seg.id === "linhaCobrancas") wrapper.appendChild(seg);
         area = wrapper;
       }
     }
 
     if (area) {
       // Modo simples: restaura checkboxes
+      /* As cláusulas extras da ficha ficam logo abaixo do parágrafo do valor,
+         dentro desta área. Como aqui ela é reescrita inteira, sem guardá-las
+         antes elas sumiam do documento a cada geração. */
+      var clausulasHTML = "";
+      Array.prototype.forEach.call(area.querySelectorAll('[id^="pv_clausula"]'), function (el) {
+        clausulasHTML += el.outerHTML;
+      });
       var temCheckboxes = $("op_estorno");
       if (!temCheckboxes) {
         // Precisa recriar o HTML simples
@@ -342,6 +354,7 @@
           '<p class="doc-p doc-p--bold">GAV Resorts Gest\u00e3o de Neg\u00f3cios e Participa\u00e7\u00e3o LTDA compromete-se ainda a efetuar ' +
             '<span id="pv_meio">a devolu\u00e7\u00e3o por transfer\u00eancia banc\u00e1ria</span> no valor de R$ <span id="pv_valor">0,00</span> ' +
             '(<span id="pv_extenso">zero real</span>) referente ao sinal de proposta.</p>' +
+          clausulasHTML +
           '<p class="doc-p" id="linhaCobrancas" hidden><strong>Comprometemos tamb\u00e9m em efetuar o cancelamento de quaisquer cobran\u00e7as futuras ' +
             'referente as parcelas firmadas em contrato.</strong></p>';
         area.id = "areaReembolso";

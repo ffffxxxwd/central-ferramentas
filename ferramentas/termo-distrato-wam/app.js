@@ -316,17 +316,29 @@
         var wrapper = document.createElement("div");
         wrapper.id = "areaReembolso";
         var pai = opcoes.parentElement;
-        var proximo = opcoes.nextElementSibling;
-        var proximo2 = proximo ? proximo.nextElementSibling : null;
         pai.insertBefore(wrapper, opcoes);
         wrapper.appendChild(opcoes);
-        if (proximo) wrapper.appendChild(proximo);
-        if (proximo2) wrapper.appendChild(proximo2);
+        /* O wrapper tem que abraçar exatamente o que esta função remonta: o
+           parágrafo do valor, as cláusulas extras vindas da ficha e a linha
+           das cobranças futuras. Antes pegava "os 2 seguintes" — com uma
+           cláusula no meio, o linhaCobrancas ficava de fora e reaparecia
+           duplicado depois do innerHTML. */
+        var seg = wrapper.nextElementSibling, prox;
+        if (seg) { prox = seg.nextElementSibling; wrapper.appendChild(seg); seg = prox; }
+        while (seg && /^pv_clausula/.test(seg.id || "")) { prox = seg.nextElementSibling; wrapper.appendChild(seg); seg = prox; }
+        if (seg && seg.id === "linhaCobrancas") wrapper.appendChild(seg);
         area = wrapper;
       }
     }
 
     if (area) {
+      /* As cláusulas extras da ficha ficam logo abaixo do parágrafo do valor,
+         dentro desta área. Como aqui ela é reescrita inteira, sem guardá-las
+         antes elas sumiam do documento a cada geração. */
+      var clausulasHTML = "";
+      Array.prototype.forEach.call(area.querySelectorAll('[id^="pv_clausula"]'), function (el) {
+        clausulasHTML += el.outerHTML;
+      });
       area.innerHTML =
           '<div class="doc-opcoes">' +
             '<div class="doc-opcao" id="op_estorno"><span>( <b class="mark" id="ck_estorno">\u00a0</b> ) Estorno Cartão</span><span>R$ <span id="val_estorno">XXXX,00</span></span></div>' +
@@ -336,6 +348,7 @@
           '<p class="doc-p doc-p--bold">Wam Hoteis e Resorts S/A compromete-se ainda a efetuar ' +
             '<span id="pv_meio">a devolução por transferência bancária</span> no valor de R$ <span id="pv_valor">0,00</span> ' +
             '(<span id="pv_extenso">zero real</span>) referente ao sinal de proposta.</p>' +
+          clausulasHTML +
           '<p class="doc-p" id="linhaCobrancas" hidden><strong>Comprometemos também em efetuar o cancelamento de quaisquer cobranças futuras ' +
             'referente as parcelas firmadas em contrato.</strong></p>';
       area.id = "areaReembolso";
