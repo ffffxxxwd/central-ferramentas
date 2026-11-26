@@ -222,6 +222,46 @@
     });
   })();
 
+  /* ---------- Empresas atendidas ----------
+     Tudo que muda de uma empresa para outra mora aqui: o rótulo exibido,
+     a classe de cor no card, quem assume o pagamento no distrato, a pasta
+     e a chave da ferramenta de distrato, a pasta do comprovante e o
+     WhatsApp do atendimento. Para acrescentar outra empresa, basta mais
+     uma entrada — o resto do app lê daqui. GAV é o padrão. */
+  var EMPRESAS = {
+    GAV: {
+      rotulo: "GAV", classe: "",
+      pagadora: "GAV Resorts Gestão de Negócios e Participação LTDA",
+      logo: "images/logo-gav.png",
+      pasta: "termo-distrato", chave: "termo-distrato-v8",
+      comprovante: "comprovante-reembolso", whatsapp: "5562976025529"
+    },
+    WAM: {
+      rotulo: "WAM", classe: "wam",
+      pagadora: "Wam Hoteis e Resorts S/A",
+      logo: "images/logo-wam.png",
+      pasta: "termo-distrato-wam", chave: "termo-distrato-wam-v7",
+      comprovante: "reembolso-wam", whatsapp: ""
+    },
+    LAGHETTO: {
+      rotulo: "Laghetto", classe: "laghetto",
+      pagadora: "GVP Participações e Investimentos Ltda.",
+      logo: "images/logo-laghetto.png",
+      pasta: "termo-distrato-laghetto", chave: "termo-distrato-laghetto-v1",
+      comprovante: "comprovante-reembolso", whatsapp: ""
+    }
+  };
+  // aceita a ficha inteira ou só o nome da empresa; desconhecido cai em GAV
+  function empresaDe(x) {
+    var k = String((x && x.empresa) || x || "").trim().toUpperCase();
+    return EMPRESAS[k] || EMPRESAS.GAV;
+  }
+  // " wam" / " laghetto" / "" — o sufixo de classe usado nos cards e tags
+  function classeEmpresa(x) {
+    var c = empresaDe(x).classe;
+    return c ? " " + c : "";
+  }
+
   function normalizar(c) {
     var o = {};
     ["id", "nome", "cpf", "rg", "nacionalidade", "estadoCivil", "empreendimento", "bloco",
@@ -242,7 +282,7 @@
     o.entradas = (c.entradas || []).map(function (e) {
       return { descricao: txt(e.descricao), valor: e.valor };
     });
-    o.empresa = (o.empresa || "").toUpperCase() === "WAM" ? "WAM" : "GAV";
+    o.empresa = empresaDe(o).rotulo;
     return o;
   }
 
@@ -461,19 +501,22 @@
     if (filtroStatus === "reembolsos") {
       var rs_ = reembolsos();
       var totalR = rs_.reduce(function (s, r) { return s + (num(r.valor) || 0); }, 0);
-      var gavR = rs_.filter(function (r) { return r.empresa !== "WAM"; }).length;
+      var porEmpR = {};
+      rs_.forEach(function (r) { var e = empresaDe(r).rotulo; porEmpR[e] = (porEmpR[e] || 0) + 1; });
       $("resumo").innerHTML =
         stat("Reembolsos", rs_.length) +
-        stat("GAV", gavR) +
-        stat("WAM", rs_.length - gavR) +
+        Object.keys(EMPRESAS).map(function (k) {
+          var rot = EMPRESAS[k].rotulo;
+          return porEmpR[rot] ? stat(rot, porEmpR[rot]) : "";
+        }).join("") +
         '<div class="stat destaque"><span>Total reembolsado</span><b>' + esc(rs(totalR) || "R$ 0,00") + "</b></div>";
       return;
     }
 
     var l = listaPorStatus();
-    var gav = 0, wam = 0, soma = 0, noPrazo = 0;
+    var porEmp = {}, soma = 0, noPrazo = 0;
     l.forEach(function (c) {
-      if (c.empresa === "WAM") wam++; else gav++;
+      var e = empresaDe(c).rotulo; porEmp[e] = (porEmp[e] || 0) + 1;
       soma += num(c.valorPago) || 0;
       var p = prazo7(c);
       if (p && p.aberto) noPrazo++;
@@ -481,8 +524,10 @@
     $("resumo").innerHTML =
       stat("Contratos", l.length) +
       stat("Pessoas", agruparPorPessoa(l).length) +
-      stat("GAV", gav) +
-      stat("WAM", wam) +
+      Object.keys(EMPRESAS).map(function (k) {
+        var rot = EMPRESAS[k].rotulo;
+        return porEmp[rot] ? stat(rot, porEmp[rot]) : "";
+      }).join("") +
       '<div class="stat' + (noPrazo ? " urgente" : "") + '"><span>Dentro dos 7 dias</span><b>' + noPrazo + "</b></div>" +
       '<div class="stat destaque"><span>Total pago (reembolso)</span><b>' + esc(rs(soma) || "R$ 0,00") + "</b></div>";
   }
@@ -568,14 +613,14 @@
        destaque pela cor do cabeçalho e pelo selo. */
     var carimbo = pago ? { classe: "pago", texto: "Pago" } : null;
     return (
-      '<div role="button" tabindex="0" class="ficha' + (c.empresa === "WAM" ? " wam" : "") + (arq ? " arquivada" : "") + (pago ? " pago" : "") + (carimbo ? " carimbada" : "") +
+      '<div role="button" tabindex="0" class="ficha' + classeEmpresa(c) + (arq ? " arquivada" : "") + (pago ? " pago" : "") + (carimbo ? " carimbada" : "") +
         (enviado && !pago ? " enviada" : "") + (assinado && !pago && !enviado ? " assinada" : "") +
         (ehPendente(c.id) ? " pendente" : "") + '" data-id="' + esc(c.id) + '">' +
         (carimbo
           ? '<div class="ficha__carimbo ' + carimbo.classe + '"><b>' + esc(carimbo.texto) + "</b></div>"
           : "") +
         '<div class="ficha__topo">' +
-          '<span class="tag empresa' + (c.empresa === "WAM" ? " wam" : "") + '">' + esc(c.empresa) + "</span>" +
+          '<span class="tag empresa' + classeEmpresa(c) + '">' + esc(c.empresa) + "</span>" +
           '<span class="tag id" title="Código da ficha">#' + esc(c.id) + "</span>" +
           '<span class="tag forma ' + (ehEstorno ? "estorno" : "pix") + '">' + esc(forma) + "</span>" +
           // os estados (pago/assinado/enviado/confirmado) NÃO viram selo aqui:
@@ -801,9 +846,9 @@
 
     $("grid").innerHTML = l.map(function (r) {
       return (
-        '<div class="ficha' + (r.empresa === "WAM" ? " wam" : "") + '">' +
+        '<div class="ficha' + classeEmpresa(r) + '">' +
           '<div class="ficha__topo">' +
-            '<span class="tag empresa' + (r.empresa === "WAM" ? " wam" : "") + '">' + esc(r.empresa || "GAV") + "</span>" +
+            '<span class="tag empresa' + classeEmpresa(r) + '">' + esc(r.empresa || "GAV") + "</span>" +
             '<span class="tag forma ' + (/estorno/i.test(r.forma || "") ? "estorno" : "pix") + '">' + esc(r.forma || "Reembolso") + "</span>" +
             '<span class="ficha__data">' + esc(dataBR(r.data)) + "</span>" +
             '<button type="button" class="ficha__acao" data-acao="abrir-comprovante" data-reemb="' + esc(r.id) + '" data-empresa="' + esc(r.empresa || "GAV") + '">Comprovante</button>' +
@@ -827,7 +872,7 @@
     $("mdNome").textContent = titulo;
     var tag = $("mdEmpresa");
     tag.textContent = empresa || "";
-    tag.className = "tag" + (empresa === "WAM" ? " wam" : "");
+    tag.className = "tag" + classeEmpresa(empresa);
     tag.style.display = empresa ? "" : "none";
     $("mdCorpo").innerHTML = corpoHTML;
     $("mdRodape").innerHTML = rodapeHTML;
@@ -983,7 +1028,7 @@
         : '<button type="button" class="btn" data-acao="arquivar" data-id="' + esc(c.id) + '">Arquivar</button>') +
       '<button type="button" class="btn" data-acao="email" data-id="' + esc(c.id) + '">Gerar mensagem</button>' +
       '<button type="button" class="btn" data-acao="novo-reembolso" data-id="' + esc(c.id) + '">Criar reembolso</button>' +
-      '<button type="button" class="btn ' + (c.empresa === "WAM" ? "btn-wam" : "btn-primary") + '" data-acao="distrato" data-id="' + esc(c.id) + '">Gerar distrato ' + esc(c.empresa) + "</button>" +
+      '<button type="button" class="btn ' + (empresaDe(c).classe ? "btn-" + empresaDe(c).classe : "btn-primary") + '" data-acao="distrato" data-id="' + esc(c.id) + '">Gerar distrato ' + esc(c.empresa) + "</button>" +
       '<button type="button" class="btn" data-acao="distrato" data-nova="1" data-id="' + esc(c.id) + '" title="Abre o distrato em outra guia, sem sair daqui">Nova guia' + ico("novaGuia") + '</button>';
 
     abrirModal(c.nome || "(sem nome)", c.empresa, html, rodape);
@@ -1418,7 +1463,10 @@
     html += '<label class="campo"><span>Identificador (id)</span><input type="text" name="id" value="' + esc(c.id) + '"' + (criando ? "" : " readonly") + ' /></label>';
     html += '<label class="campo"><span>Empresa</span><select name="empresa">' +
       '<option value="GAV"' + (c.empresa === "GAV" ? " selected" : "") + ">GAV</option>" +
-      '<option value="WAM"' + (c.empresa === "WAM" ? " selected" : "") + ">WAM</option>" +
+      Object.keys(EMPRESAS).filter(function (k) { return k !== "GAV"; }).map(function (k) {
+        var rot = EMPRESAS[k].rotulo;
+        return '<option value="' + esc(rot) + '"' + (c.empresa === rot ? " selected" : "") + ">" + esc(rot) + "</option>";
+      }).join("") +
       "</select></label>";
     CAMPOS_TEXTO.forEach(function (f) {
       var v = pegar(c, f[0]);
@@ -1851,10 +1899,8 @@
 
   /* ---------- Protocolo e link de WhatsApp do atendimento ----------
      O número muda conforme a empresa da ficha. Troque aqui se mudar. */
-  var WHATSAPP_EMPRESA = {
-    GAV: "5562976025529",
-    WAM: ""   // <<< preencher com o número da WAM (só dígitos, com 55 na frente)
-  };
+  // o número de cada empresa mora em EMPRESAS, no topo do arquivo
+  function whatsappDe(x) { return empresaDe(x).whatsapp || ""; }
 
   // protocolo fixo por ficha: sai do número da proposta que está no id
   function protocoloDe(c) {
@@ -1868,7 +1914,7 @@
   // link que o cliente clica: já abre a conversa com a mensagem escrita,
   // identificando quem é, o imóvel e o protocolo
   function linkWhatsCliente(c) {
-    var numero = WHATSAPP_EMPRESA[c.empresa] || "";
+    var numero = whatsappDe(c);
     if (!numero) return "";
     var imovel = [c.empreendimento, unidadeDistrato(c), cotaDistrato(c)].filter(Boolean).join(", ");
     var texto =
@@ -1959,7 +2005,7 @@
               ? '<input type="text" class="assunto" id="emLink" value="' + esc(linkWhatsCliente(escolhidos[0])) + '" />' +
                 '<p class="aviso">Cole no e-mail. O cliente clica e a conversa já abre com o nome, o CPF e o protocolo escritos.</p>'
               : '<p class="aviso">Sem número de WhatsApp cadastrado para ' + esc(escolhidos[0].empresa) +
-                " — preencher em WHATSAPP_EMPRESA, no topo do app.js.</p>") +
+                " — preencher em EMPRESAS, no topo do app.js.</p>") +
           "</div>"
         : "");
     $("mdRodape").innerHTML =
@@ -1973,7 +2019,7 @@
 
   /* ---------- Comprovante de reembolso (ferramentas GAV / WAM) ---------- */
   function pastaComprovante(empresa) {
-    return empresa === "WAM" ? "reembolso-wam" : "comprovante-reembolso";
+    return empresaDe(empresa).comprovante;
   }
   // vocabulário do comprovante (as ferramentas GAV/WAM usam outros rótulos)
   var FORMA_COMPROVANTE = {
@@ -2136,10 +2182,8 @@
   // Documento base do Termo de Distrato (cópia do modelo), usado só como
   // reserva quando ainda não existe nada salvo na ferramenta de distrato.
   function docBase(empresa) {
-    var pagadora = empresa === "WAM"
-      ? "Wam Hoteis e Resorts S/A"
-      : "GAV Resorts Gestão de Negócios e Participação LTDA";
-    var logo = empresa === "WAM" ? "images/logo-wam.png" : "images/logo-gav.png";
+    var pagadora = empresaDe(empresa).pagadora;
+    var logo = empresaDe(empresa).logo;
     return '' +
 '<div class="doc-logo" id="docLogo" contenteditable="false"><img src="' + logo + '" alt="" id="docLogoImg" /></div>' +
 '<hr class="doc-rule" />' +
@@ -2300,8 +2344,8 @@
     var c = acharCliente(id);
     if (!c) return;
 
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v7" : "termo-distrato-v8";
-    var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
+    var chave = empresaDe(c).chave;
+    var pasta = empresaDe(c).pasta;
 
     var valorNum = num(c.valorPago);
     // valorReembolso manda no distrato quando preenchido: serve pros casos em que
@@ -2431,8 +2475,8 @@
 
     // usa o primeiro contrato como base para dados pessoais
     var c = clientes[0];
-    var chave = c.empresa === "WAM" ? "termo-distrato-wam-v7" : "termo-distrato-v8";
-    var pasta = c.empresa === "WAM" ? "termo-distrato-wam" : "termo-distrato";
+    var chave = empresaDe(c).chave;
+    var pasta = empresaDe(c).pasta;
 
     // soma valorPago de todos
     var valorTotal = clientes.reduce(function (s, cl) { return s + (num(cl.valorPago) || 0); }, 0);

@@ -20,7 +20,7 @@ window.FERRAMENTAS = [
   {
     id: "contratos",
     nome: "Contratos",
-    descricao: "Ficha de cada cliente lida do contrato (GAV e WAM): identificação, imóvel, empresa e o valor efetivamente pago. Gera o distrato já preenchido.",
+    descricao: "Ficha de cada cliente lida do contrato (GAV, WAM e Laghetto): identificação, imóvel, empresa e o valor efetivamente pago. Gera o distrato já preenchido.",
     icone: "contrato",
     categoria: "Documentos",
     url: "ferramentas/contratos/index.html",
@@ -42,6 +42,15 @@ window.FERRAMENTAS = [
     icone: "documento",
     categoria: "Documentos",
     url: "ferramentas/termo-distrato-wam/index.html",
+    pronta: true
+  },
+  {
+    id: "termo-distrato-laghetto",
+    nome: "Termo de Distrato Laghetto",
+    descricao: "Termo de distrato de compra de unidade imobiliária — modelo Laghetto (GVP Participações). Mesma estrutura dos modelos GAV e WAM.",
+    icone: "documento",
+    categoria: "Laghetto",
+    url: "ferramentas/termo-distrato-laghetto/index.html",
     pronta: true
   },
   {

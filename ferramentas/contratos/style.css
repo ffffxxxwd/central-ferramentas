@@ -32,6 +32,8 @@
   --gav-bg:     #dbe6f2;
   --wam:        #14603c;
   --wam-bg:     #d5ebdf;
+  --laghetto:   #7a2338;
+  --laghetto-bg:#f3dde3;
 
   /* semânticos — cor de texto escura o bastante pra ler sobre o próprio fundo */
   --ok:         #116236;
@@ -105,6 +107,8 @@ body {
 .btn-primary:hover { background: var(--brand-600); border-color: var(--brand-600); }
 .btn-wam { background: var(--wam); border-color: var(--wam); color: #fff; }
 .btn-wam:hover { background: #155a39; border-color: #155a39; }
+.btn-laghetto { background: var(--laghetto); border-color: var(--laghetto); color: #fff; }
+.btn-laghetto:hover { background: #6a1e30; border-color: #6a1e30; }
 .btn-perigo { color: var(--danger); border-color: var(--danger-bd); }
 .btn-perigo:hover { background: var(--danger-bg); border-color: var(--danger); }
 
@@ -192,6 +196,7 @@ body {
 .ficha:hover { box-shadow: var(--sombra-alta); transform: translateY(-2px); border-color: var(--border-forte); }
 .ficha:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .ficha.wam { border-left-color: var(--wam); }
+.ficha.laghetto { border-left-color: var(--laghetto); }
 .ficha.pendente { border-left-color: #d9a93f; border-left-style: dashed; }
 /* Arquivada: fica discreta pela COR, não por transparência — texto translúcido
    é o que mais atrapalha a leitura. Continua 100% legível. */
@@ -266,6 +271,7 @@ body {
   letter-spacing: -.01em;
 }
 .ficha.wam .ficha__emp { color: var(--wam); }
+.ficha.laghetto .ficha__emp { color: var(--laghetto); }
 .ficha__local { font-size: 12px; color: var(--muted); margin-top: 1px; }
 .ficha__unidade {
   display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px;
@@ -378,10 +384,14 @@ body {
 .ficha__btn.destaque:hover { background: var(--brand-600); border-color: var(--brand-600); color: #fff; }
 .ficha.wam .ficha__btn.destaque { background: var(--wam); border-color: var(--wam); }
 .ficha.wam .ficha__btn.destaque:hover { background: #155a39; border-color: #155a39; }
+.ficha.laghetto .ficha__btn.destaque { background: var(--laghetto); border-color: var(--laghetto); }
+.ficha.laghetto .ficha__btn.destaque:hover { background: #6a1e30; border-color: #6a1e30; }
 .ficha__btn.reembolso { background: var(--surface); border-color: var(--brand); color: var(--brand); }
 .ficha__btn.reembolso:hover { background: var(--brand-100); }
 .ficha.wam .ficha__btn.reembolso { border-color: var(--wam); color: var(--wam); }
 .ficha.wam .ficha__btn.reembolso:hover { background: var(--wam-bg); }
+.ficha.laghetto .ficha__btn.reembolso { border-color: var(--laghetto); color: var(--laghetto); }
+.ficha.laghetto .ficha__btn.reembolso:hover { background: var(--laghetto-bg); }
 
 /* ---------- Selos (tags) ----------
    Três categorias, cada uma com um peso visual próprio, pra bater o olho
@@ -403,6 +413,8 @@ body {
 .modal__topo .tag { background: var(--gav); border-color: var(--gav); color: #fff; }
 .tag.empresa.wam,
 .modal__topo .tag.wam { background: var(--wam); border-color: var(--wam); color: #fff; }
+.tag.empresa.laghetto,
+.modal__topo .tag.laghetto { background: var(--laghetto); border-color: var(--laghetto); color: #fff; }
 
 /* 2. forma de devolução — contorno grosso, texto escuro */
 .tag.forma { border-width: 1.5px; }
